@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.ipython/
+.jupyter_runtime/
+.mplconfig/
+.numba_cache/
+M.log
+.ipynb_checkpoints/
+equations.py
+eqs_coeff.npz
+equations_matrices.npz
+tmp/notebook_qa/
+tmp/*.log
+tmp/reservoir_workbook/

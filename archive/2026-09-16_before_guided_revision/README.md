@@ -1,27 +1,17 @@
 # ESBMTK carbon-cycle practicals 00–04
 
-This repository contains a five-notebook learning sequence. The guided 01–04
-core moves from a failed TA-free air–sea model to scaffolded construction of a
-Boudreau-like model, then matched carbon and alkalinity forcing experiments.
-Notebook 00 serves a separate question set and is unchanged.
-
-See [TEACHING_GOALS.md](TEACHING_GOALS.md) for the maintained learning goals,
-required/optional tasks and four-hour timetable. The timetable reserves 20 minutes
-for 00's external question set; that allocation needs confirmation through course
-planning. 01–04 require an estimated 185 minutes of notebook work, plus introduction,
-break and synthesis. Timings need a student pilot.
-
-The [pre-revision archive](archive/2026-09-16_before_guided_revision/ARCHIVE.md)
-preserves the previous 01–04 notebooks, dependencies, data and teaching documents
-with checksums. It is a frozen snapshot, separate from active teaching sources.
+This repository contains a five-notebook learning sequence. It moves from
+carbonate chemistry and a failed TA-free air–sea model to a student-built Boudreau-2010-like model,
+then uses that verified model for carbon-storage, forcing, and biological-feedback
+experiments.
 
 | Notebook | Main task |
 | --- | --- |
 | [`00_PyCO2SYS.ipynb`](notebooks/00_PyCO2SYS.ipynb) | Calculate carbonate variables from two inputs and illustrate buffering |
 | [`01_single_box_air_sea_CO2.ipynb`](notebooks/instructor/01_single_box_air_sea_CO2.ipynb) | Diagnose missing TA, infer it, and verify conservation and equilibrium controls |
 | [`02_two_layer_ocean_carbon_pump.ipynb`](notebooks/instructor/02_two_layer_ocean_carbon_pump.ipynb) | Verify a conservative extension, calibrate an effective pump, and audit a finite carbon signal |
-| [`03_boudreau_three_box_model.ipynb`](notebooks/instructor/03_boudreau_three_box_model.ipynb) | Complete four reservoir/flux mappings and verify the constructed model |
-| [`04_pump_strength_OA_OAE.ipynb`](notebooks/instructor/04_pump_strength_OA_OAE.ipynb) | Specify carbon/TA forcing, check budgets and interpret matched OA/OAE responses |
+| [`03_boudreau_three_box_model.ipynb`](notebooks/instructor/03_boudreau_three_box_model.ipynb) | Reconstruct the complete Boudreau-like model from its flux diagram |
+| [`04_pump_strength_OA_OAE.ipynb`](notebooks/instructor/04_pump_strength_OA_OAE.ipynb) | Attribute storage with process tags in one G+S+C model, reproduce the OA pulse, compare OAE, and test biological feedbacks |
 
 ## Teaching boundary
 
@@ -42,16 +32,11 @@ Its atmospheric response is conditional; restoring 280 ppm with the calculated
 carbon addition from 62.4 and the actual baseline inventory is a forcing/conservation check, not independent pump
 validation. Distinct-pump attribution, OA/OAE science and sediments remain in 03/04.
 
-Notebook 01 supplies construction and comparison code; students select the chemistry
-input pair and explain the missing TA and rate/equilibrium distinction. Notebook 02
-provides constructor templates while retaining student-derived pump strength and
-carbon addition. Plotting and numerical audits are supplied throughout.
-
-Notebook 03 has four mapping exercises: reservoirs, physical transports, POC/PIC
-choices and linked rates, and gas exchange. Native ESBMTK calls stay visible;
-Model setup, repeated loops, chemistry/sediment wiring and weathering construction
-are supplied. Students trace all arrows and inspect graph/stationarity checks.
-The instructor-only final cell compares against the reusable implementation.
+Notebook 03 makes students construct the baseline themselves. Marked exercises
+cover the `Model`, reservoirs, physical transports, POC/PIC connections,
+carbonate systems, gas exchange, and weathering. Progressive assertions help
+them check each diagram-to-code translation. The instructor-only final cell
+compares the result with the reusable implementation.
 
 Notebook 04 treats compatibility code as supplied infrastructure:
 
@@ -63,30 +48,24 @@ Notebook 04 treats compatibility code as supplied infrastructure:
 - [`storage_decomposition.py`](storage_decomposition.py) transports diagnostic
   gas-exchange, soft-tissue, and carbonate tags through the realized baseline;
 - [`scenarios.py`](scenarios.py) adds idealized atmospheric-carbon or ocean-TA signals.
-- [`teaching_plots.py`](teaching_plots.py) supplies the core figures;
-- [`teaching_audits.py`](teaching_audits.py) checks complete-model carbon/TA budgets
-  including forcing, weathering and net burial.
 
-Core 04 has two short code exercises: convert prescribed inventories and choose
-the forcing species/endpoints. Its fixed-pump control/OA/OAE cases retain the
-archived 4025 Gt-C post-1800 pulse and same-shape 10 Pmol TA-equivalent input.
-Students inspect budgets, follow the full eight-panel OA/OAE response figures
-through a guided reading route, and interpret atmospheric CO2, surface pH, deep DIC
-and dissolution/net-burial anomalies. Chemical horizons and the sediment snowline
-connect the deep response to sediment memory. The former extension Part II is now
-in core 04; plotting is supplied and the same four short answers cover interpretation.
-The full forcing history, including the
-small pre-1800 tail, enters the time-resolved inventory audit.
+Notebook 04 labels $G$ as gas exchange, rather than conflating it with a
+temperature/circulation sensitivity. It first solves one closed G+S+C model and
+diagnoses additive bookkeeping tracers under the same realized gas exchange,
+THC, and mixing. Low-latitude-referenced tag contrasts form the three-box
+storage profile. It then restores weathering, dissolution, and burial for the
+archived 4025 Gt-C OA pulse and a
+same-shape 10 Pmol-equivalent OAE experiment. Only the biological pumps become
+state dependent; temperature, THC, and high-latitude mixing stay fixed.
 
-The self-contained [optional extension](notebooks/instructor/extensions/04_attribution_and_feedbacks.ipynb)
-retains Part I's process-tagged storage and Part III's biological feedback
-experiments. Only supplied prerequisite runs of the fixed reference cases remain
-there; Part II's response explanations and full figures are in core 04.
-The extension is outside the four-hour core and is not executed by core 04.
-Tags are bookkeeping attribution of one trajectory; $G$ means gas
-exchange. Feedback laws remain hypotheses and preserve PIC's 1:2 DIC–TA coupling.
-Detailed sediment equations are [optional reference](ref/sediment_reference.md).
-The 03/04 benchmark retains its box-specific thermodynamic conditions.
+The PIC feedback returns DIC and TA fluxes together, preserving exact 1:2
+stoichiometry, and its evaluated time series is passed to carbonate-compensation
+post-processing. These compatibility details remain visible and testable but
+are not student fill-in exercises. Notebook 04 masks only a tag-closure
+calculation and the forcing-inventory calculation, plus explanatory responses.
+Parts I and II are the core matched-control analysis; Part III's state-dependent
+feedbacks are an optional extension. The 03/04 benchmark retains its distinct
+box-specific thermodynamic conditions and carbonate settings.
 
 ## Shared Excel model definition for 03/04
 
@@ -122,8 +101,8 @@ including with state-dependent export.
 
 Notebook 03 shows imported tables and one reservoir mapping before students
 construct reservoirs, transport and gas-exchange connections using standard
-ESBMTK functions. Native POC/PIC and chemistry calls remain visible; sediment
-equations are optional reference. Notebook 04 reuses the verified definition for matched
+ESBMTK functions. Specialized POC/PIC, chemistry and sediment equations remain
+visible in the notebook. Notebook 04 reuses the verified definition for matched
 cases; forcing amounts, pump strengths and feedback switches remain in its
 experiment cells. Its diagnostic transport operator uses the same Excel arrows
 and ESBMTK-derived water masses as the physical calculation.
@@ -141,14 +120,14 @@ validation, stable object IDs and benchmark construction order, then calls
 `initialize_reservoirs`, `create_bulk_connections` and `Species2Species`.
 
 Workbook concentrations are **initial inputs**. The archived restart replaces
-them in 03 and in the complete-model runs of 04; the optional tagged experiment starts from the
+them in 03 and in the complete-model runs of 04; 04 Part I starts from the
 workbook concentrations. Retain the supplied values for benchmark reproduction.
 Changed geometry, chemistry, transport or baseline process rates needs a new
 stationary restart and matching control before interpreting perturbations.
 
 ## Instructor and student copies
 
-The instructor notebooks for 01–04 and the optional extension are the source of truth. Generate distributable,
+The instructor notebooks for 01–04 are the source of truth. Generate distributable,
 output-free student copies with:
 
 ```powershell
@@ -187,16 +166,12 @@ The 1000 kyr baseline is the scientific regression. The archived restart under
 classroom notebooks fast; it supplies initial state but never replaces the
 model structure students build.
 
-The notebook checker executes core 00–04 instructor code cells in fresh processes
-and saves plots under `tmp/notebook_qa/` without
+The notebook checker executes all 00–04 instructor code cells in fresh processes,
+including optional feedbacks, and saves plots under `tmp/notebook_qa/` without
 adding outputs to teaching sources. Tests cover 01/02 carbon and TA inventories,
 implemented reservoir masses, no-pump equivalence, fitted-ratio labelling, signal
 integration and the calibrated return. Run in the activated Conda environment:
 its `Library/bin` must be on `PATH` on Windows for numerical-library DLLs.
-Use `python scripts/check_notebooks.py --include-extensions` to also verify the
-optional attribution/feedback notebook. Active build/check defaults never traverse
-the archive. Update `TEACHING_GOALS.md` whenever later teaching changes alter
-learning outcomes, required work or timing.
 
 ## Scientific scope
 

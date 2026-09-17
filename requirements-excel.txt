@@ -1,0 +1,2 @@
+# Additional dependency for the reservoir workbook used by practicals 03/04.
+openpyxl>=3.1,<4
