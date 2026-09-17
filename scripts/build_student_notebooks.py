@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 INSTRUCTOR = ROOT / "notebooks" / "instructor"
 STUDENT = ROOT / "notebooks" / "student"
 NOTEBOOKS = (
+    "00_PyCO2SYS.ipynb",
     "01_single_box_air_sea_CO2.ipynb",
     "02_two_layer_ocean_carbon_pump.ipynb",
     "03_boudreau_three_box_model.ipynb",

@@ -3,8 +3,8 @@
 The maintained summary of the implemented core, workload, student tasks and
 optional material is [`TEACHING_GOALS.md`](../TEACHING_GOALS.md). Update that file
 alongside future teaching changes. The 2026-09-16 guided revision targets four
-hours including a provisional 20-minute slot for 00; the unknown external 00
-question set prevents verification of that part of the workload. The pre-revision
+hours including a provisional 20-minute slot for 00. Exercise 9's full question
+set was supplied on 2026-09-17; its eight-part workload still needs a pilot. The pre-revision
 01–04 sources and their dependencies are frozen under
 `archive/2026-09-16_before_guided_revision/`.
 
@@ -20,10 +20,24 @@ A shared configuration should align PyCO2SYS and ESBMTK choices where the exerci
 
 **Learning goal:** Use two carbonate-system inputs and fixed thermodynamic choices to calculate and interpret the remaining seawater carbonate variables.
 
-Notebook 00 answers a separate question set outside this repository. It is unchanged
-by the guided 01–04 revision and must not be shortened or reassessed without an
-explicit request. Its static chemistry examples remain distinct from the coupled
-OA/OAE histories, attribution and feedbacks of 04.
+At the user's explicit request, notebook 00 now supplies student/instructor answer
+sheets for exercise 9 (a–h), increasing atmospheric CO2 and ocean acidification.
+The student sheet supplies only setup, one unrelated TA/DIC usage example and
+documentation links alongside questions and blank answers. The instructor source
+contains reproducible calculations and full interpretations; the shared builder
+removes them from the student copy. The original path is a launcher.
+
+Use the exercise's 15 °C, salinity 35, TA 2100 µmol/kg baseline and unchanged
+`C.chemistry`. Preserve type 9 dry-air xCO2 in ppm, explicitly distinguishing it
+from pCO2 in µatm. Temperature and salinity comparisons fix TA and xCO2 while DIC
+adjusts; do not imply the same sensitivity for a closed sample. Historical CO2
+and the RCP8.5-labelled 935 ppm endpoint are exercise inputs. Include both 15 °C
+and 18 °C future states and alkalinity inversions. Restored aragonite saturation
+is a prescribed target; inferred TA is not evidence for intervention feasibility,
+and small pH sensitivity is not evidence that warming has little ecological effect.
+These static chemistry exercises remain distinct from the coupled OA/OAE
+histories, attribution and feedbacks of 04. Pilot the eight-part workload before
+treating the provisional 20-minute timetable reservation as sufficient.
 
 ## 01 - Diagnose missing alkalinity in a one-ocean-box model
 
@@ -172,7 +186,7 @@ questions into 02 to save time.
 
 The revised 01/02 sequence has a clear progression: **failed model prediction and missing-variable diagnosis (01) -> structural verification -> pump-versus-mixing mechanism -> synthetic forcing check (02)**. It adds dynamic conservation, flux balance, parameter identifiability, and time-to-equilibrium reasoning beyond the lecture's static inventory arithmetic. Its most important boundary is that a calibrated DIC gradient and a carbon addition calculated to restore 280 ppm cannot both be counted as independent validations.
 
-The unchanged 00 chemistry notebook supports a separate question set; keep its
+The 00 chemistry answer sheets support the supplied exercise 9; keep their
 static perturbations distinct from 04's coupled OA/OAE experiments. Notebook 03
 repeats diagram-to-code mapping at greater complexity through scaffolded
 construction and benchmark agreement. Notebook 04 requires matched OA/OAE

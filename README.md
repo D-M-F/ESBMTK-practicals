@@ -3,11 +3,12 @@
 This repository contains a five-notebook learning sequence. The guided 01–04
 core moves from a failed TA-free air–sea model to scaffolded construction of a
 Boudreau-like model, then matched carbon and alkalinity forcing experiments.
-Notebook 00 serves a separate question set and is unchanged.
+Notebook 00 provides student and instructor answer sheets for the supplied
+exercise 9 (a–h), increasing atmospheric CO2 and ocean acidification.
 
 See [TEACHING_GOALS.md](TEACHING_GOALS.md) for the maintained learning goals,
 required/optional tasks and four-hour timetable. The timetable reserves 20 minutes
-for 00's external question set; that allocation needs confirmation through course
+for 00's eight-part question set; that allocation needs confirmation through course
 planning. 01–04 require an estimated 185 minutes of notebook work, plus introduction,
 break and synthesis. Timings need a student pilot.
 
@@ -17,7 +18,7 @@ with checksums. It is a frozen snapshot, separate from active teaching sources.
 
 | Notebook | Main task |
 | --- | --- |
-| [`00_PyCO2SYS.ipynb`](notebooks/00_PyCO2SYS.ipynb) | Calculate carbonate variables from two inputs and illustrate buffering |
+| [`00_PyCO2SYS.ipynb`](notebooks/00_PyCO2SYS.ipynb) | Exercise 9: pH, saturation, CO2/temperature/salinity comparisons and inferred alkalinity |
 | [`01_single_box_air_sea_CO2.ipynb`](notebooks/instructor/01_single_box_air_sea_CO2.ipynb) | Diagnose missing TA, infer it, and verify conservation and equilibrium controls |
 | [`02_two_layer_ocean_carbon_pump.ipynb`](notebooks/instructor/02_two_layer_ocean_carbon_pump.ipynb) | Verify a conservative extension, calibrate an effective pump, and audit a finite carbon signal |
 | [`03_boudreau_three_box_model.ipynb`](notebooks/instructor/03_boudreau_three_box_model.ipynb) | Complete four reservoir/flux mappings and verify the constructed model |
@@ -33,6 +34,14 @@ ocean/atmosphere inventory ratio 62.4 and reference DIC values (about 298.75 m
 surface depth with the defaults). It is labelled as ratio-derived teaching geometry.
 [`simple_models.py`](simple_models.py) provides readable model and budget helpers.
 The native ESBMTK objects remain visible in the construction exercises.
+
+For 00, open the [student answer sheet](notebooks/student/00_PyCO2SYS.ipynb) or
+the [instructor answers](notebooks/instructor/00_PyCO2SYS.ipynb). Students receive
+one unrelated PyCO2SYS usage example, documentation links and blank answers for
+a–h. The exercise uses a 15 °C baseline and dry-air xCO2 in ppm (type 9), with
+unchanged `C.chemistry`; the instructor sheet includes the 18 °C warming case.
+All states are static equilibrium comparisons, and saturation-target TA is an
+inference, not a closed carbon budget or an assessment of reef intervention feasibility.
 
 Notebook 01 begins with TA = 0. Its buffered rerun is a calibration and
 cross-implementation check. Notebook 02 asks students to derive the effective
@@ -148,7 +157,7 @@ stationary restart and matching control before interpreting perturbations.
 
 ## Instructor and student copies
 
-The instructor notebooks for 01–04 and the optional extension are the source of truth. Generate distributable,
+The instructor notebooks for 00–04 and the optional extension are the source of truth. Generate distributable,
 output-free student copies with:
 
 ```powershell
@@ -158,7 +167,7 @@ python scripts/build_student_notebooks.py
 The builder replaces marked code and Markdown solutions with exercise
 placeholders and removes cells tagged `solution-only`. Edit the instructor
 notebooks, not the generated files under `notebooks/student/`.
-The original top-level 01/02 paths are launchers linking to both copies.
+The original top-level 00/01/02 paths are launchers linking to both copies.
 
 ## Environment and verification
 

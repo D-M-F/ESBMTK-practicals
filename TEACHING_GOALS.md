@@ -1,6 +1,6 @@
-# Teaching goals and workload: practicals 01–04
+# Teaching goals and workload: practicals 00–04
 
-Last updated: 2026-09-16. This is the maintained summary of the **implemented**
+Last updated: 2026-09-17. This is the maintained summary of the **implemented**
 student route, required learning outcomes and workload. Update it in the same
 change whenever notebook tasks, scope, prerequisites or timing change. Record
 pending ideas and verification evidence in `WORKPLAN.md`; scientific rationale
@@ -8,17 +8,21 @@ and boundaries remain in `ref/design.md`. Archive snapshots are historical.
 
 ## Scope and time budget
 
-Notebook **00 is unchanged**: it serves a separate question set outside this
-repository. Its content and assessment are not redesigned here. The timetable
-reserves the previously proposed 20 minutes for that work, but its actual workload
-cannot be verified without that question set. If it takes longer, the total grows
-unless teaching time is explicitly reallocated. These are planning estimates,
+Notebook **00 now provides answer sheets for the supplied exercise 9 (a–h)**.
+The student version has one unrelated PyCO2SYS example, documentation links and
+blank calculation/answer cells; the instructor version has full numerical and
+written answers. The eight parts include temperature/salinity comparisons,
+historical CO2, mineral saturation, a high-CO2 endpoint and a saturation-target
+alkalinity calculation. The existing 20-minute slot remains a provisional
+reservation, not a verified estimate for this now-explicit workload. Pilot all
+eight parts; if they take longer, extend the session or explicitly reallocate
+time. No 01–04 work has been removed to make room. These are planning estimates,
 not measured student completion times.
 
 | Activity | Minutes | Required work |
 | --- | ---: | --- |
 | Introduction and environment check | 10 | Identify states, arrows and boundary |
-| 00, separate question set | 20 reserved | Unchanged; externally specified |
+| 00: exercise 9 answer sheet | 20 reserved | Eight chemistry parts (a–h); duration needs a pilot |
 | 01: missing alkalinity | 35 | One input-pair code task; predictions and explanation |
 | 02: layers and effective pump | 55 | Scaffolded connections; two derivations; budget interpretation |
 | Break | 10 | |
@@ -49,6 +53,28 @@ Assess the completed mappings, two 02 derivations with units, and concise
 interpretations. Do not assess plotting syntax, numerical internals or optional
 work. Code hints and supplied examples support the mapping; instructor solutions
 are masked in generated student notebooks.
+
+## 00 — Exercise 9: atmospheric CO2 and ocean acidification (20 minutes reserved)
+
+**Students should be able to:** select two carbonate-system inputs, use the
+PyCO2SYS documentation, calculate seawater-scale pH/DIC/saturation, and interpret
+comparisons under explicit equilibrium constraints. Distinguish a prescribed
+saturation target and inferred TA from an independently predicted intervention.
+
+**Do:** complete parts a–h using the exercise's TA = 2100 µmol/kg, 15 °C and
+salinity 35 baseline; compare 5/25 °C and salinity 32/38, historical CO2 values,
+and the 935 ppm endpoint with and without 3 °C warming. Infer TA to restore
+present aragonite saturation at both 15 and 18 °C. Give short interpretations.
+
+**Supplied:** environment imports, unchanged `C.chemistry`, one TA/DIC example
+with different inputs, and links to parameter and result documentation. Preserve
+the prior dry-air xCO2 convention (type 9); explain its difference from pCO2.
+All answer calculations, numeric tables and interpretations are instructor-only.
+
+**Evidence:** eight calculations/short answers with units and assumptions. These
+are static equilibrium states with DIC allowed to adjust, not a closed carbon
+budget, transient forcing or a reef feasibility assessment. Installation is a
+prerequisite. The 20-minute reservation must be checked against the complete task.
 
 ## 01 — Diagnose missing alkalinity (35 minutes)
 

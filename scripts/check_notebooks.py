@@ -15,8 +15,7 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTEBOOKS = [ROOT / "notebooks/00_PyCO2SYS.ipynb"] + sorted(
-    (ROOT / "notebooks/instructor").glob("0[1-4]_*.ipynb"))
+NOTEBOOKS = sorted((ROOT / "notebooks/instructor").glob("0[0-4]_*.ipynb"))
 
 
 def execute(path):

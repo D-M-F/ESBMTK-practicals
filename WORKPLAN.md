@@ -1,6 +1,6 @@
 # Implementation workplan
 
-`TEACHING_GOALS.md` records the maintained learning goals, workload and required/optional tasks; `ref/design.md` records scientific intent. This file tracks implementation and acceptance checks. The initial items below were implemented and verified on 2026-09-15. The guided four-hour revision and its 2026-09-16 verification are recorded in the final section.
+`TEACHING_GOALS.md` records the maintained learning goals, workload and required/optional tasks; `ref/design.md` records scientific intent. This file tracks implementation and acceptance checks. The initial items below were implemented and verified on 2026-09-15. Subsequent dated sections record the guided revision and follow-up changes.
 
 ## 1. Shared configuration and geometry
 
@@ -197,3 +197,41 @@ the OA overlay, OAE forcing units and horizon sign conventions. Generated copies
 were rechecked after the 03 cross-reference edit. Verified that 00 and all 70
 frozen archive payloads are unchanged. Logs: `tmp/part_ii_tests.log` and
 `tmp/part_ii_notebooks.log`; plots: `tmp/notebook_qa/`.
+
+## Follow-up: exercise 9 answer sheets for 00 (2026-09-17)
+
+The user supplied exercise 9 (a–h) and explicitly requested revision of 00.
+This supersedes earlier instructions to leave 00 unchanged for an unknown
+external question set; the frozen archive remains untouched.
+
+- [x] Add `notebooks/instructor/00_PyCO2SYS.ipynb` as the source for full
+  calculations and written answers. Generate `notebooks/student/00_PyCO2SYS.ipynb`
+  with only setup, one unrelated TA/DIC usage example, documentation links and
+  blank calculation/answer cells for a–h. Make the original 00 path a launcher.
+- [x] Preserve unmodified `C.chemistry` (10/2/1), the existing 15 °C exercise
+  baseline, and dry-air xCO2 input type 9. Explain the ppm/µatm distinction.
+  Include temperature and salinity sensitivities, historical CO2 comparisons,
+  calcite/aragonite saturation, 935 ppm at 15/18 °C and both TA inversions.
+- [x] Distinguish prescribed inputs, conditional equilibrium outputs and inferred
+  TA. Avoid interpreting small pH sensitivity as small ecological or saturation
+  sensitivity. Explain why the saturation target is not independent validation
+  of reef protection, a closed carbon budget or a total alkalinity dose.
+- [x] Include 00 in student generation and default instructor execution. Remove
+  positional 01–04 assumptions from notebook tests and check that 00 retains
+  exactly one worked example while all eight answers remain hidden.
+- [x] Update learning goals, README, scientific design and maintenance guidance.
+  Revisit the now-explicit eight-part workload: the 20-minute slot remains a
+  reservation requiring a pilot, with no claim that all eight parts fit and no
+  reduction of the 01–04 tasks.
+
+Verification in ESBMTK314 / PyCO2SYS 1.8.3.4: instructor 00, generated student 00
+and the launcher execute successfully and validate as notebooks. Present pH is
+7.982009 and aragonite saturation is 1.974696. The inferred TA additions are
+822.350367 µmol/kg at 15 °C and 637.244185 µmol/kg at 18 °C; re-solving with
+TA/xCO2 reproduces the target saturation and inferred-state pH within 1e-8.
+All 20 student-generation and introductory-model tests passed, including carbon/TA
+conservation, geometry and finite forcing checks. After replacing Unicode console
+labels with portable ASCII, all 10 student checks passed again. Logs:
+`tmp/00_notebooks.log`, `tmp/00_tests.log`, `tmp/00_student_tests.log`.
+The user's existing instructor-04 changes were preserved; generation only
+synchronized its student copy's empty cell and JSON field order with that source.

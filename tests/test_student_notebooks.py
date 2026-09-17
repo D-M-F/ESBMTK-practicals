@@ -15,6 +15,28 @@ EXERCISE_NOTEBOOKS = NOTEBOOKS
 
 
 class StudentNotebookTest(unittest.TestCase):
+    def test_00_provides_one_example_and_no_exercise_solutions(self):
+        path = ROOT / "notebooks/student/00_PyCO2SYS.ipynb"
+        notebook = json.loads(path.read_text(encoding="utf-8"))
+        source = "\n".join("".join(c["source"]) for c in notebook["cells"])
+        code = "\n".join("".join(c["source"]) for c in notebook["cells"]
+                         if c["cell_type"] == "code")
+        self.assertEqual(code.count("pyco2.sys("), 1)
+        self.assertIn("par1=2300.0, par1_type=1", code)
+        self.assertIn("par2=2000.0, par2_type=2", code)
+        self.assertIn("**C.chemistry", code)
+        self.assertEqual(source.count("Your explanation"), 8)
+        self.assertEqual(code.count("# Your calculation"), 8)
+        for letter in "abcdefgh":
+            self.assertIn(f"## {letter})", source)
+        self.assertIn("https://pyco2sys.readthedocs.io/en/latest/co2sys_nd/", source)
+        self.assertNotIn("def equilibrium", code)
+        self.assertNotIn("show_state", code)
+        for answer in ("7.982", "1.975", "2922.4", "822.4", "637.2"):
+            self.assertNotIn(answer, source)
+        self.assertFalse(any("solution-only" in c.get("metadata", {}).get("tags", [])
+                             for c in notebook["cells"]))
+
     def test_student_copies_are_masked_and_have_unique_cell_ids(self):
         for name in (*EXERCISE_NOTEBOOKS, *EXTENSION_NOTEBOOKS):
             with self.subTest(notebook=name):
@@ -94,7 +116,9 @@ class StudentNotebookTest(unittest.TestCase):
         self.assertIn('Supplied prerequisites for Part III', source)
 
     def test_03_04_share_excel_inputs_without_hiding_construction(self):
-        for name in EXERCISE_NOTEBOOKS[2:]:
+        for name in EXERCISE_NOTEBOOKS:
+            if not name.startswith(("03_", "04_")):
+                continue
             nb = json.loads((ROOT / 'notebooks/student' / name).read_text(encoding='utf-8'))
             source = '\n'.join(''.join(c['source']) for c in nb['cells'])
             self.assertIn('load_boudreau_parameters(WORKBOOK)', source)
@@ -127,7 +151,8 @@ class StudentNotebookTest(unittest.TestCase):
             nb = json.loads((ROOT / "notebooks" / directory / name).read_text(encoding="utf-8"))
             return "\n".join("".join(c["source"]) for c in nb["cells"])
 
-        n1, n2 = NOTEBOOKS[:2]
+        n1 = "01_single_box_air_sea_CO2.ipynb"
+        n2 = "02_two_layer_ocean_carbon_pump.ipynb"
         one, two = read(n1), read(n2)
         self.assertLess(one.index("FIRST_TA = 0.0"), one.index("reference = pyco2.sys"))
         self.assertIn("not an independent prediction", one)
