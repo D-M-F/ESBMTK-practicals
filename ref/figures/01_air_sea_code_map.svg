@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1080" height="602" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1080 602" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1080" height="602"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-602)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1080" height="602" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="12" y="252" width="1056" height="340" rx="9" ry="9" style="stroke: rgb(37%,45%,50%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="28" y="565" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1130) scale(1,-1)">01: ATMOSPHERE + OCEAN</text>
+			<text x="375" y="565" style="font-family: Courier; font-size: 19px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1130) scale(1,-1)">M = new_model(...)</text>
+			<text x="637" y="565" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1130) scale(1,-1)">clock, units and chemistry choices</text>
+			<rect x="26" y="277" width="298" height="268" rx="9" ry="9" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,96%,96%); fill-rule: evenodd;"/>
+			<text x="40" y="517" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1034) scale(1,-1)">ATMOSPHERE</text>
+			<text x="40" y="491" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,982) scale(1,-1)">GasReservoir(...)</text>
+			<text x="40" y="456" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,912) scale(1,-1)">CO2 state (mole fraction)</text>
+			<text x="40" y="430" style="font-family: Courier; font-size: 19px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,860) scale(1,-1)">M.CO2_At.c</text>
+			<text x="40" y="394" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,788) scale(1,-1)">Atmospheric size (mol air)</text>
+			<text x="40" y="368" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,736) scale(1,-1)">reservoir_mass=...</text>
+			<text x="40" y="332" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,664) scale(1,-1)">Initial CO2</text>
+			<text x="40" y="306" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,612) scale(1,-1)">species_ppm=...</text>
+			<rect x="746" y="277" width="308" height="268" rx="9" ry="9" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,96%,96%); fill-rule: evenodd;"/>
+			<text x="760" y="517" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1034) scale(1,-1)">OCEAN</text>
+			<text x="760" y="492" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,984) scale(1,-1)">initialize_reservoirs(...)</text>
+			<text x="760" y="460" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,920) scale(1,-1)">DIC and TA states (mol/kg)</text>
+			<text x="760" y="436" style="font-family: Courier; font-size: 19px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,872) scale(1,-1)">M.Ocean.DIC.c</text>
+			<text x="760" y="412" style="font-family: Courier; font-size: 19px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,824) scale(1,-1)">M.Ocean.TA.c</text>
+			<text x="760" y="380" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,760) scale(1,-1)">Inputs from box_parameters(...)</text>
+			<text x="760" y="356" style="font-family: Courier; font-size: 16px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,712) scale(1,-1)">'c': initial concentrations</text>
+			<text x="760" y="332" style="font-family: Courier; font-size: 16px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,664) scale(1,-1)">'g': area + volume</text>
+			<text x="760" y="308" style="font-family: Courier; font-size: 16px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,616) scale(1,-1)">'T', 'S', 'P': conditions</text>
+			<text x="351" y="517" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1034) scale(1,-1)">GAS EXCHANGE</text>
+			<text x="351" y="491" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,982) scale(1,-1)">exchange = Species2Species(...)</text>
+			<text x="351" y="460" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,920) scale(1,-1)">source=M.CO2_At</text>
+			<text x="351" y="436" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,872) scale(1,-1)">sink=M.Ocean.DIC</text>
+			<text x="351" y="412" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,824) scale(1,-1)">species=M.CO2</text>
+			<text x="351" y="388" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,776) scale(1,-1)">ctype='gasexchange'</text>
+			<text x="351" y="364" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,728) scale(1,-1)">piston_velocity=...</text>
+			<path d="M 324,332 L 746,332 Z" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 2.5;"/>
+			<polygon points="746 332, 735 337, 735 327" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
+			<polygon points="324 332, 335 327, 335 337" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
+			<text x="352" y="303" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,606) scale(1,-1)">Positive Jgas(t): atmosphere to ocean</text>
+			<text x="352" y="279" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,558) scale(1,-1)">Sign can reverse; carbon is conserved</text>
+			<text x="26" y="225" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,450) scale(1,-1)">Solid = carbon transfer.</text>
+			<text x="26" y="200" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,400) scale(1,-1)">Dashed = information, not material.</text>
+			<rect x="366" y="47" width="688" height="134" rx="9" ry="9" style="stroke: rgb(37%,45%,50%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,96%,96%); fill-rule: evenodd;"/>
+			<text x="382" y="154" style="font-family: Helvetica-Bold; font-size: 19px;fill: rgb(0%,49%,51%); stroke:none;" transform="translate(0,308) scale(1,-1)">CARBONATE CHEMISTRY (supplied calculation)</text>
+			<text x="382" y="127" style="font-family: Courier; font-size: 19px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,254) scale(1,-1)">add_carbonate_system_1([M.Ocean])</text>
+			<text x="382" y="101" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,202) scale(1,-1)">Current DIC, TA + T/S/P determine aqueous CO2.</text>
+			<text x="382" y="71" style="font-family: Courier; font-size: 19px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,142) scale(1,-1)">ref_species=M.Ocean.CO2aq</text>
+			<path d="M 914,277 L 914,251 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<path d="M 914,251 L 1065,251 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<path d="M 1065,251 L 1065,113 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<path d="M 1065,113 L 1054,113 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<polygon points="1054 113, 1065 108, 1065 118" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,49%,51%); fill-rule: evenodd;"/>
+			<path d="M 530,181 L 530,252 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<path d="M 530,252 L 682,252 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<path d="M 682,252 L 682,360 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<polygon points="682 360, 677 349, 687 349" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,49%,51%); fill-rule: evenodd;"/>
+			<text x="27" y="166" style="font-family: Helvetica-Bold; font-size: 19px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,332) scale(1,-1)">One exchanged species</text>
+			<text x="27" y="140" style="font-family: Courier; font-size: 19px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,280) scale(1,-1)">M.CO2</text>
+			<text x="27" y="110" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,220) scale(1,-1)">updates the ocean's DIC state.</text>
+			<text x="27" y="84" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,168) scale(1,-1)">CO2(aq) informs the flux law.</text>
+			<text x="27" y="21" style="font-family: Helvetica; font-size: 19px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,42) scale(1,-1)">Helper connect_atmosphere(...) creates the atmosphere + gas connection shown above.</text>
+		</g>
+	</g>
+</svg>

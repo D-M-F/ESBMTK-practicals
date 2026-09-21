@@ -26,6 +26,41 @@ with checksums. It is a frozen snapshot, separate from active teaching sources.
 
 ## Teaching boundary
 
+### Shared coding reference for students
+
+Keep [From conceptual model to code](ref/modelling_cheatsheet.md) or its
+[two-page printable handout](output/pdf/modelling_cheatsheet.pdf) beside 01–04.
+It maps scientific decisions to ESBMTK objects, traces a separate passive-tracer
+example from diagram to balance to executable code, and explains Python patterns,
+input files, execution order, restarts and budget checks. The worked example is
+optional reference, not another exercise; run it from the repository root in
+ESBMTK314 if useful. It does not contain the 02 derivations or exercise solutions.
+
+The [box-to-code diagram](ref/figures/box_code_map.svg) labels geometry, tracer
+states, initial values, conditions and connection arguments beside their visual
+elements. Its attached legend distinguishes carbonate calculations, species
+coupling and external forcing. Solid arrows carry material; dashed arrows carry
+information. The [01 worked-example diagram](ref/figures/01_air_sea_code_map.svg)
+uses the same conventions and the actual atmosphere/ocean object names. Both are
+also supplied as PNGs for notebook display; 01 embeds its diagram alongside the
+existing construction exercise. These replace textual mappings within the same
+reference/orientation activity, with no extra student task.
+
+Code cells distinguish **Choose and explain**, **Understand and run**, and
+**Supplied implementation**. Labels identify how to use a cell; scientific
+interpretation can still be required when its code is supplied. Students are
+assessed on conceptual mapping and evidence, not memorised ESBMTK syntax.
+Introduce the sheet during 01's existing diagram/worked-example activity;
+the orientation shares its 10-minute allocation and needs a novice-student pilot.
+
+The Markdown owns the handout prose; `scripts/build_coding_diagrams.py` owns the
+diagram layouts and labels. Maintainers can regenerate both diagrams and the PDF with
+`python scripts/build_modelling_cheatsheet.py` using an authoring environment
+with `reportlab`, `pypdf` and Poppler's `pdftoppm` on PATH; these are not student
+prerequisites. The same diagram source produces SVG/PNG assets and vector PDF
+content. The builder requires exactly two pages. Render and visually inspect
+both pages and the notebook diagram after edits.
+
 Notebooks 00–02 use [`teaching_config.py`](teaching_config.py) for shared carbonate
 choices (constants 10, seawater pH scale 2, buffer mode 1). In 01/02, uniform
 16 °C, salinity 35 and 0 bar isolate carbon redistribution. ESBMTK supplies the
@@ -43,8 +78,12 @@ unchanged `C.chemistry`; the instructor sheet includes the 18 °C warming case.
 All states are static equilibrium comparisons, and saturation-target TA is an
 inference, not a closed carbon budget or an assessment of reef intervention feasibility.
 
-Notebook 01 begins with TA = 0. Its buffered rerun is a calibration and
-cross-implementation check. Notebook 02 asks students to derive the effective
+Notebook 01 begins with a fictional verification experiment by a new ESBMTK
+modeller, using idealized saline water with TA = 0. Students critique whether
+correct code and the target-derived total carbon guarantee the reference
+partition, then use budget checks to distinguish implementation from physical
+assumptions. Its buffered rerun is a calibration and cross-implementation check.
+Notebook 02 asks students to derive the effective
 pump coefficient from a first-order export assumption, an observed stationary
 DIC ratio and an independently chosen mixing rate.
 Its atmospheric response is conditional; restoring 280 ppm with the calculated

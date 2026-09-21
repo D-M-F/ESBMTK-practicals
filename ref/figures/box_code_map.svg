@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1080" height="640" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1080 640" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1080" height="640"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-640)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1080" height="640" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="12" y="300" width="1056" height="330" rx="9" ry="9" style="stroke: rgb(37%,45%,50%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="28" y="604" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1208) scale(1,-1)">MODEL CONTAINER</text>
+			<text x="242" y="604" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1208) scale(1,-1)">M = Model(...)</text>
+			<text x="428" y="604" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1208) scale(1,-1)">clock + units + registered objects (not the physical boundary)</text>
+			<rect x="26" y="314" width="330" height="273" rx="9" ry="9" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,96%,96%); fill-rule: evenodd;"/>
+			<text x="40" y="560" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1120) scale(1,-1)">BOX A</text>
+			<text x="129" y="560" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1120) scale(1,-1)">Reservoir -&gt; M.A</text>
+			<text x="40" y="532" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1064) scale(1,-1)">Geometry</text>
+			<text x="40" y="511" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1022) scale(1,-1)">volume=... / geometry=...</text>
+			<text x="40" y="482" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,964) scale(1,-1)">Tracers / evolving states</text>
+			<text x="40" y="461" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,922) scale(1,-1)">M.A.DIC.c, M.A.TA.c</text>
+			<text x="40" y="432" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,864) scale(1,-1)">Initial concentrations</text>
+			<text x="40" y="411" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,822) scale(1,-1)">concentration={M.DIC: ...}</text>
+			<text x="40" y="382" style="font-family: Helvetica; font-size: 15px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,764) scale(1,-1)">Conditions: temperature, salinity, pressure</text>
+			<text x="40" y="361" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,722) scale(1,-1)">seawater_parameters={...}</text>
+			<text x="40" y="330" style="font-family: Helvetica; font-size: 15px;fill: rgb(37%,45%,50%); stroke:none;" transform="translate(0,660) scale(1,-1)">Own geometry, states and starting values</text>
+			<rect x="724" y="314" width="330" height="273" rx="9" ry="9" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,96%,96%); fill-rule: evenodd;"/>
+			<text x="738" y="560" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1120) scale(1,-1)">BOX B</text>
+			<text x="827" y="560" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1120) scale(1,-1)">Reservoir -&gt; M.B</text>
+			<text x="738" y="532" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1064) scale(1,-1)">Geometry</text>
+			<text x="738" y="511" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1022) scale(1,-1)">volume=... / geometry=...</text>
+			<text x="738" y="482" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,964) scale(1,-1)">Tracers / evolving states</text>
+			<text x="738" y="461" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,922) scale(1,-1)">M.B.DIC.c, M.B.TA.c</text>
+			<text x="738" y="432" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,864) scale(1,-1)">Initial concentrations</text>
+			<text x="738" y="411" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,822) scale(1,-1)">concentration={M.DIC: ...}</text>
+			<text x="738" y="382" style="font-family: Helvetica; font-size: 15px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,764) scale(1,-1)">Conditions: temperature, salinity, pressure</text>
+			<text x="738" y="361" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,722) scale(1,-1)">seawater_parameters={...}</text>
+			<text x="738" y="330" style="font-family: Helvetica; font-size: 15px;fill: rgb(37%,45%,50%); stroke:none;" transform="translate(0,660) scale(1,-1)">Own geometry, states and starting values</text>
+			<text x="386" y="557" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1114) scale(1,-1)">CONNECTION / RATE LAW</text>
+			<text x="386" y="530" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1060) scale(1,-1)">Species2Species(...)</text>
+			<text x="386" y="499" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,998) scale(1,-1)">source=M.A.DIC</text>
+			<text x="386" y="475" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,950) scale(1,-1)">sink=M.B.DIC</text>
+			<text x="386" y="445" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,890) scale(1,-1)">ctype=...</text>
+			<text x="386" y="421" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,842) scale(1,-1)">rate=... / scale=...</text>
+			<path d="M 356,392 L 724,392 Z" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 2.5;"/>
+			<polygon points="724 392, 713 397, 713 387" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
+			<text x="376" y="366" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,732) scale(1,-1)">-J(t)</text>
+			<text x="630" y="366" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,732) scale(1,-1)">+J(t)</text>
+			<text x="446" y="366" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,732) scale(1,-1)">mol/time</text>
+			<text x="386" y="333" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,666) scale(1,-1)">Same amount; opposite signs</text>
+			<text x="26" y="275" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,550) scale(1,-1)">Solid arrow = material transfer. Dashed arrow = information used in a calculation.</text>
+			<path d="M 190,314 L 190,298 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<path d="M 190,298 L 13,298 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<path d="M 13,298 L 13,199 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<path d="M 13,199 L 28,199 Z" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 2.5; stroke-dasharray: 7, 5;"/>
+			<polygon points="28 199, 17 204, 17 194" style="stroke: rgb(0%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,49%,51%); fill-rule: evenodd;"/>
+			<text x="26" y="243" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(0%,49%,51%); stroke:none;" transform="translate(0,486) scale(1,-1)">PROCESSES AND CALCULATED QUANTITIES</text>
+			<rect x="26" y="47" width="358" height="183" rx="9" ry="9" style="stroke: rgb(37%,45%,50%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,96%,96%); fill-rule: evenodd;"/>
+			<rect x="399" y="47" width="314" height="183" rx="9" ry="9" style="stroke: rgb(37%,45%,50%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,96%,96%); fill-rule: evenodd;"/>
+			<rect x="728" y="47" width="326" height="183" rx="9" ry="9" style="stroke: rgb(37%,45%,50%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,96%,96%); fill-rule: evenodd;"/>
+			<text x="40" y="201" style="font-family: Helvetica-Bold; font-size: 19px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,402) scale(1,-1)">Carbonate chemistry</text>
+			<text x="40" y="175" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,350) scale(1,-1)">add_carbonate_system_1(...)</text>
+			<text x="40" y="152" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,304) scale(1,-1)">or add_carbonate_system_2(...)</text>
+			<text x="40" y="126" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,252) scale(1,-1)">Uses DIC, TA and T/S/P; computes</text>
+			<text x="40" y="103" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,206) scale(1,-1)">CO2(aq) and chemical diagnostics.</text>
+			<text x="40" y="80" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,160) scale(1,-1)">M.A.CO2aq</text>
+			<text x="40" y="58" style="font-family: Helvetica; font-size: 16px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,116) scale(1,-1)">pH / saturation: diagnostics, not transfers</text>
+			<text x="413" y="201" style="font-family: Helvetica-Bold; font-size: 19px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,402) scale(1,-1)">Species coupling</text>
+			<text x="413" y="175" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,350) scale(1,-1)">Species2Species(...)</text>
+			<text x="413" y="145" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,290) scale(1,-1)">If a process changes different</text>
+			<text x="413" y="122" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,244) scale(1,-1)">species, define the linked fluxes</text>
+			<text x="413" y="99" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,198) scale(1,-1)">and stoichiometric balance.</text>
+			<text x="413" y="65" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,130) scale(1,-1)">Conversion is not automatic.</text>
+			<text x="742" y="201" style="font-family: Helvetica-Bold; font-size: 19px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,402) scale(1,-1)">External forcing</text>
+			<text x="742" y="175" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,350) scale(1,-1)">Source / Sink + connection</text>
+			<text x="742" y="151" style="font-family: Courier; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,302) scale(1,-1)">Signal(...)</text>
+			<text x="742" y="122" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,244) scale(1,-1)">Crosses the physical boundary;</text>
+			<text x="742" y="99" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,198) scale(1,-1)">enters the whole-system budget.</text>
+			<text x="742" y="65" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,130) scale(1,-1)">Signal sets the time variation.</text>
+			<text x="26" y="18" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,36) scale(1,-1)">M.DIC = species definition; M.A.DIC = that species in A; .c = concentration time series.</text>
+		</g>
+	</g>
+</svg>

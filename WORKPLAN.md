@@ -235,3 +235,125 @@ labels with portable ASCII, all 10 student checks passed again. Logs:
 `tmp/00_notebooks.log`, `tmp/00_tests.log`, `tmp/00_student_tests.log`.
 The user's existing instructor-04 changes were preserved; generation only
 synchronized its student copy's empty cell and JSON field order with that source.
+
+## Follow-up: novice-modeller experiment in 01 (2026-09-17)
+
+- [x] Replace the opening with a fictional atmosphere–ocean verification
+  experiment. Present recovery of the two familiar reference values from their
+  combined carbon inventory as the modeller's hypothesis, not a guaranteed result.
+- [x] Use a neutral title and idealized saline-water wording consistent with the
+  supplied seawater chemistry. Keep TA = 0 distinct from the low-DIC numerical seed.
+- [x] Replace the prediction/diagnosis prompt with before/after reflection on
+  inventory versus partition and implementation versus physical adequacy. Place
+  the masked explanation and numerical mismatch assertion after the first run.
+- [x] Retain the existing model, calibrated rerun, comparisons and one coding
+  exercise. Update teaching goals, design and README; retain the provisional
+  35-minute allocation with the revised prompts replacing the existing task.
+
+Verification in ESBMTK314: instructor 01 executes successfully and produces two
+figures; all 10 introductory-model tests pass, including carbon/TA conservation.
+The generated 01 copy matches its source exactly, and student masking, exercise
+counts and scientific-label checks pass. All executable statements are preserved;
+only the mismatch assertion moves to after the diagnosis. The full 10-test
+student suite has one failure: the pre-existing byte-for-byte generation mismatch
+in 00 caused solely by JSON field order. Reproducing generation from HEAD confirms
+that it predates this edit; parsed notebook contents agree. Restored the builder's
+incidental 00 reordering so 00, 02–04 and the frozen archive remain unchanged.
+Logs: `tmp/01_framing_notebook.log`, `tmp/01_framing_model_tests.log` and
+`tmp/01_framing_student_tests.log`.
+
+## Follow-up: shared conceptual-model-to-code reference (2026-09-17)
+
+- [x] Add `ref/modelling_cheatsheet.md` and a two-page printable companion at
+  `output/pdf/modelling_cheatsheet.pdf`. The Markdown is the single source;
+  `scripts/build_modelling_cheatsheet.py` renders it with optional authoring-only
+  ReportLab/pypdf dependencies and checks the page count.
+- [x] Map boxes, states, arrows, boundaries, inputs and diagnostics to code.
+  Include one unrelated, artificial passive-O2 tank transfer with an explicit
+  balance, native ESBMTK constructors and analytical endpoint. Explain mol/L
+  inventory conversion separately from ocean mol/kg and ESBMTK-density conversion.
+  Keep pump/carbon-addition derivations and exercise solutions out of the guide.
+- [x] Explain the recurring Python patterns, input/helper locations, execution
+  order, rebuilding after edits, restart state versus model graph, and checks.
+  Label nonempty student-facing code cells in 01–04 **Choose and explain**,
+  **Understand and run**, or **Supplied implementation**. Supply the common legend
+  and both guide links in each opening. Labels add comments only; executable
+  statements and all exercise/solution markers are preserved.
+- [x] Introduce the reference within 01's existing diagram/worked-example activity.
+  The standalone tracer is optional reference, with no additional assignment,
+  submission or student dependency. Update README, teaching goals and design;
+  explicitly retain the need to pilot this orientation within the planned time.
+- [x] Regenerate only the edited 01–04 student copies using
+  `scripts.build_student_notebooks.py`'s `build_student_notebook` function.
+  Preserve existing worktree changes, notebook 00 and the dated archive.
+
+Verification in ESBMTK314: all four instructor notebooks execute in fresh
+processes with their existing graph, stationarity and conservation checks.
+The standalone tracer conserves its 3 mol inventory at all saved times and
+matches both analytical 1.5 mol endpoints (relative tolerances 1e-9 and 1e-8).
+Of 25 student-generation, introductory-model and teaching-audit tests, 24 pass;
+the sole failure is the previously documented untouched-00 JSON field-order
+mismatch. Confirmed that its parsed generated/current contents agree exactly.
+The 01–04 copies match generation byte-for-byte; links and code labels resolve,
+and AST comparison against the pre-edit worktree confirms unchanged executable
+statements. All protected 00 and archive file hashes match the pre-edit snapshot.
+Rendered and visually inspected both final PDF pages, including code, tables,
+workflow arrows and footers. Logs: `tmp/cheatsheet_tests.log` and
+`tmp/cheatsheet_notebooks.log`. Temporary layout previews were removed after QA.
+
+## Follow-up: visual box-to-code architecture (2026-09-21)
+
+- [x] Replace the cheatsheet's mapping table with a standalone diagram showing
+  reservoir geometry, evolving tracers, initial concentrations and environmental
+  conditions, plus a connection with short native constructor/attribute labels.
+  Distinguish species definitions, box-specific states and concentration series.
+- [x] Attach a smaller legend for carbonate calculations, explicit species
+  coupling and external forcing. Use solid material arrows and dashed information
+  arrows; distinguish the code container from the physical system boundary.
+  Label the generic connection as one internal transfer, not a complete water graph.
+- [x] Replace 01's worked-example mapping table with a matching atmosphere/ocean
+  diagram using actual helper/object names. Identify atmospheric CO2, ocean DIC,
+  and calculated CO2aq separately, with the chemistry-to-gas-law information link.
+  Keep the existing diagram-check questions and marked solutions. Add no new task.
+- [x] Add reproducible diagram source in `scripts/build_coding_diagrams.py` and
+  SVG/PNG assets under `ref/figures/`. The PDF builder regenerates those assets
+  and embeds the same vector drawing in the two-page handout. ReportLab, pypdf
+  and Poppler remain optional authoring dependencies, not student prerequisites.
+- [x] Update README, learning goals and design; regenerate student 01 through
+  the existing student builder. Preserve the other notebooks, archive and existing
+  worktree changes. Orientation remains within the provisional time allocation
+  and still requires a novice-student pilot.
+
+Verification: instructor 01 executes successfully in ESBMTK314 with its existing
+carbon/TA audits and two figures. Of 20 student-generation and introductory-model
+tests, 19 pass; the sole failure remains the untouched-00 JSON field-order
+mismatch, whose parsed contents still agree. Student 01 matches its generated
+source byte-for-byte, image links resolve, and AST comparison confirms unchanged
+executable code. Hashes confirm that every other notebook and all archive files
+are unchanged from this turn's starting worktree. Visually inspected both diagram
+PNGs and both final PDF pages: labels, arrowheads, information links and legends
+are readable without clipping or overlaps. The handout still has exactly two
+pages. Logs: `tmp/diagram_tests.log` and `tmp/diagram_notebook.log`. Temporary
+layout previews were removed after QA.
+
+## Follow-up: physical atmospheric configuration in 01 (2026-09-21)
+
+- [x] Explain the finite, well-mixed atmosphere before `connect_atmosphere`:
+  fixed mole inventory, evolving dry-air CO2 fraction, and carbon inventory.
+  State the initial-partition equation and approximately 16239.87 ppm starting
+  value, distinguishing the 280 ppm reference from an imposed boundary value.
+- [x] State exchange area, piston velocity, seawater thermodynamic settings and
+  the closed carbon budget. Keep executable code and the prediction/diagnosis
+  sequence unchanged. Regenerate student 01 from its instructor source.
+- [x] Align teaching goals and design guidance. This elaborates the existing
+  supplied reading with no additional exercise or prerequisite; the 35-minute
+  allocation remains provisional and its reading load requires a student pilot.
+
+Verification in ESBMTK314: all 10 introductory-model tests pass, including
+carbon/TA conservation and initial-partition comparisons. Nine of 10 student
+tests pass; the sole failure is the previously recorded untouched-00 JSON
+field-order mismatch, with parsed contents confirmed identical. Both edited
+01 notebooks validate and student 01 matches generation byte-for-byte. AST
+comparison confirms unchanged executable code; all other notebooks and archive
+files match their starting hashes. Logs: `tmp/atmosphere_note/model_tests.log`
+and `tmp/atmosphere_note/student_tests.log`.

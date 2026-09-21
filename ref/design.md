@@ -14,6 +14,41 @@ The lecture slides, DeVries review, and ESBMTK paper are in `ref/`. The lectures
 
 Across the sequence, translate each diagram's boxes, state variables, arrows, system boundary, and units into ESBMTK objects and conservation equations. Explain enough for students to understand the supplied code, while marking portions that can be hidden in student copies. Keep teaching hypotheses, calibrations, predictions, and software-consistency checks explicitly distinct.
 
+The student-facing [coding cheatsheet](modelling_cheatsheet.md) and its
+[two-page handout](../output/pdf/modelling_cheatsheet.pdf) make this translation
+explicit across 01–04. The unrelated sealed-tank tracer example links a diagram,
+equal-and-opposite inventory tendencies and native constructors, with a known
+analytical endpoint. It uses mol/L and explicitly distinguishes the ocean's
+mol/kg and ESBMTK-density inventory conversion. The example's fixed selective
+transfer is an artificial assumption, not a water-transport or gas-exchange law.
+
+The reference's box-to-code diagram places short constructor/attribute labels
+beside geometry, evolving tracer states, initial values, environmental conditions
+and connections. `M.DIC`, `M.A.DIC` and `M.A.DIC.c` distinguish a species definition,
+its state in a box and its concentration series. The model container is explicitly
+distinct from the physical system boundary. The main DIC arrow is one illustrative
+internal transfer, not a complete water-flow graph. A minor attached legend covers
+carbonate calculations, explicit species coupling and external forcing without
+providing the core exercises' derivations or process mappings.
+
+Solid arrows represent material transfer and dashed arrows represent information
+used in calculations. In 01's corresponding worked-example diagram, carbonate
+chemistry provides `M.Ocean.CO2aq` to the gas-exchange law; that diagnostic is not
+an extra carbon inventory or transfer. The exchanged species `M.CO2` is distinct
+from the updated ocean state `M.Ocean.DIC`. The diagram replaces the existing
+mapping table in the same diagram-check activity, with no additional submission
+or run; its reading time remains part of the provisional allocation to pilot.
+
+The reference teaches only the Python patterns and architecture needed to read
+the practicals. **Choose and explain**, **Understand and run**, and **Supplied
+implementation** code labels direct attention while keeping scientific choices
+visible. Introduce it within 01's existing diagram/worked-example activity and
+keep it available thereafter; its standalone example is optional reference, not
+another assignment. This orientation shares the planned time and needs a pilot.
+The sheet must not reveal the pump calibration/carbon-addition derivations, solve
+the mapping exercises, or move 03/04 science into 01/02. Syntax is reference
+material; explanation of assumptions, balances and evidence is the learning goal.
+
 A shared configuration should align PyCO2SYS and ESBMTK choices where the exercises are meant to be comparable: for example `opt_k_carbonic=10`, `opt_pH_scale=2`, and `opt_buffers_mode=1`, with T = 16 degC, S = 35, and P = 0 bar for 01/02. Use the box-specific benchmark conditions needed in 03/04; do not silently force the simplified 01/02 conditions onto the Boudreau-like model. For teaching, use ESBMTK's documented objects and connections where feasible. Calculate seawater density from the same T, S, and P with ESBMTK's built-in method rather than separate hard-coded density estimates, and audit inventories in consistent units.
 
 ## 00 - PyCO2SYS foundations
@@ -49,7 +84,18 @@ treating the provisional 20-minute timetable reservation as sufficient.
 
 Supply an example of the one-ocean-box ESBMTK implementation. Define its geometry, initial total carbon, chemistry choices, and fictional starting state explicitly: almost all carbon starts in the atmosphere and only a small positive ocean DIC is retained if needed for numerical stability. The comparison targets are atmospheric xCO2 = 280 ppm and ocean DIC = 2040 umol/kg. This is a thought experiment, not a history of how seawater acquired its alkalinity.
 
-The **first run defaults to TA = 0**. It represents CO2 invading water containing NaCl but lacking the real ocean's background alkalinity. Students should predict, run, and diagnose why gas exchange cannot reproduce both target values: gas exchange moves carbon but does not generate TA. They then use PyCO2SYS with the target DIC and atmospheric xCO2, under the shared conditions, to *infer* the required TA. A second ESBMTK run with that TA is a calibrated cross-implementation and conservation check, not an independent prediction of TA. Briefly distinguish the origin and maintenance of real-ocean TA from this closed-model inference; explicit weathering, carbonate dissolution, and burial are deferred to 03/04.
+Before the atmosphere-connection step, state the physical configuration in the
+notebook: fixed atmospheric size of 1.77e20 mol air, evolving dry-air CO2 mole
+fraction, and initial atmospheric carbon equal to total carbon minus initial
+ocean carbon. Explain the resulting roughly 16240 ppm initial state and distinguish
+the 280 ppm inventory reference from a fixed atmospheric boundary condition.
+Give the exchange area and piston velocity, and identify the shared T/S/P as
+seawater settings. This is supplied explanation within the existing diagram
+activity; retain the provisional workload and pilot requirement.
+
+The **first run defaults to TA = 0**. It represents CO2 invading idealized saline water lacking the real ocean's background alkalinity. The implementation retains seawater chemistry settings, so do not describe its chemical composition as literally pure NaCl. Frame the opening as a new ESBMTK modeller's fictional verification experiment: the modeller expects correct code and a target-derived total carbon inventory to reproduce both familiar reference values. Present that expectation as a hypothesis for students to critique, not a promised outcome. Use the neutral student-facing title "Can gas exchange explain ocean carbon storage?" and defer the diagnosis until after prediction and the first run.
+
+Students distinguish a constraint on the combined carbon inventory from controls on its equilibrium partition. After running, they use the carbon and TA audits to explain why disagreement alone does not demonstrate a coding error: passing budgets supports implementation verification but establishes neither complete code correctness nor physical adequacy. Gas exchange moves carbon but does not generate TA; small initial DIC does not require small TA. They then use PyCO2SYS with the target DIC and atmospheric xCO2, under the shared conditions, to *infer* the required TA. A second ESBMTK run with that TA is a calibrated cross-implementation and conservation check, not an independent prediction of TA. Briefly distinguish the origin and maintenance of real-ocean TA from this closed-model inference; explicit weathering, carbonate dissolution, and burial are deferred to 03/04. The revised before/after prompts replace the existing prediction/diagnosis task within the provisional 35-minute allocation.
 
 Compare at least two initial atmosphere-ocean carbon partitions at the same total carbon and TA. Their paths should differ, but their eventual equilibrium should agree. Change piston velocity to test whether it affects the relaxation time rather than the equilibrium state. Carbon and TA inventory audits, plus agreement between the specified and implemented chemistry/geometry, are the verification criteria. The approximation in section 2.4 of the ESBMTK paper can be noted as a numerical limitation, but it is not the principal learning question here.
 

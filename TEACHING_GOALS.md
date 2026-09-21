@@ -1,6 +1,6 @@
 # Teaching goals and workload: practicals 00–04
 
-Last updated: 2026-09-17. This is the maintained summary of the **implemented**
+Last updated: 2026-09-21. This is the maintained summary of the **implemented**
 student route, required learning outcomes and workload. Update it in the same
 change whenever notebook tasks, scope, prerequisites or timing change. Record
 pending ideas and verification evidence in `WORKPLAN.md`; scientific rationale
@@ -54,6 +54,33 @@ interpretations. Do not assess plotting syntax, numerical internals or optional
 work. Code hints and supplied examples support the mapping; instructor solutions
 are masked in generated student notebooks.
 
+The shared [coding cheatsheet](ref/modelling_cheatsheet.md), also available as a
+[two-page handout](output/pdf/modelling_cheatsheet.pdf), supports the transferable
+skill of tracing a scientific assumption through a code object, balance and check.
+It covers conceptual mapping, one unrelated passive-tracer example, basic Python
+patterns, repository inputs/helpers, execution order and restarts. It supplies
+syntax without exposing the 02 derivations or completing the core mapping tasks.
+Code cells in 01–04 carry three labels: **Choose and explain** (student scientific
+choices), **Understand and run** (supplied steps and their evidence), and
+**Supplied implementation** (supporting machinery). Supplied code may still need
+scientific explanation; assess the mapping and evidence, not API memorisation.
+
+Orient students to the sheet within 01's existing 10-minute diagram/prediction
+and worked-example activity. It remains available throughout 02–04. Reading or
+executing the separate tracer example is optional, with no extra submission or
+required run. This adds reference support within the planned allocation rather
+than a new teaching task or prerequisite; the novice-student pilot must check
+whether that orientation and the existing activities fit. Notebook 00 is unchanged.
+
+The reference now visualizes box geometry, tracer states, initial concentrations,
+conditions and connection arguments with short code labels. An attached process
+legend distinguishes carbonate diagnostics, species coupling and external forcing;
+solid arrows indicate material transfers and dashed arrows indicate information.
+The supplied 01 construction uses the same visual conventions with its actual
+object names. These diagrams replace the corresponding mapping tables within
+the existing reference and diagram-check activity; no extra answer, run or
+prerequisite is added. Keep the provisional allocation and pilot requirement.
+
 ## 00 — Exercise 9: atmospheric CO2 and ocean acidification (20 minutes reserved)
 
 **Students should be able to:** select two carbonate-system inputs, use the
@@ -85,6 +112,13 @@ prerequisite. The 20-minute reservation must be checked against the complete tas
 3. Infer background TA from the two targets and distinguish that fit from prediction.
 4. Distinguish initial partition and exchange rate from equilibrium controls.
 
+The opening casts students as new ESBMTK modellers testing a fictional
+atmosphere–ocean experiment with idealized saline water and TA = 0. They critique
+the expectation that correct code plus the target-derived total carbon must
+recover both reference values. The neutral title defers the diagnosis until
+after prediction and the first run. Budget checks support implementation
+verification; they do not establish physical adequacy or complete code correctness.
+
 **Do:** annotate the supplied construction and explain cancellation of internal
 carbon tendencies; predict and diagnose the TA-free run; select the PyCO2SYS
 DIC/xCO2 input types; interpret supplied partition and piston-velocity comparisons.
@@ -93,8 +127,17 @@ Allocate 10 minutes to diagram/prediction, 15 to diagnosis/inference, and 10 to 
 **Supplied:** model construction, target-derived inventory, thermodynamic settings,
 comparison runs, unit conversions, plots and carbon/TA audits.
 
-**Evidence:** the correct input pair and three sentences on failure, calibration
-and rate versus equilibrium. Real-ocean TA sources are context, not simulated
+Before construction, the worked example states the finite atmospheric size,
+evolving dry-air CO2 fraction, inventory-based initial partition and exchange
+settings explicitly. This elaborates the existing diagram/prediction reading;
+it adds no exercise or prerequisite. Keep the provisional 35-minute allocation
+and check this reading load in the novice-student pilot.
+
+**Evidence:** the correct input pair and three sentences on why the mismatch alone
+does not demonstrate a coding error, calibration, and rate versus equilibrium.
+The revised before/after prompts replace the previous prediction/diagnosis prompt
+within its existing allocation; the 35-minute estimate still needs a pilot.
+Real-ocean TA sources are context, not simulated
 history. No pump attribution, OA/OAE time histories or sediment analysis here.
 
 ## 02 — Conservative extension and effective pump (55 minutes)

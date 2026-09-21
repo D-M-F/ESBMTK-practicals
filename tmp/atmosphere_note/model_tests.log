@@ -1,0 +1,169 @@
+test_calibrated_ratio_and_conditional_atmosphere (test_simple_models.IntroductoryModelTest.test_calibrated_ratio_and_conditional_atmosphere) ... ok
+test_equilibrium_is_independent_of_partition_and_piston_velocity (test_simple_models.IntroductoryModelTest.test_equilibrium_is_independent_of_partition_and_piston_velocity) ... ok
+test_finite_signal_inventory_and_calibrated_return (test_simple_models.IntroductoryModelTest.test_finite_signal_inventory_and_calibrated_return) ... ok
+test_geometry_chemistry_and_implemented_ode_mass (test_simple_models.IntroductoryModelTest.test_geometry_chemistry_and_implemented_ode_mass) ... ok
+test_impossible_inventory_ratios_reject_unphysical_geometry (test_simple_models.IntroductoryModelTest.test_impossible_inventory_ratios_reject_unphysical_geometry) ... ok
+test_internal_mixing_and_pump_have_equal_opposite_inventory_tendencies (test_simple_models.IntroductoryModelTest.test_internal_mixing_and_pump_have_equal_opposite_inventory_tendencies) ... ok
+test_no_pump_extension_preserves_equilibrium_and_both_inventories (test_simple_models.IntroductoryModelTest.test_no_pump_extension_preserves_equilibrium_and_both_inventories) ... ok
+test_ta_free_failure_is_chemical_not_loss_of_carbon (test_simple_models.IntroductoryModelTest.test_ta_free_failure_is_chemical_not_loss_of_carbon) ... ok
+test_transport_identifiability_and_ratio_derived_geometry (test_simple_models.IntroductoryModelTest.test_transport_identifiability_and_ratio_derived_geometry) ... ok
+test_integrates_within_sloping_segments_not_just_at_knots (test_simple_models.SignalIntegralTest.test_integrates_within_sloping_segments_not_just_at_knots) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 9.950s
+
+OK
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.72 CPU seconds, wall time = 0.71 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.61 CPU seconds, wall time = 0.60 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.53 CPU seconds, wall time = 0.54 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.58 CPU seconds, wall time = 0.59 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.58 CPU seconds, wall time = 0.58 seconds
+
+================================================================================
+
+There were 89 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 1.62 CPU seconds, wall time = 1.62 seconds
+
+================================================================================
+
+There were 82 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 1.61 CPU seconds, wall time = 1.62 seconds
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.58 CPU seconds, wall time = 0.58 seconds
+
+================================================================================
+
+There were 12 warnings, check M.log
+
+================================================================================
+
