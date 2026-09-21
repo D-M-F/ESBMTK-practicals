@@ -1,0 +1,2 @@
+NUMPY 2.5.3 C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\numpy\__init__.py
+DELAY_LOAD_FAILURE code=0xc06d007f dll=b'libiomp5md.dll' proc=b'__kmpc_global_thread_num' module='C:\\Users\\19279\\.conda\\envs\\ESBMTK314\\Library\\bin\\libiomp5md.dll' error=127

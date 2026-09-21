@@ -210,6 +210,19 @@ The original top-level 00/01/02 paths are launchers linking to both copies.
 
 ## Environment and verification
 
+Printable student handouts: [uv setup (PDF)](output/pdf/student_setup_uv.pdf)
+and [Anaconda setup (PDF)](output/pdf/student_setup_anaconda.pdf). Each is a
+two-page pilot guide covering first setup, kernel selection, a numerical check
+and subsequent sessions. The uv guide requires instructor-supplied project
+files and a lockfile, which are not yet present in this repository.
+
+Students who already use Anaconda/Miniconda can use the
+[Anaconda setup guide](ref/anaconda_setup.md) and supplied
+[`environment-anaconda.yml`](environment-anaconda.yml). The alternative recipe
+creates a separate `esbmtk-practicals` environment and includes kernel-selection
+instructions. It still needs a fresh-installation pilot; the instructions below
+describe the existing verified instructor environment.
+
 From an Anaconda prompt:
 
 ```powershell
@@ -222,6 +235,23 @@ jupyter lab
 Use the `ESBMTK314` environment's Python 3.14 kernel. The verified model package is
 ESBMTK 0.14.3.1.post0. `run_model()` includes the needed Windows equations-file
 workaround without changing equations or solver settings.
+
+For scripts or a terminal where the environment is not already activated, use
+Conda's environment launcher (with `conda` available on PATH):
+
+```powershell
+conda run -n ESBMTK314 --no-capture-output python -m jupyterlab
+```
+
+Calling the environment's `python.exe` by its full path does **not** activate
+its DLL search paths. On this Windows installation, an unactivated NumPy linear
+solve reproduces error `0xc06d007f` while resolving an OpenMP function through
+`libiomp5md.dll` to `libomp.dll`; the same check and notebook 01's Jupyter
+execution pass under `conda run`. Launch Jupyter from the intended environment
+and select its ESBMTK314 kernel. See the
+[diagnosis and student setup proposal](ref/environment_setup_proposal.md) for
+the evidence and a proposed installation route without Anaconda. That proposal
+has not yet replaced the verified course environment.
 
 Run the tests with:
 

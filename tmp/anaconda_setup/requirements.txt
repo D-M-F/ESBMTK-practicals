@@ -1,0 +1,10 @@
+esbmtk==0.14.3.1.post0
+PyCO2SYS==1.8.3.4
+numpy
+scipy
+matplotlib
+pandas
+gsw
+openpyxl>=3.1,<4
+jupyterlab
+ipykernel

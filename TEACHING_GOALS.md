@@ -38,6 +38,16 @@ fit inside the notebook allocations; no extra report or extension is required.
 Pilot with a student unfamiliar with the code before treating these timings as
 established. Record measured times here after the pilot.
 
+An optional Anaconda installation recipe and student guide now support a
+separate `esbmtk-practicals` environment with the same Python line and pinned
+ESBMTK/PyCO2SYS versions. This recipe still requires fresh-installation and
+cross-platform pilots; ESBMTK314 remains the verified instructor reference.
+Setup and instructor validation happen before class, with no new student
+exercise or change to the practical's provisional timetable.
+Two-page uv and Anaconda PDF handouts under `output/pdf/` support that same
+pre-class setup, kernel selection and numerical check. Both are pilot editions;
+the uv route additionally requires instructor-supplied project files/lockfile.
+
 ## Common method and assessment
 
 Use **predict → map → run → check → explain**. Each notebook identifies required
@@ -48,6 +58,16 @@ Native constructors remain visible wherever reservoir/flux mapping is taught.
 Students should explain one whole-system conservation equation in 01, then read
 supplied time-resolved audits in later notebooks. A successful run alone is not
 evidence that its diagram, budget or scientific interpretation is correct.
+
+Use inputs minus outputs consistently in the 01–03 conceptual budgets: separate
+air–sea invasion/outgassing and downward/upward mixing terms, with each transfer
+leaving one box and entering another. Introduce net fluxes afterward as differences
+of those terms. The effective pump is one directed surface-to-deep transfer.
+Explain that native gas exchange evaluates two directional terms in one connection;
+the software-object count need not equal the conceptual-arrow count. This replaces
+the previous net-first explanations within the existing activities, without new
+exercises or prerequisites. Keep the provisional allocations and pilot the revised
+reading load alongside the other supplied explanations.
 
 Assess the completed mappings, two 02 derivations with units, and concise
 interpretations. Do not assess plotting syntax, numerical internals or optional
@@ -113,7 +133,10 @@ prerequisite. The 20-minute reservation must be checked against the complete tas
 4. Distinguish initial partition and exchange rate from equilibrium controls.
 
 The opening casts students as new ESBMTK modellers testing a fictional
-atmosphere–ocean experiment with idealized saline water and TA = 0. They critique
+atmosphere–ocean experiment. A NaCl solution with a trace of dissolved CO2 gives
+an intuitive picture of nonzero initial DIC with TA = 0; the calculation retains
+its supplied seawater chemistry settings. This replaces the opening explanation
+without adding a task or changing its provisional timing. They critique
 the expectation that correct code plus the target-derived total carbon must
 recover both reference values. The neutral title defers the diagnosis until
 after prediction and the first run. Budget checks support implementation
@@ -129,9 +152,24 @@ comparison runs, unit conversions, plots and carbon/TA audits.
 
 Before construction, the worked example states the finite atmospheric size,
 evolving dry-air CO2 fraction, inventory-based initial partition and exchange
-settings explicitly. This elaborates the existing diagram/prediction reading;
+settings explicitly. The directional gas law shows invasion as solubility times
+atmospheric CO2 and outgassing as a function of ocean aqueous CO2, with a note
+linking the atmospheric term to the code's dry-air mole fraction and conversions.
+This elaborates the existing diagram/prediction reading;
 it adds no exercise or prerequisite. Keep the provisional 35-minute allocation
 and check this reading load in the novice-student pilot.
+
+Introduce the individual `Species2Species` connection here, before calling
+`connect_atmosphere`: a supplied Markdown excerpt shows the helper's actual
+constructor and explains endpoints, `ctype`, exchanged species and diagnostic
+reference. It is reading support for the existing mapping activity, not a new
+coding task. Include this excerpt in the reading-load pilot.
+
+Before its first use, explain that `single_box` packages the construction from
+section 2 and returns a fresh, unrun model. Link its parameter changes to initial
+TA, carbon partition and exchange rate, including the atmospheric adjustment
+that preserves total carbon. This supports the existing rerun/comparison activity;
+it adds no task or prerequisite and shares its provisional reading-time allocation.
 
 **Evidence:** the correct input pair and three sentences on why the mismatch alone
 does not demonstrate a coding error, calibration, and rate versus equilibrium.
@@ -160,6 +198,13 @@ cross-check is instructor-only, not another coding exercise.
 **Supplied:** ratio-derived teaching geometry; Q-to-mass conversion using ESBMTK
 density; constructor templates; all chemistry, restart, signal-integration,
 plotting and time-resolved carbon/TA checks.
+
+A brief reference note at the first bulk-connection example builds on the
+individual `Species2Species` constructor already introduced in 01. It explains
+the wrapper's relationship to `ConnectionProperties`, the `ty`/`ctype`
+mapping, and the choice of direct gas/pump construction. Internal API structure
+is not assessed or a new prerequisite; this supports the existing mapping task
+within the provisional allocation, whose reading load still requires a pilot.
 
 **Evidence:** conservative connections, two derivations with units, and a sentence
 separating a fitted DIC ratio from conditional atmospheric response. Mathematical

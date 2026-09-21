@@ -1,5 +1,95 @@
 # Implementation workplan
 
+## Follow-up: explain the single-box construction helper (2026-09-21)
+
+- [x] Introduce `single_box` immediately before its first use in 01, linking
+  it to the visible section 2 construction and `simple_models.py`. Explain fresh
+  model creation, the separate run step, changed parameters and fixed total
+  carbon when the initial ocean/atmosphere partition changes.
+- [x] Keep this within the existing rerun/comparison reading, with no new task,
+  prerequisite or timing allocation; align teaching/design guidance.
+- [x] Regenerate student 01 and verify notebook validity, unchanged student
+  executable cells, masking/generation and introductory-model conservation.
+  Preserve the existing student-only `M.connection_summary()` cell by copying
+  it into the instructor source at the same point, so regeneration retains it.
+
+Verification: both 01 notebooks validate; the student copy matches generation
+exactly and differs from its starting contents in one Markdown cell only.
+Existing instructor code cells and outputs are preserved, with the student's
+connection-summary cell added to the source. All 10 introductory-model tests
+pass in ESBMTK314; nine of 10 student tests pass, with only the previously
+recorded untouched-00 JSON field-order mismatch. `git diff --check` passes.
+Logs and before-edit snapshots: `tmp/single_box_note/`.
+
+## Follow-up: introduce individual connections before wrappers (2026-09-21)
+
+- [x] Introduce `Species2Species` explicitly in 01 before `connect_atmosphere`.
+  Show the actual constructor as a supplied Markdown reading excerpt and map
+  its helper-local names to notebook objects. Explain endpoints, `ctype`, the
+  exchanged species and aqueous diagnostic before discussing the signed gas law.
+- [x] Reframe 02's bulk-wrapper note as a progression from that individual
+  connection, with a link back to 01. Keep direct pump construction distinct
+  from the gas-specific case. Preserve all executable code and user additions.
+- [x] Align teaching/design guidance and regenerate student 01/02. This is
+  support for the existing mapping task, with no new coding exercise; include
+  the supplied excerpt in the provisional reading-load pilot.
+
+Verification: both instructor/student pairs validate and match generation.
+AST comparison confirms every displayed constructor argument matches the actual
+helper. Code cells and outputs are unchanged, as are all other notebooks and
+archive files. All 10 introductory-model tests pass; nine of 10 student tests
+pass, with only the previously recorded untouched-00 serialization mismatch.
+`git diff --check` passes. Logs: `tmp/flux_budgets/connection_order_model_tests.log`
+and `tmp/flux_budgets/connection_order_student_tests.log`.
+
+## Follow-up: brief connection-wrapper reference in 02 (2026-09-21)
+
+- [x] Add one short reference note before the first bulk-connection exercise:
+  bulk dictionaries create `ConnectionProperties` groups, which create individual
+  `Species2Species` connections; `ty` selects the same law as `ctype`. Explain
+  the direct gas-specific configuration and the direct single pump connection.
+  Do not imply that `Species2Species` is exclusive to gas exchange.
+- [x] Keep internal call-chain knowledge unassessed, with no new exercise or
+  prerequisite. Align teaching/design guidance and retain provisional timing.
+  Regenerate student 02; preserve all code cells, outputs and user additions.
+
+Verification: both 02 notebooks validate and the student copy matches generation
+exactly. All other notebooks/archive files retain their starting hashes. All
+10 introductory-model tests pass; nine of 10 student tests pass, with only the
+previously recorded untouched-00 serialization mismatch. `git diff --check`
+passes. Logs: `tmp/flux_budgets/wrapper_model_tests.log` and
+`tmp/flux_budgets/wrapper_student_tests.log`.
+
+## Follow-up: consistent directional budgets in 01–03 (2026-09-21)
+
+- [x] Use inputs minus outputs as the common conceptual formulation. In 01,
+  show separate atmospheric invasion and ocean outgassing terms, their units,
+  and opposite signs in the two reservoir budgets. Draw two labelled arrows
+  in the coding diagram and explain how one native gas connection evaluates
+  their difference.
+- [x] In 02, retain separate upward/downward mixing terms in the carbon budgets
+  and describe the corresponding TA terms. Show the pump as one directed
+  surface output/deep input; introduce net upward mixing only afterward as
+  shorthand. Keep the stationary k derivation inside the solution block.
+- [x] Align 03's gas-exchange explanation with its general inputs-minus-outputs
+  budget and the notation introduced in 01/02. Preserve all executable cells,
+  outputs and the user's added connection-summary cells. Regenerate student
+  01–03 through the existing builder.
+- [x] Update teaching goals and scientific design guidance. This replaces the
+  net-first explanations without adding exercises or prerequisites; retain
+  provisional timings and pilot the revised reading load.
+
+Verification in ESBMTK314: all 10 introductory-model tests pass, including
+carbon/TA conservation, equal-and-opposite internal tendencies and forcing.
+Nine of 10 student tests pass; the sole failure remains the untouched-00 JSON
+field-order mismatch, whose parsed contents still agree. All edited notebooks
+validate, and generated student 01–03 match their instructor sources exactly.
+Full code-cell/output comparison against the starting worktree confirms no
+executable changes or loss of user additions. All other notebooks and archive
+files retain their starting hashes. Rendered and visually checked the updated
+two-arrow SVG/PNG diagram. Test logs: `tmp/flux_budgets/`; temporary snapshots
+and rendering intermediates were removed after verification.
+
 `TEACHING_GOALS.md` records the maintained learning goals, workload and required/optional tasks; `ref/design.md` records scientific intent. This file tracks implementation and acceptance checks. The initial items below were implemented and verified on 2026-09-15. Subsequent dated sections record the guided revision and follow-up changes.
 
 ## 1. Shared configuration and geometry
@@ -357,3 +447,112 @@ field-order mismatch, with parsed contents confirmed identical. Both edited
 comparison confirms unchanged executable code; all other notebooks and archive
 files match their starting hashes. Logs: `tmp/atmosphere_note/model_tests.log`
 and `tmp/atmosphere_note/student_tests.log`.
+
+## Follow-up: explicit atmospheric invasion term in 01 (2026-09-21)
+
+- [x] Replace the equilibrium aqueous-CO2 label in the invasion term with
+  solubility times atmospheric CO2, following equation 6 of the ESBMTK paper.
+  Explain the distinct atmospheric and ocean dependencies, concentration/flux
+  units, equal-and-opposite transfers and balanced nonzero rates at equilibrium.
+- [x] Map the displayed atmospheric term to the code's dry-air mole fraction
+  through the helper's supplied solubility, scaling and gas-convention corrections.
+  Regenerate student 01 and align teaching goals/design. This replaces supplied
+  reading within the existing provisional allocation, with no new exercise.
+
+Verification in ESBMTK314: all 10 introductory-model tests pass. Nine of 10
+student tests pass; the sole failure remains the untouched-00 JSON field-order
+mismatch, whose parsed contents agree. Both 01 notebooks validate and student 01
+matches generation byte-for-byte. Exactly one instructor Markdown cell changed;
+all executable code, outputs and other cells are unchanged. Other notebooks and
+archive files retain their starting hashes. Jupyter execution encountered a
+DeadKernelError; as a fallback, all seven instructor code cells execute in order
+in a fresh ESBMTK314 process with a noninteractive plotting backend, passing all
+existing assertions and carbon/TA audits. Logs are in `tmp/gas_explanation/`
+(`model_tests.log`, `student_tests.log`, `notebook.log`, `code_execution.log`).
+
+## Follow-up: clarify the initial DIC seed in 01 (2026-09-21)
+
+- [x] Replace the abstract saline-water paragraph with the requested NaCl-solution
+  picture: dissolve a trace of CO2 to supply initial DIC while TA remains zero,
+  place almost all remaining carbon in the atmosphere, then allow gas exchange.
+- [x] Move the distinction between this initialization picture and the supplied
+  seawater chemistry settings to the system-specification section. Preserve the
+  closed boundary and target-derived inventory; add no forcing or code changes.
+- [x] Regenerate student 01 through the existing builder; align teaching goals
+  and design. This replaces wording within the existing task and time allocation.
+
+Verification in ESBMTK314: instructor 01 executes successfully with its carbon/TA
+audits and two figures; all 10 introductory-model tests pass. Both 01 notebooks
+validate and the student copy matches generation byte-for-byte. Executable cells
+are unchanged from this turn's starting worktree. Nine of 10 student tests pass;
+the sole failure remains the previously recorded, untouched-00 JSON field-order
+mismatch. Logs: `tmp/01_nacl_execution.log`, `tmp/01_nacl_model_tests.log` and
+`tmp/01_nacl_student_tests.log`.
+
+## Investigation: Windows native crash and student setup (2026-09-21)
+
+- [x] Reproduce `0xc06d007f` without visible crash dialogs using a small NumPy
+  linear solve. Capture the delay-loaded DLL and missing symbol: `libiomp5md.dll`,
+  `__kmpc_global_thread_num`, Windows error 127. Confirm the DLL export forwards
+  to `libomp.dll`; the latter is absent from the captured failing process.
+- [x] Verify that environment PATH setup and standard `conda run -n ESBMTK314`
+  both resolve the failure. NumPy/SciPy linear solves and GSW/ESBMTK density
+  calculations pass. All seven current instructor 01 cells also execute through
+  the registered ESBMTK314 Jupyter kernel under `conda run`, including audits.
+- [x] Record stale overlapping NumPy metadata (pip 2.5.2, Conda/imported 2.5.3)
+  as a separate reproducibility concern. Do not infer a package reinstall is
+  needed to resolve the demonstrated activation failure.
+- [x] Add the verified environment-aware launcher to README and write
+  `ref/environment_setup_proposal.md`: propose uv, a TOML manifest, pinned Python
+  and a tested lockfile for students without Python, with Pixi and hosted
+  JupyterHub alternatives. This is a proposal; active course prerequisites and
+  notebook code remain unchanged. No global environment or package changes.
+
+Evidence: `tmp/environment_diagnosis/dll_failure.log`,
+`numerical_activated.log`, `conda_run.log` and `conda_jupyter.log`. Temporary
+diagnostic scripts suppress crash dialogs in their own processes and log native
+failures. The README launch clarification and proposal do not alter teaching
+tasks or timing; a clean cross-platform installation pilot is required before
+adopting a new student environment.
+
+## Follow-up: Anaconda alternative for students (2026-09-21)
+
+- [x] Supply `environment-anaconda.yml` and `ref/anaconda_setup.md` for students
+  already using Anaconda/Miniconda. Use a separate `esbmtk-practicals` environment,
+  Python 3.14 and the reference ESBMTK/PyCO2SYS pins. Conda owns Python/pip;
+  pip owns the complete scientific/Jupyter stack to avoid overlapping installs.
+- [x] Document creation, activation, environment-local kernel registration,
+  explicit kernel selection, repeat launches and a small numerical check.
+  Link the alternative from README and the environment proposal; record its
+  pilot status in teaching goals without adding class work or changing timing.
+
+Verification: YAML and all dependency strings validate; pip's dry run with
+`--ignore-installed --only-binary=:all:` resolves the entire package stack for
+Windows/Python 3.14. No packages were installed or existing environments changed.
+The documented linear-solve check passes under activated ESBMTK314. Full fresh
+installation/model verification and macOS pilots remain required; the YAML is
+not a resolved lockfile. Evidence: `tmp/anaconda_setup/pip-resolution.log` and
+`pip-resolution.json`. No notebooks or model code were edited in this change.
+
+## Follow-up: printable student setup handouts (2026-09-21)
+
+- [x] Generate two-page uv and Anaconda student PDFs under `output/pdf/`,
+  with readable terminal commands, OS-specific setup steps, kernel selection,
+  a notebook numerical check, repeat launches and brief troubleshooting.
+- [x] Keep pilot status explicit. The uv handout requires instructor-supplied
+  project files and lockfile; it does not claim those files are already present.
+  Preserve the separate Anaconda recipe and current instructor environment.
+- [x] Add reproducible ReportLab builder `scripts/build_setup_pdfs.py`; link
+  both PDFs from README and describe them as existing pre-class setup support
+  in teaching goals. No new class exercise or timetable change.
+
+Verification: both PDFs have exactly two A4 pages, embedded fonts and clickable
+references. All four Poppler-rendered pages were visually checked for readable
+commands, spacing, margins and unclipped text. The numerical-check code passes
+under `conda run -n ESBMTK314`. PDF text checks and `git diff --check` pass.
+No notebook sources, model code, installed packages or running kernels changed.
+
+Follow-up: revised both setup PDFs to say "Restart JupyterLab after shutting
+it down" and distinguish that operation from opening/creating notebooks inside
+an already-running JupyterLab. Matched the Anaconda Markdown guide. Both PDFs
+remain two pages; all four rendered pages were visually checked after rebuilding.

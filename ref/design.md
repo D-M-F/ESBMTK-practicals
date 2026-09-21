@@ -14,6 +14,31 @@ The lecture slides, DeVries review, and ESBMTK paper are in `ref/`. The lectures
 
 Across the sequence, translate each diagram's boxes, state variables, arrows, system boundary, and units into ESBMTK objects and conservation equations. Explain enough for students to understand the supplied code, while marking portions that can be hidden in student copies. Keep teaching hypotheses, calibrations, predictions, and software-consistency checks explicitly distinct.
 
+Use the common inputs-minus-outputs formulation in 01–03 before combining terms
+into a signed net flux. In 01, show separate invasion/outgassing arrows and their
+equal-and-opposite contributions to atmosphere and ocean inventories. In 02,
+retain both mixing arrows in the surface/deep budgets and introduce net upward
+mixing only as their difference. The effective pump is a single directed transfer,
+an output from the surface and the same input to the deep box, with upward return
+provided separately by mixing. In 03, retain these directional gas terms when
+mapping the general budget to gas exchange. Native gas exchange evaluates both
+terms in one connection; explaining that mapping avoids treating constructor
+choice as a scientific distinction. Keep native code unchanged and preserve the
+masked stationary pump derivation. These explanations replace the net-first
+presentation within the provisional activities; assess their reading load in the pilot.
+
+Introduce `Species2Species` first in 01, before the helper invocation: show a
+supplied reading excerpt of the constructor in `connect_atmosphere`, explain
+the individual state endpoints and `ctype`, and map helper names to notebook
+objects. Keep the excerpt in Markdown so it cannot create a duplicate connection
+during normal execution. In 02, build on that introduction with a brief note:
+`create_bulk_connections` creates `ConnectionProperties` groups, which create
+individual `Species2Species` connections; `ty` selects the same law as `ctype`.
+Explain direct construction by the gas-specific endpoint/parameter requirements
+and the convenience of one pump connection, not by claiming `Species2Species`
+is exclusive to gas exchange. Do not assess the internal call chain or add an
+API-reading task; keep students' attention on endpoints, species and flux laws.
+
 The student-facing [coding cheatsheet](modelling_cheatsheet.md) and its
 [two-page handout](../output/pdf/modelling_cheatsheet.pdf) make this translation
 explicit across 01–04. The unrelated sealed-tank tracer example links a diagram,
@@ -93,11 +118,26 @@ Give the exchange area and piston velocity, and identify the shared T/S/P as
 seawater settings. This is supplied explanation within the existing diagram
 activity; retain the provisional workload and pilot requirement.
 
-The **first run defaults to TA = 0**. It represents CO2 invading idealized saline water lacking the real ocean's background alkalinity. The implementation retains seawater chemistry settings, so do not describe its chemical composition as literally pure NaCl. Frame the opening as a new ESBMTK modeller's fictional verification experiment: the modeller expects correct code and a target-derived total carbon inventory to reproduce both familiar reference values. Present that expectation as a hypothesis for students to critique, not a promised outcome. Use the neutral student-facing title "Can gas exchange explain ocean carbon storage?" and defer the diagnosis until after prediction and the first run.
+In 01's directional gas law, write invasion explicitly as solubility times
+atmospheric CO2 rather than introducing an equilibrium aqueous-CO2 label.
+Explain that, at fixed exchange and solubility settings, invasion is independent
+of ocean DIC/TA; outgassing uses the aqueous CO2 calculated from them. Relate the
+paper's atmospheric notation to the code's dry-air mole fraction through the
+supplied gas-convention and unit conversions. Retain equal-and-opposite transfers
+and nonzero balanced directional rates at equilibrium. This replaces the existing
+explanation without adding an exercise or changing model code.
+
+The **first run defaults to TA = 0**. Introduce the initialization through an idealized picture: start with water containing only dissolved NaCl (TA = 0), then dissolve a trace of CO2 to supply the small initial DIC without changing TA. Say CO2 rather than simply "adding DIC", since bicarbonate/carbonate salt additions can also change TA. Place the remaining carbon in the atmosphere within the same target-derived total inventory; this is initialization, not an extra forcing. In the system-specification section, distinguish that motivating picture from the supplied seawater chemistry used in the calculation. Frame the opening as a new ESBMTK modeller's fictional verification experiment: the modeller expects correct code and a target-derived total carbon inventory to reproduce both familiar reference values. Present that expectation as a hypothesis for students to critique, not a promised outcome. Use the neutral student-facing title "Can gas exchange explain ocean carbon storage?" and defer the diagnosis until after prediction and the first run.
 
 Students distinguish a constraint on the combined carbon inventory from controls on its equilibrium partition. After running, they use the carbon and TA audits to explain why disagreement alone does not demonstrate a coding error: passing budgets supports implementation verification but establishes neither complete code correctness nor physical adequacy. Gas exchange moves carbon but does not generate TA; small initial DIC does not require small TA. They then use PyCO2SYS with the target DIC and atmospheric xCO2, under the shared conditions, to *infer* the required TA. A second ESBMTK run with that TA is a calibrated cross-implementation and conservation check, not an independent prediction of TA. Briefly distinguish the origin and maintenance of real-ocean TA from this closed-model inference; explicit weathering, carbonate dissolution, and burial are deferred to 03/04. The revised before/after prompts replace the existing prediction/diagnosis task within the provisional 35-minute allocation.
 
 Compare at least two initial atmosphere-ocean carbon partitions at the same total carbon and TA. Their paths should differ, but their eventual equilibrium should agree. Change piston velocity to test whether it affects the relaxation time rather than the equilibrium state. Carbon and TA inventory audits, plus agreement between the specified and implemented chemistry/geometry, are the verification criteria. The approximation in section 2.4 of the ESBMTK paper can be noted as a numerical limitation, but it is not the principal learning question here.
+
+Introduce `single_box` before its first use as the supplied helper that repeats
+the visible construction and returns a fresh, unrun model. Explain that changing
+initial ocean DIC adjusts atmospheric carbon to preserve the total inventory,
+and that `run_model` runs the newly created experiment. Keep this a brief reading
+aid within the existing rerun/comparison activity, not another coding task.
 
 For the 35-minute guided core, students explain cancellation of internal fluxes
 and select the PyCO2SYS input pair. Model construction is a worked example;
@@ -132,7 +172,12 @@ for structural extension, pump balance, and synthetic forcing respectively.
 
 ### B. Effective downward pump and an honest calibration
 
-Add one aggregate, DIC-only downward export/remineralization closure. It is not yet a separate solubility, soft-tissue, or carbonate-pump decomposition. Let DIC be measured in mol/kg, Q in m3/time, and rho in kg/m3. At time t,
+Add one aggregate, DIC-only downward export/remineralization closure. It is not yet a separate solubility, soft-tissue, or carbonate-pump decomposition. Let DIC be measured in mol/kg, Q in m3/time, and rho in kg/m3. Start with the two directed mixing fluxes
+
+$$J_{mix,down}(t)=Q\rho DIC_s(t),\qquad J_{mix,up}(t)=Q\rho DIC_d(t).$$
+
+Write deep accumulation as downward mixing plus pump input minus upward mixing
+output. Only then introduce net upward mixing as their difference. At time t,
 
 \[
 J_{\rm mix}(t)=Q\rho\,[DIC_d(t)-DIC_s(t)],\qquad

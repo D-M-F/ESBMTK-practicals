@@ -1,0 +1,11 @@
+C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+RUNNING CELL 1: '# Supplied implementation: run this support code as provided.\nfrom pathlib import Path\nimport sys\nimport numpy as np\nimport matplotlib.pyplot as plt\ni'
+RUNNING CELL 3: "# Understand and run: trace this supplied step and interpret its evidence.\nprint('Shared chemistry:', C.pyco2)\nprint('Ocean volume (m3):', C.ocean_vol"
+RUNNING CELL 5: "# Understand and run: trace this supplied step and interpret its evidence.\nM = new_model(stop='2 kyr', max_timestep='1 yr')\ninitialize_reservoirs(M, {"
+RUNNING CELL 6: 'M.connection_summary()'
+RUNNING CELL 8: "# Understand and run: trace this supplied step and interpret its evidence.\nrun_model(M)\nprint(audit(M))\nprint('TA-free result: xCO2 (ppm), DIC (umol/k"
+RUNNING CELL 11: '# Choose and explain: complete marked choices; surrounding machinery is supplied.\n# Verify the diagnosed mismatch before the calibrated rerun.\nassert '
+RUNNING CELL 13: '# Understand and run: trace this supplied step and interpret its evidence.\npartition = single_box(ta_umol_kg=inferred_ta, initial_dic_umol_kg=1000)\nsl'
+ALL NOTEBOOK CELLS PASSED

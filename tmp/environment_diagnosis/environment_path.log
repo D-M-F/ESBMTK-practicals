@@ -1,0 +1,19 @@
+MODE environment_path; EXIT 0 (0x0)
+IMPORT numpy
+OK numpy C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\numpy\__init__.py
+IMPORT scipy.linalg
+OK scipy.linalg C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\scipy\linalg\__init__.py
+IMPORT matplotlib.pyplot
+OK matplotlib.pyplot C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\matplotlib\pyplot.py
+IMPORT PyCO2SYS
+OK PyCO2SYS C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\PyCO2SYS\__init__.py
+IMPORT esbmtk
+OK esbmtk C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\esbmtk\__init__.py
+IMPORT zmq
+OK zmq C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\zmq\__init__.py
+IMPORT IPython
+OK IPython C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\__init__.py
+IMPORT ipykernel
+OK ipykernel C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\ipykernel\__init__.py
+ALL IMPORTS PASS
+

@@ -1,0 +1,8 @@
+NUMPY 2.5.3 C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\numpy\__init__.py
+numpy solve [1. 1.]
+scipy solve [1. 1.]
+IMPORT GSW
+gsw density 1025.8476221757535
+IMPORT ESBMTK
+esbmtk density 1025.7484950008022
+PASS

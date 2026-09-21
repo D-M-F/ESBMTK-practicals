@@ -1,0 +1,27 @@
+test_00_provides_one_example_and_no_exercise_solutions (test_student_notebooks.StudentNotebookTest.test_00_provides_one_example_and_no_exercise_solutions) ... ok
+test_02_masks_derivations_and_keeps_the_forcing_example_supplied (test_student_notebooks.StudentNotebookTest.test_02_masks_derivations_and_keeps_the_forcing_example_supplied) ... ok
+test_03_04_share_excel_inputs_without_hiding_construction (test_student_notebooks.StudentNotebookTest.test_03_04_share_excel_inputs_without_hiding_construction) ... ok
+test_03_requires_students_to_construct_the_baseline (test_student_notebooks.StudentNotebookTest.test_03_requires_students_to_construct_the_baseline) ... ok
+test_04_keeps_compatibility_implementation_supplied (test_student_notebooks.StudentNotebookTest.test_04_keeps_compatibility_implementation_supplied) ... ok
+test_all_teaching_markdown_uses_dollar_math_delimiters (test_student_notebooks.StudentNotebookTest.test_all_teaching_markdown_uses_dollar_math_delimiters) ... ok
+test_generated_copies_match_instructor_sources (test_student_notebooks.StudentNotebookTest.test_generated_copies_match_instructor_sources) ... 
+  test_generated_copies_match_instructor_sources (test_student_notebooks.StudentNotebookTest.test_generated_copies_match_instructor_sources) (notebook='00_PyCO2SYS.ipynb') ... FAIL
+test_intro_exercises_and_scientific_labels (test_student_notebooks.StudentNotebookTest.test_intro_exercises_and_scientific_labels) ... ok
+test_optional_04_remains_self_contained_and_masked (test_student_notebooks.StudentNotebookTest.test_optional_04_remains_self_contained_and_masked) ... ok
+test_student_copies_are_masked_and_have_unique_cell_ids (test_student_notebooks.StudentNotebookTest.test_student_copies_are_masked_and_have_unique_cell_ids) ... ok
+
+======================================================================
+FAIL: test_generated_copies_match_instructor_sources (test_student_notebooks.StudentNotebookTest.test_generated_copies_match_instructor_sources) (notebook='00_PyCO2SYS.ipynb')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\ALK\TA\BGC\ESBMTK-practicals\tests\test_student_notebooks.py", line 146, in test_generated_copies_match_instructor_sources
+    self.assertEqual(target.read_bytes(),
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+                     (ROOT / "notebooks/student" / name).read_bytes())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'{\r[2951 chars]n   "execution_count": null,\r\n   "id": "00-s[10242 chars]\r\n' != b'{\r[2951 chars]n   "id": "00-setup",\r\n   "metadata": {},\r\[10242 chars]\r\n'
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.140s
+
+FAILED (failures=1)

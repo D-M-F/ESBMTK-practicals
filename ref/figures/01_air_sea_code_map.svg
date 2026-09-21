@@ -41,11 +41,13 @@
 			<text x="351" y="412" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,824) scale(1,-1)">species=M.CO2</text>
 			<text x="351" y="388" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,776) scale(1,-1)">ctype='gasexchange'</text>
 			<text x="351" y="364" style="font-family: Courier; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,728) scale(1,-1)">piston_velocity=...</text>
+			<text x="352" y="342" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,684) scale(1,-1)">Jgas,in(t): atmosphere to ocean</text>
 			<path d="M 324,332 L 746,332 Z" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 2.5;"/>
 			<polygon points="746 332, 735 337, 735 327" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
-			<polygon points="324 332, 335 327, 335 337" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
-			<text x="352" y="303" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,606) scale(1,-1)">Positive Jgas(t): atmosphere to ocean</text>
-			<text x="352" y="279" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,558) scale(1,-1)">Sign can reverse; carbon is conserved</text>
+			<text x="352" y="305" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,610) scale(1,-1)">Jgas,out(t): ocean to atmosphere</text>
+			<path d="M 746,295 L 324,295 Z" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 2.5;"/>
+			<polygon points="324 295, 335 290, 335 300" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
+			<text x="352" y="269" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,538) scale(1,-1)">One connection computes Jin - Jout</text>
 			<text x="26" y="225" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,450) scale(1,-1)">Solid = carbon transfer.</text>
 			<text x="26" y="200" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,400) scale(1,-1)">Dashed = information, not material.</text>
 			<rect x="366" y="47" width="688" height="134" rx="9" ry="9" style="stroke: rgb(37%,45%,50%); stroke-linecap: butt; stroke-width: 1.5; fill: rgb(92%,96%,96%); fill-rule: evenodd;"/>
