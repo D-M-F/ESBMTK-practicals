@@ -1,0 +1,8 @@
+instructor 01: valid; six question panels; 4 answer panels; masking and Markdown checked.
+student 01: valid; six question panels; 0 answer panels; masking and Markdown checked.
+01_single_box_air_sea_CO2.ipynb: generation matches exactly; scientific calculations unchanged after resolving the two law choices.
+instructor 02: valid; six question panels; 5 answer panels; masking and Markdown checked.
+student 02: valid; six question panels; 0 answer panels; masking and Markdown checked.
+02_two_layer_ocean_carbon_pump.ipynb: generation matches exactly; scientific calculations unchanged after resolving the two law choices.
+All other notebooks and dated archive files retain their starting hashes.
+Remaining 00 mismatch consists of its two extra empty instructor cells; neither 00 file was changed.

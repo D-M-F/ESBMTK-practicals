@@ -1,0 +1,191 @@
+PAGE 1
+CO2 system basics recap
+Jack Middelburg
+2026
+
+PAGE 2
+What you should know after this class
+• Have your high school and/or bachelor chemistry refreshed ☺
+• Basic understanding CO2-H2O system
+• Alkalinity
+
+PAGE 3
+Consider H2O
+• H2O  H+ + OH-
+• Equilibrium relation: Kw= [H+] [OH-]
+• Solve 
+• Two unknowns: [H+] [OH-]
+• One relation:  Kw= [H+] [OH-]
+• One degree of freedom: one chosen, the other fixed
+PAGE 4
+Consider CO2-H2O System
+• CO2 (g) + H2O  [ H2CO3(aq)]
+[H2CO3(aq)] = KH· pCO2
+• [H2CO3(aq)] [H+]+[HCO3-(aq)]
+• [HCO3-(aq)] [H+]+[CO32-(aq)]
+K1 =
+H +éë ùû HCO3
+-éë ùû
+H 2CO3[ ]
+=10-6.35
+K2 =
+H +éë ùû CO3
+2-éë ùû
+H CO3
+-éë ùû
+=10-10.33
+PAGE 5
+Dissolved CO2 & H2CO3
+• Dissolved CO2(aq)
+• Gaseous CO2 (g)
+• Carbonic Acid H2CO3(aq)
+• H2CO3(aq) << CO2(aq)
+• CO2 (aq) and H2CO3(aq) cannot be analyzed independently
+• They are therefore lumped and termed CO2* or H2CO3*
+PAGE 6
+How to solve?
+• 5 aqueous species: H2CO3, HCO3-, CO32-, H+, OH-
+• 4 equilibria(mass action laws)
+[H2CO3(aq)] = KH· pCO2 Kw= [H+] [OH-]
+• One additional equation needed: two options
+K1 =
+H +éë ùû HCO3
+-éë ùû
+H2CO3[ ]
+K2 =
+H +éë ùû CO3
+2-éë ùû
+H CO3
+-éë ùû
+PAGE 7
+Two options for closure
+1. Charge balance: positive and negative charge should balance:
+[H+]= [OH-]+ [HCO3-] +2[CO32-]
+2. Proton balance: recipe of water and carbonic acid:
+[H+]= [H+]H2O + [H+]H2CO3
+[H+]= [OH-]+ [HCO3-] +2[CO32-]
+PAGE 8
+What can be measured?
+• pH 
+• pCO2
+• Titration or total alkalinity (TA)
+• Carbonate ion 
+• Dissolved Inorganic Carbon
+– DIC, CT, TCO2, ΣCO2
+– DIC =[H2CO3(aq)] + [HCO3
+-
+(aq)] + [CO3
+2-
+(aq)]
+PAGE 9
+Total Alkalinity
+• In words: Total alkalinity (TA) is the excess of proton acceptors 
+over proton donors with respect to a zero level of protons
+• Let us go back to the charge/proton balance:
+– [H+]= [OH-]+ [HCO3
+-] +2[CO3
+2-]
+• Rearrange:
+– TA = [OH-]+ [HCO3
+-] +2[CO3
+2-]- [H+]
+– Exact definition of alkalinity for this system
+PAGE 10
+Conservative properties
+• When water is mixed then TA, DIC and salinity are conservative 
+and set by mixing ratio
+• pH, pCO2, HCO3- etc are not conservative
+PAGE 11
+Bjerrum plot fresh and seawater
+
+PAGE 12
+From Water to Seawater
+• Ionic strength: 
+– Non-linear effects
+– Concentration to activities
+• Complexation with other ions in solution
+• Two alternatives:
+– Include ionic strength and complexation corrections 
+– Use equilibrium constants (apparent/stoichiometric) specific to seawater 
+(K*) that are a function of temperature, salinity (and pressure)
+• Different pH scales
+PAGE 13
+Stoichiometric constants depend on 
+temperature and salinity
+
+PAGE 14
+Bjerrum plot fresh and seawater
+
+PAGE 15
+pH in seawater
+• Total hydrogen ion scale: pH
+• Other scales, not recommended, but often used:
+– NBS or IUPAC scale
+– SWS (seawater scale which includes HF and HSO4
+-)
+– Always use K* with appropriate pH scale
+• Conversions @ 25oC
+– pH ≈ pHNBS -0.15 & pH ≈ pHsws  +0.01 
+PAGE 16
+Alkalinity in Seawater
+• More complex terms is needed: generally the Dickson 
+definition is used:
+TA = HCO3- + 2CO32- + B(OH)4- + OH- + HPO42-+ 2 PO43- + H3SiO4-+ 2 
+H2SiO42- + NH3 + HS- + 2 S2-
+- H+ - HF – HSO4- - 2 H2SO4 - H3PO4 – HNO2 – HNO3
+• Carbonate alkalinity: [HCO3-] +2[CO32-]
+PAGE 17
+Titration (proton) and 
+Charge Balance Alkalinity
+Dickson’s definition and what is obtained by 
+titration is based on a proton balance
+Biogeochemical processes and calculations 
+are based on charge-balance alkalinity
+They are not exactly the same: there is  
+difference because PO43-, NO3-, NO2-, F-, SO42-
+that are charged at pH 4.5
+PAGE 18
+Solving the system
+• You always need two from the four measurable quantities to 
+solve the system
+– pH and pCO2
+– pH and DIC
+– pH and TA
+– Etc.
+PAGE 19
+How to solve
+• Some combinations can be solved analytically
+• Usually this is done numerically:
+– CO2sys (Excell, Matlab, Phyton)
+– SWCO2
+– Seacarb in R
+– Aquaenv in R
+– CO2calc for iphone
+– …….
+PAGE 20
+pH and DIC
+
+PAGE 21
+Global mean surface water speciation
+• DIC =[H2CO3(aq)] + [HCO3
+-
+(aq)] + [CO3
+2-
+(aq)]
+0.5% 88.6% 10.9%
+• DIC ≈ [HCO3
+-
+(aq)] + [CO3
+2-
+(aq)]
+• TA = [HCO3
+-] +2[CO3
+2-] + others
+76.8% 18.8% 4.4%
+• Alkalinity ≈ Carbonate alkalinity
+PAGE 22
+Temperature, pH and pCO2
+
+PAGE 23
+Salinity, pH and pCO2
+Green and grey swapped, sorry

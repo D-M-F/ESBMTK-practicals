@@ -9,7 +9,7 @@ exercise 9 (a–h), increasing atmospheric CO2 and ocean acidification.
 See [TEACHING_GOALS.md](TEACHING_GOALS.md) for the maintained learning goals,
 required/optional tasks and four-hour timetable. The timetable reserves 20 minutes
 for 00's eight-part question set; that allocation needs confirmation through course
-planning. 01–04 require an estimated 185 minutes of notebook work, plus introduction,
+planning. 01–04 require an estimated 190 minutes of notebook work, plus introduction,
 break and synthesis. Timings need a student pilot.
 
 The [pre-revision archive](archive/2026-09-16_before_guided_revision/ARCHIVE.md)
@@ -74,7 +74,7 @@ For 00, open the [student answer sheet](notebooks/student/00_PyCO2SYS.ipynb) or
 the [instructor answers](notebooks/instructor/00_PyCO2SYS.ipynb). Students receive
 one unrelated PyCO2SYS usage example, documentation links and blank answers for
 a–h. The exercise uses a 15 °C baseline and dry-air xCO2 in ppm (type 9), with
-unchanged `C.chemistry`; the instructor sheet includes the 18 °C warming case.
+unchanged `config.chemistry`; the instructor sheet includes the 18 °C warming case.
 All states are static equilibrium comparisons, and saturation-target TA is an
 inference, not a closed carbon budget or an assessment of reef intervention feasibility.
 
@@ -90,8 +90,17 @@ Its atmospheric response is conditional; restoring 280 ppm with the calculated
 carbon addition from 62.4 and the actual baseline inventory is a forcing/conservation check, not independent pump
 validation. Distinct-pump attribution, OA/OAE science and sediments remain in 03/04.
 
-Notebook 01 supplies construction and comparison code; students select the chemistry
-input pair and explain the missing TA and rate/equilibrium distinction. Notebook 02
+Notebooks 00–02 import the shared teaching configuration as `config`, keeping
+its code name distinct from carbon-inventory notation such as $C_0$.
+
+Notebook 01 supplies construction and comparison code; students reuse their 00
+skills to write a fully masked TA calculation from the two reference targets,
+then complete a forward DIC/TA-to-pCO2 call in a supplied loop. They use the
+curves and a supplied atmospheric conservation line to explain carbon uptake
+before testing the revised model. Construction, plotting and conversions are
+supplied; scientific choices and interpretation remain student work. The
+provisional 40-minute route takes five minutes from the completion buffer and
+still needs a student pilot. Notebook 02
 provides constructor templates while retaining student-derived pump strength and
 carbon addition. Plotting and numerical audits are supplied throughout.
 
@@ -208,13 +217,27 @@ placeholders and removes cells tagged `solution-only`. Edit the instructor
 notebooks, not the generated files under `notebooks/student/`.
 The original top-level 00/01/02 paths are launchers linking to both copies.
 
+Core 00–04 use pale-gold key terms, blue question panels and purple written
+instructor-answer panels. The [notebook reading-cue guide](ref/notebook_readability.md)
+documents the markup and masking rules for lecturers and maintainers; `AGENTS.md`
+requires future edits to preserve this convention.
+
 ## Environment and verification
 
 Printable student handouts: [uv setup (PDF)](output/pdf/student_setup_uv.pdf)
-and [Anaconda setup (PDF)](output/pdf/student_setup_anaconda.pdf). Each is a
-two-page pilot guide covering first setup, kernel selection, a numerical check
-and subsequent sessions. The uv guide requires instructor-supplied project
-files and a lockfile, which are not yet present in this repository.
+and [Anaconda setup (PDF)](output/pdf/student_setup_anaconda.pdf). The three-page
+[uv guide](ref/uv_setup.md) explains terminals, folder paths, installation,
+success checks, opening notebooks, shutdown and subsequent launches. Supply the
+complete extracted course folder, including [`pyproject.toml`](pyproject.toml),
+[`uv.lock`](uv.lock), [`.python-version`](.python-version), scripts and data;
+students do not generate these files themselves. uv downloads its own Python,
+so no existing Python or Anaconda installation is required.
+
+The locked uv environment was installed from scratch on Windows with managed
+Python 3.14.7. Numerical/chemistry/workbook/plot checks, all five core instructor
+notebooks and a JupyterLab launch/kernel/shutdown/relaunch cycle pass. macOS and
+Linux still need an instructor pilot. The three-page Anaconda guide remains a
+separate pilot recipe. ESBMTK314 remains the instructor reference environment.
 
 Students who already use Anaconda/Miniconda can use the
 [Anaconda setup guide](ref/anaconda_setup.md) and supplied
@@ -249,9 +272,8 @@ solve reproduces error `0xc06d007f` while resolving an OpenMP function through
 `libiomp5md.dll` to `libomp.dll`; the same check and notebook 01's Jupyter
 execution pass under `conda run`. Launch Jupyter from the intended environment
 and select its ESBMTK314 kernel. See the
-[diagnosis and student setup proposal](ref/environment_setup_proposal.md) for
-the evidence and a proposed installation route without Anaconda. That proposal
-has not yet replaced the verified course environment.
+[environment diagnosis and setup status](ref/environment_setup_proposal.md)
+for the evidence and the separately tested uv route without Anaconda.
 
 Run the tests with:
 
@@ -269,8 +291,9 @@ The notebook checker executes core 00–04 instructor code cells in fresh proces
 and saves plots under `tmp/notebook_qa/` without
 adding outputs to teaching sources. Tests cover 01/02 carbon and TA inventories,
 implemented reservoir masses, no-pump equivalence, fitted-ratio labelling, signal
-integration and the calibrated return. Run in the activated Conda environment:
-its `Library/bin` must be on `PATH` on Windows for numerical-library DLLs.
+integration and the calibrated return. Run in the activated Conda environment
+(its `Library/bin` must be on `PATH` on Windows for numerical-library DLLs),
+or prefix each command with `uv run --locked` for the supplied uv environment.
 Use `python scripts/check_notebooks.py --include-extensions` to also verify the
 optional attribution/feedback notebook. Active build/check defaults never traverse
 the archive. Update `TEACHING_GOALS.md` whenever later teaching changes alter

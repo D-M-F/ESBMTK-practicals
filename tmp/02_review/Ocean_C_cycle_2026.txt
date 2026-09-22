@@ -1,0 +1,848 @@
+PAGE 1
+Ocean carbon cycle:
+Past, Present and Future
+Jack Middelburg
+2026
+PAGE 2
+What you should know after this class
+• Long-term carbon cycle
+• Global and ocean carbon balance
+• Carbon pumps to ocean interior
+• Our carbon perturbation
+• Long-term fate of anthropogenic carbon dioxide
+• Ocean acidification
+
+PAGE 3
+Weathering on continents and mineral formation in ocean
+
+PAGE 4
+Long-term C cycle
+• Weathering on land balanced by carbonate precipitation 
+in ocean:
+– CaSiO3 + CO2 ➔ CaCO3 + SiO2
+• Rivers transport Ca2+ and HCO3
+-
+• CaCO3 precipitates in surface water:
+– Ca2+ + 2 HCO3
+-   ➔   CaCO3(s) + CO2 + H2O
+– Precipitation releases CO2
+• Precipitation is biologically controlled
+Pteropods
+Coccolithophorids
+Foraminifera
+PAGE 5
+Carbonate minerals in the sea are produced by 
+organisms: animals, algae, microbes…
+
+PAGE 6
+Major Calcifiers
+• Open ocean:
+– Coccolithophores (calcite)
+– Foraminifera (calcite, few 
+aragonite)
+– Pteropods (aragonite)
+– Deep-sea corals (aragonite)
+– Fish (high Mg-calcite)
+• Coastal ocean:
+– Corals (aragonite)
+– Bivalves (calcite, few aragonite)
+– Coralline Algae
+– Epiphytes on macrophytes
+– …….
+PAGE 7
+Solubility of CaCO3
+• Equilibrium reaction: Ca2+ + CO32-  CaCO3 (s) 
+ 
+• Solubility product in seawater: Ksp= ([Ca2+]sat[CO32-]sat)
+Degree of saturation of seawater
+– Ω = ([Ca2+][CO3
+2-])/Ksp
+– Ω < 1: dissolution, Ω > 1 precipitation possible
+PAGE 8
+Solubility product is not constant
+• Solubility product in seawater: Ksp= ([Ca2+]sat[CO32-]sat)
+• Solubility product depends on environmental factors such as:
+–  Salinity (more soluble in seawater than freshwater)
+– Temperature (colder more soluble, higher Ksp)
+– Pressure (higher more soluble, higher Ksp)
+– Mineral form (Calcite vs. Aragonite)
+PAGE 9
+Saturation of CaCO3 decreases with water depth
+• Higher Ksp because of low T and high P
+• Calcium concentration rather uniform with depth at about 10 
+mM (or 400 ppm)
+• Carbonate ion concentration decreases with depth because of 
+organic matter breakdown (oxidation) releasing CO 2
+
+PAGE 10
+Saturation (omega) decreases with depth
+
+PAGE 11
+Saturation Horizon and CCD
+Saturation horizon: set by mineral and carbonate chemistry (S,T, P, ..) 
+Carbonate compensation depth (CCD) : depth where downward flux of carbonate 
+particles is balanced by dissolution rate
+Lysocline: zone between saturation horizon and CCD
+Snow line: depth where no carbonate is found in sediment
+
+PAGE 12
+Dissolution occurs at all depths
+Sulpis et al. 2021
+PAGE 13
+Shallow Dissolution
+• High Mg-calcite (e.g. fish) and 
+aragonite undersaturated
+• Respiration of organic matter 
+releases carbon dioxide that 
+causes local undersaturation in 
+fecal pellets and sinking particles.
+• Dissolution in coastal and ocean 
+margin sediments due to carbon 
+dioxide production (OM) and re-
+oxidation (strong acids)
+• Zooplankton grazing
+Dean et al. 2024
+PAGE 14
+Carbonates at seafloor
+Calcium carbonate in Atlantic Ocean, but little if any in North 
+Pacific Ocean due to dissolution (corrosive waters because of 
+accumulated respiration derived CO2)
+PAGE 15
+The Global Carbon Cycle currency
+• 1 Pg (Petagram) = 1015 gr
+• 1 Pg = 1 Gt (Gigaton)
+• 1 Pg = 100,000 swimming pools 
+(100*50*2 m)
+Global Carbon units:
+• 2.124 ppm CO2
+• 1 Pg C (1015 g)
+• 1 Gt C
+• 3.66 Pg CO2
+• 83.33 Tmol C
+PAGE 16
+Ocean Carbon Stocks
+Lesplandy et al. 2026
+PAGE 17
+Contemporary Carbon Cycle (2020)
+
+PAGE 18
+A simple box model for global C cycle
+Catm=Matm x pCO2,air
+Coce=Moce x DIC
+Atmosphere
+Ocean
+F= DIC/pCO2,sw
+F is the seawater equilibrium 
+carbon capacity
+(de Vries, 2022 AnRev)
+PAGE 19
+Distribution C among atmosphere and well-mixed ocean
+These can be re-arranged to:
+Where 
+𝑀𝑜𝑐𝑒
+𝑀𝑎𝑡𝑚
+ is 7.8 kg seawater/mol air
+Catm=Matm x pCO2,air
+Coce=Moce x DIC 𝐶𝑜𝑐𝑒
+𝐶𝑎𝑡𝑚
+= 𝐹 𝑀𝑜𝑐𝑒
+𝑀𝑎𝑡𝑚
+The two-box model is based on three equations:
+• For the atmosphere: Catm=Matm x pCO2,air
+• For the ocean: Coce=Moce x DIC
+• Equilibrium partitioning: F= DIC/pCO2,sw
+Pre-industrial Earth with pCO2 of 280 ppm 
+has an F value of 7.3, hence 
+𝐶𝑜𝑐𝑒
+𝐶𝑎𝑡𝑚
+ is predicted to 
+be 57 (7.3*7.8) rather than expected 62.4 
+(37100/595) from observations.
+Quite ok, but some space for improvement!
+PAGE 20
+Low DIC 
+High DIC 
+This gradient in dissolved 
+inorganic carbon is maintained 
+by carbon pumps 
+• Physical-chemical pump
+• Soft-tissue or Biological 
+pump
+• Carbonate (counter) pump
+Distribution of inorganic Carbon
+PAGE 21
+Distribution C among atmosphere and two-layer ocean
+This model is again based on three equations:
+• For the atmosphere: Catm=Matm x pCO2,air
+• For the ocean: Coce=Moce,s x DICs + Moce,d x DICd 
+• Equilibrium partitioning: F= DIC/pCO2,sw
+Pre-industrial Earth with pCO2 of 280 ppm 
+would then have a 
+𝐶𝑜𝑐𝑒
+𝐶𝑎𝑡𝑚
+ ratio of 62, very close to 
+the observed 62.4 (37100/595)
+Carbon pumps enhance ocean DIC by 10% and 
+reduce atmospheric CO2 by a factor of 2.
+Catm=Matm x pCO2,air
+Coce,s=Moce,s x DICs
+Coce,d=Moce,d x DICd
+The equilibrium partitioning equation then becomes:
+Which can be simplified because Moce,s << Moce,d
+𝐶𝑜𝑐𝑒
+𝐶𝑎𝑡𝑚
+= 𝐹 𝑀𝑜𝑐𝑒,𝑠
+𝑀𝑎𝑡𝑚
++ 𝐷𝐼𝐶𝑑
+𝐷𝐼𝐶𝑠
+𝑀𝑜𝑐𝑒,𝑑
+𝑀𝑎𝑡𝑚
+𝐶𝑜𝑐𝑒
+𝐶𝑎𝑡𝑚
+= 𝐹 𝐷𝐼𝐶𝑑
+𝐷𝐼𝐶𝑠
+𝑀𝑜𝑐𝑒,𝑑
+𝑀𝑎𝑡𝑚
+PAGE 22
+Biological and Physical Pumps
+
+PAGE 23
+Physical (Chemical) Pump
+• Water cooling (e.g. Gulf 
+Stream from low-latitude 
+to high-latitude) results in 
+low pCO2
+• Atmospheric CO2 can 
+invade seawater
+• Underlying mechanisms:
+• CO2 invades cold water 
+because of chemistry
+• Cold water sinks because 
+of high density (physics)
+
+PAGE 24
+Physical pump: major role high-latitude ocean
+Equilibrium gas exchange
+Realistic gas 
+exchange
+PAGE 25
+Soft-tissue and Carbonate pumps
+Soft-tissue/Biological pump
+• Utilisation of CO2 by primary 
+production in the biologically 
+active surface waters 
+• C is transported downward in 
+the form of organics
+• The enrichment of CO2 from 
+deep water through 
+decomposition of detritus 
+originating from biological 
+processes in surface waters
+Carbonate pump
+• Formation of CaCO3 skeletons 
+in the biologically active surface 
+waters 
+• Dissolution of skeletons in 
+undersaturated waters that have 
+settled down from biological 
+processes in surface waters 
+release in DIC and Alkalinity
+PAGE 26
+Biological pump
+
+PAGE 27
+Biological Pump
+
+PAGE 28
+Ocean Carbon Pumps (including coastal)
+Lesplandy et al. 2026
+PAGE 29
+Carbonate Pump
+PAGE 30
+Contribution of the pumps
+PAGE 31
+Biological Pump in a Changing Climate
+• At steady-state: Gains and 
+Losses of ocean interior DIC 
+balance
+• Climate change induced 
+enhanced stratification lowers 
+export flux.
+• A decrease in export flux does not 
+imply a less efficient biological 
+carbon pump because 
+circulations slows down as well. 
+The loss decreases more than 
+the gains so that more DIC 
+accumulates in ocean
+Frenger et al., 2023
+PAGE 32
+Svante Arrhenius: Grandfather of climate change
+On the influence of carbonic acid in the air 
+upon the temperature on the ground 
+(Arrhenius, 1896)
+PAGE 33
+Roger Revelle & Hans Suess: Irreversible experiment
+The increase of atm. CO 2 from this cause is 
+small at present  but may become significant 
+during future decades [].
+Present data [] are inadequate for accurate 
+measurement of future changes in atm. CO 2. An 
+opportunity exists during the IGY [].
+PAGE 34
+Atmospheric CO2: 1958-1960
+Keeling detected an increase in atmospheric CO2 within two years
+ppm = parts per million; in other words 300 molecules CO 2 out of 1,000,000 molecules
+Keeling (1960)
+PAGE 35
+Increase in carbon dioxide from prehistoric 280 to 430 
+ppm now
+
+PAGE 36
+1.1 Pg C y-1
++
+9.7 Pg C y-1
+Atmosphere
+5.2 GtC/yr
+48%
+Land
+3.2 GtC/yr
+29%
+Oceans
+3.2 GtC/yr
+26%
+Fate of Anthropogenic CO 2 Emissions (2014-2023) Friedlingstein et al. 2024
+(10%)
+(90%)
+PAGE 37
+Cumulative budget from 1850 onwards
+Global Carbon project numbers from Friedlingstein et al. (2024)
+
+PAGE 38
+Recent Change: Source and Country?
+Bunkers = international shipping and aviation
+PAGE 39
+Lesplandy et al. 2026
+Pre-industrial ocean was a 
+source of carbon (to 
+compensate for river C input)
+Modern ocean is a sink 
+(because of atmospheric CO2 
+increase)
+PAGE 40
+Oceans, CO2 and climate
+• Airborne fraction is 48%: cause of CO 2 problem
+• Ocean store about 38000 Pg C vs. 860 Pg C in atmosphere
+• Oceans store about 31% of C emitted by humans (fossil fuel 
+and cement)
+• This CO2 storage service of the ocean comes at a price: Ocean 
+Acidification: the other CO2 problem
+PAGE 41
+Why is there so much CO2 in ocean?
+• The ocean has a large surface area for exchange (361,900,000 
+km2)
+• And a large volume to store (1,335,000,000 km 3)
+– Increase in DIC from 1994-2007 is 5-10 µmol kg-1 against 
+background of about 2000 µmol kg-1 (< 0.5%).
+• CO2 reacts with H2O to form carbonic acid (H 2CO3), a weak 
+acid
+PAGE 42
+When CO2 dissolves…it becomes an ion that cannot exchange
+Carbonic Acid (H2CO3)
+Bicarbonate (HCO3
+-)
+Carbonate (CO3
+2-)
+Dissolved Inorganic Carbon (DIC or CT)
+=
++
++
+PAGE 43
+pH and DIC as function pCO2
+• Doubling of atmospheric 
+CO2 from 280 to 560 
+would give 0.51*280= 
+143 µmol kg-1 increase 
+in DIC
+• Relative to background 
+of 2100 µmol kg-1 this 
+corresponds to 6.8 % 
+increase in DIC.
+PAGE 44
+Revelle Sensitivity Factor
+• Given [HCO3-] >> [CO32-] >> [H2CO3*], the majority of the 
+CO2 taken up from the atmosphere will not stay as [H 2CO3*], 
+but react with [CO32-] :
+  H2CO3* + CO32-  =  2 HCO3–
+• The (in)efficiency with which this occurs is termed the Revelle 
+factor, i.e.   
+• R is high then low efficiency; low R high efficiency
+
+PAGE 45
+Revelle Sensitivity Factor
+H2CO3* + CO32-  =  2 HCO3–
+Efficiency/Buffering
+PAGE 46
+Revelle and increasing CO2
+• R =15 or 10
+• Doubling of CO2 (∂pCO2/pCO2 )= 1; e.g. (560-280/(280)
+• ∂DIC/DIC =  1/15 or 1/10 = 0.066 or 0.1
+• Doubling pCO2 leads to 6.6 or 10 % increase in DIC
+(same result as our simple two box model and linear approximation)
+
+PAGE 47
+Anthropogenic carbon in the ocean
+• Carbon in the ocean participates in multiple processes (biological, chemical, organic/inorganic).
+• Anthropogenic carbon is not a directly measurable quantity. It can only be estimated 
+indirectly and is due to physical-chemistry and increasing atmospheric carbon dioxide.
+• The anthropogenic signal in the ocean is only a few percent of the (unknown) natural 
+background of dissolved inorganic carbon (DIC).
+
+PAGE 48
+Anthropogenic carbon in the ocean
+• 90% of DIC in ocean is chemical equilibrium ocean/atmosphere
+• 10% of DIC is due to biological pump
+• Anthropogenic DIC (Cant) is very small addition due to increase in 
+atmospheric carbon dioxide.
+• Important to distinguish between (1) DIC natural, (2) climate change 
+induced DIC changes and (3) anthropogenic DIC.  
+
+PAGE 49
+How to quantify Cant
+• Cant method:
+– 𝐶𝑎𝑛𝑡 = 𝐷𝐼𝐶 − 117 × 𝑃𝑂4
+3− − 0.5 𝑇𝐴 + 16 × 𝑃𝑂4
+3− − 𝐷𝐼𝐶𝑝𝑟𝑒−𝑖𝑛𝑑.
+0
+– This removes changes in DIC due to organic matter 
+production/consumption and calcite production/dissolution
+– This term represents the DIC of subducting water in pre-industrial 
+times and is calculated from T, S, TA,..
+• Time series of C* 
+– 𝐶∗ = 𝐷𝐼𝐶 − 117 × 𝑃𝑂4
+3− − 0.5 𝑇𝐴 + 16 × 𝑃𝑂4
+3−
+PAGE 50
+Anthropogenic C accumulation in Ocean
+Gruber et al. (2019, Science)
+Gruber et al. (2023,Nature Reviews E&E)
+PAGE 51
+Anthropogenic C accumulation in Ocean
+(de Vries, 2022 AnRev)
+PAGE 52
+Ocean’s Anthropogenic Carbon Uptake
+Global Ocean Biogeochemical Models
+• Physical model to simulate ocean circulation, 
+heat and moisture exchange
+• Biogeochemical model to simulate cycles of 
+carbon (organic/inorganic) and a few nutrients
+• Changing atmospheric conditions (Carbon 
+Dioxide)
+Air-Sea Exchange
+• Global observations on CO2 exchange over 
+ocean surface (fCO2-products)
+• Corrections needed for river input of carbon 
+minus sediment carbon burial (0.65 Gt C yr-1).
+
+PAGE 53
+What is the rate limiting step?
+This requires some understanding of the timescales associated with 
+these two processes.... 
+
+PAGE 54
+Gas Exchange
+Gas exchange rate = FluxDiffusion + BubbleFlux
+FluxDiffusion = k (pGASwat – pGASair) 
+where k = f(wind speed, turbulence)
+PAGE 55
+Williams_Fig. 6.13
+
+PAGE 56
+Gas Exchange
+
+PAGE 57
+Bubble injection
+
+PAGE 58
+Carbon dioxide exchange
+
+PAGE 59
+Gas-exchange: How fast is equilibrium established?
+Characteristic time-scale for CO2
+CO2 = 
+kw
+h
+∂[H2CO3*]
+∂DIC · ≈  20· a a : exchange time -scale of a   
+           “normal” gas 
+CO2 ≈ 20 ·
+buffering
+≈  20 ·
+kw
+h
+0.2 m h-1
+50 m
+≈  20 · 250 h ≈ 210 days
+Characteristic time-scale for other gases
+a =        ≈ 250 h ≈ 10 days 
+kw
+h
+210 days is short relative to ant. perturbation: 
+            gas-exchange is generally NOT limiting ant. CO2 uptake
+h : depth of surface mixed layer
+kw: gas exchange velocity 
+DIC
+Volume: V
+Surface area: A
+Height: h
+PAGE 60
+Ocean transport and mixing: 
+            time-scales associated with large-scale overturning 
+Sarmiento & Gruber (2006)
+Large-scale ocean interior circulation is occurring on timescales that are 
+long relative to the atmospheric perturbation, i.e. ocean transport is the 
+rate limiting step!
+ : decades
+ : centuries
+ : years  : years
+PAGE 61
+How long does CO2 stay in atmosphere
+• Residence time of natural C (steady state)
+– Stock/flux = 600/190 (ocean+land) = 3.1 year
+• Residence time of anthropogenic C 
+– Stock/flux = (160 to 200)/(3 to 4) = 40 to 70 year
+• However, this does not apply to anthropogenic carbon dioxide: 
+a small fraction is left for years to come
+– Geological Record and Models show that steady-state will be reached 
+only after 10,000 to 100,000 years
+
+PAGE 62
+Sarmiento & Gruber (2006)
+The ultimate fate of anthropogenic CO 2
+
+PAGE 63
+Sarmiento & Gruber (2006)
+The ultimate fate of anthropogenic CO 2
+Reduced uptake fraction 
+a result of ocean 
+acidification
+Time-scale of 
+equilibration
+This fraction stays in 
+atmosphere on 
+timescales less than 
+1000 years
+PAGE 64
+Carbonate Compensation Dynamics
+• At steady-state: 
+– CCD equals snow-line
+– Saturation depth is 1 km shallower than CCD
+• During Acidification:
+– Saturation depth and CCD diverge and shallow rapidly
+– Snowline rises slowly is uncoupled from CCD
+• During transition from high to low CO2 world:
+– Saturation depth and CCD converge but remain different
+– CCD approaches snowline
+
+PAGE 65
+Ongoing Transient in Carbonate 
+Compensation
+Boudreau et al. 2010
+PAGE 66
+Carbonate Compensation
+• Chemical or canonical compensation focusses on dissolution 
+(at the seafloor)
+• Biological carbonate compensation takes into account 
+response of calcifying organisms, because of ocean 
+acidification.
+• Dissolution increases TA, while precipitation decreases TA, 
+hence calcification matters for TA and thus buffering ocean.
+Boudreau et al. (2018)See box 5.2
+PAGE 67
+What happens with the CO2 in the ocean  in near future
+
+PAGE 68
+Ocean Acidification
+Increase in
+dissolved CO 2
+Decreases
+carbonate 
+Increases
+bicarbonate 
+Hydrogen ion 
+concentration 
+increases and pH 
+decreases
+Acidity increases: 
+“ocean acidification”
+Carbonation:
+increase of dissolved inorganic carbon 
+Acidification:
+increase of hydrogen ions
+PAGE 69
+pH and DIC as function pCO2
+Middelburg (2019)
+PAGE 70
+A simple calculation
+• Annual CO2 increase is about 2.8 ppm or µatm
+• Regression of  pH with pCO2: 
+– pH = -0.001 pCO2
+– Annual pH decline of 0.0028 unit 
+• Regression of DIC with pCO2 :
+– DIC = 0.513 pCO2
+– Annual DIC increase of 1.4 µmol kg-1
+PAGE 71
+Observed DIC increases and pH decreases as 
+calculated using thermodynamics
+Iceland Sea
+PAGE 72
+40 year long records
+
+PAGE 73
+Ocean Acidification
+• Observations in open ocean fully consistent with 
+thermodynamics and CO 2 increase in atmosphere
+• pH dynamics in coastal systems poorly understood: 
+– much larger decreases, sometimes increase
+– other factors: low oxygen, eutrophication, atmospheric deposition,….
+PAGE 74
+Coastal Acidification
+BS = Baltic Sea, CB = Chesapeake Bay, DS = Danish Straits, FA = French Atlantic 
+coast, FM = French Mediterranean coast, HK = Hong Kong coast, NR = Neuse River 
+Estuary, NS = North Sea, TB = Tampa Bay, TX = Texas estuaries, and WA = Western 
+Australia estuaries. Carstensen & Duarte (2019)
+PAGE 75
+Coastal Acidification
+North Sea
+Washington Coast, USA
+PAGE 76
+So what, why should we be interested or 
+worry?
+1. Consequences for ocean pH:
+• 101 chemistry: master variable
+• influence on sound penetration
+• speciation of trace elements
+2. Buffer capacity and uptake of anthropogenic carbon by ocean decline 
+(positive feedback)
+3. Carbonate minerals
+• Dissolution
+• Slower calcification (including shell fish)
+4. Impact on organisms
+PAGE 77
+Consequences Carbonate System
+fbeeldingsresultaat voor decrease in ocean revelle with rcp scena
+
+PAGE 78
+Sound in future ocean
+• Attenuation of sound 
+depends on pH (MgSO4, 
+borate complexes)
+• 0.3 pH decrease, implies 
+40 % decrease in 
+attenuation low 
+frequencies 
+• Consequences for 
+underwater noise and 
+life
+
+PAGE 79
+Positive feedback
+• CO2 penetration into ocean, 
+lowers pH 
+• Lowers buffering capacity 
+(makes ocean more sensitive)
+• pH declines faster
+• Ocean absorbs (relatively) less 
+CO2
+• More CO2 remains in 
+atmosphere (900 vs. 600 in 
+2100)
+2000 2020 2040 2060 2080 2100
+pH
+7.8
+7.9
+8.0
+8.1
+8.2 constant sensitivity
+changing sensitivity
+2000 2020 2040 2060 2080 2100
+n
+300
+400
+500
+600
+700
+800
+900
+Year
+pCO2 (ppm) Middelburg et al. (2020, EOS)
+PAGE 80
+Marine calcifiers at risk
+Calcification (the formation of CaCO3 from Ca2+ and CO3
+2-) 
+is strongly affected by a decline in pH
+Corals Coralline algae
+Molluscs
+Echinoderms Pteropods
+Coccolithophorids
+Foraminifera
+PAGE 81
+Calcification and ocean acidification
+Calcification
+Saturation Ries et al., 2009
+PAGE 82
+Biological Consequences
+• Increase H+ 
+– Availability of trace elements for organisms
+– Noise attenuation
+• Decrease CO32-
+– Calcification
+• Increase CO2 & HCO3-
+– Substrate for primary producers (algae, seagrass, etc.)
+PAGE 83
+Photosynthesis & 
+Growth:
+More CO2 substrate 
+available for primary 
+producers
+Calcification:
+Decrease in 
+CO32- and 
+saturation degree
+Kroeker et al. (2013)
+PAGE 84
+Short-term vs. long-term
+• Results shown were based on one single organism, short 
+duration experiments
+– Adaptation
+– Evolution
+• Complementary information:
+– Geological record
+– Natural CO2 seeps
+– Mesocosm experiments (whole ecosystem)
+PAGE 85
+Natural CO2 seeps
+• Seagrass looses calcite 
+precipitates
+• No juvenile snails
+• Corrosion snail in CO2 rich water
+• 30% less biodiversity
+Normal, pH = 8.2 pH = 7.3-7.6
+Hall-Spencer et al. (2008)
+PAGE 86
+Natural CO2 seeps
+pH
+8.1
+7.9
+<7.7 Fabricius et al (2011)
+• Loss of biodiversity
+– Species
+– Habitats
+• 30% less calcification
+• Seagrass profits
+PAGE 87
+Svalbard Experiment
+
+PAGE 88
+
+PAGE 89
+Svalbard 
+Experiment
+
+PAGE 90
+OA impact on food web
+
+PAGE 91
+Economical consequences?
+Gazeau et al. (2007)
+At 740 ppmv CO2:
+•25 % less mussel 
+shells
+•10 % less oyster shell
+10 billion € revenues 
+worldwide
+PAGE 92
+Can we do something about it?
+Yes we can add olivine or lime.
+Bach  et al., 2019
+PAGE 93
+IPCC 2021
+More Carbon
+Warmer
+PAGE 94
+What can we do?  
+Less or no emission (mitigation, 
+carbon neutral, deep carbonisation, 
+energy transition, …….)
+– Technical limits (airplanes, cement 
+production….)
+– Geopolitics (Global South, drill, 
+drill, baby)
+More Carbon
+Warmer
+STOP
+PAGE 95
+• Solar Radiation Management 
+to lower Temperature
+• Carbon dioxide Removal/
+Negative Emission/
+active carbon dioxide removal
+What can we do?  
+More Carbon
+Warmer
+More Carbon
+Warmer
+Finimal: einde aan hoofdpijn en spierpijn, 20 
+tabletten | bol.com
+
+PAGE 96
+Carbon Dioxide Removal vs Carbon Neutral:
+Capturing and Storage required
+
+PAGE 97
+CDR is already  in the 1.5 and 2 degree scenario’s
+PAGE 98
+Carbon Dioxide Removal: How?
+• Concentrate (how to get 420 molecules out of one million)
+• Convert/transform and transport  
+– in organic matter (reforestration, blue carbon)
+– in minerals (accelerated weathering) 
+– In liquid (base in ocean, liquid carbon dioxide)
+• Store (for at least a couple of hundreds of years)
+– Limestone 
+– Dissolved in (deep) ocean
+– Physical isolation (subsurface)
+PAGE 99
+How Long is the Carbon Stored?
+
+PAGE 100
+IPCC and policy?
+• BECCS (biomassa 
+combustion capture and 
+storage)
+• (re)forestration
+• DAC (direct air 
+stripping) with storage
+• Storage subsurface (on 
+land and in the sea)
+Fuhrman et al., 2019
+How Bill Gates aims to clean up the planet | Carbon 
+capture and storage  (CCS) | The Guardian
+Petronas, Shell Unit Tie Up to Explore Carbon Capture, Storage - Asia  Financial News
+
+PAGE 101
+Ocean Solutions?
+960×900 
+
+PAGE 102
+Misconceptions
+• Biology plays a major role in 
+Anthropogenic Carbon uptake by 
+ocean
+• Restoring Coastal Blue Carbon 
+ecosystems is an effective climate 
+solution
+• Bivalve farming is a potential carbon 
+sink
+• Whales play a substantial role in 
+long-term carbon storage

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1560" height="1270" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1560 1270" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1560" height="1270"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1270)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1560" height="1270" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="30" y="1228" style="font-family: Helvetica-Bold; font-size: 32px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,2456) scale(1,-1)">03 / 04   Boudreau-like carbon-cycle model</text>
+			<rect x="1175" y="1214" width="355" height="40" rx="9" ry="9" style="stroke: rgb(47%,32%,65%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,93%,98%); fill-rule: evenodd;"/>
+			<text x="1193" y="1227" style="font-family: Helvetica-Bold; font-size: 21px;fill: rgb(47%,32%,65%); stroke:none;" transform="translate(0,2454) scale(1,-1)">INSTRUCTOR REFERENCE</text>
+			<text x="30" y="1192" style="font-family: Helvetica; font-size: 20px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,2384) scale(1,-1)">Two views of the same model: repeated L_b and D_b boxes represent the same ocean inventories.</text>
+			<text x="30" y="1162" style="font-family: Helvetica; font-size: 18px;fill: rgb(32%,40%,45%); stroke:none;" transform="translate(0,2324) scale(1,-1)">Solid lines: material transfers. Dashed arrows: information. Grey dashed outline: active-system boundary.</text>
+			<rect x="30" y="575" width="725" height="565" rx="9" ry="9" style="stroke: rgb(73%,79%,82%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="785" y="575" width="745" height="565" rx="9" ry="9" style="stroke: rgb(73%,79%,82%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="50" y="1107" style="font-family: Helvetica-Bold; font-size: 23px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,2214) scale(1,-1)">A   Circulation and air-sea exchange</text>
+			<text x="805" y="1107" style="font-family: Helvetica-Bold; font-size: 23px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,2214) scale(1,-1)">B   Export, dissolution and net burial</text>
+			<rect x="90" y="1015" width="615" height="65" rx="9" ry="9" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="104" y="1051" style="font-family: Helvetica-Bold; font-size: 21px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,2102) scale(1,-1)">Atmosphere / atm  [CO2_At]</text>
+			<text x="104" y="1025" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,2050) scale(1,-1)">State: dry-air CO2 mole fraction; fixed total air inventory</text>
+			<rect x="90" y="820" width="230" height="85" rx="9" ry="9" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="104" y="876" style="font-family: Helvetica-Bold; font-size: 21px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1752) scale(1,-1)">Low latitude [L_b]</text>
+			<text x="104" y="850" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1700) scale(1,-1)">ocn states: DIC, TA</text>
+			<rect x="475" y="820" width="230" height="85" rx="9" ry="9" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="489" y="876" style="font-family: Helvetica-Bold; font-size: 21px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1752) scale(1,-1)">High latitude [H_b]</text>
+			<text x="489" y="850" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1700) scale(1,-1)">ocn states: DIC, TA</text>
+			<rect x="90" y="605" width="615" height="80" rx="9" ry="9" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="104" y="656" style="font-family: Helvetica-Bold; font-size: 21px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1312) scale(1,-1)">Deep ocean [D_b]</text>
+			<text x="104" y="630" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1260) scale(1,-1)">ocn states: DIC, TA; each box has its own geometry and T/S/P</text>
+			<path d="M 180,1015 L 180,905 Z" style="stroke: rgb(14%,46%,38%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="180 905, 185 917, 175 917" style="stroke: rgb(14%,46%,38%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,38%); fill-rule: evenodd;"/>
+			<path d="M 235,905 L 235,1015 Z" style="stroke: rgb(14%,46%,38%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="235 1015, 230 1003, 240 1003" style="stroke: rgb(14%,46%,38%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,38%); fill-rule: evenodd;"/>
+			<path d="M 545,1015 L 545,905 Z" style="stroke: rgb(14%,46%,38%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="545 905, 550 917, 540 917" style="stroke: rgb(14%,46%,38%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,38%); fill-rule: evenodd;"/>
+			<path d="M 600,905 L 600,1015 Z" style="stroke: rgb(14%,46%,38%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="600 1015, 595 1003, 605 1003" style="stroke: rgb(14%,46%,38%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,38%); fill-rule: evenodd;"/>
+			<text x="100" y="975" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(14%,46%,38%); stroke:none;" transform="translate(0,1950) scale(1,-1)">G_L</text>
+			<text x="100" y="950" style="font-family: Helvetica; font-size: 16px;fill: rgb(14%,46%,38%); stroke:none;" transform="translate(0,1900) scale(1,-1)">in / out</text>
+			<text x="627" y="975" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(14%,46%,38%); stroke:none;" transform="translate(0,1950) scale(1,-1)">G_H</text>
+			<text x="627" y="950" style="font-family: Helvetica; font-size: 16px;fill: rgb(14%,46%,38%); stroke:none;" transform="translate(0,1900) scale(1,-1)">in / out</text>
+			<path d="M 320,865 L 475,865 Z" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="475 865, 463 870, 463 860" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
+			<text x="342" y="885" style="font-family: Helvetica-Bold; font-size: 19px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1770) scale(1,-1)">T_LH</text>
+			<text x="341" y="835" style="font-family: Helvetica; font-size: 17px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1670) scale(1,-1)">25 Sv</text>
+			<path d="M 535,820 L 535,685 Z" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="535 685, 540 697, 530 697" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
+			<text x="465" y="765" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1530) scale(1,-1)">T_HD</text>
+			<path d="M 130,685 L 130,820 Z" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="130 820, 125 808, 135 808" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
+			<text x="148" y="765" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1530) scale(1,-1)">T_DL</text>
+			<text x="148" y="740" style="font-family: Helvetica; font-size: 16px;fill: rgb(32%,40%,45%); stroke:none;" transform="translate(0,1480) scale(1,-1)">same circulation rate on all 3 legs</text>
+			<path d="M 620,820 L 620,685 Z" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="620 685, 625 697, 615 697" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
+			<path d="M 680,685 L 680,820 Z" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="680 820, 675 808, 685 808" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,39%,58%); fill-rule: evenodd;"/>
+			<text x="551" y="715" style="font-family: Helvetica; font-size: 14px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1430) scale(1,-1)">M_down</text>
+			<text x="687" y="715" style="font-family: Helvetica; font-size: 14px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1430) scale(1,-1)">M_up</text>
+			<text x="350" y="586" style="font-family: Helvetica; font-size: 16px;fill: rgb(14%,39%,58%); stroke:none;" transform="translate(0,1172) scale(1,-1)">Mixing: 30 Sv in each direction</text>
+			<rect x="810" y="624" width="300" height="398" rx="9" ry="9" style="stroke: rgb(32%,40%,45%); stroke-linecap: butt; stroke-width: 1.4; fill: none; fill-rule: evenodd; stroke-dasharray: 6, 5;"/>
+			<text x="824" y="636" style="font-family: Helvetica; font-size: 17px;fill: rgb(32%,40%,45%); stroke:none;" transform="translate(0,1272) scale(1,-1)">ocn part of active atm + ocn</text>
+			<rect x="830" y="927" width="260" height="75" rx="9" ry="9" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="844" y="973" style="font-family: Helvetica-Bold; font-size: 21px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1946) scale(1,-1)">Low latitude [L_b]</text>
+			<text x="844" y="947" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1894) scale(1,-1)">Same box as in panel A</text>
+			<rect x="830" y="667" width="260" height="80" rx="9" ry="9" style="stroke: rgb(14%,39%,58%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="844" y="718" style="font-family: Helvetica-Bold; font-size: 21px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1436) scale(1,-1)">Deep ocean [D_b]</text>
+			<text x="844" y="692" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1384) scale(1,-1)">Same box as in panel A</text>
+			<text x="842" y="1067" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(67%,38%,12%); stroke:none;" transform="translate(0,2134) scale(1,-1)">W  External weathering</text>
+			<path d="M 955,1059 L 955,1002 Z" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="955 1002, 960 1014, 950 1014" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(67%,38%,12%); fill-rule: evenodd;"/>
+			<path d="M 890,927 L 890,747 Z" style="stroke: rgb(14%,46%,38%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="890 747, 895 759, 885 759" style="stroke: rgb(14%,46%,38%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,46%,38%); fill-rule: evenodd;"/>
+			<text x="910" y="860" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(14%,46%,38%); stroke:none;" transform="translate(0,1720) scale(1,-1)">POC</text>
+			<text x="910" y="832" style="font-family: Helvetica; font-size: 17px;fill: rgb(14%,46%,38%); stroke:none;" transform="translate(0,1664) scale(1,-1)">Export +</text>
+			<text x="910" y="809" style="font-family: Helvetica; font-size: 17px;fill: rgb(14%,46%,38%); stroke:none;" transform="translate(0,1618) scale(1,-1)">remineralization</text>
+			<path d="M 1090,970 L 1355,970 Z" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<path d="M 1355,970 L 1355,875 Z" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="1355 875, 1360 887, 1350 887" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(67%,38%,12%); fill-rule: evenodd;"/>
+			<text x="1135" y="988" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(67%,38%,12%); stroke:none;" transform="translate(0,1976) scale(1,-1)">PIC  CaCO3 export</text>
+			<rect x="1250" y="745" width="255" height="130" rx="9" ry="9" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(100%,96%,91%); fill-rule: evenodd;"/>
+			<text x="1264" y="846" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1692) scale(1,-1)">Carbonate / sediment</text>
+			<text x="1264" y="819" style="font-family: Helvetica-Bold; font-size: 21px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1638) scale(1,-1)">process module</text>
+			<text x="1264" y="787" style="font-family: Helvetica; font-size: 16px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1574) scale(1,-1)">Snowline is a dynamic state;</text>
+			<text x="1264" y="763" style="font-family: Helvetica; font-size: 15px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1526) scale(1,-1)">no explicit sediment C inventory.</text>
+			<path d="M 1250,805 L 1150,805 Z" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<path d="M 1150,805 L 1150,715 Z" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<path d="M 1150,715 L 1090,715 Z" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="1090 715, 1102 710, 1102 720" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(67%,38%,12%); fill-rule: evenodd;"/>
+			<text x="1118" y="825" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(67%,38%,12%); stroke:none;" transform="translate(0,1650) scale(1,-1)">D  Dissolution</text>
+			<path d="M 1090,686 L 1188,686 Z" style="stroke: rgb(47%,32%,65%); stroke-linecap: butt; stroke-width: 2.7; stroke-dasharray: 6, 5;"/>
+			<path d="M 1188,686 L 1188,765 Z" style="stroke: rgb(47%,32%,65%); stroke-linecap: butt; stroke-width: 2.7; stroke-dasharray: 6, 5;"/>
+			<path d="M 1188,765 L 1250,765 Z" style="stroke: rgb(47%,32%,65%); stroke-linecap: butt; stroke-width: 2.7; stroke-dasharray: 6, 5;"/>
+			<polygon points="1250 765, 1238 770, 1238 760" style="stroke: rgb(47%,32%,65%); stroke-linecap: butt; stroke-width: 1; fill: rgb(47%,32%,65%); fill-rule: evenodd;"/>
+			<text x="1122" y="659" style="font-family: Helvetica; font-size: 16px;fill: rgb(47%,32%,65%); stroke:none;" transform="translate(0,1318) scale(1,-1)">Deep carbonate chemistry</text>
+			<text x="1122" y="636" style="font-family: Helvetica; font-size: 16px;fill: rgb(47%,32%,65%); stroke:none;" transform="translate(0,1272) scale(1,-1)">informs sediment response</text>
+			<path d="M 1415,745 L 1415,655 Z" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 2.7;"/>
+			<polygon points="1415 655, 1420 667, 1410 667" style="stroke: rgb(67%,38%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(67%,38%,12%); fill-rule: evenodd;"/>
+			<text x="1275" y="610" style="font-family: Helvetica-Bold; font-size: 19px;fill: rgb(67%,38%,12%); stroke:none;" transform="translate(0,1220) scale(1,-1)">B  Signed net burial</text>
+			<text x="1275" y="588" style="font-family: Helvetica; font-size: 15px;fill: rgb(32%,40%,45%); stroke:none;" transform="translate(0,1176) scale(1,-1)">Removal from active atm + ocn</text>
+			<text x="805" y="588" style="font-family: Helvetica; font-size: 16px;fill: rgb(32%,40%,45%); stroke:none;" transform="translate(0,1176) scale(1,-1)">No POC or PIC export from H_b in this benchmark.</text>
+			<text x="30" y="537" style="font-family: Helvetica-Bold; font-size: 23px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,1074) scale(1,-1)">Transfer properties and workbook-to-code cross-reference</text>
+			<rect x="30" y="481" width="205" height="37" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(90%,93%,96%); fill-rule: evenodd;"/>
+			<text x="40" y="493" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,986) scale(1,-1)">Arrow / process</text>
+			<rect x="235" y="481" width="505" height="37" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(90%,93%,96%); fill-rule: evenodd;"/>
+			<text x="245" y="493" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,986) scale(1,-1)">What moves / rate rule</text>
+			<rect x="740" y="481" width="425" height="37" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(90%,93%,96%); fill-rule: evenodd;"/>
+			<text x="750" y="493" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,986) scale(1,-1)">Excel table or parameter</text>
+			<rect x="1165" y="481" width="365" height="37" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(90%,93%,96%); fill-rule: evenodd;"/>
+			<text x="1175" y="493" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,986) scale(1,-1)">Native object / supplied code</text>
+			<rect x="30" y="438" width="1500" height="43" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="40" y="453" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,906) scale(1,-1)">T_* / M_*</text>
+			<text x="245" y="453" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,906) scale(1,-1)">DIC + TA; J_X(t) = q x X_source(t)</text>
+			<text x="750" y="453" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,906) scale(1,-1)">TransportConnections: source / sink / flux_id</text>
+			<text x="1175" y="453" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,906) scale(1,-1)">scale_with_concentration</text>
+			<rect x="30" y="395" width="1500" height="43" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="40" y="410" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,820) scale(1,-1)">G_L / G_H</text>
+			<text x="245" y="410" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,820) scale(1,-1)">Carbon only; invasion minus outgassing</text>
+			<text x="750" y="410" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,820) scale(1,-1)">GasExchangeConnections; piston_velocity</text>
+			<text x="1175" y="410" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,820) scale(1,-1)">gasexchange; one object per surface</text>
+			<rect x="30" y="352" width="1500" height="43" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="40" y="367" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,734) scale(1,-1)">POC</text>
+			<text x="245" y="367" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,734) scale(1,-1)">DIC only; fixed 200 Tmol C/yr</text>
+			<text x="750" y="367" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,734) scale(1,-1)">ProcessParameters: poc_export</text>
+			<text x="1175" y="367" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,734) scale(1,-1)">POM</text>
+			<rect x="30" y="309" width="1500" height="43" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="40" y="324" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,648) scale(1,-1)">PIC</text>
+			<text x="245" y="324" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,648) scale(1,-1)">1 DIC : 2 TA; 60 Tmol C/yr</text>
+			<text x="750" y="324" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,648) scale(1,-1)">poc_export x rain_ratio (PIC/POC)</text>
+			<text x="1175" y="324" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,648) scale(1,-1)">PIC_DIC + PIC_TA; sink bypass</text>
+			<rect x="30" y="266" width="1500" height="43" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="40" y="281" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,562) scale(1,-1)">W</text>
+			<text x="245" y="281" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,562) scale(1,-1)">1 DIC : 2 TA; 12 Tmol C/yr (supplied)</text>
+			<text x="750" y="281" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,562) scale(1,-1)">weathering_dic; TA = 2 x carbon input</text>
+			<text x="1175" y="281" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,562) scale(1,-1)">weathering; Fw to L_b</text>
+			<rect x="30" y="223" width="1500" height="43" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="40" y="238" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,476) scale(1,-1)">D</text>
+			<text x="245" y="238" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,476) scale(1,-1)">1 DIC : 2 TA; calculated dissolution</text>
+			<text x="750" y="238" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,476) scale(1,-1)">Calculated response, not a prescribed flux</text>
+			<text x="1175" y="238" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,476) scale(1,-1)">carbonate system 2; Fdiss</text>
+			<rect x="30" y="180" width="1500" height="43" rx="9" ry="9" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,96%,98%); fill-rule: evenodd;"/>
+			<text x="40" y="195" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,390) scale(1,-1)">B</text>
+			<text x="245" y="195" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,390) scale(1,-1)">PIC - D; net removal in a 1:2 ratio</text>
+			<text x="750" y="195" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,390) scale(1,-1)">Calculated response, not a prescribed flux</text>
+			<text x="1175" y="195" style="font-family: Helvetica; font-size: 17px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,390) scale(1,-1)">Fburial diagnostic; implicit boundary</text>
+			<rect x="30" y="90" width="1500" height="76" rx="9" ry="9" style="stroke: rgb(47%,32%,65%); stroke-linecap: butt; stroke-width: 1.4; fill: rgb(95%,93%,98%); fill-rule: evenodd;"/>
+			<text x="45" y="140" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,280) scale(1,-1)">Budget check: internal water, gas and POC transfers cancel. dC_atm+ocn/dt = W - B; dTA_ocn/dt = 2(W - B).</text>
+			<text x="45" y="112" style="font-family: Helvetica; font-size: 19px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,224) scale(1,-1)">Unforced baseline. B &lt; 0 means net sediment loss: dissolution can exceed contemporary PIC rain.</text>
+			<text x="30" y="64" style="font-family: Helvetica; font-size: 17px;fill: rgb(32%,40%,45%); stroke:none;" transform="translate(0,128) scale(1,-1)">Units: DIC in mol C/kg; TA in mol equivalents/kg. Carbon fluxes in Tmol C/yr; TA fluxes in Tmol equivalents/yr.</text>
+			<text x="30" y="39" style="font-family: Helvetica; font-size: 17px;fill: rgb(32%,40%,45%); stroke:none;" transform="translate(0,78) scale(1,-1)">Workbook: data/Boudreau_2010/model_definition.xlsx. Reservoir tables own geometry, T/S/P and initial states; restart replaces states.</text>
+			<text x="30" y="14" style="font-family: Helvetica; font-size: 16px;fill: rgb(32%,40%,45%); stroke:none;" transform="translate(0,28) scale(1,-1)">Teaching adaptation of the ESBMTK Boudreau benchmark (Wortmann et al., 2025, Fig. 3). See companion notes for transport units and source aliases.</text>
+		</g>
+	</g>
+</svg>

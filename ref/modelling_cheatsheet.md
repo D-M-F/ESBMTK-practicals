@@ -2,7 +2,7 @@
 
 ESBMTK practicals 01-04 | Page 1: translate the science
 
-**Aim:** explain how boxes, arrows and assumptions become a working model. Keep this sheet open beside the notebook; syntax is available for reference, not memorisation. Use **predict → map → run → check → explain**.
+**Aim:** explain how boxes, arrows and assumptions become a working model. This sheet is optional lookup support; syntax memorisation is not required. Use **predict → map → run → check → explain**.
 
 ## What does each part of the diagram become?
 
@@ -55,7 +55,7 @@ ESBMTK practicals 01-04 | Page 2: navigate the implementation
 
 **Understand and run:** trace worked construction and read tables, graph checks, budgets and plots.
 
-**Supplied implementation:** run imports, loops, conversions, chemistry/sediment wiring and numerical/plotting internals. Rebuilding these is not assessed. Supplied code can surround a student-choice block and still require interpretation.
+**Supplied implementation:** run imports, loops, conversions, chemistry/sediment wiring and numerical/plotting internals as provided. These practicals are ungraded; focus on understanding the scientific choices and interpreting their results.
 
 ## Follow the execution order
 

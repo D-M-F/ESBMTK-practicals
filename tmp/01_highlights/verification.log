@@ -1,0 +1,3 @@
+instructor: valid notebook; 7 questions; 4 answer panels; Markdown renders.
+student: valid notebook; 7 questions; 0 answer panels; Markdown renders.
+PASS: exact 01 generation; unchanged code/outputs, other notebooks and archive; 00 differs only in serialization.

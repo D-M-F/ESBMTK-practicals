@@ -1,0 +1,23 @@
+[project]
+name = "esbmtk-practicals"
+version = "0.1.0"
+description = "Student environment for the ESBMTK carbon-cycle practicals"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+    "esbmtk==0.14.3.1.post0",
+    "PyCO2SYS==1.8.3.4",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pandas",
+    "gsw",
+    "openpyxl>=3.1,<4",
+    "jupyterlab",
+    "ipykernel",
+]
+
+[tool.uv]
+package = false
+# Download an independent Python rather than borrowing a Conda interpreter.
+python-preference = "only-managed"
+

@@ -10,6 +10,15 @@ from teaching_config import TEACHING
 
 
 def new_model(*, stop="30 kyr", max_timestep="20 yr", config=TEACHING):
+    """Register species definitions and supply the model clock and units.
+
+    Registering Carbon/Boron/Hydrogen/misc_variables does not create transported
+    reservoirs. box_parameters supplies initial DIC/TA; seawater initialization
+    obtains background boron and equilibrium constants through PyCO2SYS.
+    add_carbonate_system_1 initializes and updates auxiliary Hplus and CO2aq.
+    The miscellaneous sediment-variable definitions are unused in 01/02 and
+    do not activate sediment processes.
+    """
     from esbmtk import Model
 
     return Model(stop=stop, max_timestep=max_timestep,
@@ -30,6 +39,24 @@ def box_parameters(model, volume_m3, dic_umol_kg, ta_umol_kg, config=TEACHING):
 def box_mass_kg(box):
     """Mass used by ESBMTK's ODE coefficient matrix (volume times density)."""
     return box.DIC.volume.to("m**3").magnitude * box.swc.density
+
+
+def atmospheric_pco2_curve(dic_umol_kg, config=TEACHING):
+    """Conserved-inventory atmosphere line for 01, in microatmospheres.
+
+    DIC is in umol/kg. Use the same ocean mass and dry atmospheric inventory
+    as the time-dependent model. PyCO2SYS converts dry xCO2 (ppm) to pCO2
+    (uatm); this gas conversion neither requires nor infers ocean TA.
+    """
+    import PyCO2SYS as pyco2
+
+    dic = np.asarray(dic_umol_kg, dtype=float)
+    ocean_mass = config.ocean_volume_m3 * config.density_kg_m3
+    carbon_atm = config.total_carbon_mol - ocean_mass * dic * 1e-6
+    if np.any(~np.isfinite(dic)) or np.any(dic < 0) or np.any(carbon_atm < 0):
+        raise ValueError("DIC must be finite and within the closed carbon inventory")
+    xco2_ppm = carbon_atm / config.atmosphere_mol * 1e6
+    return pyco2.sys(par1=xco2_ppm, par1_type=9, **config.pyco2)["pCO2"]
 
 
 def connect_atmosphere(model, boxes, *, total_carbon_mol=None,
@@ -165,6 +192,35 @@ def audit(model, added_carbon=None, *, rtol=2e-6):
 def finite_box_addition(config=TEACHING):
     return (config.deep_volume_m3 * config.density_kg_m3
             * (config.target_deep_dic_umol_kg - config.target_dic_umol_kg) * 1e-6)
+
+
+def finite_pulse_clock(*, start, duration, stop="30 kyr"):
+    """Supply a resolved, aligned clock for the finite square pulse in 02.
+
+    Native ESBMTK 0.14 truncates start/duration to whole model years and maps
+    signals by exact time matches. Use a common integer-year divisor, halved
+    if necessary, so pulse boundaries and the model grid align exactly. Keep
+    the usual 20-year limit and at least 20 intervals across the pulse. This
+    also avoids its broken warning path for fewer than 10 intervals.
+    """
+    from math import gcd
+    from esbmtk import Q_
+
+    years = {}
+    for name, value in (("start", start), ("duration", duration), ("stop", stop)):
+        number = float(Q_(value).to("yr").magnitude)
+        rounded = round(number) if np.isfinite(number) else 0
+        if not np.isfinite(number) or not np.isclose(number, rounded, rtol=0, atol=1e-9):
+            raise ValueError(f"pulse {name} must be a whole number of years for ESBMTK")
+        years[name] = rounded
+    if years["start"] <= 0 or years["duration"] <= 0:
+        raise ValueError("pulse start and duration must be positive")
+    if years["start"] + years["duration"] >= years["stop"]:
+        raise ValueError("pulse must end before stop; leave time for equilibration")
+    step = float(gcd(20, years["start"], years["duration"], years["stop"]))
+    while years["duration"] / step < 20:
+        step /= 2
+    return {"stop": f'{years["stop"]} yr', "max_timestep": f"{step:g} yr"}
 
 
 def integrated_signal(time, flux, evaluation_time):

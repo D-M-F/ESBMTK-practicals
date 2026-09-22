@@ -1,6 +1,6 @@
 # Teaching goals and workload: practicals 00–04
 
-Last updated: 2026-09-21. This is the maintained summary of the **implemented**
+Last updated: 2026-09-22. This is the maintained summary of the **implemented**
 student route, required learning outcomes and workload. Update it in the same
 change whenever notebook tasks, scope, prerequisites or timing change. Record
 pending ideas and verification evidence in `WORKPLAN.md`; scientific rationale
@@ -23,17 +23,18 @@ not measured student completion times.
 | --- | ---: | --- |
 | Introduction and environment check | 10 | Identify states, arrows and boundary |
 | 00: exercise 9 answer sheet | 20 reserved | Eight chemistry parts (a–h); duration needs a pilot |
-| 01: missing alkalinity | 35 | One input-pair code task; predictions and explanation |
+| 01: missing alkalinity | 40 | TA inference; pCO2–DIC curves; model interpretation |
 | 02: layers and effective pump | 55 | Scaffolded connections; two derivations; budget interpretation |
 | Break | 10 | |
 | 03: complete-model mapping | 55 | Four mapping tasks; graph/stationarity verification |
 | 04: carbon versus alkalinity forcing | 40 | Two short code tasks; matched-response interpretation |
-| Synthesis and completion buffer | 15 | Trace a flux pathway and its budget |
+| Synthesis and completion buffer | 10 | Trace a flux pathway and its budget |
 | **Total** | **240** | Includes the provisional 00 allocation |
 
-01–04 contain 185 minutes of notebook work; with introduction, break and synthesis
+01–04 contain 190 minutes of notebook work; with introduction, break and synthesis
 their allocation is 220 minutes. Installation is a course prerequisite: provide
-a working ESBMTK314 environment before class. Required reading and short answers
+a working course environment before class, using the supplied uv route or
+Anaconda alternative; ESBMTK314 remains the instructor reference. Required reading and short answers
 fit inside the notebook allocations; no extra report or extension is required.
 Pilot with a student unfamiliar with the code before treating these timings as
 established. Record measured times here after the pilot.
@@ -44,11 +45,19 @@ ESBMTK/PyCO2SYS versions. This recipe still requires fresh-installation and
 cross-platform pilots; ESBMTK314 remains the verified instructor reference.
 Setup and instructor validation happen before class, with no new student
 exercise or change to the practical's provisional timetable.
-Two-page uv and Anaconda PDF handouts under `output/pdf/` support that same
-pre-class setup, kernel selection and numerical check. Both are pilot editions;
-the uv route additionally requires instructor-supplied project files/lockfile.
+The three-page uv and Anaconda PDF handouts under `output/pdf/` support
+that same pre-class setup. The uv route now supplies `pyproject.toml`, `uv.lock`,
+`.python-version` and `scripts/check_environment.py`, and downloads Python itself.
+Both guides explain terminals and folders, confirm successful installation,
+and separate opening notebooks from stopping/restarting the JupyterLab server.
+The Anaconda guide explains environment activation and uses the same supplied
+environment checker; its Markdown owns the student PDF text.
+A fresh Windows uv environment passes numerical/chemistry/workbook/plot checks,
+all five core instructor notebooks and an actual JupyterLab kernel and
+launch/shutdown/relaunch check. macOS/Linux and novice-student setup pilots remain
+required. Setup time stays separate from the unchanged practical timetable.
 
-## Common method and assessment
+## Common method and learning checks
 
 Use **predict → map → run → check → explain**. Each notebook identifies required
 work and a stopping point. Students choose scientific fields while supplied code
@@ -69,10 +78,11 @@ the previous net-first explanations within the existing activities, without new
 exercises or prerequisites. Keep the provisional allocations and pilot the revised
 reading load alongside the other supplied explanations.
 
-Assess the completed mappings, two 02 derivations with units, and concise
-interpretations. Do not assess plotting syntax, numerical internals or optional
-work. Code hints and supplied examples support the mapping; instructor solutions
-are masked in generated student notebooks.
+These practicals are ungraded. Use completed mappings, the two 02 derivations
+with units and concise interpretations as learning checks. Keep answers in the
+notebooks; no separate submission or syntax memorisation is required. Plotting
+and numerical internals are supplied. Instructor solutions are masked in the
+generated student notebooks.
 
 The shared [coding cheatsheet](ref/modelling_cheatsheet.md), also available as a
 [two-page handout](output/pdf/modelling_cheatsheet.pdf), supports the transferable
@@ -83,10 +93,11 @@ syntax without exposing the 02 derivations or completing the core mapping tasks.
 Code cells in 01–04 carry three labels: **Choose and explain** (student scientific
 choices), **Understand and run** (supplied steps and their evidence), and
 **Supplied implementation** (supporting machinery). Supplied code may still need
-scientific explanation; assess the mapping and evidence, not API memorisation.
+scientific explanation; focus on the mapping and evidence.
 
-Orient students to the sheet within 01's existing 10-minute diagram/prediction
-and worked-example activity. It remains available throughout 02–04. Reading or
+Offer the sheet as optional lookup support within 01's existing diagram/prediction
+and worked-example activity. Introduce essential syntax locally in 01/02 so that
+neither notebook requires switching documents. It remains available throughout 02–04. Reading or
 executing the separate tracer example is optional, with no extra submission or
 required run. This adds reference support within the planned allocation rather
 than a new teaching task or prerequisite; the novice-student pilot must check
@@ -113,7 +124,7 @@ salinity 35 baseline; compare 5/25 °C and salinity 32/38, historical CO2 values
 and the 935 ppm endpoint with and without 3 °C warming. Infer TA to restore
 present aragonite saturation at both 15 and 18 °C. Give short interpretations.
 
-**Supplied:** environment imports, unchanged `C.chemistry`, one TA/DIC example
+**Supplied:** environment imports, unchanged `config.chemistry`, one TA/DIC example
 with different inputs, and links to parameter and result documentation. Preserve
 the prior dry-air xCO2 convention (type 9); explain its difference from pCO2.
 All answer calculations, numeric tables and interpretations are instructor-only.
@@ -123,13 +134,13 @@ are static equilibrium states with DIC allowed to adjust, not a closed carbon
 budget, transient forcing or a reef feasibility assessment. Installation is a
 prerequisite. The 20-minute reservation must be checked against the complete task.
 
-## 01 — Diagnose missing alkalinity (35 minutes)
+## 01 — Diagnose missing alkalinity (40 minutes)
 
 **Students should be able to:**
 
 1. Identify atmosphere/ocean states, carbonate diagnostics and the gas connection.
 2. Explain why CO2 invasion moves carbon but cannot generate TA.
-3. Infer background TA from the two targets and distinguish that fit from prediction.
+3. Infer background TA, use pCO2–DIC curves to explain partitioning, and distinguish the fit from prediction.
 4. Distinguish initial partition and exchange rate from equilibrium controls.
 
 The opening casts students as new ESBMTK modellers testing a fictional
@@ -143,12 +154,22 @@ after prediction and the first run. Budget checks support implementation
 verification; they do not establish physical adequacy or complete code correctness.
 
 **Do:** annotate the supplied construction and explain cancellation of internal
-carbon tendencies; predict and diagnose the TA-free run; select the PyCO2SYS
-DIC/xCO2 input types; interpret supplied partition and piston-velocity comparisons.
-Allocate 10 minutes to diagram/prediction, 15 to diagnosis/inference, and 10 to paths.
+carbon tendencies; predict and diagnose the TA-free run; write the complete
+PyCO2SYS TA calculation from DIC/xCO2; complete a DIC/TA-to-pCO2 call
+inside a supplied loop and explain the curve intersections; interpret supplied
+partition and piston-velocity comparisons. Reuse 00's input-pair and result-extraction skills,
+but use 01's shared 16 °C conditions rather than 00's 15 °C baseline.
+Allocate 10 minutes to diagram/prediction, 20 to diagnosis/inference/curves,
+and 10 to paths. The added five minutes come from the completion buffer;
+the session remains four hours. Pilot this allocation with students after 00.
 
 **Supplied:** model construction, target-derived inventory, thermodynamic settings,
-comparison runs, unit conversions, plots and carbon/TA audits.
+comparison runs, DIC grid, repeated loop, conserved-carbon atmosphere line,
+unit conversions, plots and carbon/TA audits.
+
+In 00–02, the shared configuration is named `config` in code to distinguish it
+from carbon inventories such as $C_0$ and $C_{atm}$. This is a naming clarification;
+it changes no scientific inputs, tasks or timing.
 
 Before construction, the worked example states the finite atmospheric size,
 evolving dry-air CO2 fraction, inventory-based initial partition and exchange
@@ -156,7 +177,7 @@ settings explicitly. The directional gas law shows invasion as solubility times
 atmospheric CO2 and outgassing as a function of ocean aqueous CO2, with a note
 linking the atmospheric term to the code's dry-air mole fraction and conversions.
 This elaborates the existing diagram/prediction reading;
-it adds no exercise or prerequisite. Keep the provisional 35-minute allocation
+it adds no exercise or prerequisite. Keep the provisional 40-minute allocation
 and check this reading load in the novice-student pilot.
 
 Introduce the individual `Species2Species` connection here, before calling
@@ -171,12 +192,45 @@ TA, carbon partition and exchange rate, including the atmospheric adjustment
 that preserves total carbon. This supports the existing rerun/comparison activity;
 it adds no task or prerequisite and shares its provisional reading-time allocation.
 
-**Evidence:** the correct input pair and three sentences on why the mismatch alone
-does not demonstrate a coding error, calibration, and rate versus equilibrium.
-The revised before/after prompts replace the previous prediction/diagnosis prompt
-within its existing allocation; the 35-minute estimate still needs a pilot.
-Real-ocean TA sources are context, not simulated
-history. No pump attribution, OA/OAE time histories or sediment analysis here.
+**Evidence:** a complete TA calculation with the correct inputs, conditions and
+units, a forward chemistry call, and explanations beside the diagnosis,
+inference, curve interpretation and path-comparison activities. Mask the whole calculation, including input types, solver call and TA
+extraction; supply the targets, shared settings, documentation and `inferred_ta`
+output name. Also mask the forward chemistry call and pCO2 extraction,
+with input/output hints supplied. Place the curve exercise after TA inference
+and before the model rerun; mask the causal interpretation as a written answer.
+Students infer uptake from the full curves and the common atmosphere line,
+not a stated slope ordering or a single local sensitivity. Briefly connect
+fractional Revelle sensitivity to lecture slide 46 without adding an R exercise.
+Keep the model rerun in a separate supplied cell.
+
+The construction now has short steps for atmospheric initialization, gas exchange,
+object mapping and connection construction, with code beside the relevant text.
+The diagnosis explicitly asks which chemical assumption causes the mismatch and
+whether any represented process can change it. The final synthesis is consolidated
+into those local questions; the ending is a stopping cue. Real-ocean TA sources
+are supplied context, not an extra recall task. The connection-summary call is removed.
+
+The full TA inference and forward curve calculation reuse skills from 00.
+The provisional 10/20/10-minute allocation allows five more minutes for the
+curve exercise; this is not a verified timing result. Pilot the revised
+40-minute route with students who have completed 00. No pump attribution, OA/OAE time histories or sediment analysis here.
+
+The opening explicitly names 280 ppm and 2040 µmol/kg as the reference values.
+Use "small positive initial concentration" for the initial DIC, define gas
+transfer velocity (piston velocity), and link the displayed connection excerpt
+to `connect_atmosphere` in `simple_models.py`. A brief optional chemistry note
+distinguishes registering species definitions from creating transported states;
+boron and auxiliary H⁺/CO2 initialization remain supplied implementation.
+
+Report "equilibration time (1% criterion)": the first saved time after which
+atmospheric CO2 remains within 1% of its final simulated value. Distinguish it
+from an exponential relaxation constant. Explain assertions once as supplied
+verification. Keep construction, prescribed-carbon, conservation and calibrated
+endpoint checks visible; remove duplicate TA checking and put expected-mismatch
+and slower-response assertions in an instructor-only cell. These clarifications
+add no exercise or prerequisite; include their reading load in the existing
+provisional 40-minute pilot rather than claiming verified completion time.
 
 ## 02 — Conservative extension and effective pump (55 minutes)
 
@@ -189,8 +243,9 @@ history. No pump attribution, OA/OAE time histories or sediment analysis here.
 4. Derive the finite carbon addition from 62.4 and the actual initial inventory,
    then interpret the supplied forcing and budget verification.
 
-**Do:** A (20 minutes): select deep-box fields, arrow names and transported species.
-B (20): derive k, fill the DIC-only pump endpoints/scale and interpret matched runs.
+**Do:** A (20 minutes): select deep-box fields, arrow names, transported species
+and one flux law for both mixing directions from explained choices.
+B (20): derive k, choose the DIC-only pump endpoints/law/scale and interpret matched runs.
 C (15): derive/evaluate the added carbon and insert it into supplied Signal code.
 Explain the equivalent finite-deep-box inventory calculation on paper; its code
 cross-check is instructor-only, not another coding exercise.
@@ -199,18 +254,38 @@ cross-check is instructor-only, not another coding exercise.
 density; constructor templates; all chemistry, restart, signal-integration,
 plotting and time-resolved carbon/TA checks.
 
-A brief reference note at the first bulk-connection example builds on the
-individual `Species2Species` constructor already introduced in 01. It explains
-the wrapper's relationship to `ConnectionProperties`, the `ty`/`ctype`
-mapping, and the choice of direct gas/pump construction. Internal API structure
-is not assessed or a new prerequisite; this supports the existing mapping task
-within the provisional allocation, whose reading load still requires a pilot.
+Local reading support explains `config` attributes, case-sensitive dictionary
+keys, concentration pairs/unpacking, and `Source_to_Sink@id`. The first bulk
+example builds on 01's individual constructor: `ty` and `ctype` choose the
+flux law, while `sp` selects species. Internal wrapper structure is omitted.
+Students choose `mixing_type` and `pump_type` within the existing masked blocks;
+there are no additional model runs or derivations.
 
 **Evidence:** conservative connections, two derivations with units, and a sentence
 separating a fitted DIC ratio from conditional atmospheric response. Mathematical
 and code solutions for both derivations remain masked. Preserve the actual 01
 initial inventory. Restoration of 280 ppm checks forcing/conservation, not
-independent pump validity. Distinct pump attribution remains outside 02.
+independent pump validity. B4 relates the transfer qualitatively to the lecture's
+soft-tissue pump, explains omitted features and compares reference-state export
+with simulated-equilibrium export. Quantitative pump attribution remains outside
+02; a sourced export-comparison note is optional and requires no calculation.
+
+The 02 reading route uses short A1–A4, B1–B4 and C1–C3 steps. Model definition
+and supplied comparison runs are separate cells, so completing the pump mapping
+only requires rerunning its definition and the pump comparison. Brief explanations
+introduce first-order fluxes, stationary notation, output units and restart/control
+runs. Define inventory ratio R separately from the lecture's capacity F; explain
+that uniform TA gives zero net redistribution while preserving buffering, and
+that pulse duration is a supplied choice. The optional duration experiment uses
+a supplied helper to resolve and align positive whole-year pulses, with matching
+control/forced clocks; students still interpret the mass and endpoint checks.
+This numerical support adds no required task or timing allocation. A4 asks about endpoint
+equivalence, supported by the existing checks, rather than an unplotted transient.
+Consolidated interpretation questions and a simple stopping cue replace repeated
+calibration/completion prompts. The two law choices and qualitative pump link
+revise the work within the provisional 20/20/15-minute allocation; prerequisites,
+derivations and runs stay the same. Pilot the revised reading and question load
+rather than treating the 55-minute estimate as established.
 
 ## 03 — Scaffolded complete-model construction (55 minutes)
 

@@ -8,10 +8,12 @@ import numpy as np
 from model import run_model
 from scenarios import add_carbon_signal
 from simple_models import (
-    audit, box_mass_kg, calibrated_pump_coefficient, finite_box_addition,
-    integrated_signal, inventories, mixing_mass_transport, single_box, two_layer,
+    atmospheric_pco2_curve, audit, box_mass_kg, calibrated_pump_coefficient, finite_box_addition,
+    finite_pulse_clock, integrated_signal, inventories, mixing_mass_transport,
+    new_model, single_box, two_layer,
 )
 from teaching_config import TEACHING as C
+from teaching_plots import equilibration_time
 
 
 class IntroductoryModelTest(unittest.TestCase):
@@ -33,6 +35,44 @@ class IntroductoryModelTest(unittest.TestCase):
         np.testing.assert_allclose(self.zero.Ocean.TA.c, 0, atol=1e-20)
         fraction = box_mass_kg(self.zero.Ocean) * self.zero.Ocean.DIC.c[0] / C.total_carbon_mol
         self.assertLess(fraction, 1e-5)
+
+    def test_closed_inventory_chemistry_curves_explain_model_endpoints(self):
+        import PyCO2SYS as pyco2
+        from scipy.optimize import brentq
+
+        mass = box_mass_kg(self.zero.Ocean)
+        dic_limit = C.total_carbon_mol / mass * 1e6
+        dic = np.linspace(0.01, dic_limit * (1 - 1e-6), 600)
+        atmosphere = atmospheric_pco2_curve(dic)
+        # Independently recover dry-air carbon from the plotted partial pressure.
+        gas = pyco2.sys(par1=atmosphere, par1_type=4, **C.pyco2)
+        total = mass * dic * 1e-6 + C.atmosphere_mol * gas['xCO2'] * 1e-6
+        np.testing.assert_allclose(total, C.total_carbon_mol, rtol=1e-12)
+        self.assertTrue(np.all(np.diff(atmosphere) < 0))
+        self.assertAlmostEqual(float(atmospheric_pco2_curve(2040)),
+                               float(C.reference_state()['pCO2']), places=9)
+        self.assertNotAlmostEqual(float(atmospheric_pco2_curve(2040)), 280, places=1)
+        for invalid in (-1, np.nan, dic_limit * 1.01):
+            with self.assertRaises(ValueError):
+                atmospheric_pco2_curve(invalid)
+
+        curves = []
+        for ta, model in ((0, self.zero), (self.ta, self.buffered)):
+            def seawater(values):
+                return pyco2.sys(par1=values, par1_type=2, par2=ta,
+                                 par2_type=1, **C.pyco2)['pCO2']
+            curve = seawater(dic)
+            self.assertTrue(np.all(np.isfinite(curve)))
+            self.assertTrue(np.all(np.diff(curve) > 0))
+            curves.append(curve)
+            root = brentq(lambda d: float(seawater(d) - atmospheric_pco2_curve(d)),
+                          dic[0], dic[-1])
+            # ESBMTK's carbonate update is an approximation; agreement within
+            # 0.2 umol/kg suffices for the student's graphical interpretation.
+            np.testing.assert_allclose(root, model.Ocean.DIC.c[-1] * 1e6, atol=0.2)
+        # Check the claimed slope ordering at matched DIC over this exercise's
+        # range, rather than asserting a universal ordering for arbitrary TA.
+        self.assertTrue(np.all(np.diff(curves[0]) > np.diff(curves[1])))
 
     def test_geometry_chemistry_and_implemented_ode_mass(self):
         self.assertAlmostEqual(C.surface_volume_m3 / C.ocean_area_m2, C.surface_depth_m)
@@ -59,11 +99,7 @@ class IntroductoryModelTest(unittest.TestCase):
             audit(model)
             np.testing.assert_allclose(model.CO2_At.c[-1] * 1e6, 280, atol=0.5)
             np.testing.assert_allclose(model.Ocean.DIC.c[-1] * 1e6, 2040, atol=0.2)
-        def settling_time(model):
-            x = model.CO2_At.c
-            outside = np.flatnonzero(abs(x - x[-1]) > 0.01 * x[-1])
-            return model.time[outside[-1] + 1]
-        self.assertGreater(settling_time(self.slow), settling_time(self.buffered))
+        self.assertGreater(equilibration_time(self.slow), equilibration_time(self.buffered))
         self.assertNotEqual(self.partition.CO2_At.c[0], self.buffered.CO2_At.c[0])
 
     def test_no_pump_extension_preserves_equilibrium_and_both_inventories(self):
@@ -145,6 +181,25 @@ class IntroductoryModelTest(unittest.TestCase):
         self.assertGreater(lower_ratio.surface_depth_m, C.surface_depth_m)
         self.assertLess(finite_box_addition(lower_ratio), finite_box_addition())
 
+    def test_changed_pulse_durations_preserve_mass_and_equilibrium(self):
+        state = {b.name: (b.DIC.c[-1] * 1e6, b.TA.c[-1] * 1e6)
+                 for b in self.pump.ocean_boxes}
+        amount = finite_box_addition()
+        for duration in ("100 yr", "333 yr", "5000 yr"):
+            with self.subTest(duration=duration):
+                clock = finite_pulse_clock(start="1000 yr", duration=duration)
+                forced = two_layer(k_kg_yr=self.k, state=state, **clock)
+                signal = add_carbon_signal(forced, start="1000 yr", duration=duration,
+                                           mass=f"{amount} mol", shape="square")
+                time, flux = forced.time.copy(), signal.m.copy()
+                np.testing.assert_allclose(integrated_signal(time, flux, time[-1]),
+                                           amount, rtol=1e-12)
+                run_model(forced)
+                audit(forced, integrated_signal(time, flux, forced.time))
+                np.testing.assert_allclose(forced.CO2_At.c[-1] * 1e6, 280, atol=0.5)
+                np.testing.assert_allclose(forced.Surface.DIC.c[-1] * 1e6, 2040, atol=0.2)
+                np.testing.assert_allclose(forced.Deep.DIC.c[-1] * 1e6, 2250, atol=0.2)
+
     def test_impossible_inventory_ratios_reject_unphysical_geometry(self):
         for ratio in (1.0, 100.0):
             with self.assertRaises(ValueError):
@@ -152,6 +207,28 @@ class IntroductoryModelTest(unittest.TestCase):
 
 
 class SignalIntegralTest(unittest.TestCase):
+    def test_resolved_clock_maps_native_square_pulses_without_losing_mass(self):
+        from esbmtk import Q_, Signal
+
+        for duration in ("100 yr", "333 yr", "1 kyr", "5000 yr"):
+            with self.subTest(duration=duration):
+                m = new_model(**finite_pulse_clock(start="1000 yr", duration=duration))
+                signal = Signal(name="test_pulse", species=m.CO2, register=m,
+                                start="1000 yr", duration=duration, mass="1 Pmol",
+                                shape="square")
+                self.assertGreaterEqual(Q_(duration).to("yr").magnitude / m.dt, 20)
+                self.assertAlmostEqual(signal.m.sum() * m.dt / 1e15, 1, places=12)
+                self.assertAlmostEqual(float(integrated_signal(m.time, signal.m,
+                                                              m.time[-1])) / 1e15,
+                                       1, places=12)
+
+    def test_invalid_pulse_clock_has_actionable_errors(self):
+        for start, duration in (("0 yr", "100 yr"), ("1000 yr", "0 yr"),
+                                ("1000 yr", "-1 yr"), ("1000 yr", "0.5 yr"),
+                                ("1000 yr", "29000 yr"), ("1000 yr", "40000 yr")):
+            with self.subTest(start=start, duration=duration), self.assertRaises(ValueError):
+                finite_pulse_clock(start=start, duration=duration)
+
     def test_integrates_within_sloping_segments_not_just_at_knots(self):
         # A triangular pulse has exact antiderivative t^2/2 on its first side.
         result = integrated_signal([0, 1, 2], [0, 1, 0], [-1, 0.5, 1, 1.5, 3])

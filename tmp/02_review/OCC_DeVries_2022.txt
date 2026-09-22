@@ -1,0 +1,1472 @@
+PAGE 1
+Annual Review of Environment and Resources
+The Ocean Carbon Cycle
+Tim DeVries
+Department of Geography and Earth Research Institute, University of California, Santa Barbara,
+California, USA; email: tdevries@geog.ucsb.edu
+Annu. Rev. Environ. Resour. 2022. 47:317–41
+First published as a Review in Advance on
+July 25, 2022
+The Annual Review of Environment and Resources is
+online at environ.annualreviews.org
+https://doi.org/10.1146/annurev-environ-120920-
+111307
+Copyright © 2022 by Annual Reviews. This work is
+licensed under a Creative Commons Attribution 4.0
+International License, which permits unrestricted
+use, distribution, and reproduction in any medium,
+provided the original author and source are credited.
+See credit lines of images or other third-party
+material in this article for license information
+Keywords
+carbon cycle, ocean carbon, CO 2 chemistry, carbon pumps, biological
+pump, anthropogenic CO 2
+Abstract
+The ocean holds vast quantities of carbon that it continually exchanges with
+the atmosphere through the air-sea interface. Because of its enormous size
+and relatively rapid exchange of carbon with the atmosphere, the ocean
+controls atmospheric CO 2 concentration and thereby Earth’ s climate on
+timescales of tens to thousands of years. This review examines the basic func-
+tions of the ocean’ s carbon cycle, demonstrating that the ocean carbon in-
+ventory is determined primarily by the mass of the ocean, by the chemical
+speciation of CO2 in seawater, and by the action of the solubility and biolog-
+ical pumps that draw carbon into the ocean’ s deeper layers, where it can be
+sequestered for decades to millennia. The ocean also plays a critical role in
+moderating the impacts of climate change by absorbing an amount of car-
+bon equivalent to about 25% of anthropogenic CO 2 emissions over the past
+several decades. However, this also leads to ocean acidification and reduces
+the chemical buffering capacity of the ocean and its future ability to take
+up CO2. This review closes with a look at the uncertain future of the ocean
+carbon cycle and the scientific challenges that this uncertainty brings.
+317
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 2
+Contents
+1. INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .. . . . . . . . . . . 318
+2. CO 2 SYSTEM CHEMISTRY AND THE EQUILIBRIUM PARTITIONING
+O FC A R B O NB E T W E E NT H EO C E A NA N DA T M O S P H E R E.............. 3 2 0
+3 . T H EO C E A NC A R B O NP U M P S ............................................. 3 2 4
+3.1. Three-Dimensional Activities of the Solubility and Biological Carbon
+P u m p sf r o mM o d e r nO b s e r v a t i o n s......................................... 3 2 6
+3.2. Mechanisms and Magnitude of the Biological Carbon Pump . . . . . . . . . . . . . . . . . 328
+4 . T H EO C E A N I CS I N KF O RA N T H R O P O G E N I CC A R B O N................. 3 2 9
+5 . T H EF U T U R EO FT H EO C E A N I CC A R B O NS I N K......................... 3 3 3
+1. INTRODUCTION
+Carbon plays a central role in Earth’ s life and climate systems. It is the basic currency of chemical
+energy in living organisms (1), and in the form of CO 2 is an important greenhouse gas in the
+atmosphere that helps to regulate Earth’ s climate (2, 3). The atmosphere and biosphere, however,
+are not the primary reservoirs of carbon in the Earth system ( Figure 1). The largest reservoir of
+carbon is the solid Earth, which holds nearly 100,000 times as much carbon as the atmosphere,
+while the ocean is the second largest reservoir of carbon, with roughly 60 times as much carbon
+as the atmosphere. The exchange of carbon between these major reservoirs and the atmosphere
+and biosphere constitutes the global carbon cycle ( Figure 1). Understanding and quantifying this
+cycle are among the primary aims of modern Earth system science.
+The ocean plays a very important role in the global carbon cycle. It is the largest reservoir of
+carbon that readily exchanges with the atmosphere, and it hosts a diverse biosphere that cycles
+through nearly as much carbon as the entire terrestrial biosphere ( Figure 1 ). Because of its
+vast size and relatively rapid exchange of CO 2 with the atmosphere, the ocean is the dominant
+natural control on atmospheric CO 2 concentrations on timescales of decades to millennia (16,
+17). On very long timescales ( >1 million years), the atmosphere, biosphere, and ocean can be
+considered one single carbon reservoir whose inventory is regulated by the immense reservoir
+of the solid Earth through weathering and volcanic activity (7). By contrast, rapid exchange with
+the terrestrial biosphere through photosynthesis and respiration controls the atmospheric CO 2
+concentration on seasonal (18) to interannual timescales (19). This review therefore focuses on
+the intermediate timescales (decades to millennia), in which the ocean is the most important
+natural control on atmospheric CO 2.
+Over the past 2,000 years, the atmospheric CO2 concentration has exhibited two distinct modes
+(Figure 2). Prior to the start of the industrial revolution ( ∼ 1780), the atmospheric CO 2 concen-
+tration was relatively steady at roughly 280 ppm. Over this multimillennial time span, the flows of
+carbon into and out of the atmosphere were closely balanced, and the atmospheric CO 2 concen-
+tration was regulated by exchange with a nearly unchanging ocean. Since then, the atmospheric
+CO2 concentration has been steadily increasing due to the combustion of fossil fuels, which has
+powered economic development over the past 250 years ( Figure 2). This industrial activity rep-
+resents a massive acceleration in the natural release of carbon from geological reservoirs and has
+impacted all of the carbon reservoirs that exchange with the atmosphere, including the ocean.
+The purpose of this review is to assess the state of the ocean carbon cycle and its role in reg-
+ulating the atmospheric CO 2 concentration, both in the steady state of the preindustrial era and
+318 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 3
+Dissolved inorganic
+carbon (DIC):
+the
+sum of dissolved CO 2,
+bicarbonate ion
+(HCO3−), and
+carbonate ion (CO 32−)
+in seawater
+Geological carbon
+(75,000,000)
+Biomass and soils
+(2,000) DIC
+(37,300)
+Volcanoes and
+metamorphism
+Silicate
+weathering NPP
+Respiration
+Gas exchange0.1
+54
+Burial
+56
+0.2
+0.5
+Carbonate
+weathering
+0.15
+Biomass
+(5)
+NPP
+Respiration
+49
+49
+0.9  Rivers 92
+90
+Combustion
+10
+Inventories (GtC = 1015 gC)
+Fluxes (GtC year–1 )
+Atmospheric CO2
+(890)
+Figure 1
+A schematic diagram illustrating Earth’ s contemporary carbon cycle (for the year 2020). Carbon inventories are based on estimates of
+geological carbon in limestone and shale rocks (including a comparatively small reservoir of fossil fuels) (4), carbon biomass in the
+ocean (5), the carbon inventory of terrestrial biomass and soils (5, 6), and atmospheric CO 2 and oceanic dissolved inorganic carbon
+(DIC) concentrations from contemporary observations ( Ta b l e 1). Carbon fluxes between reservoirs are based on estimates of CO 2
+emissions from volcanoes and metamorphism (7), CO 2 consumption by silicate weathering (8) and carbonate weathering (4), carbon
+burial in oceanic sediments (9), outflow of carbon from terrestrial environments to the ocean via rivers (10, 11), and release of CO 2
+from fossil fuel combustion (12). T errestrial net primary production (NPP) estimates are based on a meta-analysis (13), and terrestrial
+respiration is inferred as the residual between the contemporary net flux of CO 2 between the atmosphere and terrestrial biosphere from
+Reference 12 and the terrestrial NPP . Marine NPP estimates are based on a model from Reference 14, and marine respiration is
+assumed to be in balance with NPP due to a lack of direct estimates. Air-sea gas exchange fluxes are from the Global Carbon Budget
+2020 (15). All of the numbers in this diagram are uncertain, with uncertainties ranging from ∼ 10% (combustion, ocean and atmosphere
+carbon inventories) to ∼ 30% (NPP , respiration, and gas exchange) to nearly 100% (river fluxes, weathering, and
+burial).
+in its contemporary anthropogenically perturbed state. Accordingly, this review examines CO 2
+chemistry in seawater and the equilibrium partitioning of CO 2 between the ocean and atmo-
+sphere (Section 2); the ocean carbon pumps and the mechanisms maintaining them (Section 3);
+and the response of the ocean to anthropogenic change, including through the oceanic uptake
+of anthropogenic CO 2 (Section 4). This review concludes with a look at the future of the ocean
+carbon sink and highlights some of the major gaps in our understanding of the ocean carbon cycle
+(Section 5).
+There are aspects of the ocean carbon cycle that by necessity fall outside the scope of this
+review. These include interactions of the ocean dissolved inorganic carbon (DIC) reservoir with
+other carbon reservoirs that could regulate the ocean carbon inventory and ocean chemistry on
+multimillennial (>10,000 year) timescales, including the formation and dissolution of carbonate
+sediments (22), the cycling of carbon through methane hydrates in marine sediments (23), and
+carbon that is trapped in recalcitrant dissolved organic molecules in the ocean (24).
+www.annualreviews.org • The Ocean Carbon Cycle 319
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 4
+280
+300
+320
+340
+360
+380
+400
+420
+500
+0
+2
+4
+6
+1000 1500 1800 1850 1900 1950 2000
+CO2 concentration (ppm) CO2  growth rate (GtC year–1 )
+Preindustrial eraPreindustrial era
+a
+b
+Industrial eraIndustrial era
+Preindustrial eraPreindustrial era Industrial eraIndustrial era
+Contemporary period
+Contemporary period
+Year
+Figure 2
+(a, left) Atmospheric CO 2 concentrations during the preindustrial era (0 AD to 1780) and ( right) during the industrial era (1780 to
+present). Atmospheric CO 2 is based on ice core records from 0 AD to 1958 (20) and from direct measurements at the South Pole and
+Mauna Loa, Hawai’i, United States, from 1958 to 2020 (21). ( b) The time rate of change of atmospheric CO 2, highlighting (left)a
+preindustrial steady state prior to 1780 AD (mean atmospheric CO 2 growth rate of 0 GtC year −1)a n d( right) the positive growth rate
+of atmospheric CO 2 over the industrial era, reaching a value of 4.76 GtC year −1 in the contemporary period (2001–2020, yellow).
+2. CO2 SYSTEM CHEMISTRY AND THE EQUILIBRIUM PARTITIONING
+OF CARBON BETWEEN THE OCEAN AND ATMOSPHERE
+The chemistry of CO 2 in seawater has been understood since the work of Buch in the 1930s (25,
+26), with increasing analytical precision providing continued refinements to the understanding
+of the chemical equilibria of the CO 2 system in seawater (27, 28). This review does not examine
+these developments in detail but uses this well-established chemistry, along with some simplifica-
+tions, to present a conceptual model for how seawater CO 2 chemistry influences the equilibrium
+partitioning of carbon between the ocean and atmosphere. This conceptual model demonstrates
+why the ocean has a far greater carbon inventory than does the atmosphere ( Figure 1 )a n dt h u s
+plays a major role in determining the atmospheric CO 2 concentration.
+The air-sea exchange of CO 2 regulates the connection between the ocean and atmospheric
+carbon reservoirs. This exchange is driven by the diffusion of gaseous CO 2 across the air-sea
+interface (29), with the net exchange being proportional to the difference in the CO 2 gas pressure
+in air and seawater (30). Thus, it is closely tied to the solubility of CO 2 in seawater ( K0), which
+determines the ratio of CO 2 in aqueous solution in seawater to the partial pressure of CO 2 in the
+gas phase at chemical equilibrium:
+K0 = [CO2]sw/pCO2,sw. 1.
+320 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 5
+Equation 1 uses the partial pressure of CO 2 (pCO2,sw, measured in microatmospheres) rather than
+the more accurate fugacity of CO 2, which takes into account the nonideal gas behavior of CO 2.
+The difference between partial pressure and fugacity is less than 1% (31) and is not important
+for the simple conceptual models proposed here. Likewise, the partial pressure of CO 2 is directly
+related to its atmospheric concentration (mole fraction, or xCO2, measured in parts per million),
+and for dry air with a pressure of 1 atm the two are equivalent. For air with 100% humidity, the
+difference between pCO2 and xCO2 can be several percent (32). This review makes the simplifying
+approximation that the fugacity, partial pressure, and mole fraction are all equivalent and can be
+used interchangeably. While this is acceptable for developing an intuitive understanding, for more
+precise applications this may not be the case.
+As CO2 solubility increases, the concentration of CO2 in aqueous solution increases for a given
+partial pressure of CO 2; conversely, the partial pressure of CO 2 in seawater decreases as the sol-
+ubility increases for a given concentration of CO 2 in aqueous solution. Like most gases, the sol-
+ubility of CO 2 increases as the seawater temperature decreases, such that polar waters with a
+temperature of 0°C have a solubility more than twice as large as that of equatorial waters with a
+temperature of 25°C (31). The solubility of CO2 in seawater also depends on salinity, with higher-
+salinity waters having lower solubility, but the limited range of salinity in the ocean compared to
+temperature renders this effect small for most applications.
+CO2 also reacts with seawater to form carbonic acid, H 2CO3, which then dissociates in two
+steps to bicarbonate, HCO3−, and carbonate, CO32−, ions (28). The sum total of these is the DIC.
+The distribution of dissolved carbon across the three DIC species is closely related to the seawa-
+ter pH (32). As pH decreases, the buffering capacity of seawater weakens (33) and the proportion
+of CO 2 relative to bicarbonate and carbonate ions increases, while increasing pH has the oppo-
+site effect. In the contemporary surface ocean, the pH is 8.11 ± 0.08 and the DIC/CO 2 ratio is
+160 ± 50. This chemical speciation of CO 2 therefore effectively enhances the solubility of CO 2
+by a factor of ∼ 150, depending on the seawater pH. The resulting chemical equilibrium between
+DIC and seawater pCO2 can be written as
+F = [DIC]/pCO2,sw. 2.
+This review refers to F as the seawater equilibrium carbon capacity. It is related to but distinct
+from the buffer or Revelle factor, R,i nt h a t F measures the equilibrium ratio of DIC to pCO2,
+while R measures the ratio of the relative change in pCO2 to the relative change in DIC (16,
+34). It is therefore a measure of the equilibrium carbon balance rather than the response of the
+system to changes in that equilibrium. For conceptual convenience, when discussing the air-sea
+carbon balance, the units of F are mol air (kg seawater) −1, which uses the approximation that
+pCO2 = xCO2.
+Because seawater pH is tightly anticorrelated with pCO 2 for typical seawater pH ranges (35),
+F can be closely approximated as a function of pCO2,sw. T o examine the relationship between
+F and pCO2,sw, seawater pCO2 was calculated from measurements of seawater DIC and alkalinity
+from the Global Ocean Carbon Data Analysis Project version 2 (GLODAPv2.2021) (36) using
+the CO 2 chemistry calculator CO2SYS (37). The results show that F is a hyperbolic function of
+pCO2 over the range commonly found in seawater (100–1,000 µatm) (Figure 3). A least squares
+fit shows that a hyperbola of the form
+F = 0.23 + 2,233/(pCO2 + 34) 3.
+fits the observations with an R2 of 0.98 and an RMS error of 0.18 mol air (kg seawater) −1
+(Figure 3). For a preindustrial CO 2 concentration of 280 ppm, the value of F is roughly 7.3 mol
+air (kg seawater) −1. However, as pCO2 increases, the value of F decreases (Figure 3). This coin-
+cides with a reduction of the carbon-buffering capacity of seawater at higher CO 2 concentrations
+www.annualreviews.org • The Ocean Carbon Cycle 321
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 6
+200 400 600 800
+Preindustrial: pCO2,sw ~ 280 μatm, ~ 7.3
+1,000
+2
+4
+6
+8
+10
+12
+14
+16
+18
+pCO2,air
+pCO2,sw CO2 + H2O HCO3– + H+ CO3
+2– + 2H+
+pCO2,sw (μatm)
+=       × pCO2,sw
+DIC = CO2 + HCO3–  + CO3
+2–
+Figure 3
+A schematic diagram illustrating a simple conceptual model of the ocean and atmosphere CO 2 exchange, in which the ocean is treated
+as a homogeneous carbon reservoir. The air-sea exchange of CO 2 is proportional to the difference in the partial pressure of CO 2 in the
+atmosphere (pCO2,air) and seawater ( pCO2,sw). CO2 in the ocean combines with water to form carbonic acid, which dissociates in
+two steps to form bicarbonate (HCO 3−) and carbonate (CO 32−)i o n s .(Inset) Plot showing the relationship between the seawater
+equilibrium carbon capacity F (Equation 2) and seawater pCO2 from contemporary observations. Abbreviation: DIC, dissolved
+inorganic carbon.
+and lower pH (33). At a pCO2 of ∼ 600 µatm, the value of F is ∼ 3.5, representing roughly a halving
+of the equilibrium carbon capacity of seawater for a doubling of the pCO2.
+The impact of this chemistry on the partitioning of carbon between the ocean and atmosphere
+can be illustrated using a simple two-box model of the ocean-atmosphere system. In this simple
+system, the ocean is approximated as a single well-mixed reservoir of DIC, with a concentration
+of
+DIC. In this system, the total carbon inventory of the ocean is
+Coce = MoceDIC, 4.
+while the total carbon inventory of the atmosphere is
+Catm = Matm pCO2,air,5 .
+322 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 7
+Ta b l e 1 Metrics of the ocean and atmosphere carbon cycle
+Value
+Quantity (units) Preindustrial Contemporary Meaning
+Moce (kg) 1.38 × 1021 1.38 × 1021 Mass of the ocean a
+Matm (mol) 1.77 × 1020 1.77 × 1020 Molar mass of the atmosphere b
+xCO2,air (ppm) 280 410 Atmospheric CO2 concentration
+DICs (µmol kg−1) 2,040 2,090 Average surfacec seawater DIC
+DICd (µmol kg−1) 2,250 2,260 Average deep ocean d DIC
+F [mol air (kg seawater) −1] 7.2 – e Ratio of DIC/ xCO2 at chemical
+equilibrium
+Coce (GtC) 37,100f 37,300g T otal mass of inorganic carbon
+in the ocean
+Catm (GtC) 595 890 T otal mass of carbon as CO2 in
+the atmosphere
+Abbreviations: DIC, dissolved inorganic carbon; GLODAPv2.2021, Global Ocean Carbon Data Analysis Project version 2.
+aAssuming a global ocean volume of 1.34 × 1018 m3 from Reference 39 and a mean density of 1,036 kg m −3.
+bUsing the mass of the dry atmosphere is 5.135 × 1018 kg (40) and molar mass of dry air is 2.896 g mol −1.
+c0–200 m.
+d200 m to seafloor.
+eV alue is not given because the ocean-atmosphere system is not presently at chemical equilibrium.
+fBased on a mean ocean DIC value of 2,248 µmol kg−1 from GLODAPv2.2021 (36) corrected for anthropogenic DIC from
+Reference 41.
+gBased on a mean ocean DIC value of 2,248 µmol kg−1 from GLODAPv2.2021 (36).
+with Moce the mass of the ocean and Matm the molar mass of the dry atmosphere ( T able 1). The
+timescale for this system to come to equilibrium through air-sea gas exchange is roughly 40 years
+(scaling the estimate of Reference 38 of ∼ 1 year for a 100-m mixed layer to the full ocean depth),
+and thus such a system could easily be in equilibrium at a preindustrial steady state ( Figure 2 );
+in this equilibrium state, the seawater pCO2 and atmospheric pCO2 would be identical. Assuming
+equilibrium, combining Equations 2, 4, and 5 yields the following expression for the ratio of the
+size of the oceanic and atmospheric carbon reservoirs:
+Coce
+Catm
+= F Moce
+Matm
+. 6.
+The ratio of the mass of the ocean to the molar mass of the atmosphere is 7.8 kg seawater (mol
+air)−1 (T able 1).
+The simple expression in Equation 6 implies that, to first order, the partitioning of carbon be-
+tween the ocean and atmosphere depends on the relative masses of the ocean and the atmosphere
+and on the equilibrium carbon capacity of seawater, i.e., F. Equation 6, along with the simplified
+expression for the carbon capacity of seawater in Equation 3, implies that at an atmospheric pCO2
+of 280 µatm, the ratio of DIC to pCO2 would be 7.3 and the ratio of Coce to Catm would be roughly
+56. This can be checked against the preindustrial oceanic DIC inventory, which is ∼ 37,100 GtC
+(T able 1), and the preindustrial atmospheric carbon inventory of ∼ 595 GtC, for a ratio of ∼ 62.
+The theoretical ratio derived from the two-box model is slightly less than the observed ratio but
+within the same ballpark, illustrating the utility of this simple conceptual approach for under-
+standing the partitioning of carbon between the ocean and atmosphere. However, if one speci-
+fies the total carbon inventory of the ocean/atmosphere system at a preindustrial value of 3.2 ×
+1018 mol C, Equations 3 and 6 imply an atmospheric pCO2 of 583 ppm, roughly twice the prein-
+dustrial value of 280 µatm. Clearly, the two-box model is not entirely sufficient for understanding
+www.annualreviews.org • The Ocean Carbon Cycle 323
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 8
+Last glacial
+maximum:
+the period
+from roughly 18,000
+to 25,000 years before
+present, when the
+atmospheric CO2
+concentration was
+about 80–100 ppm
+lower than during the
+preindustrial period
+and the average Earth
+surface temperature
+was roughly 5°C
+colder
+the equilibrium partitioning of carbon between the ocean and atmosphere, and even greater er-
+rors are introduced when using this simple conceptual model to deduce the atmospheric CO 2
+concentration at equilibrium.
+3. THE OCEAN CARBON PUMPS
+In the simple system considered in Figure 3 , the ocean is a well-mixed reservoir of inorganic
+carbon exchanging with the atmosphere. In this simple system, the partitioning of carbon between
+the ocean and atmosphere is determined by the equilibrium carbon capacity of the CO2 system and
+the relative masses of the ocean and atmosphere. However, the real ocean is more complex. The
+most important point neglected in that simple conceptual framework is that there are substantial
+gradients in DIC in the ocean, in particular a strong vertical gradient with relatively low DIC
+concentrations near the surface and higher concentrations at depth ( Figure 4 ). These gradients
+are maintained by the ocean carbon pumps, primarily the solubility and biological carbon pumps
+(42), which are reviewed in Sections 3.1 and 3.2. The ocean carbon pumps play an important role
+in regulating the partitioning of carbon between the ocean and atmosphere, and variations in their
+strengths are expected to be the main driver of variations in atmospheric CO 2 on the timescales
+of millennia. For example, a stronger carbon pump is thought to be responsible in some capacity
+for the much lower atmospheric CO 2 concentration during the last glacial maximum (43–45).
+The influence of the carbon pumps on the partitioning of carbon between the atmosphere and
+ocean can be illustrated by revisiting the simple two-box ocean-atmosphere model of Section 2 but
+dividing the ocean into surface and deep layers. The difference between the surface and deep ocean
+DIC concentration in the contemporary ocean is about 170 µmol kg −1, and in the preindustrial
+ocean the gradient is over 200 µmol kg −1 (T able 1; Figure 4 ). In this system, the total ocean
+carbon inventory is the sum of the surface ocean and deep ocean inventories,
+Coce = Moce,sDICs + Moce,dDICd,7 .
+where the s and d subscripts refer to the surface and deep ocean, respectively. In this three-box
+model, the equilibrium partitioning of carbon between the ocean and atmosphere is
+Coce
+Catm
+= F
+( Ms
+Matm
++ DICd
+DICs
+Md
+Matm
+)
+. 8.
+Because the deep ocean volume is so much larger than the surface ocean volume that is equilibrated
+with the atmosphere, the simplifying assumption can be made that Ms → 0a n dMd → Moce.T h e n
+the relationship simplifies to
+Coce
+Catm
+= F
+( DICd
+DICs
+Moce
+Matm
+)
+,9 .
+which is similar to the formula for the case in which the ocean is a homogeneous reservoir
+(Equation 6) but multiplied by the factor of the ratio of DIC in the deep ocean to that in the
+surface ocean. This ratio is about 1.1 in the preindustrial ocean ( T able 1).
+Using the parameters listed in T able 1, this simple three-box model ( Figure 4 ) predicts a
+ratio of Coce to Catm of 62 for the preindustrial equilibrium state, which is very close to the ratio
+of 62.5 estimated from observations. Furthermore, if the total carbon content of the ocean and
+atmosphere is specified to be 3.2 × 1018 mol C, Equations 3 and 9 imply an atmospheric pCO2
+of 296 ppm, close to the preindustrial value of 280 µatm and roughly half the value predicted
+for the case of a homogeneous ocean. These considerations show that the existence of the ocean
+carbon pumps enhances the ocean carbon inventory by roughly 10% relative to a homogeneous
+ocean and reduces the atmospheric carbon inventory by a factor of 2. The approximately 10 times
+324 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 9
+Carbon pumps
+2,000 2,100 2,200 2,300
+1,000
+2,000
+3,000 
+4,000
+pCO2,air
+pCO2,sw
+ DICS
+DICd
+Depth (m)
+DIC (μmol kg –1 )
+Figure 4
+Schematic diagram of a simple conceptual model of the ocean and atmosphere CO 2 exchange, updated from Figure 3 to separate the
+surface ocean that exchanges CO 2 with the atmosphere and the deep ocean that does not. Also shown is the increase in dissolved
+inorganic carbon (DIC) with depth in the contemporary ocean that is due to the ocean carbon pumps. F is the equilibrium carbon
+capacity of seawater (Equation 2).
+greater leverage of the carbon pumps over atmospheric CO2 than over the ocean carbon inventory
+is quantified by the Revelle (or buffer) factor of roughly 10 for the preindustrial ocean (16, 46).
+The 1D conceptual model of Figure 4 is sufficient to understand the effects of the carbon
+pumps on the equilibrium partitioning of carbon between the ocean and atmosphere but not how
+the pumps themselves operate. In the following section, I use oceanic DIC observations and an
+ocean carbon cycle model to illustrate how the solubility and biological pumps control the spatial
+distribution of DIC in the ocean and discuss the mechanisms by which they operate.
+www.annualreviews.org • The Ocean Carbon Cycle 325
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 10
+Thermocline: the
+region of the interior
+ocean underlying
+warm tropical and
+subtropical regions
+where the temperature
+rapidly decreases with
+depth
+Net ecosystem
+productivity:
+the
+difference between
+autotrophic net
+primary productivity
+and heterotrophic
+respiration
+3.1. Three-Dimensional Activities of the Solubility and Biological Carbon
+Pumps from Modern Observations
+Deep and bottom waters of the ocean have an average temperature of roughly −2–4°C (47).
+These waters, which form in polar regions of the North Atlantic and in the Southern Ocean along
+the Antarctic shelf (48), have approximately twice the solubility of average surface waters, which
+have a temperature of roughly 20°C (31). The cold temperatures and enhanced solubility of the
+ocean’ s deep waters drive an increase in DIC with depth that is termed the solubility pump (42).
+The magnitude of the solubility pump depends on the volume of the deep ocean ventilated by
+cold, polar water masses compared to the (much smaller) volume of the oceanic thermocline that
+is ventilated by the wind-driven subtropical circulation (49) and on the degree of air-sea CO 2
+disequilibrium in high-latitude regions (50, 51). Air-sea CO 2 disequilibrium typically reduces the
+magnitude of the solubility pump, because cold polar waters are often subducted into the deep
+ocean before reaching chemical equilibrium with the overlying atmosphere. When this happens,
+the deepwater masses have a deficit of DIC relative to what they would have at equilibrium, which
+reduces the effectiveness of the solubility pump (50, 52, 53).
+The exact magnitude of the solubility pump in the ocean is impossible to observe directly, be-
+cause the observed DIC distribution results from the convolved effects of solubility, air-sea CO 2
+disequilibrium, the biological pump, and the invasion of anthropogenic CO 2 into the ocean. In
+this review, I separate these components using a global ocean carbon cycle model and modern
+observations of DIC in the ocean (41). The impact of the solubility pump can be diagnosed using
+a global ocean circulation model in which CO 2 exchanges with a well-mixed atmosphere with a
+fixed preindustrial atmospheric CO 2 concentration of 280 ppm, using a wind-speed-dependent
+model of CO 2 gas exchange rates (54). The resulting oceanic DIC distribution at steady state is
+called abiotic preindustrial DIC ( Figure 5 a–c) and reflects the influence of the solubility pump
+in the preindustrial ocean under realistic gas exchange rates. The mean concentration of abiotic
+preindustrial DIC is roughly 2,065 µmol kg −1, and the oceanic inventory of 34,230 GtC is ap-
+proximately what would be expected from an ocean with a realistic thermal structure that is in
+equilibrium with the preindustrial atmospheric CO 2, with a slightly reduced DIC concentration
+due to CO 2 disequilibrium in cold deepwater formation regions (50). The thermal structure of
+the ocean determines the spatial gradients of DIC in this model, with the warm waters of the sur-
+face and thermocline having a DIC concentration of ∼ 2,030 µmol kg −1 and the coldest regions
+of the deep Southern Ocean having a DIC concentration close to 2,100 µmol kg−1 (Figure 5a,b).
+The overall surface-to–deep ocean gradient of DIC with a realistic solubility pump is roughly
+90 µmol kg −1 (Figure 5 c). If the ocean were in perfect equilibrium with atmospheric CO 2,t h e
+surface-to–deep ocean DIC gradient would be slightly larger at 150 µmol kg −1 and the oceanic
+DIC inventory would be about 2% greater, or approximately 34,960 GtC ( Figure 5c). Thus air-
+sea CO2 disequilibrium reduces the carbon inventory of the preindustrial abiotic ocean by about
+700 GtC.
+The solubility pump accounts for roughly one-third of the vertical gradient of DIC in the
+ocean. The remainder is due to the so-called biological pump. The biological pump occurs due to
+the net ecosystem productivity of the surface ocean, which exports organic carbon into the
+deep ocean by a variety of mechanisms that are discussed in Section 3.2. The influence of the
+biological pump can be deduced by subtracting the abiotic preindustrial DIC from the observed
+DIC concentration, after correcting the observations for the invasion of anthropogenic CO 2
+and the concentration and dilution of DIC resulting from evaporation and precipitation at the
+sea surface. The invasion of anthropogenic CO 2 can be quantified using model simulations
+(41) (see Section 4), while the concentration and dilution of DIC resulting from evaporation
+and precipitation can be accounted for by normalizing the DIC concentration to a common
+326 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 11
+Ventilation age:
+the time elapsed since
+water parcels in the
+interior ocean were
+last at the sea surface
+5,000
+60 40 20 EQ –20 –40 –60 –60 –40 –20 EQ 20 40 60
+2,0002,0502,1002,150
+SP
+4,000
+3,000
+2,000
+1,000
+Latitude (°N)
+Abiotic DIC
+(μmol kg –1 )
+Biological DIC
+(μmol kg –1 )
+Abiotic DIC (μmol kg–1 )
+Biological DIC (μmol kg –1 )
+Depth (m)
+5,000
+60 40 20 EQ –20
+–300
+1,960 1,980 2,000 2,020 2,040 2,060 2,080 2,100
+–250 –200 –150 –100 –50 0 50 100 150 200 250 300
+–40 –60 –60 –40 –20 EQ 20 40 60 0 100 200SP
+4,000
+3,000
+2,000
+1,000
+Depth (m)
+North Paci/f_ic North Atlantic Southern Ocean
+North Paci/f_ic North Atlantic Southern Ocean
+Global
+Global
+Latitude (°N)
+aa bbc
+dd eef
+Figure 5
+Preindustrial abiotic and biological DIC concentrations in the ocean. ( a– c) Preindustrial abiotic DIC represents the distribution of DIC
+in a preindustrial ocean without biological processes, and the surface-to–deep ocean gradient in DIC ( c) results solely from the solubility
+pump under realistic gas exchange. The red curve in panel c represents the vertical profile in DIC that would result if the ocean pCO2
+were fully equilibrated with the atmosphere. ( d– f ) Biological DIC is the difference between oceanic DIC in the preindustrial ocean and
+the preindustrial abiotic DIC (after correcting for the effects of precipitation and evaporation) and represents the influence of
+biological processes on the ocean DIC inventory. Abbreviations: DIC, dissolved inorganic carbon; EQ, equator; SP , South Pole.
+reference salinity of 34.7 (55). After correcting for these factors, the resulting DIC concentration
+can be considered biological DIC ( Figure 5 d–f ), which traces out the integrated impacts of the
+biological pump on the ocean DIC concentration. Note that biological DIC is an excess or deficit
+of inorganic carbon due to biological processes in the ocean and is not similar to organic carbon,
+which is carbon fixed in organic molecules.
+The presence of the biological pump leads to less DIC at the surface and more DIC in the deep
+ocean, adding an additional surface-to–deep ocean gradient of about 200 µmol kg−1 to the 90 µmol
+kg−1 present in the abiotic ocean ( Figure 5d–f ). Biological DIC has a strong interbasin gradient,
+and it accumulates in the interior ocean as water masses age following the deep ocean conveyor
+circulation (56, 57). Deep waters in the North Atlantic are refreshed relatively rapidly, with ven-
+tilation ages on the order of a century or so (58), and these waters have the lowest biological DIC
+www.annualreviews.org • The Ocean Carbon Cycle 327
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 12
+Overturning
+circulation:
+the
+interconnected ocean
+currents that bring
+waters from the
+surface to the deep
+ocean and back again
+concentrations of ∼ 30–60 µmol kg−1. The highest concentrations of biological carbon are found
+in the mid-depth North Pacific, coincident with the oldest ventilation ages in the ocean of around
+1,400 years (59). Overall, the concentration of biological carbon in the ocean has a good correlation
+with ventilation age ( r = 0.87). This general observation explains how changes in ocean ventila-
+tion can drive changes in the strength of the biological pump, with weaker overturning circulation
+leading to longer ventilation ages and a buildup of biological carbon in the interior ocean (60–62).
+3.2. Mechanisms and Magnitude of the Biological Carbon Pump
+Overall, the biological pump increases the inventory of DIC in the ocean relative to the case
+in which there is no biological pump. Based on the average biological DIC concentration of
+170 µmol kg −1, the global inventory of biological carbon in the ocean is roughly 2,800 GtC.
+This is roughly 8% of the ocean’ s total inorganic carbon inventory and is significantly larger than
+the total inventory of organic carbon in the ocean, which is ∼ 600 GtC, most of which turns over
+relatively slowly, on the order of every 10,000 years (24).
+The total amount of carbon stored in the ocean due to the biological pump is a combination
+of carbon both from respired organic matter, also known as the soft tissue pump (63), and from
+dissolved calcium carbonate (CaCO 3), also known as the carbonate pump (42). This separation is
+conceptually important, as different mechanisms govern the magnitudes of each of these pools of
+biological carbon. Also, while both pumps increase the accumulation of DIC in the interior ocean,
+they have opposing effects on seawater pCO2. The formation of organic carbon by the soft tissue
+pump reduces seawater pCO2 by removing DIC but leaving seawater pH relatively unchanged.
+In contrast, the formation of CaCO 3 reduces the seawater pH by effectively removing carbonate
+ions from solution, which has the effect of raising seawater pCO2 (64).
+The soft tissue biological pump results from the conversion of DIC to organic carbon by au-
+totrophic net primary production (NPP) in the surface ocean, where sufficient light exists for
+photosynthesis. This euphotic zone extends to depths of roughly 30–150 m in the open ocean, de-
+pending on the water clarity (65). Global ocean NPP is approximately 50 GtC year −1 (14, 66), but
+much of this NPP is metabolized by heterotrophic organisms in the euphotic zone and converted
+back to DIC. Roughly 20% of the NPP , or about 10 GtC year−1 (67–70), escapes respiration in the
+euphotic zone and is transported into the deep ocean by a variety of mechanisms. Mechanisms of
+carbon export can be broadly classified as involving the gravitational settling of organic particles,
+the physical mixing of organic carbon into the ocean’ s deeper layers, or the vertical migrations of
+organisms between the euphotic zone and deeper layers (71). Organic particles that sink under
+the influence of gravity include the aggregates or flocculates of living or dead phytoplankton (72)
+and fecal pellets produced by zooplankton (73) and fish (74, 75). The physical mixing of organic
+carbon occurs due to the large-scale subduction (76) and the seasonal mixing (77) and eddy subduc-
+tion (78) of water masses carrying particulate and dissolved organic carbon into the deeper ocean.
+Large populations of both zooplankton (79) and fish (80) reside at depths several hundred meters
+below the euphotic zone during the day and travel upward to the surface at night to feed. The
+downward migrations of these organisms transport organic carbon into the deeper ocean, where
+respiration and defecation release it back to the water column. The carbonate pump is carried out
+by organisms that synthesize carbonates, primarily CaCO3, to form their hard exoskeletons. These
+include phytoplankton such as coccolithophores and foraminifera (81) and zooplankton such as
+pteropods (82). Calcifying benthic creatures such as crustaceans and mollusks do not contribute
+to the carbonate pump, because they live on the seafloor.
+The summed effect of the soft tissue and carbonate biological pumps is to remove DIC from
+the surface and release it into the deeper water column, contributing to the buildup of biological
+328 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 13
+Sequestration time:
+an analog of the
+ventilation age that
+measures the time
+elapsed during the
+transit of water parcels
+(and dissolved carbon
+in these parcels) from
+a location in the
+interior ocean to the
+sea surface
+DIC in the deep ocean ( Figure 5). The amount of carbon sequestered by the biological pump is
+determined by the sequestration time of remineralized DIC in the ocean (83). Each mechanism
+of the biological pump has a characteristic sequestration time that is determined by how deep
+the carbon is transported before being remineralized back to DIC (84) and on the regional ocean
+circulation patterns that return this carbon to the sea surface (83). The mean carbon sequestration
+time for the soft tissue pump is on the order of several hundred years (83), but it varies from a few
+years to several decades for dissolved carbon mixed into the thermocline to close to a millennium
+for carbon brought into the deep ocean well below the permanent thermocline (84).
+How much do the soft tissue and carbonate pumps contribute to the total ∼ 2,800 GtC inven-
+tory of biological DIC? Carbon sequestration by the soft tissue pump can be estimated from nu-
+trient and oxygen observations, taking advantage of the stoichiometric ratios of carbon, nutrients,
+and oxygen in marine organic matter (63, 85). Estimates based on oxygen and nutrient inventories
+suggest that the soft tissue pump sequesters around 1,300 GtC (86), a number that is supported by
+a data-constrained model of the biological pump (87). Analysis of the global alkalinity distribution
+suggests that the carbonate pump may sequester roughly 540 GtC (86). These estimates are based
+on the assumption that CO 2 instantaneously equilibrates with the atmosphere at the sea surface.
+However, this is not the case, because the chemical speciation of DIC in seawater leads to an air-
+sea equilibration time of roughly 1 year for a 100-m-deep surface mixed layer (38). The difference
+between the total biological carbon inventory and the estimated soft tissue and carbonate pumps
+is roughly 1,000 GtC of biological DIC, which can be attributed to air-sea CO 2 disequilibrium
+that enhances the effectiveness of the biological pump by preventing the immediate outgassing
+of biological DIC to the atmosphere in upwelling regions such as the Southern Ocean (88). This
+large role for air-sea disequilibrium in enhancing the effectiveness of the biological carbon pump
+is consistent with model simulations (88, 89). Note also that this increase in the biological car-
+bon inventory of 1,000 GtC due to air-sea CO 2 disequilibrium more than counterbalances the
+−700 GtC weakening of the solubility pump due to air-sea disequilibrium, a conclusion that is in
+agreement with previous data-based calculations (90) and models (52).
+4. THE OCEANIC SINK FOR ANTHROPOGENIC CARBON
+About 90% of DIC in the ocean is due to the chemical equilibration of the ocean with the prein-
+dustrial atmosphere, which is only very slightly modified by air-sea disequilibrium ( Figure 5a–c).
+The second most important contributor to ocean DIC is the biological pump, which increases
+the ocean DIC inventory by roughly 10% ( Figure 5 d–f ). The third and smallest component
+of the contemporary ocean DIC reservoir is anthropogenic carbon, which is carbon that has been
+absorbed by the ocean in response to rising atmospheric CO 2 levels over the industrial era (91, 92)
+(Figure 6a). Anthropogenic carbon cannot be observed directly due to its miniscule concentration
+in the ocean, but it can be estimated by various indirect methods that combine both observations
+and models (41, 93–95). One such estimate using an ocean circulation inverse model (41, 96) is
+shown in Figure 6 . The model uses physical ocean circulation tracers to estimate the 3D global
+ocean circulation, and then uses this circulation model along with the atmospheric pCO2 time
+history to calculate the invasion of anthropogenic CO 2 into the ocean. As of 2018, the ocean had
+accumulated ∼ 185 Gt of DIC from the uptake of anthropogenic CO 2, representing an increase
+in the ocean DIC inventory of 0.5%.
+Despite the small inventory of anthropogenic DIC in the ocean compared to that of the
+natural background, the oceanic uptake of anthropogenic CO 2 is extremely important because
+it helps to regulate Earth’ s climate response to CO 2 emissions (98). Humans have emitted
+660 GtC (as of 2020) since the beginning of the industrial revolution through industrial activities
+www.annualreviews.org • The Ocean Carbon Cycle 329
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 14
+1800 1840 1880 1920 1970 1960 1980 1990 2000 2010 2020
+0
+0.4
+0.8
+1.2
+1.6
+2
+2.4
+2.8
+3.2
+Air-sea CO2
+/f_lux (GtC year–1 )
+8
+8.08
+8.16Surface pH
+Ye a r
+Anthropogenic
+DIC (GtC)
+Sabine et al. (2004)
+Khatiwala et al. (2012)
+Gruber et al. (2019a)
+DeVries (2014)
+Total CO2
+Station ALOHA pH and linear trend
+Anthropogenic CO2
+0
+30
+60
+90
+120
+150
+180
+a
+c
+b
+Figure 6
+(a) Ocean anthropogenic dissolved inorganic carbon (DIC) accumulation over time from an ocean circulation inverse model (OCIM)
+(blue trace) compared with some prior estimates of the anthropogenic DIC inventory in the ocean. ( b) Time evolution of air-sea
+anthropogenic CO2 fl u x e sf r o mO C I M(blue trace) and total CO 2 fluxes from the Global Carbon Budget 2020 (15) ( orange trace).
+Positive values indicate net uptake of CO 2 by the ocean. ( c) Average global surface ocean pH over time from OCIM, compared with pH
+measured near Hawai’i at Station ALOHA (97).
+and deforestation (15), enough to raise the atmospheric CO 2 by over 300 ppm. But roughly 60%
+of these anthropogenic CO 2 emissions have been offset by increases in the carbon inventory of
+the ocean and the terrestrial biosphere (15), resulting in a more modest increase in atmospheric
+CO2 of ∼ 130 ppm. The considerations addressed in Section 2 demonstrate that the ocean has a
+vast capacity to take up anthropogenic CO 2 once chemical equilibrium is reached, but its capacity
+is not unlimited. Due to a reduction of the equilibrium carbon capacity of the ocean at higher
+CO2 levels ( Figure 3 ), fossil carbon added to the atmosphere will not ultimately be divided
+among the ocean and atmosphere at the ∼ 62:1 ratio found in the preindustrial ocean. If the
+total anthropogenic CO 2 emissions were 100 Gmol C (roughly twice the amount that has so far
+been emitted), and the solubility and biological pumps remain unchanged, the simple three-box
+ocean-atmosphere model of Section 3 (Equations 3 and 9) predicts that this excess carbon will be
+distributed between the ocean and atmosphere at a ratio of only ∼ 7:1. Thus, much of the ocean’ s
+carbon-buffering capacity has already been exhausted, and the ocean can only be expected to take
+up ∼ 85% of anthropogenic CO 2 emissions at chemical equilibrium. This neglects any long-term
+dissolution of carbonate sediments, which could help to raise the buffering capacity of the ocean
+and thereby increase the uptake of anthropogenic CO 2 over tens of thousands of years (22).
+In addition to its reduced equilibrium carbon capacity at higher CO 2 levels, the ocean takes
+up anthropogenic CO 2 much more slowly than would be assumed from its relatively rapid air-
+sea equilibration time. This is because the rate of anthropogenic CO 2 uptake is limited not by
+330 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 15
+gas exchange but by the rate of the ocean’ s overturning circulation, which determines the rate
+at which deep waters that are free of anthropogenic CO 2 are exposed at the sea surface (99).
+Because the ocean’ s overturning timescale is on the order of 1,000 years, it will take millennia
+before chemical equilibrium is reached between the atmosphere and the ocean. The contemporary
+uptake of anthropogenic CO 2 by the ocean is roughly 2.5 GtC year −1 (Figure 6b), equivalent to
+about 25% of annual anthropogenic CO 2 emissions, far below the equilibrium level.
+The total air-sea CO 2 flux in the contemporary ocean is the sum of the air-sea flux of anthro-
+pogenic CO2, which determines the net invasion of CO2 into the ocean, and the large background
+flux of natural CO2, which dominates the gross air-sea CO2 exchange (Figure 1). The total air-sea
+CO2 exchange can be estimated from measurements of air and seawater pCO2 using bulk formulae
+(100, 101). Thanks to a large and growing network of seawater pCO2 measurements from both
+research cruises and ships of opportunity (102, 103), we can now reconstruct the variability of the
+air-sea CO2 flux at a global scale since roughly the mid-1980s using various statistical, mechanis-
+tic, or regression-based models (104–107). Comparing the average of these estimates (15) with
+the air-sea flux of anthropogenic CO 2, two distinct differences are clear ( Figure 6 b). First, the
+total oceanic uptake of CO 2 is less than the oceanic uptake of anthropogenic CO 2. This differ-
+ence indicates a net emission of natural CO 2 from the ocean. Some of this must be driven by the
+substantial transport of terrestrial carbon to the ocean by rivers and submarine groundwaters (10,
+11), much of which is processed to DIC in the ocean and reemitted to the atmosphere. Estimates
+of the oceanic outgassing of terrestrially derived CO2 range from 0.2 to 1.2 GtC year−1 (108, 109),
+but there are large uncertainties in these estimates, and it is not clear if other natural processes are
+causing a net influx or outflux of natural CO 2 from the ocean over the past 30 years. The second
+difference between the total and anthropogenic air-sea CO 2 flux is that there is more variability
+in the former than the latter. This variability must therefore reflect substantial variability in nat-
+ural air-sea CO 2 fluxes, which has been linked both to internal climate variability (110) and to
+externally forced variability due to major volcanic eruptions (111).
+As anthropogenic CO 2 enters the ocean and accumulates as DIC, seawater pCO2 rises and
+seawater pH declines. The decline of pH due to anthropogenic DIC accumulation is known
+as ocean acidification (112). Over the industrial era, the average surface seawater pH has de-
+clined by nearly 0.1 pH units, with the majority of this decline occurring in the past 50 years
+(Figure 6 c). In addition to reducing the equilibrium carbon capacity of seawater, ocean acidifi-
+cation has the potential to adversely affect ocean ecosystems by enhancing the dissolution rates
+of the carbonate skeletons of some marine organisms (113). As seawater pH drops, carbonate ion
+(CO32−) concentrations also drop, reducing the thermodynamic stability of CaCO 3 exoskeletons.
+This has detrimental impacts on numerous marine organisms, including corals, planktonic
+foraminifera and pteropods, mollusks, echinoderms, and the larval stages of fishes (114, 115).
+Seawater pH is predicted to reach as low as 7.8 by the end of the twenty-first century following
+business-as-usual emissions scenarios (116). This level of acidification could potentially result in
+massive die-offs of coral reefs (117) and indicates that ocean acidification is a leading threat for
+marine ecosystems in the twenty-first century (118).
+The extent of ocean acidification is roughly proportional to the accumulation of anthropogenic
+DIC in the ocean, and as such the greatest declines in pH to date have occurred in the surface
+ocean, where the concentration of anthropogenic DIC is the highest ( Figure 7 a–c). Because of
+the slow ventilation times of the deep ocean, anthropogenic DIC has not penetrated into the deep
+layers of many parts of the ocean. The deepest penetration of anthropogenic carbon is found
+in the North Atlantic ( Figure 7 b), where upwelling in the subpolar gyre exposes deeper waters
+to the atmosphere where they can take up anthropogenic CO 2, and deep waters forming in the
+Labrador and Greenland Seas bring anthropogenic carbon into the deep ocean (119, 120). The
+www.annualreviews.org • The Ocean Carbon Cycle 331
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 16
+Southern Ocean North Atlantic Global
+1,000
+2,000
+3,000
+4,000
+5,000
+Depth (m)
+60 40 20 EQ –20 –40 –60 –60 –40 –20 EQ 20 40 60 S P 0 2 55 07 5
+North Paciﬁc
+d
+0 5 10 15 20 25 30 35 40 45 50 55 60
+Anthropogenic DIC (μmol kg–1 )
+Anthropogenic DIC
+(μmol kg –1 )
+Anthropogenic DIC (mol m–2 )
+0
+20
+40
+60
+80
+100
+120
+140
+aa bbc
+Latitude (°N)
+Figure 7
+(a– c) Anthropogenic DIC concentration in the ocean as of 2018, zonally averaged in the Pacific Ocean ( a) and the Atlantic Ocean
+(b), and a global vertical profile ( c) showing the relatively shallow penetration of anthropogenic DIC in most parts of the ocean.
+(d) V ertically integrated column inventory of anthropogenic DIC in the ocean as of 2018. Anthropogenic DIC estimates are from an
+ocean circulation inverse model (41). Abbreviations: DIC, dissolved inorganic carbon; EQ, equator; SP , South Pole.
+column inventory of anthropogenic DIC shows the greatest accumulation in the western North
+Atlantic, associated with the southward-flowing deep western boundary current ( Figure 7d).
+Deep waters also form along the Antarctic margin, but the invasion of anthropogenic CO 2
+is hindered by sea ice in this region as well as by the short residence time of upwelled waters
+at the surface, which reduces their capacity to equilibrate with the atmosphere (121). However,
+the open Southern Ocean takes up significant amounts of anthropogenic CO 2. This region is
+the primary conduit for deep waters upwelling to the surface (122), and as these upwelled deep
+waters are advected equatorward, they absorb anthropogenic CO 2 from the atmosphere (123),
+accounting for up to 40% of the oceanic uptake of anthropogenic CO 2 (41, 124, 125). Most of the
+anthropogenic CO2 taken up in the Southern Ocean is transported into the interior ocean within
+northward-flowing intermediate water masses (126) and accumulates in the subpolar thermocline,
+leading to high anthropogenic DIC inventories at around 30°S ( Figure 7d).
+The total accumulation of anthropogenic DIC in the ocean should not be confused with the
+total amount of anthropogenic CO 2 emissions that have entered the ocean. Because the ocean
+and atmosphere exchange CO 2 constantly, almost all anthropogenic CO 2 emissions have most
+probably entered the ocean at some point. However, much of this anthropogenic CO 2 is cycled
+through the wind-driven upper ocean circulation and evades back out to the atmosphere (127),
+further reinforcing the idea that subduction of anthropogenic DIC into the ocean’ s deeper layers
+is the rate-limiting step on oceanic anthropogenic CO 2 uptake.
+332 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 17
+Stratification:
+a measure of the
+vertical gradient of
+density in the ocean,
+with larger
+stratification
+indicating greater
+stability of the water
+column and reduced
+capacity for convection
+5. THE FUTURE OF THE OCEANIC CARBON SINK
+The ocean provides a critical climate service by absorbing much of the CO 2 emitted by industrial
+activities, but this is challenged by the magnitude of the human disturbance of the natural carbon
+cycle and the slow rate of ocean overturning, which limits the rate of oceanic CO 2 uptake, as well
+as the continued acidification of the ocean, which reduces its equilibrium capacity to absorb CO 2.
+The future of the ocean carbon sink is in some respects well charted, while in others significant
+uncertainties remain. Here I outline some of the key knowns and unknowns regarding how the
+ocean carbon cycle will respond to continued anthropogenic perturbations over the next century.
+The primary, well-understood response of the ocean to ongoing industrial CO 2 emissions is
+absorption of anthropogenic CO2, which causes ocean acidification and a reduction of the equilib-
+rium carbon capacity of the ocean. The chemical equilibrium effects are well understood, and the
+ocean is predicted to absorb approximately 85% of human fossil fuel emissions, depending on the
+cumulative amount of CO2 emitted. This will be modified to some extent by warming of the ocean,
+which reduces the solubility of CO 2 and is projected to reduce oceanic CO 2 uptake by ∼ 10% rel-
+ative to nonwarming scenarios (128). The key unknowns with regard to these well-understood
+chemical effects are the total amount of CO 2 that will be emitted by industrial activities prior to
+decarbonization and the total surface warming that will occur due to CO 2 radiative effects (129).
+The second most important influence on the evolution of the ocean carbon cycle in the twenty-
+first century is the response of the ocean’ s overturning circulation to anthropogenic warming. Nu-
+merous modeling studies predict that the ocean’ s overturning circulation will weaken as the ocean
+becomes warmer and more stratified, which reduces deep convection in high latitudes (130–132).
+The initial response of the carbon cycle to a reduction in overturning circulation is an increase in
+the strength of the biological carbon pump driven by increased trapping of respired carbon in the
+subsurface ocean (130, 133). At the same time, however, the rate of oceanic anthropogenic CO2 up-
+take is reduced as the overturning circulation weakens and less anthropogenic DIC is transported
+into the ocean’ s deeper layers (130, 131). Over time, most models predict that the reduction of
+anthropogenic CO2 uptake outweighs the increase in biological carbon storage, and thus reduced
+overturning has the overall effect of weakening the ocean carbon sink (130, 131, 134).
+A knock-on effect of enhanced ocean stratification and reduced overturning is that the supply
+of nutrients to surface waters from the mixing and upwelling of deep waters is reduced. Models
+suggest that this reduction in nutrient supply, combined with warmer ocean surface temperatures,
+will drive declining biological productivity in the surface ocean and declining carbon export
+(69, 135). Some models project drastic reductions in marine ecosystem productivity due to
+semicollapsed overturning circulation several hundred years in the future (136). This projected
+reduction in carbon export weakens the biological carbon pump, working against the effects of
+slower overturning circulation that serve to trap more respired carbon in the deep ocean. The
+total strength of the biological pump can be expressed as the product of the carbon export and
+the sequestration time of respired carbon in the deep ocean (83), with weaker overturning leading
+to longer sequestration times. It is not clear which of these opposing effects, the reduction in
+carbon export or the increase in the sequestration time of respired carbon, will be more important
+and therefore how the strength of the ocean’ s biological carbon pump will change in the future.
+Resolution of this issue requires a better understanding of the sensitivity of ocean carbon export
+to climate change (137, 138).
+A final consideration is whether deliberate human interventions can or will have an impact on
+the trajectory of the ocean carbon cycle in the next century. Interest is building in geoengineering
+approaches to combat CO 2-induced global warming by manipulating the ocean’ s natural carbon
+cycle (139). These approaches generally fall under one of two categories: enhancing the rate at
+which DIC is transferred from the surface ocean or atmosphere to the deep ocean or manipulating
+www.annualreviews.org • The Ocean Carbon Cycle 333
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 18
+the chemistry of the ocean to increase its carbon-buffering capacity. Examples of the former
+include enhancing ocean productivity and carbon export by adding fertilizing nutrients such as
+iron to seawater (140) or ocean afforestation via seaweed farming (141), while examples of the
+latter include the deliberate dissolution of minerals in seawater to change the acid-base balance
+toward a more alkaline and higher-pH ocean (142). A full analysis of these strategies can be found
+in other reviews (143), but they all involve speeding up natural processes in the ocean carbon
+cycle. Approaches such as ocean fertilization or afforestation enhance the transfer of carbon from
+the surface ocean to the deep ocean and thereby speed up the rate at which the ocean takes up
+anthropogenic CO 2, which is otherwise naturally controlled by the ocean’ s overturning circu-
+lation over centennial to millennial timescales. Ocean alkalinization mimics natural weathering
+processes that would naturally work to gradually restore the ocean’ s carbon-buffering capacity on
+timescales of tens of thousands to millions of years (22). Thus, these schemes cannot change the
+ultimate response of the ocean or the atmosphere to anthropogenic CO 2 emissions.
+SUMMARY POINTS
+1. The ocean controls the atmospheric CO 2 concentration on timescales of decades to
+millennia, and the equilibrium partitioning of carbon between the ocean and atmosphere
+is determined by the relative mass of the ocean and atmosphere, the chemical carbon
+capacity of the ocean, and the magnitude of the ocean carbon pumps.
+2. Conceptual models, ocean biogeochemical models, and modern dissolved inorganic car-
+bon (DIC) observations all suggest that the biological pump increases the ocean DIC
+inventory by almost 10% (2,800 GtC), reducing atmospheric CO 2 by roughly half.
+3. The ocean at present absorbs CO 2 at a rate that is equivalent to roughly 25% of
+anthropogenic CO2 emissions, well below its theoretical maximum capacity of 85% due
+to the slow rate of ocean overturning circulation.
+4. Several feedbacks will work to weaken the rate of anthropogenic CO 2 uptake in the
+future, including ocean acidification, which reduces the equilibrium carbon capacity of
+seawater; ocean warming, which reduces the CO 2 solubility; and slowing ocean over-
+turning circulation, which reduces the rate at which anthropogenic CO 2 penetrates into
+the deeper ocean.
+5. Uncertainty in the rate at which the ocean will absorb CO 2 in the coming decades is
+mainly due to uncertainties in how ocean circulation will respond to climate change, with
+potentially large and often opposing effects on the air-sea carbon balance through its
+effects on carbon export, the sequestration time of biological carbon, and the subduction
+of anthropogenic CO 2 into the deep ocean.
+FUTURE ISSUES
+1. Anthropogenic CO 2 uptake is reasonably well quantified for the contemporary ocean but
+is sensitive to ongoing changes in the ocean’ s overturning circulation. Continued obser-
+vations of changes in the oceanic DIC inventory and development of high-resolution
+models that can accurately capture ocean circulation changes in response to climate
+334 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 19
+change will be needed to provide accurate estimates of ocean anthropogenic CO2 uptake
+moving forward.
+2. The gross air-sea CO 2 flux is dominated by naturally occurring CO 2, and these fluxes
+may be highly sensitive to ongoing climate change, including changes in ocean circula-
+tion, the biological carbon pump, and the transport of carbon from terrestrial ecosystems
+into the ocean. Sustained and intensive measurements of seawater pCO2 throughout the
+ocean are required in order to assess the magnitude of natural ocean CO 2 emissions to
+the atmosphere, and how they are changing with time.
+3. The response of the ocean’ s biological systems to climate change is very poorly under-
+stood. A better understanding of the mechanisms and magnitudes of the ocean’ s biolog-
+ical carbon pump is needed to gauge how ocean productivity, carbon export, and carbon
+storage by the biological pump will behave in a changing climate.
+4. Geoengineering of the ocean carbon sink may be useful for mitigating climate change
+due to rising CO 2 levels by enhancing the rate of oceanic CO 2 uptake, but geoengi-
+neering approaches cannot change the equilibrium partitioning of carbon between the
+ocean and atmosphere. Abating industrial CO2 emissions is the only permanent solution
+to reducing atmospheric CO 2 levels.
+DISCLOSURE STATEMENT
+The author is not aware of any affiliations, memberships, funding, or financial holdings that might
+be perceived as affecting the objectivity of this review.
+ACKNOWLEDGMENTS
+The author acknowledges support from the US National Science Foundation through grant
+OCE-1948955.
+LITERATURE CITED
+1. Bolin B. 1970. The carbon cycle. Sci. Am. 223(3):124–35
+2. Kump LR, Brantley SL, Arthur MA. 2000. Chemical weathering, atmospheric CO 2, and climate. Annu.
+Rev. Earth Planet. Sci. 28:611–67
+3. Crowley TJ, Berner RA. 2001. CO 2 and climate change. Science 292(5518):870–72
+4. Berner R, Lasaga A, Garrels R. 1983. Carbonate-silicate geochemical cycle and its effect on atmospheric
+carbon dioxide over the past 100 million years. A m .J .S c i .283(7):641–83
+5. Bar-On YM, Phillips R, Milo R. 2018. The biomass distribution on earth. PNAS 115(25):6506–11
+6. Scharlemann JP, T anner EV, Hiederer R, Kapos V . 2014. Global soil carbon: understanding and
+managing the largest terrestrial carbon pool. Carbon Manag. 5(1):81–91
+7. Burton MR, Sawyer GM, Granieri D. 2013. Deep carbon emissions from volcanoes. Rev. Mineral.
+Geochem. 75(1):323–54
+8. Gaillardet J, Dupré B, Louvat P, Allegre C. 1999. Global silicate weathering and CO 2 consumption rates
+deduced from the chemistry of large rivers. Chem. Geol. 159(1–4):3–30
+9. Cartapanis O, Galbraith ED, Bianchi D, Jaccard SL. 2018. Carbon burial in deep-sea sediment and
+implications for oceanic inventories of carbon and alkalinity over the last glacial cycle. Climate Past
+14(11):1819–50
+10. Bauer JE, Cai WJ, Raymond PA, Bianchi TS, Hopkinson CS, Regnier PA. 2013. The changing carbon
+cycle of the coastal ocean. Nature 504(7478):61–70
+www.annualreviews.org • The Ocean Carbon Cycle 335
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 20
+11. Regnier P, Resplandy L, Najjar RG, Ciais P . 2022. The land-to-ocean loops of the global carbon cycle.
+Nature 603(7901):401–10
+12. Friedlingstein P, Jones MW, O’Sullivan M, Andrew RM, Hauck J, et al. 2019. Global Carbon Budget
+2019. Earth Syst. Sci. Data 11(4):1783–838
+13. Ito A. 2011. A historical meta-analysis of global terrestrial net primary productivity: Are estimates
+converging? Glob. Change Biol. 17(10):3161–75
+14. Field CB, Behrenfeld MJ, Randerson JT, Falkowski P . 1998. Primary production of the biosphere:
+integrating terrestrial and oceanic components. Science 281(5374):237–40
+15. Friedlingstein P, O’Sullivan M, Jones MW, Andrew RM, Hauck J, et al. 2020. Global Carbon Budget
+2020. Earth Syst. Sci. Data 12(4):3269–340
+16. Revelle R, Suess HE. 1957. Carbon dioxide exchange between atmosphere and ocean and the question
+of an increase of atmospheric CO 2 during the past decades. T ellus9(1):18–27
+17. Broecker WS. 1982. Glacial to interglacial changes in ocean chemistry. Prog. Oceanogr .11(2):151–97
+18. Keeling CD, Bacastow RB, Bainbridge AE, Ekdahl CA Jr., Guenther PR, et al. 1976. Atmospheric carbon
+dioxide variations at Mauna Loa observatory, Hawaii. T ellus28(6):538–51
+19. Nevison CD, Mahowald NM, Doney SC, Lima ID, V an der Werf GR, et al. 2008. Contribution of ocean,
+fossil fuel, land biosphere, and biomass burning carbon fluxes to seasonal and interannual variability in
+atmospheric CO2. J. Geophys. Res. Biogeosci. 113(G1):G01010
+20. MacFarling Meure C, Etheridge D, T rudinger C, Steele P, Langenfelds R, et al. 2006. Law Dome CO 2,
+CH4 and N2O ice core records extended to 2000 years BP. Geophys. Res. Lett. 33:L14810
+21. Keeling CD, Piper SC, Bacastow RB, Wahlen M, Whorf TP, et al. 2001. Exchanges of atmospheric CO 2
+and 13CO2 with the terrestrial biosphere and oceans from 1978 to 2000. I. Global aspects. SIO Ref. Ser .
+1–6. https://escholarship.org/uc/item/09v319r9
+22. Archer D. 2005. Fate of fossil fuel CO 2 in geologic time. J. Geophys. Res. Oceans 110(C9):C09S05
+23. Dickens GR. 2003. Rethinking the global carbon cycle with a large, dynamic and microbially mediated
+gas hydrate capacitor. Earth Planet. Sci. Lett. 213(3–4):169–83
+24. Hansell DA. 2013. Recalcitrant dissolved organic carbon fractions. Annu. Rev. Mar . Sci.5:421–45
+25. Buch K. 1933. Der borsäuregehalt des meerwassers und seine bedeutung bei der berechnung des kohlen-
+säuresystems im meerwasser [The boric acid content of seawater and its importance in the calculation
+of the carbonic acid system in seawater]. Rapp. Cons. Explor . Mer .85:71–75
+26. Lyman J. 1972. 38.—Development of ideas concerning the carbon dioxide system in sea water up to
+1940. Proc. R. Soc. Edinburgh Sect. B Biol. Sci. 72(1):381–87
+27. Mehrbach C, Culberson C, Hawley J, Pytkowicx R. 1973. Measurement of the apparent dissociation
+constants of carbonic acid in seawater at atmospheric pressure 1. Limnol. Oceanogr .18(6):897–907
+28. Dickson A, Millero FJ. 1987. A comparison of the equilibrium constants for the dissociation of carbonic
+acid in seawater media. Deep Sea Res. Part A Oceanogr . Res. Pap.34(10):1733–43
+29. Broecker WS, Peng TH. 1974. Gas exchange rates between air and sea. T ellus26(1–2):21–35
+30. Wanninkhof R. 1992. Relationship between wind speed and gas exchange over the ocean. J. Geophys. Res.
+Oceans 97(C5):7373–82
+31. Weiss R. 1974. Carbon dioxide in water and seawater: the solubility of a non-ideal gas. Mar . Chem.
+2(3):203–15
+32. Zeebe RE, Wolf-Gladrow D. 2001. CO2 in Seawater: Equilibrium, Kinetics, and Isotopes. Elsevier Oceanogr.
+Ser. 65. Amsterdam: Elsevier Sci.
+33. Egleston ES, Sabine CL, Morel FM. 2010. Revelle revisited: buffer factors that quantify the response of
+ocean chemistry to changes in DIC and alkalinity. Glob. Biogeochem. Cycles 24(1):GB1002
+34. Broecker WS, T akahashi T, Simpson H, Peng TH. 1979. Fate of fossil fuel carbon dioxide and the global
+carbon budget. Science 206(4417):409–18
+35. Lefevre N, Ciabrini J, Michard G, Brient B, DuChaffaut M, Merlivat L. 1993. A new optical sensor for
+pCO2 measurements in seawater. Mar . Chem.42(3–4):189–98
+36. Lauvset SK, Lange N, T anhua T, Bittig HC, Olsen A, et al. 2021. An updated version of the global
+interior ocean biogeochemical data product, GLODAPv2.2021. Earth Syst. Sci. Data 13(12):5565–89
+37. Lewis E, Wallace D. 1998. Program developed for CO 2 system calculations. T ech. Rep., Environ. Syst. Sci.
+Data Infrastruct. Virtual Ecosyst., US Off. Sci. T ech. Inf., Washington, DC
+336 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 21
+38. Emerson S, Hedges J. 2008. Chemical Oceanography and the Marine Carbon Cycle . Cambridge, UK:
+Cambridge Univ. Press
+39. Eakins BW, Sharman GF . 2010. V olumes of the world’s oceans from ETOPO1. NOAA Natl. Geophys. Data
+Ctr., Boulder, CO
+40. T renberth KE, Smith L. 2005. The mass of the atmosphere: a constraint on global analyses. J. Climate
+18(6):864–75
+41. DeVries T . 2014. The oceanic anthropogenic CO 2 sink: storage, air-sea fluxes, and transports over the
+industrial era. Glob. Biogeochem. Cycles 28(7):631–47
+42. V olk T, Hoffert MI. 1985. Ocean carbon pumps: analysis of relative strengths and efficiencies in ocean-
+driven atmospheric CO 2 changes. In The Carbon Cycle and Atmospheric CO 2: Natural V ariations Archean
+to Present, ed. ET Sundquist, WS Broecker, pp. 99–110. Geophys. Monogr. Ser. 32, Washington, DC:
+Am. Geophys. Union
+43. Broecker WS. 1982. Ocean chemistry during glacial time. Geochim. Cosmochim. Acta 46(10):1689–705
+44. Martin JH. 1990. Glacial-interglacial CO 2 change: the iron hypothesis. Paleoceanography5(1):1–13
+45. Sigman DM, Boyle EA. 2000. Glacial/interglacial variations in atmospheric carbon dioxide. Nature
+407(6806):859–69
+46. Bolin B, Eriksson E. 1959. Changes in the carbon dioxide content of the atmosphere and sea due to fossil
+fuel combustion. Atmos. Sea Motion 1:30–142
+47. Emery W, Meincke J. 1986. Global water masses: summary and review. Oceanolog. Acta 9(4):383–91
+48. Gordon A. 2001. Bottom water formation. In Encyclopedia of Ocean Sciences , ed. JH Steele, SA Thorpe,
+KK T urekian, pp. 415–21. San Diego, CA: Academic Press. 2nd ed.
+49. Ito T, Follows MJ. 2003. Upper ocean control on the solubility pump of CO 2. J. Mar . Res.61(4):465–89
+50. T oggweiler J, Gnanadesikan A, Carson S, Murnane R, Sarmiento JL. 2003. Representation of the carbon
+cycle in box models and GCMs: 1. Solubility pump. Glob. Biogeochem. Cycles 17:1026
+51. DeVries T, Primeau F . 2009. Atmospheric pCO2 sensitivity to the solubility pump: role of the
+low-latitude ocean. Glob. Biogeochem. Cycles 23(4):GB4020
+52. Murnane R, Sarmiento JL, Le Quéré C. 1999. Spatial distribution of air-sea CO 2 fluxes and the
+interhemispheric transport of carbon by the oceans. Glob. Biogeochem. Cycles 13(2):287–305
+53. Sarmiento JL, Gruber N. 2013. Ocean Biogeochemical Dynamics. Princeton, NJ: Princeton Univ. Press
+54. Wanninkhof R, Park GH, T akahashi T, Sweeney C, Feely R, et al. 2013. Global ocean carbon uptake:
+magnitude, variability and trends. Biogeosciences 10(3):1983–2000
+55. Wu Y, Hain MP, Humphreys MP, Hartman S, T yrrell T . 2019. What drives the latitudinal gradient in
+open-ocean surface dissolved inorganic carbon concentration? Biogeosciences 16(13):2661–81
+56. Broecker WS. 1991. The great ocean conveyor. Oceanography 4:79–89
+57. Lozier MS. 2010. Deconstructing the conveyor belt. Science 328(5985):1507–11
+58. DeVries T, Holzer M. 2019. Radiocarbon and helium isotope constraints on deep ocean ventilation and
+mantle-3He sources. J. Geophys. Res. Oceans 124(5):3036–57
+59. Khatiwala S, Primeau F, Holzer M. 2012. V entilation of the deep ocean constrained with tracer obser-
+vations and implications for radiocarbon estimates of ideal mean age. Earth Planet. Sci. Lett. 325:116–25
+60. Galbraith ED, Skinner LC. 2020. The biological pump during the last glacial maximum. Annu. Rev. Mar .
+Sci. 12:559–86
+61. Kwon EY, Sarmiento JL, T oggweiler J, DeVries T . 2011. The control of atmospheric pCO2 by
+ocean ventilation change: the effect of the oceanic storage of biogenic carbon. Glob. Biogeochem. Cycles
+25(3):GB3026
+62. Marinov I, Gnanadesikan A, Sarmiento JL, T oggweiler J, Follows M, Mignone B. 2008. Impact of oceanic
+circulation on biological carbon storage in the ocean and atmospheric pCO2. Glob. Biogeochem. Cycles
+22(3):GB3007
+63. Ito T, Follows MJ. 2005. Preformed phosphate, soft tissue pump and atmospheric CO 2. J. Mar . Res.
+63(4):813–39
+64. Elderfield H. 2002. Carbonate mysteries. Science 296(5573):1618–21
+65. Lee Z, Weidemann A, Kindle J, Arnone R, Carder KL, Davis C. 2007. Euphotic zone depth: its derivation
+and implication to ocean-color remote sensing. J. Geophys. Res. Oceans 112(C3):C03009
+www.annualreviews.org • The Ocean Carbon Cycle 337
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 22
+66. Falkowski PG, Barber RT, Smetacek V . 1998. Biogeochemical controls and feedbacks on ocean primary
+production. Science 281(5374):200–6
+67. Schlitzer R. 2002. Carbon export fluxes in the Southern Ocean: results from inverse modeling and
+comparison with satellite-based estimates. Deep Sea Res. Part II T op. Stud. Oceanogr .49(9–10):1623–44
+68. DeVries T, Weber T . 2017. The export and fate of organic matter in the ocean: new constraints from
+combining satellite and oceanographic tracer observations. Glob. Biogeochem. Cycles 31(3):535–55
+69. Laws EA, Falkowski PG, Smith WO Jr., Ducklow H, McCarthy JJ. 2000. T emperature effects on export
+production in the open ocean. Glob. Biogeochem. Cycles 14(4):1231–46
+70. Dunne JP, Sarmiento JL, Gnanadesikan A. 2007. A synthesis of global particle export from the surface
+ocean and cycling through the ocean interior and on the seafloor. Glob. Biogeochem. Cycles 21(4):GB4006
+71. Siegel DA, Buesseler KO, Behrenfeld MJ, Benitez-Nelson CR, Boss E, et al. 2016. Prediction of the
+export and fate of global ocean net primary production: the EXPORTS science plan. Front. Mar . Sci.
+3:22
+72. Alldredge AL, Gotschalk C. 1989. Direct observations of the mass flocculation of diatom blooms: char-
+acteristics, settling velocities and formation of diatom aggregates. Deep Sea Res. Part A Oceanogr . Res. Pap.
+36(2):159–71
+73. Steinberg DK, Landry MR. 2017. Zooplankton and the ocean carbon cycle. Annu. Rev. Mar . Sci.9:413–44
+74. Saba GK, Burd AB, Dunne JP, Hernández-León S, Martin AH, et al. 2021. T oward a better understand-
+ing of fish-based contribution to ocean carbon flux. Limnol. Oceanogr .66(5):1639–64
+75. Bianchi D, Carozza DA, Galbraith ED, Guiet J, DeVries T . 2021. Estimating global biomass and
+biogeochemical cycling of marine fish with and without fishing. Sci. Adv. 7(41):eabd7554
+76. Roshan S, DeVries T . 2017. Efficient dissolved organic carbon production and export in the oligotrophic
+ocean. Nat. Commun. 8:2036
+77. Dall’Olmo G, Dingle J, Polimene L, Brewin RJ, Claustre H. 2016. Substantial energy input to the
+mesopelagic ecosystem from the seasonal mixed-layer pump. Nat. Geosci. 9(11):820–23
+78. Omand MM, D’Asaro EA, Lee CM, Perry MJ, Briggs N, et al. 2015. Eddy-driven subduction exports
+particulate organic carbon from the spring bloom. Science 348(6231):222–25
+79. Steinberg DK, Carlson CA, Bates NR, Goldthwait SA, Madin LP, Michaels AF . 2000. Zooplankton
+vertical migration and the active transport of dissolved organic and inorganic carbon in the Sargasso
+Sea. Deep Sea Res. Part I Oceanogr . Res. Pap.47(1):137–58
+80. Davison P, Checkley D Jr., Koslow J, Barlow J. 2013. Carbon export mediated by mesopelagic fishes in
+the northeast Pacific Ocean. Prog. Oceanogr .116:14–30
+81. Schiebel R. 2002. Planktic foraminiferal sedimentation and the marine calcite budget. Glob. Biogeochem.
+Cycles 16(4):1065
+82. Buitenhuis ET, Le Quéré C, Bednaršek N, Schiebel R. 2019. Large contribution of pteropods to shallow
+CaCO3 export. Glob. Biogeochem. Cycles 33(3):458–68
+83. DeVries T, Primeau F, Deutsch C. 2012. The sequestration efficiency of the biological pump. Geophys.
+Res. Lett. 39(13):L13601
+84. Boyd PW, Claustre H, Levy M, Siegel DA, Weber T . 2019. Multi-faceted particle pumps drive carbon
+sequestration in the ocean. Nature 568(7752):327–35
+85. Redfield AC. 1958. The biological control of chemical factors in the environment. Am. Sci. 46(3):205–21
+86. Carter B, Feely R, Lauvset S, Olsen A, DeVries T, Sonnerup R. 2021. Preformed properties
+for marine organic matter and carbonate mineral cycling quantification. Glob. Biogeochem. Cycles
+35(1):e2020GB006623
+87. Nowicki M, DeVries T, Siegel DA. 2022. Quantifying the carbon export and sequestration pathways of
+the ocean’ s biological carbon pump. Glob. Biogeochem. Cycles 36(3):e2021GB007083
+88. Ito T, Follows MJ. 2013. Air-sea disequilibrium of carbon dioxide enhances the biological carbon
+sequestration in the Southern Ocean. Glob. Biogeochem. Cycles 27(4):1129–38
+89. Eggleston S, Galbraith ED. 2018. The devil’ s in the disequilibrium: multi-component analysis of
+dissolved carbon and oxygen changes under a broad range of forcings in a general circulation model.
+Biogeosciences 15(12):3761–77
+338 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 23
+90. Gruber N, Sarmiento JL. 2002. Large-scale biogeochemical-physical interactions in elemental cycles.
+In The Sea, V ol. 12, ed. A Robinson, JJ McCarthy, BJ Rothschild, pp. 337–99. Cambridge, MA: Harvard
+Univ. Press
+91. Chen CTA. 1982. On the distribution of anthropogenic CO 2 in the Atlantic and Southern Oceans. Deep
+Sea Res. Part A Oceanogr . Res. Pap.29(5):563–80
+92. Gruber N, Sarmiento JL, Stocker TF . 1996. An improved method for detecting anthropogenic CO 2 in
+the oceans. Glob. Biogeochem. Cycles 10(4):809–37
+93. Sabine CL, Feely RA, Gruber N, Key RM, Lee K, et al. 2004. The oceanic sink for anthropogenic CO 2.
+Science 305(5682):367–71
+94. Khatiwala S, T anhua T, Mikaloff Fletcher S, Gerber M, Doney SC, et al. 2013. Global ocean storage of
+anthropogenic carbon. Biogeosciences 10(4):2169–91
+95. Gruber N, Clement D, Carter BR, Feely RA, V an Heuven S, et al. 2019a. The oceanic sink for anthro-
+pogenic CO2 from 1994 to 2007. Science 363(6432):1193–99
+96. Holzer M, DeVries T, de Lavergne C. 2021. Diffusion controls the ventilation of a Pacific Shadow Zone
+above abyssal overturning. Nat. Commun. 12(1):4348
+97. Univ. Hawai’i. 2021. Hawaii ocean time-series data organization & graphical system (HOT-DOGS).
+University of Hawai’i at Manoa . https://hahana.soest.hawaii.edu/hot/hot-dogs/interface.html , ac-
+cessed on October 28, 2021
+98. Williams RG, Roussenov V, Goodwin P, Resplandy L, Bopp L. 2017. Sensitivity of global warming
+to carbon emissions: effects of heat and carbon uptake in a suite of Earth system models. J. Climate
+30(23):9343–63
+99. Sarmiento JL, Orr JC, Siegenthaler U. 1992. A perturbation simulation of CO 2 uptake in an ocean
+general circulation model. J. Geophys. Res. Oceans 97(C3):3621–45
+100. T akahashi T, Feely RA, Weiss RF, Wanninkhof RH, Chipman DW, et al. 1997. Global air-sea flux of
+CO2: an estimate based on measurements of sea–air pCO 2 difference. PNAS 94(16):8292–99
+101. T akahashi T, Sutherland SC, Sweeney C, Poisson A, Metzl N, et al. 2002. Global sea–air CO 2 flux based
+on climatological surface ocean pCO2, and seasonal biological and temperature effects. Deep Sea Res.
+Part II T op. Stud. Oceanogr .49(9–10):1601–22
+102. Pfeil B, Olsen A, Bakker DC, Hankin S, Koyuk H, et al. 2013. A uniform, quality controlled Surface
+Ocean CO2 Atlas (SOCA T).Earth Syst. Sci. Data 5(1):125–43
+103. Bakker DC, Pfeil B, Landa CS, Metzl N, O’brien KM, et al. 2016. A multi-decade record of high-quality
+f CO2 data in version 3 of the Surface Ocean CO 2 Atlas (SOCA T).Earth Syst. Sci. Data 8(2):383–413
+104. Denvil-Sommer A, Gehlen M, Vrac M, Mejia C. 2019. LSCE-FFNN-v1: a two-step neural network
+model for the reconstruction of surface oceanpCO2 over the global ocean.Geosci. Model Dev.12(5):2091–
+105
+105. Gregor L, Lebehot AD, Kok S, Scheel Monteiro PM. 2019. A comparative assessment of the uncer-
+tainties of global surface ocean CO 2 estimates using a machine-learning ensemble (CSIR-ML6 version
+2019a)—Have we hit the wall? Geosci. Model Dev. 12(12):5113–36
+106. Landschuetzer P, Gruber N, Bakker DC. 2016. Decadal variations and trends of the global ocean carbon
+sink. Glob. Biogeochem. Cycles 30(10):1396–417
+107. Rödenbeck C, Bakker DC, Metzl N, Olsen A, Sabine C, et al. 2014. Interannual sea–air CO 2 flux
+variability from an observation-driven ocean mixed-layer scheme. Biogeosciences 11(17):4599–613
+108. Lacroix F, Ilyina T, Hartmann J. 2020. Oceanic CO 2 outgassing and biological production hotspots
+induced by pre-industrial river loads of nutrients and carbon in a global modeling approach.Biogeosciences
+17(1):55–88
+109. Kwon EY, DeVries T, Galbraith ED, Hwang J, Kim G, Timmermann A. 2021. Stable carbon isotopes
+suggest large terrestrial carbon inputs to the global ocean. Glob. Biogeochem. Cycles35(4):e2020GB006684
+110. Landschützer P, Gruber N, Haumann FA, Rödenbeck C, Bakker DC, et al. 2015. The reinvigoration of
+the Southern Ocean carbon sink. Science 349(6253):1221–24
+111. McKinley GA, Fay AR, Eddebbar YA, Gloege L, Lovenduski NS. 2020. External forcing explains recent
+decadal variability of the ocean carbon sink. AGU Adv. 1(2):e2019AV000149
+112. Doney SC, Fabry VJ, Feely RA, Kleypas JA. 2009. Ocean acidification: the other CO 2 problem. Annu.
+Rev. Mar . Sci.1:169–92
+www.annualreviews.org • The Ocean Carbon Cycle 339
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 24
+113. Roleda MY, Boyd PW, Hurd CL. 2012. Before ocean acidification: calcifier chemistry lessons 1. J. Phycol.
+48(4):840–43
+114. Fabry VJ, Seibel BA, Feely RA, Orr JC. 2008. Impacts of ocean acidification on marine fauna and ecosys-
+tem processes. ICES J. Mar . Sci.65(3):414–32
+115. Wittmann AC, Pörtner HO. 2013. Sensitivities of extant animal taxa to ocean acidification. Nat. Climate
+Change 3(11):995–1001
+116. Feely RA, Doney SC, Cooley SR. 2009. Ocean acidification: present conditions and future changes in a
+high-CO2 world. Oceanography 22(4):36–47
+117. Hoegh-Guldberg O, Mumby PJ, Hooten AJ, Steneck RS, Greenfield P, et al. 2007. Coral reefs under
+rapid climate change and ocean acidification. Science 318(5857):1737–42
+118. Gruber N. 2011. Warming up, turning sour, losing breath: ocean biogeochemistry under global change.
+P h i l o s .T r a n s .R .S o c .AM a t h .P h y s .E n g .S c i .369(1943):1980–96
+119. Rhein M, Steinfeldt R, Kieke D, Stendardo I, Y ashayaev I. 2017. V entilation variability of Labrador Sea
+Water and its impact on oxygen and anthropogenic carbon: a review. Philos. T rans. R. Soc. A Math. Phys.
+Eng. Sci. 375(2102):20160321
+120. V azquez-Rodriguez M, T ouratier F, Monaco CL, Waugh D, Padin XA, et al. 2009. Anthropogenic
+carbon distributions in the Atlantic Ocean: data-based estimates from the Arctic to the Antarctic.
+Biogeosciences 6(3):439–51
+121. Poisson A, Chen CTA. 1987. Why is there little anthropogenic CO 2 in the Antarttic bottom water?
+Deep Sea Res. Part A Oceanogr . Res. Papers34(7):1255–75
+122. DeVries T, Primeau F . 2011. Dynamically and observationally constrained estimates of water-mass
+distributions and ages in the global ocean. J. Phys. Oceanogr .41(12):2381–401
+123. Gruber N, Landschützer P, Lovenduski NS. 2019b. The variable Southern Ocean carbon sink. Annu.
+Rev. Mar . Sci.11:159–86
+124. Khatiwala S, Primeau F, Hall T . 2009. Reconstruction of the history of anthropogenic CO 2 concentra-
+tions in the ocean. Nature 462(7271):346–49
+125. Mikaloff Fletcher SE, Gruber N, Jacobson AR, Doney SC, Dutkiewicz S, et al. 2006. Inverse estimates of
+anthropogenic CO2 uptake, transport, and storage by the ocean. Glob. Biogeochem. Cycles 20(2):GB2002
+126. Ito T, Woloszyn M, Mazloff M. 2010. Anthropogenic carbon dioxide transport in the Southern Ocean
+driven by Ekman flow. Nature 463(7277):80–83
+127. Iudicone D, Rodgers KB, Plancherel Y, Aumont O, Ito T, et al. 2016. The formation of the ocean’ s
+anthropogenic carbon reservoir. Sci. Rep. 6:35473
+128. Plattner GK, Joos F, Stocker T, Marchal O. 2001. Feedback mechanisms and sensitivities of ocean carbon
+uptake under global warming. T ellus B Chem. Phys. Meteorol.53(5):564–92
+129. Lee J, Marotzke J, Bala G, Cao L, Corti S, et al. 2021. Future global climate: scenario-based projections
+and near-term information. In Climate Change 2021: the Physical Science Basis: Contribution of W orking
+Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change , ed. V Masson-
+Delmotte, P Zhai, A Pirani, SL Connors, C Pean, et al., pp. 1–195. Geneva, Switz.: Int. Panel Climate
+Change
+130. Bernardello R, Marinov I, Palter JB, Galbraith ED, Sarmiento JL. 2014. Impact of Weddell sea deep
+convection on natural and anthropogenic carbon in a climate model. Geophys. Res. Lett. 41(20):7262–69
+131. Matear RJ, Hirst AC. 1999. Climate change feedback on the future oceanic CO 2 uptake. T ellus B
+51(3):722–33
+132. Holzer M, Chamberlain MA, Matear RJ. 2020. Climate-driven changes in the ocean’ s ventilation path-
+ways and time scales diagnosed from transport matrices. J. Geophys. Res. Oceans 125(10):e2020JC016414
+133. Ito T, Bracco A, Deutsch C, Frenzel H, Long M, T akano Y. 2015. Sustained growth of the Southern
+Ocean carbon storage in a warming climate. Geophys. Res. Lett. 42(11):4516–22
+134. Sarmiento JL, Le Quéré C. 1996. Oceanic carbon dioxide uptake in a model of century-scale global
+warming. Science 274(5291):1346–50
+135. Bopp L, Resplandy L, Orr JC, Doney SC, Dunne JP, et al. 2013. Multiple stressors of ocean ecosystems
+in the 21st century: projections with CMIP5 models. Biogeosciences 10(10):6225–45
+136. Moore JK, Fu W, Primeau F, Britten GL, Lindsay K, et al. 2018. Sustained climate warming drives
+declining marine biological productivity. Science 359(6380):1139–43
+340 DeVries
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 25
+137. Riebesell U, Körtzinger A, Oschlies A. 2009. Sensitivities of marine carbon fluxes to ocean change. PNAS
+106(49):20602–9
+138. Henson SA, Laufkötter C, Leung S, Giering SL, Palevsky HI, Cavan EL. 2022. Uncertain response of
+ocean biological carbon export in a changing world. Nat. Geosci. 15:248–54
+139. Gattuso JP, Williamson P, Duarte CM, Magnan AK. 2021. The potential for ocean-based climate action:
+negative emissions technologies and beyond. Front. Climate 2:37
+140. Buesseler KO, Doney SC, Karl DM, Boyd PW, Caldeira K, et al. 2008. Ocean iron fertilization—moving
+forward in a sea of uncertainty. Science 319(5860):162
+141. Bach L T, T amsitt V, Gower J, Hurd CL, Raven JA, Boyd PW . 2021. T esting the climate intervention
+potential of ocean afforestation using the Great Atlantic Sargassum Belt. Nat. Commun. 12:2556
+142. Ilyina T, Wolf-Gladrow D, Munhoven G, Heinze C. 2013. Assessing the potential of calcium-based
+artificial ocean alkalinization to mitigate rising atmospheric CO 2 and ocean acidification. Geophys. Res.
+Lett. 40(22):5909–14
+143. Keller DP, Feng EY, Oschlies A. 2014. Potential climate engineering effectiveness and side effects during
+a high carbon dioxide-emission scenario. Nat. Commun. 5:3304
+www.annualreviews.org • The Ocean Carbon Cycle 341
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 26
+Annual Review of
+Environment
+and Resources
+V olume 47, 2022
+Contents
+The Great Intergenerational Robbery: A Call for Concerted Action
+Against Environmental Crises
+Ashok Gadgil, Thomas P . T omich, Arun Agrawal, Jeremy Allouche,
+Inês M.L. Azevedo, Mohamed I. Bakarr , Gilberto M. Jannuzzi,
+Diana Liverman, Y advinder Malhi, Stephen Polasky, Joyashree Roy,
+Diana Ürge-V orsatz, and Y anxin W angppppppppppppppppppppppppppppppppppppppppppppppppppp 1
+I. Integrative Themes and Emerging Concerns
+A New Dark Age? T ruth, T rust, and Environmental Science
+T orbjørn Gundersen, Donya Alinejad, T .Y . Branch, Bobby Duffy,
+Kirstie Hewlett, Cathrine Holst, Susan Owens, Folco Panizza,
+Silje Maria T ellmann, José van Dijck, and Maria Baghramian pppppppppppppppppppppppppp 5
+Biodiversity: Concepts, Patterns, T rends, and Perspectives
+Sandra Díaz and Y advinder Malhi ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp 31
+COVID-19 and the Environment: Short-Run and Potential Long-Run
+Impacts
+Noah S. Diffenbaugh pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp 65
+Shepherding Sub-Saharan Africa’ s Wildlife Through Peak
+Anthropogenic Pressure T oward a Green Anthropocene
+P .A. Lindsey, S.H. Anderson, A. Dickman, P . Gandiwa, S. Harper ,
+A.B. Morakinyo, N. Nyambe, M. O’Brien-Onyeka, C. Packer , A.H. Parker ,
+A.S. Robson, Alice Ruhweza, E.A. Sogbohossou, K.W . Steiner , and P .N. T umentapppppp 91
+The Role of Nature-Based Solutions in Supporting Social-Ecological
+Resilience for Climate Change Adaptation
+Beth T urner , T ahia Devisscher , Nicole Chabaneix, Stephen W oroniecki,
+Christian Messier , and Nathalie Seddon pppppppppppppppppppppppppppppppppppppppppppppppp 123
+Feminist Ecologies
+Diana Ojeda, Padini Nirmal, Dianne Rocheleau, and Jody Emel pppppppppppppppppppppppp 149
+Sustainability in Health Care
+Howard Hu, Gary Cohen, Bhavna Sharma, Hao Yin, and Rob McConnell ppppppppppppp 173
+vi
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 27
+Indoor Air Pollution and Health: Bridging Perspectives from
+Developing and Developed Countries
+Ajay Pillarisetti, W enlu Y e, and Sourangsu Chowdhuryppppppppppppppppppppppppppppppppppp 197
+II. Earth’s Life Support Systems
+State of the World’ s Birds
+Alexander C. Lees, Lucy Haskell, T ris Allinson, Simeon B. Bezeng,
+Ian J. Burfield, Luis Miguel Renjifo, Kenneth V . Rosenberg,
+Ashwin Viswanathan, and Stuart H.M. Butchart pppppppppppppppppppppppppppppppppppppp 231
+Grassy Ecosystems in the Anthropocene
+Nicola Stevens, William Bond, Angelica Feurdean, and Caroline E.R. Lehmann ppppppp 261
+Anticipating the Future of the World’ s Ocean
+Casey C. O’Hara and Benjamin S. Halpern ppppppppppppppppppppppppppppppppppppppppppppppp 291
+The Ocean Carbon Cycle
+Tim DeVries ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp 317
+Permafrost and Climate Change: Carbon Cycle Feedbacks From the
+Warming Arctic
+Edward A.G. Schuur , Benjamin W . Abbott, Roisin Commane, Jessica Ernakovich,
+Eugenie Euskirchen, Gustaf Hugelius, Guido Grosse, Miriam Jones,
+Charlie Koven, Victor Leshyk, David Lawrence, Michael M. Loranty,
+Marguerite Mauritz, David Olefeldt, Susan Natali, Heidi Rodenhizer ,
+V erity Salmon, Christina Schädel, Jens Strauss, Claire T reat,
+and Merritt T uretsky ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp 343
+III. Human Use of the Environment and Resources
+Environmental Impacts of Artificial Light at Night
+Kevin J. Gaston and Alejandro Sánchez de Miguel pppppppppppppppppppppppppppppppppppppppp 373
+Agrochemicals, Environment, and Human Health
+P . Indira Devi, M. Manjula, and R.V . Bhavanipppppppppppppppppppppppppppppppppppppppppppp 399
+The Future of T ourism in the Anthropocene
+A. Holden, T . Jamal, and F . Burinippppppppppppppppppppppppppppppppppppppppppppppppppppppppp 423
+Sustainable Cooling in a Warming World: T echnologies, Cultures, and
+Circularity
+Radhika Khosla, Renaldi Renaldi, Antonella Mazzone, Caitlin McElroy,
+and Giovani Palafox-Alcantar ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp 449
+Contents vii
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 28
+Digitalization and the Anthropocene
+Felix Creutzig, Daron Acemoglu, Xuemei Bai, Paul N. Edwards,
+Marie Josefine Hintz, Lynn H. Kaack, Siir Kilkis, Stefanie Kunkel,
+Amy Luers, Nikola Milojevic-Dupont, Dave Rejeski, Jürgen Renn,
+David Rolnick, Christoph Rosol, Daniela Russ, Thomas T urnbull,
+Elena V erdolini, Felix W agner , Charlie Wilson, Aicha Zekar ,
+and Marius Zumwald pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp 479
+Food System Resilience: Concepts, Issues, and Challenges
+Monika Zurek, John Ingram, Angelina Sanderson Bellamy, Conor Goold,
+Christopher Lyon, Peter Alexander , Andrew Barnes, Daniel P . Bebber ,
+T om D. Breeze, Ann Bruce, Lisa M. Collins, Jessica Davies, Bob Doherty,
+Jonathan Ensor , Sofia C. Franco, Andrea Gatto, Tim Hess, Chrysa Lamprinopoulou,
+Lingxuan Liu, Magnus Merkle, Lisa Norton, T om Oliver , Jeff Ollerton,
+Simon Potts, Mark S. Reed, Chloe Sutcliffe, and Paul J.A. Withers ppppppppppppppppppp 511
+IV . Management and Governance of Resources and Environment
+The Concept of Adaptation
+Ben Orlove ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp 535
+T ransnational Social Movements: Environmentalist, Indigenous, and
+Agrarian Visions for Planetary Futures
+Carwil Bjork-James, Melissa Checker , and Marc Edelman ppppppppppppppppppppppppppppppp 583
+T ransnational Corporations, Biosphere Stewardship, and Sustainable
+Futures
+H. Österblom, J. Bebbington, R. Blasiak, M. Sobkowiak, and C. Folke ppppppppppppppppppp 609
+Community Monitoring of Natural Resource Systems and the
+Environment
+Finn Danielsen, Hajo Eicken, Mikkel Funder , Noor Johnson, Olivia Lee,
+Ida Theilade, Dimitrios Argyriou, and Neil D. Burgess pppppppppppppppppppppppppppppppp 637
+Contemporary Populism and the Environment
+Andrew Ofstehage, W endy W olford, and Saturnino M. Borras Jr .pppppppppppppppppppppppp 671
+How Stimulating Is a Green Stimulus? The Economic Attributes of
+Green Fiscal Spending
+Brian O’Callaghan, Nigel Y au, and Cameron Hepburn pppppppppppppppppppppppppppppppppp 697
+V . Methods and Indicators
+Why People Do What They Do: An Interdisciplinary Synthesis of
+Human Action Theories
+Harold N. Eyster , T erre Satterfield, and Kai M.A. Chan ppppppppppppppppppppppppppppppppp 725
+viii Contents
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 
+PAGE 29
+Carbon Leakage, Consumption, and T rade
+Michael Grubb, Nino David Jordan, Edgar Hertwich, Karsten Neuhoff,
+Kasturi Das, Kaushik Ranjan Bandyopadhyay, Harro van Asselt, Misato Sato,
+Ranran W ang, William A. Pizer , and Hyungna Oh ppppppppppppppppppppppppppppppppppp 753
+Detecting Thresholds of Ecological Change in the Anthropocene
+Rebecca Spake, Martha Paola Barajas-Barbosa, Shane A. Blowes, Diana E. Bowler ,
+Corey T . Callaghan, Magda Garbowski, Stephanie D. Jurburg, Roel van Klink,
+Lotte Korell, Emma Ladouceur , Roberto Rozzi, Duarte S. Viana, Wu-Bing Xu,
+and Jonathan M. Chase pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp 797
+Remote Sensing the Ocean Biosphere
+Sam Purkis and V ed Chirayath ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp 823
+Net Zero: Science, Origins, and Implications
+Myles R. Allen, Pierre Friedlingstein, Cécile A.J. Girardin, Stuart Jenkins,
+Y advinder Malhi, Eli Mitchell-Larson, Glen P . Peters, and Lavanya Rajamanipppppp 849
+Indexes
+Cumulative Index of Contributing Authors, V olumes 38–47 ppppppppppppppppppppppppppp 889
+Cumulative Index of Article Titles, V olumes 38–47 pppppppppppppppppppppppppppppppppppppp 897
+Errata
+An online log of corrections to Annual Review of Environment and Resources articles may
+be found at http://www.annualreviews.org/errata/environ
+Contents ix
+Annu. Rev. Environ. Resour. 2022.47:317-341. Downloaded from www.annualreviews.org
+ Access provided by 72.194.17.26 on 10/21/22. See copyright for approved use. 

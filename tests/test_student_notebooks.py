@@ -24,7 +24,7 @@ class StudentNotebookTest(unittest.TestCase):
         self.assertEqual(code.count("pyco2.sys("), 1)
         self.assertIn("par1=2300.0, par1_type=1", code)
         self.assertIn("par2=2000.0, par2_type=2", code)
-        self.assertIn("**C.chemistry", code)
+        self.assertIn("**config.chemistry", code)
         self.assertEqual(source.count("Your explanation"), 8)
         self.assertEqual(code.count("# Your calculation"), 8)
         for letter in "abcdefgh":
@@ -159,7 +159,25 @@ class StudentNotebookTest(unittest.TestCase):
         self.assertIn("calibration-first", two)
         self.assertIn("not independent validation", " ".join(two.split()))
         self.assertIn("integrated_signal", two)
-        self.assertEqual(read(n1, "student").count("NotImplementedError"), 1)
+        self.assertEqual(read(n1, "student").count("NotImplementedError"), 2)
+        # The TA inference is student work; the subsequent model rerun is supplied.
+        one_student = read(n1, "student")
+        for answer in ("dic_input_type =", "air_input_type =",
+                       "reference = pyco2.sys", "inferred_ta ="):
+            self.assertNotIn(answer, one_student)
+        self.assertIn("buffered = single_box(ta_umol_kg=inferred_ta)", one_student)
+        # The forward chemistry call and written interpretation are masked;
+        # the grid, loop, conservation line and plotting stay supplied.
+        self.assertLess(one.index("inferred_ta ="), one.index("curve = pyco2.sys"))
+        self.assertLess(one.index("curve = pyco2.sys"), one.index("buffered = single_box"))
+        self.assertNotIn("curve = pyco2.sys", one_student)
+        self.assertNotIn("curve_pco2 = curve[", one_student)
+        self.assertNotIn("470", one_student)
+        self.assertIn("for label, ta_value in", one_student)
+        self.assertIn("atmospheric_pco2_curve(dic_grid", one_student)
+        self.assertIn("plot_equilibrium_curves(dic_grid", one_student)
+        self.assertNotIn("M.connection_summary()", one)
+        self.assertNotIn("M.connection_summary()", one_student)
         self.assertGreaterEqual(read(n2, "student").count("NotImplementedError"), 5)
 
     def test_02_masks_derivations_and_keeps_the_forcing_example_supplied(self):
@@ -176,6 +194,16 @@ class StudentNotebookTest(unittest.TestCase):
         self.assertIn("mass=f'{extra_carbon_mol} mol'", source)
         self.assertIn("pumped_ocean_atmosphere_ratio", source)
         self.assertIn("integrated_signal", source)
+
+        # Flux-law choices must stay in the exercises, not leak through a
+        # hard-coded constructor after their masked assignment is removed.
+        code = "\n".join("".join(c["source"]) for c in nb["cells"]
+                         if c["cell_type"] == "code")
+        self.assertIn("'ty': mixing_type", code)
+        self.assertIn("ctype=pump_type", code)
+        self.assertNotIn("mixing_type =", code)
+        self.assertNotIn("pump_type =", code)
+        self.assertNotIn("scale_with_concentration", code)
 
     def test_all_teaching_markdown_uses_dollar_math_delimiters(self):
         paths = [

@@ -1,5 +1,339 @@
 # Implementation workplan
 
+## Follow-up: students derive the TA/uptake interpretation in 01 (2026-09-22)
+
+- [x] Place a guided PyCO2SYS curve exercise in section 3.2, after the fully
+  masked TA inference and before the revised ESBMTK run. Explain inverse
+  reference-DIC/xCO2-to-TA inference versus forward DIC/TA-to-pCO2 calculation,
+  and distinguish static chemistry states from time-dependent carbon transfer.
+- [x] Supply the DIC grid, loop, closed-inventory atmosphere line, dry-xCO2/pCO2
+  conversion and two-panel plot. Mask the forward chemistry call and output
+  extraction; provide input-type, array and output hints.
+- [x] Ask students to explain the falling atmosphere line, locate intersections
+  and relate slopes and endpoints to net uptake. Move the zero-TA causal
+  explanation into a masked instructor answer instead of stating it after
+  the original diagnosis question. This supersedes the reminder placement
+  recorded below. Keep the Revelle-factor connection to lecture slide 46 brief.
+- [x] Regenerate student 01 and update teaching goals, design and README.
+  Allow a provisional 40 minutes (10/20/10), taking five minutes from the
+  completion buffer. Total remains 240 minutes; student timing needs a pilot.
+
+Verification: complete instructor 01 execution passes, including carbon/TA
+audits and calibrated endpoints. The new curve cell produces a finite plot
+without warnings. A numerical regression test checks the atmosphere-line
+inventory and gas conversion, slope ordering over the exercise's DIC range,
+and agreement of both chemistry intersections with ESBMTK endpoints within
+0.2 µmol/kg. All 14 model tests and nine of 10 notebook tests pass (23/24 total);
+the only failure is the pre-existing 00 generated-copy mismatch. Both 01
+notebooks validate; generation matches exactly, two code answers are masked,
+and browser checks confirm equations, hints, plots and answer-panel layout.
+Previous model cells and outputs, all other notebooks and archives retain
+their starting content. Evidence: `tmp/01_curve_exercise/`.
+
+## Follow-up: TA and CO2 sensitivity reminder in 01 (2026-09-22)
+
+- [x] Explain absolute pCO2-DIC sensitivity after the post-run diagnosis
+  question. Connect the steeper zero-TA response to less net carbon transfer
+  before air-sea equilibrium; distinguish amount absorbed from elapsed time.
+- [x] Keep Revelle sensitivity as a brief connection to ocean-carbon lecture
+  slide 46: fractional DIC uptake under prescribed atmospheric CO2, fixed TA
+  and thermodynamic conditions. Label its doubling estimate a linear
+  approximation using fixed R; add no new calculation or experiment.
+- [x] Move the reminder from section 2.2 to the post-run discussion before
+  section 3, so students connect the explanation to the result just observed.
+  Preserve the brief DIC/TA-to-aqueous-CO2 explanation beside the gas law.
+- [x] Regenerate student 01, retaining the fully masked TA calculation.
+
+Verification: both 01 notebooks validate and generation matches exactly;
+student masking and browser-rendered math pass. Only one instructor Markdown
+cell changed; all code cells and existing outputs are unchanged. All 13 model
+tests and nine of 10 notebook tests pass; the existing 00 generated-copy mismatch
+remains. No tasks, prerequisites or provisional timing change. Evidence:
+`tmp/01_ta_sensitivity/`.
+
+Placement and absolute-sensitivity follow-ups: exact student generation, masking, notebook validation and
+rendered equation layout pass. Four focused notebook/conservation/equilibrium
+tests pass; the move changes no code or existing outputs.
+
+## Fix: optional pulse durations in 02 (2026-09-22)
+
+- [x] Reproduce the 100-year pulse failure: ESBMTK 0.14.3.1.post0's
+  under-resolved-signal warning accesses `self.model` before initialization.
+- [x] Supply `finite_pulse_clock` before constructing fresh matched models.
+  Resolve each pulse with at least 20 intervals and align native time samples
+  to preserve the specified mass, including non-round durations. Validate
+  whole-year times and a pulse strictly inside the simulation boundaries.
+- [x] Expose one `pulse_duration` setting in C2, retain the user's 100-year
+  choice, explain rerunning the whole cell and regenerate student 02.
+  Native Signal/Source/connection construction and all student tasks remain.
+
+Verification: 100, 333, 1000 and 5000-year native signals retain their mass;
+new 100/333/5000-year integrations pass carbon/TA audits and reference endpoint
+checks. The complete 02 notebook executes with its 100-year setting and two
+figures: maximum relative carbon error 6.34e-10, TA change zero, final departure
+from 280 ppm -1.90e-7 ppm. All 13 introductory-model tests and nine of 10 student
+tests pass. The only failure remains the unrelated 00 generated-copy mismatch.
+No installed ESBMTK files or notebook 01 were changed. Evidence:
+`tmp/pulse_duration_fix/`. Scope and provisional teaching time are unchanged.
+
+## Follow-up: self-contained, ungraded 01/02 route (2026-09-22)
+
+- [x] State that the practicals are ungraded and syntax memorisation is not
+  required. Introduce Python notation locally and keep the two-page coding
+  reference as optional lookup; update its PDF and teaching documentation.
+- [x] In 02, explain connection route names and offer a flux-law choice table.
+  Mask the mixing and pump choices inside the existing exercise blocks, while
+  retaining the masked analytical and numerical derivations.
+- [x] Distinguish lecture equilibrium capacity F from inventory ratio R; explain
+  uniform-TA mixing, replace the unplotted transient question with an endpoint
+  question, and clarify the chosen pulse duration and conservation purpose.
+- [x] Distinguish reference export from simulated equilibrium export in the
+  labels and written answer. Ask which real pump the transfer resembles; retain
+  the qualified comparison with published export estimates as optional context.
+- [x] Consolidate repeated interpretation and completion prompts in both
+  notebooks. Regenerate only student 01/02 and preserve their existing empty
+  source cells. Keep the timing estimates provisional pending a reading pilot.
+
+Verification in ESBMTK314: both notebooks execute successfully with their
+conservation and endpoint checks passing. All 10 introductory-model tests and
+nine of 10 student-notebook tests pass. The remaining generated-copy failure is
+the existing pair of empty instructor cells in 00 missing from its student copy;
+neither 00 file was changed. Both 01/02 student copies match generation exactly,
+validate and mask solutions correctly. Code comparison confirms unchanged 01
+code and equivalent 02 calculations after resolving the two new law-choice
+variables and output labels. Rendered math, tables, reading panels and the
+two-page reference PDF were inspected. Other notebooks and archives retain
+their starting hashes. Evidence: `tmp/01_02_coherence/`.
+
+## Draft: paired Boudreau teaching diagrams (2026-09-22)
+
+- [x] Generate standalone instructor/student SVG and PNG schematics under
+  `ref/figures/03_04_boudreau_*`, with two views of the same boxes: circulation
+  and gas exchange; biological export, explicit dissolution and signed net burial.
+- [x] Read numerical labels from the existing workbook and show actual table,
+  parameter and native-object references. Guard the expected transport/gas
+  topology. Explain the historical benchmark transport conversion and implicit
+  burial boundary in `ref/boudreau_diagrams.md`.
+- [x] Generate the student worksheet from the same source with three missing
+  arrowheads, two process-name blanks and six transfer-property blanks. Preserve
+  supplied weathering and process-module structure. No hidden solution strings
+  remain in the student SVG.
+- [ ] Integrate an agreed diagram exercise into 03/04 and update teaching goals
+  and notebook generation together. These standalone drafts do not yet change
+  active notebooks, the workbook, required tasks or provisional time allocation.
+
+Verification: inspected both rendered PNGs after adjusting label placement;
+both SVGs parse and the student masking check passes. Numerical labels and the
+transport/gas topology are read from workbook named tables. No model code,
+notebook sources, workbook data or archives were changed for this draft.
+
+
+## Follow-up: overall readability review of 02 (2026-09-22)
+
+- [x] Retain the A/B/C progression and add a short roadmap, numbered reading
+  steps and clearer links from the buffered 01 model to the two-layer model.
+  Separate supplied geometry, transport laws and the reservoir/connection task.
+- [x] Separate `build_layers` from its supplied no-pump run, and the student's
+  coefficient calculation from the supplied pump comparison. Explain which
+  definition to rerun after completing 02.3. Preserve executable statements,
+  their order, all scientific inputs and the five masked coding blocks.
+- [x] Define first-order export, stationary notation, box masses, Sv/Tmol/Pmol,
+  conditional results and restart/control runs at their first relevant use.
+  Clarify that B fits a ratio while C supplies the inventory for the full
+  reference state. Explain the forcing checks as input, budget and endpoint.
+- [x] Preserve all seven question groups and five masked written answers with
+  the existing reading cues. Regenerate only student 02. Clear outputs of the
+  two split source cells; preserve outputs of untouched code cells.
+
+Verification in ESBMTK314: 02 executes successfully with both figures and all
+conservation, flux-balance, forcing-integral and endpoint checks passing. The
+forced carbon error is 1.68e-9 of initial carbon, TA change is zero, and the final
+departure from 280 ppm is 0.00000368 ppm. All 10 introductory-model tests pass;
+nine of 10 student tests pass. The generated-copy test reports existing extra
+empty instructor cells in 00 (two) and 01 (one), absent from their student copies.
+Those files are unchanged. Both 02 copies validate, its generation matches
+byte-for-byte, and both derivations/code solutions remain masked. Browser
+inspection confirms readable tables, math, question/answer panels and the
+student route. AST comparison confirms identical executable code and order;
+hash checks preserve every other notebook and the archive. Scope and the
+provisional 55-minute allocation are unchanged; the reading-load pilot remains
+required. Evidence: `tmp/02_readability/` (snapshots, HTML and validation logs).
+
+## Follow-up: clarify 01 terminology and supplied checks (2026-09-22)
+
+- [x] Name 280 ppm dry-air xCO2 and 2040 µmol/kg DIC as the reference values at
+  first introduction. Replace "numerical seed" with "small positive initial
+  concentration" in prose and comments, preserving the prescribed 0.01 µmol/kg.
+- [x] Define gas transfer velocity (piston velocity), retaining density in the
+  flux explanation for mol/kg concentrations. Link `connect_atmosphere` directly
+  to its source and explain the excerpt's local names.
+- [x] Add a brief optional chemistry note and `new_model` docstring distinguishing
+  species registration, prescribed DIC/TA, background boron, auxiliary Hplus/CO2aq
+  and unused sediment-variable definitions. Keep all initialization supplied.
+- [x] Rename the timing helper/output to `equilibration_time` / "equilibration
+  time (1% criterion)" without changing its calculation. Distinguish the measured
+  threshold time from an exponential relaxation constant. Use the real helper
+  in the existing slower-response regression instead of duplicating its formula.
+- [x] Explain assertions once and label construction, conservation and calibrated
+  agreement checks. Remove duplicate TA auditing while retaining the explicit
+  prescribed-carbon check. Move the expected-mismatch and slower-response
+  assertions to a `solution-only` instructor verification cell.
+- [x] Regenerate student 01 and align teaching goals/design. Preserve the reading
+  cues and masked TA exercise. No new student task or scientific input; the extra
+  clarification remains within the provisional reading-load pilot.
+
+Verification in ESBMTK314: instructor 01 executes with both figures and all
+carbon/TA, endpoint and instructor-outcome checks passing. The unchanged timing
+criterion gives 72, 64 and 142 years for the baseline, alternative partition and
+half-velocity cases. All 10 introductory-model tests pass. Nine of 10 student
+tests pass; the sole failure is an unrelated 00 generation mismatch already in
+the starting worktree: instructor 00 has two extra empty, untagged code cells
+that its student copy lacks. Neither 00 file was changed in this revision.
+
+Both 01 copies validate and generation matches byte-for-byte. Rendered HTML and
+browser inspection confirm readable terms, equations, helper links, assertion
+guidance and coloured panels; all seven question groups remain, and no instructor
+answers or outcome assertions leak into student 01. Model construction, chemistry,
+run and audit calls are unchanged. Edited code-cell outputs were cleared to avoid
+stale labels. Hashes confirm every other notebook and archive is unchanged.
+`git diff --check` passes. Logs: `tmp/01_terms_execution.log`,
+`tmp/01_terms_tests.log`, `tmp/01_terms_verification.log`; HTML previews and
+starting snapshots: `tmp/notebook_qa/01_terms/`.
+
+## Follow-up: permanent configuration naming and notebook 00 (2026-09-22)
+
+- [x] Add the lasting naming rule to `AGENTS.md`: use `config` for the shared
+  teaching configuration in active notebooks and student-facing examples;
+  preserve carbon notation and inventory names and leave dated archives unchanged.
+- [x] Apply the alias rename to instructor 00's setup, worked example, solution
+  calculations and explanations; regenerate only its student copy. Preserve the
+  eight exercises, chemistry choices, values, answer masking and reading cues.
+- [x] Align README, teaching goals, design guidance and the existing 00 masking
+  test with `config.chemistry`. This changes no tasks, prerequisites or timing.
+
+Verification in ESBMTK314: instructor 00 executes successfully and all 10 student
+notebook tests pass, including exact generation for every core copy. Both 00
+copies validate. Source/AST comparison confirms only the alias changed;
+rendered Markdown is identical after normalizing that name, including styled
+panels and answer tables. Existing instructor outputs and metadata are preserved.
+Hashes confirm all other notebooks and archives retain their starting contents.
+`git diff --check` passes. Logs: `tmp/00_config_rename.log`,
+`tmp/00_config_execution.log`, `tmp/00_config_student_tests.log`.
+
+## Follow-up: permanent reading convention across 00–04 (2026-09-22)
+
+- [x] Put the lasting rule in `AGENTS.md` and the palette, authoring examples,
+  accessibility cues and solution-masking instructions in
+  `ref/notebook_readability.md`; link the guide from README. Keep WORKPLAN as
+  implementation history rather than the only source of the convention.
+- [x] Extend 01's gold key terms, blue question panels and purple written
+  answers to instructor 00/02/03/04. Label existing instructor-only reference
+  and verification notes accurately. Keep supplied explanations/run instructions
+  distinct from student scientific prompts and retain existing code-role labels.
+- [x] Regenerate the four student copies through the shared builder. In 00,
+  replace the redundant inline answer prefix with the panel label, allowing
+  all four written result tables to render correctly. Preserve its eight-part
+  scope, unrelated usage example, calculation cells, values and interpretations.
+
+Verification in ESBMTK314: all 30 student-generation, introductory-model,
+boundary-audit, forcing-budget and scenario-smoke tests pass. Regenerating 00
+also resolves the previously documented JSON field-order mismatch; all five
+core student copies now match generation byte-for-byte. All ten core notebooks
+validate. Render checks confirm the panel labels, four 00 answer tables and
+02 derivation markup; student copies contain no purple answer panels or outputs.
+Browser inspection covers 00 tables, 02 maths, 03 mapping/sediment prompts and
+04 interpretation panels. Comparisons against the starting worktree confirm
+unchanged executable cells, instructor outputs, scientific text and question
+wording, excluding new presentation labels and the redundant 00 answer prefix.
+Notebook 01, launchers, extensions and dated archives retain their starting
+hashes. No teaching task, prerequisite or timing changed. Evidence is under
+`tmp/notebook_qa/core_readability/` (`verification.log`, `tests.log`, HTML previews).
+
+## Follow-up: visual reading cues in 01 (2026-09-22)
+
+- [x] Highlight selected key concepts in pale gold; put the seven existing
+  question groups in blue panels and four written instructor solutions in
+  purple panels. Add a short reading key alongside the existing code labels.
+  Keep explicit question/answer labels and bold key terms so colour is not
+  the only distinction. Use self-contained HTML styles in Markdown cells;
+  no setup cell, extension or stylesheet installation is needed.
+- [x] Keep answer panels entirely inside the existing solution markers and
+  regenerate student 01 through `build_student_notebook`. Preserve executable
+  cells, outputs, scientific wording, exercises, workload and all other notebooks.
+
+Verification: inspected the rendered question/answer layout in the browser.
+Both 01 notebooks validate, Markdown inside panels renders, and the student
+copy matches generation exactly with all four written solutions and the code
+solution masked. All 10 introductory-model tests pass, including carbon/TA
+conservation. Nine of 10 student tests pass; the only failure is the previously
+documented untouched-00 JSON field-order mismatch, with equal parsed content.
+Code cells and outputs match the starting worktree; all other notebooks and
+archive files retain their starting hashes. Evidence: `tmp/01_highlights/`.
+This is presentation only; learning outcomes, tasks and timing are unchanged.
+
+## Follow-up: distinguish configuration from carbon (2026-09-21)
+
+- [x] Rename the shared teaching-configuration alias from `C` to `config` in
+  instructor 01/02, including code, comments and exercise explanations.
+  Check core 03/04: neither uses this alias, so no edits are needed there.
+- [x] Regenerate student 01/02 through the shared builder and align the README,
+  teaching goals and design note. Preserve carbon symbols/units, notebook 00,
+  all other notebooks and dated archives. Tasks and timing are unchanged.
+
+Verification in ESBMTK314: instructor 01 and 02 execute successfully, producing
+two figures each and passing their carbon/TA, equilibrium and forcing checks.
+All 10 introductory-model tests pass. Nine of 10 student tests pass; the only
+failure remains the documented untouched-00 JSON field-order mismatch.
+Both edited notebook pairs validate and match generation byte-for-byte.
+AST comparison confirms unchanged executable code apart from the alias rename;
+cell metadata and existing outputs are preserved. Hashes confirm all other
+notebooks and archive files are unchanged. `git diff --check` passes.
+Logs: `tmp/config_alias_notebooks.log`, `tmp/config_alias_model_tests.log`,
+`tmp/config_alias_student_tests.log`.
+
+## Follow-up: readable 01 and complete TA inference (2026-09-21)
+
+- [x] Replace the two-input-type selection with a complete PyCO2SYS TA
+  calculation, reusing 00's skills. Mask the input types, solver call and TA
+  extraction; retain reference targets, shared settings, documentation and the
+  required output variable. Explicitly distinguish 01's 16 °C from 00's 15 °C.
+- [x] Separate the chemistry exercise and displayed TA from the supplied buffered
+  rerun. Explain that the rerun has a revised initial TA inventory, not an
+  alkalinity addition during the original experiment.
+- [x] Break construction into short atmospheric, exchange-law, object-mapping
+  and connection steps. Interleave the native construction code; retain the
+  individual connection excerpt before the helper call. Keep directional budgets,
+  flux units and explicit physical inputs, and use `atm`/`ocn` notation.
+- [x] Ask explicitly which chemical assumption prevents the reference partition
+  and whether any represented process can change it. Consolidate the ending into
+  three synthesis sentences; supply real-ocean TA sources as context. Clarify
+  that settling times are printed and define their 1% criterion.
+- [x] Remove `M.connection_summary()` from both versions, retaining its removal
+  from the user's starting instructor source. Regenerate only student 01 through
+  the shared builder. Preserve all other notebooks, archives and user changes.
+- [x] Align README, teaching goals and design. Retain 35 minutes provisionally:
+  the fuller calculation increases independent work, while shorter reading and
+  consolidated questions aim to accommodate it. A pilot after 00 remains needed.
+
+Verification in ESBMTK314: instructor 01 executes successfully with both figures
+and all carbon/TA and endpoint checks. All 10 introductory-model tests pass.
+Nine of 10 student tests pass, including strengthened TA-masking checks; the only
+failure is the previously documented untouched-00 JSON field-order mismatch.
+Its parsed generated/current contents are identical. Student 01 matches generation
+byte-for-byte; both edited notebooks validate, local links resolve and no student
+outputs or connection-summary calls remain. AST statement comparison against the
+starting source confirms preserved executable statements, with only cell grouping
+and diagnostic ordering changed. Hashes confirm other notebooks and archives are
+unchanged. Student-facing Markdown is reduced from 1946 to 1793 whitespace-separated
+words (including code/math, excluding masked answers); this is not a timing measure.
+
+Logs: `tmp/01_readability_notebook.log`, `tmp/01_readability_model_tests.log`,
+`tmp/01_readability_student_tests.log`.
+The initial simultaneous Conda launches collided on a temporary activation file;
+the isolated notebook rerun passed. Temporary editing/verification scripts and
+snapshots were removed after checks. No environment or numerical-model
+implementation was changed.
+
 ## Follow-up: explain the single-box construction helper (2026-09-21)
 
 - [x] Introduce `single_box` immediately before its first use in 01, linking
@@ -144,7 +478,6 @@ and rendering intermediates were removed after verification.
 - Temperature, salinity and pressure are visible in the setup and passed explicitly in every PyCO2SYS call. Defaults remain the shared 16 °C, S = 35 and 0 dbar; the notebook explains how to revisit the original 15 °C example.
 - Each example is labelled as a static equilibrium calculation. The OAE TA is inferred from a prescribed saturation target, with no claim of an independently predicted outcome or a closed carbon budget.
 - Executed all 00 cells successfully in ESBMTK314 with `python scripts/check_notebooks.py notebooks/00_PyCO2SYS.ipynb`; the saturation-target assertion passes. At the shared conditions, the required TA enhancement is approximately 816.73 umol/kg. The existing Python 3.14 kernel metadata is preserved.
-
 
 ## Follow-up: student derivations and 62.4 geometry (2026-09-15)
 
@@ -556,3 +889,60 @@ Follow-up: revised both setup PDFs to say "Restart JupyterLab after shutting
 it down" and distinguish that operation from opening/creating notebooks inside
 an already-running JupyterLab. Matched the Anaconda Markdown guide. Both PDFs
 remain two pages; all four rendered pages were visually checked after rebuilding.
+
+## Follow-up: working uv setup and novice instructions (2026-09-22)
+
+- [x] Supply root `pyproject.toml`, `.python-version` (3.14.7), a generated
+  `uv.lock`, and `scripts/check_environment.py`. Keep the verified ESBMTK and
+  PyCO2SYS pins and use uv-managed Python independently of existing Conda.
+  Ignore local `.venv` and temporary validation files.
+- [x] Add canonical `ref/uv_setup.md` and regenerate the UV PDF as three readable
+  pages. Explain ZIP extraction, opening PowerShell/Terminal, concrete paths,
+  `cd`/`pwd`/`ls`, commands versus notebook code, supplied manifest/lock files,
+  explicit setup success, notebook creation, saving, server shutdown and later
+  launches. Students need no prior Python installation or TOML editing.
+- [x] Make the PDF builder read this Markdown and accept `--only uv`, preserving
+  the separate Anaconda PDF. Update README, setup status and prerequisites;
+  preserve teaching scope, timetable and existing notebook edits.
+
+Verification: uv 0.12.17 downloaded managed CPython 3.14.7 into an isolated test
+location and created a fresh project `.venv` with `uv sync --locked`. Lock
+consistency and installed dependency compatibility checks pass. The documented
+checker verifies NumPy/SciPy solves, carbonate chemistry, GSW density, the actual
+model workbook and PNG plotting. All five instructor notebooks 00-04 execute
+successfully with their audits. A real JupyterLab server returns HTTP 200, starts
+the environment-local course kernel, executes imports and a numerical solve,
+shuts down cleanly and restarts successfully. Existing Conda environments and
+running user sessions were not altered.
+
+The full suite reports 56 passing tests and one failing generated-copy equality
+test. Subsequent reference-Conda verification finds two extra empty instructor
+code cells in 00 and one in 01 relative to student copies; other parsed content
+matches exactly. This is unrelated to uv installation, and no teaching notebooks
+were regenerated. Reconcile source/copy equality before notebook distribution.
+
+The UV PDF has three A4 pages; every latest rendered page was visually checked,
+and text checks confirm commands, success and shutdown instructions. `git diff
+--check` passes. Evidence: `tmp/uv_validation/{lock,sync,check,tests,notebooks,
+lifecycle,reference_copy_test}.log`. macOS/Linux pilots and testing the initial
+uv installer with a novice on a clean laptop remain outstanding; this machine's
+validation used an isolated uv install and did not test the Windows winget UI.
+
+## Follow-up: shared beginner explanations in Anaconda setup (2026-09-22)
+
+- [x] Expand `ref/anaconda_setup.md` and its PDF to explain environments,
+  kernels, terminals, ZIP extraction, opening Anaconda Prompt, concrete course
+  paths, checking the current directory, activation and expected success output.
+- [x] Use `scripts/check_environment.py` for the terminal numerical/chemistry/
+  workbook/plot check. Explain notebook creation, saving, Ctrl+C shutdown, why
+  closing a browser tab leaves the server running, and subsequent launches.
+- [x] Render the three-page student PDF from the Markdown source using the same
+  parser as uv. Keep instructor maintenance notes outside the student PDF and
+  retain the Anaconda route's fresh-installation/cross-platform pilot status.
+  Update current page counts in README/teaching goals; no teaching tasks change.
+
+Verification: the shared checker passes through `conda run -n ESBMTK314
+--no-capture-output`; this is a reference-environment check, not a fresh Anaconda
+recipe validation. All three rendered PDF pages were visually inspected; text
+checks confirm commands, success, shutdown and restart instructions. No package
+installation, notebook regeneration or changes to running user sessions.

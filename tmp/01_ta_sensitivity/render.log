@@ -1,0 +1,6 @@
+Het proces heeft geen toegang tot het bestand omdat het door een ander
+proces wordt gebruikt.
+The system cannot find the file C:\Users\19279\AppData\Local\Temp\__conda_tmp_24485.txt.
+Failed to run 'conda activate "C:\Users\19279\.conda\envs\ESBMTK314"'.
+C:\Users\19279\AppData\Local\Temp\__conda_tmp_24485.txt
+ERROR conda.cli.main_run:execute(127): `conda run python -m jupyter nbconvert --to html notebooks/student/01_single_box_air_sea_CO2.ipynb --output student --output-dir tmp/01_ta_sensitivity` failed. (See above for error)

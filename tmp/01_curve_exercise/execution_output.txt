@@ -1,0 +1,92 @@
+Shared chemistry: {'opt_k_carbonic': 10, 'opt_pH_scale': 2, 'opt_buffers_mode': 1, 'temperature': 16.0, 'salinity': 35.0, 'pressure': 0.0}
+Ocean volume (m3): 1.35e+18
+ESBMTK density (kg/m3): 1025.7484950008022
+Target-derived total carbon (mol): 2.8744713552322094e+18
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+Initial atmosphere (ppm): 16239.872924449308
+Initial ocean carbon fraction: 4.817443964889389e-06
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.55 CPU seconds, wall time = 0.55 seconds
+
+{'carbon_relative_error': 3.562394170796242e-16, 'ta_change_mol': 0.0}
+TA-free result: xCO2 (ppm), DIC (umol/kg): 12561.780484274073 470.14355510736226
+
+Inferred TA (umol/kg): 2348.2362117173566
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.52 CPU seconds, wall time = 0.52 seconds
+
+{'carbon_relative_error': 1.6030773768583089e-15, 'ta_change_mol': 0.0}
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.53 CPU seconds, wall time = 0.53 seconds
+
+{'carbon_relative_error': 2.137436502477746e-15, 'ta_change_mol': 0.0}
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.50 CPU seconds, wall time = 0.50 seconds
+
+{'carbon_relative_error': 1.2468379597786846e-15, 'ta_change_mol': 0.0}
+near-empty ocean equilibration time (yr; 1% criterion): 72.0
+alternative partition equilibration time (yr; 1% criterion): 64.0
+half piston velocity equilibration time (yr; 1% criterion): 142.0

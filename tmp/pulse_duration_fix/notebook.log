@@ -1,0 +1,130 @@
+02_two_layer_ocean_carbon_pump.ipynb: cell 1
+02_two_layer_ocean_carbon_pump.ipynb: cell 5
+Ratio-derived surface depth (m): 298.75014096166706
+Volumes (m3): 1.0755005074620014e+17 1.2424499492538e+18
+02_two_layer_ocean_carbon_pump.ipynb: cell 7
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.64 CPU seconds, wall time = 0.65 seconds
+
+{'carbon_relative_error': 2.137436502477746e-15, 'ta_change_mol': 0.0}
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.59 CPU seconds, wall time = 0.61 seconds
+
+================================================================================
+
+There were 89 warnings, check M.log
+
+================================================================================
+
+{'carbon_relative_error': 2.137436502477746e-15, 'ta_change_mol': 0.0}
+02_two_layer_ocean_carbon_pump.ipynb: cell 12
+Fitted k (kg/yr): 6.6644448512018056e+16
+Export at reference surface DIC (Tmol C/yr): 135.95467496451684
+02_two_layer_ocean_carbon_pump.ipynb: cell 14
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 1.67 CPU seconds, wall time = 1.69 seconds
+
+================================================================================
+
+There were 82 warnings, check M.log
+
+================================================================================
+
+{'carbon_relative_error': 2.8499153366369945e-15, 'ta_change_mol': 0.0}
+pump off xCO2 (ppm), surface/deep DIC (umol/kg): 279.9999999997227 2040.0000000000318 2040.000000000031
+pump on xCO2 (ppm), surface/deep DIC (umol/kg): 138.2700376659449 1880.0039771376805 2073.533798313618
+Matched change in deep carbon (Pmol): 42.736853008451945
+Export at simulated pump-on equilibrium (Tmol C/yr): 125.29182825674133
+02_two_layer_ocean_carbon_pump.ipynb: cell 17
+Carbon to inject (Pmol C): 267.63264476779057
+02_two_layer_ocean_carbon_pump.ipynb: cell 18
+Actual baseline ocean/atmosphere ratio: 56.99982556965717
+02_two_layer_ocean_carbon_pump.ipynb: cell 20
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 10.09 CPU seconds, wall time = 10.20 seconds
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 6.80 CPU seconds, wall time = 6.84 seconds
+
+================================================================================
+
+There were 29 warnings, check M.log
+
+================================================================================
+
+Control budget: {'carbon_relative_error': 2.4936759195573704e-15, 'ta_change_mol': 0.0}
+Forced budget: {'carbon_relative_error': 6.342646889423318e-10, 'ta_change_mol': 0.0}
+Final departure from 280 ppm: -1.9039907783735543e-07
+02_two_layer_ocean_carbon_pump.ipynb: cell 23
+02_two_layer_ocean_carbon_pump.ipynb: cell 24
+PASS 02_two_layer_ocean_carbon_pump.ipynb; 2 figures

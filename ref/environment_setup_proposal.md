@@ -1,9 +1,9 @@
-# Environment diagnosis and student setup proposal
+# Environment diagnosis and student setup status
 
-Investigated 2026-09-21. The diagnosis below is verified on the current Windows
-machine. The alternative student environment is a proposal, not a tested release
-or a change to the course prerequisites. The existing ESBMTK314 environment
-remains the reference for model verification.
+Investigated 2026-09-21; uv setup verified on Windows on 2026-09-22.
+The existing ESBMTK314 environment remains the instructor reference. The supplied
+uv route now provides an independently installed student environment; macOS/Linux
+and novice-student setup pilots remain outstanding.
 
 ## Reproduced Windows crash
 
@@ -71,85 +71,58 @@ Diagnostic logs and temporary instrumentation are in
 The diagnostic processes suppress Windows crash dialogs locally; they do not
 change system-wide error reporting or hide failures from the logs.
 
-## Proposed student route: uv and a locked project
+## Implemented student route: uv and a locked project
 
-Anaconda is not a requirement of ESBMTK. The installed ESBMTK package declares
-Python >=3.12 and Python-package dependencies, and it is available through pip.
-Anaconda is one distribution; Conda is an environment manager. Neither is the
-Python language or the notebook interface.
+Students without Python can use the [uv setup guide](uv_setup.md) and its
+[three-page PDF](../output/pdf/student_setup_uv.pdf). uv installs a managed Python
+interpreter and a separate project environment; Anaconda, RStudio and reticulate
+are not prerequisites. Existing R installations stay unchanged.
 
-For these Python practicals, the proposed default is
-[uv](https://docs.astral.sh/uv/getting-started/installation/), a standalone tool
-that can [download Python](https://docs.astral.sh/uv/guides/install-python/) and
-restore a project environment. Students need not have Python installed first.
-Keep JupyterLab in that same project environment. Their R installation can
-remain unchanged; RStudio and reticulate are not prerequisites for this course.
+Distribute the complete course folder, including:
 
-Supply these files with the practicals:
+- [`pyproject.toml`](../pyproject.toml): Python compatibility and required packages.
+- [`.python-version`](../.python-version): tested Python 3.14.7.
+- [`uv.lock`](../uv.lock): resolved versions and package hashes.
+- [`scripts/check_environment.py`](../scripts/check_environment.py): actual
+  numerical solves, chemistry, workbook access and plotting checks.
+- Course modules, notebooks and `data/`, including the model workbook and restarts.
 
-- `pyproject.toml`: Python compatibility and required packages.
-- `.python-version`: the Python version chosen and checked by the instructor.
-- `uv.lock`: the resolved dependency versions, committed after verification.
-- A short launcher and numerical/chemistry environment check, with instructions
-  to select the project Python kernel.
-
-A TOML file describes the environment; it does not install anything by itself.
-The lockfile prevents each student's first run from independently selecting a
-new set of package versions. See uv's
-[project layout](https://docs.astral.sh/uv/concepts/projects/layout/) and
+Do not distribute a machine-specific `.venv` or temporary validation files.
+Students do not generate TOML or a lockfile: they extract the supplied folder,
+install uv, navigate to that folder, and run the guide's commands. The manifest
+uses `python-preference = "only-managed"` to avoid borrowing a Conda interpreter.
+`uv sync --locked` restores the supplied package resolution without changing it.
+See uv's [project layout](https://docs.astral.sh/uv/concepts/projects/layout/) and
 [locking guidance](https://docs.astral.sh/uv/concepts/projects/sync/).
 
-An initial manifest to evaluate is below. It is deliberately not installed at
-the repository root yet, and no compatible lockfile has been generated or
-tested. Preserve the currently verified Python 3.14 line initially; ESBMTK's
+Register the `esbmtk-practicals` kernel with `--sys-prefix` inside this environment
+and launch JupyterLab with `uv run --locked jupyter lab`. Select that kernel if a
+distributed notebook requests the instructor's ESBMTK314 kernel. Registration
+does not replace globally registered kernels. The guide distinguishes creating
+notebooks in an already-running server, saving/shutting down, and relaunching;
+closing a browser tab alone does not normally stop the server. See
+[uv's Jupyter guidance](https://docs.astral.sh/uv/guides/integration/jupyter/).
 
-> =3.12 requirement does not prove that every combination of dependencies and
-> these notebooks has been tested on every supported Python version.
+### Windows verification, 2026-09-22
 
-```toml
-[project]
-name = "esbmtk-practicals"
-version = "0.1.0"
-requires-python = ">=3.14,<3.15"
-dependencies = [
-    "esbmtk==0.14.3.1.post0",
-    "PyCO2SYS==1.8.3.4",
-    "numpy",
-    "scipy",
-    "matplotlib",
-    "pandas",
-    "gsw",
-    "openpyxl>=3.1,<4",
-    "jupyterlab",
-    "ipykernel",
-]
+Using uv 0.12.17 with an empty project environment and a separately downloaded
+managed Python 3.14.7, the locked installation and environment checker pass.
+All core instructor notebooks 00-04 execute, including their numerical audits.
+An actual local JupyterLab server serves its UI, starts the project kernel,
+executes imports and a linear solve, shuts down cleanly and relaunches correctly.
+No existing Conda environment or user notebook session was changed.
 
-[tool.uv]
-package = false
-```
+The full test suite has 56 passes and one failing test for generated student-copy
+equality. A subsequent check in the reference Conda environment finds extra empty
+code cells in instructor sources 00 and 01 (two and one respectively), absent
+from their student copies; all other parsed content matches. This source/copy
+mismatch is separate from installation and does not affect notebook execution.
+Existing notebook edits were preserved; reconcile the copies before release.
 
-After the instructor has supplied and tested the lockfile, the intended student
-workflow is:
-
-1. Install uv once using its standalone installer; no preinstalled Python is
-   required. Download and extract the course folder; Git need not be required.
-2. Open a terminal in that folder and run `uv sync --locked`.
-3. Run `uv run --locked jupyter lab` and open `notebooks/student/`.
-
-The first setup needs internet access to obtain the interpreter and packages.
-Subsequent work uses the local environment. Launching Jupyter in the same
-environment reduces server/kernel mismatches. The distributed notebooks currently
-refer to the named ESBMTK314 kernel, so the rollout must either provide an
-environment-local course kernelspec or adjust the distributed kernel metadata;
-do not assume that an old globally registered kernel points to the new project.
-The instructor and generated student notebook workflow must remain consistent.
-See [uv's Jupyter guidance](https://docs.astral.sh/uv/guides/integration/jupyter/).
-
-For students familiar only with R, provide a short orientation: JupyterLab is
-the interface, Python is the runtime, and uv restores this course's packages
-(roughly the role of restoring a project library). Students should not need to
-choose dependency versions, troubleshoot DLL paths, or write TOML. The instructor
-owns those files and the launcher.
+Evidence is retained locally in `tmp/uv_validation/`: `lock.log`, `sync.log`,
+`check.log`, `tests.log`, `notebooks.log` and `lifecycle.log`. The PDF's
+three rendered pages were visually checked. The Windows uv installer itself was
+not exercised on a clean laptop: uv was installed into an isolated test directory.
 
 ## Alternatives and release checks
 
@@ -172,11 +145,10 @@ For genuinely zero local installation, a university-managed
 a browser. That is the lowest student setup burden if hosting and support are
 available; it moves environment maintenance to the instructor/institution.
 
-Before adopting the local uv route, create a clean environment and verify all
-core instructor notebooks and relevant conservation tests on Windows and the
-Mac platforms used by students. Confirm wheel availability, workbook loading,
-plotting and project-local kernel selection. Include an actual small linear
-solve in the setup check, since imports alone missed the current crash. Pilot
-the setup with a student who has no Python installation. Only then update README
-and TEACHING_GOALS to make this the supported prerequisite and record its setup
-time separately from the four-hour practical.
+Before a cross-platform release, repeat the locked installation and checks on
+the macOS/Linux platforms used by students. Windows package installation, workbook
+loading, plotting, project-local kernel selection and core notebook execution
+are already verified. Pilot the documented initial uv installer and setup with a
+student who has no Python installation, and measure setup time separately from
+the four-hour practical. Preserve `--locked`; update the manifest and lockfile
+together only as an instructor maintenance action followed by verification.

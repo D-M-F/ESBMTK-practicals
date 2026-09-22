@@ -1,0 +1,303 @@
+test_calibrated_ratio_and_conditional_atmosphere (tests.test_simple_models.IntroductoryModelTest.test_calibrated_ratio_and_conditional_atmosphere) ... ok
+test_changed_pulse_durations_preserve_mass_and_equilibrium (tests.test_simple_models.IntroductoryModelTest.test_changed_pulse_durations_preserve_mass_and_equilibrium) ... ok
+test_closed_inventory_chemistry_curves_explain_model_endpoints (tests.test_simple_models.IntroductoryModelTest.test_closed_inventory_chemistry_curves_explain_model_endpoints) ... ok
+test_equilibrium_is_independent_of_partition_and_piston_velocity (tests.test_simple_models.IntroductoryModelTest.test_equilibrium_is_independent_of_partition_and_piston_velocity) ... ok
+test_finite_signal_inventory_and_calibrated_return (tests.test_simple_models.IntroductoryModelTest.test_finite_signal_inventory_and_calibrated_return) ... ok
+test_geometry_chemistry_and_implemented_ode_mass (tests.test_simple_models.IntroductoryModelTest.test_geometry_chemistry_and_implemented_ode_mass) ... ok
+test_impossible_inventory_ratios_reject_unphysical_geometry (tests.test_simple_models.IntroductoryModelTest.test_impossible_inventory_ratios_reject_unphysical_geometry) ... ok
+test_internal_mixing_and_pump_have_equal_opposite_inventory_tendencies (tests.test_simple_models.IntroductoryModelTest.test_internal_mixing_and_pump_have_equal_opposite_inventory_tendencies) ... ok
+test_no_pump_extension_preserves_equilibrium_and_both_inventories (tests.test_simple_models.IntroductoryModelTest.test_no_pump_extension_preserves_equilibrium_and_both_inventories) ... ok
+test_ta_free_failure_is_chemical_not_loss_of_carbon (tests.test_simple_models.IntroductoryModelTest.test_ta_free_failure_is_chemical_not_loss_of_carbon) ... ok
+test_transport_identifiability_and_ratio_derived_geometry (tests.test_simple_models.IntroductoryModelTest.test_transport_identifiability_and_ratio_derived_geometry) ... ok
+test_integrates_within_sloping_segments_not_just_at_knots (tests.test_simple_models.SignalIntegralTest.test_integrates_within_sloping_segments_not_just_at_knots) ... ok
+test_invalid_pulse_clock_has_actionable_errors (tests.test_simple_models.SignalIntegralTest.test_invalid_pulse_clock_has_actionable_errors) ... ok
+test_resolved_clock_maps_native_square_pulses_without_losing_mass (tests.test_simple_models.SignalIntegralTest.test_resolved_clock_maps_native_square_pulses_without_losing_mass) ... ok
+test_00_provides_one_example_and_no_exercise_solutions (tests.test_student_notebooks.StudentNotebookTest.test_00_provides_one_example_and_no_exercise_solutions) ... ok
+test_02_masks_derivations_and_keeps_the_forcing_example_supplied (tests.test_student_notebooks.StudentNotebookTest.test_02_masks_derivations_and_keeps_the_forcing_example_supplied) ... ok
+test_03_04_share_excel_inputs_without_hiding_construction (tests.test_student_notebooks.StudentNotebookTest.test_03_04_share_excel_inputs_without_hiding_construction) ... ok
+test_03_requires_students_to_construct_the_baseline (tests.test_student_notebooks.StudentNotebookTest.test_03_requires_students_to_construct_the_baseline) ... ok
+test_04_keeps_compatibility_implementation_supplied (tests.test_student_notebooks.StudentNotebookTest.test_04_keeps_compatibility_implementation_supplied) ... ok
+test_all_teaching_markdown_uses_dollar_math_delimiters (tests.test_student_notebooks.StudentNotebookTest.test_all_teaching_markdown_uses_dollar_math_delimiters) ... ok
+test_generated_copies_match_instructor_sources (tests.test_student_notebooks.StudentNotebookTest.test_generated_copies_match_instructor_sources) ... 
+  test_generated_copies_match_instructor_sources (tests.test_student_notebooks.StudentNotebookTest.test_generated_copies_match_instructor_sources) (notebook='00_PyCO2SYS.ipynb') ... FAIL
+test_intro_exercises_and_scientific_labels (tests.test_student_notebooks.StudentNotebookTest.test_intro_exercises_and_scientific_labels) ... ok
+test_optional_04_remains_self_contained_and_masked (tests.test_student_notebooks.StudentNotebookTest.test_optional_04_remains_self_contained_and_masked) ... ok
+test_student_copies_are_masked_and_have_unique_cell_ids (tests.test_student_notebooks.StudentNotebookTest.test_student_copies_are_masked_and_have_unique_cell_ids) ... ok
+
+======================================================================
+FAIL: test_generated_copies_match_instructor_sources (tests.test_student_notebooks.StudentNotebookTest.test_generated_copies_match_instructor_sources) (notebook='00_PyCO2SYS.ipynb')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\ALK\TA\BGC\ESBMTK-practicals\tests\test_student_notebooks.py", line 146, in test_generated_copies_match_instructor_sources
+    self.assertEqual(target.read_bytes(),
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+                     (ROOT / "notebooks/student" / name).read_bytes())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'{\r[16240 chars]\n  },\r\n  {\r\n   "cell_type": "code",\r\n  [845 chars]\r\n' != b'{\r[16240 chars]\n  }\r\n ],\r\n "metadata": {\r\n  "kernelspe[471 chars]\r\n'
+
+----------------------------------------------------------------------
+Ran 24 tests in 24.868s
+
+FAILED (failures=1)
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.50 CPU seconds, wall time = 0.50 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.52 CPU seconds, wall time = 0.52 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.45 CPU seconds, wall time = 0.47 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.50 CPU seconds, wall time = 0.52 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.47 CPU seconds, wall time = 0.48 seconds
+
+================================================================================
+
+There were 89 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 1.42 CPU seconds, wall time = 1.46 seconds
+
+================================================================================
+
+There were 82 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 3.25 CPU seconds, wall time = 3.29 seconds
+
+================================================================================
+
+There were 29 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 8.06 CPU seconds, wall time = 8.13 seconds
+
+================================================================================
+
+There were 24 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.58 CPU seconds, wall time = 0.59 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 1.38 CPU seconds, wall time = 1.39 seconds
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.52 CPU seconds, wall time = 0.53 seconds
+
+================================================================================
+
+There were 12 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+ERROR conda.cli.main_run:execute(127): `conda run python -m unittest tests.test_simple_models tests.test_student_notebooks -v` failed. (See above for error)

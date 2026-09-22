@@ -1,0 +1,6 @@
+Executable code and its ordering are unchanged.
+instructor: valid; 7 questions, 5 answers, 2 rendered tables; masking checked.
+student: valid; 7 questions, 0 answers, 2 rendered tables; masking checked.
+Exact student generation; all other notebooks and archive files unchanged.
+Unrelated mismatch in 00_PyCO2SYS.ipynb : 2 extra generated cells; 0 other student cells.
+Unrelated mismatch in 01_single_box_air_sea_CO2.ipynb : 1 extra generated cells; 0 other student cells.

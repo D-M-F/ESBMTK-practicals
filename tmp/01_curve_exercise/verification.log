@@ -1,0 +1,11 @@
+Executing complete instructor 01...
+C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+instructor valid; questions/answers and student masking correct.
+student valid; questions/answers and student masking correct.
+Only 01 notebook pair changed; all previous model cells/outputs and archives preserved.

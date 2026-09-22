@@ -1,4 +1,6 @@
 __pycache__/
+.venv/
+tmp/uv_validation/
 *.py[cod]
 .ipython/
 .jupyter_runtime/

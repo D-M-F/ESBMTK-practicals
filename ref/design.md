@@ -31,13 +31,11 @@ Introduce `Species2Species` first in 01, before the helper invocation: show a
 supplied reading excerpt of the constructor in `connect_atmosphere`, explain
 the individual state endpoints and `ctype`, and map helper names to notebook
 objects. Keep the excerpt in Markdown so it cannot create a duplicate connection
-during normal execution. In 02, build on that introduction with a brief note:
-`create_bulk_connections` creates `ConnectionProperties` groups, which create
-individual `Species2Species` connections; `ty` selects the same law as `ctype`.
-Explain direct construction by the gas-specific endpoint/parameter requirements
-and the convenience of one pump connection, not by claiming `Species2Species`
-is exclusive to gas exchange. Do not assess the internal call chain or add an
-API-reading task; keep students' attention on endpoints, species and flux laws.
+during normal execution. In 02, explain route strings and how `ty` selects the
+same law as `ctype`. Supply explained choices for prescribed, concentration-dependent
+and gas-exchange laws; students select mixing and pump laws within the existing
+masked blocks. Explain the source/sink names and identifying role of `@id`;
+omit the internal call chain. Focus on endpoints, species, flux laws and units.
 
 The student-facing [coding cheatsheet](modelling_cheatsheet.md) and its
 [two-page handout](../output/pdf/modelling_cheatsheet.pdf) make this translation
@@ -67,9 +65,10 @@ or run; its reading time remains part of the provisional allocation to pilot.
 The reference teaches only the Python patterns and architecture needed to read
 the practicals. **Choose and explain**, **Understand and run**, and **Supplied
 implementation** code labels direct attention while keeping scientific choices
-visible. Introduce it within 01's existing diagram/worked-example activity and
-keep it available thereafter; its standalone example is optional reference, not
-another assignment. This orientation shares the planned time and needs a pilot.
+visible. Offer it as optional lookup support in 01 and thereafter; introduce
+essential syntax beside its first use in the notebooks. Its standalone example
+is optional. The practicals are ungraded, with explanations retained in the
+notebooks and no separate submission. The reading load still needs a pilot.
 The sheet must not reveal the pump calibration/carbon-addition derivations, solve
 the mapping exercises, or move 03/04 science into 01/02. Syntax is reference
 material; explanation of assumptions, balances and evidence is the learning goal.
@@ -88,7 +87,7 @@ contains reproducible calculations and full interpretations; the shared builder
 removes them from the student copy. The original path is a launcher.
 
 Use the exercise's 15 °C, salinity 35, TA 2100 µmol/kg baseline and unchanged
-`C.chemistry`. Preserve type 9 dry-air xCO2 in ppm, explicitly distinguishing it
+`config.chemistry`. Preserve type 9 dry-air xCO2 in ppm, explicitly distinguishing it
 from pCO2 in µatm. Temperature and salinity comparisons fix TA and xCO2 while DIC
 adjusts; do not imply the same sensitivity for a closed sample. Historical CO2
 and the RCP8.5-labelled 935 ppm endpoint are exercise inputs. Include both 15 °C
@@ -129,9 +128,37 @@ explanation without adding an exercise or changing model code.
 
 The **first run defaults to TA = 0**. Introduce the initialization through an idealized picture: start with water containing only dissolved NaCl (TA = 0), then dissolve a trace of CO2 to supply the small initial DIC without changing TA. Say CO2 rather than simply "adding DIC", since bicarbonate/carbonate salt additions can also change TA. Place the remaining carbon in the atmosphere within the same target-derived total inventory; this is initialization, not an extra forcing. In the system-specification section, distinguish that motivating picture from the supplied seawater chemistry used in the calculation. Frame the opening as a new ESBMTK modeller's fictional verification experiment: the modeller expects correct code and a target-derived total carbon inventory to reproduce both familiar reference values. Present that expectation as a hypothesis for students to critique, not a promised outcome. Use the neutral student-facing title "Can gas exchange explain ocean carbon storage?" and defer the diagnosis until after prediction and the first run.
 
-Students distinguish a constraint on the combined carbon inventory from controls on its equilibrium partition. After running, they use the carbon and TA audits to explain why disagreement alone does not demonstrate a coding error: passing budgets supports implementation verification but establishes neither complete code correctness nor physical adequacy. Gas exchange moves carbon but does not generate TA; small initial DIC does not require small TA. They then use PyCO2SYS with the target DIC and atmospheric xCO2, under the shared conditions, to *infer* the required TA. A second ESBMTK run with that TA is a calibrated cross-implementation and conservation check, not an independent prediction of TA. Briefly distinguish the origin and maintenance of real-ocean TA from this closed-model inference; explicit weathering, carbonate dissolution, and burial are deferred to 03/04. The revised before/after prompts replace the existing prediction/diagnosis task within the provisional 35-minute allocation.
+Students distinguish a constraint on the combined carbon inventory from controls on its equilibrium partition. After running, they use the carbon and TA audits to explain why disagreement alone does not demonstrate a coding error: passing budgets supports implementation verification but establishes neither complete code correctness nor physical adequacy. Gas exchange moves carbon but does not generate TA; small initial DIC does not require small TA. They then use PyCO2SYS with the target DIC and atmospheric xCO2, under the shared conditions, to *infer* the required TA. A second ESBMTK run with that TA is a calibrated cross-implementation and conservation check, not an independent prediction of TA. Briefly distinguish the origin and maintenance of real-ocean TA from this closed-model inference; explicit weathering, carbonate dissolution, and burial are deferred to 03/04. The revised before/after prompts replace the existing prediction/diagnosis task within the provisional 40-minute allocation.
 
 Compare at least two initial atmosphere-ocean carbon partitions at the same total carbon and TA. Their paths should differ, but their eventual equilibrium should agree. Change piston velocity to test whether it affects the relaxation time rather than the equilibrium state. Carbon and TA inventory audits, plus agreement between the specified and implemented chemistry/geometry, are the verification criteria. The approximation in section 2.4 of the ESBMTK paper can be noted as a numerical limitation, but it is not the principal learning question here.
+
+Use the explicit diagnostic label "equilibration time (1% criterion)" for the
+first saved time after which atmospheric CO2 remains within 1% of its final
+simulated value. This depends on the starting state and threshold, and is not
+an exponential relaxation constant or independent evidence of stationarity.
+Keep the numerical criterion unchanged when renaming the helper and output.
+
+Name the two reference values at the opening and call the initial DIC a small
+positive initial concentration rather than a numerical seed. Define gas transfer
+velocity (piston velocity) as an exchange coefficient, not a water-parcel speed;
+retain the density factor with mol/kg concentrations. Point directly to the
+source of `connect_atmosphere` when introducing the constructor excerpt.
+
+Keep element/species registration in `new_model`, with brief optional explanation:
+registration supplies definitions, while DIC/TA are the prescribed ocean states.
+Seawater initialization supplies background boron through PyCO2SYS and carbonate
+system 1 initializes/updates auxiliary Hplus and CO2aq. Miscellaneous sediment
+definitions are unused in 01; registering them creates no sediment processes.
+This does not turn the motivating NaCl picture into the implemented chemistry.
+
+Explain `assert` and `assert_allclose` once as supplied checks that stop a cell
+when a condition fails; they do not impose a result. Retain construction, carbon
+inventory, conservation and calibrated-endpoint checks; consolidate duplicate
+TA auditing. Move the assertions enforcing a large mismatch and longer response
+under lower piston velocity into an instructor-only verification cell so the
+student interprets those results. Keep their automated regression coverage.
+These wording and verification changes add no student task; pilot their reading
+load within the existing provisional allocation.
 
 Introduce `single_box` before its first use as the supplied helper that repeats
 the visible construction and returns a fresh, unrun model. Explain that changing
@@ -139,9 +166,43 @@ initial ocean DIC adjusts atmospheric carbon to preserve the total inventory,
 and that `run_model` runs the newly created experiment. Keep this a brief reading
 aid within the existing rerun/comparison activity, not another coding task.
 
-For the 35-minute guided core, students explain cancellation of internal fluxes
-and select the PyCO2SYS input pair. Model construction is a worked example;
-partition/rate comparisons, plotting and all numerical audits are supplied.
+For the provisional 40-minute guided core, students explain cancellation of
+internal fluxes and write the complete PyCO2SYS TA calculation, transferring
+input-pair and result-extraction skills from 00. Mask the input-type assignments,
+solver call and TA extraction together. Supply the targets, `config.pyco2` settings,
+documentation and required `inferred_ta` output name; explicitly distinguish
+01's 16 °C from 00's 15 °C. Place the supplied buffered-model rerun in a separate
+cell after the TA inference and curve exercise. This is a fresh initial condition, not
+an alkalinity input during the original run.
+
+Break the supplied construction into short atmospheric, gas-law, object-mapping
+and connection steps, with native code beside its explanation. Keep the individual
+constructor before the helper call; remove `M.connection_summary()`. Retain units
+and directional conservation, using `atm` and `ocn` subscripts; put implementation
+conversion details in reference notes. Ask explicitly which chemical assumption
+prevents the target partition and whether any model process can change it.
+Supply real-ocean TA sources as context and keep explanations beside diagnosis,
+TA inference and the path comparison; end with a stopping cue rather than a
+repeated synthesis question. Model construction, partition/rate comparisons, plotting
+and numerical audits remain supplied. The fuller calculation increases independent
+student work; streamlined reading and questions are intended to accommodate it
+within 10/20/10 minutes, including five extra minutes for the curve exercise
+from the completion buffer. The four-hour session is preserved, but this
+revised allocation still requires a pilot after 00.
+
+Position PyCO2SYS explicitly: infer TA from reference DIC/xCO2, then evaluate
+seawater pCO2 from DIC/TA across a supplied grid before the revised ESBMTK
+run. Students complete the forward chemistry call and output extraction;
+supply the loop, grid, conserved-inventory atmosphere line, dry-xCO2/pCO2
+conversion and plots. Ask them to interpret slopes and intersections,
+placing the zero-TA uptake explanation in a masked instructor answer.
+Distinguish carbonate-equilibrium states from air–sea equilibrium at
+intersections, and uptake amount from equilibration time. Compare absolute
+sensitivity at matched DIC under the shared settings; use the full curves
+and carbon inventory to establish the endpoint rather than assuming one
+local derivative describes the whole trajectory. Keep the Revelle factor
+as a brief link to slide 46's fractional response to prescribed atmospheric
+CO2 and fixed-R linear approximation, with no extra calculation.
 
 ## 02 - Verify a two-layer extension, then test an effective pump
 
@@ -166,9 +227,15 @@ Use mol/kg for DIC and reject parameter choices that put $h$ outside $(0,H)$. Wi
 Students add the deep box and equal upward/downward water transports themselves. Mixing carries DIC and TA; only the surface box exchanges CO2 with the atmosphere. With no pump, symmetric mixing cannot maintain a DIC gradient. At equilibrium the two ocean DIC concentrations, atmospheric xCO2, and carbon inventory should match 01 within numerical tolerance. The transient may differ because the deep box is reached through mixing. Check water-volume consistency, total carbon conservation, and TA conservation before interpreting a pump run.
 
 Use templates with native constructors visible: students select deep-box fields,
-directed mixing names/species and pump endpoints/scale. Provide dictionary syntax,
+directed mixing names/species/law and pump endpoints/law/scale. Provide dictionary syntax,
 unit conversion, restart handling, plotting and audits. Preserve 20/20/15 minutes
 for structural extension, pump balance, and synthetic forcing respectively.
+Explain `config` attributes, dictionary pairs/unpacking and route-string IDs
+locally. Uniform initial TA and the absence of TA-changing processes make the
+net TA redistribution zero while retaining carbonate buffering. Ask A4 about
+equilibrium equivalence; the supplied checks do not plot the one-box/two-layer
+transient. These revisions require a fresh reading-load pilot within the same
+provisional allocation, not a claim of verified student completion time.
 
 ### B. Effective downward pump and an honest calibration
 
@@ -200,6 +267,15 @@ There are two scientifically valid teaching routes; the current notebook uses **
 
 The calibration-first route is acceptable for this introductory exercise. At fixed total carbon and TA, compare pump-on with an otherwise identical pump-off control. The atmospheric xCO2, surface DIC, carbon transfer, and adjustment timescale are conditional model results; atmospheric xCO2 is not specified by the steady deep-box flux equation alone. Nonetheless, if 01 used observed xCO2 and surface DIC to infer TA and total carbon, do not advertise the resulting atmosphere as an independent observational validation. The closure `k DIC_s(t)` is deliberately effective: real biological export need not scale with the entire DIC pool.
 
+In B4 distinguish export evaluated at the reference state (135.95 Tmol C/yr)
+from export at the simulated pump-on equilibrium (125.29 Tmol C/yr): the same k
+acts on different surface DIC values. Relate the idealized DIC-only transfer
+qualitatively to the lecture's soft-tissue pump, while explaining that fitting
+the full DIC gradient does not isolate a real pump contribution. This replaces
+the early-adjustment prompt; quantitative attribution stays outside 02. A short
+optional export-comparison note supplies a source and cautions about the chosen
+Q, boundary depth, pathways and reference period; it adds no calculation.
+
 ### C. Synthetic carbon-addition and analytical check
 
 After the matched pump-on/pump-off experiment, add a finite, known amount of carbon to the atmosphere of the pump-on model. Students complete the supplied signal example with their calculated carbon inventory, inspect its integrated flux, check the combined carbon budget, and follow the system to equilibrium. This introduces the forcing mechanics needed later in 04 without making 02 an OA/OAE or sediment-response exercise.
@@ -227,6 +303,21 @@ finite-box inventory on paper. Its numerical cross-check is instructor-only, so
 it does not add another required coding block.
 
 The fitted DIC ratio, inferred TA and ratio-derived geometry intentionally make the reference state consistent. Injecting the calculated extra carbon and returning to 280 ppm verifies forcing implementation, conservation and analytical-versus-dynamic consistency. It is **not independent evidence for the pump hypothesis**. A mismatch should prompt a check of units, input inventory, chemistry and equilibration before changing any model inputs. Never overwrite the mass-consistent initial inventory to obtain agreement.
+
+Use R for the whole-reservoir ocean/atmosphere inventory ratio, separately from
+the lecture's seawater equilibrium capacity F; connect the two with the uniform
+01 relation before the carbon-addition exercise. Pulse duration is
+a supplied choice. Explain that changing duration at fixed mass changes the path,
+while the eventual equilibrium is unchanged if sufficient relaxation time is
+allowed. Numerical resolution and the forcing-integral check remain necessary.
+For optional duration changes, supply a clock helper that resolves the pulse
+and aligns its start/end with the native signal grid before constructing both
+models. ESBMTK 0.14 requires whole-year start/duration values in these models;
+reject unsupported fractional years and pulses touching the run boundaries.
+Keep this numerical machinery outside the student derivations and retain the
+user's selected 100-year example. It adds no required exercise.
+Keep interpolation details in a supplied-code note; consolidate repeated
+calibration explanations into B3/B4 and C3, and use an ungraded stopping cue.
 
 ## 03 - Construct and reproduce the Boudreau-like three-box model
 

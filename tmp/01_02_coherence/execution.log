@@ -1,0 +1,224 @@
+01_single_box_air_sea_CO2.ipynb: cell 1
+01_single_box_air_sea_CO2.ipynb: cell 3
+Shared chemistry: {'opt_k_carbonic': 10, 'opt_pH_scale': 2, 'opt_buffers_mode': 1, 'temperature': 16.0, 'salinity': 35.0, 'pressure': 0.0}
+Ocean volume (m3): 1.35e+18
+ESBMTK density (kg/m3): 1025.7484950008022
+Target-derived total carbon (mol): 2.8744713552322094e+18
+01_single_box_air_sea_CO2.ipynb: cell 7
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+01_single_box_air_sea_CO2.ipynb: cell 9
+Initial atmosphere (ppm): 16239.872924449308
+Initial ocean carbon fraction: 4.817443964889389e-06
+01_single_box_air_sea_CO2.ipynb: cell 11
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.62 CPU seconds, wall time = 0.67 seconds
+
+{'carbon_relative_error': 3.562394170796242e-16, 'ta_change_mol': 0.0}
+TA-free result: xCO2 (ppm), DIC (umol/kg): 12561.780484274073 470.14355510736226
+01_single_box_air_sea_CO2.ipynb: cell 14
+Inferred TA (umol/kg): 2348.2362117173566
+01_single_box_air_sea_CO2.ipynb: cell 16
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.56 CPU seconds, wall time = 0.56 seconds
+
+{'carbon_relative_error': 1.6030773768583089e-15, 'ta_change_mol': 0.0}
+01_single_box_air_sea_CO2.ipynb: cell 18
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.47 CPU seconds, wall time = 0.48 seconds
+
+{'carbon_relative_error': 2.137436502477746e-15, 'ta_change_mol': 0.0}
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.50 CPU seconds, wall time = 0.50 seconds
+
+{'carbon_relative_error': 1.2468379597786846e-15, 'ta_change_mol': 0.0}
+near-empty ocean equilibration time (yr; 1% criterion): 72.0
+alternative partition equilibration time (yr; 1% criterion): 64.0
+half piston velocity equilibration time (yr; 1% criterion): 142.0
+01_single_box_air_sea_CO2.ipynb: cell 20
+01_single_box_air_sea_CO2.ipynb: cell 21
+PASS 01_single_box_air_sea_CO2.ipynb; 2 figures
+02_two_layer_ocean_carbon_pump.ipynb: cell 1
+02_two_layer_ocean_carbon_pump.ipynb: cell 5
+Ratio-derived surface depth (m): 298.75014096166706
+Volumes (m3): 1.0755005074620014e+17 1.2424499492538e+18
+02_two_layer_ocean_carbon_pump.ipynb: cell 7
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.50 CPU seconds, wall time = 0.56 seconds
+
+{'carbon_relative_error': 2.137436502477746e-15, 'ta_change_mol': 0.0}
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.48 CPU seconds, wall time = 0.51 seconds
+
+================================================================================
+
+There were 89 warnings, check M.log
+
+================================================================================
+
+{'carbon_relative_error': 2.137436502477746e-15, 'ta_change_mol': 0.0}
+02_two_layer_ocean_carbon_pump.ipynb: cell 12
+Fitted k (kg/yr): 6.6644448512018056e+16
+Export at reference surface DIC (Tmol C/yr): 135.95467496451684
+02_two_layer_ocean_carbon_pump.ipynb: cell 14
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 1.53 CPU seconds, wall time = 1.54 seconds
+
+================================================================================
+
+There were 82 warnings, check M.log
+
+================================================================================
+
+{'carbon_relative_error': 2.8499153366369945e-15, 'ta_change_mol': 0.0}
+pump off xCO2 (ppm), surface/deep DIC (umol/kg): 279.9999999997227 2040.0000000000318 2040.000000000031
+pump on xCO2 (ppm), surface/deep DIC (umol/kg): 138.2700376659449 1880.0039771376805 2073.533798313618
+Matched change in deep carbon (Pmol): 42.736853008451945
+Export at simulated pump-on equilibrium (Tmol C/yr): 125.29182825674133
+02_two_layer_ocean_carbon_pump.ipynb: cell 17
+Carbon to inject (Pmol C): 267.63264476779057
+02_two_layer_ocean_carbon_pump.ipynb: cell 18
+Actual baseline ocean/atmosphere ratio: 56.99982556965717
+02_two_layer_ocean_carbon_pump.ipynb: cell 20
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 1.42 CPU seconds, wall time = 1.43 seconds
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.52 CPU seconds, wall time = 0.53 seconds
+
+================================================================================
+
+There were 12 warnings, check M.log
+
+================================================================================
+
+Control budget: {'carbon_relative_error': 1.2468379597786852e-15, 'ta_change_mol': 0.0}
+Forced budget: {'carbon_relative_error': 1.6834772290187185e-09, 'ta_change_mol': 0.0}
+Final departure from 280 ppm: 3.6782695360670914e-06
+02_two_layer_ocean_carbon_pump.ipynb: cell 23
+02_two_layer_ocean_carbon_pump.ipynb: cell 24
+PASS 02_two_layer_ocean_carbon_pump.ipynb; 2 figures

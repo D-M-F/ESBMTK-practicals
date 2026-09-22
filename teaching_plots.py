@@ -49,8 +49,36 @@ def plot_ta_free(M, config):
     fig.tight_layout()
     plt.show()
 
-def settling_time(case):
-    # First stored time after which xCO2 stays within 1% of its final value.
+def plot_equilibrium_curves(dic_grid, ocean_pco2, atm_pco2, config):
+    """Supplied 01 plot: chemistry curves and the closed-inventory atmosphere.
+
+    Intersections and their interpretation are left to the students. The
+    second panel enlarges the region near the reference DIC, using linear axes.
+    """
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4), layout="constrained")
+    for axis in axes:
+        for (label, values), color in zip(ocean_pco2.items(), ("#c65b16", "#00857d")):
+            axis.plot(dic_grid, values, label=f"ocn: {label}", color=color)
+        axis.plot(dic_grid, atm_pco2, "--", color="#444444", label="atm: conserved carbon")
+        axis.set(xlabel="DIC (µmol/kg)", ylabel="pCO₂ (µatm)")
+        axis.grid(alpha=0.2)
+    axes[0].set(xlim=(0, dic_grid[-1]), ylim=(0, 1.08 * max(atm_pco2)),
+                title="Chemistry and carbon conservation")
+    zoom_start = 0.93 * config.target_dic_umol_kg
+    zoom = dic_grid >= zoom_start
+    axes[1].set(xlim=(zoom_start, dic_grid[-1]),
+                ylim=(0, 1.1 * max(atm_pco2[zoom])), title="Zoom near reference DIC")
+    axes[0].legend(frameon=False, fontsize=9)
+    plt.show()
+    return fig, axes
+
+
+def equilibration_time(case):
+    """First saved time after which xCO2 stays within 1% of its final value.
+
+    This threshold-based diagnostic depends on the initial state and tolerance;
+    it is not an exponential relaxation constant or a test of stationarity.
+    """
     x = case.CO2_At.c
     outside = np.flatnonzero(abs(x - x[-1]) > 0.01 * abs(x[-1]))
     return case.time[outside[-1] + 1] if len(outside) else case.time[0]
@@ -61,7 +89,7 @@ def plot_partition_comparison(buffered, partition, slower):
     for label, case in [('near-empty ocean', buffered),
                         ('alternative partition', partition), ('half piston velocity', slower)]:
         ax.semilogy(case.time, case.CO2_At.c * 1e6, label=label)
-        print(label, 'settling time (yr):', settling_time(case))
+        print(label, 'equilibration time (yr; 1% criterion):', equilibration_time(case))
     ax.set(xlim=(0, 300), xlabel='Time (yr)', ylabel='xCO2 (ppm)')
     ax.legend()
     plt.show()
