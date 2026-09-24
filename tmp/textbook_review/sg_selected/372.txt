@@ -1,0 +1,90 @@
+8.4.1d) and the potential DCbio
+gas ex case (ﬁgure 8.4.1e).
+This means that the kinetic DCbio
+gas ex is positive, i.e., it
+increases the surface-to-deep gradient in sDIC (ﬁgure
+8.4.4). As was the case for the kinetic DCtherm
+gas ex contri-
+bution, it is currently not possible to estimate the ki-
+netic DC
+bio
+gas ex contribution directly from data. However,
+if we adopt the estimated DCtherm
+gas ex of Murnane et al .
+[1999], the kinetic effect on the biological component of
+DC
+gas ex is substantial and amounts to around 60 mmol
+kg/C0 1. This results in a DCbio
+gas ex component of only about
+/C0 70 mmol kg /C0 1 (ﬁgure 8.4.4).
+While the exact values of the kinetic components are
+not known, the overall conclusion is very clear. The
+small imprint of air-sea gas exchange on the vertical
+sDIC distribution (DC
+gas ex) is a consequence of generally
+opposing tendencies of DCbio
+gas ex and DCtherm
+gas ex . The mag-
+nitude of these two components depends on the mag-
+nitude of biological ﬂuxes and heat ﬂuxes that create
+‘‘potential’’ gas exchange ﬂuxes, and the kinetics of air-
+sea exchange that determines to what degree these two
+potential pumps are realized. If the simulations by
+Murnane et al . [1999] are approximately correct, it ap-
+pears that in the present ocean, a relatively small fraction
+of the potential gas exchange pumps are expressed.
+This hypothesis was recently investigated in greater
+detail and conﬁrmed by Toggweiler et al . [2003a, b]. They
+also highlighted that this kinetic limitation and how it
+is represented in different ocean models determines to
+a substantial degree how strongly atmospheric CO
+2 re-
+sponds to changes in upper ocean biology and chemis-
+try, particularly when these changes occur in the high
+latitudes. We will come back to this topic in chapter 10,
+as it has strong implications on how we can explain the
+large atmospheric CO
+2 variations associated with glacial-
+interglacial cycles in climate.
+Atlantic versus Paciﬁc
+The high DC
+gas ex concentrations of the deep Atlantic in
+contrast to the low concentrations in the Paciﬁc can be
+understood following arguments similar to those used
+to understand the global mean distribution of DC
+gas ex .
+However, it is this time more instructive to trace the
+potential biological effect potential thermal effect
+-200 -100 0 100
+0
+1000
+2000
+3000
+4000
+5000
+depth (m)
+∆Cgas ex ∆Cgas ex
+therm,pot
+∆Cgas ex
+therm
+∆Cgas ex
+bio,pot ∆Cgas ex
+bio
+kinetic 
+effect
+∆Cgas ex (µmol kg-1)
+kinetic 
+effect
+-50-150 50 150
+Figure 8.4.4: Global mean proﬁles of the two biological and the two thermal gas exchange pump
+components. The potential DCtherm
+gas ex was calculated assuming that surface sDIC is in equilibrium with the
+atmosphere using a constant salinity-normalized total alkalinity. The potential DCbio
+gas ex was computed from
+AOU taking into account a change in the surface Alk concentration due to biology on the basis of
+preformed surface alkalinity estimates [ Gruber et al ., 1996]. The kinetic DCtherm
+gas ex proﬁle is taken from the
+model of Murnane et al . [1999], and the kinetic DCbio
+gas ex component was calculated by difference.
+349
+Carbon Cycle

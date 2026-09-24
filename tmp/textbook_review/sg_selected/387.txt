@@ -1,0 +1,96 @@
+potential alkalinity and of nitrate multiplied with the or-
+ganic carbon-to-nitrogen consumption ratio, r
+C:N.U s i n g
+the notation introduced in chapter 1 (see 1.2.2), we have
+FCaCO3 ¼ n
+2 /C1 ([PAlk]th /C0 [PAlk]s)( 9 :2:2)
+FCorg ¼ n /C1 rC:N /C1 ([NO/C0
+3
+]th /C0 [NO/C0
+3
+]s)( 9 :2:3)
+where n is an exchange term, and where the factor of 0.5
+accounts for the fact that the formation and dissolution
+of CaCO
+3 changes Alk by two moles for each mole of
+carbon transformed. In analogy to the derivation of the
+export ratio for opal (7.3.2), we can compute the CaCO
+3-
+to-organic carbon export ratio by taking the ratio of (9.2.2)
+and (9.2.3):
+RCaCO3 :Corg ¼ ([PAlk]th /C0 [PAlk]s)
+14:6 ([NO/C0
+3
+]th /C0 [NO/C0
+3
+]s) (9:2:4)
+where we used an rC:N of 117:16 [ Anderson and Sar-
+miento, 1994].
+Figure 9.2.1 shows the CaCO 3-to-organic export
+ratio estimated from (9.2.4) across the different ocean
+basins. In sharp contrast to the opal-to-organic matter
+export ratio, the estimated CaCO
+3-to-organic carbon
+export ratio is relatively constant, with a global mean
+of about 0.06 [ Sarmiento et al. , 2002]. The CaCO
+3-
+-0.04
+0.00
+0.04
+0.08
+0.12
+CaCO3:Corg export ratio
+-0.04
+0.00
+0.04
+0.08
+0.12
+60°S 30°S Eq 30°N 60°N
+-0.04
+0.00
+0.04
+0.08
+0.12
+ATLANTIC
+PACIFIC
+INDIAN
+Figure 9.2.1: Plot of the CaCO 3-to-organic carbon export ratio
+estimated from observations. Each line segment represents the
+horizontal average over 30
+/C14 latitude bands. Adapted from
+Sarmiento et al . [2002].
+0.05
+0.15
+0.10 0.15
+0.05
+0.10
+0.20
+0.25
+0.050.10
+0.20
+0.20
+0.05
+0.10
+0.30
+0.05
+0.10
+0.050.10
+0.20
+0.05
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+CaCO3 export (mol C m-2 yr-1)
+20°E
+Figure 9.2.2: Global map of the export ﬂux of CaCO 3 from surface waters. See also color plate 4. This map was derived by multiplying the
+CaCO3-to-organic carbon export ratio shown in ﬁgure 9.2.1 with an estimate of the global organic matter export. The latter was estimated by
+combining primary production inferred from satellite observations of chlorophyll with the empirical export model of Dunne et al . [2005b].
+364
+Chapter 9

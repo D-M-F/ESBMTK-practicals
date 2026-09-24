@@ -1,0 +1,127 @@
+(10.2.2)). If all CO 2 were absorbed by this reaction, the
+net result of the invasion of anthropogenic CO2 into the
+ocean would be to increase the totalDIC and Alk content
+of the ocean by two moles for each mole of CO2 taken up
+from the atmosphere. In this case, the CO2/C0
+3 ion content,
+which we can approximate by Alk /C0 DIC, would remain
+constant. Therefore, this buffering reaction compensates
+nearly completely for the decrease in the buffer capacity
+stemming from the CO
+2/C0
+3 ion consumption (see panel
+8.3.1), leading to almost no change in gDIC as anthropo-
+genic CO2 builds up in the ocean. This can be understood
+by considering the approximation for the buffer factor
+given in (8.3.16) and rearranging it to express it in terms
+of the Alk/DIC ratio, i.e.,
+gDIC /C25 3 /C1 Alk /C1 DIC /C0 2 /C1 DIC2
+(2 /C1 DIC /C0 Alk)(Alk /C0 DIC) (10:2:10)
+/C25 2 /C1 DIC /C0 3 /C1 Alk
+Alk
+DIC /C0 2
+/C18/C19
+(Alk /C0 DIC )
+(10:2:11)
+As DIC and Alk change equally as a result of the
+buffering reaction of anthropogenic CO 2 with CaCO 3
+(10.2.2), neither the numerator nor the denominator
+of (10.2.11) change much, thus explaining why g
+DIC
+changes little in this case. As a consequence of this
+buffering with CaCO
+3, the fraction of CO 2 ultimately
+ending up in the ocean is signiﬁcantly larger if the
+dissolution of calcium carbonate at the sea ﬂoor is
+considered. Archer et al. [1997] ﬁnd that the buffering by
+the calcium carbonates in the oceanic sediments in-
+creases ocean uptake fraction by about 10 to 15% de-
+pending on the size of the anthropogenic perturbation
+(see ﬁgure 10.2.2).
+Buffering by Weathering
+In addition to the neutralization of the anthropogenic
+CO
+2 by CaCO3 on the sea ﬂoor, an additional fraction
+will be neutralized by weathering reactions of atmo-
+spheric CO
+2 with mineral carbonates on land. After
+complete neutralization with the ocean and CaCO 3
+rocks, about 8% of a CO 2 release will remain in the
+atmosphere [ Archer et al. , 1997, 1998] (see also ﬁgure
+10.2.2). The remaining CO 2 will react very slowly with
+igneous rocks on land by the reaction
+2CO2 þCaSiO3 þ3H2O Ð 2HCO/C0
+3
+þCa2 þ þSi(OH)4
+(10:2:12)
+Since the reservoir of these siliceous rocks is much
+larger than the amount of fossil fuel CO
+2, all emitted
+CO2 will eventually disappear from the atmosphere.
+This latter reaction is of fundamental importance in
+controlling atmospheric CO
+2 on geological timescales
+[Walker et al. , 1981], since it balances the CO 2 that is
+degassed from volcanoes.
+Kinetic Constraints
+The above considerations provide us with a simple tool
+to estimate the amount of anthropogenic CO
+2 that the
+ocean will have taken up for a given CO2 emission after
+equilibrium has been reached between the atmosphere
+and ocean. Our ﬁnding that only a small fraction of the
+ocean has equilibrated with the anthropogenic CO
+2
+emissions that occurred over the last 200 years indi-
+cates, however, that the timescale required for equili-
+bration must be longer than this period. Therefore, one
+or several of the processes that control the oceanic
+uptake of anthropogenic CO
+2 must be strongly rate-
+limiting, providing strong kinetic constraints on the
+oceanic uptake of anthropogenic CO
+2.
+Atmospheric Pulse Response
+The timescales associated with the removal of anthro-
+pogenic CO
+2 from the atmosphere can be assessed by
+investigating how quickly a pulse of CO 2 emitted into
+the atmosphere disappears from it [ Maier-Reimer and
+Hasselmann, 1987; Sarmiento et al., 1992]. Figure 10.2.3
+shows the result of a simulation that followed this ap-
+proach using a three-dimensional ocean general circu-
+lation model, to which a full ocean carbon cycle model
+was coupled. This model also includes a representation
+of ocean sediments, as well as a simple parameteriza-
+OCEAN INVASION
+TERRESTRIAL CaCO
+3
+SEA-FLOOR CaCO3
+Fossil fuel release (PgC)
+Fraction of anthropogenic CO2
+200 kyr
+300 yr
+4 kyr
+10 kyr
+1000 2000 4000 3000
+1.0
+0.2
+0.4
+0.6
+0.8
+0.0
+SILICATE WEATHERING
+Figure 10.2.2: Fractions of anthropogenic CO 2 sequestered by vari-
+ous abiological processes plotted as a function of anthropogenic CO 2
+release. The approximate e-folding timescales for each process are
+given at the right. The fraction remaining in the atmosphere for a
+given timescale is the difference between 1 and the level of the cu-
+mulative curve. For example, on timescales of 4000 years, the fraction
+remaining in the atmosphere after equilibration is determined by the
+magnitude sequestered by the ocean by reaction with carbonate and
+sea-ﬂoor CaCO
+3. For an emission of 4000 Pg C, these two processes
+remove about 87% of the emission, leaving 13% in the atmosphere.
+From Archer et al. [1997].
+402
+Chapter 10

@@ -1,0 +1,104 @@
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+∆pN2O (natm)
+20°E
+20
+10
+200
+20
+30
+30
+1010
+10
+0
+10
+10
+10
+10
+10
+20
+30
+10
+Figure 3.1.4: Annual mean map of the nitrous oxide partial pressure difference across the air-sea interface, based on data from Suntharalingam
+and Sarmiento [2000]. Supersaturation is positive.
+Panel 3.2.1: Deﬁnitions and Conversions of Solubility Parameters
+The Bunsen coefﬁcient b is deﬁned per Weiss [1974] as
+the volume of a gas at STP (standard temperature and
+pressure, i.e., 0
+/C14 C and 1 atm) that dissolves in one unit
+volume of solution at temperature T with a total pres-
+sure of 1 atm and a fugacity of 1 atm, i.e.,
+bA ¼ VA
+Vsolution /C1 f A (1)
+where bA has units of l gas /C1 (l solution) /C0 1 /C1 (atm gas) /C0 1.
+The fugacity, f A, which is a thermodynamic quantity
+analogous to the activity of dissolved substances, is
+related to the actual partial pressure of gas A, p
+A,b y
+f A ¼ pA /C1 exp P /C1 (VA /C0 Videal)
+R /C1 T
+/C20/C21
+(2)
+The gas constant R has a value of 0.082053 l atm
+K/C0 1 mol/C0 1, VA is the molar volume of A at standard
+temperature and pressure, Videal is the molar volume of
+an ideal gas, which is equal to 22.4136 l mol /C0 1, and T is
+temperature in degrees Kelvin. The exponential term
+corrects the partial pressure for the nonideal behavior of
+the gas. The deﬁnition of solubility is
+[A] ¼ moles of A
+Vsolution
+¼ VA
+/C14
+VA
+Vsolution
+(3)
+Combining (1) and (3), we ﬁnd that
+[A] ¼ bA
+VA
+/C1 f A
+/C20/C21
+/C2 106 mmol m/C0 3
+mol l/C0 1 (4)
+The factor of 10 6 is required to obtain [A] in units of
+mmol m /C0 3.
+We obtain the solubility SA from the Bunsen coefﬁ-
+cient by substituting f A from (2) into (4) and setting this
+equal to (3.1.2). This gives
+SA ¼ bA
+VA
+/C1 exp P /C1 (VA /C0 Videal)
+RT
+/C20/C21
+/C2 106 mmol m/C0 3
+mol l/C0 1 (5)
+Gases with near-ideal behavior haveVA /C0 Videal /C25 0, giving
+SA /C25 bA
+VA
+/C18/C19
+/C2 106 mmol m/C0 3
+mol l/C0 1 (6)
+An important additional complication is that the partial
+pressures of gases are normally reported as p
+A
+dry
+with
+respect to dry air at a total pressure P of 1 atm. This
+avoids having to deal with the problem that the mois-
+ture content of air varies by quite a large amount as a
+function of temperature and the relative humidity.
+However, the concentration of a gas in seawater is
+determined by its partial pressure in moist air, p
+A
+moist
+, with
+Air-Sea Interface
+77

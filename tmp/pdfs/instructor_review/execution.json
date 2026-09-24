@@ -1,0 +1,50 @@
+{
+  "executed_utc": "2026-09-24T12:26:16.984039+00:00",
+  "environment": "ESBMTK314",
+  "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:12:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "esbmtk": "0.14.3.1.post0",
+    "PyCO2SYS": "1.8.3.4",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.1"
+  },
+  "notebooks": [
+    {
+      "source": "00_PyCO2SYS.ipynb",
+      "sha256": "81e5c6a188bdbd881c5280dbcae316f0bf5f8463eabfa1bd9c437df402793436",
+      "executed_code_cells": 19,
+      "outputs": 19,
+      "errors": 0
+    },
+    {
+      "source": "01_single_box_air_sea_CO2.ipynb",
+      "sha256": "d683ad3839dd94d9159519afcb48f97d6657ea9f4d6c04f604dedbdc19917a19",
+      "executed_code_cells": 11,
+      "outputs": 15,
+      "errors": 0
+    },
+    {
+      "source": "02_two_layer_ocean_carbon_pump.ipynb",
+      "sha256": "d6af4f200608266c0d022c13caf48551167b5752d5272dac178904ddef17c459",
+      "executed_code_cells": 8,
+      "outputs": 18,
+      "errors": 0
+    },
+    {
+      "source": "03_boudreau_three_box_model.ipynb",
+      "sha256": "e607f2499d43b4e27fc5de13d956c35a112a064b60548504499e2e35088c50b7",
+      "executed_code_cells": 18,
+      "outputs": 45,
+      "errors": 0
+    },
+    {
+      "source": "04_pump_strength_OA_OAE.ipynb",
+      "sha256": "99171e55f6ae145b986b3bfd0f2bc0044a85e5c9c0824145da9b8bb104008abb",
+      "executed_code_cells": 10,
+      "outputs": 18,
+      "errors": 0
+    }
+  ]
+}

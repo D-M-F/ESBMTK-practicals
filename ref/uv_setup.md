@@ -4,11 +4,11 @@ For Windows, macOS and Linux. No existing Python installation is needed.
 
 **What you are setting up:** uv installs Python and the course packages in a separate `.venv` folder. JupyterLab is the interface you open in your browser; a *kernel* is the Python process that runs notebook cells. Your R installation stays unchanged.
 
-## 1  Download the course and open a terminal
+## 1  Download the supplied folder and open a terminal
 
-Download the complete course folder from your instructor and extract the ZIP file. On Windows, right-click the ZIP and choose **Extract All**. On macOS, double-click it. Work in the extracted folder, not inside the ZIP.
+Download the folder supplied by your instructor and extract the ZIP file. It may be the setup-only package or, later, the complete course repository. On Windows, right-click the ZIP and choose **Extract All**. On macOS, double-click it. Work in the extracted folder, not inside the ZIP.
 
-The folder must contain `pyproject.toml`, `uv.lock`, `.python-version`, `scripts`, `notebooks` and `data`. The first three files are supplied: you do not need to write or generate them. A file beginning with a dot may be hidden in your file browser.
+The folder must contain `pyproject.toml`, `uv.lock`, `.python-version`, `scripts`, `setup_assets` and `JUPYTER_BASICS.ipynb`. These files are supplied: you do not need to write or generate them. A file beginning with a dot may be hidden in your file browser.
 
 **Windows:** click Start or the Windows search bar, type **PowerShell**, and open Windows PowerShell. A terminal is simply a window where you type commands. Administrator mode is not needed for the course commands.
 
@@ -71,7 +71,7 @@ pwd
 ls
 ```
 
-`pwd` prints the current folder. In the `ls` listing, find **pyproject.toml**, **uv.lock**, **scripts**, **notebooks** and **data**. If they are missing, enter the correct folder before continuing. “From the course folder” always means this location in the terminal.
+`pwd` prints the current folder. In the `ls` listing, find **pyproject.toml**, **uv.lock**, **scripts**, **setup_assets** and **JUPYTER_BASICS.ipynb**. If they are missing, enter the correct folder before continuing. “From the supplied folder” always means this location in the terminal.
 
 ## 4  Install the packages and check them
 
@@ -80,7 +80,7 @@ uv sync --locked
 uv run --locked python scripts/check_environment.py
 ```
 
-The first command downloads Python and the locked packages into `.venv`; wait for it to finish. The second should end with **Environment check passed. Next: start JupyterLab.** It checks numerical calculations, chemistry, workbook access and plotting. If it reports an error, use the help section on page 3.
+The first command downloads Python and the locked packages into `.venv`; wait for it to finish. The second should end with **Environment check passed. Next: start JupyterLab.** It checks numerical calculations, chemistry, access to the supplied workbook probe and plotting. If it reports an error, use the help section on page 3.
 
 ## 5  Register the course kernel and start JupyterLab
 
@@ -99,25 +99,19 @@ JupyterLab opens in your browser. Keep the terminal open: the running server use
 
 The steps on this page explain what to do in JupyterLab and when you are finished.
 
-## 6  Confirm that JupyterLab uses the course Python
+## 6  Complete the JupyterLab setup check
 
-In JupyterLab, click **File > New > Notebook** and choose **esbmtk-practicals**. Paste the code below into the first cell, then press **Shift+Enter**:
+In JupyterLab's left file browser, double-click **JUPYTER_BASICS.ipynb**. Choose **esbmtk-practicals** if JupyterLab asks for a kernel. Follow the notebook from top to bottom, or select **Run > Run All Cells**. The last cell should print:
 
-```python
-import sys
-import numpy as np
-import esbmtk
-import PyCO2SYS
-print(sys.executable)
-np.testing.assert_allclose(np.linalg.solve(np.eye(2), np.ones(2)), [1, 1])
-print("Setup check passed")
+```text
+Jupyter setup check passed
 ```
 
-The printed Python path should contain your course folder and `.venv`, followed by **Setup check passed**. **If both checks passed, setup is complete. You can now work on the practicals.** You do not need to repeat the installation or kernel registration each time.
+The notebook also introduces the cell shortcuts used during the practicals. **If the terminal check and notebook check both pass, setup is complete.** You do not repeat installation or kernel registration each time.
 
 ## Open or create notebooks while JupyterLab is running
 
-Use the left file browser to open **notebooks/student/**, then double-click a course notebook. If it asks for the instructor's ESBMTK314 kernel, choose **esbmtk-practicals** instead. Use **File > New > Notebook** to create another notebook. No terminal command is needed for each notebook. Save with Ctrl+S (Cmd+S on macOS). Marked exercise placeholders are intentional.
+Use the left file browser to double-click any notebook supplied by your instructor. If it asks for the instructor's ESBMTK314 kernel, choose **esbmtk-practicals** instead. Use **File > New > Notebook** to create another notebook. No terminal command is needed for each notebook. Save with Ctrl+S (Cmd+S on macOS).
 
 ## When you finish: save and shut down
 
@@ -127,7 +121,7 @@ Save your notebooks first. Return to the terminal running JupyterLab, press **Ct
 
 ## Next time: open JupyterLab again
 
-Open PowerShell or Terminal, repeat `cd` to your course folder (page 2), and run:
+Open PowerShell or Terminal, repeat `cd` to the supplied folder (page 2), and run:
 
 ```text
 uv run --locked jupyter lab
@@ -137,4 +131,4 @@ This is only for when the server has stopped, including after restarting your la
 
 ## If a step fails
 
-**uv not recognised:** reopen the terminal. **Project/file not found:** check `pwd` and `ls` as on page 2. **Missing or outdated lockfile:** obtain the complete current course folder; keep `--locked`. **Wrong Python path or missing package in a notebook:** select the course kernel and restart that kernel. For other errors, send the full error text, the command you ran and your operating system to your instructor.
+**uv not recognised:** reopen the terminal. **Project/file not found:** check `pwd` and `ls` as on page 2. **Missing or outdated lockfile:** obtain the complete current supplied folder; keep `--locked`. **Wrong Python path or missing package in a notebook:** select the course kernel and restart that kernel. For other errors, send the full error text, the command you ran and your operating system to your instructor.

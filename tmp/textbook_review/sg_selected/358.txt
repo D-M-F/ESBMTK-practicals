@@ -1,0 +1,164 @@
+shows a summary of the changes in pCO2 that occur as
+DIC and Alk are changed.
+Seasonal Variability
+Summer-winter differences of surface ocean pCO2
+amount in many extratropical regions to more than
+40 matm (ﬁgure 8.3.7a) and are therefore comparable to
+the spatial variability of annual mean pCO
+2 (ﬁgure
+8.1.1). Figure 8.3.7a also reveals a distinct difference
+between the regions poleward of 40
+/C14 , which generally
+show a decrease in surface ocean pCO2 from winter to
+summer, and the subtropical latitudes, which experi-
+ence an increase in surface ocean pCO
+2 over the same
+period (cf. Takahashi et al. [2002]). What are the causes
+of these seasonal variations?
+We learned from our discussion of (8.3.3) above that
+the processes that control surface ocean pCO2 are tem-
+perature and salinity, which act through their inﬂuence
+on the equilibrium constants, K
+2/(K0 /C1 K1); and processes
+that affect the concentrations ofDIC and Alk,s u c ha sg a s
+exchange, biology, and lateral and vertical transport and
+mixing. We start our discussion by considering the sea-
+sonal variations in sea surface temperature. We neglect
+seasonal variations in salinity, as they are negligible.
+We have seen that oceanic pCO
+2 changes by about
+13 matm for each degree of warming or cooling. This
+permits us to estimate the effect of seasonal changes in
+SST on pCO
+2 simply by multiplying the observed sea-
+sonal SST changes, DSST, by this factor, i.e.,
+DpCO2
+/C12
+/C12
+thermal /C25 pCO2 /C1 0:0423(/C14 C)/C0 1 /C1 DSST (8 :3:25)
+The ‘‘thermally’’ forced pCO2 amplitude, DpCO2
+/C12
+/C12
+thermal,
+reveals that the warming of the sea surface from winter
+to summer tends to increase surface ocean pCO
+2 every-
+where, with values reaching as high as nearly 200 matm
+(ﬁgure 8.3.7b). A comparison of this thermally forced
+pCO
+2 amplitude with the observed pCO2 amplitude
+(ﬁgure 8.3.7a) shows that this component can explain the
+sign of the summer-minus-winter change in the sub-
+tropical gyres, but tends to overestimate the magnitude.
+In the high latitudes, the observed sign of the change is
+opposite to that forced by seasonal SST changes. Here,
+SST predicts an increase in pCO
+2 from winter to sum-
+mer, whereas the observations clearly show a decrease.
+This suggests that the effect of the seasonal SST changes
+on oceanic pCO
+2 must be counteracted nearly every-
+where by seasonal reductions in pCO2 induced by
+changes in DIC and Alk, i.e., DpCO2
+/C12
+/C12
+DIC, Alk. We estimate
+this component simply by subtracting the thermal
+component from the observed summer-minus-winter
+pCO
+2 difference, DpCO2
+/C12
+/C12
+observed i.e.,
+DpCO2
+/C12
+/C12
+DIC, Alk ¼ DpCO2
+/C12
+/C12
+observed /C0 DpCO2
+/C12
+/C12
+thermal (8:3:26)
+As shown in ﬁgure 8.3.7c, the magnitude of these DIC-
+and/or Alk-driven pCO2 changes is smaller than the
+thermally driven changes in the subtropical latitudes,
+while in the high latitudes, the DIC- and/or Alk-driven
+changes apparently outweigh the winter-to-summer
+increase in pCO
+2 stemming from the warming of the
+sea surface. The negative sign of DpCO2
+/C12
+/C12
+DIC, Alk implies
+a winter-to-summer drawdown in DIC or a winter-to-
+summer increase in Alk. How large are these changes?
+We can estimate the magnitude of the required
+summer-minus-winter changes in DIC and Alk, DDIC
+and DAlk, by using the deﬁnitions of the buffer and
+alkalinity factors (equations (8.3.14) and (8.3.15) i.e.,
+DDIC /C25 DIC
+pCO2 /C1 gDIC
+DpCO2
+/C12
+/C12
+DIC, Alk (8:3:27)
+DAlk /C25 Alk
+pCO2 /C1 gAlk
+DpCO2
+/C12
+/C12
+DIC, Alk (8:3:28)
+Figure 8.3.7c suggests aDpCO2
+/C12
+/C12
+DIC; Alk of 40 to 80matm
+for the northern hemisphere subtropical gyres. Using
+low-latitude values for the buffer and alkalinity factors
+from (8.3.18) and (8.3.19), we compute that a winter-to-
+summer DIC decrease of about 20 to 40 mmol kg
+/C0 1 or an
+Alk increase of 30 to 60 mmol kg /C0 1 over the same time
+period would be required to explain the DIC-a n d / o rAlk-
+driven winter-to-summer pCO2 drawdown. In the high
+northern latitudes of the North Atlantic,DpCO2
+/C12
+/C12
+DIC, Alk is
+well over 100matm. Given typical high-latitude buffer and
+alkalinity factors, the DIC drawdown must be more than
+50 mmol kg/C0 1. Alternatively, Alk must increase from
+winter to summer by more than 60 mmol kg/C0 1.
+As we will see below, seasonal variations in Alk are
+small, so that most of the DpCO2
+/C12
+/C12
+DIC, Alk variations are,
+in fact, a result of a seasonal drawdown of DIC. But
+what, then, controls this DIC drawdown? Is it air-sea
+gas exchange, mixing, and/or biology? Since we know
+the air-sea difference in pCO
+2, we can already assess
+the contribution of air-sea gas exchange. In the high
+northern latitudes, air-sea gas exchange can be excluded.
+This is because surface waters in this region are
+strongly undersaturated with respect to atmospheric
+CO
+2 in summer (ﬁgure 3.1.3b), thus taking up CO 2
+from the atmosphere. This leads to an increase in DIC
+rather than a decrease as required to explain the winter-
+summer pCO
+2 drop. Therefore, in the high northern
+latitudes, it must be transport, mixing, and biology that
+dominate variations in DIC. In contrast, air-sea ex-
+change cannot be excluded in subtropical regions, as
+these waters tend to be supersaturated in summertime
+(ﬁgure 3.1.3b). Therefore, some fraction of the required
+DIC reduction from winter to summer could stem from
+the loss of CO
+2 across the air-sea interface.
+We investigate in more detail three regions where dif-
+ferent processes dominate seasonal pCO2 variations.
+These regions are the subtropical gyres, where seasonal
+335
+Carbon Cycle

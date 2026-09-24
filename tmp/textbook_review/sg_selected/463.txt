@@ -1,0 +1,133 @@
+Bear box models, as the warm-water sphere in the
+real ocean includes much of the upper and mid-
+thermocline, whereas the Harvardton-Bear box models
+restrict it to a very thin surface layer. As a consequence,
+the warm-water sphere has almost no capacity in the
+Harvardton-Bear box models, while it may comprise
+more than 20% of the total ocean volume in the real
+ocean. Figure 10.4.7d shows that the HBEI increases as
+the volume of the warm-water sphere increases. In fact,
+expanding the volume of the low-latitude box and in-
+creasing the exchange between the low-latitude and
+deep boxes are structurally analogous, as both tend to
+increase the effective carbon reservoir size associated
+with the low-latitude surface, making equilibration with
+the deep ocean more difﬁcult.
+A last measure to consider is the magnitude of the
+meridional overturning circulation, which is not cap-
+tured in the Harvardton-Bear box models, but is in-
+cluded in some of the four- to seven-box models (e.g.,
+Toggweiler [1999] Lane et al. [2005]). For example, Lane et
+al. [2005] pointed out recently that the inclusion of a
+dynamic feedback of the changes in ocean temperature
+and salinity on the meridional overturning circulation
+during the last glacial led to a substantial increase in
+the sensitivity of atmospheric CO
+2 to changes in the
+low latitudes. This suggests a note of caution when
+interpreting HBEIs computed for current interglacial
+conditions, as these values might be considerably dif-
+ferent during glacial conditions.
+In summary, it appears that the Harvardton-Bear box
+models likely underestimate the HBEI, and therefore
+underestimate the possible role of low-latitude changes.
+However, given the fact that the reservoir associated
+with the low latitudes is much smaller than the high-
+latitude surface and deep ocean reservoir, the equili-
+bration of a change in the low-latitude surface ocean
+with the deep ocean is always going to be larger than
+the equilibration of a change in the high-latitude sur-
+face ocean with the low-latitude reservoir. Therefore,
+the low latitudes are always going to be less effective in
+changing atmospheric CO
+2 than the high latitudes. In
+addition, substantial leverage exists in the high lati-
+tudes to change surface ocean pCO
+2 there, making the
+high latitudes the primary region of focus for explain-
+ing the large atmospheric CO
+2 changes associated with
+G/IG transitions. We therefore focus our discussion on
+this region next.
+Closing the Southern Ocean Window
+We have seen in chapter 8 that the Southern Ocean
+represents an area of strong biologically driven out-
+gassing of CO
+2 (ﬁgure 8.5.1). This outgassing is pri-
+marily a consequence of upwelling that brings waters
+with high concentrations of respired DIC (DC
+soft) to the
+surface near the Southern Ocean Polar Front. Since bi-
+ological productivity in this region is too slow to ﬁx all
+this excess CO
+2, a substantial fraction of it escapes to the
+atmosphere. We also highlighted in chapter 8 that the
+existence of residual nutrients at the surface is a good
+indicator of this biologically induced CO
+2 leak into the
+atmosphere. In steady state, the CO 2 lost to the atmo-
+sphere in the Southern Ocean is taken up elsewhere,
+particularly in those regions where the residual nutri-
+ents are taken up and used to fuel photosynthesis. The
+strength of the Southern Ocean leak is directly con-
+trolled by the balance between the upward supply of
+DC
+soft and the downward export of organic matter. A
+reduction in the upward supply of DCsoft, while keeping
+organic matter export the same, will reduce surface
+ocean DIC, close the window, and pull down atmo-
+spheric CO
+2. Another option to close the window is to
+strengthen export production, while keeping the upward
+supply of DC
+soft and nutrients the same. As the Southern
+Ocean represents the main window of the surface ocean
+to the deep ocean DIC reservoir, the closure of this
+window has a large impact on atmospheric CO
+2.
+We investigate this Southern Ocean window and its
+impact on atmospheric CO 2 with the same three-box
+model that we used above for the discussion of the
+HBEI. In this case, we have to consider biological pro-
+duction and export, which we tie to phosphate. It is as-
+sumed that all phosphate is consumed in the low-lati-
+tude box, linking its biological export directly to the rate
+of supply of phosphate. In contrast, only a fraction of
+the phosphate is used in the high latitudes. This leaves
+the biological production in the high latitudes a free
+parameter and makes the high-latitude phosphate
+concentration, [PO
+4]h, a key diagnostic of the model.
+The full set of equations and a solution method is given
+by Toggweiler and Sarmiento [1985]. A steady-state so-
+lution for the high-latitude ocean DIC, DIC
+h, can be
+obtained in a manner analogous to that we have used
+for O
+2 (see equation (1.2.11)):
+DICh ¼ DICd /C0 rC:PO4 ([PO4]d /C0 [PO4]h) (10 :4:8)
+The high-latitude PO 3/C0
+4 concentration is controlled
+by the balance between the rate of supply from the
+deep ocean and the rate of biological removal by high-
+latitude export of organic phosphorus, F
+P
+h
+:
+[PO4]h ¼ [PO4]d fhd /C0 FP
+h
+fhd þT (10:4:9)
+where fhd is the high-latitude–deep ocean mixing term,
+and T the overturning term (see also ﬁgure 10.4.3).
+Inserting (10.4.9) into (10.4.8) gives:
+DICh ¼ DICd /C0 rC:PO4
+[PO4]d T þ FP
+h
+T þfhd
+(10:4:10)
+Thus any reduction in the mixing term, fhd, or increase
+in biological export, FP
+h
+, or overturning circulation, T,
+Chapter 10
+440

@@ -1,0 +1,56 @@
+d. Add two curves to your ﬁgure from part (c) to show how values of
+z* ¼ 1000 m and 4000 m affect the shape of the preformed phosphate
+curve. Typical values for the vertical diffusivity in models such as this
+are of order 2 cm
+2 s/C0 1 (see chapter 2 for a discussion of how this reﬂects
+primarily lateral input along isopycnals rather than vertical mixing).
+How does w vary if you keep K ﬁxed, and how does this help to explain
+the results of this sensitivity test?
+5.15 Organic phosphorus distribution: Assume that OP is particulate organic
+matter that sinks with a vertical sinking velocity w
+sink of order /C0 100 m d/C0 1 (as
+observed). This is large enough that the advective and diffusive transport
+terms w and K can be ignored. Assume furthermore that you can model
+consumption of particulate organic matter as ﬁrst-order decay with a rate
+constant k
+remin (s/C0 1), and that the distribution of OP is in steady state.
+a. Write down the conservation equation for OP.
+b. Give a solution for OP(z) using the boundary condition that
+OP ¼ OP(0) at z ¼ 0. Use the symbol z*OP for the exponential scale
+depth wsink/kremin.
+5.16 Biogenic (i.e., remineralized) phosphate distribution:
+a. Write down the conservation for remineralized inorganic phosphorus,
+RIP.
+b. Give an analytical solution to the RIP equation subject to the boundary
+conditions that RIP ¼ 0a t z ¼ 0 and RIP(H)a t z ¼ H.
+c. Use a spreadsheet to calculate and plot the remineralized phosphate
+given by your solution in (b) for the depth interval from 0 to /C0 500 m.
+Use the observationally determined remineralized phosphate from
+problem 5.11(c) to specify the boundary concentration at
+z ¼ H ¼/C0 500 m. Add the data from problem 5.11(a) to your plot
+and convince yourself that a value of z*
+OP ¼ 300 m and the
+previously determined value for z* ¼ 2000 m do a good job of
+ﬁtting these data.
+d. Add two curves to your ﬁgure from part (c) to show how values of
+z*OP ¼ 150 m and 600 m affect the shape of the remineralized
+phosphate curve. How does kremin vary if you keep wsink ﬁxed at its
+typical value of order 100 m day /C0 1, and how does this help to explain
+the results of the sensitivity test?
+5.17 This problem is on the use of 230Th to study the cycling of particles in the
+ocean. Note from ﬁgure 5.4.12 that the radioactive parent of 230Th is 234U.
+234U is well mixed throughout the ocean, so its activity, the rate at which it
+produces 230Th by decay (A( 234U) ¼ l /C1234U), is constant everywhere. Its ac-
+tivity is 2800 dpm m/C0 3, i.e., it has a decay rate (activity) of 2800 disintegrations
+per minute per m /C0 3 of seawater. If its daughter 230Th were not scavenged
+from the water column, it would have an activity of 2800 dpm m /C0 3 as well.
+This is because the daughter half-life is very short relative to the parent
+half-life. Because of this, after a few half-lives, the activity of the daughter
+would build up until you achieved a ‘‘secular equilibrium’’ where its decay
+rate equaled the rate at which it was being formed by decay of the parent.
+Water column observations of
+230Th are much lower than this expected
+activity. Observations also show an approximately linear increase of
+230Th with depth.
+225
+Export and Remineralization

@@ -1,0 +1,41 @@
+Problems
+3.1 You measure the oxygen content of a water sample and ﬁnd that it has a
+concentration of 250 mmol m /C0 3. The temperature of this sample is 15 /C14 C and
+it has a salinity of 35.
+a. Is this water sample super- or undersaturated with respect to current
+atmospheric oxygen concentrations (use table 3.2.4)? How large is the
+super- or undersaturation?
+b. Over the hours since the sample was taken, its temperature rises from
+the initial 15
+/C14 Ct o2 0 /C14 C. Assuming that this sample has not gained or
+lost oxygen over this time, how large is the under- or supersaturation
+now?
+3.2 If we were to increase atmospheric CO
+2 ﬁvefold by the burning of fossil fuels,
+how much would the atmospheric oxygen concentration change relative to
+what it is today? Assume that the burning of fossil fuels consumes 1.4 moles
+of O
+2 per mole of CO 2 produced.
+3.3 The analysis of an air sample has revealed that it has a dry atmospheric CO 2
+mixing ratio of 370 ppm, and a total pressure of 1.020 atm, and is at satura-
+tion with regard to water vapor. The temperature at which this sample was
+taken was 20
+/C14 C.
+a. Compute the partial pressure of CO 2 for this air sample.
+b. How would the partial pressure of CO 2 change if you warmed the
+sample isobarically to 30 /C14 C without changing its water vapor content?
+c. Everything else being equal, how large would the partial pressure of
+CO2 be if you happened to have sampled the air while a low pressure
+system was present, e.g., if the total pressure was 0.940 atm?
+3.4 Explain step-by-step how to derive the ﬂux equation F ¼/C0 K /C1 ([A]a /C0 [A]w),
+where 1=K = 1=kw þ SA=ka, from (3.3.1) and (3.3.2).
+3.5 We discussed in the text that one can use abundances of radiocarbon to
+constrain the global mean air-sea exchange coefﬁcient. An important input
+parameter is the difference between the
+14C concentration in the atmosphere
+and the ocean, expressed as a ratio of the respective R* values. Suppose now
+that the value of Rsurface* =(1:017 /C1 Ra*) i.e., the mean ratio of pre-bomb ocean
+surface to atmospheric 14C including the fractionation correction, is 0.90
+instead of 0.95 as assumed in the text (see equation (3.3.15)). What would the
+global mean gas transfer velocity be?
+100

@@ -1,0 +1,122 @@
+The remineralization reaction depicted by (5.1.1) re-
+quires oxygen and, except for many bacteria, is used by
+nearly all heterotrophic organisms, including all zoo-
+plankton, and ﬁsh. Most bacteria use this aerobic re-
+mineralization reaction as well, since the energy yield
+per unit of organic matter is higher in comparison to
+all other available oxidants. Most organisms are strict
+aerobes, i.e., they cannot switch to another oxidant for
+oxidizing organic matter to provide energy for their
+metabolism, and so they cannot live in the absence of
+free oxygen. However, many bacteria are more ﬂexible
+and can use a wide range of other reactions to obtain
+energy from organic matter (see detailed discussion in
+chapter 6). The most common anaerobic process in the
+water column is denitriﬁcation. In the denitriﬁcation
+process, nitrate replaces oxygen as the oxidant, and is
+thereby reduced to N
+2. The overall denitriﬁcation reac-
+tion for organic matter of composition (5.1.1) is:
+C106H175O42N16P þ 104 HNO 3
+! 106 CO 2 þ 60 N 2 þ H3PO4 þ 138 H 2O (5:1:4)
+[Gruber and Sarmiento , 1997]. Unfortunately, it is not
+possible to work out the correct denitriﬁcation stoichi-
+ometry for organic matter with the deep ocean re-
+mineralization stoichiometry (5.1.2). This is because
+(5.1.2) does not include the correct organic O and H
+stoichiometry, as noted above.
+Another anaerobic process that removes ﬁxed nitro-
+gen from the water is the anaerobic ammonium oxida-
+tion (anammox) process, in which bacteria combine
+ammonium and nitrite to form N
+2 under anoxic con-
+ditions. This process, ﬁrst discovered in wastewater
+bioreactors, appears to occur also in oceanic environ-
+ments (see, e.g., Kuypers et al. [2003]). Its quantitative
+signiﬁcance is not known yet on a global scale, but a
+recent study suggested that the anammox process could
+be responsible for most of the ﬁxed nitrogen loss in the
+oxygen minimum zone of the Benguela upwelling
+system [ Kuypers et al. , 2005]. We won’t discuss this
+process further, but note that from a geochemical per-
+spective, the anammox and denitriﬁcation processes
+play the same role in that they remove nitrate from the
+water while adding phosphate from the associated re-
+mineralization of organic phosphorus.
+The loss of ﬁxed nitrogen by denitriﬁcation and the
+anammox process requires a counterbalancing source
+elsewhere if the nitrate content of the ocean is to re-
+main constant through time. The primary source is the
+N
+2 ﬁxation reaction discussed in the previous chapter.
+The N 2 ﬁxation reaction converts N 2 to organic nitro-
+gen, which ends up as nitrate upon subsequent reac-
+tion of the organic matter with oxygen. The extent to
+which the oceanic ﬁxed nitrogen budget is actually in
+balance is controversial at present, as will be discussed
+below [e.g., McElroy, 1983; Codispoti and Christensen ,
+1985; Gruber and Sarmiento , 1997; Codispoti et al. , 2001;
+Gruber, 2004].
+Not all nitrogen contained in organic matter in re-
+actions (5.1.1) and (5.1.4) gets completely converted to
+nitrate or N
+2. Some small fraction ends up as nitrous
+oxide, N 2O, part of which is then emitted into the at-
+mosphere. We have seen in chapter 3 that N 2O, like
+CO2, acts as a greenhouse gas; therefore variations of
+this gas in the atmosphere can lead to changes in
+Earth’s temperature and climate. As we will see below,
+the oceanic production of N
+2O constitutes a substantial
+fraction of the total emission of N 2O into the atmo-
+sphere. It therefore behooves us to understand the
+processes that form N
+2O in the ocean and what controls
+them. In the case of aerobic remineralization, the for-
+mation of N
+2O is associated with the oxidation of am-
+monium during nitriﬁcation (ﬁgure 5.1.5). Nitrous
+oxide is also formed during denitriﬁcation, as it repre-
+sents an intermediate product during the reduction of
+nitrate to N
+2 (ﬁgure 5.1.5). If some of this N 2O escapes
+the further reduction to N 2, denitriﬁcation can act as a
+source of N 2O. At the same time, denitriﬁcation can act
+as a sink for N 2O, with the overall balance generally
+believed to be positive, i.e., denitriﬁcation acting as a
+net source of N
+2O. The relative importance of the two
+production pathways is still debated, but it appears as if
+the majority of the N
+2O in the ocean is formed in as-
+sociation with nitriﬁcation [ Suntharalingam and Sar-
+miento, 2000; Nevison et al. , 2003; Jin and Gruber , 2003].
+However, given the much higher yield of N 2O at low
+oxygen concentrations, the production is biased toward
+the low-oxygen regions of the world ocean. We will
+discuss the impact of this on the oceanic distribution of
+N
+2O, thereby permitting us to explain the distribution
+of surface N 2O we brieﬂy covered in chapter 3.
+Preformed and Remineralized Components
+In the most general form, we can think of the nutrient
+or oxygen concentration of a water parcel in the interior
+of the ocean as consisting of two components. The ﬁrst
+is the preformed concentration, C
+preformed, that this
+water parcel had when it left the surface, and the sec-
+ond one is the change in concentration, DC
+remin,t h a t
+occurred since that time as a result of remineraliza-
+tion, i.e.,
+Cobserved ¼ Cpreformed þ DCremin (5:1:5)
+We can use the three-box ocean model of ﬁgure 1.2.5
+to provide a more detailed illustration of the difference
+between the preformed and remineralized components
+of deep ocean nutrient concentrations. If we assume
+that the low-latitude surface nutrient concentration C
+l
+is 0, such as would be the case for nitrate or phos-
+phate over much of the ocean, the ﬂux balance of the
+179
+Export and Remineralization

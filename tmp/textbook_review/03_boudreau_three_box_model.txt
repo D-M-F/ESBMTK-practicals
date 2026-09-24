@@ -1,0 +1,594 @@
+=== CELL 0 markdown ===
+# 03 — Reconstruct, build and audit a three-box model
+
+**Learning goals:** reconstruct a scientific flux diagram; translate it through Excel records into native ESBMTK objects; distinguish graph, budget and restart checks.
+
+**Provisional time: 55 minutes.** Diagram and Excel reconciliation (15), four native mappings (20), boundary budget and checks (15), explanation (5). This allocation needs a student pilot.
+
+Follow **reconstruct → reconcile → map → run → check → explain**. Your diagram and flux table are the specification for your code and for 04. Repeated loops, chemistry/sediment wiring, integration and plotting are supplied.
+The construction below does not call the complete-model helper.
+[Teaching goals](../../TEACHING_GOALS.md).
+
+**Reading key:** <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>Key term</strong></mark> = concept to notice. Blue **Question** panels identify student work; purple **Instructor answer** panels appear only in the instructor sheet.
+Code labels distinguish **Choose and explain**, **Understand and run**, and **Supplied implementation**.
+This practical is ungraded. Keep your explanations here; no separate submission is required.
+The [coding cheatsheet](../../ref/modelling_cheatsheet.md) is optional lookup support; essential syntax is explained locally.
+
+=== CELL 1 markdown ===
+## A1. What changes from 02?
+
+This is a Boudreau-like benchmark with a different specification. Do not carry over 02's fitted k, ratio-derived geometry or total carbon inventory.
+
+| Feature | 02 | 03/04 |
+| --- | --- | --- |
+| Geometry and conditions | Two layers, uniform T/S/P | Low-/high-latitude surface and deep boxes; box-specific conditions |
+| Organic export | $kDIC_s(t)$ | Fixed POC export |
+| Carbonate processes | Absent | PIC export, dissolution and net burial |
+| Active atm–ocn boundary | Closed except the pulse | Weathering and net burial; forcing added in 04 |
+| Reference state | Calibrated constraints | Archived benchmark restart |
+
+POC and PIC mean **particulate organic and inorganic carbon**. Here POC export includes full deep remineralization: conversion back to dissolved carbon. There is no explicit particle or nutrient inventory. The **rain ratio** is PIC/POC carbon export; the workbook prescribes this ratio and POC, then the loader derives PIC.
+
+Read [ESBMTK section 3 and Figure 3](../../ref/ESBMTK.pdf#page=8) (printed p. 1162; [online version](https://gmd.copernicus.org/articles/18/1155/2025/#section3)). Use these corrections:
+
+- The organic-export label in the prose should be **F5**, not F3; F3 denotes circulation.
+- The benchmark uses **F6/F5 = PIC/POC = 0.3**, not the inverted ratio in the prose.
+- Weathering supplies **dissolved inorganic carbon** here, not organic carbon.
+
+Figure 3 is an incomplete specification: its arrows omit equations, stoichiometry and an explicit dissolution return. Reconstruct those properties using the following assumptions and workbook inputs.
+
+=== CELL 2 markdown ===
+### Supplied process assumptions
+
+Use these to specify the model; they are not universal descriptions of the ocean.
+
+- Water transport carries DIC and TA at its source concentration. The circulation is a closed loop through both surface boxes and the deep box; mixing exchanges water between high latitudes and depth. Each fixed-volume box gains and loses equal water.
+- Each surface exchanges CO2 with the same finite atmosphere. As in 01/02, invasion and outgassing are two conceptual transfers evaluated by one native connection. Chemistry calculates aqueous CO2 and pH from DIC/TA and local conditions; these diagnostics are not extra carbon inventories.
+- Only low latitudes export POC/PIC in this benchmark. POC is fully remineralized at depth, with no TA effect in this closure. Real nutrient uptake and recycling can affect TA: nitrate uptake increases it, whereas ammonium uptake decreases it. A richer model needs the associated nutrient/redox bookkeeping rather than an arbitrary TA coefficient on POC.
+- CaCO3 formation removes one dissolved carbon and two TA equivalents per mole; dissolution reverses that reaction. Carbonate rain enters a sediment-process module, which calculates dissolution using deep chemistry and sediment history. The **snowline** is the depth boundary of reactive sediment and carries memory; there is no explicit conserved sediment-carbon stock. Detailed equations remain [optional](../../ref/sediment_reference.md).
+- The prescribed weathering input is a lumped **1 DIC : 2 TA** boundary closure. This is not a universal river composition. Carbonic-acid weathering of CaCO3 delivers two bicarbonates while consuming one CO2: river-only and combined atm–ocn accounting differ. This model applies its lumped source to the low-latitude box, with no explicit atmospheric weathering sink.
+
+Biological TA effects and weathering accounting are discussed in [Middelburg et al. (2020), sections 4–6](https://doi.org/10.1029/2019RG000681). These notes explain the chosen simplifications; they add no nutrient or weathering-reaction derivation.
+
+**Rate choices.** Both exports are fixed in 03/04. In 02, constant k still gave state-dependent export through $kDIC_s(t)$. Fixed exports do not freeze the rest of the model: gas exchange and dissolution respond to evolving conditions. Additional biological response laws are hypotheses explored in the optional extension.
+
+=== CELL 3 code ===
+# Supplied implementation: run this support code as provided.
+from pathlib import Path
+import sys
+import pandas as pd
+import numpy as np
+
+ROOT = next(p for p in (Path.cwd().resolve(), *Path.cwd().resolve().parents)
+            if (p / 'teaching_config.py').is_file())
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from esbmtk import (
+    Q_, ConnectionProperties, GasReservoir, Model, Species2Species,
+    add_carbonate_system_1, add_carbonate_system_2,
+    create_bulk_connections, initialize_reservoirs,
+)
+from model import postprocess_carbonate_horizons, run_model, standard_diagnostics
+from presets import load_boudreau_parameters
+from reservoir_inputs import reservoir_inventory_rows
+from model_inputs import read_model_tables
+
+WORKBOOK = ROOT / 'data' / 'Boudreau_2010' / 'model_definition.xlsx'
+P = load_boudreau_parameters(WORKBOOK)
+input_tables = read_model_tables(WORKBOOK)
+STATE = ROOT / 'data' / 'Boudreau_2010' / 'steady_state'
+from teaching_specification import BASELINE_PARAMETERS, workbook_connections
+from teaching_audits import audit_benchmark_graph, audit_complete_model, audit_restart_drift
+
+=== CELL 4 markdown ===
+### A2. Inspect the numerical inputs
+
+The workbook owns areas, volumes, box-specific T/S/P and initial states. The atmosphere has its own mole-fraction and total-air units. **Initial concentrations are replaced by the archived restart later.** Geometry and rates are retained.
+
+For now inspect only reservoir and baseline parameter tables. Connection rows come after your reconstruction. Optional feedback settings are omitted from this view. Excel editing is not required.
+
+=== CELL 5 code ===
+# Understand and run: read these supplied inputs before drawing.
+display(pd.DataFrame(input_tables['OceanReservoirs']).set_index('Box ID'))
+display(pd.DataFrame(input_tables['Atmosphere']).set_index('Box ID'))
+baseline_parameters = pd.DataFrame(input_tables['ProcessParameters']).set_index('Parameter')
+display(baseline_parameters.loc[list(BASELINE_PARAMETERS)])
+
+=== CELL 6 markdown ===
+## A3. Exercise 03.1: reconstruct the diagram and flux properties
+
+![Box outlines for reconstruction](../../ref/figures/03_04_boudreau_student.png)
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — reconstruct a scientific specification**
+
+Sketch or annotate the outlines; drawing quality is irrelevant. Use descriptive IDs (T, M, G, POC, PIC, W, D, B_net), keeping F1–F8 only as paper aliases.
+
+1. Label the states and active atm–ocn boundary. Distinguish chemistry diagnostics and the sediment-memory state.
+2. Draw the three circulation legs, both mixing directions, and invasion/outgassing at each surface. Check water balance at H_b and cancellation of one internal transfer.
+3. Draw POC/PIC export, weathering, the **explicit dissolution return**, and signed net burial. A dashed information arrow may connect deep chemistry to the module.
+4. Complete the process-family table below. Write source/destination effects with signs. State units: carbon in mol C/yr, TA in equivalents/yr, concentrations in mol/kg or equivalents/kg. One family law covers repeated water arrows.
+
+For dissolution use the supplied functional form; detailed sediment equations are not an exercise. For burial, relate export and dissolution, allowing loss of old sediment. Do not create an extra sediment-carbon box.
+
+</div>
+
+An unrelated format example: **dye input → tank; +J to dye inventory; J = prescribed rate; mol dye/yr; external prescribed input**.
+
+| Process ID | Process | Endpoints | Inventory effects | Flux rule | Status |
+| --- | --- | --- | --- | --- | --- |
+| T_* / M_* | Water transport | Each directed water arrow | Your choice / explanation | Your choice / explanation | Prescribed q; calculated tracer flux |
+| G_L / G_H | Air-sea exchange | atm <-> L_b; atm <-> H_b | Your choice / explanation | Your choice / explanation | State-dependent flux |
+| POC | Organic export / remineralization | Your choice / explanation | Your choice / explanation | Your choice / explanation | Prescribed fixed export |
+| PIC | Carbonate export | L_b -> carbonate process module | Your choice / explanation | E(t) = poc_export * rain_ratio | Your choice / explanation |
+| W | Lumped weathering | Outside -> L_b | Your choice / explanation | W_C = weathering_dic; W_A = 2 W_C | Prescribed benchmark boundary closure |
+| D | Carbonate dissolution | Your choice / explanation | Your choice / explanation | sediment_response(PIC rain, deep chemistry, snowline; parameters) | Calculated response |
+| B_net | Signed net burial | Module -> outside active atm + ocn | Your choice / explanation | Your choice / explanation | Calculated boundary residual |
+
+Edit this Markdown table or use the [student Excel worksheet](../../outputs/03_04_flux_specification/student.xlsx). Its amber cells are answer spaces; it does not alter model inputs. Numerical values remain in the production workbook.
+
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+![Completed instructor specification](../../ref/figures/03_04_boudreau_instructor.png)
+
+H_b gains 25 Sv through circulation plus 30 Sv through mixing and loses the same amounts. Each internal transfer has equal source loss and destination gain. pH/CO2aq are diagnostics; DIC/TA and atm CO2 are evolving reservoir states. Snowline is a sediment-memory state, not an additional carbon inventory.
+
+The completed flux table follows. Net burial is E - D: the overall dissolved-system loss is B_net in carbon and 2 B_net in TA. A negative B_net returns old sediment material.
+
+</div>
+<!-- END SOLUTION -->
+
+=== CELL 7 code ===
+# Instructor reference: the student file omits this completed table.
+from teaching_specification import flux_specification, implementation_references
+display(pd.DataFrame(flux_specification()).set_index('Process ID'))
+display(pd.DataFrame(implementation_references()).set_index('Process ID'))
+
+=== CELL 8 markdown ===
+### A4. Reconcile your drawing with Excel
+
+After your attempt, compare each connection row with your arrows. Identify it by **source + sink + flux_id**: all three circulation rows use `thc`, so that ID alone is not unique. Correct your diagram before using it for construction.
+
+| Diagram content | Input owner / stable key | Code role |
+| --- | --- | --- |
+| Geometry and states | OceanReservoirs / Box ID; Atmosphere | Reservoir specification |
+| Water arrows | TransportConnections / source, sink, flux_id | Native bulk connections |
+| Gas exchange | GasExchangeConnections / Atmosphere, Surface | Individual gas connections |
+| POC and PIC | ProcessParameters / poc_export, rain_ratio | PIC derived from POC × ratio |
+| Weathering | ProcessParameters / weathering_dic; BoundaryNodes / Fw | TA derived as twice weathering DIC |
+| Dissolution / burial | Calculated responses, no prescribed flux row | Supplied carbonate module |
+
+The [flux worksheets](../../ref/boudreau_diagrams.md) document these links. Their process table is **teaching documentation**, not an executable input schema. POC/PIC/weathering topology and sediment coupling are supplied Python patterns. `Fb` declares a boundary node; it does not require an additional active drain.
+
+The loader validates names, units and water balance. It creates parameter records, not reservoirs. Changing the baseline geometry, chemistry or rates later requires a new compatible stationary state.
+
+=== CELL 9 code ===
+# Understand and run: compare these rows with the diagram you reconstructed.
+display(pd.DataFrame(input_tables['TransportConnections']).sort_values('Order'))
+display(pd.DataFrame(input_tables['GasExchangeConnections']).sort_values('Order'))
+display(pd.DataFrame(input_tables['BoundaryNodes']).set_index('Box ID'))
+display(pd.DataFrame(workbook_connections(WORKBOOK)).set_index('ID'))
+
+=== CELL 10 markdown ===
+## B1. Exercise 03.2: map reservoirs
+
+`Model` defines the clock, units and chemistry options; it is not a physical box or the system boundary. Run its supplied construction, then map the ocean records. Geometry remains explicit and ESBMTK calculates density from each box's T/S/P.
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — map reservoir fields**
+
+Complete `concentrations` and `geometry` using the `box` record. Use species keys `M.DIC`, `M.TA` and geometry keys `area`, `volume`. The loop and T/S/P mapping are supplied.
+Trace one initial concentration from Excel to its state. Explain how volume and density convert ocn concentration to inventory, and why atm mole fraction needs a different conversion.
+
+</div>
+
+**Local syntax:** `box['dic']` retrieves a record field; `M.DIC` is the registered species, while `M.H_b.DIC` is its state in a particular reservoir. Dictionary keys are case-sensitive. The partial example below supplies the unchanged environmental fields.
+
+=== CELL 11 code ===
+# Supplied implementation: run this support code as provided.
+# Supplied model clock and units.
+
+M = Model(
+    stop='20 yr',
+    max_timestep='1 yr',
+    element=['Carbon', 'Boron', 'Hydrogen', 'misc_variables'],
+    mass_unit='mol',
+    concentration_unit='mol/kg',
+    opt_k_carbonic=P['opt_k_carbonic'],
+    opt_pH_scale=P['opt_pH_scale'],
+)
+
+assert M.stop == Q_('20 yr').to(M.t_unit).magnitude
+assert M.DIC.name == 'DIC' and M.TA.name == 'TA'
+
+=== CELL 12 code ===
+# Understand and run: partial record-to-constructor example.
+high = P['boxes']['H_b']
+high_specification = {'T': high['temperature'], 'P': high['pressure'], 'S': high['salinity']}
+high_specification
+
+=== CELL 13 code ===
+# Choose and explain: complete marked choices; surrounding machinery is supplied.
+def ocean_specification(box):
+    # Exercise 03.2: complete the two mappings, using your diagram and the field hints.
+    # BEGIN SOLUTION
+    concentrations = {M.DIC: box['dic'], M.TA: box['ta']}
+    geometry = {'area': box['area'], 'volume': box['volume']}
+    # END SOLUTION
+    return {'c': concentrations, 'g': geometry,
+            'T': box['temperature'], 'P': box['pressure'], 'S': box['salinity']}
+
+# Supplied repetition and boundary nodes.
+box_parameters = {name: ocean_specification(box) for name, box in P['boxes'].items()}
+for node in P['boundary_nodes']:
+    box_parameters[node['name']] = {
+        'ty': node['type'], 'sp': [getattr(M, species) for species in node['species']],
+    }
+species_list = initialize_reservoirs(M, box_parameters)
+assert {M.L_b.name, M.H_b.name, M.D_b.name} == {'L_b', 'H_b', 'D_b'}
+assert set(species_list) == {M.DIC, M.TA}
+for box in (M.L_b, M.H_b, M.D_b):
+    assert hasattr(box, 'DIC') and hasattr(box, 'TA')
+
+=== CELL 14 code ===
+# Understand and run: trace this supplied step and interpret its evidence.
+display(pd.DataFrame(reservoir_inventory_rows(M)).set_index('Box'))
+
+=== CELL 15 markdown ===
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+For a water mass $m=
+ho V$, carbon inventory is $m,DIC$ and TA inventory is $m,TA$. Convert µmol/kg to mol/kg first. Atmospheric carbon is $N_{atm}x_{CO2}$ with dry-air mole fraction x; ppm must be multiplied by $10^{-6}$. `box['dic']` supplies an initial concentration, not a fixed target imposed during integration.
+
+</div>
+<!-- END SOLUTION -->
+
+=== CELL 16 markdown ===
+## B2. Exercise 03.3: map water arrows and their law
+
+For a directed physical water transport, $q_{i\to j}=\rho Q_{i\to j}$ in kg/yr and
+$$J_{i\to j}^{(X)}(t)=q_{i\to j}X_i(t),\qquad X=\mathrm{DIC\ or\ TA}.$$
+The flux removes material at the source and adds the same amount at the destination.
+
+**Benchmark unit convention:** 02 explicitly uses $Q\rho$. The historical benchmark instead passes volume scales through a native conversion to litres/yr while the states use mol/kg. We retain that nominal numerical conversion for reproduction; it is not a general dimensional recipe for new models. Inventories still use ESBMTK densities. A physical correction requires a separately tested baseline and fresh restart.
+
+As in 02, `Source_to_Sink@id` names a route. `ty` (or individual `ctype`) chooses the law; `sp` chooses species.
+
+| Law choice | Meaning | Supplied coefficient |
+| --- | --- | --- |
+| `scale_with_concentration` | coefficient × source concentration | `sc` |
+| `Fixed` | prescribed amount/time; alias of `regular` | `ra` |
+| `gasexchange` | invasion minus outgassing | gas-transfer settings |
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — implement your water arrows**
+
+Complete endpoints, transported species and `transport_type` from your reconciled specification. For the H_b-to-D_b mixing arrow, identify which concentration appears in its law. Would substituting destination concentration necessarily fail a whole-system inventory test?
+
+</div>
+
+=== CELL 17 code ===
+# Choose and explain: complete marked choices; surrounding machinery is supplied.
+connection_parameters = {}
+for row in P['transport_connections']:
+    # Exercise 03.3: map each row's source/sink and choose the carried species.
+    # BEGIN SOLUTION
+    source_name = row['source']
+    sink_name = row['sink']
+    transported_species = [M.DIC, M.TA]
+    transport_type = 'scale_with_concentration'
+    # END SOLUTION
+    name = f"{source_name}_to_{sink_name}@{row['id']}"
+    connection_parameters[name] = {
+        'ty': transport_type, 'sc': P[row['parameter']],
+        'sp': transported_species,
+    }
+create_bulk_connections(connection_parameters, M)
+assert len(M.loc) == 2 * len(P['transport_connections'])
+for row in P['transport_connections']:
+    connections = [conn for conn in M.loc if conn.id == row['id']
+                   and conn.source.parent.name == row['source']
+                   and conn.sink.parent.name == row['sink']]
+    assert len(connections) == 2
+
+=== CELL 18 markdown ===
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+The H_b-to-D_b flux uses H_b's current concentration. Using D_b's concentration would implement a different process, but equal source loss and destination gain could still conserve total inventory. Graph and equation checks therefore complement conservation.
+
+</div>
+<!-- END SOLUTION -->
+
+=== CELL 19 markdown ===
+## B3. Exercise 03.4: map biological export
+
+Use the POC and PIC arrows from your diagram. The native PIC connections have nominal deep endpoints but bypass those sinks; the supplied carbonate module adds the actual dissolution return later. A direct addition of all PIC to deep DIC/TA would represent a different model.
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — choose pump species, laws and linked rates**
+
+Assign POC source/sink/species, select `export_type` from the law choices above, and link the PIC DIC and TA rates. Compare this closure with 02: if $DIC_s(t)$ changes while parameters stay fixed, what happens to export in each model?
+
+</div>
+
+=== CELL 20 code ===
+# Choose and explain: complete marked choices; surrounding machinery is supplied.
+# Supplied benchmark flux quantities.
+
+M.tutorial_params = P
+M.OM_export_reference = Q_(P['poc_export'])
+M.CaCO3_export_reference = Q_(P['pic_export'])
+M.OM_export = M.OM_export_reference
+M.CaCO3_export = M.CaCO3_export_reference
+
+# Exercise 03.4: select the POC arrow and link the two PIC rates.
+# BEGIN SOLUTION
+poc_source, poc_sink = 'L_b', 'D_b'
+poc_species = M.DIC
+export_type = 'Fixed'
+pic_dic_rate = M.CaCO3_export
+pic_ta_rate = 2 * pic_dic_rate
+# END SOLUTION
+create_bulk_connections(
+    {
+        f"{poc_source}_to_{poc_sink}@POM": {
+            'sp': poc_species, 'ty': export_type, 'ra': M.OM_export,
+        },
+        'L_b_to_D_b@PIC_DIC': {
+            'sp': M.DIC, 'ty': export_type, 'ra': pic_dic_rate, 'bp': 'sink',
+        },
+        'L_b_to_D_b@PIC_TA': {
+            'sp': M.TA, 'ty': export_type, 'ra': pic_ta_rate, 'bp': 'sink',
+        },
+    },
+    M,
+)
+
+M.OM_export_flux = M.flux_summary(filter_by='POM', return_list=True)[0]
+M.CaCO3_export_flux = M.flux_summary(filter_by='PIC_DIC', return_list=True)[0]
+M.rain_ratio = (
+    M.CaCO3_export.to('Tmol/yr').magnitude
+    / M.OM_export.to('Tmol/yr').magnitude
+)
+
+poc_connections = [c for c in M.loc if c.id == 'POM']
+pic_dic_connections = [c for c in M.loc if c.id == 'PIC_DIC']
+pic_ta_connections = [c for c in M.loc if c.id == 'PIC_TA']
+assert len(poc_connections) == len(pic_dic_connections) == len(pic_ta_connections) == 1
+assert pic_ta_connections[0].rate == 2 * pic_dic_connections[0].rate
+assert M.rain_ratio == P['rain_ratio']
+
+=== CELL 21 markdown ===
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+Here POC and PIC export remain constant. In 02, $J_{pump}(t)=kDIC_s(t)$ changes proportionally with surface DIC despite constant k. The benchmark's fixed rain ratio links baseline PIC to POC; the computed ratio afterward is a consistency check, not an independent prediction.
+
+</div>
+<!-- END SOLUTION -->
+
+=== CELL 22 markdown ===
+### Supplied dissolution and chemistry wiring
+
+Your dissolution arrow returns material to deep dissolved inventories. `add_carbonate_system_2` supplies that coupling using the actual PIC flux object, deep chemistry and the snowline. Do not add another manual dissolution connection.
+
+The saturation horizon marks calcite saturation = 1; the compensation depth concerns survival of modern rain. Both are chemistry-dependent diagnostics. The snowline retains sediment history and may lag. Dissolution can exceed current rain when old sediment dissolves, giving negative net burial. Net burial is a diagnostic boundary residual, not another deep-water drain.
+
+The benchmark coefficient `alpha` was tuned in the ESBMTK reproduction; agreement with its reference is not independent evidence for that coefficient.
+
+=== CELL 23 code ===
+# Supplied implementation: run this support code as provided.
+# Supplied chemistry and sediment coupling.
+
+add_carbonate_system_1([M.L_b, M.H_b])
+add_carbonate_system_2(
+    r_sb=[M.L_b],
+    r_db=[M.D_b],
+    carbonate_export_fluxes=[M.CaCO3_export_flux],
+    z0=P['z0'],
+    alpha=P['alpha'],
+)
+
+assert hasattr(M.L_b, 'CO2aq') and hasattr(M.H_b, 'CO2aq')
+assert M.D_b.cs2.function_input_data[0] is M.CaCO3_export_flux
+
+=== CELL 24 markdown ===
+## B4. Exercise 03.5: connect the atmosphere
+
+As in 01, use solubility and the current atmosphere for invasion. For surface i, schematically,
+$$J_{gas,in,i}(t)=v_iA_iK_{0,i}pCO_{2,atm}(t),\qquad
+J_{gas,out,i}(t)=v_iA_i[CO_2]_{aq,i}(t).$$
+Here solubility $K_0$ converts partial pressure to mol/m³; aqueous CO2 also uses mol/m³. With area in m² and velocity in m/yr, flux is mol C/yr. Native code handles these conversions from dry-air mole fraction and mol/kg states. Local conditions affect solubility. The ocean and atmosphere receive equal-and-opposite tendencies.
+
+One gas connection evaluates invasion minus outgassing. Its named endpoints set the positive direction, not a permanently one-way flux. Chemistry, gas exchange and circulation together produce solubility-related storage; there is no extra solubility-pump arrow to add.
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — map gas exchange**
+
+Assign `gas_source`, `gas_sink` and `gas_species` inside the supplied loop. `getattr(M, row['atmosphere'])` retrieves the named atmospheric object; `surface_box.DIC` selects a state within a surface box. Why does gas exchange update DIC although its law uses aqueous CO2?
+
+</div>
+
+=== CELL 25 code ===
+# Choose and explain: complete marked choices; surrounding machinery is supplied.
+
+# Supplied atmosphere and loop; complete the scientifically meaningful endpoints.
+
+GasReservoir(
+    name='CO2_At', species=M.CO2, species_ppm=P['pco2'],
+    reservoir_mass=P['atmosphere_moles'],
+)
+
+for row in P['gas_exchange_connections']:
+    surface_box = getattr(M, row['surface'])
+    # Exercise 03.5: identify atmosphere, surface carbon state and gas species.
+    # BEGIN SOLUTION
+    gas_source = getattr(M, row['atmosphere'])
+    gas_sink = surface_box.DIC
+    gas_species = getattr(M, row['species'])
+    # END SOLUTION
+    Species2Species(
+        source=gas_source,
+        sink=gas_sink,
+        species=gas_species,
+        piston_velocity=P[row['parameter']],
+        ctype='gasexchange',
+        id=surface_box.name,
+    )
+
+gas_connections = [c for c in M.loc if c.ctype == 'gasexchange']
+assert len(gas_connections) == 2
+assert {c.sink for c in gas_connections} == {M.L_b.DIC, M.H_b.DIC}
+
+=== CELL 26 markdown ===
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+Aqueous CO2 is a diagnostic fraction of DIC. Transfer of CO2 therefore changes DIC, after which carbonate chemistry repartitions the dissolved carbon. Treating CO2aq as an additional carbon stock would count carbon twice.
+
+</div>
+<!-- END SOLUTION -->
+
+=== CELL 27 markdown ===
+### Supplied weathering connection
+
+The workbook prescribes `weathering_dic`; the loader derives the paired TA rate for this benchmark closure. Changing the ratio would require revisiting the joint carbon/TA budget and stationary state, not just substituting a new value. Run the native boundary connection unchanged.
+
+=== CELL 28 code ===
+# Understand and run: trace this supplied step and interpret its evidence.
+# Supplied external weathering arrow.
+
+ConnectionProperties(
+    source=M.Fw,
+    sink=M.L_b,
+    rate={M.DIC: P['weathering_dic'], M.TA: P['weathering_ta']},
+    species=[M.DIC, M.TA],
+    ctype='fixed',
+    id='weathering',
+)
+
+weathering = [c for c in M.loc if c.id == 'weathering']
+assert len(weathering) == 2
+# Supplied metadata for the same boundary audit used in 04.
+M.weathering_strength = 1.0
+
+=== CELL 29 markdown ===
+## C1. Check the graph before integrating
+
+The supplied structural check matches endpoints, species, laws and process rates with the specification. Inspect this single summary and trace a water arrow, POC, linked PIC pair and gas connection to your diagram. A passing inventory check alone cannot establish that these are the intended equations.
+
+=== CELL 30 code ===
+# Understand and run: inspect one complete native graph summary.
+connection_table = pd.DataFrame(audit_benchmark_graph(M))
+display(connection_table)
+
+=== CELL 31 markdown ===
+## C2. Complete the boundary budget
+
+Continue **inputs minus outputs** from 01/02. Define
+$$C_{atm+ocn}=N_{atm}x_{CO2}+\sum_i m_iDIC_i,\qquad
+A_{ocn}=\sum_i m_iTA_i.$$
+Let $W_C$ and $W_A$ denote weathering carbon and TA input, E carbonate export, D dissolution and $B_{net}$ signed net burial. Carbon fluxes use mol C/yr and TA fluxes equivalents/yr. Positive net burial removes material from active atm–ocn inventories.
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — sum the inventories**
+
+Which water, gas and organic transfers cancel? Complete $B_{net}=$ …, $dC_{atm+ocn}/dt=$ … and $dA_{ocn}/dt=$ … for this unforced model. Use your linked carbonate effects and $W_A=2W_C$. Explain why adding a separate burial sink after accounting for PIC export and dissolution would be wrong.
+
+</div>
+
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+Internal water, gas and POC transfers cancel. Carbonate export removes E and dissolution returns D, so
+$$B_{net}(t)=E(t)-D(t),\qquad
+\frac{dC_{atm+ocn}}{dt}=W_C-B_{net}(t),\qquad
+\frac{dA_{ocn}}{dt}=W_A-2B_{net}(t).$$
+Counting both export-minus-dissolution and another burial sink counts the same loss twice. If D > E, negative net burial returns old sediment material. Speciation itself creates neither carbon nor TA.
+
+</div>
+<!-- END SOLUTION -->
+
+=== CELL 32 markdown ===
+## C3. Load the reference state and check the short restart
+
+The archived state avoids the million-year spin-up in class. It supplies state, not connections: your graph determines subsequent tendencies.
+
+Run 20 unforced years. The supplied check allows at most **0.01 µmol/kg DIC, 0.01 µeq/kg TA, 0.01 ppm atm CO2 and 0.01 m snowline movement**, measured at every saved time relative to the first. These are absolute teaching tolerances over this short run, not a relaxation timescale or proof of long-term stability.
+
+The separate audit integrates weathering and solver-consistent net burial and checks carbon/TA inventories. Its relative tolerance (2 × 10⁻⁵ of the evolving stock, plus a small absolute allowance) includes numerical integration of diagnostic fluxes. Plotting diagnostics use a slightly different carbonate evaluation; the audit uses the solver's own law.
+
+=== CELL 33 code ===
+# Understand and run: state loading, integration and all audits are supplied.
+M.read_state(directory=str(STATE))
+run_model(M)
+postprocess_carbonate_horizons(M)
+budget_report = audit_complete_model(M)
+drift_report = pd.DataFrame(audit_restart_drift(M)).set_index('State')
+assert (M.D_b.zsat.c <= M.D_b.zcc.c).all()
+display(drift_report)
+print('Graph and PIC coupling checked; carbon/TA budgets close; short restart drift is within the stated limits.')
+print({key: value for key, value in budget_report.items() if 'error' in key})
+
+=== CELL 34 markdown ===
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — explain the evidence**
+
+Name one error that the graph check could detect despite passing conservation, and distinguish the short restart check from independent scientific validation. In your results, identify one state, one chemistry diagnostic and one flux. Use this explanation rather than another final report.
+
+</div>
+
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+A conservative but misdirected internal arrow may pass a global budget; the graph comparison can detect it. Small restart drift supports local consistency between the reconstructed equations and archived state. It does not prove long-term stability or observational validity. DIC is a state, pH a chemistry diagnostic, and dissolution a calculated flux. The sediment snowline is another evolving state, not a carbonate-ion diagnostic.
+
+</div>
+<!-- END SOLUTION -->
+
+=== CELL 35 code ===
+from model import initialize_model
+
+reference = initialize_model(P, stop='20 yr', max_timestep='1 yr')
+reference.read_state(directory=str(STATE))
+run_model(reference)
+postprocess_carbonate_horizons(reference)
+
+for student_value, reference_value in (
+    (M.CO2_At.c[-1], reference.CO2_At.c[-1]),
+    (M.L_b.DIC.c[-1], reference.L_b.DIC.c[-1]),
+    (M.L_b.TA.c[-1], reference.L_b.TA.c[-1]),
+    (M.D_b.DIC.c[-1], reference.D_b.DIC.c[-1]),
+    (M.D_b.zcc.c[-1], reference.D_b.zcc.c[-1]),
+):
+    assert abs(student_value - reference_value) <= max(abs(reference_value), 1.0) * 1e-10
+
+print('Construction verified: the student-built and reusable models agree.')
+
+=== CELL 36 markdown ===
+**You have completed 03.** Keep the reconstructed diagram, flux table, four mappings and budget explanation. Reuse the diagram in 04. Detailed sediments and process attribution remain optional.

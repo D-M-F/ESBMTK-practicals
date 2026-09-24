@@ -1,0 +1,84 @@
+Chapter 8
+Carbon Cycle
+Having completed our ﬁrst grand tour of ocean bio-
+geochemical cycles by reviewing and discussing the
+oceanic cycling of silicate, we are now ready to assess
+the marine carbon cycle, one of the most important and
+also most fascinating biogeochemical cycles in the
+ocean. In discussing this cycle, we will need to employ
+all the concepts that have been introduced and dis-
+cussed in the previous chapters. In this chapter we will
+study how the marine carbon cycle works and how this
+cycle is connected with the atmospheric CO
+2 concen-
+tration. We will see that the oceans contain approxi-
+mately 60 times more carbon than the atmosphere and
+that the ocean therefore exerts a dominant control on
+atmospheric CO
+2. We will introduce the concepts nec-
+essary to understand this fact and also discuss how
+biological and physical processes act together to reduce
+the surface concentration of inorganic carbon relative to
+the deep ocean. Without this reduction, atmospheric
+CO
+2 would increase by more than 150 ppm, with the
+exact magnitude depending on the ocean carbon cycle
+model.
+Our ability to understand and model the carbon
+cycle in the oceans has made large advances over the
+last twenty years since the Geochemical Ocean Section
+Study (GEOSECS) provided a ﬁrst complete picture of
+the inorganic carbon distribution in the oceans. The
+recently completed Global Ocean CO
+2 Survey, a joint
+effort between the Joint Global Ocean Flux Study
+(JGOFS) and the World Ocean Circulation Experiment
+(WOCE), provides us now with almost two orders of
+magnitude more data with improved precision and
+accuracy. Analysis and interpretation of this new data
+set has just begun, and it quite surely will provide us
+with many new insights on details of the marine
+carbon cycle. Over the last ten years, several global
+models of the carbon cycle in the oceans have been
+developed and successfully applied to many interesting
+questions. These models also increasingly incorpo-
+rate the relevant processes prognostically, thus offering
+the opportunity to employ the models in conditions
+other than the current climate. However, there still
+exist large gaps in our understanding of several key
+issues.
+Probably the largest puzzle in ocean carbon research
+is our inability to explain the large glacial-interglacial
+variations in atmospheric CO
+2. As the oceans contain
+60 times more carbon than the atmosphere and 17
+times more carbon than is stored in the terrestrial
+biosphere (see ﬁgure 10.1.1), the causes for these vari-
+ations must lie within the oceans. This lack of knowl-
+edge also hampers our ability to predict more reliably
+how the oceanic carbon cycle is going to change in the
+future as a result of human-induced climate change.
+The investigation of natural variability might offer
+some insight into how the marine carbon cycle re-
+sponds to changes in the climatic state, but little is
+known regarding the role of the oceans on interannual
+to decadal timescales. While considerable advances
+have been made in pinning down the role of the oceans
+as a sink for anthropogenic CO
+2, there still exists large
+uncertainties, especially regarding future uptake. We
+will deal with these outstanding issues in the last
+chapter of this book (chapter 10).
+We start this chapter with an introduction that es-
+tablishes a number of problems that provide a focal
+point for the discussion in the remainder of the chap-
+ter. We then construct the building blocks for answer-
+ing most questions by introducing the inorganic carbon
+chemistry in seawater. Afterward we look at the pro-
+cesses that control surface ocean partial pressure of
+CO
+2 and its seasonal variability. The last section ex-
+tends the view into the water column by discussing the
+causes for the vertical variations of dissolved inorganic
+carbon and alkalinity.
+318

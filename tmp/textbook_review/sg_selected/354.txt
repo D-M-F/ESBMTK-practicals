@@ -1,0 +1,175 @@
+nowhere near the factor of two between the coldest and
+warmest waters that would be expected from (8.3.4). In
+fact, observations of DIC suggest that the real ocean is
+closer to the rapid gas exchange case than it is to the
+sluggish one (ﬁgure 8.3.3c).
+Biological Processes
+We now turn to a consideration of the inﬂuence of biol-
+ogy, which changes both the DIC and Alk distributions.
+The most important biological processes altering the
+concentration of DIC in the ocean are the photosynthetic
+uptake of CO
+2 to form organic matter, and the reverse
+processes of respiration and remineralization (see reac-
+tion (4.2.4)):
+106CO2 þ16NO/C0
+3
+þHPO2/C0
+4 þ78H2O þ18H þ
+Ð C106H175O42N16P þ150O2
+(8:3:12)
+We have recast the original reaction (4.2.4) to empha-
+size that NO
+/C0
+3
+and HPO 2/C0
+4 rather than HNO 3 and
+H3PO4, respectively, are the dominant chemical species
+present in seawater. Thus, in addition to decreasing the
+concentration of DIC, the formation of organic matter
+also decreases the concentration of the free protons,
+[H
+þ], and therefore increases alkalinity (see deﬁnition
+(8.2.8)) [ Brewer et al ., 1975]. Most of these protons are
+consumed by the assimilatory reduction of nitrate to
+organic nitrogen (see ﬁgure 5.1.5). The inﬂuence of the
+nitrate uptake on Alk can also be understood by con-
+sidering the alternative deﬁnition of Alk (8.2.9), which
+shows that a decrease in the nitrate concentration in-
+creases Alk. While the dominant species at the pH of
+seawater is indeed HPO
+2/C0
+4 , it is not well established
+whether this is actually the species taken up by phyto-
+plankton or rather the uncharged H
+3PO4.
+50 100 150 200 250 300
+0
+5
+10
+15
+20
+25
+30
+35
+[CO3
+2-] (µmol kg-1)
+∂DIC/∂[H2CO3*] (mol/mol)
+∂DIC/∂[H2CO3*] = – 6.07 + 0.121·[CO 3
+2-] 
+Figure 8.3.4: Plot of the partial derivative of DIC with respect to
+[H2CO/C3
+3
+]: (@DIC/@[H2CO/C3
+3
+]) versus the concentration of the
+carbonate ion [CO 2/C0
+3 ]. Plotted are the surface ocean (< 50 m)
+data as obtained during the GEOSECS program.
+Panel 8.3.1: Derivation of the partial derivative @DIC/@[H2CO3
+*]
+We want to demonstrate the fact that the partial derivative
+@DIC=@[H
+2CO*
+3
+] is controlled by the CO 2/C0
+3 ion concen-
+tration and is about 20. We start by inserting the two ap-
+proximations for HCO
+/C0
+3
+and CO2/C0
+3 into (8.3.2) and by re-
+placing K0 /C1 pCO2 with [H2CO*
+3
+]. This gives
+[H2CO*
+3
+] /C25 K2
+K1
+(2 /C1 DIC /C0 Alk)2
+Alk /C0 DIC (1)
+The partial derivative of DIC with respect to [H 2CO*
+3
+]i s
+equal to the inverse of the partial derivative of [H 2CO*
+3
+]
+with respect to DIC. This gives
+@DIC
+@[H2CO*
+3
+] ¼ @[H2CO*
+3
+]
+@DIC
+/C18/C19 /C0 1
+/C25 K2
+K1
+@
+@DIC
+(2 /C1 DIC /C0 Alk)2
+Alk /C0 DIC
+/C18/C19/C18/C19 /C0 1 (2)
+Computing the derivative and substituting the DIC and
+Alk approximations back into the resulting equation gives
+@DIC
+@[H2CO*
+3
+] /C25 K1
+K2
+[CO2/C0
+3 ]2
+4[HCO/C0
+3
+][CO2/C0
+3 ] þ[HCO/C0
+3
+]2 (3)
+Inserting typical surface ocean concentrations for
+bicarbonate and carbonate gives a partial derivative
+of 20.
+It is, however, not yet evident why the carbonate ion
+content is the main controlling factor. In order to dem-
+onstrate this, we are going to simplify the equation
+even further. As the concentration of CO
+2/C0
+3 is much
+smaller than the concentration of HCO /C0
+3
+(see table
+8.2.4), the ﬁrst part of the denominator is much smaller
+than the second, i.e., 4[HCO
+/C0
+3
+][CO2/C0
+3 ] /C28 [HCO/C0
+3
+]2 and
+can thus be neglected. This results in:
+@DIC
+@[H2CO*
+3
+] /C25 K1
+K2
+[CO2/C0
+3 ]2
+[HCO/C0
+3
+]2 /C25 [CO2/C0
+3 ]
+[H2CO*
+3
+] /C25 20 (4)
+where we have made use of (8.3.2) to replace ( K2=
+K1Þ/C1ð [HCO/C0
+3
+]2=[CO2/C0
+3 ]) with [H 2CO*
+3
+]. Note from equa-
+tion (2) in this panel that this partial derivative is largely
+independent of temperature, but is largely controlled by
+variations in the Alk-to-DIC ratio.
+Carbon Cycle
+331

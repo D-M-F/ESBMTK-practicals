@@ -1,0 +1,142 @@
+in chapter 10, these spatial variations in the buffer factor
+have important implications for the uptake and storage
+of anthropogenic CO
+2.
+In summary, typical values for gDIC and gAlk in the
+surface oceans are
+9:5 low latitudes
+gDIC /C25 10 (8 :3:18)
+13:3 high latitudes
+/C0 8:9 low latitudes
+gAlk /C25/C0 9:4( 8 :3:19)
+/C0 12:6 high latitudes
+(see also table 8.3.1 and ﬁgure 8.3.6).
+Having established the sensitivity of pCO2 to DIC
+and Alk, we can now return to our thought experiment
+shown in table 8.3.2. In this experiment, we wanted to
+know how the biologically induced changes in DIC and
+Alk affect pCO
+2. We estimate the change in pCO2 by
+assuming that the effects of changes in DIC and Alk are
+independent of each other, and therefore additive.
+Solving both (8.3.14) and (8.3.15) for dlnpCO
+2 and then
+integrating the left and the right sides of the resulting
+equations gives:
+Z
+d ln pCO2 ¼ gDIC
+Z
+d ln DIC þ gAlk
+Z
+d ln Alk (8:3:20)
+Integrating (8.3.20) from an initial state ( i) to a ﬁnal
+state ( f ) and inserting mean ocean values for gDIC and
+gAlk yields:
+ln pCO f
+2
+/C25 ln pCO i
+2
+þ 10 (ln DIC f /C0 ln DIC i)
+/C0 9:4 (ln Alk f /C0 ln Alk i)
+(8:3:21)
+We estimate the ﬁnal state f of DIC and Alk as a result
+of the formation of organic matter from the change in
+phosphate, DPO
+3/C0
+4 ¼ [PO3/C0
+4 ] f /C0 [PO3/C0
+4 ]i:
+DIC f ¼ DIC i þ rC:PDPO3/C0
+4 (8:3:22)
+Alk f ¼ Alk i /C0 rN:PDPO3/C0
+4 (8:3:23)
+where rC:P ¼ 117 and rN:P ¼ 16 are the stoichiometric
+ratios of reaction (8.3.12). On the basis of approximation
+(8.3.21), we calculate that the removal of all phosphate
+present in this deep ocean water parcel, i.e., DPO
+3/C0
+4 ¼
+/C0 [PO3/C0
+4 ]i, lowers the pCO2 by more than 900 matm. Our
+approximate calculation is remarkably close to an esti-
+mate on the basis of a full carbon chemistry model,
+which predicts a decrease of 927 matm (table 8.3.2).
+As a last step, we adjust alkalinity to typical low-
+latitude surface values by forming mineral calcium car-
+bonate. The change in pCO
+2 can again be estimated
+using (8.3.21), but with DIC f given by
+DIC f ¼ DIC i þ 1
+2 (Alk
+f /C0 Alk i)( 8 :3:24)
+where we use the ﬁnal values obtained after the formation
+of organic matter (8.3.22) and (8.3.23) as our initial values,
+DIC
+i and Alki, respectively. We set Alk f to the observed
+value for low-latitude surface waters (see table 8.2.4). The
+formation of carbonates increases pCO
+2 slightly, such
+that a ﬁnal pCO2 value of about 350 matm is computed,
+close to the atmospheric pCO2 at the time when these
+DIC and Alk measurements were obtained (1988–1996).
+Vector Diagrams
+Another way to depict the various processes that affect
+pCO
+2 in the surface ocean is as vectors in a plot of DIC
+versus Alk (see inset in ﬁgure 8.3.5) [Baes, 1982]. The three
+major processes discussed form the following vectors:
+1. Gas exchange: When CO2 is transferred across the air-sea
+interface, the oceanic DIC changes proportionally, whereas
+Alk remains unaffected. Hence the vector is a vertical line
+with a length that is directly proportional to the number of
+molecules transferred.
+2. Soft-tissue pump: The formation of organic matter reduces
+DIC and increases Alk proportional to the ratio of carbon to
+nitrogen, or about /C0 117:16. Thus on a DIC versus Alk dia-
+gram, the vector forms a line with a slope of about /C0 7.3.
+3. Carbonate pump: When calcium carbonate is precipitated
+or dissolved, the water composition is changed along a line
+of slope
+1⁄2 on the diagram. As we have seen above, this is
+because the carbonate ion contributes two moles to Alk for
+each mole of DIC.
+A good example of the power of these vector diagrams
+is the depiction of our thought experiment of a deep
+water sample that was brought to the surface and
+adjusted to typical low-latitude values. Figure 8.3.5
+1900
+2000
+2100
+2200
+2200
+2300
+2400
+8
+10
+12
+14
+16
+60°S 40°S 20°S Eq 20°N 40°N 60°N
+-16
+-14
+-12
+-10
+-8
+PACIFIC OCEAN
+DIC (µmol kg-1)
+Alk (µmol kg-1)
+Alk factor (γAlk)
+Revelle factor (γDIC)
+DIC
+Alk
+Revelle 
+    factor
+Alkalinity 
+      factor
+Figure 8.3.6: Meridional proﬁles of DIC, Alk, buffer factor ( gDIC),
+and the alkalinity factor ( gAlk) in the surface ocean of the Paciﬁc.
+Based on data from the WOCE P16 meridional section along
+approximately 160
+/C14 W.
+334
+Chapter 8

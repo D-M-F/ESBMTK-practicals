@@ -1,0 +1,91 @@
+bition of air-sea gas exchange by sea ice, especially dur-
+ing winter.
+Figure 10.2.7 also reveals substantial meridional
+differences in vertical penetration of the anthropogenic
+CO
+2 signal. In the tropics, Cant rapidly decreases with
+depth, whereas the vertical penetration of the signal is
+much deeper in the subtropical and temperate lati-
+tudes. The symmetry breaks down further toward the
+poles. In the North Atlantic north of 60
+/C14 N, deep vertical
+penetration of Cant is found, with concentrations above
+10 mmol kg/C0 1 down to the bottom. In sharp contrast to
+this, only a shallow vertical penetration of anthropo-
+genic CO
+2 is found in the Southern Ocean south of
+50/C14 S and in the North Paciﬁc north of 50 /C14 N. Since
+anthropogenic CO 2 can be regarded as a conservative
+tracer, i.e., it is not affected by biological processes, its
+distribution in the interior is determined by ocean
+transport only. Can we understand the distribution
+exhibited by the reconstructed C
+ant based on what we
+have learned about ocean circulation in chapter 2?
+The shallow vertical penetration in the tropics and
+the deeper penetration in the subtropical and temperate
+zones are primarily reﬂecting the structure and venti-
+lation of the thermocline. The sharp contrast between
+the North Atlantic, the Southern Ocean, and the North
+Paciﬁc requires more discussion. The deep penetration
+of C
+ant into the deeper layers of the North Atlantic is
+clearly a consequence of the formation of Labrador Sea
+Water and North Atlantic Deep Water and the subse-
+quent transport of these water masses deep into the
+interior of the North Atlantic. In contrast, the absence
+of any deep water formation in the North Paciﬁc pre-
+vents deep penetration of C
+ant in this region.
+But why is the vertical penetration of Cant so low in
+the Southern Ocean, despite the fact that deep water
+formation is well known to occur around Antarctica?
+We have discussed already that surface waters in the
+Southern Ocean are lagging behind the atmospheric
+CO
+2 increase. This deﬁcit in anthropogenic CO2 is then
+aggravated by the fact that the sinking water entrains
+large amount of old waters containing little or no an-
+thropogenic CO
+2, leading to only a small Cant signal in
+Antarctic Bottom Water.
+Figure 10.2.8 shows dramatically the resulting differ-
+ences in column inventories of Cant, i.e., vertically inte-
+grated Cant. The highest column inventories are found
+in the mid-latitudes of the North Atlantic, and at mid-
+latitudes in the southern hemisphere. By contrast, the
+column inventories are smaller in the equatorial regions,
+and in the high-latitude Southern Ocean. Note that this
+distribution only reﬂects where anthropogenic CO
+2 is cur-
+rently stored, and not where it actually entered the ocean.
+Cant
+50
+40
+30
+20
+10
+5
+1000
+2000
+3000
+4000
+5000
+6000
+800
+0
+400
+0 5,000 10,000 25,000 20,00015,000 30,000
+Distance (km)
+Depth (m)Depth (m)
+60°N Eq 60°S30°N 30°S 60°S Eq 60°N 30°S 30°N
+PACIFICSOUTHERN OC.ATLANTIC
+Mid-Atl. Ridge
+Iceland
+Hawaii
+Aleutian Isl.
+Figure 10.2.7: Vertical section of reconstructed anthropogenic CO 2 (mmol kg/C0 1) along the track shown in ﬁgure 2.3.3a. See also color plate 8.
+Anthropogenic CO2 was estimated from the observed DIC distribution shown in ﬁgure 8.1.3a using the method described in the text
+[cf. Gruber et al. , 1996].
+411
+Carbon Cycle, CO 2, and Climate

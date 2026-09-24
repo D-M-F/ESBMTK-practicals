@@ -1,0 +1,43 @@
+ESBMTK PRACTICALS - LECTURER REVIEW PACK
+Prepared 24 September 2026
+
+Extract the ZIP first. Open the PDFs in order 00, 01, 02, 03, 04.
+No Python, Jupyter, Conda or package installation is needed.
+
+00_PyCO2SYS.pdf (8 pages)
+01_single_box_air_sea_CO2.pdf (17 pages)
+02_two_layer_ocean_carbon_pump.pdf (14 pages)
+03_boudreau_three_box_model.pdf (23 pages)
+04_pump_strength_OA_OAE.pdf (13 pages)
+
+WHAT IS INCLUDED
+
+Complete instructor text and solutions, all code, fresh execution outputs,
+figures and tables. All eight expandable notes are open. Notebook 04's
+optional workbook lookup has also been executed. Notebook 03 includes
+the linked optional sediment reference as an appendix.
+
+Notebook 01 includes static views of the interactive carbonate explorer.
+Open 01_carbonate_explorer.html in a browser to rotate the surface or
+change sliders. It works offline without Jupyter.
+
+modelling_cheatsheet.pdf is the existing two-page coding reference.
+references/ contains directly cited local lecture/reference PDFs, diagrams,
+flux worksheets and source/reference text. Markdown and Python files are
+plain text and can be opened in any text editor; they need not be run.
+External web references still require internet. Some PDF viewers restrict
+local-file links; the same files can be opened directly from the folder.
+
+SCOPE AND EXECUTION
+
+These are snapshots of the current core instructor notebooks 00-04.
+The dormant attribution/feedback extension and separate 05 are excluded.
+Sources, teaching tasks and timetable are unchanged. These files contain
+instructor answers and are intended for lecturer review.
+
+Executed in the activated ESBMTK314 environment, Python 3.14.7.
+All five notebooks completed without cell errors; their embedded graph,
+inventory, forcing, restart and conservation checks passed. Passing these
+checks has the scientific limits explained in the notebooks.
+execution_manifest.json records package versions, source SHA-256 values,
+page counts and PDF SHA-256 values.

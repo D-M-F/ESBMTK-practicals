@@ -1,0 +1,31 @@
+If we add this anthropogenic perturbation ﬂux to
+the CO 2 ﬂuxes from the combined pump simulation,
+the resulting total ﬂux compares reasonably well
+with the observationally based estimates (ﬁgure 8.5.1c).
+This suggests that the model is fundamentally able to
+represent the biological and thermally driven compo-
+nents. We therefore conclude that our model-based
+result of generally competing effects on air-sea ﬂuxes of
+CO
+2 arising from thermal and biological forcing applies
+also to the real world. This conclusion has major im-
+plications for how the ocean responds to changes in
+climate, as any change in meteorological forcing im-
+pacts both the thermal and biological components of
+air-sea gas exchange. We will show in chapter 10, for
+example, that future climate change will lead to a
+substantial thermally forced reduction in the uptake of
+anthropogenic CO
+2 from the atmosphere. Climate-in-
+duced changes in the biological forcing, however, will
+lead to an enhancement of this uptake, albeit of smaller
+absolute magnitude than the thermally forced reduc-
+tion, causing the total uptake to lie in between the
+thermally and biologically forced solutions. The exact
+magnitude of these climate change–induced changes in
+the uptake of anthropogenic CO
+2 from the atmosphere
+is currently poorly understood and represents a major
+research issue.
+354
+Chapter 8

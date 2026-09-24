@@ -1,0 +1,115 @@
+were only added for the convenience of setting the global
+mean surface concentration of each of the three pump
+components to zero. This is an arbitrary choice and has
+no inﬂuence on the interpretation, since the information
+of interest is contained in the gradients of these pump
+components from one place to another.
+It needs to be emphasized that DC
+soft and DCcarb refer
+only to the impact of ocean biology on sDIC in the
+absence of air-sea gas exchange. Therefore, these two
+components can be viewed as ‘‘potential’’ pumps. They
+differ from the common deﬁnition of these biological
+pumps, as the latter include also the impact of biology
+on the air-sea gas exchange component, i.e., DC
+bio
+gas ex
+[Volk and Hoffert , 1985; Toggweiler et al. , 2003a, b]. If we
+were able to estimate DCbio
+gas ex , we could add it to DCsoft
+and DCcarb and determine the complete contribution of
+these two processes. However, this is unfortunately not
+possible on the basis of observations. Below, we will use
+model results to undertake this split of DC
+gas ex
+and discuss the implications. Another argument in
+favor of the pump separation adopted here is that it
+clearly separates the inﬂuence of air-sea gas exchange
+from the inﬂuence of processes that only redistrib-
+ute sDIC internally within the ocean. This can be thought
+of as separating the closed system response (no exchange
+with the atmosphere) from the open system response
+(including exchange with the atmosphere) to processes
+that lead to perturbation in the oceanic carbon cycle.
+We will now discuss the contribution of each of these
+pumps to the observed distribution of sDIC in turn,
+beginning with the soft-tissue pump. The major focus
+of the discussion will be on the contribution of the gas
+exchange pump to the sDIC distribution, which holds
+interesting surprises.
+The Biological Pumps
+Figure 8.4.2 reveals that the soft-tissue pump in the
+absence of air-sea exchange, DC
+soft, is responsible for
+about 215 mmol kg/C0 1 (70%) of the surface-to-deep gra-
+dient of preindustrial sDIC of about 305 mmol kg/C0 1. The
+carbonate pump, DCcarb, accounts for approximately
+60 mmol kg/C0 1 (20%) of the observed gradient, and the
+gas exchange pump, DCgas ex , for the remainder.
+The dominance of the soft-tissue pump in creating the
+vertical gradient in preindustrial sDIC is not surprising,
+since we have seen this dominance already expressed in
+the strong covariation between sDIC and phosphate
+(ﬁgure 8.1.4a). The substantially smaller contribution of
+the carbonate pump will be conﬁrmed in chapter 9,
+where we will show that the downward transport of
+carbon as CaCO
+3 is about 10 times smaller than the
+downward transport of organic matter [ Sarmiento et al .,
+2002]. Figures 8.4.3a and b show the contribution of the
+biological pumps in the different ocean basins. Again,
+the soft-tissue and carbonate pump contributions exhibit
+the expected pattern of increasing contributions of these
+pumps in the deep waters along the ﬂow path of the
+lower limb of the global-scale overturning circulation
+(ﬁgure 2.4.11).
+A more detailed inspection of ﬁgure 8.4.3 reveals that
+the two biological pumps have quite different vertical
+structures. Almost the entire surface-to-deep gradient
+in the soft-tissue component, DC
+soft, occurs in the main
+thermocline, with little additional contribution below
+1000 m. By contrast, the contribution of the carbonate
+pump component, DC
+carb, to the variability of prein-
+dustrial sDIC in the main thermocline is relatively
+small (<40mmol kg/C0 1). However, DCcarb increases slowly
+with depth below 1000 m and reaches a maximum at
+depths between 2000 to 6000 m. This is signiﬁcantly
+deeper than the maximum of DC
+soft, which occurs at
+about 1000 m.
+The difference between DCsoft and DCcarb is particu-
+larly striking in the Atlantic basin, where DCcarb grad-
+ually increases all the way to the bottom, whereas DCsoft
+shows a pronounced maximum in intermediate waters
+at around 1000 m. The maximum in DC
+carb shoals from
+the Atlantic to the Indian and Paciﬁc Oceans but still
+occurs signiﬁcantly deeper than the maximum in
+DC
+soft. This indicates that the formation and dissolution
+of calcium carbonate is a process independent from the
+formation and remineralization of organic matter. We
+will discuss the cycling of calcium carbonate in more
+detail in the following chapter, but we can point out
+here already that the spatial distribution of DC
+carb is
+ -100 0 100 200 300 400
+0
+1000
+2000
+3000
+4000
+5000
+depth (m)
+∆Csoft
+ 
+∆sDIC (µmol kg-1)
+∆Cgas-ex
+∆Ccarb
+Figure 8.4.2: Global mean proﬁles of the three main carbon
+pumps. The data are plotted cumulatively. Based on
+GLODAP data [ Key et al ., 1994].
+345
+Carbon Cycle

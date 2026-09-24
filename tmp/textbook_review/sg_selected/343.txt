@@ -1,0 +1,112 @@
+form bicarbonate and carbonate ions. This topic will be
+covered in section 8.2. We will then investigate the
+controls on surface ocean pCO
+2 in detail in section 8.3.
+Although atmospheric CO 2 is controlled by surface
+ocean properties (i.e., temperature, salinity, DIC, and
+Alk), it is the deep ocean concentrations of DIC and Alk
+that ultimately determine the surface concentrations of
+these two chemicals and hence atmospheric CO
+2. Fig-
+ure 8.1.2 shows that the surface concentration of DIC is
+about 15% lower than deep ocean concentrations, while
+the gradient for Alk amounts to only about 5%. What
+are the mechanisms that maintain these gradients
+against the continuous action of ocean transport and
+mixing, which try to homogenize the ocean tracer dis-
+tributions? Since these mechanisms operate against a
+gradient, they are often referred to as ‘‘pumps.’’ The
+importance of these pumps becomes immediately clear
+when we turn them off and allow the ocean to ho-
+mogenize completely (cf. also ﬁgure 4.1.3). The three-
+box model described in chapter 1 (ﬁgure 1.2.5) predicts
+that atmospheric CO
+2 would rise from the preindustrial
+level of about 280 ppm to more than 420 ppm, i.e., an
+increase of about 50% [Gruber and Sarmiento , 2002]!
+Given the importance of carbon for organisms, we
+expect that ocean biology constitutes such a pump. This
+would imply that DIC and Alk should have a distribution
+similar to phosphate. This indeed appears to be the case
+when we compare the sections of DIC and Alk (ﬁgures
+8.1.3) with those of nitrate and phosphate (ﬁgure 5.1.2).
+Note that we normalized DIC and Alk here to constant
+salinity in order to remove variations due to the addition
+and removal of freshwater by precipitation and evapo-
+ration. We will be using the symbols sDIC and sAlk to
+distinguish these salinity-normalized concentrations (see
+detailed discussion in the next section below). Is biology
+the whole answer to our question of what causes the
+vertical DIC variations? If biological processes were the
+only ones affecting phosphate and sDIC, then all oceanic
+observations would lie on a single line on a plot of sDIC
+versus phosphate. This is because plants appear to take
+up CO
+2 in a nearly constant ratio relative to phosphate
+(see discussion in panel 4.2.1). During respiration and
+remineralization processes, both carbon and phosphate
+are then returned in dissolved inorganic form to the
+seawater in the same ratios (see discussion on stoichio-
+metric ratios in chapter 5).
+Figure 8.1.4a reveals that this is only partially the case.
+While most of the points indeed lie clustered around a
+line with a slope predicted from the stoichiometric ratio
+of photosynthesis and remineralization, the data also
+exhibit substantial systematic offsets from such a trend.
+In general, the data lie below the biological trend line for
+low concentrations and lie above the trend line for high
+concentrations. Clearly, processes other than photo-
+synthesis, respiration, and remineralization play a role
+in creating the variations seen in sDIC. As shown in the
+inset, these processes are air-sea gas exchange and the
+formation and dissolution of mineral calcium carbon-
+ate, which affect sDIC but do not change phosphate. For
+example, given the strong relationship between sDIC
+and temperature (ﬁgure 8.1.4b), which follows roughly
+an expected trend deﬁned by the temperature sensitivity
+of the DIC concentration in equilibrium with a ﬁxed
+atmospheric CO
+2, variations in temperature quite
+clearly must play a role as well. Determination of the
+relative role of these processes in controlling the distri-
+bution of DIC will be covered in section 8.4.
+What about the processes controlling alkalinity? Given
+the much smaller variations in sAlk relative to the vari-
+ations in sDIC (ﬁgures 8.1.2 and 8.1.3), one might think
+that these processes are not particularly important in
+controlling atmospheric CO
+2. However, on timescales
+of millenia and longer, such as associated with the
+glacial-interglacial changes in atmospheric CO
+2, the
+cycling of alkalinity within the ocean and its sediments
+emerges as a key component controlling atmospheric
+CO
+2. The main processes controlling the cycling of al-
+kalinity are the biological production of mineral cal-
+cium carbonates (CaCO
+3) in the surface ocean and
+dissolution of these minerals in the water column and
+in the sediments. We will introduce the basic chemistry
+of these reactions in this chapter, but discuss the
+0
+1000
+2000
+3000
+4000
+5000
+Depth (m)
+2000 2100 2200 2300 2400
+DIC, Alk (µmol kg-1)
+DIC
+sDIC
+Alk
+sAlk
+Figure 8.1.2: Horizontally averaged proﬁles of DIC and Alk in the
+global oceans. Also shown are the proﬁles of their salinity normalized
+concentrations, sDIC, and sAlk, computed by dividing the measured
+concentrations by the measured salinity and then multiplying the
+result with a standard salinity of 35. Based on the gridded climato-
+logical data from the GLODAP project [ Key et al ., 2004].
+320
+Chapter 8

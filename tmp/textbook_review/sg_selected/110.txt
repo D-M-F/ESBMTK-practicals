@@ -1,0 +1,109 @@
+value of UA is given by Woolf and Thorpe [1991] for four
+gases:
+UN2 ¼ 7:2ms /C0 1
+UO2 ¼ 9:0ms /C0 1
+UCO2 ¼ 49 m s/C0 1
+UAr ¼ 9:6ms /C0 1
+ð3:3:26Þ
+The fractional supersaturation for a typical wind speed
+of 7.5 m s
+/C0 1 is relatively modest: 1.1% for nitrogen,
+0.7% for oxygen, 0.02 % for CO 2, and 0.61% for Ar.
+Bubbles have a much smaller impact on CO 2 than the
+other gases because it is the most soluble gas of the
+four. In the ﬁnal section of this chapter, we will use
+equations (3.3.24) to (3.3.26) to estimate the effect of
+bubbles on the supersaturation. However, it should be
+kept in mind that there is no consensus on how to
+represent the impact of bubbles either on the exchange
+rate k
+w or on the supersaturation De. Many models have
+been proposed, and the observations are not consistent
+in indicating which does the best at representing the
+observations [e.g., Emerson et al. , 1995, 1997; Farmer
+et al., 1993; Keeling, 1993b; Schudlich and Emerson , 1996;
+Spitzer and Jenkins , 1989; Wallace and Wirick , 1992;
+Woolf, 1997; Woolf and Thorpe , 1991].
+A ﬁnal point: in this chapter, as in most studies of gas
+ﬂuxes, we are interested in determining the average gas
+ﬂux over some period of time and region of space over
+which the wind speed and concentrations of the gas in
+the ocean and partial pressure in the air are varying
+in time. Until recently, the long-term average gas ﬂux
+was commonly estimated by separately determining
+the long-term average wind speed and concentration
+anomaly and then plugging these into the correspond-
+ing gas transfer velocity and gas exchange formulations.
+The ﬂuxes calculated by this incorrect procedure are
+biased low relative to what one obtains if one follows the
+correct procedure of using the instantaneous wind
+speed and concentration anomaly to determine an in-
+stantaneous gas ﬂux, and then takes a long-term average
+of this instantaneous gas ﬂux. Panel 3.3.1 provides a
+detailed explanation of this important problem and
+the difference that it makes to the answer that one
+obtains.
+3.4 Applications
+We now address the questions that were raised in the
+introduction to this chapter about the distributions of
+oxygen, carbon dioxide, and nitrous oxide. We begin
+with a brief overview of the biological and solubility
+processes that we need to be aware of and then proceed
+to a more detailed application of our gas exchange
+models to provide a quantitative analysis.
+We saw in chapter 1 that the synthesis of organic
+matter in the ocean by phytoplankton can be rep-
+resented by the reaction
+106CO2 þ 16HNO3 þ H3PO4 þ 78H2O
+Ð C106H175O42N16P þ 150O2:
+Remineralization is the reverse of this reaction. The net
+synthesis of organic matter thus consumes CO
+2 and in-
+creases O 2. By contrast, remineralization of organic
+matter consumes O 2 and increases CO 2. The impact of
+these processes on the air-sea gas ﬂuxes will depend on
+which predominates in the surface ocean. One would
+generally expect organic matter synthesis to predomi-
+nate over remineralization in the well-lit surface layers,
+and for remineralization to predominate in the thermo-
+cline and deep ocean. This being the case, biology should
+generally lead to uptake of CO
+2 from the atmosphere and
+release of O2 back to the atmosphere. However, there are
+many situations where rapid upward mixing or upwell-
+ing of thermocline and deep waters overwhelms the
+surface ocean and leads to CO
+2 release to the atmosphere
+and O2 uptake from the atmosphere.
+Nitrous oxide N 2O is a special case of a gas that is
+produced only during the process of remineralization
+as a minor byproduct of the oxidation of organic
+nitrogen (see chapter 5). Photosynthesis neither pro-
+duces nor consumes this gas. The ultimate fate of ni-
+trous oxide is destruction in the atmosphere, which
+occurs on a timescale of order 120 years [ Prather and
+Ehhalt, 2001].
+The inﬂuence of solubility on the air-sea gas exchange
+depends primarily on the temperature sensitivity illus-
+trated in ﬁgure 3.2.1. Heating of the ocean reduces
+the solubility, whereas cooling increases it. Thus, if the
+surface ocean is allowed to saturate with a gas at some
+temperature and then is heated, the water will be-
+come supersaturated and degassing will result. Con-
+versely, cooling of the water will result in uptake from
+the atmosphere. We will refer to these solubility effects
+as the ‘‘thermal component.’’ Changes in salinity by
+evaporation, rainfall, and river input also affect the sol-
+ubility, but are much smaller than the thermal effects.
+We turn now to a discussion of the oxygen super-
+saturation of order 3% observed over much of the ocean
+during the WOCE program (ﬁgure 3.1.2; cf. also map
+of ﬁgure 3.1.1). A full characterization of this su-
+persaturation requires careful consideration of the
+spatial and temporal variability of all the parameters
+that affect the gas exchange. We show how this might
+be done by considering here a simple example using
+global mean values for all the relevant parameters.
+Two processes that we consider ﬁrst are the skin
+Air-Sea Interface
+95

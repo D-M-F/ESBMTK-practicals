@@ -1,0 +1,98 @@
+almost all of this ‘‘excess’’ DCsoft and DCcarb, reducing
+sDIC accordingly. This reduction is apparently of very
+similar magnitude to the change in sDIC required to
+accommodate the temperature change. Therefore, these
+waters have to exchange only limited amounts of CO
+2
+with the atmosphere to remain near equilibrium with
+the atmosphere.
+In the North Atlantic, the contributions of DC
+soft and
+DCcarb to surface sDIC variations are much smaller,
+indicating a lesser degree of biological compensation
+for the thermally driven CO
+2 ﬂuxes. This creates a
+strong tendency for the North Atlantic to take up CO 2
+from the atmosphere. Figure 8.4.6 illustrates this dif-
+ference between surface waters of the North Atlantic
+and Southern Ocean more explicitly by plotting the
+DC
+soft for typical surface waters as a function of tem-
+perature. Also shown are isolines of calculated pCO2
+assuming a constant alkalinity and a ﬁxed background
+DIC to which DC
+soft was added according to the value
+given on the ordinate. Although North Atlantic surface
+waters are warmer than Antarctic surface waters, the
+much lower DC
+soft concentration of the North Atlantic
+surface waters leads to their having much lower pCO2
+than that computed for Antarctic surface waters. This
+gives the North Atlantic surface waters a large potential
+to take up CO
+2 from the atmosphere. By contrast, the
+Antarctic surface waters are near preindustrial pCO2,a s
+are typical tropical and temperate surface waters. These
+waters, therefore, have to exchange little CO
+2 with the
+atmosphere as they are converted from one to another.
+The reason for this different behavior of the North
+Atlantic is the global-scale meridional overturning cir-
+culation, which feeds low-nutrient surface waters from
+the subtropics into the NADW formation region. On
+the way, these waters are giving off large amounts of
+heat, leading to a strong cooling [ Schmitz, 1996]. These
+waters remain near the surface for a sufﬁciently long
+time, so that the slow kinetics of air-sea gas exchange
+does not impede the uptake of substantial amounts of
+CO
+2 from the atmosphere. This uptake from the at-
+mosphere can occur because the cooling occurs without
+excessive entrainment of nutrients from below and
+with it respired CO
+2 as is happening in the Southern
+Ocean. The lack of nutrient entrainment in the North
+350
+150
+200
+250
+300
+100
+50
+∆Csoft (µmol kg-1)
+0
+01 0 86422 0 18161412 28 262422
+Temperature (°C)
+1500
+500
+700
+800
+600
+1000
+200
+400
+450
+250
+300
+350
+150100
+Antarctic 
+surface
+waters
+NADW 
+source waters
+Tropical and
+temperate
+surface
+waters
+pre-industrial pCO
+2
+Figure 8.4.6: Contours of CO 2 partial pressure (in matm) for a water sample with salinity of 35, a preindustrial DIC
+concentration of 1900 mmol kg/C0 1, and an alkalinity of 2310 mmol kg/C0 1, as a function of water temperature and phosphate
+content (and hence also DCsoft content). The heavy contour is that representing the preindustrial atmosphere (280 matm).
+The important point here is that the high content of DCsoft compensates for the low temperature of Antarctic surface waters,
+giving them nearly the same pCO2 as warm nutrient-free surface water. By contrast, because of their lower DCsoft content,
+surface waters in the northern Atlantic take up CO 2 given off to the atmosphere by other regions of the ocean. Adapted
+from Broecker and Peng [1992].
+351
+Carbon Cycle

@@ -1,0 +1,81 @@
+if the ocean mixed extremely rapidly, the fraction taken
+up by the ocean without further reaction with the
+CaCO
+3 in the sediments would only be around 80 to
+85%, substantially smaller than the 98% that would be
+predicted from the present distribution. This rather
+surprising result is caused by one of the many pecu-
+liarities of the oceanic CO
+2 system. In the following
+subsection, we will discuss brieﬂy the greenhouse effect
+and explain why it is so important for climate.
+Greenhouse Effect
+Climate and the biogeochemical cycling of major ele-
+ments on Earth are tightly interwoven. One of the most
+important coupling points exists in the biogeochemical
+controls on the composition of Earth’s atmosphere, in
+particular of those gases that interact with solar and
+terrestrial radiation and change how the energy is re-
+distributed within the climate system. Those gases that
+absorb energy at infrared wavelengths typical of ter-
+restrial radiation are called greenhouse gases , with CO
+2
+being one of the most important ones.
+Biogeochemical cycles can also inﬂuence the physi-
+cal climate system through changes in other climate-
+relevant properties at the Earth’s surface, e.g., by chang-
+ing the albedo, i.e., the fraction of shortwave radiation
+from the sun that is directly reﬂected back; or by in-
+teracting with the hydrological cycle, altering the latent
+heat ﬂuxes associated with condensation and evapora-
+tion (see ﬁgure 10.1.3 and, e.g., Betts [2000]). We will
+limit our discussion here to the greenhouse effect.
+The Earth receives short-wavelength radiation emit-
+ted from the sun, and radiates this energy back to space
+at longer wavelengths. Figure 10.1.3 shows the ﬂow of
+Vostok
+a b
+cd
+-400,000 -300,000 -200,000 -100,000 0
+Time (Calendar years)
+-25,000 -20,000 -15,000 -10,000 -5,000 0
+150
+200
+250
+300
+350
+400
+atmospheric CO2 (ppm)
+Dome C
+Taylor Dome
+Taylor Dome
+Time (Calendar years)
+1000 1200 1400 1600 1800 2000
+Time (Calendar years)
+Law Dome
+Siple Dome
+D47 & D57
+H15
+Taylor Dome
+1950 1960 1970 1980 1990 2000
+atmospheric CO2 (ppm)
+150
+200
+250
+300
+350
+400
+Time (Calendar years)
+Mauna Loa
+Figure 10.1.2: Variations in the atmospheric CO 2 concentration over time based on ice core reconstructions and direct observations since
+1958. (a) CO2 variations over the last 400 kyr (1 kyr¼ 1000 years). (b) CO2 variations from 25,000 BC to present. (c) CO2 variations during the last
+1000 years as reconstructed from Antarctic ice cores. (d) CO 2 variations during the last 50 years as directly measured in the atmosphere at
+Mauna Loa, Hawaii. This comparison illustrates that the onset of the industrial revolution led to a dramatic increase of atmospheric CO2 after a
+period of relatively stable atmospheric CO 2 during the previous 10,000 years. The present atmospheric CO 2 level is unparalleled in the last
+400,000 years. More than 10,000 years ago, atmospheric CO 2 showed relatively regular variations associated with glacial-interglacial cycles.
+During the last four glacial maxima, atmospheric CO 2 concentrations were at their lowest concentration around 180 ppm, whereas during the
+interglacial periods, atmospheric CO 2 concentrations were near 280 ppm. The Mauna Loa data are from Keeling and Whorf [1998], the Law
+Dome, Antarctica, data from Etheridge et al. [1996], the Taylor Dome, Antarctica, data from Inderm€uhle et al. [1999, 2000], the Dome C data from
+Monnin et al. [2002], and the Vostok, Antarctica, data from Petit et al. [1999].
+394
+Chapter 10

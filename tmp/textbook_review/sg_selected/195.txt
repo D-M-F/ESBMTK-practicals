@@ -1,0 +1,112 @@
+low-latitude surface box gives for the low-latitude or-
+ganic matter export and deep water remineralization
+term F
+l the expression:
+Fl ¼ T /C1Cd (5:1:6)
+where T is the rate of upwelling associated with the
+thermohaline overturning, and Cd is the deep ocean
+nutrient concentration. Recall that this model ignores
+sediment burial, so the ﬂux of organic matter to the
+deep ocean is equal to the rate of remineralization in
+the deep ocean. This equation tells us that the export
+of organic matter from the low-latitude surface box is
+equal to the nutrient input by upwelling.
+The high-latitude surface box also has an organic
+matter export ﬂux and deep water remineralization
+equal to the net input of nutrients by ocean circulation.
+However, the expression is more complicated because
+the high-latitude nutrient concentration C
+h is not zero:
+Fh ¼ fhd /C1Cd /C0 ( fhd þ T ) /C1Ch (5:1:7)
+The transport term fhd represents the two-way exchange
+of surface high-latitude waters with the deep ocean. It
+brings deep ocean water to the surface and exports
+surface high-latitude water to the deep ocean in com-
+bination with the thermohaline transport term T.
+Summing (5.1.6) and (5.1.7) and solving them for the
+deep ocean concentration gives the expression
+Cd ¼ Ch þ Fl þ Fh
+fhd þ T (5:1:8)
+From this we see that the deep ocean concentration is
+made up of the high latitude concentration C
+h brought
+in from the surface outcrop region, which is the pre-
+formed concentration, C
+preformed, and a second compo-
+nent due to the remineralization of organic matter di-
+vided by the total rate of deep water formation. This
+second term is equal to DC
+remin. The ﬁrst problem we
+discuss in section 5.2 is how to separate the preformed
+component from the remineralized component. The
+most useful tracer for this purpose is oxygen, because
+we are able to estimate its surface, i.e., preformed,
+concentration. We do this by assuming it is at or near
+equilibrium with the atmosphere.
+The second problem we discuss in section 5.2 is how
+to estimate the rate of organic matter remineralization
+based on the rate of oxygen utilization. Rearranging
+(5.1.8) to solve for the sum of the two export ﬂuxes,
+which in steady state are equal to the total interior
+ocean remineralization rate, gives the expression
+Fl þ Fh ¼ (Cd /C0 Ch) /C1( fhd þ T )( 5 :1:9)
+We can estimate the rate of remineralization if we
+know the portion of the concentration that is due to
+remineralization, i.e., the difference between in situ and
+preformed concentration, this being the solution to the
+ﬁrst problem discussed in section 5.2, and if we know
+the rate of ocean circulation. The problem of estimating
+the remineralization rate from oxygen thus reduces to
+determining the rate of ocean circulation.
+The three-box model is, of course, highly simpliﬁed.
+The actual distribution of nutrients in the deep ocean
+results from a complex interplay between the layered
+pattern of thermocline and deep ocean circulation dis-
+cussed in chapter 2, and the remineralization of organic
+matter exported from the surface ocean. We use ob-
+servations of tracers to help us determine ocean circu-
+lation rates.
+Dissolved and Particulate Organic Matter
+Remineralization cannot occur without a continu-
+ous supply of organic matter. Chemical oceanogra-
+phers generally classify organic matter as either partic-
+ulate (POM) or dissolved ( DOM). DOM is operationally
+deﬁned as the component of organic matter that passes
+through a ﬁlter of a given pore size, commonly 0.45 mm.
+However, this deﬁnition is not entirely satisfactory. For
+one thing, such a ﬁlter lets through many or most of the
+bacteria [ Lee and Fuhrman , 1987]. Bacteria can only be
+removed by a 0.2 or 0.4 mm pore membrane ﬁlter. For
+another thing, even this smaller size range allows col-
+loids through (see review by Fuhrman [1992]). Colloids
+have been operationally deﬁned as particles with a mo-
+lecular weight above 10,000 and having a size smaller
+than about 0.4 mm[ Baskaran et al ., 1992]. To complicate
+matters, the measurement of organic matter, except in
+coastal environments, is now often made on water
+samples that have not been ﬁltered. The measurement
+that is obtained is thus total organic matter ( TOM). This
+is done so as to avoid problems with contamination that
+arise from handling the samples, and because in open
+ocean environments, the contribution from POM is very
+small, so that DOM is very nearly equal to TOM there
+[Sharp et al., 1993; Sharp, 2002]. In coastal waters, where
+the contribution from POM is large, samples are usually
+ﬁltered. To avoid confusion, we will continue to use the
+term DOM, even when the actual measurement was
+actually TOM.
+Although the separation of organic matter into DOM
+and POM is largely driven by its operational simplicity,
+one of the primary merits is that the resulting DOM
+includes all organic matter that is either truly dissolved
+or in particulate form, but nonsinking. We can there-
+fore regard DOM as that component of organic matter
+that is transported by ocean circulation and mixing,
+whereas POM is that component for which sinking is
+important. Another argument for this separation is that
+the pool sizes of these two components are very dif-
+ferent. In terms of carbon, the dissolved pool comprises
+about 700 Pg C (1 Pg ¼ 10
+15 g), which is larger than the
+180
+Chapter 5

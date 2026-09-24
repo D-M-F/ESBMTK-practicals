@@ -1,0 +1,93 @@
+Chapter 9
+Calcium Carbonate Cycle
+9.1 Introduction
+Mineral calcium carbonates (CaCO 3), which occur in
+the ocean mainly in the form of calcite, represent a
+signiﬁcant fraction of deep ocean sediments, and be-
+long to the most common minerals on Earth’s surface.
+Most mineral CaCO
+3 that is found at the bottom of the
+ocean is actually formed by organisms living in near-
+surface waters. The contribution of abiotic precipita-
+tion in today’s ocean is virtually zero, despite the fact
+that near-surface waters are supersaturated with re-
+spect to mineral CaCO
+3. The high relative contribution
+of CaCO 3 to open ocean sediments is a direct conse-
+quence of the observed fact that about half of the
+CaCO
+3 that leaves the surface ocean arrives at the
+sediments, and that about a third of this CaCO 3 is
+buried, i.e., about 13% of the surface export of CaCO 3 is
+lost from the ocean every year (ﬁgure 9.1.1). It is very
+instructive to contrast this high burial efﬁciency with
+the open ocean budget of organic matter (see table
+6.5.1), where 95% of the organic matter exported from
+the surface ocean is remineralized within the water
+column, and where only about 0.3% of surface organic
+matter export is buried.
+The high burial of CaCO
+3 leads to a signiﬁcant loss
+of Alk from the ocean, which is replaced by riverine
+input of Alk stemming from continental weathering,
+and a small input from hydrothermal vents (see ﬁgure
+9.1.1). The magnitude of these ﬂuxes is two orders of
+magnitude smaller than the exchange of carbon be-
+tween the atmosphere and ocean, and result in a resi-
+dence time of Alk in the ocean of about 10
+5 years
+[Sundquist, 1991]. These small ﬂuxes and the overall
+small contribution of the carbonate pump to the dis-
+tribution of DIC (see discussion in chapter 8) might
+lead to the conclusion that the oceanic cycling of min-
+eral CaCO
+3 is a relatively unimportant component of
+the ocean carbon cycle.
+On timescales longer than a few hundred years,
+however, the cycling of CaCO 3 in the ocean emerges as
+a crucial component of the global carbon cycle. This is
+because the vast pool of CaCO
+3 in the surface sedi-
+ments becomes an active pool of the ocean carbon cycle
+on these timescales. It is conceivable that imbalances
+between the river input of Alk and the loss by burial
+might develop on such long timescales, as these two
+processes appear to be independent. Changes in mean
+ocean alkalinity resulting from the interaction with the
+ocean sediments and from an imbalance between river
+input and ocean burial could be quite substantial,
+possibly resulting in large changes in atmospheric CO
+2.
+If such large changes in atmospheric CO 2 had ever
+occured, they would have threatened life on Earth either
+by overheating or by CO
+2 starvation of terrestrial plants.
+It turns out, however, that the interaction of the oceanic
+carbon cycle with the underlying sediments leads to a
+negative, i.e., stabilizing, feedback, which forces the
+system toward a balance between the input of Alk by
+weathering and the loss by burial. This feedback in-
+volves a change in the mean ocean DIC-to-Alk ratio
+such that the magnitude of CaCO
+3 burial on the sea-
+ﬂoor is adjusted until any imbalance with the weath-
+ering input is removed, a process termed calcium car-
+bonate compensation [Broecker and Peng , 1987]. Thus the
+ocean CaCO
+3 system acts as a ‘‘homeostat’’ which on
+millennial timescales and longer maintains a steady
+state by linking deep sea burial rate to the balance of
+continental weathering minus shallow water deposition
+[Broecker and Takahashi , 1977a; Archer, 1996a].
+On timescales of hundreds of thousands of years, a
+second feedback mechanism stabilizing atmospheric
+CO
+2 has been proposed. It links volcanic outgassing of
+CO2 and continental weathering of igneous rocks which
+consumes CO 2 (see reaction 10.2.12) and whose rates
+tend to depend on Earth’s temperature [ Walker et al .,
+1981; Berner et al., 1983; Broecker and Sanyal, 1998]. This
+feedback is thought to be provided through the police
+action of atmospheric CO
+2. The hypothesis is that if the
+359

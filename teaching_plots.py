@@ -4,6 +4,77 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from esbmtk import gas_exchange_fluxes
 
+def plot_carbonate_process_plane(params, *, show_processes=False):
+    """Local chemistry at the workbook L_b state, before exchange/transport.
+
+    DIC is in umol C/kg and TA in ueq/kg. ESBMTK stores pressure in bar;
+    PyCO2SYS requires dbar. This figure is not a model integration or restart.
+    The default supplies an unannotated exercise; arrows are instructor-only.
+    """
+    import PyCO2SYS as pyco2
+    from esbmtk import Q_
+
+    box = params['boxes']['L_b']
+    dic0 = Q_(box['dic']).to('umol/kg').magnitude
+    ta0 = Q_(box['ta']).to('umol/kg').magnitude
+    settings = dict(temperature=box['temperature'], salinity=box['salinity'],
+                    pressure=10 * box['pressure'],
+                    opt_k_carbonic=params['opt_k_carbonic'],
+                    opt_pH_scale=params['opt_pH_scale'])
+
+    def pco2(dic, ta):
+        return pyco2.sys(par1=ta, par1_type=1, par2=dic, par2_type=2,
+                         **settings)['pCO2']
+
+    dic, ta = np.meshgrid(np.linspace(dic0 - 50, dic0 + 50, 81),
+                          np.linspace(ta0 - 80, ta0 + 80, 81))
+    fig, axis = plt.subplots(figsize=(8, 6))
+    contours = axis.contour(dic, ta, pco2(dic, ta), levels=12,
+                            colors='0.5', linewidths=0.8)
+    axis.clabel(contours, inline=True, fontsize=8, fmt='%g')
+    axis.plot(dic0, ta0, 'ko', label='Workbook reference (L_b)')
+    if show_processes:
+        # Equal 20 umol C/kg changes in the same water mass; model POC has no TA.
+        for label, ddic, dta, color in (
+            ('Model POC removal', -20, 0, '#1764ab'),
+            ('CaCO3 formation', -20, -40, '#b34b1b'),
+            ('CaCO3 dissolution', 20, 40, '#25824b'),
+        ):
+            axis.annotate('', xy=(dic0 + ddic, ta0 + dta), xytext=(dic0, ta0),
+                          arrowprops=dict(arrowstyle='->', color=color, lw=2.5))
+            change = float(pco2(dic0 + ddic, ta0 + dta) - pco2(dic0, ta0))
+            axis.plot([], [], color=color, lw=2.5,
+                      label=f'{label}: pCO2 change {change:+.1f} µatm')
+    axis.set(xlabel='DIC (µmol C/kg)', ylabel='TA (µeq/kg)',
+             title=('Local seawater pCO2 contours (µatm)\n'
+                    f"L_b: {box['temperature']:g} °C, salinity {box['salinity']:g}, "
+                    f"{box['pressure']:g} bar"))
+    axis.legend(loc='upper left', fontsize=9, framealpha=0.95)
+    fig.tight_layout()
+    plt.show()
+    return fig, axis
+
+
+def plot_external_forcings(cases, *, pulse_start=1800.0):
+    """Show the exact saved solver inputs before interpreting any response."""
+    fig, axes = plt.subplots(1, 3, figsize=(12, 3.3), layout='constrained')
+    for column, (label, units) in enumerate((('OA', 'Tmol C/yr'),
+                                            ('OAE', 'Tmol TA eq/yr'))):
+        case = cases[label]
+        time, flux = case.teaching_signal_time, case.teaching_signal_flux
+        axes[column].plot(time, flux / 1e12, color=f'C{column}')
+        axes[column].set(title=f'{label}: prescribed input', ylabel=units)
+        axes[2].plot(time, flux / np.max(flux), color=f'C{column}',
+                     linestyle='-' if column == 0 else '--', label=label)
+    axes[2].set(title='Same shape and timing', ylabel='Fraction of own peak')
+    axes[2].legend(frameon=False)
+    for axis in axes:
+        axis.axvline(pulse_start, color='0.5', linewidth=0.8, linestyle=':')
+        axis.set(xlabel='Model year', ylim=(0, None))
+        axis.grid(alpha=0.15)
+    return fig, axes
+
+
 def plot_matched_responses(cases, *, pulse_start=1800.0):
     """Four core diagnostic groups, each relative to its matched control."""
     control = cases['control']
@@ -145,7 +216,7 @@ def plot_figure4(model, forcing, *, reference=False, digitized=None, pulse_start
     ax[4].plot(model.time, -model.D_b.zsat.c, color='C0', label=r'$z_{sat}$')
     ax[4].plot(model.time, -model.D_b.zcc.c, color='C1', label=r'$z_{cc}$')
     ax[4].plot(model.time, -model.D_b.zsnow.c, color='C2', label=r'$z_{snow}$')
-    ax[5].plot(model.time, model.CO2_At.c * 1e6, color='C0', label='pCO2')
+    ax[5].plot(model.time, model.CO2_At.c * 1e6, color='C0', label='Atm CO2')
 
     signal = (
         model.carbon_signal if forcing == 'OA' else model.alkalinity_signal
@@ -190,13 +261,13 @@ def plot_figure4(model, forcing, *, reference=False, digitized=None, pulse_start
         'c) pH',
         'd) Air–sea gas exchange',
         'e) Carbonate horizons',
-        'f) Atmospheric pCO2',
+        'f) Atm CO2',
         f'g) {forcing} forcing',
         'h) Carbonate burial and dissolution',
     )
     ylabels = (
         'DIC (mmol kg$^{-1}$)',
-        'TA (mmol kg$^{-1}$)',
+        'TA (meq kg$^{-1}$)',
         'pH',
         'Flux (mol C yr$^{-1}$)',
         'Elevation (m)',

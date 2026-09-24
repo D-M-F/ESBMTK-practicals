@@ -1,0 +1,128 @@
+Although the strength of the coupling between pho-
+tosynthesis and calciﬁcation remains unclear, experi-
+mental results in the laboratory show a very clear de-
+pendence of calciﬁcation rates by coccolithophorids on
+the availability of aqueous CO
+2 [Riebesell et al., 2000], with
+calciﬁcation rates plummeting as the aqueous CO 2
+concentration increases. This strong calciﬁcation re-
+sponse has important implications for the future. The
+progressive increase in atmospheric CO
+2 has already
+increased the surface ocean CO 2 concentration sub-
+stantially (and correspondingly decreased the CO 2/C0
+3
+concentration) and this increase will likely continue into
+the foreseeable future (see chapter 10). It therefore has
+been suggested that marine rates of calciﬁcation might
+strongly decrease in the future [ Riebesell et al ., 2000],
+leading to a negative feedback for atmospheric CO
+2
+[Zondervan et al ., 2001]. This negative feedback arises
+because a decreasing rate of formation of CaCO 3 would
+tend to lower oceanic pCO2 (see discussion in section 8.3
+above), thereby increasing the uptake of CO 2 from the
+atmosphere and enhancing the oceanic mitigation of the
+anthropogenic perturbation of the global carbon cycle
+[Sarmiento and Gruber , 2002].
+It is interesting to point out that most of the organisms
+that precipitate CaCO
+3 in today’s open ocean are rela-
+tively young from an evolutionary perspective. The fossil
+record suggests that coccolithophorids emerged in the
+mid-Triassic, i.e., around 200 million years ago [ Bown
+et al., 2004] and rose to prominence after the Cenomanian/
+Turonian boundary, about 90 million years before present
+[Iglesias-Rodrı´guez et al., 2002b]. Similarly, planktonic fora-
+minifera do not appear in the fossil record until the mid-
+Jurassic, i.e., about 180 million years ago. Before that time,
+there were essentially no open ocean planktonic organisms
+that precipitated CaCO
+3. Only shallow water and benthic
+organisms formed biogenic CaCO3.
+Export Estimates
+Global estimates of current open ocean CaCO 3 pro-
+duction and export are of the order of 1 Pg C yr /C0 1 (see
+summary by Iglesias-Rodrı´guez et al . [2002a]). From an
+inventory of alkalinity and the residence time of various
+water masses, Milliman and Droxler [1996] estimated a
+global open ocean export of mineral carbonates of about
+0.7 Pg C yr
+/C0 1. Lee [2001], looking at the seasonal draw-
+down of potential alkalinity, found a lower-bound esti-
+mate for CaCO
+3 export of about 1.1 Pg C yr /C0 1. Most of
+the open ocean CaCO 3 export is believed to be in the
+form of calcite, driven primarily by coccolithophorids,
+although some recent studies in the Arabian Sea and
+equatorial Paciﬁc suggest a substantial contribution
+from foraminifera [ Iglesias-Rodrı´guez et al ., 2002a]. In
+contrast, aragonitic pteropods seem to account for only
+about 10% of the total open ocean carbonate export
+[Berner and Honjo , 1981; Fabry, 1990].
+Comparing these CaCO
+3 export estimates with our
+estimate of organic matter export of about 12 Pg C yr /C0 1
+(see chapters 4 and 5) reveals an inorganic-to-organic
+carbon export ratio of about 0.06 to 0.08, i.e., only 6 to 8%
+of the total carbon is exported out of the surface ocean in
+the form of CaCO
+3. Assuming that CaCO 3-precipitating
+organisms have an inorganic-to-organic carbon ratio of
+about 1:1 (as implied by a tight connection between
+photosynthesis and calciﬁcation), this ratio suggests also
+that only around 6 to 8% of the total organic matter
+export is driven by CaCO
+3-precipitating organisms.
+While the downward carbon transport in the form of
+CaCO
+3 may be a small component of the total downward
+transport of carbon by the two biological pumps, we
+have seen in chapter 5 that CaCO
+3 is singularly impor-
+tant as a ballast material, having the highest efﬁciency in
+transporting organic matter in particles through the
+thermocline and into the deep ocean.
+The low contribution of carbonate-secreting organ-
+isms such as coccolithophorids to carbon export stands
+in stark contrast to the export of opal, for which we have
+seen that diatoms may account for half or more of the
+export of organic matter (chapter 7). We have also seen
+that the opal-to-organic matter export ratio varies sub-
+stantially across oceanic regions (ﬁgure 7.2.4), with var-
+iations by more than a factor of ﬁve between the low
+latitudes and the Southern Ocean.
+Inorganic-to-Organic Carbon Export Ratio
+Is the inorganic-to-organic carbon export ratio as vari-
+able as the export ratio of opal to organic matter? There
+are only few and sparse sediment trap studies in the
+upper ocean that would permit us to draw a global
+picture. However, we can make use of the signals that
+the formation and export of organic matter and CaCO
+3
+leave on the distribution of tracers in the ocean, much
+as we used the tracer signals of the formation and ex-
+port of opal and organic matter to infer the opal-to-
+organic matter export ratio (see panel 7.2.1 in chapter
+7). Sarmiento et al . [2002] showed that the ratio of the
+upper ocean gradients of potential alkalinity and nitrate
+is equal to the inorganic-to-organic carbon export ratio
+if steady state is assumed and the data are averaged over
+large spatial scales. Recall that potential alkalinity, P
+Alk,
+is equal to Alk þ NO/C0
+3
+, and its variations are only gov-
+erned by the formation and dissolution of CaCO 3
+[Brewer et al ., 1975].
+Let us consider the vertical balance between a surface
+box s and a thermocline box th. The horizontal extent of
+these boxes is of the order of several 1000 kilometers,
+such that the horizontal exchange time is of the order of
+many years, much longer than the vertical exchange
+time, which is of the order of one year or shorter. In
+steady state, the downward export of organic carbon and
+CaCO
+3 needs to be equal to the upward supply of
+363
+Calcium Carbonate Cycle

@@ -1,0 +1,90 @@
+>100 mmol kg/C0 1 reduces pCO2 by more than 150 matm.
+This is enough to compensate for the warming effect.
+The drop of sDIC in spring is accompanied by equally
+precipitous nutrient decreases in nearly standard stoi-
+chiometric ratios. Thus, the sDIC drop likely can be
+attributed to the phytoplankton spring bloom typical of
+the northern North Atlantic (see discussion in chapter
+4). In conclusion, in the high latitudes of the North
+Atlantic, the seasonal changes of sDIC and pCO
+2 are
+dominated by biological processes, with temperature
+playing a lesser role.
+North Paciﬁc
+Seasonal changes in SST are somewhat larger in the
+North Paciﬁc than in the North Atlantic, largely be-
+cause North Atlantic SSTs do not get as cold in winter
+due to the large northward heat transport in this basin.
+This leads to a stronger winter-summer thermal forcing
+on pCO
+2, with values reaching well above 100 matm
+(ﬁgure 8.3.7b) across a wide swath of the high-latitude
+North Paciﬁc. Nevertheless, as was the case in the high-
+latitude North Atlantic, the surface ocean warming
+from winter to summer is accompanied by a reduction
+in surface ocean pCO
+2.
+Figure 8.3.13 shows the seasonal evolution of the
+upper ocean carbon cycle in the northwestern subarctic
+Paciﬁc in more detail (region from 50
+/C14 Nt o5 4 /C14 N, 162/C14 E
+to 170 /C14 E). Here, pCO2 and the concentrations of sDIC
+and nutrients are highest in winter and lowest during
+summer. Takahashi et al. [1993] attributed this to up-
+welling and entrainment of deep waters during winter
+and biological uptake in summer. Therefore, as in the
+North Atlantic, the sDIC reduction by biological uptake
+in spring and summer is large enough to outweigh the
+warming effect on pCO
+2.
+It is intriguing to compare the seasonal pattern of
+sDIC in the subarctic North Paciﬁc with that in the
+northern North Atlantic. The precipitous drop in sDIC
+and nutrients observed in springtime in the northern
+North Atlantic is absent in the subarctic Paciﬁc. Why is
+this the case? Since we attributed the observed draw-
+downs in both regions to the biological uptake of sDIC,
+these differences must be caused by differences in the
+seasonal evolution of phytoplankton activity. We have
+seen in chapter 4 that the North Atlantic supports a
+2150
+2050
+2000
+1950
+2100
+1900
+30
+20
+15
+10
+5
+0
+25
+–5
+Temperature (°C)
+JF
+a
+cd
+b
+MAMJ J ASOND
+J FMAMJ J ASOND
+J FMAMJ J ASOND
+J FMAMJ J ASOND
+100
+200
+0
+–50
+50
+150
+–100
+2.0
+2.5
+1.0
+0.5
+0.0
+1.5
+Figure 8.3.13: Seasonal changes of (a) temperature, (b) sea-air pCO2 difference, (c) sDIC, and (d) phosphate observed in the
+surface mixed layer waters of the northwestern subarctic Paciﬁc (50 /C14 N–54/C14 N; 162 /C14 E–170/C14 E). Circles represent actual observations,
+while the line was added to emphasize a general seasonal trend. Adapted from Takahashi et al . [1993].
+341
+Carbon Cycle

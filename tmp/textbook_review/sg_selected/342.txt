@@ -1,0 +1,106 @@
+8.1 Introduction
+A major motivation to understand the ocean carbon
+cycle is its importance in controlling atmospheric CO 2,
+which, in turn, is an important factor of the climate
+system due its greenhouse gas properties (see chapter
+10). How does the ocean exert this control? Are physical
+processes primarily responsible for controlling atmo-
+spheric CO
+2, or does marine biology play the dominant
+role?
+The ﬁrst step to answering these questions is to look
+at the surface ocean distribution of pCO2, because it is
+only the surface ocean that is in direct contact with the
+atmosphere and hence determines atmospheric pCO
+2.
+Figure 8.1.1 shows a global map of the annual mean
+surface distribution of the sea-air difference in the
+partial pressure of CO
+2 (DpCO2 ¼ pCOoc
+2
+/C0 pCOatm
+2
+; see
+also deﬁnition in equation (3.1.1)). The data show rel-
+atively wide bands of positive DpCO
+2, i.e., supersatu-
+rated waters, in the tropical regions, with maximum
+values attained in the eastern equatorial Paciﬁc and
+large bands of negative DpCO
+2, i.e., undersaturated
+waters, in the mid-latitudes. The high latitudes in the
+south have near zero DpCO
+2 values. The northern high
+latitudes exhibit a clear distinction between the North
+Paciﬁc (positive DpCO
+2) and the North Atlantic (nega-
+tive DpCO2). Since atmospheric CO 2 is relatively uni-
+form over the globe, the variability in DpCO2 is largely
+driven by variations in surface ocean pCO2. What con-
+trols the distribution of surface ocean pCO2?
+As we will see in detail below, variations in surface
+ocean pCO2 are determined by surface ocean tempera-
+ture, salinity, dissolved inorganic carbon ( DIC, the sum
+of all inorganic carbon species) and alkalinity ( Alk,a
+measure of the excess of bases over acids). Variations in
+these properties, and hence pCO
+2, stem from a complex
+interplay of chemical, biological, and physical pro-
+cesses. The transfer of CO
+2 between the atmosphere
+and the surface ocean tends to eliminate any air-sea
+pCO
+2 difference, but as we have seen at the end of
+chapter 3, it takes about 6 months to equilibrate a 40 m-
+thick surface layer with the atmosphere. This is long
+compared to the timescale of the biological and physical
+processes that tend to perturb the system. Why is the
+air-sea exchange of CO
+2 so slow compared with other
+gases like oxygen or nitrogen? We have already brieﬂy
+seen in chapter 3 that only about 1 out of 20 molecules
+that exchange with the atmosphere leads to a change in
+pCO
+2. In order to fully understand this, we must ﬁrst
+learn more about the reaction of CO 2 in seawater to
+20
+60
+4020
+40
+0
+-20
+0
+0
+-20-20
+0
+20
+0
+80
+0
+0
+0
+20
+20
+20
+-20
+-20
+-40
+-40 -60
+-20
+60
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+∆pCO2  (µatm)
+20°E
+Figure 8.1.1: Map of the annual mean sea-air difference of the partial pressure of CO 2. See also color plate 3. Based on data from Takahashi
+et al . [2002].
+Carbon Cycle
+319

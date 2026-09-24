@@ -1,0 +1,96 @@
+Stagnant Film Model
+We begin with a simple model of gas exchange which
+assumes that the suppression of turbulence at the air-sea
+interface leads to the formation of two stable stagnant
+ﬁlms of ﬁnite thickness, one in the atmosphere and one
+in the ocean, through which gases can diffuse only by
+molecular diffusivity e (see ﬁgure 3.3.1; cf. Whitman
+[1923]). Alternative more realistic but more complex
+models that will be discussed at the end of this section
+include the micrometeorological boundary layer model
+[Deacon, 1977], which assumes a more gradual transi-
+tion from interior turbulence to molecular diffusion at
+the interface; and the ﬁlm replacement model [ Danck-
+werts, 1951; Higbie, 1935], which assumes the existence
+of a ﬁlm that is periodically replaced by bulk ﬂuid.
+The ﬂuxes through the stagnant ﬁlms in ﬁgure 3.3.1
+can be obtained from Fick’s ﬁrst law, F ¼/C0 e@[A]=@z,
+where F has units of mmol m
+/C0 2 s/C0 1, ande in m2 s/C0 1 is the
+molecular diffusivity in the air or water, depending on
+which ﬁlm we are talking about. If there are no sources or
+sinks of A in the stagnant ﬁlm, the concentration gra-
+dient in the ﬁlm will be linear and we can represent the
+ﬂux by its ﬁnite difference form F ¼/C0 e /C1 D[A]=Dz,
+where D[A] is the concentration difference across the
+stagnant ﬁlm and Dz is its thickness. Henry’s law allows
+us to convert this equation to one in terms of partial
+pressures. We thus arrive at the following expressions for
+the gas exchange through the atmospheric stagnant ﬁlm:
+Fa ¼/C0 ka /C1 (pA
+a
+/C0 pA,0
+a
+) ¼/C0 ka
+SA
+/C1 ([A]a /C0 [A]0
+a
+)( 3 :3:1)
+where ka=SA ¼ "a=Dza and [A] a is equal to the satura-
+tion concentration [A]equilibrium of (3.1.1). For the oceanic
+stagnant ﬁlm we have
+Fw ¼/C0 kw /C1 ([A]0
+w
+/C0 [A]w)( 3 :3:2)
+Table 3.2.4
+Saturation concentration of gases in seawater at a salinity of 35.0 calculated from [A] ¼
+S
+A /C1 pA
+moist
+The solubilities are taken from table 3.2.3. The moist partial pressure is calculated from the dry air
+atmospheric mole fractions given in table 3.1.1 corrected to moist air using (7) from panel 3.2.1 and the
+saturation water vapor pressures given below and assuming a total atmospheric pressure of 1 atm. The
+saturation water vapor pressures were calculated with (8) from panel 3.2.1.
+T(
+/C14 C) 0 5 10 15 20 25 30
+Saturation Water Vapor Pressure pH2O
+P /C2 100%
+/C16/C17
+0.59% 0.84% 1.19% 1.65% 2.26% 3.07% 4.11%
+Concentrations in mmol m /C0 3
+N2 635.6 566.6 510.5 464.2 425.7 393.3 365.6
+Oa
+2
+359.1 316.5 282.1 253.9 230.5 211.0 194.4
+357.7 315.9 282.0 254.2 231.1 211.6 194.9
+CO
+2 23.37 19.26 16.09 13.60 11.61 10.00 8.66
+Ar 17.44 15.42 13.77 12.41 11.29 10.34 9.53
+Concentrations in mmol m/C0 3
+N2O 14.84 12.16 10.09 8.46 7.16 6.10 5.23
+Ne 8.11 7.76 7.46 7.19 6.94 6.72 6.50
+Kr 4.33 3.71 3.22 2.82 2.50 2.23 2.01
+CH
+4 3.44 3.00 2.64 2.35 2.12 1.92 1.76
+He 1.81 1.77 1.74 1.72 1.70 1.68 1.67
+aTwo results are given for oxygen. The upper one uses solubilities from table 3.2.3. The lower one is a direct
+calculation of the saturation concentration using the more accurate equation of Garcia and Gordon [1992],
+Osaturation
+2
+¼ (1000=22:3916) /C1 e‘ , where ‘ ¼ A0 þ A1 /C1 Ts þ A2 /C1 T2
+s þA3 /C1 T3
+s þA4 /C1 T4
+s þ A5 /C1 T5
+s þ S(B0 þB1 /C1 Ts þB2/C1
+T2
+s þB3 /C1 T3
+s ) þ C0 /C1 S2 and Ts ¼ ln[(298.15 /C0 T)/(273.15 þ T)], with T in /C14 C. The constants are:
+A0 A1 A2 A3 A4 A5
+2.00907 3.22014 4.05010 4.94457 /C0 0.256847 3.88767
+B0 B1 B2 B3 C0
+/C0 6.24523 /C2 10/C0 3 /C0 7.37614 /C2 10/C0 3 /C0 1.03410 /C2 10/C0 2 /C0 8.17083 /C2 10/C0 3 /C0 4.88682/C2 10/C0 7
+Note that this equation uses a molar volume of 22.3916 l mol /C0 1, rather than the ideal volume used in the
+Bunsen coefﬁcient calculations. The erroneous A3 /C1 T2
+s term in the original reference is left out.
+81
+Air-Sea Interface

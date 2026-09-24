@@ -1,0 +1,88 @@
+Jan Mar May Jul Sep Nov
+280
+300
+320
+340
+360
+380
+400
+420
+pCO2 (µatm)
+observed pCO2
+pCO2 at constant SST
+pCO2 at 
+  constant DIC
+ab
+Jan Mar May Jul Sep Nov
+280
+300
+320
+340
+360
+380
+400
+420
+BERMUDA: BATS HAWAII: HOT
+observed pCO2
+pCO2 at constant SST
+pCO2 at constant DIC
+Figure 8.3.10: The role of variations in SST and DIC in driving seasonal variations in surface ocean pCO2 in the subtropical gyres: (a) results
+for the BATS site, and (b) results for the HOT site. The solid line shows the results of a harmonic ﬁt to the observed seasonal variations of
+pCO
+2. The dashed line shows the expected pCO2 variations if sDIC is held constant at its annual mean of 1954 mmol kg/C0 1 (BATS) and
+1971 mmol kg/C0 1 (HOT). The dash-dotted line depicts the expected pCO2 variations in case SST is held constant at its annual mean of 23.1 /C14 C
+(BATS) and at 24.8 /C14 C (HOT).
+Jan Mar May Jul Sep Nov
+-2
+-1
+0
+1
+2
+3
+4
+Horizontal transport
+Diffusion
+Entrainment
+Jan Mar May Jul Sep Nov
+-6
+-4
+-2
+0
+2
+4
+Air-sea gas exchange
+Net Community Production
+c
+d
+Jan Mar May Jul Sep Nov
+0
+1
+2
+3
+4
+5
+6
+Fluxes (mol m-2 y-1)
+Diffusion
+Entrainment
+Horizontal transport
+Jan Mar May Jul Sep Nov
+-6
+-4
+-2
+0
+2
+4
+6
+Fluxes (mol m-2 y-1)
+Air-sea gas exchange
+Net Community Production
+a
+b
+BERMUDA: BATS HAWAII: HOT
+Figure 8.3.11: Diagnostically inferred contribution of the processes controlling the seasonal cycle of sDIC in the upper ocean cycle at (a–b)
+BATS and (c–d) HOT. The solid lines denote the computed curve for the standard set of parameters, and the dotted lines denote the
+upper and lower limit of the uncertainty intervals as evaluated from Monte Carlo simulations. Adapted from Gruber et al . [1998] and
+Keeling et al . [2004].
+339
+Carbon Cycle

@@ -1,0 +1,141 @@
+solubility, such an ocean would have uniform DIC con-
+centration, except for small variations induced by the ad-
+dition or removal of freshwater (ﬁgure 8.4.1a). These latter
+variations are largely eliminated by our using salinity-
+normalized DIC for our analysis.
+If we make the ocean isothermal, i.e., let it have con-
+stant temperature, and add biology to it, while still not
+permitting air-sea gas exchange to occur, sDIC will begin
+to show variations. In a case where we just have organic
+matter production by phytoplankton in the upper ocean
+followed by export and remineralization of this material
+at depth, sDIC would be directly proportional to the
+distribution of phosphate, with a slope that is equal to
+the C:P stoichiometric ratio of organic matter, r
+C:P (ﬁg-
+ure 8.4.1d). We can therefore identify the soft-tissue
+pump in the absence of gas exchange, DC
+soft, by looking
+at deviations of phosphate relative to a constant refer-
+ence value, [PO
+3/C0
+4 ]ref , which we set equal to the mean
+phosphate concentration in the surface ocean:
+DCsoft ¼ rC:P /C1 ([PO3/C0
+4 ] /C0 [PO3/C0
+4 ]ref )( 8 :4:1)
+Similarly, if the formation and dissolution of biogenic
+calcium carbonate were the only process affecting DIC
+in an isothermal ocean without air-sea gas exchange,
+variations of sDIC would be coupled entirely to varia-
+tions in sAlk, with a slope of 1:2 (ﬁgure 8.4.1g). We can
+thus identify the contribution of the carbonate pump in
+the absence of gas exchange, DC
+carb, by studying devi-
+ations of sAlk relative to a constant background value,
+sAlkref, chosen here to be the global mean sAlk in the
+surface ocean. In the real ocean, sAlk is also affected by
+the soft-tissue pump, and we therefore have to add a
+small correction that is proportional to nitrate:
+DCcarb ¼ 1
+2 (sAlk /C0 sAlk
+ref þ [NO/C0
+3
+] /C0 [NO/C0
+3
+]ref )( 8 :4:2)
+¼ 1
+2 (sAlk /C0 sAlk
+ref þ rN:P /C1 ([PO3/C0
+4 ] /C0 [PO3/C0
+4 ]ref ))
+(8:4:3)
+where we made use of the very tight coupling between
+the cycling of nitrate and phosphate (see discussion in
+chapter 5) to write our separation in terms of phosphate
+only. Therefore, the term r
+N:P /C1 ([PO3/C0
+4 ] /C0 [PO3/C0
+4 ]ref ) ac-
+counts for the impact of the soft-tissue pump on Alk.
+The sign of this correction term is positive, since the
+remineralization of organic matter decreases Alk.
+Brewer et al. [1975] introduced the term ‘‘potential al-
+kalinity’’ for this nitrate corrected alkalinity, i.e.,
+P
+Alk ¼ Alk þ NO/C0
+3
+. Therefore, except for the salinity
+normalization, DCcarb is equal to the difference between
+observed PAlk and a constant reference Pref
+Alk.
+Now, let us permit gas exchange with the atmosphere
+to occur. In our ﬁrst case of an abiological ocean, the
+exchange of CO
+2 across the air-sea interface permits the
+inorganic CO 2 system in the surface ocean to work to-
+ward an equilibrium with atmospheric CO 2. As a result,
+waters that cool as they are transported into higher lati-
+tudes will tend to take up CO
+2 from the atmosphere,
+thereby getting enriched in sDIC. Waters that warm up
+as they are transported in the opposite direction lose CO2
+and consequently have lower sDIC concentrations. As
+the high latitudes constitute the source regions for the
+deep ocean, a vertical gradient of sDIC will develop (ﬁg-
+ure 8.4.1b). The magnitude of this vertical gradient de-
+pends on how rapidly air-sea gas exchange can supply the
+CO
+2 necessary to bring high-latitude surface waters that
+sink into the abyss close to saturation (ﬁgure 8.4.1c).
+The effect of air-sea gas exchange on the sDIC distri-
+bution in an isothermal, biological ocean is opposite to
+that in the abiological ocean discussed above (except for
+the small carbonate pump effect discussed later; ﬁgure
+8.4.1e). Gas exchange will tend to remove carbon from
+the high-latitude outcrops of the carbon-rich deep wa-
+ters, and add it to the lower-latitude surface waters
+[Gruber and Sarmiento, 2002; Toggweiler et al., 2003]. As a
+result, the vertical gradient of sDIC produced by biolog-
+ical processes will be reduced in the presence of air-sea
+exchange. Again, the magnitude of this reduction in the
+gradient depends on how fast air-sea exchange is re-
+moving CO
+2 from the surface relative to the removal by
+other processes, such as biological uptake (ﬁgure 8.4.1f ).
+Thus, the impact of air-sea exchange on the distri-
+bution of sDIC is twofold and includes a thermally
+driven as well as a biologically driven component. We
+refer to the sum of these two effects as the gas exchange
+pump:
+DCgas ex ¼ DC bio
+gas ex
+þ DC therm
+gas ex
+(8:4:4)
+Note that the commonly used term ‘‘solubility pump’’
+[Volk and Hoffert , 1985] refers only to the thermal com-
+ponent of the gas exchange pump, i.e., DCtherm
+gas ex , i.e. those
+variations in sDIC that are driven only by temperature
+variations and ocean transport and mixing. Unfortu-
+nately, the gas exchange pump cannot be estimated di-
+rectly from observations. Therefore, we estimate this
+pump by subtracting the two biological pumps from the
+observations, while taking into account that the invasion
+of anthropogenic CO
+2 from the atmosphere has already
+altered the upper ocean distribution of sDIC. We have
+developed the means to estimate this contribution, Cant,
+directly from observations [ Gruber et al. , 1996] (see
+chapter 10), and subtract it from the observed sDIC dis-
+tribution to reconstruct a preindustrial sDIC distribu-
+tion. We thus estimate DCgas ex by
+DCgas ex ¼ sDIC /C0 sDICref /C0 Cant /C0 DCsoft /C0 DCcarb (8:4:5)
+where DICref is a constant reference concentration
+chosen here as the mean surface ocean sDIC in pre-
+industrial times. Note that this reference concentration
+and those used in the deﬁnitions of DC
+soft and DCcarb
+343
+Carbon Cycle

@@ -1,0 +1,50 @@
+a. Solve ﬁrst for steady state. Then draw the solution at t ¼ 0 and at t ¼ ?.
+b. Solve for the time-dependence. Use the solution given in panel 1.1.1.
+Add the time-dependence to the ﬁgure.
+c. Discuss what determines the response time of the ocean.
+1.8 Suppose that the input of a chemical to the ocean were to vary sinusoidally
+with a frequency o of 2p/100,000 yr/C0 1 and an amplitude equal to 50% of the
+mean input. What is the ratio of the amplitude in the oceanic concentration
+variation to the mean oceanic concentration for Mg and Si? (Assume that
+removal for both is ﬁrst order and that the mean life for each is as given by
+table 1.1.1.)
+1.9 Suppose that the removal rate for a substance A is second order in
+the concentration of A and B, i.e., R
+A ¼ V /C1 k1 /C1 [A] /C1 [B]. Such might be the
+case if A were removed from the ocean by precipitation as the mineral AB.
+Suppose further that B is removed both by precipitation with A, but also
+by a separate ﬁrst-order removal process, such that R
+B ¼ V /C1 k1 /C1 [A] /C1 [B] þ
+V /C1 k2 /C1 [B].
+a. Derive an equation for the steady-state concentrations of A and B in
+terms of the river concentrations.
+b. Show the approximate solution for the case where the river concen-
+tration of B is much greater than the river concentration of A. Compare
+this solution with the solution for ﬁrst-order removal.
+1.10 The water sinking into the deep box of the two-box model comes primarily
+from high latitudes. Suppose that the water sinking from the high latitudes
+has a radiocarbon ratio R
+s* of 0.92 but that everything else is as in the
+two-box model discussed in panel 1.2.1.
+a. What is the volume exchange rate between the deep and shallow boxes?
+b. The shallow box has a thickness of 100 m and the deep box a
+thickness of 4000 m. What is the residence time of the surface box
+with respect to exchange with the deep box? What is the residence
+time of the deep box with respect to exchange with the surface box?
+c. How large is the biological export production in this case (in units of
+carbon, e.g., Pg C yr
+/C0 1)?
+1.11 Consider an element C that is transported to the surface in the two-box
+model, where g is the fraction of upwelled nutrients that is converted to
+organic matter and then carried into the deep ocean.
+a. Derive an equation for g in terms of the surface and deep ocean con-
+centrations.
+b. Calculate the magnitude of g for the following elements using the data
+in table 1.1.1 for the deep ocean concentration, and the following
+surface concentrations.
+Cs (mmol m/C0 3)
+P 0.1
+Ba 0.026
+Ca 10,251
+Introduction
+17

@@ -1,0 +1,127 @@
+measurements of the surface oxygen concentration
+anomaly.
+Figure 3.4.1 also shows a separation of the total ox-
+ygen ﬂux in each region into thermal and biological
+components. The thermal component is calculated
+from the relationship
+Fthermal ¼/C0 (@SA=@T ) /C1 (Q
+/C14
+Cp)( 3 :4:4)
+where T is temperature, Q is the heat ﬂux (positive for
+warming and negative for cooling of the ocean), and Cp
+is the speciﬁc heat of water [cf. Keeling and Peng , 1995].
+The biological component is calculated by subtracting
+the thermal component from the total ﬂux. One can see
+from ﬁgure 3.2.1 that the term ( @S
+A=@T ) is negative,
+thus a ﬂux of heat into the ocean will give a positive gas
+ﬂux, that is to say out of the ocean. In other words,
+heating makes gases less soluble and leads to a degas-
+sing ﬂux, whereas cooling has the opposite effect.
+Equation (3.4.4) assumes that the air-sea equilibration
+of oxygen is extremely rapid, such that a heat ﬂux will
+quickly be manifested as an oxygen ﬂux. The break-
+down into thermal and biological components shows
+that these two are almost always of the same sign, with
+biology predominating in most regions. The biological
+degassing ﬂux in low latitudes and in the South At-
+lantic is due to a dominance of organic matter synthe-
+sis over upward mixing and upwelling of deep waters
+whose oxygen has been depleted by respiration. This
+dominance of organic matter synthesis occurs despite
+the inﬂuence of upwelling due to Ekman divergence at
+the equator and along the western margins of the
+continents (see chapter 2). Heating of the cold water
+that is brought up by the upwelling contributes an ad-
+ditional component to the degassing ﬂux. The biologi-
+cal uptake ﬂux of the higher latitudes indicates that the
+combined effect of respiration and the upward mixing
+of the low-oxygen waters of the thermocline and deep
+ocean dominates over organic matter synthesis. The
+uptake by the thermal component is due to cooling of
+warm waters from lower latitudes or brought up to the
+surface by convective overturning.
+We conclude our discussion of oxygen by noting that
+there are signiﬁcant seasonal variations of oxygen ﬂuxes
+[e.g., Louanchi and Najjar , 2001; Najjar and Keeling ,
+1997, 2000], and that spatial and temporal variations of
+oxygen ﬂuxes have a measurable impact on the atmo-
+spheric oxygen distribution that provides useful con-
+straints on our understanding of oceanic processes [e.g.,
+Keeling et al. , 1998; Stephens et al. , 1998]. In chapter 10,
+we discuss evidence that global warming appears to be
+already having a signiﬁcant impact on the oxygen dis-
+tribution of the ocean as well as the atmosphere.
+We turn now to a discussion of CO
+2. The thermal
+component of the air-sea CO 2 ﬂux will have the same
+sign as the thermal component of the O 2 ﬂux. However,
+the biological component will have the opposite sign
+because CO
+2 is produced when O 2 is consumed and
+vice versa. Given that for oxygen the biological com-
+ponent dominates over the thermal component, we
+might expect that the CO
+2 ﬂuxes would generally be
+in the opposite direction from the O 2 ﬂuxes. In fact,
+the CO 2 ﬂuxes that we infer from the concentration
+anomalies shown in ﬁgure 3.1.3 indicate degassing in
+5.0
+-4.0
+-3.0
+-2.0
+-1.0
+0.0
+1.0
+2.0
+3.0
+4.0
+Southern
+Ocean
+Sub-Polar
+South
+Atlantic
+Sub-Polar 
+South Pacific & 
+South Indian
+Temperate
+South
+Atlantic
+Temperate 
+South 
+Pacific
+Temperate 
+South 
+Indian
+Equat.
+Atlantic
+Equat.
+Pacific
+Equat.
+Indian
+Temp.
+North 
+Atlantic
+Temp.
+North 
+Pacific
+Northern 
+North 
+Atlantic
+Northern
+North 
+Pacific
+Total Oxygen Flux
+Thermal Component
+Biological Component
+58°S - 36°S 36°S - 13°S 13°S - 13°N 13°N - 36°N
+13°N - 53°N
+53°N - 90°N
+36°N - 62°N
+O2-Flux (mol m-2 yr-1)
+<58°S 
+outgassingingassing
+Figure 3.4.1: Oxygen ﬂux estimates obtained from the study of Gruber et al . [2001]. Positive ﬂuxes are out
+of the ocean. The breakdown of the ﬂuxes into thermal and biological components is explained in the text.
+Air-Sea Interface
+97

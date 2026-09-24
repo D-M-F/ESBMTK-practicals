@@ -1,0 +1,119 @@
+the link between the cold and dense waters of the deep
+ocean (cold water sphere) and the warm and light wa-
+ters of the low latitudes (warm water sphere) is much
+weaker, a direct consequence of ocean interior ﬂow
+occuring along isopycnal surfaces. An additional reason
+for the high-latitude dominance stems from the fact
+that the transport of CO
+2 via the atmosphere between
+the low-latitude and high-latitude regions is sufﬁciently
+rapid to bring the pCO
+2 of the low-latitude surface
+ocean close to that of the high latitudes. As a result, any
+anomalous CO
+2 created in the low latitudes will escape
+into the atmosphere, and tend to be taken up by the
+high-latitude oceans and ultimately buffered in the
+deep ocean, leading to only a small net change in at-
+mospheric pCO
+2. In order to illustrate this constraint,
+we use the three-box model introduced in chapter 1
+(
+ﬁgure 10.4.3) and perturb either the high latitudes or
+low latitudes with a warming of 2 /C14 C. Figure 10.4.4
+shows that in the new steady state, the 2 /C14 C warming in
+the high latitudes causes an atmospheric CO2 change of
+15 ppm, whereas the same warming in the low latitudes
+causes an atmospheric CO
+2 change that is 5 times
+smaller, i.e., only 3 ppm. In the latter case, most of the
+CO
+2 that is expelled from the low latitudes is taken up
+by the high latitudes and buffered by the deep ocean
+reservoir. We term this the equilibration effect.
+Equilibration of Low-Latitude Changes
+What determines the magnitude of this low-latitude
+equilibration effect, i.e., the substantial reduction in the
+impact of low-latitude changes on atmospheric CO
+2?I t
+turns out that the degree of equilibration depends on
+the relative magnitude of air-sea gas exchange versus
+the magnitude of the exchange between the surface and
+deep ocean. If air-sea gas exchange is efﬁcient in
+equilibrating the atmosphere and surface ocean, at-
+mospheric pCO
+2 will be almost entirely determined by
+the high latitudes and will not respond to low-latitude
+changes. Conversely, if air-sea gas exchange is slow rel-
+ative to the exchange between the cold and warm water
+spheres, changes in low-latitude chemistry and tem-
+perature can lead to substantial changes in atmospheric
+CO
+2.
+Given the importance of this equilibration con-
+straint, it behooves us to investigate it further. We re-
+turn to the three-box model (ﬁgure 10.4.3), since it
+captures the relevant processes, while being simple
+enough to understand straightforwardly. The deﬁning
+characteristics of this model are: (i) separation of ocean
+surface into a low-latitude box and a high-latitude box,
+(ii) a deep box, whose volume comprises nearly 97% of
+the total volume of the ocean, rendering its chemistry
+nearly invulnerable to internal redistributions of car-
+bon, but not to external perturbations, such as associ-
+ated with the dissolution of CaCO
+3, (iii) an exchange
+term, fhd that couples the high-latitude box very closely
+to the deep ocean, and (iv) an overturning term, T,
+which represents sinking in high latitudes and up-
+welling in low latitudes. While various shortcomings of
+this model have been noted, such as the fact that there
+is in reality little upwelling of deep waters directly in
+the warm low latitudes (see discussion in chapter 7 and
+Toggweiler [1999]), this model is nevertheless very in-
+structive. Temperatures of this model are set to 21.5
+/C14 C
+for the low-latitude box and 2 /C14 C for the high-latitude
+box. By design, the deep box will have the same tem-
+perature as the high-latitude box, i.e., 2
+/C14 C.
+We investigate the equilibration effect in this model
+by initializing it with homogeneous DIC and Alk and
+then determining how the carbon is redistributed
+within the system depending on the relative rates of air-
+sea exchange and ocean mixing (see ﬁgure 10.4.5). As
+the equilibration effect is primarily determined by
+physical processes, it is sufﬁcient to neglect biology and
+consider only an abiotic ocean. Alkalinity is set to
+2340 mmol kg
+/C0 1 in all boxes and DIC is initialized to
+2150 mmol kg/C0 1, yielding an initial pCO2 of 280 matm at
+the surface of the high-latitude box and an initial pCO2
+of 630 matm at the surface of the low-latitude box. The
+model is then run forward in time until it reaches a
+steady state.
+We ﬁrst investigate a case where the transport of DIC
+between the surface and deep ocean is far more rapid
+than the transport of CO
+2 from the warm surface res-
+ervoir via the atmosphere to the cold surface reservoir
+(ﬁgure 10.4.5c). This is accomplished by reducing the
+gas exchange coefﬁcient to a very small number. No
+equilibration will occur in this case, as the DIC con-
+centration in the low-latitude surface box will remain
+relatively close to the mean concentration of the deep
+box. As some carbon will be lost to the atmosphere, the
+T
+T
+fhd
+T
+Φ h
+Φ l
+DEEP
+LOW-LATHIGH-LAT
+ATMOSPHERE
+Figure 10.4.3: Schematics of the high-latitude outcrop three-box
+model [c.f. Sarmiento and Toggweiler , 1984; Knox and McElroy , 1984;
+and Siegenthaler and Wenk , 1984] (cf. ﬁgure 1.2.5).
+436
+Chapter 10

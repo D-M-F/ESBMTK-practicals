@@ -1,0 +1,48 @@
+Problems
+9.1 Deﬁne and explain the following terms:
+a. Calcite and aragonite
+b. Calcium carbonate saturation horizon
+c. Calcium carbonate compensation depth
+d. Lysocline
+e. Rain ratio
+f. Coccolithophorids and pteropods
+9.2 What are the main processes responsible in the ocean for the production of
+aragonite and calcite? Where in the ocean are they produced, and what are
+the controlling processes?
+9.3 Discuss why coccolithophorids precipitate CaCO
+3.
+9.4 Contrast the latitudinal distribution of the CaCO 3–to–organic carbon export
+ratio in ﬁgure 9.2.1 with the opal–to–organic nitrogen export ratio in ﬁgure
+7.2.4. Discuss why the two distributions are so different.
+9.5 Laboratory experiments have suggested that the invasion of anthropogenic
+CO
+2 into the surface ocean will lead to a reduction of the calciﬁcation rate of
+corals and coccolithophorids.
+a. Estimate how the invasion of anthropogenic CO 2 into the ocean
+changes the concentrations of H 2CO*
+3
+and CO 2/C0
+3 . Take the mean
+surface DIC and Alk concentrations given in table 8.2.4 and compute
+the changes in [H 2CO*
+3
+] and [CO 2/C0
+3 ] after you add 100 mmol kg/C0 1 of
+anthropogenic DIC to this average surface water sample. Hint: Use
+the lookup table for problem 8.14 in chapter 8 for computing the
+oceanic pCO
+2 for a given DIC and Alk. Then use this to estimate
+[H2CO*
+3
+].
+b. Discuss how these changes in ½H2CO*
+3
+/C138 and ½CO2/C0
+3 /C138 change the satu-
+ration state of our average surface seawater sample with regard to
+calcite and aragonite.
+c. Given these chemical changes, discuss the possible reasons why the
+calciﬁcation rates in corals and coccolithophorids are expected to de-
+crease in response to the invasion of anthropogenic CO
+2 into the ocean.
+389

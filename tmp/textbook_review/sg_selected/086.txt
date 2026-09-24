@@ -1,0 +1,54 @@
+2.15 Suppose that all of the bomb-produced radiocarbon and all 550 kg of the
+bomb-produced tritium were introduced into the atmosphere in the major
+nuclear bomb tests of 1962.
+a. How much of that tritium was left on Earth in the year 2005?
+b. What fraction of the bomb radiocarbon was left in the year 2005?
+2.16 Redraw ﬁgure 2.1.1 for a ﬂow in the y-direction and show step-by-step how to
+obtain
+1
+V
+@C
+@t ¼/C0 @
+@y C /C1 vðÞ
+2.17 Consider an ocean in which surface waters sink into the deep ocean in the
+low latitudes, with the return ﬂow from the deep ocean to the surface ocean
+occurring in the high latitudes. Use the integral form of the continuity
+equation to consider how a two-box model for such an ocean should
+be constructed.
+a. What concentration should be used in the time derivative for the
+deep box?
+b. What concentrations should be used in calculating the inﬂows to the
+deep box and outﬂows from the deep box?
+c. All else being equal (e.g., surface ocean nutrients are depleted in
+low latitudes, but not in high latitudes), how would the deep ocean
+oxygen concentration of this ocean compare with that of the present
+ocean?
+2.18 The Mediterranean is a closed basin except for exchange at the Straits of
+Gibraltar, where the inﬂowing water has a salinity of 36.20 and the out-
+ﬂowing water a salinity of 38.45. The net ﬂux of freshwater into the
+Mediterranean by rivers and precipitation minus evaporation is
+/C0 0.040 /C2 10
+6 m3 s/C0 1 per second (i.e., it loses more water through evaporation
+than it gains by rivers and precipitation). Its volume is 3.8 /C2 106 km3.
+a. What is the ﬂow of water in and out at the sill?
+b. What is the residence time of water in the Mediterranean Sea with
+respect to the inﬂow from the open ocean?
+2.19 Consider a north-south continental boundary on the western side of an ocean
+basin in the southern hemisphere.
+a. Draw an x-by-z section that intersects the boundary and projects out
+into the ocean. Schematically illustrate the ocean current pattern if the
+wind is blowing at a constant rate from the north. Include a depth scale
+(i.e., show the approximate depth range of the Ekman layer).
+b. What is the total Ekman transport in Sverdrups across a 100 km long
+north-south section some distance from the shore? Assume a latitude of
+20
+/C14 S, and a ty
+0
+of /C0 0.4 g cm/C0 1 s/C0 2 at the position of the north-south
+section.
+2.20 It is observed that contours of constant PV on isopycnal surfaces can traverse
+20/C14 or more of latitude from, for example, 30 /C14 Nt o1 0 /C14 N. By what fraction
+would the thickness of the isopycnal have to decrease in going from 30 /C14 Nt o
+10/C14 N if all of the ﬂow continued straight south?
+71
+Tracer Conservation

@@ -1,0 +1,130 @@
+organic matter (ﬁgure 6.1.4). Comparing this map with a
+bathymetric map reveals that the regions with high CaCO
+3
+content occur mostly on the oceanic ridges, whereas the
+deep ocean basins are almost completely devoid of CaCO
+3.
+(Broecker and Peng [1982] compared this distribution to
+snowcapped mountains). What controls this burial pat-
+tern? Is it dissolution kinetics as is the case for opal, or is the
+burial pattern determined by the degree of saturation?
+Figure 9.1.2 suggests that it is the latter, as we ﬁnd accu-
+mulation of CaCO
+3 in shallow sediments, where the ocean
+is supersaturated with respect to calcite, the more stable
+form of CaCO
+3, and no CaCO3 in deep ocean sediments
+where the ocean is undersaturated.
+Understanding the processes that lead to this pres-
+ervation pattern are of great importance because vari-
+ations in the CaCO
+3 content of deep-sea sediments con-
+stitute one of the principal indicators of past changes in
+the global carbon cycle. Coupled with isotopic and
+chemical analyses, variations in the CaCO
+3 content of
+the sediments provide important clues for assessing
+how marine systems responded to changing climate
+conditions in the past. In order to fully exploit the in-
+formation stored in the sediments, it is imperative to
+develop a fundamental understanding of the processes
+that link production of CaCO
+3 in the surface oceans
+with the resulting sedimentary record.
+9.2 Production
+In the open ocean, mineral calcium carbonates are
+formed almost exclusively by biological processes. The
+lack of inorganic precipitation of CaCO
+3,d e s p i t et h ef a c t
+that these waters are supersaturated with respect to these
+minerals, is generally thought to be due to nucleation
+barriers; the necessary seed crystals may be absent, or
+magnesium ions, phosphate, or organic compounds may
+act as surface inhibitors for nucleation [Stumm and Mor-
+gan, 1981, p. 316]. Interestingly, the situation in lakes is
+reversed; almost all carbonates are formed as inorganic
+precipitates, and very little by organisms [Kelts and Hsu€,
+1978].
+Organisms
+Three groups of marine organisms are mainly respon-
+sible for the precipitation of CaCO
+3 in the open ocean
+(see also chapter 4, panels 4.2.2 and 4.2.3). Coccolitho-
+phorids (see panel 4.2.2, ﬁgure 2) are a phytoplankton
+group that form an outer sphere of small calcite plates.
+The other two groups forming CaCO
+3 shells are het-
+erotrophic zooplankton. Foraminifera are amoebas that
+form beautiful skeletons made out of calcite (panel 4.2.3,
+ﬁgure 1). Finally, pteropods are a group of mollusks that
+produce crystals made out of aragonite rather than cal-
+cite. Between these two phases of mineral CaCO
+3, calcite
+is the more stable phase at any pressure and tempera-
+ture found in the oceans. Since surface waters are su-
+persaturated with respect to both mineral phases, evo-
+lutionary history is likely the key determinant for which
+mineral phase organisms precipitate.
+There are many reasons marine organisms may
+precipitate CaCO
+3 shells. In the case of foraminifera,
+the reason is most likely protection from predation. The
+foraminifera shells consist actually of a series of hollow
+chambers, which are produced sequentially as the or-
+ganism grows. When foraminifera reproduce, either
+sexually or asexually, they start again from a new initial
+chamber, although the chamber is much larger in the
+case of an asexually produced generation, in compari-
+son to a sexually produced generation.
+In the case of coccolithophorids, it has been hy-
+pothesized early on ( Paasche [1962]; Sikes et al . [1980])
+that calciﬁcation could be linked to photosynthesis, as
+the formation of CaCO
+3 from HCO/C0
+3
+produces aqueous
+CO2, which can then be used as a source of inorganic
+carbon during photosynthesis:
+2HCO/C0
+3
+þCa2þ ÐCO2 þCaCO3 þH2O( 9 :2:1)
+This would provide an advantage for coccolithophorids,
+as this strategy circumvents the need for CO
+2 concen-
+tration mechanisms, which are employed by other
+phytoplankton groups to increase the intracellular con-
+centration of aqueous CO
+2, thereby increasing the efﬁ-
+ciency of photosynthesis. However, the magnitude of the
+coupling between photosynthesis and CaCO
+3 formation
+is still a topic of intense debate, with some experiments
+suggesting that a very large fraction of the aqueous CO
+2
+ﬁxed during photosynthesis stems from calciﬁcation
+[e.g., Buitenhuis et al., 1999] while other studies indicate a
+much smaller fraction (see recent review by Paasche
+[2002]). One reason against the CO
+2 supply argument is
+that photosynthesis and calciﬁcation occur in very dif-
+ferent locations within the cells of coccolithophorids.
+Photosynthesis occurs in the plastids, whereas the
+CaCO
+3 platelets (called liths) are formed in special coc-
+colith vesicles, both of which are separated by mem-
+branes from the rest of the cell. Once formed, the liths
+are then transported to the outside of the cell, where they
+stay within a coccosphere until they are shed individually
+after the death of the cell or sometimes earlier. It appears
+that the source of inorganic carbon for photosynthesis
+and CaCO
+3 precipitation is only partially the intercellular
+medium, and that inorganic carbon can also be taken
+up directly from seawater. In all cases, the source of
+CaCO
+3 is HCO /C0
+3
+, whereas photosynthesis is fueled by
+aqueous CO2.
+362
+Chapter 9

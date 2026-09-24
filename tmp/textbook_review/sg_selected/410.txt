@@ -1,0 +1,89 @@
+in the rain ratio on the decoupling of preservation from
+the saturation horizons, the main perturbation to the
+oceanic Alk balance consists of a change in the oceanic
+distribution of [CO
+2/C0
+3 ], which changes the distribution of
+DCO2/C0
+3 , and hence the depth of the saturation horizons.
+In the case of a sudden increase of the soft-tissue pump,
+the concentration of deep ocean CO
+2/C0
+3 would fall quite
+strongly, leading to a rapid shoaling of the saturation
+horizon. Assuming that the depth of the saturation ho-
+rizon is the main factor controlling preservation, this
+would lead to a large increase in CaCO
+3 dissolution,
+which increases ocean mean Alk and hence [CO2/C0
+3 ]. As a
+consequence, the lysocline starts to deepen again until it
+has reached a level where the ocean’s alkalinity balance is
+again met. This depth will be somewhat shallower than
+the original depth of the lysocline, with the exact location
+depending on the the intial [CO
+2/C0
+3 ] distribution and
+where the additionally exported organic carbon gets re-
+mineralized in the water column.
+As was the case for the carbonate pump, a change of
+the soft-tissue pump will lead to both open and closed
+system responses of atmospheric CO
+2 (ﬁgure 9.5.2b).
+The closed system response is a result of the drawdown
+of surface ocean DIC induced by organic matter export,
+which will lead to an uptake of CO
+2 from the atmo-
+sphere. The open system response is a consequence of
+the increase in ocean mean Alk, and will enhance the
+closed system response by removing additional CO
+2
+from the atmosphere. The exact magnitude of these
+two responses depends quite sensitively on the model
+being employed. For a 30% increase in the soft-tissue
+pump and using a multi-box model, Sigman and Boyle
+[2000] estimated a drawdown of 46 ppm, with most of
+this being driven by the closed system response
+(43 ppm), and the open system response adding only
+3 ppm.
+In summary, the ocean’s need for establishing a long-
+term Alk balance (i.e., the open system response) leads to
+a tendency for carbonate compensation to enhance the
+initial (i.e., closed system) response of atmospheric CO
+2
+to changes in the ocean’s biological pumps, i.e., acting as
+a positive feedback in the system. This has important
+–5,000 0 5,000 10,000 15,000
+Years
+Lysocline depth
+Atmospheric CO2
+CaCO3 export
+Mean ocean Alk
+Mean ocean DIC
+Surface Alk
+Surface DIC
+closed system response open and closed system response 
+CARBONATE PUMP
+–5,000 0 5,000 10,000 15,000
+Years
+Lysocline depth
+Atmospheric CO2
+Org. matter export
+Mean ocean Alk
+Mean ocean DIC
+Surface Alk
+Surface DIC
+SOFT-TISSUE PUMP
+ab
+open system
+enhancement
+closed system
+perturbation perturbation
+open system
+enhancement
+closed system
+Figure 9.5.2: Response of the ocean carbon system and atmospheric CO 2 to (a) a sudden decrease in the surface export of CaCO 3, and
+(b) a sudden increase in the surface export of organic matter. The closed system responses are shown by the dashed lines, while the open
+system responses, i.e., those that include the river/burial balance of Alk, are shown as solid lines. The curves are approximate.
+387
+Calcium Carbonate Cycle

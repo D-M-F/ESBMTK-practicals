@@ -1,0 +1,92 @@
+equation for the deep ocean. The ﬁnal equation for the
+oxygen concentration in the deep ocean is:
+[O2]d ¼ [O2]h /C0 150 /C1 ([PO3/C0
+4 ]d /C0 [PO3/C0
+4 ]h)
+¼ [316 /C0 150 /C1 (2:1 /C0 1:3)] mmol m/C0 3
+¼ 196 mmol m/C0 3
+(1:2:8)
+This solution is identical to the two-box model solution of
+(1.2.7), except that the global mean surface oxygen and
+phosphorus concentrations of (1.2.7) are replaced in
+(1.2.8) by the high-latitude mean concentrations. The
+higher oxygen and phosphorus concentrations in surface
+waters of the high latitudes give a deep ocean oxygen
+prediction that is now in much better agreement with the
+observed concentration of 162 mmol m
+/C0 3. The remain-
+ing disagreement between the model prediction and
+observations is due in part to the fact that the organic
+matter that sinks into the deep ocean appears to have a
+composition that is rich in carbon and hydrogen. The
+stoichiometric ratio of oxygen consumption to inorganic
+phosphorus release in the deep ocean is thus closer to
+170 rather than 150 [Anderson and Sarmiento, 1994]. This
+drops the oxygen prediction to 180 mmol m
+/C0 3.
+An important theme of this book is the crucial role
+played by the surface nutrient content of the high
+latitudes in controlling the chemistry of the deep ocean.
+The three-box model solution (1.2.8) provides an inter-
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+Sea-surface phosphate (mmol m-3)
+20°E
+0.2
+0.60.4
+0.2
+0.2
+0.6
+0.4
+0.2
+0.2
+0.6
+0.8
+0.2
+1.2
+1.6
+0.60.60.4
+1.8 1.2
+1.20.6
+0.4
+1.8
+1.2
+1.8 1.6
+0.2
+0.4
+0.6
+1.8
+0.6
+0.6
+Figure 1.2.4: Global map of the annual mean surface phosphate concentration (see also color plate 2). Note that phosphate is nearly depleted
+throughout the subtropical gyres of the ocean, but that it is high in the high latitudes of the North Paciﬁc, North Atlantic, and Southern
+Ocean, as well as in the equatorial Paciﬁc and off of southwest Africa. Data are from the World Ocean Atlas 2001 [Conkright et al., 2002].
+DEEP
+LOW-LATHIGH-LAT
+T
+fhd Φ l
+Φ h
+Cd
+ClCh
+Figure 1.2.5: Schematic of a three-box model of the ocean in which the
+surface waters have been divided into high-latitude and low-latitude
+regions intended to represent areas where the surface nutrients tend to
+be high (high latitudes) and areas where the surface concentration tend
+to be low (low latitudes [cf.Sarmiento and Toggweiler, 1984]). As with the
+two-box model, F (mol s
+/C0 1) is the organic matter ﬂux from the surface
+boxes to the deep box. The volumetric exchange rates (m3 s/C0 1) between
+boxes consists of mixing fhd between the high-latitude surface box and
+deep ocean, and an overturning circulation T, which ﬂows from the
+deep ocean into the low-latitude surface and then through the high-
+latitude surface box back into the deep box.
+Chapter 1
+14

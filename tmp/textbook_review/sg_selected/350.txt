@@ -1,0 +1,85 @@
+between pK1 and pK2, we see immediately why HCO/C0
+3
+is
+the most important species present in seawater. Oceanic
+pH is also closer to pK
+2 than to pK1, so that it also be-
+comes evident why CO 2/C0
+3 is the second most dominant
+inorganic carbon species, and why the concentration of
+H
+2CO/C3
+3
+is so small.
+A note at the end: We usually normalize DIC and Alk
+to a constant salinity in order to remove the effect of
+freshwater ﬂuxes. As described above, these normal-
+ized concentrations are denoted by the symbols sDIC
+and sAlk. The motivation of this normalization is that
+freshwater contains very little DIC and Alk, so that the
+addition of freshwater, for example, leads to a decrease
+of the DIC and Alk concentration, i.e., it dilutes the
+concentration of all chemical species present in seawa-
+ter in direct proportion of the dilution of salinity. The
+opposite effect occurs if an excess of evaporation over
+precipitation leads to a net removal of freshwater from
+the surface ocean. Thus, net freshwater exchange at the
+surface leads to variations in DIC and Alk that can mask
+the ‘‘chemical’’ changes that we are mostly interested in,
+i.e., those changes driven by ocean biology, chemistry,
+and mixing/transport. For consistency, salinity nor-
+malization should be done for all other chemical prop-
+erties that we investigate. However, since the concen-
+tration variations of most chemical properties of interest
+are large relative to their mean concentration, salinity
+normalization has little inﬂuence on these properties,
+and is therefore often neglected. By contrast, typical
+chemically or biologically induced variations inDIC and
+Alk are much smaller than their mean concentrations, so
+that freshwater ﬂux variations have a much larger impact
+on these two properties. We therefore generally apply the
+salinity normalization to DIC and Alk observations.
+8.3 The Surface Ocean
+Having reviewed the most important aspects of ma-
+rine carbon chemistry, we are now ready to tackle the
+problems we outlined at the beginning of this chapter.
+We start with the problem of what controls the an-
+nual mean spatial distribution of the surface pCO
+2
+and then proceed to a discussion of its seasonal
+variability.
+Annual Mean Distribution
+The simplest answer to what controls surface pCO
+2
+is that it is determined by the concentration of H 2CO/C3
+3
+in the water and the CO 2 solubility, K0, i.e.,
+pCO2 ¼ [H2CO/C3
+3
+]
+K0
+: (8:3:1)
+pH = -log [H+]
+log [A]
+1 117539
+-3
+-7
+-5
+pK1 pK2
+[CO32-]
+[HCO3-]
+[H2CO3*]
+[H2CO3*] [HCO 3-][CO32-]
+[OH-][ H +]
+oceanic pH range
+Figure 8.2.1: Plot of the concentrations of H2CO/C3
+3
+, HCO/C0
+3
+, and CO2/C0
+3 as functions of pH ¼/C0 log10[Hþ]. Note that
+the vertical axis is logarithmic to the base 10 as well. The concentrations are plotted for a DIC concentration of
+2000 mmol kg/C0 1. By deﬁnition, the crossing point of an acid/base pair is equal to the pK of the corresponding dissociation
+constant.
+327
+Carbon Cycle

@@ -1,0 +1,147 @@
+However, since H 2CO/C3
+3
+constitutes only a very small
+fraction of the DIC pool, the bicarbonate and carbonate
+ions, rather than H 2CO/C3
+3
+, are ultimately controlling the
+pCO2. To demonstrate this, we recast equations (8.2.4),
+(8.2.5), and (8.2.6) to relate the partial pressure of CO2 in
+seawater to variations in carbonate and bicarbonate ions,
+and the three equilibrium constants K
+0, K1,a n dK2,
+pCO2 ¼ K2
+K0 /C1 K1
+[HCO/C0
+3
+]2
+[CO2/C0
+3 ] (8:3:2)
+In order to facilitate our discussion, we use approxi-
+mations (8.2.17) and (8.2.18) to replace the bicarbonate
+and carbonate ion concentrations with DIC and Alk:
+pCO2 /C25 K2
+K0 /C1 K1
+(2 /C1 DIC /C0 Alk)2
+Alk /C0 DIC (8:3:3)
+From consideration of (8.3.3), we see that the question
+of what controls the surface pCO2 distribution is more
+complex than ﬁrst suggested by (8.3.1). The best way to
+answer the question is to break it into three parts: (i)
+what controls the ratio of the equilibrium constants, K
+2/
+(K0 /C1 K1), (ii) what controls the DIC concentration, and
+(iii) what controls the Alk concentration.
+We know from table 8.2.2 that the three equilibrium
+constants K0, K1, and K2 are a function of temperature
+and salinity. The ﬁrst of these questions can thus be
+readily answered by considering how the pCO
+2 of a
+water parcel changes with temperature and salinity
+while keeping DIC and Alk constant. It turns out that
+the answer for the other two questions cannot be given
+independently of each other. The concentration of DIC
+is affected by air-sea gas exchange and by biological
+processes, whereas Alk is only affected by ocean biol-
+ogy. It it thus more convenient to separate the controls
+on surface ocean pCO
+2 into physical processes and bi-
+ological processes.
+Physical Processes
+We start our discussion by considering how the pCO
+2
+varies with temperature and salinity while keeping
+DIC and Alk constant. As shown in ﬁgure 8.3.1, the
+isolines of pCO
+2 are almost vertical over the oceanic
+range of temperature and salinity, indicating a much
+greater sensitivity to temperature than to salinity vari-
+ations. It turns out that about two-thirds of the tem-
+perature sensitivity of pCO
+2 is a result of the strong
+temperature dependence of the solubility K0 (ﬁgure
+8.3.2), while the contribution of the ratio of the dis-
+sociation constants K
+2/K1 explains the remaining third.
+Since K0 is relatively insensitive to salinity, about 70%
+of the salinity dependence of pCO2 is governed by the
+ratio K2/K1.
+Takahashi et al. [1993] provide a useful relationship
+that summarizes the temperature sensitivity of pCO2 in
+a closed system, i.e., one where the concentration of
+DIC and Alk remain constant. They determined this
+sensitivity experimentally and found that a logarithmic
+dependence gave accurate results, thus
+1
+pCO2
+@pCO2
+@T ¼ @lnpCO2
+@T /C25 0:0423/C14 C/C0 1 (8:3:4)
+180
+140
+200160 240 280 220 260 300
+320
+400
+360
+500
+480
+440
+0 4 8 1 21 62 02 42 8
+Temperature (°C)
+Salinity
+30
+32
+34
+36
+38
+40
+39
+37
+35
+33
+31
+pCO2 (μatm)
+Figure 8.3.1: Plot of the partial pressure of CO2 (pCO2) as a function
+of temperature and salinity for constant DIC and Alk. Shown are the
+results for a typical surface water sample with an alkalinity of
+2322 mmol kg
+/C0 1 and a DIC content of 2012 mmol kg/C0 1.
+0.0 10.0 20.0 30.0
+0.020
+0.030
+0.040
+0.050
+0.060
+0.070
+K0 (mol kg
+-1
+ atm
+-1
+)
+0.7
+0.9
+1.1
+1.3
+1.5
+1.7
+1.4
+1.2
+1.0
+0.8
+0.6
+0.4
+Temperature (°C)
+K1
+K2
+K0
+K1 (µmol kg
+-1
+)
+K2 (nmol kg
+-1
+)
+Figure 8.3.2: Plot of the CO 2 solubility (K0), and of the ﬁrst and
+second dissociation constants of carbonic acid ( K1 and K2)a sa
+function of temperature.
+328
+Chapter 8

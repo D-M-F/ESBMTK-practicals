@@ -1,0 +1,181 @@
+5
+4
+3
+2
+1
+0
+012345
+Al
+01234
+C
+Inorganic
+0 100 200 300
+Si
+02 0 4 0 6 0 8 0
+N
+NO3
+012345
+P
+0 100 200 300
+O
+Dissolved
+O2
+02 0 4 0 6 0 8 0
+S
+0.0 0.1 0.2 0.3 0.4
+F
+0 200 400 600 800
+Cl
+05 10
+Ne
+01234
+He
+01 0 2 0 3
+Ar
+5
+4
+3
+2
+1
+0
+0.0 0.5 1.0 1.5 2.0
+B
+0.0 0.2 0.4 0.6
+Pt
+0.0 0.2 0.4 0.6 0.8
+Au
+0481 2 1 6
+Zn
+0.0 0.6 1.2 1.8
+Cd
+0.0 0.5 1.0 1.5 2.0
+Hg
+01 0 2 0 3 0 4 0
+Ga
+0.00 0.05 0.10 0.15 0.20
+In
+0 40 80 120 160
+Tl
+0 40 80 120 160
+Ge
+01 0 2 0 3 0 4 0
+Sn
+Atlantic data
+02 0 4 0 6 0 8 0
+Pb
+01 0 2 0 3 0 4 0
+As
+Inorganic
+01234
+Sb
+0.0 0.2 0.4 0.6 0.8
+Bi
+01234
+Se
+IV TotalVI
+0.0 0.4 0.8 1.2 1.6
+Te
+Total
+VI
+IV
+01234
+Br
+0 200 400 600 800
+I
+(-I) Total
+02468
+Kr
+0.0 0.2 0.4 0.6 0.8
+Xe
+0481 2 1 6
+Ni
+0246
+Cu
+0.0 0.2 0.4 0.6 0.8 1.0
+Pd
+01 0 2 0 3 0 4 0 5 0
+Ag
+02468 1 0
+Rn*
+(222)
+01234
+At*
+(219)
+Short-lived
+02468
+Po*
+(210)
+012 34
+(Cm*)
+01234
+(Bk*)
+0 5 10 15
+Gd
+01234
+Tb
+05 1 0 1 5
+Dy
+01234
+(Cf*)
+01234
+Ho
+01234
+(Es*)
+05 1 0 1 5
+01234
+(Fm*)
+0.0 0.5 1.0 1.5 2.0 2.5
+Tm
+01234
+(Md*)
+051 0 1 5
+Yb
+01234
+(No*)
+0.0 0.5 1.0 1.5 2.0 2.5
+Lu
+01234
+(Lr*)
+1B 2B 3B 4B 5B 6B 7B 0
+15
+5
+4
+3
+2
+1
+0
+8
+5
+4
+3
+2
+1
+0
+5
+4
+3
+2
+1
+0
+5
+4
+3
+2
+1
+0
+5
+4
+3
+2
+1
+0
+5
+4
+3
+2
+1
+0
+waters deep in the ocean (see chapter 3) and, in the case of oxygen, by biological production as part of photosynthesis and consumption
+by respiration. A few elements such as Pb have higher concentrations at the surface due to delivery by dust transport, and lower
+concentrations at depth due to rapid scavenging from the water column to the sediments.
+9

@@ -1,0 +1,125 @@
+Sverdrups (1 Sv¼ 106 m3 s/C0 1). The residence time of the
+deep ocean with respect to this exchange rate is Vd/
+n ¼ 1050 years. If we divide the volume exchange rate by
+the area of the ocean, 3.4/C2 1014 m2, we ﬁnd that the mean
+exchange rate between the surface and deep ocean in the
+two-box model is about 3.5 m yr
+/C0 1.W ea r en o wa b l et o
+calculate additional details of the ocean cycle of nutrients
+and carbon. The net organic phosphorus ﬂux from the
+surface to the deep ocean is
+FP ¼ n /C1 ([PO3/C0
+4 ]d /C0 [PO3/C0
+4 ]s)
+¼ 1:2 /C2 1015 m3 yr/C0 1 /C1 (2:1 /C0 0:0) mmol m/C0 3
+¼ 2:5 /C2 1012 mol yr/C0 1
+(1:2:4)
+We can estimate the export of organic carbon directly
+from this using the molar ratio of carbon to phosphorus
+in organic matter of 106. Using a molecular weight of
+12 g mol
+/C0 1 for carbon and converting to the commonly
+used units of Pg C yr /C0 1 (1 Pg¼ 1015 g) gives a carbon
+export of 3.2 Pg C yr/C0 1. More sophisticated ocean mod-
+els tend to give a number three times this. A two-box
+model such as ours is too simple to capture all the im-
+portant exchange processes.
+Despite its limitations, which we shall examine in a
+moment, the two-box model we have developed pro-
+vides powerful insights into the cycling of chemicals in
+the ocean. However, the two-box model gives erroneous
+results when applied to oxygen. Understanding why
+this is so will give us important additional insights into
+the box modeling approach and ocean biogeochemistry.
+Photosynthesis produces oxygen and remineraliza-
+tion consumes it. The shape of the vertical proﬁle of
+oxygen reﬂects these processes: it is lower at depth than
+at the surface (ﬁgure 1.2.1). The photosynthesis reac-
+tion above suggests that in these reactions, the ratio of
+moles of oxygen molecules (O
+2) to moles of phosphorus
+atoms appears to be roughly constant at about /C0 150.
+This observation permits a powerful simplifying as-
+sumption: that 150 oxygen molecules are removed for
+every phosphorus atom added to the water by reminer-
+alization, i.e., F
+O2 ¼/C0 150 /C1 FP. The oxygen box model
+equation for the deep ocean thus becomes:
+Vd /C1 d[O2]d
+dt ¼ n /C1 ([O2]s /C0 [O2]d) /C0 150 /C1 FP (1:2:5)
+If we assume steady state and make use of FP deﬁned
+by (1.2.2), we obtain the following solution:
+0 ¼ [O2]s /C0 [O2]d /C0 150 /C1 ([PO3/C0
+4 ]d /C0 [PO3/C0
+4 ]s)( 1 :2:6)
+Note that the volume exchange raten canceled out of the
+equation. We test the model by using it to predict the
+deep ocean oxygen concentration and comparing this
+against the observed average value of 162 mmol m
+/C0 3.
+Rearranging (1.2.6) and substituting in the observed
+mean values gives the following result:
+[O2]d ¼ [O2]s /C0 150 /C1 ([PO3/C0
+4 ]d /C0 [PO3/C0
+4 ]sÞ
+¼ [234 /C0 150 /C1 (2:1 /C0 0)] mmol m/C0 3
+¼/C0 81 mmol m/C0 3
+(1:2:7)
+The predicted concentration is negative, an impossi-
+bility. Where did we go wrong?
+The answer is that we have failed to properly consider
+how deep water actually forms in the ocean. Most of the
+water sinking into the deep ocean comes from surface
+waters of the high latitudes. The surface waters of the high
+latitudes have two properties very different from the global
+average surface properties used in the above model.
+Firstly, they have much colder temperatures. Oxygen is
+more soluble in cold waters, therefore the oxygen con-
+centration in the waters that sink into the deep ocean is
+much higher than the global surface mean, which is
+strongly biased by the warm waters of the low latitudes.
+The average surface saturation oxygen concentration in
+the waters that ﬁll the abyss is about 331 mmol m
+/C0 3.T h e
+actual concentration is undersaturated by perhaps 10 to
+20 mmol m
+/C0 3 [Najjar and Keeling ,1 9 9 7 ] ,g i v i n ga b o u t
+316 mmol m/C0 3 for the water that actually sinks to the deep
+ocean. This increases our oxygen estimate of (1.2.7) by
+82 mmol m
+/C0 3. However, this still leaves us with a deep
+ocean oxygen of only 1 mmol m/C0 3.
+The second and most important problem with the
+above model is that it assumes that biological uptake
+keeps the surface phosphorus at a concentration that is
+near zero. Again, this is a reasonable assumption for the
+global mean surface concentration, but not at all the case
+in the high-latitude regions where deep water forms (see
+ﬁgure 1.2.4). There the biological uptake of phosphorus is
+not so efﬁcient and surface concentrations of phosphorus
+average about 1.3 mmol m
+/C0 3 [Broecker et al.,1 9 8 5 a ] .
+In order to deal with the issues raised by these ob-
+servations, we develop a new three-box model of the
+ocean that splits the surface ocean into a high latitude
+as well as a low-latitude box (ﬁgure 1.2.5). There are two
+vertical exchange terms between the surface and deep
+ocean. The ﬁrst involves vertical exchange f
+hd between
+the high-latitude surface box and deep ocean, which is
+analogous to deep water formation processes that occur
+around the Antarctic. The second is an overturning
+term T of water ﬂowing up into the low-latitude surface
+ocean, then towards the high-latitude surface ocean,
+before sinking. The overturning exchange T is analo-
+gous to the deep water formation processes that occur
+in the North Atlantic. A solution to the three-box model
+can be obtained by a procedure exactly analogous to
+that used in obtaining the two-box model solution. We
+solve for the organic matter ﬂuxes F
+h and Fl to the deep
+ocean using the phosphorus balance, and we use the
+ratio of oxygen to phosphorus in the biological reac-
+tions to substitute the phosphorus ﬂux into the oxygen
+Introduction
+13

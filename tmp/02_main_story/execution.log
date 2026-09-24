@@ -1,0 +1,122 @@
+02_two_layer_ocean_carbon_pump.ipynb: cell 1
+02_two_layer_ocean_carbon_pump.ipynb: cell 5
+Ratio-derived surface depth (m): 298.75014096166706
+Volumes (m3): 1.0755005074620014e+17 1.2424499492538e+18
+02_two_layer_ocean_carbon_pump.ipynb: cell 7
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.84 CPU seconds, wall time = 0.86 seconds
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.84 CPU seconds, wall time = 0.89 seconds
+
+================================================================================
+
+There were 89 warnings, check M.log
+
+================================================================================
+
+Checks passed: carbon/TA conserved; no-pump equilibrium agrees with 01.
+02_two_layer_ocean_carbon_pump.ipynb: cell 12
+Fitted k (kg/yr): 6.6644448512018056e+16
+02_two_layer_ocean_carbon_pump.ipynb: cell 14
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 1.94 CPU seconds, wall time = 1.95 seconds
+
+================================================================================
+
+There were 82 warnings, check M.log
+
+================================================================================
+
+Checks passed: carbon/TA conserved; fitted DIC ratio and pump–mixing balance recovered.
+02_two_layer_ocean_carbon_pump.ipynb: cell 17
+Carbon to inject (Pmol C): 267.63264476779057
+02_two_layer_ocean_carbon_pump.ipynb: cell 18
+Actual baseline ocean/atmosphere ratio: 56.99982556965717
+02_two_layer_ocean_carbon_pump.ipynb: cell 20
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 10.80 CPU seconds, wall time = 10.94 seconds
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 10.31 CPU seconds, wall time = 10.61 seconds
+
+================================================================================
+
+There were 29 warnings, check M.log
+
+================================================================================
+
+Checks passed: input mass, carbon/TA budgets and full reference endpoint.
+02_two_layer_ocean_carbon_pump.ipynb: cell 23
+02_two_layer_ocean_carbon_pump.ipynb: cell 24
+PASS 02_two_layer_ocean_carbon_pump.ipynb; 2 figures

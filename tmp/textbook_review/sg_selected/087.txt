@@ -1,0 +1,50 @@
+Problems 2.21 to 2.23 refer to the illustration of a basin with an east-west
+dimension of 6000 km and a north-south dimension of 3300 km that extends
+from 20
+/C14 Nt o5 0 /C14 N ( ﬁgu re 1). The surface wind stress over this basin, also
+shown in the ﬁgure, is given by
+tx
+0
+¼/C0 t0 cos p /C2 y
+3300 km
+/C16/C17
+ty
+0
+¼ 0
+where y is the distance in kilometers from the southern edge of the basin at
+20/C14 N, i.e.,
+y ¼ (f /C0 20/C14 N) /C2 110 km
+with f being the latitude in degrees. ( Note: This equation applies only to the
+portion of the basin shown in the ﬁgure, not the world as a whole. As part of
+solving this problem, you need to calculate the y derivative of f. Do this by
+using the chain rule to obtain
+@f
+@y ¼ @f
+@f
+@f
+@y
+and using the circumference of the Earth to determine the second derivative.)
+The value of the constant t
+0 is
+t0 ¼ 1 g
+cm s2
+2.21 What is the total Ekman transport across the width of the basin at 30 /C14 N? Give
+your answer in Sverdrups.
+2.22 What is the vertical velocity due to the Ekman convergence at 30 /C14 N?
+2.23 Estimate the relative contributions of the terms containing the meridional
+wind stress gradient and meridional Coriolis parameter gradient to the
+upwelling/downwelling driven by the wind stress at 30
+/C14 N.
+Figure for problems 2.21 to 2.23
+x
+y
+6000 km
+3300 km
+50°N
+20°N
+-1 0 1
+Windstress  [g cm-1 s-2]
+τx
+0
+72
+Chapter 2

@@ -1,0 +1,97 @@
+the slow oceanic uptake of anthropogenic CO2, and learn
+about a number of techniques that have been used to
+identify and quantify anthropogenic CO
+2 in the ocean. We
+will also investigate the role of ocean biology in this
+process and will see that its inﬂuence becomes very
+important once the climate system moves signiﬁcantly
+away from steady state as a consequence of global cli-
+mate change. The response of the ocean carbon cycle to
+such changes is poorly understood and thus very difﬁcult
+to predict. Observations of interannual to decadal time-
+scale variability in the climate and global carbon systems
+provide one of the few means to study these interactions
+directly. Direct observations of atmospheric CO
+2 since
+1958 show that the growth rate of atmospheric CO 2 ex-
+perienced large changes from year to year, while the
+growth rate of fossil fuel emissions changed only mini-
+mally. This indicates that substantial amounts of carbon
+are transferred between the ocean, atmosphere, and
+terrestrial biosphere reservoirs on interannual to decadal
+timescales. However, there is presently little consensus
+about the relative role of the oceans and of the land
+biosphere in controlling these changes. Section 10.3 will
+discuss these issues in more detail. An important avenue
+for improving our ability to make prediction for the fu-
+ture is to be able to understand the causes for the
+changes seen in the past. The last section of this chapter
+will investigate the glacial-interglacial CO
+2 problem, one
+of the most puzzling questions of global carbon cycle
+research.
+10.2 The Anthropogenic Perturbation
+Over the Anthropocene, i.e., from about 1800 to 1994,
+humankind has released about 340 to 420 Pg carbon to
+the atmosphere in the form of CO
+2 (1 Pg C¼ 1015 gC )
+(see
+table 10.2.1) [Sabine et al., 2004]. Most of this car-
+bon stems from the combustion of fossil fuels (about
+240 Pg C), but a signiﬁcant albeit very uncertain fraction
+is associated with emissions arising from changes in
+land use, such as deforestation. About 165 Pg C of these
+emissions have stayed in the atmosphere, leading to an
+increase in atmospheric CO
+2 from a preindustrial level
+of about 280 ppm to about 360 ppm in 1994 (ﬁgure
+10.1.2). The remainder has been redistributed within
+the land and ocean (ﬁgure 10.1.1). Anthropogenic
+CO
+2 emissions are expected to continue to rise well into
+the twenty-ﬁrst century, despite the initiation of efforts
+on the international level to curb the emissions. Given
+the importance of CO
+2 as a greenhouse gas, the scien-
+tiﬁc community needs to be able to predict how much
+CO
+2 the ocean and land biosphere will be taking up
+from the atmosphere, thereby helping to mitigate the
+anthropogenic CO
+2 burden in the atmosphere and the
+associated increase in radiative forcing.
+Before any prediction can be attempted, it is neces-
+sary to correctly quantify the redistribution of the an-
+thropogenic carbon that has been emitted since the
+beginning of the industrial revolution. The budget for
+the entire Anthropocene as well as that for the last two
+decades have been assessed in detail [ Prentice et al. ,
+2001; Le Que´re´ et al. , 2003; Sabine et al., 2004]. Ac-
+cording to the budgets recently established by Sabine
+et al. [2004] and shown in table 10.2.1, the ocean rep-
+resents the largest sink of anthropogenic CO
+2 over the
+Anthropocene, having taken up about 118 ± 19 Pg C. It
+is rivaled only by the storage in the atmospheric res-
+ervoir. Over the same period, the terrestrial biosphere
+acted as a net source of 39 ± 28 Pg C, the sum of an ill-
+constrained source coming from land-use change
+(about 100 to 180 Pg C), indicating a sink of somewhere
+Table 10.2.1
+Anthropogenic CO
+2 budget for the Anthropocene (1800–1994) and for the period of the 1980s and
+1990s.
+From Sabine et al. [2004].
+1800–1994 1980–1999 1980–1999 (Avg)
+Pg C Pg C Pg C yr /C0 1
+Constrained sources and sinks
+(1) Emissions from fossil fuel and cement production 244 ± 20 117 ± 5 5.9 ± 0.3
+(2) Storage in the atmosphere /C0 165 ± 4 /C0 65 ± 1 /C0 3.3 ± 0.1
+(3) Ocean uptake /C0 118 ± 19 /C0 37 ± 7 /C0 1.9 ± 0.4
+Inferred net terrestrial balance
+(4) Net terrestrial balance ¼ [/C0 (1)/C0 (2)/C0 (3)] 39 ± 28 /C0 15 ± 9 /C0 0.8 ± 0.5
+Terrestrial balance
+(5) Emissions from changes in land use 100 /C0 180 24 ± 12 1.2 ± 0.6
+(6) Terrestrial biosphere sink ¼ [/C0 (1)/C0 (2)/C0 (3)/C0 (5)] /C0 61 to /C0 141 /C0 39 ± 18 /C0 2.0 ± 1.0
+399
+Carbon Cycle, CO 2, and Climate

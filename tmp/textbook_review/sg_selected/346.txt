@@ -1,0 +1,140 @@
+where pCO2 is the partial pressure of CO 2 in the air and
+where the brackets denote total concentrations. Strictly
+speaking, these equations should be expressed as activ-
+ities rather than concentrations, but we neglect this
+small difference here. In particular, the CO
+2 concentra-
+tion in air is sometimes expressed as a fugacity, f CO2,
+which is a thermodynamic property analogous to the
+activity of a species dissolved in water (see panel 3.2.1).
+Since fugacity takes the nonideality of CO
+2 in air into
+account, its value is somewhat lower than the pCO2.
+Equation (2) in panel 3.2.1 shows how the fugacity can
+be calculated from pCO
+2. Here, we adopt pCO2 as our
+primary quantity expressing the concentration of CO 2
+in air.
+In the literature, the equilibrium constants K1 and K2
+are usually expressed in units of moles per kilogram of
+solution rather than in units of milimoles per cubic
+meter as adopted generally in this text. For consistency
+with the published literature, we use the symbol K
+0 for
+the CO 2 solubility in units of mol kg /C0 1 atm/C0 1, rather
+than SCO2 , which is in units of mmol m /C0 3 atm/C0 1 (see
+chapter 3).
+The CO 2 system so far consists of 5 unknowns
+( pCO2, ½H2CO/C3
+3
+], ½HCO/C0
+3
+], ½CO2/C0
+3 ], and [Hþ]) and 3 equa-
+tions (8.2.4, 8.2.5, and 8.2.6). In order to determine
+the system, we have to specify any two of the ﬁve un-
+knowns. The partial pressure of CO
+2 in equilibrium
+with the water ( pCO2) and pH (pH ¼/C0 log10 [Hþ]) are
+frequently measured, but these two parameters are ill
+suited to use in modeling, because neither is conser-
+vative with respect to changes in state (i.e., temperature,
+salinity, and pressure). In order to avoid these compli-
+cations, the two parameters used in models are dis-
+solved inorganic carbon ( DIC) and total alkalinity ( Alk),
+deﬁned as
+DIC ¼ [H2CO/C3
+3
+] þ [HCO/C0
+3
+] þ [CO2/C0
+3 ]( 8 :2:7)
+Alk ¼ [HCO/C0
+3
+] þ 2 [CO2/C0
+3 ] þ [OH/C0 ]
+/C0 [H þ ] þ [B(OH)/C0
+4
+] þ minor bases (8 :2:8)
+where [OH /C0 ] is the concentration of the hydroxide ion,
+and [B(OH) /C0
+4
+] is the concentration of the borate ion.
+Both DIC and Alk are conservative with respect to
+changes in state. The total alkalinity is a measure of the
+excess of bases (proton acceptors) over acids (proton
+donors), and is operationally deﬁned by the titration
+with H
+þ of all weak bases present in the solution (see
+Dickson [1981] for an exact deﬁnition of alkalinity). Al-
+ternatively, total alkalinity can be viewed as the charge
+balance of all strong acids and bases unaffected by this
+titration, i.e.,
+Alk ¼ [Na þ ] þ [K þ ] þ 2 [Mg2 þ ] þ 2 [Ca2 þ ] þ minor cations
+/C0 [Cl/C0 ] /C0 2 [SO2/C0
+4 ] /C0 [Br/C0 ] /C0 [NO/C0
+3
+] /C0 minor anions
+(8:2:9)
+The contribution of the minor bases like phosphate, sil-
+icate, and sulphate to variations in Alk are usually well
+below one percent, and we are therefore going to ne-
+glect them.
+The deﬁnition of dissolved inorganic carbon and
+total alkalinity introduces four new unknowns (DIC,
+Alk, ½OH
+/C0 ], ½B(OH)/C0
+4
+]) for a total of 9, but only two new
+equations for a total of 5. Additional constraints on the
+system of equations are needed. The hydroxide ion
+originates from the self-dissociation of water
+H2O Ð H þ þ OH/C0 (8:2:10)
+with the dissociation constant
+Kw ¼ [H þ ][OH/C0 ]( 8 :2:11)
+Borate is formed by the dissociation of boric acid by the
+reaction
+H3BO3 þ H2O Ð H þ þ B(OH)/C0
+4
+(8:2:12)
+with the dissociation constant
+KB ¼ [H þ ][B(OH)/C0
+4
+]
+[H3BO3] (8:2:13)
+The total boron concentration is very nearly conserva-
+tive within the ocean, and its concentration changes only
+with net exchange of water at the sea surface by evap-
+oration and precipitation. Since these processes control
+salinity, the total boron concentration can be assumed
+to be proportional to the salinity, S,
+[B(OH)/C0
+4
+] þ [H3BO3] ¼ c /C1 S (8:2:14)
+Equations (8.2.11), (8.2.13), and (8.2.14) add three new
+equations and 1 new unknown, H
+3BO3. We therefore end
+up with 8 equations and 10 unknowns (see table 8.2.1).
+As was the case above, the speciﬁcation of two unknowns
+completely determines the inorganic carbon system.
+Models commonly employ DIC and Alk as state variables
+of the carbon system, whereas at sea, often a combination
+of pCO
+2, DIC,a n d Alk are measured. With the intro-
+duction of a method for the high-precision determination
+of pH [ Clayton and Byrne , 1993], this quantity is being
+increasingly determined as well. This system of eight
+equations cannot be solved analytically, because a higher
+order polynomial equation has to be solved. Iterative
+methods are commonly used (see table 8.2.1).
+Table 8.2.2 lists the empirical equations for calculat-
+ing the dissociation constants. Note that these constants
+are given in units of moles per kilogram of solution. The
+exact values for the dissociation constants, K
+1 and K2,o f
+carbonic acid and bicarbonate, respectively, are currently
+still subject to considerable debate [Millero et al., 1993; Lee
+and Millero, 1995; Lee et al., 1997; Lueker, 1998]. We have
+adopted here the dissociation constants ofMehrbach et al.
+323
+Carbon Cycle

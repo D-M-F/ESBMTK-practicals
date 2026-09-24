@@ -12,6 +12,18 @@ for 00's eight-part question set; that allocation needs confirmation through cou
 planning. 01–04 require an estimated 190 minutes of notebook work, plus introduction,
 break and synthesis. Timings need a student pilot.
 
+The [textbook review](ref/textbook_exercise_review.md) documents the implemented
+01–04 refinements: chemical TA conservation, effective export versus production,
+local DIC–TA process arrows, and fixed biology versus forcing responses.
+In 01, a supplied offline explorer links a rotatable DIC–TA–pCO2 surface,
+Deffeyes-style pCO2 contours and constant-TA slices before the existing curve
+exercise. Run its cell in JupyterLab; no widget extension or extra package is
+needed. Its **Save offline copy** button downloads a standalone browser version.
+An [instructor preview](output/dic-ta-pco2-explorer.html) can be regenerated with
+`python scripts/build_carbonate_explorer.py` in the activated course environment.
+In 03, students reuse pCO2 contours for the existing flux-specification exercise;
+the 55-minute target needs a pilot of this revised reasoning load.
+
 The [pre-revision archive](archive/2026-09-16_before_guided_revision/ARCHIVE.md)
 preserves the previous 01–04 notebooks, dependencies, data and teaching documents
 with checksums. It is a frozen snapshot, separate from active teaching sources.
@@ -21,7 +33,7 @@ with checksums. It is a frozen snapshot, separate from active teaching sources.
 | [`00_PyCO2SYS.ipynb`](notebooks/00_PyCO2SYS.ipynb) | Exercise 9: pH, saturation, CO2/temperature/salinity comparisons and inferred alkalinity |
 | [`01_single_box_air_sea_CO2.ipynb`](notebooks/instructor/01_single_box_air_sea_CO2.ipynb) | Diagnose missing TA, infer it, and verify conservation and equilibrium controls |
 | [`02_two_layer_ocean_carbon_pump.ipynb`](notebooks/instructor/02_two_layer_ocean_carbon_pump.ipynb) | Verify a conservative extension, calibrate an effective pump, and audit a finite carbon signal |
-| [`03_boudreau_three_box_model.ipynb`](notebooks/instructor/03_boudreau_three_box_model.ipynb) | Complete four reservoir/flux mappings and verify the constructed model |
+| [`03_boudreau_three_box_model.ipynb`](notebooks/instructor/03_boudreau_three_box_model.ipynb) | Reconstruct a schematic, reconcile Excel inputs, complete four mappings and audit the model |
 | [`04_pump_strength_OA_OAE.ipynb`](notebooks/instructor/04_pump_strength_OA_OAE.ipynb) | Specify carbon/TA forcing, check budgets and interpret matched OA/OAE responses |
 
 ## Teaching boundary
@@ -104,21 +116,26 @@ still needs a student pilot. Notebook 02
 provides constructor templates while retaining student-derived pump strength and
 carbon addition. Plotting and numerical audits are supplied throughout.
 
-Notebook 03 has four mapping exercises: reservoirs, physical transports, POC/PIC
-choices and linked rates, and gas exchange. Native ESBMTK calls stay visible;
+Notebook 03 starts with paired DIC/TA flux equations and a labelled schematic,
+then reconciles that specification with named Excel records. The simplified
+diagrams focus on boxes and process arrows, using Q for water volume transport;
+the companion table contains the paired tracer equations. Corrected source
+notes identify F5 organic export, PIC/POC and inorganic weathering carbon.
+Dissolution has a supplied dependency function, with signed net burial
+distinguished from an extra sink. A short J/m rule separates amount fluxes
+from concentration tendencies; the contour exercise interprets those same laws.
+Four native mapping exercises cover reservoirs, transport endpoints/species/law,
+POC/PIC choices/law and linked rates, and gas exchange. Native calls stay visible;
 Model setup, repeated loops, chemistry/sediment wiring and weathering construction
-are supplied. Students trace all arrows and inspect graph/stationarity checks.
+are supplied. Students complete one boundary budget and inspect graph, time-resolved
+carbon/TA and short restart-drift checks. Conservation does not establish the
+correctness of an internal law; short drift does not prove long-term stability.
 The instructor-only final cell compares against the reusable implementation.
 
 Notebook 04 treats compatibility code as supplied infrastructure:
 
 - [`model.py`](model.py) constructs and runs the reusable model;
-- [`presets.py`](presets.py) defines the benchmark, the closed storage
-  decomposition, and biological-pump variants;
-- [`pump_functions.py`](pump_functions.py) supplies normalized pCO₂/CO₂(aq)
-  soft-tissue feedback and TA–DIC carbonate feedback;
-- [`storage_decomposition.py`](storage_decomposition.py) transports diagnostic
-  gas-exchange, soft-tissue, and carbonate tags through the realized baseline;
+- [`presets.py`](presets.py) loads the benchmark and prepares independent cases;
 - [`scenarios.py`](scenarios.py) adds idealized atmospheric-carbon or ocean-TA signals.
 - [`teaching_plots.py`](teaching_plots.py) supplies the core figures;
 - [`teaching_audits.py`](teaching_audits.py) checks complete-model carbon/TA budgets
@@ -127,23 +144,29 @@ Notebook 04 treats compatibility code as supplied infrastructure:
 Core 04 has two short code exercises: convert prescribed inventories and choose
 the forcing species/endpoints. Its fixed-pump control/OA/OAE cases retain the
 archived 4025 Gt-C post-1800 pulse and same-shape 10 Pmol TA-equivalent input.
-Students inspect budgets, follow the full eight-panel OA/OAE response figures
-through a guided reading route, and interpret atmospheric CO2, surface pH, deep DIC
-and dissolution/net-burial anomalies. Chemical horizons and the sediment snowline
-connect the deep response to sediment memory. The former extension Part II is now
-in core 04; plotting is supplied and the same four short answers cover interpretation.
+Students specify the experiment on their completed diagram and predict responses
+before running. The actual forcing shapes appear in B1 before matched-control
+anomalies in B2; full figures then support critical-depth, sediment-memory and
+benchmark interpretation. Four short answers address timing, carbon uptake/TA,
+critical depths and OA/OAE asymmetry, with the assumptions and limits of these runs.
+Plotting is supplied; no fourth core run is required. The 03/04 allocations remain
+provisional and need a student pilot after these task replacements.
 The full forcing history, including the
 small pre-1800 tail, enters the time-resolved inventory audit.
 
-The self-contained [optional extension](notebooks/instructor/extensions/04_attribution_and_feedbacks.ipynb)
-retains Part I's process-tagged storage and Part III's biological feedback
-experiments. Only supplied prerequisite runs of the fixed reference cases remain
-there; Part II's response explanations and full figures are in core 04.
-The extension is outside the four-hour core and is not executed by core 04.
-Tags are bookkeeping attribution of one trajectory; $G$ means gas
-exchange. Feedback laws remain hypotheses and preserve PIC's 1:2 DIC–TA coupling.
+The [04 extension](notebooks/instructor/extensions/04_attribution_and_feedbacks.ipynb)
+is retained but dormant. Its teaching goals are temporarily suspended until the
+user explicitly asks to turn them on again. Current plans exclude its settings
+and exercises; core 04's matched OA/OAE work remains active.
 Detailed sediment equations are [optional reference](ref/sediment_reference.md).
 The 03/04 benchmark retains its box-specific thermodynamic conditions.
+
+The separate [independent-model starter](notebooks/student/extensions/05_independent_model.ipynb)
+([instructor example](notebooks/instructor/extensions/05_independent_model.ipynb))
+offers a provisional 60–90-minute optional activity: one question, one changed
+assumption, native scientific choices, a matched comparison, budgets and one
+interpreted figure. Its example compares fixed and first-order export in the
+mass-consistent 02 model. It is outside the four-hour core and does not run from 04.
 
 ## Shared Excel model definition for 03/04
 
@@ -177,13 +200,24 @@ relying on cached Excel results. Baseline PIC = POC × PIC/POC ratio, and carbon
 weathering TA = 2 × weathering DIC. PIC's DIC–TA fluxes always remain linked 1:2,
 including with state-dependent export.
 
-Notebook 03 shows imported tables and one reservoir mapping before students
+Notebook 03 first shows geometry and baseline parameters. Students reconstruct
+their diagram, then reveal connection records for reconciliation. A partial
+reservoir example supplies T/S/P syntax before students
 construct reservoirs, transport and gas-exchange connections using standard
 ESBMTK functions. Native POC/PIC and chemistry calls remain visible; sediment
 equations are optional reference. Notebook 04 reuses the verified definition for matched
-cases; forcing amounts, pump strengths and feedback switches remain in its
-experiment cells. Its diagnostic transport operator uses the same Excel arrows
+cases; forcing amounts and endpoints remain student choices, while baseline
+pump strengths are fixed and feedback experiments stay in the optional extension.
+The optional diagnostic transport operator uses the same Excel arrows
 and ESBMTK-derived water masses as the physical calculation.
+
+The [student flux worksheet](outputs/03_04_flux_specification/student.xlsx) and
+[instructor reference](outputs/03_04_flux_specification/instructor.xlsx) connect
+process IDs, scientific properties and workbook/code ownership. These are separate
+teaching documents: editing them does not change model inputs. Students may use
+the same table in notebook Markdown; Excel editing is optional. No numerical
+baseline input is duplicated as an independent setting. See the
+[schematic guide](ref/boudreau_diagrams.md) for sources and regeneration.
 
 **Geometry stays explicit.** The adapter passes the workbook's area and volume
 directly to ESBMTK. Students do not need `area_percentage`, depth boundaries or a
@@ -224,27 +258,38 @@ requires future edits to preserve this convention.
 
 ## Environment and verification
 
+The setup material is separated from the exercises. A temporary
+[start-and-transition guide](ref/setup_only_start_here.md) explains how students
+choose one installation route, verify JupyterLab and later move to the complete
+GitHub repository. The setup-only ZIP is assembled from a fixed allow-list by
+`python scripts/build_setup_package.py --rebuild-pdfs`; it contains no exercise
+notebooks, model data or instructor material.
+
 Printable student handouts: [uv setup (PDF)](output/pdf/student_setup_uv.pdf)
-and [Anaconda setup (PDF)](output/pdf/student_setup_anaconda.pdf). The three-page
-[uv guide](ref/uv_setup.md) explains terminals, folder paths, installation,
-success checks, opening notebooks, shutdown and subsequent launches. Supply the
-complete extracted course folder, including [`pyproject.toml`](pyproject.toml),
-[`uv.lock`](uv.lock), [`.python-version`](.python-version), scripts and data;
-students do not generate these files themselves. uv downloads its own Python,
-so no existing Python or Anaconda installation is required.
+and [Anaconda setup (PDF)](output/pdf/student_setup_anaconda.pdf). Their Markdown
+sources remain valid for either the setup-only folder or the eventual complete
+repository. [`JUPYTER_BASICS.ipynb`](JUPYTER_BASICS.ipynb) introduces cell
+execution and command-mode shortcuts, then checks the environment and the
+labelled [`workbook_probe.xlsx`](setup_assets/workbook_probe.xlsx). Instructor
+validation and dependency-maintenance notes are kept separately in
+[`ref/setup_instructor_validation.md`](ref/setup_instructor_validation.md).
 
 The locked uv environment was installed from scratch on Windows with managed
 Python 3.14.7. Numerical/chemistry/workbook/plot checks, all five core instructor
-notebooks and a JupyterLab launch/kernel/shutdown/relaunch cycle pass. macOS and
-Linux still need an instructor pilot. The three-page Anaconda guide remains a
-separate pilot recipe. ESBMTK314 remains the instructor reference environment.
+notebooks and a JupyterLab launch/kernel/shutdown/relaunch cycle pass. The
+Anaconda recipe was also created from scratch from the extracted setup-only ZIP
+on Windows/Python 3.14; package checks, environment checks, kernel registration,
+the Jupyter basics notebook and an HTTP JupyterLab launch pass. macOS and Linux
+still need instructor pilots. ESBMTK314 remains the instructor reference environment.
 
 Students who already use Anaconda/Miniconda can use the
 [Anaconda setup guide](ref/anaconda_setup.md) and supplied
 [`environment-anaconda.yml`](environment-anaconda.yml). The alternative recipe
 creates a separate `esbmtk-practicals` environment and includes kernel-selection
-instructions. It still needs a fresh-installation pilot; the instructions below
-describe the existing verified instructor environment.
+instructions. uv users create a new project-local `.venv` after moving to the
+complete repository; Conda users reuse the named environment unless dependency
+changes require an explicit update. The instructions below describe the existing
+verified instructor environment.
 
 From an Anaconda prompt:
 
@@ -300,6 +345,13 @@ the archive. Update `TEACHING_GOALS.md` whenever later teaching changes alter
 learning outcomes, required work or timing.
 
 ## Scientific scope
+
+For review without Jupyter, extract the [instructor PDF pack, 00–04](output/ESBMTK-instructor-review-00-04.zip)
+and open `START_HERE.txt`. The five PDFs include freshly executed results,
+instructor solutions and expanded optional notes. The pack also includes the
+offline carbonate explorer and directly cited local references. It contains
+answers and is intended for lecturers. See [export instructions](ref/instructor_review.md)
+for rebuilding it from the current instructor sources.
 
 The unit-strength, feedback-disabled configuration reproduces the ESBMTK
 Boudreau benchmark. Modified configurations are described as *Boudreau-like

@@ -1,0 +1,132 @@
+material gets permanently buried indicates that the
+coupling between remineralization of organic matter
+and dissolution of CaCO
+3 is variable.
+A powerful way to investigate the coupling between
+organic matter remineralization and CaCO 3 dissolution
+in sediments is to measure‘ vertical proﬁles of pore
+water constituents, especially pH ¼/C0 log
+10[Hþ]. Since
+the remineralization of organic matter produces free
+protons (see reaction 8.3.12), this reaction leads to a
+decrease in the pH of pore waters. In contrast, as the
+dissolution of CaCO
+3 releases a base (CO 2/C0
+3 ), which
+tends to consume a free proton to form HCO /C0
+3
+, this
+reaction leads to an increase in pH (see ﬁgure 8.2.1).
+Thus, pore water proﬁles of pH can give a qualitative
+indication of the relative role of organic matter re-
+mineralization versus CaCO
+3 dissolution.
+Three pH pore water proﬁles, obtained by carefully
+lowering a pH electrode into the sediments, are shown
+in ﬁgure 9.4.5. These proﬁles are from the Ontong-Java
+Plateau in the western equatorial Paciﬁc. The three
+stations are located at water depths ranging from 2322
+to 2966 m and are overlain with undersaturated waters
+with respect to calcite ( O between 0.75 (station 3) and
+0.91 (stations 2A and 2B), corresponding to DCO
+2/C0
+3
+between /C0 5 and /C0 13 mmol kg/C0 1). All three pH proﬁles
+show decreasing pH with depth near the core top, in-
+dicating a small excess of organic matter reminer-
+alization over CaCO
+3 dissolution. Thus, it indeed ap-
+pears that the remineralization of organic matter may
+enhance the dissolution of CaCO
+3.
+If respiration is indeed a main driver for CaCO 3
+dissolution, then why don’t we see more CaCO 3 dis-
+solution at shallower depths, where the rain of organic
+matter arriving at the sediments greatly exceeds that of
+CaCO
+3, potentially providing more than enough free
+protons to dissolve CaCO 3 entirely?
+One reason for the decoupling between remineraliza-
+tion of organic matter and the dissolution of CaCO 3 is
+that most of the organic matter is remineralized very
+quickly in the upper few centimeters of the sediments
+(see discussion in chapter 6 about the reactivity of organic
+matter), whereas the kinetics of CaCO
+3 dissolution tends
+to be slower. This leads to a vertical separation in the
+sediments between the very near surface, where organic
+matter is remineralized, and the deeper layers, where
+most of the CaCO
+3 dissolution might occur. As a result, a
+substantial fraction of the free protons produced by re-
+mineralization in the near-surface sediments diffuses out
+of the sediments and gets buffered by the bottom waters,
+decreasing the efﬁciency of respiratory-driven CaCO
+3
+dissolution [Hales, 2003]. The strength of the buffering
+depends on how fast HCO /C0
+3
+can diffuse into the sedi-
+ments, while the degree of vertical decoupling between
+organic matter remineralization and CaCO
+3 dissolution
+depends mainly on the accumulation rates and the dif-
+ferences in the kinetics. In shallower waters, the vertical
+5
+7
+6
+4
+1
+3
+2
+0Depth (cm)
+∆ pH
+–0.05
+a
+–0.1
+No
+Dissolution
+No
+CO2
+0
+5
+7
+6
+4
+1
+3
+2
+0
+∆ pH
+–0.05
+b
+–0.1
+No
+Dissolution No
+CO2
+0
+5
+7
+6
+4
+1
+3
+2
+0
+∆ pH
+–0.05
+c
+–0.1
+No
+Dissolution
+No
+CO2
+0
+Ω  = 0.91±0.13 Ω  = 0.91±0.13 Ω  = 0.75±0.11
+Figure 9.4.5: Pore water proﬁles of pH at three stations on the Ontong-Java Plateau in the western equatorial
+Paciﬁc. (a) Station 2A at a depth of 2322m, with a calcite saturation O ¼ 0.91 ± 13. (b) Station 2B at a depth of 2335 m,
+O ¼ 0.91 ± 0.13. (c) Station 3 at 2966 m, O ¼ 0.75 ± 0.11. Also shown are model-simulated pH curves for three
+scenarios: ‘‘no dissolution’’ (heavy solid lines), ‘‘no CO 2’’ generation from organic matter remineralization (heavy
+dashed lines), and the best ﬁt to the data (light solid line). From Hales and Emerson [1996].
+378
+Chapter 9

@@ -1,0 +1,111 @@
+pCO2 changes are primarily temperature controlled, the
+high latitude North Atlantic, where seasonal pCO2 chan-
+ges are dominated by biology and mixing, and the North
+Paciﬁc, where all three mechanisms are important.
+Subtropical Gyres
+Figure 8.3.8 shows seasonally aggregated time series of
+temperature, sDIC,
+13C/12Cr a t i oo fDIC, sAlk, and oce-
+anic pCO2 in the surface mixed layer at the Bermuda
+Atlantic Time-series Study (BATS) site, which lies near
+Bermuda in the northwestern Sargasso Sea [Gruber et al.,
+2002]. Figure 8.3.9 shows a similar time series from the
+Hawaii Ocean Time-series (HOT) site, which is located
+north of the Hawaiian island chain [ Keeling et al ., 2004].
+Both sites exhibit well-deﬁned seasonal cycles insDIC and
+pCO
+2 (see discussions byGruber [1998], Bates et al.[ 1 9 9 6 b ] ,
+Quay and Stutsman [2003], and Keeling et al . [2004]), but
+negligible variations in sAlk, with the exception of a few
+brief drawdowns occurring at BATS apparently linked to
+localized blooms of calcifying organisms (most likely
+coccolithophorids) [Bates et al ., 1996a]. The seasonal am-
+plitude of sDIC at BATS is about 30 mmol kg
+/C0 1, approxi-
+mately twice as large as that observed at HOT and in good
+agreement with our rough estimates based on (8.3.27).
+The competing effects of changing temperature and
+sDIC on the seasonal evolution of pCO
+2 at BATS are
+shown in more detail in ﬁgure 8.3.10a. If sDIC were kept
+constant, the seasonal cycle in temperature at this station
+would lead to a seasonal amplitude of more than
+110 matm, with a maximum occurring in mid-August. If
+temperature were kept at the annual mean value, the
+seasonal changes in sDIC would lead to a pCO
+2 change
+opposite in phase and with an amplitude of about 60matm.
+The situation is similar but less pronounced in the sub-
+tropical North Paciﬁc [Keeling et al., 2004] (ﬁgure 8.3.10b).
+Thus, the detailed time-series data conﬁrm the general
+trends for the subtropical gyres seen from the global maps
+very well, i.e., that in these regions, the thermally forced
+increase in pCO
+2, DpCO2
+/C12
+/C12
+thermal, outweighs the negative
+DpCO2
+/C12
+/C12
+DIC, Alk component, leading to a winter-to-summer
+increase in oceanic pCO2 as displayed in ﬁgure 8.3.7a.
+Having established the causes for the seasonal chan-
+ges in pCO2, what is driving the seasonal changes in
+sDIC? Of particular interest is the summer/fall period,
+when sDIC is drawn down almost continuously every
+year at both sites in the absence of measurable nitrate
+and phosphate concentrations (see also discussion in
+section 4.3). The processes that we need to consider are
+air-sea gas exchange ( ex), net community production
+(ncp), i.e., net primary production minus community
+respiration, lateral transport ( trsp), vertical diffusion
+(diff ), and vertical entrainment ( ent). The latter process
+describes the transport of DIC from the thermocline into
+the mixed layer whenever the surface mixed layer deep-
+-40
+-80
+-120-160
+-20
+-40
+-60
+-60
+-60
+-40
+-60
+-20
+-100
+-20
+-80
+-60-60
+-20
+-80
+-40
+-40
+-40
+-80
+-120
+-60
+-20
+-100
+-20
+-40
+-60
+-60
+-60
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+"Biological" component (µatm)
+20°E
+c
+Figure 8.3.7: (Continued)
+337
+Carbon Cycle

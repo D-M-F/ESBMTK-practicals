@@ -1,0 +1,27 @@
+[
+  {
+    "pdf": "00_PyCO2SYS.pdf",
+    "pages": 8,
+    "out_of_page_chars": []
+  },
+  {
+    "pdf": "01_single_box_air_sea_CO2.pdf",
+    "pages": 17,
+    "out_of_page_chars": []
+  },
+  {
+    "pdf": "02_two_layer_ocean_carbon_pump.pdf",
+    "pages": 14,
+    "out_of_page_chars": []
+  },
+  {
+    "pdf": "03_boudreau_three_box_model.pdf",
+    "pages": 23,
+    "out_of_page_chars": []
+  },
+  {
+    "pdf": "04_pump_strength_OA_OAE.pdf",
+    "pages": 13,
+    "out_of_page_chars": []
+  }
+]

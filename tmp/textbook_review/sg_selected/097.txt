@@ -1,0 +1,134 @@
+where kw ¼ "w =Dzw. The vertical coordinate is positive
+upwards. The partial pressures and concentrations are as
+deﬁned in ﬁgure 3.3.1. The superscript 0 indicates that
+the concentration and partial pressures are at the air-sea
+interface (see ﬁgure 3.3.1). In these equations, k
+a is a gas
+exchange coefﬁcient with units of velocity times solu-
+bility, and k
+w is a gas exchange coefﬁcient with units of
+velocity. kw is often referred to as the transfer or piston
+velocity, and we shall use that terminology here.
+Measurements of partial pressures and concentra-
+tions are always made well above or below the air-sea
+interface, never at the interface. We therefore eliminate
+the interface partial pressure and concentrations from
+(3.3.1) and (3.3.2) by taking advantage of the requirement
+from continuity that without any sources or sinks in
+the stagnant ﬁlm, F
+a ¼ Fw ¼ F and [A] 0
+a
+¼ [A]0
+w
+. This
+gives
+F ¼/C0 K /C1 ([A]a /C0 [A]w)( 3 :3:3)
+with
+1
+K ¼ 1
+kw
+þ SA
+ka
+(3:3:4)
+For all gases of concern to us here, ka/SA is typically
+well in excess of 1000 cm hr /C0 1, as compared with values
+of order 10 cm hr /C0 1 for kw [Liss and Slater , 1974], al-
+lowing us to safely ignore the stagnant ﬁlm in the at-
+mosphere. This gives K ¼ k
+w and
+F ¼/C0 kw /C1 ([A]a /C0 [A]w)( 3 :3:5)
+Equation (3.3.5) is also frequently expressed in terms of
+partial pressures as:
+F ¼/C0 kg /C1 (pA
+a
+/C0 pA
+w
+)( 3 :3:6)
+with kg ¼ kw /C1 SA. However, we mostly conﬁne our at-
+tention here to the concentration form (3.3.5). Note
+that the gas exchange coefﬁcient k
+g, which is for the
+boundary layer in the water, is not to be confused with
+k
+a, which has the same units but is for the boundary
+layer in the air.
+Measurements of the gas transfer velocity have been
+made in wind tunnels (ﬁgure 3.3.2) and with the use of
+in situ tracers (ﬁgure 3.3.3) for a variety of gases under
+different wind and temperature conditions. These mea-
+surements and theory indicate that the gas exchange
+coefﬁcient is controlled by the level of turbulence near
+the interface, which is primarily controlled by the wind
+stress at the boundary; and by the Schmidt number,
+Sc ¼ v/e, where n is the kinematic viscosity of water,
+which inﬂuences the thickness of the ﬁlm where mo-
+lecular diffusivity dominates. Table 3.3.1 gives the pa-
+rameters necessary to calculate the Schmidt number.
+Additional processes that may inﬂuence the gas trans-
+fer velocity are the type of wave at the surface, breaking
+waves and formation of air bubbles, and temperature
+and humidity gradients [cf. Nightingale et al ., 2000b], as
+well as organic ﬁlms coating the surface of the ocean
+[e.g., Frew, 1997].
+How are we to parameterize the inﬂuence of all these
+processes on the gas exchange coefﬁcient? J€a ahne et al.
+[1987b] proposed the following relationship:
+kw ¼ g/C1 Sc/C0 n /C1 uw* (3:3:7)
+where g is a dimensionless constant which is the same
+for all gases. The friction velocity in the water, u*
+w
+,
+represents the wind stress effect. The exponent n in the
+Schmidt number is 1 for a stable stagnant ﬁlm model
+such as depicted in ﬁgure 3.3.1, but can take on other
+values in different models of the boundary layer. In
+particular, the micrometeorological boundary layer
+model we mentioned earlier gives an n of 2/3, and the
+ﬁlm replacement model gives an n of 0.5 [cf. Liss and
+Merlivat, 1986]. The value of n can be determined ex-
+perimentally from measurements of gas transfer ve-
+locity with more than one gas, or with gas and heat at
+the same conditions:
+n ¼ /C0 log ( kw1 =kw2 )
+log (Sc1=Sc2) (3:3:8)
+ATMOSPHERE
+OCEAN
+z=0
+Partial pressure
+Concentration
+Turbulent 
+     transfer
+Turbulent 
+     transfer
+Molecular 
+     transfer
+Molecular 
+     transfer
+pa
+A,0
+pa
+A
+[A]w
+[A]w
+0
+Figure 3.3.1: Schematic depiction of the stagnant ﬁlm model.
+Shown is the air-sea interface ( z ¼ 0) with stagnant ﬁlms in
+both the atmosphere and ocean and turbulent regions further away
+from the interface. Gas A is well mixed in the turbulent
+regions, resulting in a relatively uniform concentration [ A]
+w in the
+water and partial pressure pA
+a
+in the air. However, the transfer
+across the stagnant ﬁlms is assumed to be governed by molecular
+diffusion. Consequently, the concentration and partial pressure of
+this gas changes linearly in the stagnant layers toward the
+saturation levels at the interface, [ A]
+0
+w
+and paA,0. The stagnant ﬁlm
+model proposes that the time it takes for a gas to transfer across
+the air-sea interface is governed by how fast this gas passes
+through the two stagnant ﬁlms.
+Chapter 3
+82

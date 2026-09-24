@@ -4,11 +4,11 @@ For students who already use Anaconda or Miniconda on Windows, macOS or Linux.
 
 **What you are setting up:** an *environment* is a separate Python installation with its own packages. Conda creates and activates the course environment, named `esbmtk-practicals`. JupyterLab is the interface you open in your browser; a *kernel* is the Python process that runs notebook cells. Your R installation stays unchanged. You do not need uv or another Python installer.
 
-## 1  Download the course and open a terminal
+## 1  Download the supplied folder and open a terminal
 
-Download the complete course folder from your instructor and extract the ZIP. On Windows, right-click it and choose **Extract All**. On macOS, double-click it. Work in the extracted folder, not inside the ZIP.
+Download the folder supplied by your instructor and extract the ZIP. It may be the setup-only package or, later, the complete course repository. On Windows, right-click it and choose **Extract All**. On macOS, double-click it. Work in the extracted folder, not inside the ZIP.
 
-The folder must contain **environment-anaconda.yml**, **scripts**, **notebooks** and **data**, together with the other supplied course files. The YAML file is a package recipe supplied by your instructor; you do not need to write it.
+The folder must contain **environment-anaconda.yml**, **scripts**, **setup_assets** and **JUPYTER_BASICS.ipynb**. The YAML file is a package recipe supplied by your instructor; you do not need to write it.
 
 **Windows:** click Start or the Windows search bar, type **Anaconda Prompt**, and open it. This terminal is already prepared to use Conda. A terminal is simply a window where you type commands. You do not need to open Navigator first.
 
@@ -26,7 +26,7 @@ A version number confirms Conda is available. If it is not recognised, use Anaco
 
 Run terminal commands **one line at a time**, pressing Enter and waiting for each to finish. They are not R code and do not go in RStudio or a notebook cell. Do not copy the prompt before a command, such as `(base) C:\Users\Alex>`.
 
-The first installation needs internet access. **Pilot status:** package resolution was checked on Windows/Python 3.14; a fresh Anaconda installation and cross-platform pilots remain outstanding. The separate uv route has its own verification record. Reference: [Conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+The first installation needs internet access. **Test status:** a fresh environment created from the setup-only ZIP passed the package, numerical, chemistry, workbook, plotting, kernel, notebook and JupyterLab checks on Windows/Python 3.14. macOS/Linux still require instructor pilots. Reference: [Conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 
 <!-- PAGEBREAK -->
 
@@ -52,7 +52,7 @@ cd "$HOME/Downloads/ESBMTK-practicals"
 
 Use your actual folder name and location, including a suffix such as `-main`. On Windows, open the folder in File Explorer, click its address bar and copy that path between the quotes after `cd /d`.
 
-**Check the folder:** on Windows, run `cd` by itself to print the location, then `dir` to list files. On macOS/Linux, use `pwd`, then `ls`. Find **environment-anaconda.yml**, **scripts**, **notebooks** and **data** before continuing. “From the course folder” means this terminal location.
+**Check the folder:** on Windows, run `cd` by itself to print the location, then `dir` to list files. On macOS/Linux, use `pwd`, then `ls`. Find **environment-anaconda.yml**, **scripts**, **setup_assets** and **JUPYTER_BASICS.ipynb** before continuing. “From the supplied folder” means this terminal location.
 
 ## 4  Create, activate and check the environment
 
@@ -65,7 +65,7 @@ python scripts/check_environment.py
 
 Creation downloads Python and the course packages; wait for it to finish. Activation selects them for this terminal; the prompt should show **(esbmtk-practicals)**. If this course environment already exists, skip creation and run the other three commands.
 
-Expect **No broken requirements found**, then **Environment check passed. Next: start JupyterLab.** The second check tests numerical calculations, chemistry, workbook access and plotting. Stop and seek help if either check fails.
+Expect **No broken requirements found**, then **Environment check passed. Next: start JupyterLab.** The second check tests numerical calculations, chemistry, access to the supplied workbook probe and plotting. Stop and seek help if either check fails.
 
 ## 5  Register the course kernel and start JupyterLab
 
@@ -84,25 +84,19 @@ JupyterLab opens in your browser. Keep the terminal open; its prompt will not re
 
 The steps below take place in JupyterLab, then in the terminal when you finish.
 
-## 6  Confirm that JupyterLab uses the course Python
+## 6  Complete the JupyterLab setup check
 
-Click **File > New > Notebook** and choose **esbmtk-practicals** (or **ESBMTK practicals** if registered with the earlier guide). Paste this code into the first cell, then press **Shift+Enter**:
+In JupyterLab's left file browser, double-click **JUPYTER_BASICS.ipynb**. Choose **esbmtk-practicals** (or **ESBMTK practicals** if registered with an earlier guide) if JupyterLab asks for a kernel. Follow the notebook from top to bottom, or select **Run > Run All Cells**. The last cell should print:
 
-```python
-import sys
-import numpy as np
-import esbmtk
-import PyCO2SYS
-print(sys.executable)
-np.testing.assert_allclose(np.linalg.solve(np.eye(2), np.ones(2)), [1, 1])
-print("Setup check passed")
+```text
+Jupyter setup check passed
 ```
 
-The Python path should identify the `esbmtk-practicals` environment and match the interpreter printed by the terminal check. Expect **Setup check passed**. **If both terminal checks and this notebook check passed, setup is complete.** You do not repeat creation or kernel registration each time.
+The notebook also introduces the cell shortcuts used during the practicals. **If both terminal checks and this notebook check pass, setup is complete.** You do not repeat creation or kernel registration each time.
 
 ## Open or create notebooks while JupyterLab is running
 
-Use the left file browser to open **notebooks/student/**, then double-click a course notebook. If it asks for the instructor's ESBMTK314 kernel, choose your course kernel instead. Create another notebook via **File > New > Notebook**. No terminal command is needed for each notebook. Save with Ctrl+S (Cmd+S on macOS). Marked exercise placeholders are intentional.
+Use the left file browser to double-click any notebook supplied by your instructor. If it asks for the instructor's ESBMTK314 kernel, choose your course kernel instead. Create another notebook via **File > New > Notebook**. No terminal command is needed for each notebook. Save with Ctrl+S (Cmd+S on macOS).
 
 ## When you finish: save and shut down
 
@@ -112,7 +106,7 @@ Save your notebooks. Return to the terminal running JupyterLab, press **Ctrl+C**
 
 ## Next time: open JupyterLab again
 
-Open Anaconda Prompt or your Conda-enabled Terminal, repeat `cd` to the course folder (page 2), then run:
+Open Anaconda Prompt or your Conda-enabled Terminal, repeat `cd` to the supplied folder (page 2), then run:
 
 ```text
 conda activate esbmtk-practicals
@@ -124,42 +118,3 @@ Do this only when the server has stopped, including after restarting your laptop
 ## If a step fails
 
 **File not found:** check the terminal folder (page 2). **Wrong Python or missing package:** activate the course environment, launch Jupyter there and select its kernel. **Windows Python crash:** use the activated prompt. For other errors, send your instructor the full error text, command and operating system.
-
-<!-- INSTRUCTOR NOTES -->
-
-## Instructor verification and maintenance
-
-The three pages above are the source for the student PDF. The following notes
-are instructor preparation, not additional student exercises.
-
-Python 3.14 and the ESBMTK/PyCO2SYS pins match the teaching reference, but the
-full dependency set is not locked. On 2026-09-21, YAML/requirement validation
-and a Windows/Python 3.14 pip dry run with installed packages ignored and
-prebuilt packages required passed. This verifies resolution, not a fresh
-Anaconda installation or model execution. The shared environment checker also
-passes in the activated reference environment; it does not establish that a
-new Anaconda recipe has been tested on every platform.
-
-For an isolated pilot, create the environment with
-`conda env create -f environment-anaconda.yml -n esbmtk-practicals-pilot`, then
-activate that name in subsequent commands. Select its registered kernel and
-verify the matching interpreter path. Run these model checks from the course folder:
-
-```text
-python -m unittest discover -s tests -p test_simple_models.py -v
-python scripts/check_notebooks.py
-```
-
-For an environment-aware launch from a terminal with Conda available, an
-alternative is `conda run -n esbmtk-practicals --no-capture-output python -m jupyterlab`.
-Selecting a Conda environment's `python.exe` by absolute path alone does not
-activate Windows DLL lookup. See the [environment diagnosis](environment_setup_proposal.md).
-
-The YAML uses Conda for Python/pip and pip for the complete scientific/Jupyter
-stack. Avoid adding Conda copies of those pip-owned packages later. Revise the
-recipe and verify a fresh environment for dependency changes, following
-[Conda's pip guidance](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment).
-The recipe has no machine-specific prefix or Windows-only build strings; it is
-not a lockfile. Freeze and test the resolved package set for supported platforms
-before release. Do not export the instructor environment's stale overlapping
-NumPy metadata. Students should use one setup route for this course.

@@ -1,0 +1,224 @@
+{
+  "student": {
+    "FluxSpecification": [
+      {
+        "Process ID": "T_* / M_*",
+        "Process": "Water transport",
+        "Endpoints": "Each directed water arrow",
+        "Inventory effects": "Your choice / explanation",
+        "Flux rule": "Your choice / explanation",
+        "Units": "mol C/yr or TA eq/yr",
+        "Status": "Prescribed q; calculated tracer flux"
+      },
+      {
+        "Process ID": "G_L / G_H",
+        "Process": "Air-sea exchange",
+        "Endpoints": "atm <-> L_b; atm <-> H_b",
+        "Inventory effects": "Your choice / explanation",
+        "Flux rule": "Your choice / explanation",
+        "Units": "mol C/yr",
+        "Status": "State-dependent flux"
+      },
+      {
+        "Process ID": "POC",
+        "Process": "Organic export / remineralization",
+        "Endpoints": "Your choice / explanation",
+        "Inventory effects": "Your choice / explanation",
+        "Flux rule": "Your choice / explanation",
+        "Units": "mol C/yr",
+        "Status": "Prescribed fixed export"
+      },
+      {
+        "Process ID": "PIC",
+        "Process": "Carbonate export",
+        "Endpoints": "L_b -> carbonate process module",
+        "Inventory effects": "Your choice / explanation",
+        "Flux rule": "E(t) = poc_export * rain_ratio",
+        "Units": "mol C/yr; TA eq/yr",
+        "Status": "Your choice / explanation"
+      },
+      {
+        "Process ID": "W",
+        "Process": "Lumped weathering",
+        "Endpoints": "Outside -> L_b",
+        "Inventory effects": "Your choice / explanation",
+        "Flux rule": "W_C = weathering_dic; W_A = 2 W_C",
+        "Units": "mol C/yr; TA eq/yr",
+        "Status": "Prescribed benchmark boundary closure"
+      },
+      {
+        "Process ID": "D",
+        "Process": "Carbonate dissolution",
+        "Endpoints": "Your choice / explanation",
+        "Inventory effects": "Your choice / explanation",
+        "Flux rule": "sediment_response(PIC rain, deep chemistry, snowline; parameters)",
+        "Units": "mol C/yr; TA eq/yr",
+        "Status": "Calculated response"
+      },
+      {
+        "Process ID": "B_net",
+        "Process": "Signed net burial",
+        "Endpoints": "Module -> outside active atm + ocn",
+        "Inventory effects": "Your choice / explanation",
+        "Flux rule": "Your choice / explanation",
+        "Units": "mol C/yr; TA eq/yr",
+        "Status": "Calculated boundary residual"
+      }
+    ],
+    "WorkbookLinks": [
+      {
+        "Process ID": "T_* / M_*",
+        "Workbook owner": "TransportConnections (Transport)",
+        "Stable key / dependency": "(source, sink, flux_id); Parameter -> thc or mixing",
+        "Supplied implementation": "Match after your reconstruction"
+      },
+      {
+        "Process ID": "G_L / G_H",
+        "Workbook owner": "GasExchangeConnections (GasExchange)",
+        "Stable key / dependency": "Atmosphere + Surface; Parameter -> piston_velocity",
+        "Supplied implementation": "Match after your reconstruction"
+      },
+      {
+        "Process ID": "POC",
+        "Workbook owner": "ProcessParameters (Parameters)",
+        "Stable key / dependency": "poc_export",
+        "Supplied implementation": "Match after your reconstruction"
+      },
+      {
+        "Process ID": "PIC",
+        "Workbook owner": "ProcessParameters (Parameters)",
+        "Stable key / dependency": "poc_export * rain_ratio",
+        "Supplied implementation": "PIC_DIC + PIC_TA; nominal deep sinks bypassed"
+      },
+      {
+        "Process ID": "W",
+        "Workbook owner": "ProcessParameters + BoundaryNodes",
+        "Stable key / dependency": "weathering_dic; Fw",
+        "Supplied implementation": "ConnectionProperties; linked TA rate"
+      },
+      {
+        "Process ID": "D",
+        "Workbook owner": "Calculated, no flux input row",
+        "Stable key / dependency": "alpha, z0; actual PIC flux object",
+        "Supplied implementation": "add_carbonate_system_2; Fdiss for plotting"
+      },
+      {
+        "Process ID": "B_net",
+        "Workbook owner": "Calculated, no flux input row",
+        "Stable key / dependency": "PIC export and dissolution",
+        "Supplied implementation": "Fburial diagnostic; Fb is not an extra active drain"
+      }
+    ]
+  },
+  "instructor": {
+    "FluxSpecification": [
+      {
+        "Process ID": "T_* / M_*",
+        "Process": "Water transport",
+        "Endpoints": "Each directed water arrow",
+        "Inventory effects": "DIC and TA: equal source loss and destination gain",
+        "Flux rule": "J_X(t) = q X_source(t); q = rho Q physically",
+        "Units": "mol C/yr or TA eq/yr",
+        "Status": "Prescribed q; calculated tracer flux"
+      },
+      {
+        "Process ID": "G_L / G_H",
+        "Process": "Air-sea exchange",
+        "Endpoints": "atm <-> L_b; atm <-> H_b",
+        "Inventory effects": "CO2 changes ocn DIC and atm carbon; TA unchanged",
+        "Flux rule": "J_gas = invasion - outgassing; depends on atm and CO2aq",
+        "Units": "mol C/yr",
+        "Status": "State-dependent flux"
+      },
+      {
+        "Process ID": "POC",
+        "Process": "Organic export / remineralization",
+        "Endpoints": "L_b -> D_b",
+        "Inventory effects": "L_b loses POC carbon; D_b gains it as DIC; zero TA effect here",
+        "Flux rule": "J_POC(t) = prescribed poc_export",
+        "Units": "mol C/yr",
+        "Status": "Prescribed fixed export"
+      },
+      {
+        "Process ID": "PIC",
+        "Process": "Carbonate export",
+        "Endpoints": "L_b -> carbonate process module",
+        "Inventory effects": "L_b loses 1 DIC and 2 TA per mole CaCO3",
+        "Flux rule": "E(t) = poc_export * rain_ratio",
+        "Units": "mol C/yr; 2E TA eq/yr",
+        "Status": "Derived fixed export"
+      },
+      {
+        "Process ID": "W",
+        "Process": "Lumped weathering",
+        "Endpoints": "Outside -> L_b",
+        "Inventory effects": "L_b gains 1 DIC and 2 TA per unit weathering carbon",
+        "Flux rule": "W_C = weathering_dic; W_A = 2 W_C",
+        "Units": "mol C/yr; TA eq/yr",
+        "Status": "Prescribed benchmark boundary closure"
+      },
+      {
+        "Process ID": "D",
+        "Process": "Carbonate dissolution",
+        "Endpoints": "Carbonate module -> D_b",
+        "Inventory effects": "D_b gains 1 DIC and 2 TA per mole CaCO3 dissolved",
+        "Flux rule": "D(t) = sediment_response(E, deep chemistry, snowline; parameters)",
+        "Units": "mol C/yr; 2D TA eq/yr",
+        "Status": "Calculated response"
+      },
+      {
+        "Process ID": "B_net",
+        "Process": "Signed net burial",
+        "Endpoints": "Module -> outside active atm + ocn",
+        "Inventory effects": "Aggregate loss: B_net C and 2 B_net TA; may be negative",
+        "Flux rule": "B_net(t) = E(t) - D(t); no additional drain",
+        "Units": "mol C/yr; 2 B_net TA eq/yr",
+        "Status": "Calculated boundary residual"
+      }
+    ],
+    "WorkbookLinks": [
+      {
+        "Process ID": "T_* / M_*",
+        "Workbook owner": "TransportConnections (Transport)",
+        "Stable key / dependency": "(source, sink, flux_id); Parameter -> thc or mixing",
+        "Supplied implementation": "create_bulk_connections; concentration-dependent law"
+      },
+      {
+        "Process ID": "G_L / G_H",
+        "Workbook owner": "GasExchangeConnections (GasExchange)",
+        "Stable key / dependency": "Atmosphere + Surface; Parameter -> piston_velocity",
+        "Supplied implementation": "Species2Species; gasexchange"
+      },
+      {
+        "Process ID": "POC",
+        "Workbook owner": "ProcessParameters (Parameters)",
+        "Stable key / dependency": "poc_export",
+        "Supplied implementation": "POM: native fixed export/remineralization connection"
+      },
+      {
+        "Process ID": "PIC",
+        "Workbook owner": "ProcessParameters (Parameters)",
+        "Stable key / dependency": "poc_export * rain_ratio",
+        "Supplied implementation": "PIC_DIC + PIC_TA; nominal deep sinks bypassed"
+      },
+      {
+        "Process ID": "W",
+        "Workbook owner": "ProcessParameters + BoundaryNodes",
+        "Stable key / dependency": "weathering_dic; Fw",
+        "Supplied implementation": "ConnectionProperties; linked TA rate"
+      },
+      {
+        "Process ID": "D",
+        "Workbook owner": "Calculated, no flux input row",
+        "Stable key / dependency": "alpha, z0; actual PIC flux object",
+        "Supplied implementation": "add_carbonate_system_2; Fdiss for plotting"
+      },
+      {
+        "Process ID": "B_net",
+        "Workbook owner": "Calculated, no flux input row",
+        "Stable key / dependency": "PIC export and dissolution",
+        "Supplied implementation": "Fburial diagnostic; Fb is not an extra active drain"
+      }
+    ]
+  }
+}

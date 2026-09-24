@@ -1,0 +1,100 @@
+wavelengths. The energy absorbed by the radiatively
+active gases in the atmosphere is re-emitted from
+within the atmosphere (see ﬁgure 10.1.3). This re-
+emission occurs in all directions, therefore to a sub-
+stantial degree also in a downward direction, reducing
+the efﬁciency with which the surface of Earth is able to
+cool itself. One way to think about the resulting trap-
+ping of radiation is that if you were in outer space
+looking at the Earth at a wavelength of 15 mm, most of
+what you would see would be radiation emitted from
+the sky.
+Because radiation is trapped in the atmosphere and
+is re-emitted at some height above the surface, the av-
+erage equilibrium radiative blackbody temperature of
+255 K occurs at some elevation that is well above the
+surface of the Earth. Because air is compressible, the
+atmosphere warms as one descends from this elevation
+to the surface. Temperature at the surface of the Earth
+is thus warmer than the radiative equilibrium temper-
+ature, giving the observed average surface temperature
+of 288 K. The warming of the surface of the Earth due
+to the presence of the greenhouse effect is thus a re-
+markable 33 K.
+Global Warming
+Human activities have increased the atmospheric bur-
+dens of many radiatively active gases, including CO
+2,
+methane (CH 4), nitrous oxide (N 2O), and chloroﬂuo-
+rocarbons (CFCs). Methane, nitrous oxide, and CFCs
+tend to absorb terrestrial radiation in a wave-length
+window where the atmosphere is currently relatively
+transparent, i.e., where little absorption by other at-
+mospheric constituents takes place. As a result, the
+release to the atmosphere of these trace gases has an
+important effect on the radiative balance even at very
+low levels of concentration. Atmospheric CO
+2, on the
+other hand, is already absorbing most of the radiation
+in its absorption band, and any additional CO
+2 acts by
+increasing the absorption toward the edges of the band.
+As a consequence, a proportionally larger increase in
+the atmospheric CO
+2 burden is necessary to affect
+signiﬁcantly the radiative balance of the atmosphere.
+Table 10.1.2 gives the relative efﬁciencies of the major
+greenhouse gases, expressed as forcing per molecule
+normalized to CO
+2.
+Table 10.1.1 summarizes the contributions of each of
+the greenhouse gases to the radiative balance of the
+atmosphere due to their concentration increases be-
+tween 1765 and 1990. Despite its high background con-
+centration, the addition of CO
+2 to the atmosphere has
+been so large that it accounts for about 60% of the en-
+hanced capacity of the atmosphere to absorb long-
+wavelength radiation emitted from the surface. CH
+4 and
+Table 10.1.1
+Major greenhouse gases
+Mixing ratios, present rate of increase, and increase in radiative forcing are from Ramaswamy et al. [2001].
+Preindustrial radiative forcing is from Dickinson and Cicerone [1986].
+Mixing Ratio in Dry Air (ppm) Radiative Forcing (W m /C0 2)
+Gas 1765 1992
+Current Rate
+of Increase (% yr /C0 1)
+Preindustrial
+(<1765)
+Anthropogenic
+(1765–1990)
+H2O — — — 94 —
+CO2 278 356 0.4 50 1.46
+CH4 0.7 1.71 0.6 1.1 0.48
+CFC-11 0.0 0.000268 0.0 0.0 0.07
+CFC-12 0.0 0.000503 1.4 0.0 0.17
+Other CFCs — — — — 0.10
+N
+2O 0.275 0.310 0.25 1.25 0.15
+Total 146 2.43
+0 1000 1500 2000 2500500
+20∞ 10 6.7 5 4
+4
+5
+3
+2
+1
+0 Flux (W m–2)
+294K
+244K
+194K
+Wavenumber (cm
+–1)
+Figure 10.1.4: Outgoing clear-sky radiation calculated by
+K. P. Shine for a region where the surface temperature is 294 K
+[Houghton et al. , 1990]. The dashed lines show the hypothetical
+energy ﬂux, which would be observed if none of the outgoing
+radiation were intercepted in the atmosphere.
+396
+Chapter 10

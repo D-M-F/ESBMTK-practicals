@@ -56,6 +56,7 @@ formula results. PIC export and dissolution always link DIC and TA 1:2.
 
 Save edits and rerun notebook setup and dependent cells. The archived restart
 supersedes workbook initial concentrations in 03 and complete-model runs of 04.
-Part I of 04 starts from the workbook state. Altered baseline geometry,
+The dormant attribution extension starts its separate tagged calculation from
+the workbook state. Altered baseline geometry,
 thermodynamics, transport or process rates requires a new stationary restart
 and matched control. Forcing controls and feedback switches remain in 04.

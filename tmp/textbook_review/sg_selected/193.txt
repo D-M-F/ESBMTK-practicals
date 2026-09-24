@@ -1,0 +1,138 @@
+different patterns in the deep Paciﬁc and low-latitude
+thermocline. The strong similarity in the deep
+North Atlantic and the deeper parts of the southern
+hemisphere thermocline suggest that preformed con-
+centrations play a major role in determining the overall
+nutrient and oxygen distributions in the interior ocean. If
+we are to understand the contribution of remineraliza-
+tion to the water column distributions, we need a way of
+separating its inﬂuence from that of the preformed
+concentration. A method exists to do this, but before we
+can explain it, we ﬁrst need to understand more about the
+remineralization reactions.
+Remineralization Reactions
+Most of the water column remineralization of organic
+matter occurs by the reverse of the organic matter syn-
+thesis reaction at the surface of the ocean depicted by
+(4.2.4), i.e.,
+C106H175O42N16P þ150 O2
+Ð 106 CO2 þ16 HNO3 þH3PO4 þ78 H2O( 5 :1:1)
+However, the C:N:P:O 2 stoichiometry of the reminer-
+alization reaction below 400 m (which is the only depth
+interval where such estimates have been made on a
+global scale) appears to be somewhat different:
+Corganic:N:P:O2
+¼ (117 /C6 14) : (16/C6 1) : (1) : (/C0 170 /C6 10) (5:1:2)
+([Anderson and Sarmiento 1994]; see panel 4.2.1). Note
+that the O 2 in (5.1.2) refers only to the free dissolved
+oxygen that is removed from the water by the reminer-
+alization reaction. It does not include the oxygen that is
+bound up in organic matter. The technique used to ob-
+tain the estimate of remineralization stoichiometry given
+by (5.1.2) did not permit an estimate of the absolute
+amount of H and O in organic matter. This is because we
+are unable to detect the water produced by the full re-
+mineralization reaction such as illustrated by (5.1.1).
+The conversion of nitrogen in organic matter to
+dissolved inorganic nitrate in (5.1.1) actually occurs in
+three distinct steps: ammoniﬁcation, ammonium oxida-
+tion, and nitrite oxidation, where the latter two processes
+in combination are often referred to as nitriﬁcation (see
+ﬁgure 5.1.5). We explain these here, as we will be ex-
+amining the nitrogen cycle in some detail in this
+chapter. Ammoniﬁcation is the transformation of or-
+ganic nitrogen to ammonium, NH
+4þ . Since organic ni-
+trogen is mostly at the same reduced oxidation state as
+ammonium, i.e., N(-III), this step usually does not in-
+volve a redox reaction, i.e., the transfer of an electron
+from one molecule to another. Nitriﬁcation refers to the
+oxidation of ammonium to nitrate. This step is done by
+nitrifying bacteria, which specialize in using the energy
+from this reaction to take up CO
+2 and synthesize organic
+matter from it. They are therefore, like phytoplankton,
+autotrophic organisms, except that they use a chemical
+reaction rather than sunlight as a source of energy. The
+nitrifying bacteria are thus referred to as chemoauto-
+trophs. The two steps of nitriﬁcation, i.e., ammonium
+oxidation (the oxidation of ammonium to nitrite, NO
+/C0
+2
+)
+and nitrite oxidation (the conversion of nitrite to nitrate)
+are most often done by distinct groups of organisms. The
+best known are Nitrosomonas spp ., an ammonium oxi-
+dizer, and Nitrobacter spp., a nitrite oxidizer. Nitriﬁcation
+requires the presence of oxygen and tends to be inhibited
+by light, as noted in chapter 4. To summarize, the fol-
+lowing three distinct reactions remineralize organic ni-
+trogen to nitrate:
+Ammonification : org :N Ð NH4
+þ
+Ammonium oxidation : 2NH 4
+þ þ3O2
+! 2NO/C0
+2
+þ4H þ þ2H2O
+Nitrite oxidation : 2NO /C0
+2
+þO2 ! 2NO/C0
+3
+(5:1:3)
+NO3
+–
+NO2
+–
+V
+I
+II
+III
+0
+-III NH4
++
+Organic Nitrogen
+Ammonification
+Assimilation
+Nitrate Assimilation
+Nitrite
+oxidation
+Ammonium oxidation
+Nitrification
+Oxidation
+ state
+Nitrite Assimilation
+IV
+N2-fixation
+N2
+DenitrificationN2O
+Anammox
+Figure 5.1.5: Transformation pathways of nitrogen in the ocean.
+Most of the ﬁxed nitrogen atoms in the ocean follow a pathway
+that consists of NO
+/C0
+3
+and NH4
+þ uptake by phytoplankton, followed
+by ammoniﬁcation (the conversion of organic N to NH 4þ ). The
+resulting NH4
+þ is then oxidized in two reaction steps back to
+NO/C0
+3
+, collectively referred to as nitriﬁcation. Under anoxic
+conditions, NO/C0
+3
+gets used as an oxidant in bacterial respiration
+processes, termed denitriﬁcation, leading to its stepwise reduction
+to N2.N 2 can also be ﬁxed into organic matter by a few specialized
+organisms, called diazotrophs, balancing the loss of ﬁxed
+nitrogen in the ocean. N 2O gets produced as a side-product in
+association with both nitriﬁcation and denitriﬁcation. N 2 can also
+be produced by the reaction of NH þ
+4
+with NO/C0
+2
+, a process
+called Anammox.
+178
+Chapter 5

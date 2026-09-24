@@ -1,0 +1,58 @@
+9.12 Observations indicate that, during the last glacial maximum, the lysocline
+was deeper in the Atlantic, but shallower in the Paciﬁc relative to the
+present ocean.
+a. What determines the depth of the lysocline in the present ocean?
+b. Given your response to (a), how would you have to change these pro-
+cesses in order to obtain the observed lysocline changes during the last
+glacial maximum?
+9.13 Explain the difference between the calcium carbonate compensation depth
+(CCD) and the lysocline. Address, in particular, what determines the differ-
+ence in depth between the two (e.g., ﬁgure 9.4.1).
+9.14 Discuss why a much larger fraction of the CaCO
+3 entering the ocean realm
+below 1000 m gets buried in the sediments in comparison to organic matter.
+9.15 Explain the process of respiration-driven CaCO 3 dissolution and discuss its
+signiﬁcance for the preservation of CaCO 3 in the sediments.
+9.16 Discuss what is meant by the terms ‘‘open system response’’ and ‘‘closed
+system response’’ in the context of the oceanic CaCO 3 cycle. In particular,
+explain why this difference is important in determining the response
+of atmospheric CO
+2 to perturbations in the strength of the ocean’s
+biological pump.
+9.17 What is the timescale associated with the open system response, and which
+processes determine this timescale?
+9.18 Consider the stacked three-box model used for problem 7.14 in chapter 7. Use
+this model with the same geometry and exchange rates given in problem 7.14
+to investigate the impact of differential remineralization of CaCO
+3 and
+organic matter on atmospheric CO 2. Assume that the CaCO 3-to-organic
+carbon mole ratio of export production is 0.06.
+a. Calculate the fractions gC org and gCaCO3 of the ﬂux out of the surface box
+of organic carbon and CaCO 3 that get remineralized/dissolved in the
+thermocline box, assuming an exponential length-scale for organic
+carbon of z
+*
+C org
+¼ 500 m and for CaCO 3 of z*
+CaCO
+3 ¼ 3000 m.
+b. Calculate the steady-state surface concentrations of DIC and Alk, given
+a phosphate concentration in the surface box of 0 mmol m /C0 3 and a
+global mean phosphate concentration of 2.0 mmol m /C0 3. Assume that
+the uptake and remineralization of phosphate is tied with a ﬁxed
+stoichiometric ratio to the generation and remineralization of organic
+carbon. Assume also that there are no sediments, i.e., all organic matter
+and CaCO
+3 entering the deep box gets remineralized/dissolved there.
+Use the global mean Alk and DIC given in table 8.2.4.
+c. Investigate how atmospheric pCO2 changes in response to changes
+in the fractions gC org and gCaCO3 . How much can you draw down
+atmospheric CO 2 by reducing gCaCO3 to zero? Use a global mean sur-
+face temperature of 20 /C14 C and a salinity of 35 for the surface box.
+Hint: Use the lookup table for problem 8.14 in chapter 8 to compute
+pCO
+2.
+d. How would your answer to (c) change if you included an inﬁnitely large
+CaCO3 sediment pool in the deep box?
+391
+Calcium Carbonate Cycle

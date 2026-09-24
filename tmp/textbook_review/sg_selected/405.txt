@@ -1,0 +1,85 @@
+the observed lysocline distribution. However, given that
+we have good observations of the CaCO
+3 distribution in
+sediments, one can turn the problem around and ask
+whether it is possible to constrain the ill-known param-
+eters with these observations, i.e., solve the inverse
+problem.
+In order to ﬁnd the optimal set of parameters, we ﬁrst
+need to establish how the modeled lysocline changes in
+response to variations of each parameter separately.
+Figure 9.4.7a shows the simulated shape of the transition
+between high and low calcite sediments as a function of
+the dissolution rate for calcite, k
+CaCO3 , using a 4.5-order
+kinetics [Archer, 1991]. In this case an organic carbon–to–
+CaCO3 rain ratio of 0.7 was used. As kCaCO3 increases,
+both the ‘‘thickness’’ of the transition zone and the un-
+dersaturation at the CCD decrease. However, above a
+value of 3 day
+/C0 1 the shape of the transition zone becomes
+relatively insensitive to the value of kCaCO3 . These par-
+ticular simulations were done with an exponent in the
+dissolution kinetics ofn ¼ 4.5 (see (9.4.2)). If an exponent
+n ¼ 1 were used as argued for by Hales and Emerson
+[1997], the changes in the shape of the modeled lysocline
+in response to changes in k
+CaCO3 would remain similar,
+but correspond to drastically different values of kCaCO3 .
+Variations of the organic carbon–to–CaCO3 rain ratio
+induce large changes in the shape of the transition zone
+a
+1.3
+1.1
+1.0
+0.9
+0.8
+1.2
+0.7 2468 1 0
+One Organic Carbon
+ComponentTwo 
+Organic 
+Carbon
+Component
+Respiratory Dissolution Efficiency
+b
+0.2 0.4 0.6 0.8
+CaCO3 Dissolution Flux (mmol cm-2 yr-1)
+Saturation State
+No RespirationFast 
+Component
+Only Slow 
+Component
+Only
+UNDERSATURATED SUPERSATURATED
+One Organic Carbon
+Component
+Fast 
+Component
+Only
+Slow 
+Component
+Only
+Two 
+Organic 
+Carbon
+Component
+Figure 9.4.6: Calcite dissolution ﬂuxes and efﬁciency of respiration-driven dissolution as a function of the degree of bottom water
+saturation, O. (a) Dissolution ﬂux driven by various forcing components. The heavy dashed line represents the dissolution that would
+occur due to bottom-water undersaturation only. The dot-dashed line is the total calcite dissolution model, i.e., driven by bottom-water
+undersaturation and organic matter remineralization in the two-organic carbon component model. The two light dashed lines show the
+dissolution driven by each organic carbon component (fast or slow, as labeled) of that model. Note that the dissolution driven by the
+slow component is fairly constant above the saturation horizon ( O ¼ 1) in comparison to that driven by the fast component, which is
+near zero down to a bottom-water saturation of about 1.1, and then increases rapidly until the saturation horizon is reached. The solid
+line shows, for comparison, the dissolution driven by a respiration formulation with a single-organic carbon component with a scale
+depth of 2 cm. This respiration rate drives more dissolution for the same organic carbon rain than the two-component formulation in
+all saturation cases, particularly above the saturation horizon. (b) Dissolution efﬁciency deﬁned as the ratio of the dissolution ﬂux
+driven by a particular process to the amount of CO
+2 produced. Note that the efﬁciency of the two-organic carbon component is only
+about 0.2 above the saturation horizon, implying very small dissolution ﬂuxes for typical oceanic organic carbon rain rates. The
+calculations were done for typical oligotrophic ocean-basin sediments with a calcite content of 50%, a ﬁrst-order dissolution reaction
+(i.e., n¼1) with a rate constant of 1 /C2 10
+/C0 4 day/C0 1, and a total organic carbon respiration rate of 13 mmol cm/C0 2 yr/C0 1. Modiﬁed from
+Hales [2003].
+382
+Chapter 9

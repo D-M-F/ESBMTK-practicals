@@ -104,6 +104,46 @@ class StudentNotebookTest(unittest.TestCase):
         self.assertIn("plot_figure4(fixed_cases['OAE']", code_source)
         self.assertNotIn("def plot_figure4", code_source)
 
+    def test_reconstruction_precedes_reconciliation_and_new_laws_are_masked(self):
+        nb = json.loads((ROOT / 'notebooks/student/03_boudreau_three_box_model.ipynb').read_text(encoding='utf-8'))
+        source = '\n'.join(''.join(c['source']) for c in nb['cells'])
+        code = '\n'.join(''.join(c['source']) for c in nb['cells'] if c['cell_type'] == 'code')
+        self.assertLess(source.index('Exercise 03.1'), source.index('A4. Reconcile'))
+        self.assertIn('03_04_boudreau_student.png', source)
+        self.assertNotIn('03_04_boudreau_instructor.png', source)
+        self.assertNotIn('flux_specification()', code)
+        self.assertNotIn('transport_type =', code)
+        self.assertNotIn('export_type =', code)
+        self.assertIn("'ty': transport_type", code)
+        self.assertIn("'ty': export_type", code)
+        self.assertIn('audit_complete_model(M)', code)
+        self.assertIn('audit_restart_drift(M)', code)
+        self.assertNotIn('M.connection_summary()', code)
+        self.assertNotIn('B_{net}(t)=E(t)-D(t)', source)
+        from teaching_specification import flux_table_markdown
+        self.assertIn(flux_table_markdown(student=True), source)
+        self.assertLess(source.index('Question — equations on arrows'),
+                        source.index('plot_carbonate_process_plane(P)'))
+        self.assertIn('supplied dependency function', source)
+        self.assertIn('flux and concentration tendency differ', source)
+        self.assertNotIn('Inventory effects | Flux rule | Status', source)
+
+    def test_04_leads_with_anomalies_and_starter_requires_an_independent_choice(self):
+        nb = json.loads((ROOT / 'notebooks/student/04_pump_strength_OA_OAE.ipynb').read_text(encoding='utf-8'))
+        source = '\n'.join(''.join(c['source']) for c in nb['cells'])
+        self.assertLess(source.index('plot_matched_responses('), source.index('plot_figure4('))
+        self.assertLess(source.index('plot_external_forcings('), source.index('## B2.'))
+        self.assertIn('Critical depths and memory', source)
+        self.assertIn('Asymmetry and limits', source)
+        self.assertNotIn('extensions/04_attribution_and_feedbacks', source)
+        self.assertNotIn('soft_tissue_feedback=', source)
+        self.assertNotIn('Submit', source)
+        starter = json.loads((ROOT / 'notebooks/student/extensions/05_independent_model.ipynb').read_text(encoding='utf-8'))
+        code = '\n'.join(''.join(c['source']) for c in starter['cells'] if c['cell_type'] == 'code')
+        self.assertEqual(code.count('NotImplementedError'), 2)
+        self.assertNotIn('k_kg_yr =', code)
+        self.assertIn('audit(case)', code)
+
     def test_optional_04_remains_self_contained_and_masked(self):
         nb = json.loads((ROOT / 'notebooks/student' / EXTENSION_NOTEBOOKS[0]).read_text(encoding='utf-8'))
         source = '\n'.join(''.join(c['source']) for c in nb['cells'])
@@ -124,7 +164,6 @@ class StudentNotebookTest(unittest.TestCase):
             self.assertIn('load_boudreau_parameters(WORKBOOK)', source)
             self.assertIn("input_tables['OceanReservoirs']", source)
             self.assertIn("input_tables['Atmosphere']", source)
-            self.assertIn('reservoir_inventory_rows', source)
             self.assertIn('model_definition.xlsx', source)
             self.assertIn('read_model_tables(WORKBOOK)', source)
             self.assertIn("input_tables['TransportConnections']", source)
@@ -132,10 +171,11 @@ class StudentNotebookTest(unittest.TestCase):
             self.assertIn("input_tables['ProcessParameters']", source)
             self.assertNotIn("area_percentage", source)
             if name.startswith('03'):
+                self.assertIn('reservoir_inventory_rows', source)
                 self.assertIn('high_specification', source)
                 self.assertIn('Exercise 03.2', source)
             else:
-                self.assertEqual(source.count('base=P,'), 1)
+                self.assertEqual(source.count('make_pump_variant(base=P)'), 1)
 
     def test_generated_copies_match_instructor_sources(self):
         with TemporaryDirectory() as tmp:

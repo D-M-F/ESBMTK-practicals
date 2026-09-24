@@ -1,0 +1,131 @@
+around the thermohaline circuit, to 60 Sv for the high-
+latitude-to-deep-ocean mixing term, and to 13 cm h
+/C0 1 for
+the piston velocity of CO2, atmosphericpCO2 stabilizes at
+303 matm (ﬁgure 10.4.5a).
+Broecker et al. [1999a] attempted to capture the degree
+of this deep ocean equilibration effect of low-latitude
+changes by the Harvardton-Bear Equilibration Index
+(HBEI). They deﬁned this index in such a way that it
+describes how close the realistic case is to the full
+equilibration case weighted by the difference between
+the two extreme cases of full and no equilibration:
+HBEI ¼
+pCOatm
+2
+jrealistic /C0 pCOatm
+2
+jfull equil
+pCOatm
+2
+jno equil /C0 pCOatm
+2
+jfull equil
+(10:4:6)
+¼ 303 /C0 281
+514 /C0 281 ¼ 0:09 (10:4:7)
+The value of the HBEI can be interpreted as an ap-
+proximate measure of how effective a given change in
+the low latitudes is in changing atmospheric CO
+2.A n
+HBEI value of 1 means that no equilibration with the
+deep ocean occurs and therefore atmospheric CO
+2 will
+respond proportionally to any change in low-latitude
+pCO
+2. A value of 0 means that full equilibration occurs,
+i.e., changes in low-latitude pCO2 would have no impact
+on atmospheric CO 2, since atmospheric CO 2 is con-
+trolled by the high latitudes in connection with the
+deep ocean reservoir. Note that the HBEI is only an
+approximation of the degree of equilibration and
+atmospheric effectiveness, as the exact values depends
+on the magnitude of the perturbation because of the
+associated changes in the buffer factor.
+The low HBEI value of 0.09 found by this simple
+three-box model implies that for a given change in low-
+latitude pCO
+2, only approximately 9% of this change
+multiplied with the fractional area of the low latitudes,
+i.e., 0.85 /C1 0.9 ¼ 0.08, would show up as a change in at-
+mospheric CO
+2. If this value of HBEI is correct, we can
+immediately rule out any low-latitude–based hypothe-
+sis. For example, the discussion about the exact mag-
+nitude of low-latitude cooling would be largely irrele-
+vant, since even a very large cooling of 6
+/C14 C, leading to a
+low-latitude pCO2 reduction of 70 matm, would cause
+only a 6 matm reduction in atmospheric CO 2. However,
+before we can have any conﬁdence in ruling out low-
+latitude–based hypotheses, we need to ensure that this
+extremely low sensitivity of low-latitude changes is real
+and not just a peculiarity of this simple three-box
+model.
+Broecker et al . [1999a] computed the HBEI of a wide
+spectrum of models, ranging from simple box models
+to three-dimensional ocean biogeochemistry models
+(
+ﬁgure 10.4.6). They found that three-dimensional cou-
+pled ocean circulation/biogeochemistry models show a
+substantially larger inﬂuence of the low latitudes (HBEI
+indices up to 0.4) than the box models. It is presently
+not clear how large the HBEI of the real ocean is, but it
+is instructive to consider which processes determine its
+magnitude [see also Archer et al., 2000a; Ito and Follows,
+2003; Follows et al., 2002]. Since the HBEI is a measure
+of the degree of equilibration between CO
+2 anomalies
+in the low latitudes and the deep ocean via exchange
+with the high latitudes, any process that affects this
+equilibration changes the HBEI. Possible candidates
+are variations in the rate of CO
+2 exchange across the air-
+sea interface, the magnitude and location of the mass
+exchange between the warm and cold water spheres,
+and the reservoir sizes of these two spheres.
+For example, as pointed out by Toggweiler et al. [2003],
+the exchange of CO
+2 between the atmosphere and the
+high-latitude surface ocean is kinetically unconstrained
+in this three-box model, while this exchange experi-
+ences strong kinetic limitation in three-dimensional
+ocean models. This is primarily a result of the fact that
+the high latitudes in the three-box model were assigned
+a fractional area of 15%, while a census of the surface
+area of the ocean that has surface densities equal to or
+denser than the deep ocean in a typical three-dimen-
+sional ocean model gives fractional areas of only a few
+percent. Restricting the high-latitude area so that
+the slowness of air-sea gas exchange becomes limiting
+for the exchange between the atmosphere and high-
+latitude box will work against equilibration, and there-
+fore increase the HBEI. Figure 10.4.7b shows that if the
+high-latitude surface area in the three-box model is set
+to 3%, similar to what it is in three-dimensional ocean
+circulation models, the HBEI index goes up to above
+0.3. The effective surface area of the high latitudes can
+also be decreased by increasing the fraction that is
+covered by sea ice, leading to a similar increase in the
+HBEI index (ﬁgure 10.4.7a).
+The magnitude of the exchange between the warm
+and cold water spheres and their relation to their res-
+ervoir sizes represents a second set of factors control-
+ling the HBEI. Any increase in the exchange between
+0.00
+0.10
+0.20
+0.30
+0.40
+0.50atmospheric HBEI
+3D GCM’sBOX MODELS2Box
+3Box
+Pandora
+Cyclops
+2D GCM
+HAMOCC
+POBM1
+Figure 10.4.6: Comparison of estimates of HBEI from a range of
+models. From Broecker et al. [1999a].
+438
+Chapter 10

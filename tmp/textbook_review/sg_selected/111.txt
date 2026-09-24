@@ -1,0 +1,116 @@
+temperature effect represented by (3.3.22) and (3.3.23),
+and the bubble effect represented by (3.3.24) and
+(3.3.25), both of which cause the ocean to be supersat-
+urated with respect to the atmosphere. From the oxy-
+gen solubility we can estimate that a skin temperature
+cooler by 0.3
+/C14 C will give a z of about 0.006. As noted
+earlier, this should be considered an upper limit. As
+regards the effect of bubbles, we have seen that the
+parameterization (3.3.25) gives an oxygen D
+e of 0.007
+for a typical wind speed of 7.5 m s /C0 1. In combination,
+these two processes could account for a supersaturation
+of *0.013, or 1.3%. The remaining supersaturation of
+*1.7% in the WOCE observations would then have to
+be due to the biological and thermal components dis-
+cussed above. We can estimate the net impact of these
+processes by calculating the loss of oxygen to the at-
+mosphere implied by the observed oxygen supersatu-
+ration.
+We calculate the air-sea ﬂux using (3.3.22) and
+(3.3.24) to correct for the bubble supersaturation and
+skin temperature effects:
+F ¼/C0 kw /C1 [(1 þ /C16 þ De) /C1 [O2]a /C0 [O2]w]( 3 :4:1)
+For the gas transfer velocity we use the Wanninkhof
+[1992] formulation given in table 3.3.2. Using a global
+mean temperature of 17.64
+/C14 C gives for the Sc number
+of oxygen a value of 663. We use for the wind speed an
+average value of 7.5 m s
+/C0 1. This gives a gas transfer
+velocity of 17.4 cm hr /C0 1 from the Wanninkhof model.
+We use for the skin temperature and bubble supersat-
+uration corrections the values of 0.006 and 0.007 we
+estimated previously. We replace the water concentra-
+tion by 1.03 times the atmospheric concentration, as
+observed, i.e.,
+[O2]w ¼ 1:03 /C1 [O2]a (3:4:2)
+We use for [O2]a a value of 241 mmol m/C0 3, which is the
+saturation concentration at the global mean surface
+temperature of 17.64
+/C14 C and salinity of 34.78. Convert-
+ing the gas transfer velocity to units of m yr /C0 1 and
+substituting all the numbers into (3.4.1) yields
+F ¼/C0 (1520 m yr/C0 1) /C1 [(1 þ0:006 þ0:007)
+/C1 [O2]a /C0 1:030 /C1 [O2]a]
+¼/C0 (1520 m yr/C0 1) /C1 ( /C0 0:017) /C1 0:241 mol m/C0 3
+¼ 6:2 mol m/C0 2 yr/C0 1
+(3:4:3)
+Based on the foregoing analysis we would conclude
+that about 40% of the oxygen supersaturation observed
+over much of the ocean may be due to bubble injection
+(the effect of which is highly uncertain) and the skin
+temperature effect (which should be considered an
+upper limit). Where would the remaining oxygen come
+from? It must be due to the net effect of other processes
+such as production of oxygen by biology, supersatura-
+tion induced by warming of the surface ocean, and
+vertical mixing. The loss rate of oxygen that we estimate
+is of the same order of magnitude as typical estimates
+of net biological oxygen production in the surface layer
+of order 5 mol m
+/C0 2 yr/C0 1 [e.g., Emerson, 1987; Emerson et
+al., 1997; Jenkins and Goldman , 1985; Musgrave et al. ,
+1988; Peng et al. , 1987; Spitzer and Jenkins , 1989; Tho-
+mas et al., 1990]. However, such a comparison must be
+viewed with caution due to the nonnegligible contri-
+butions of warming and mixing discussed in these
+studies. One very interesting aspect of some of these
+studies is their use of inert noble gases to constrain the
+gas transfer velocity and bubble contribution. For ex-
+ample, Spitzer and Jenkins [1989] demonstrated that the
+low solubility helium-3 provided a powerful constraint
+on the bubble injection contribution.
+A major issue that we have ignored up to now is that
+in a steady state the global climatic mean ﬂux of oxy-
+gen across the air-sea interface has to be close to zero.
+Thus, losses of oxygen to the atmosphere such as im-
+plied by the supersaturation of ﬁgure 3.1.2 must on
+average be balanced by a gain either at other times of
+the year or in other locations of the ocean. Indeed, the
+annual mean concentration anomaly map shown in
+ﬁgure 3.1.1 shows that there are large areas of the
+ocean where oxygen is undersaturated. It just happens
+that a high percentage of the data in ﬁgure 3.1.2 were
+in regions (lower latitudes) and at times (warm sea-
+sons) when the ocean was supersaturated.
+Figure 3.4.1 shows a recent estimate of the climatic
+mean air-sea ﬂux of oxygen over various regions of the
+ocean implied by the interior distribution of oxygen.
+Ocean circulation models were used to estimate what
+gas ﬂuxes are required in order to explain the interior
+distributions [Gruber et al. , 2001]. Downward bars rep-
+resent uptake by the ocean; upward bars are degassing
+from the ocean. The ﬁgure shows that the ocean is
+generally losing oxygen to the atmosphere in the
+tropics between 36
+/C14 S and 13 /C14 N, and gaining oxygen
+poleward of these latitudes except for the South At-
+lantic between 36
+/C14 S and 58 /C14 S. The globally integrated
+net ﬂux estimated by this method is quite small, as
+expected. Careful comparison of the signs of the ﬂuxes
+in this ﬁgure with those that would be expected from
+the annual mean air-sea concentration anomaly map in
+ﬁgure 3.1.1 shows signiﬁcant discrepancies, for exam-
+ple in the tropical Paciﬁc where one would infer an
+oceanic uptake from the negative anomaly of ﬁgure
+3.1.1, but this ﬁgure shows a degassing ﬂux into the
+atmosphere. This inconsistency is due primarily to
+differences in the data sets used in the two analyses
+(surface concentration anomalies for ﬁgure 3.1.1 versus
+interior oxygen distributions in this ﬁgure) and is un-
+likely to be fully resolved without more high quality
+Chapter 3
+96

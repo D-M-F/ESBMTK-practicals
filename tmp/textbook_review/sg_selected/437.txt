@@ -1,0 +1,135 @@
+state and have not been perturbed in any substantial
+manner, the long-term air-sea exchange ﬂux of O
+2,
+Fas(O2), is very small and can be neglected. This is
+because O 2 has a much lower solubility than CO 2,
+making the perturbation air-sea ﬂux of O 2 much
+smaller than the perturbation ﬂux for CO2 for the same
+magnitude of an atmospheric perturbation. If we insert
+(10.2.30) and (10.2.29) into (10.2.27) and (10.2.28), we
+end up with two equations and two unknowns,
+F
+as(CO2) and Fab(CO2). Figure 10.2.10 shows a graph-
+ical solution to these equations, where the points in-
+dicate the observed evolution of atmospheric CO
+2 and
+O2, and where the direction of the arrows of the dif-
+ferent processes are given by their stoichiometric ratios.
+Figure 10.2.10 actually includes a small air-sea O 2
+ﬂux contribution, Fas(O2). This is because the steady-
+state assumption of the natural oxygen cycle is not
+entirely tenable. Long-term observations of oceanic
+temperatures show that the ocean has warmed signiﬁ-
+cantly over the last 50 years [ Levitus et al., 2000]. As the
+solubility of oxygen is very temperature-dependent (see
+ﬁgure 3.1.2), this must have led to an outgassing of O
+2.
+The warming-induced outgassing ﬂux can be directly
+estimated from (3.4.4) in chapter 3. However, more
+recent studies indicate that the oxygen outgassing dri-
+ven by ocean warming is likely ampliﬁed by an addi-
+tional outgassing stemming from warming-induced
+changes in ocean stratiﬁcation. This additional out-
+gassing might increase the purely thermally driven ﬂux
+by a factor of three or more, requiring an increase in
+the inferred oceanic uptake of anthropogenic CO
+2 of up
+to 0.6 Pg C yr/C0 1 relative to the original budgets [ Keeling
+and Garcia, 2002; Bopp et al., 2002; Plattner et al., 2002].
+The anthropogenic budget for the two decades from
+1980 to 1999 as inferred by the oxygen method but ad-
+justed for the ocean warming outgassing are given in
+table 10.2.1, both as integrated ﬂuxes and as average
+ﬂuxes per year. The most remarkable observation from
+inspection of this table is how strongly the global carbon
+cycle has been forced over the last 20 years. Almost 50%
+of the fossil fuel emissions over the Anthropocene oc-
+curred during the period from 1980 to 1999! Out of the
+total anthropogenic CO
+2 emissions, the ocean has taken
+up about 27% over the last two decades. Interestingly,
+this fraction is quite similar to that over the entire An-
+thropocene. By contrast, the inferred net terrestrial bal-
+ance suggests a sign change between the earlier part
+of the Anthropocene and the period from 1980 to
+1999. While the terrestrial biosphere was a net source of
+CO
+2 to the atmosphere during the Anthropocene of
+39 ± 28 Pg C, it turned into a net sink of 15 ± 9 Pg C over
+the period from 1980 to 1999 (table 10.2.1). The reasons
+for this phenomenon are still controversial, but it ap-
+pears as if much of the land-driven uptake is associated
+with regrowth of areas that have been clear-cut in the
+past, and have been abandoned or shifted to less inten-
+sive cultivation [ Pacala et al. , 2001; Schimel et al. , 2001;
+Goodale and Davidson, 2002].
+The Role of Biology
+What is the role of biology in the oceanic uptake of
+anthropogenic CO
+2? This topic has been the source of
+many misunderstandings and false claims [ Broecker,
+1991b; Sarmiento, 1991; Longhurst, 1991].
+So far in our discussion on anthropogenic CO 2 we
+have neglected the marine biota. This is somewhat
+counterintuitive, because we know that the marine biota
+is responsible for a large fraction of the surface-to-deep
+gradient in DIC (biological pumps). Then why do the
+biological pumps not also transport anthropogenic CO
+2
+from the surface into the interior of the ocean? The ﬁrst
+point to make here is that this downward transport of
+carbon in organic material is compensated in a steady
+state by an equally large upward transport of DIC, re-
+sulting in a zero net transport (except for the small
+fraction that goes into the sediments). Our neglect of the
+biological pumps is based on the assumption that they
+had been operating in steady state before the start of the
+anthropogenic CO
+2 perturbation of the carbon cycle, and
+385380375370365360355350345
+-60
+-55
+-50
+-45
+-40
+-35
+-30
+-25
+-20
+1990
+1992
+1994
+1996
+1998
+2000
+1991
+1993
+1995
+1997
+1999
+Atmospheric CO2 (ppm)
+Atmospheric O2 (per meg)
+outgassing
+fossil fuel burning
+atmospheric
+increase
+land
+uptake uptake
+ocean
+Figure 10.2.10: Illustration of the atmospheric oxygen method.
+Plotted are the observed annual mean concentrations of
+atmospheric O
+2 and CO2 from 1990 to 2000. If fossil fuel burning
+were the only process affecting these two gases, one would expect
+that the atmosphere would have followed the trajectory labeled ‘‘fossil
+fuel burning,’’ bringing the atmosphere from the initial observation
+in 1990 to the point on the lower-right corner. Ocean uptake, land
+uptake, and ocean outgassing were responsible for the atmosphere
+following a different trend. Since these three processes have
+distinctly different slopes, a graphical solution can be obtained by
+vector addition once one of these ﬂuxes is known by other means
+(usually ocean outgassing is assumed to be known and a solution is
+obtained for the uptake by land and ocean). Modiﬁed from
+Prentice et al. [2001].
+414
+Chapter 10

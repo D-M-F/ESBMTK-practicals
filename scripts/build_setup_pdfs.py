@@ -1,4 +1,4 @@
-"""Build the two student setup handouts; requires ReportLab and Windows fonts."""
+"""Build the two durable student setup handouts."""
 
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -123,8 +123,8 @@ if __name__ == "__main__":
     if args.only != "anaconda":
         count = (ROOT / "ref/uv_setup.md").read_text(encoding="utf-8").count("<!-- PAGEBREAK -->") + 1
         build("student_setup_uv.pdf", "uv", uv(), pages=count,
-              edition="Student guide - 22 September 2026")
+              edition="Student guide - 23 September 2026")
     if args.only != "uv":
         count = (ROOT / "ref/anaconda_setup.md").read_text(encoding="utf-8-sig").count("<!-- PAGEBREAK -->") + 1
         build("student_setup_anaconda.pdf", "Anaconda", anaconda(), pages=count,
-              edition="Pilot edition - 22 September 2026")
+              edition="Student guide - 23 September 2026")

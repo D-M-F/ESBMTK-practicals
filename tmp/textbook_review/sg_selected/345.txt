@@ -1,0 +1,118 @@
+solubilities. The key to explaining this fact and almost all
+of the puzzles of the marine carbon cycle that we have
+posed in this introduction, is to ﬁrst gain an under-
+standing of the complex chemistry of CO
+2 in seawater.
+8.2 Inorganic Carbon Chemistry
+The solution chemistry of carbon dioxide sets it apart
+from that of most other gases in that CO
+2 not only dis-
+solves in seawater but also acts as an acid (proton donor)
+that reacts with water to form free protons (H
+þ), and the
+conjugate bases bicarbonate (HCO /C0
+3
+) and carbonate
+(CO2/C0
+3 ). In this section we will introduce the basic con-
+cepts of these reactions and how they can be quantita-
+tively described. We also attempt to establish some
+simple tools to aid in understanding the nonlinearities
+of the oceanic CO
+2 system. For the purpose of this pre-
+sentation we will employ a number of simpliﬁcations.
+The reader interested in a more thorough discussion is
+referred to Dickson and Goyet [1994].
+When gaseous CO
+2 dissolves in seawater, it ﬁrst gets
+hydrated to form aqueous CO 2 (CO2 (aq) ), which reacts
+with water to form carbonic acid (H 2CO3). It is difﬁcult
+to distinguish analytically between the two species
+CO
+2(aq) and H 2CO3. As a result, it is usual to combine
+these two species and express the sum as the concentra-
+tion of a hypothetical species, H
+2CO3*[ Stumm and Mor-
+gan,1 9 8 1 ;Dickson and Goyet , 1994]. This hypothetical
+acid (proton donor) dissociates then in two steps to form
+bicarbonate (HCO
+/C0
+3
+) and carbonate (CO 2/C0
+3 )i o n s .T h e s e
+reactions are very fast, so that for all practical purposes we
+can assume that thermodynamic equilibrium between
+the species is established. These three reactions can be
+summarized as follows:
+CO2 (gas) þ H2O Ð H2CO/C3
+3
+(8:2:1)
+H2CO/C3
+3
+Ð H þ þ HCO/C0
+3
+(8:2:2)
+HCO/C0
+3
+Ð H þ þ CO2/C0
+3 (8:2:3)
+The equilibrium relationships between these species
+are given by
+K0 ¼ [H2CO/C3
+3
+]
+pCO2
+(8:2:4)
+K1 ¼ [H þ ][HCO/C0
+3
+]
+[H2CO/C3
+3
+] (8:2:5)
+K2 ¼ [H þ ][CO2/C0
+3 ]
+[HCO/C0
+3
+] (8:2:6)
+0.0 1.0 2.0 3.0
+Phosphate (µmol kg-1)
+1900
+2000
+2100
+2200
+2300
+2400
+2500
+117:1
+9 µmol kg-1 (°C)-1
+sDIC (µmol kg-1)
+0.0 5.0 10.0 15.0 20.0 25.0 30.0
+1900
+2000
+2100
+2200
+2300
+2400
+2500
+Atlantic 
+Pacific
+Indian
+Potential temperature (°C)
+a b
+Remineralization
+Photosynthesis
+1
+117
+Gas ExchangeGas Exchange
+Dissolution  Formation
+3CaCO 3CaCO
+Figure 8.1.4: Plot of dissolved inorganic carbon, DIC, versus (a) phosphate and (b) potential temperature, using data from all depths.
+Both DIC and phosphate have been normalized to a constant salinity of 35, in order to remove the effects of evaporation and precipitation.
+The line in (a) shows the expected trend if all variations of sDIC were caused by biological processes. The inset shows the trends in sDIC
+and phosphate caused by photosynthesis, respiration, and remineralization, as well as the trends caused by air-sea gas exchange and the
+formation and dissolution of CaCO
+3. The line in (b) shows the expected trend if all variations of sDIC were a result of differences in
+temperature. At constant oceanic pCO2 and alkalinity, this trend is nearly 9 mmol kg/C0 1 per degree Celsius [ Gruber et al ., 1996]. Data are
+from WOCE legs A16, P16, and I9NI8S.
+322
+Chapter 8

@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carbonate chemistry, buffering and pH sensitivity</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 16px; color: #182b3a; background: #fff; font: 14px/1.45 system-ui, sans-serif; }
+  h1 { font-size: 21px; margin: 0 0 3px; }
+  h2 { font-size: 16px; margin: 0 0 6px; }
+  p { margin: 5px 0 12px; }
+  .muted { color: #526474; }
+  .controls { display: flex; align-items: center; flex-wrap: wrap; gap: 9px 16px; margin: 12px 0; }
+  button, select { font: inherit; padding: 7px 10px; border: 1px solid #adbdc9; border-radius: 4px; color: #182b3a; background: #fff; }
+  button { cursor: pointer; }
+  button[aria-pressed="true"] { background: #e7f1fb; border-color: #1764ab; }
+  button:focus-visible, input:focus-visible, select:focus-visible, canvas:focus-visible { outline: 3px solid #db9c35; outline-offset: 2px; }
+  input[type="range"] { width: 170px; vertical-align: middle; accent-color: #1764ab; }
+  input[type="checkbox"] { accent-color: #1764ab; }
+  .plots { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .plot { min-width: 0; }
+  canvas { width: 100%; height: 335px; display: block; }
+  #surface { touch-action: none; cursor: grab; }
+  .readout { padding: 9px 12px; background: #edf5ff; border-left: 3px solid #1764ab; margin-top: 9px; }
+  .key { display: inline-block; width: 22px; height: 3px; vertical-align: middle; margin-right: 5px; background: #1764ab; }
+  .atm { background: #9b4c0b; }
+  .tangent { background: #803e91; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12px; }
+  .scale { display: flex; align-items: center; gap: 8px; font-size: 12px; margin: 4px 0 8px; }
+  .gradient { width: 100px; height: 8px; background: linear-gradient(90deg,#263c86,#218eaa,#70b88b,#f1d568); }
+  #notice { font-size: 12px; min-height: 36px; }
+  body { max-width: 1240px; margin: auto; }
+  .buffer-section { margin-top: 24px; padding-top: 18px; border-top: 1px solid #adbdc9; }
+  .buffer-section h2 { font-size: 20px; }
+  h3 { font-size: 15px; margin: 8px 0; }
+  .buffer-legend { margin: 6px 0 12px; }
+  .formula { font-size: 16px; margin-bottom: 12px; }
+  summary { cursor: pointer; font-weight: 600; margin-top: 16px; }
+  .mapping { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 0; color: #173b61; }
+  .mapping span { flex: 1 1 220px; }
+  .state-b { background: #b84b19; }
+  @media (max-width: 680px) { .plots { grid-template-columns: 1fr; } canvas { height: 295px; } body { padding: 10px; } }
+  @media print { .controls, #download { display: none; } }
+</style>
+</head>
+<body>
+<h1>DIC and TA constrain carbonate chemistry</h1>
+<p id="conditions" class="muted"></p>
+<p>Start with the familiar DIC–TA plane, now contoured by <strong>pH</strong>. To find pH buffering, take a <strong>vertical cut: keep DIC fixed and vary TA</strong>.</p>
+<div class="mapping" aria-label="How the diagrams connect">
+ <span><strong>1 · Cut the contour map</strong><br>Follow one fixed-DIC line through states A and B.</span>
+ <span><strong>2 · Redraw that same cut →</strong><br>Put pH on x and TA on y. Its local slope is buffer capacity.</span>
+ <span><strong>3 · Plot the slope →</strong><br>Follow B(pH), then its reciprocal S(pH).</span>
+</div>
+<div class="controls" role="group" aria-label="View the chemistry">
+  <label for="diagnostic">Show <select id="diagnostic"><option value="ph">pH</option><option value="pco2">Seawater pCO2</option></select></label>
+  <label for="cut">Cut <select id="cut"><option value="dic">Hold DIC · vary TA</option><option value="ta">Hold TA · vary DIC</option></select></label>
+  <button id="top" aria-pressed="true">Contour map</button>
+  <button id="oblique" aria-pressed="false">Rotate surface</button>
+  <button id="slice" aria-pressed="false">Cutting plane</button>
+  <button id="original">Original pCO2–DIC view</button>
+  <button id="reset">Reset</button>
+  <label for="range">Range <select id="range"><option value="local">Near reference seawater</option><option value="full">Full range, including TA = 0</option></select></label>
+</div>
+<div class="controls">
+  <label for="ta">TA <input id="ta" type="range" min="0" step="1"> <output id="taValue"></output> µeq/kg</label>
+  <label for="dic">DIC point <input id="dic" type="range" min="0" step="1"> <output id="dicValue"></output> µmol C/kg</label>
+  <label><input id="tangent" type="checkbox" checked> Show local tangent</label>
+  <label><input id="atmosphere" type="checkbox"> Add conserved-carbon atm line</label>
+</div>
+<div class="plots">
+  <section class="plot">
+    <h2 id="leftTitle">1 · pH contours on the DIC–TA plane</h2>
+    <canvas id="surface" tabindex="0" aria-label="Rotatable DIC–TA–pCO2 surface. Drag or use arrow keys to rotate. Use view buttons for contours and the cutting plane."></canvas>
+    <div class="scale"><span id="scaleName">pCO2 (µatm)</span> <span id="zmin"></span><span class="gradient"></span><span id="zmax"></span></div>
+    <p id="viewHint" class="muted"></p>
+  </section>
+  <section class="plot">
+    <h2 id="rightTitle">2 · The same cut: TA versus pH</h2>
+    <canvas id="curve" aria-label="Constant-TA pCO2–DIC curve, with optional local tangent and conserved-carbon atmosphere line."></canvas>
+    <div class="legend">
+      <span><i class="key"></i><span id="curveLegend">Same fixed-DIC cut</span></span>
+      <span id="tangentLegend" hidden><i class="key tangent"></i>local tangent</span>
+      <span id="atmLegend" hidden><i class="key atm"></i>atm: conserved carbon</span>
+    </div>
+    <p id="notice" class="muted"></p>
+  </section>
+</div>
+<div id="readout" class="readout" aria-live="polite"></div>
+<p id="mappingReadout" class="muted"></p>
+<p class="muted">Each point is a possible carbonate-equilibrium state, not a time step or necessarily air–sea equilibrium. DIC and TA are held as independent inputs; pH and pCO2 are calculated diagnostics. Each view uses the same fixed T/S/P and seawater composition.</p>
+<section class="buffer-section" aria-labelledby="bufferTitle">
+<h2 id="bufferTitle">3 · From the same cut to buffer capacity and pH sensitivity</h2>
+<p id="bufferBridge">Each point on the blue TA–pH curve has a local slope. Plot those slopes against pH to obtain B; plot their reciprocals to obtain S. States A and B keep the same colours in all four diagrams.</p>
+<p class="formula"><strong>B = (∂TA/∂pH)<sub>DIC</sub></strong> &nbsp; · &nbsp; <strong>S = (∂pH/∂TA)<sub>DIC</sub> = 1/B</strong></p>
+<div class="controls">
+  <label for="bufferRange">Extend the same cut <select id="bufferRange"><option value="mapped">Only the mapped pH interval</option><option value="book">Book views · Figs 5.3 + 5.8</option><option value="seawater">Seawater detail · 7.5–8.5</option><option value="broad">Both full range · 0–14</option></select></label>
+  <label><input type="checkbox" id="approximation"> Show seawater approximation</label>
+</div>
+<div class="legend buffer-legend">
+ <span><i class="key"></i>State A · selected</span>
+ <span><i class="key state-b"></i>State B · nearby TA</span>
+ <span><i class="key" style="background:#182b3a"></i>Total</span>
+ <span><i class="key" style="background:#d16a16"></i>Carbonate</span>
+ <span><i class="key" style="background:#238448"></i>Borate</span>
+ <span><i class="key" style="background:#188ca5"></i>Water</span>
+ <span><i class="key" style="background:#9276a3"></i>Other acid–base terms</span>
+</div>
+<div class="plots" id="bufferPlots">
+ <section class="plot"><h3>Buffer capacity · inspired by Fig. 5.3</h3><canvas id="capacity" aria-label="Buffer capacity versus pH, decomposed into carbonate, borate, water and other terms."></canvas></section>
+ <section class="plot"><h3>pH sensitivity · inspired by Fig. 5.8</h3><canvas id="sensitivity" aria-label="Reciprocal total buffer capacity versus pH at fixed DIC."></canvas></section>
+</div>
+<div id="bufferReadout" class="readout" aria-live="polite"></div>
+<p id="bufferNotice" class="muted"></p>
+<p>Large buffer capacity means a small pH response to a given small TA change. Sensitivity is the reciprocal of the <strong>total</strong> capacity; reciprocals of the separate contributions do not add. These are local derivatives, not finite pH changes or the pCO2–DIC sensitivity shown above.</p>
+<details><summary>Definitions, assumptions and source</summary>
+ <p>Inspired by Middelburg (2019), <em>Marine Carbon Biogeochemistry</em>, Figs 5.3 and 5.8 (printed pp. 88 and 98), and Eqs 5.18, 5.20 and 5.21. Original calculations are reproduced conceptually, not digitized. The book's Fig. 5.3 uses 15 °C and DIC = 2000 µM; this explorer uses the displayed course conditions (16 °C) and mass-specific concentrations. Peak positions and heights therefore need not match the book exactly.</p>
+ <p>PyCO2SYS calculates equilibria on the seawater pH scale (scale 2). B is evaluated by centred differences in pH (±0.0001), holding DIC, T/S/P and other analytical totals fixed. Carbonate, borate and water contributions are the corresponding derivatives of [HCO3⁻] + 2[CO3²⁻], borate alkalinity and [OH⁻] − [H⁺]<sub>free</sub>. The remainder includes sulfate/fluoride acid–base terms; keeping it closes the full TA derivative over the broad pH range. Nutrient totals retain the course defaults.</p>
+ <p>B is shown in µeq kg⁻¹ per pH unit, while S is shown in pH units per (eq kg⁻¹). Thus the plotted numerical values satisfy B × S = 10⁶. The seawater approximation is B ≈ ln(10) K₂ DIC/[H⁺], with K₂ and H⁺ on the same pH scale; it is displayed only between pH 7.5 and 8.5. The 0–14 view illustrates acid–base mathematics at fixed salinity and analytical totals, not a prediction of real seawater at extreme pH.</p>
+ <p>Moving the DIC slider moves the vertical cut and updates every diagram. Moving TA moves state A along that cut; state B is a nearby point on the same cut. The TA–pH diagram replots the exact states sampled on the contour grid. Its tangent is the local derivative; the A–B slope is a finite-interval comparison. Shading on the extended buffer diagrams identifies the pH interval visible on the upper contour map.</p>
+</details>
+</section>
+<button id="download">Save offline copy</button>
+<noscript>Enable JavaScript to rotate, select slices and explore buffering.</noscript>
+<script id="chemistry-data" type="application/json">__CARBONATE_DATA__</script>
+<script>
+'use strict';
+const data = JSON.parse(document.getElementById('chemistry-data').textContent);
+const el = id => document.getElementById(id);
+const blue = '#1764ab', ink = '#182b3a', grid = '#d9e1e6';
+let mode = 'top', yaw = 0.65, pitch = 0.42, drag = null;
+let sample, rawSample, ti, di;
+const isPH = () => el('diagnostic').value === 'ph';
+const fixedDIC = () => el('cut').value === 'dic';
+const stateBIndex = () => {
+  const step=el('range').value==='local'?4:1;
+  return ti+step<sample.ta.length?ti+step:ti-step;
+};
+const orange = '#b84b19';
+const metric = () => isPH() ? 'pH' : 'pCO2 (µatm)';
+const fmt = (v, digits=0) => Number(v).toLocaleString('en', {maximumFractionDigits:digits});
+const extent = a => [Math.min(...a), Math.max(...a)];
+const mix = (a,b,t) => a+(b-a)*t;
+const norm = (v,a,b) => (v-a)/(b-a);
+function colour(t) {
+  const stops = [[38,60,134],[33,142,170],[112,184,139],[241,213,104]];
+  const u = Math.max(0,Math.min(0.99999,t))*3, i = Math.floor(u);
+  return `rgb(${stops[i].map((v,k)=>Math.round(mix(v,stops[i+1][k],u-i))).join(',')})`;
+}
+function setup(canvas) {
+  const w = canvas.clientWidth, h = canvas.clientHeight, scale = window.devicePixelRatio || 1;
+  canvas.width = Math.round(w*scale); canvas.height = Math.round(h*scale);
+  const c = canvas.getContext('2d'); c.scale(scale,scale); c.clearRect(0,0,w,h);
+  c.font = '12px system-ui'; c.lineJoin = 'round';
+  return {c,w,h};
+}
+function path(c,points,stroke,fill=null,width=1) {
+  c.beginPath(); points.forEach((p,i)=> i ? c.lineTo(p[0],p[1]) : c.moveTo(p[0],p[1]));
+  if(fill) { c.closePath(); c.fillStyle=fill; c.fill(); }
+  if(stroke) { c.strokeStyle=stroke; c.lineWidth=width; c.stroke(); }
+}
+function label(c,t,x,y,align='center',color=ink) {
+  c.fillStyle=color; c.textAlign=align; c.textBaseline='middle'; c.fillText(t,x,y);
+}
+function dot(c,x,y,color=blue) { c.beginPath();c.arc(x,y,4,0,Math.PI*2);c.fillStyle=color;c.fill();c.strokeStyle='#fff';c.lineWidth=1.5;c.stroke(); }
+function stateDot(c,x,y,name,color) {
+  dot(c,x,y,color);c.save();c.font='bold 12px system-ui';
+  let dx=name==='A'?-12:12;
+  if(x+dx<12)dx=12;if(x+dx>c.canvas.clientWidth-12)dx=-12;
+  c.fillStyle='#fff';c.fillRect(x+dx-6,y-17,13,15);
+  label(c,name,x+dx,y-10,'center',color);c.restore();
+}
+function arrow(c,p,q,color) {
+  path(c,[p,q],color,null,2.5);
+  const a=Math.atan2(q[1]-p[1],q[0]-p[0]);
+  path(c,[[q[0]-7*Math.cos(a-.5),q[1]-7*Math.sin(a-.5)],q,[q[0]-7*Math.cos(a+.5),q[1]-7*Math.sin(a+.5)]],color,null,2);
+}
+function axes(c,w,h,xr,yr,xlabel,ylabel,xDigits=0,yDigits=0) {
+  const box = {l:70,r:w-22,t:20,b:h-52};
+  const X = v => mix(box.l,box.r,norm(v,...xr)), Y = v => mix(box.b,box.t,norm(v,...yr));
+  for(let i=0;i<=4;i++) {
+    const x=mix(...xr,i/4),y=mix(...yr,i/4);
+    path(c,[[X(x),box.t],[X(x),box.b]],grid); path(c,[[box.l,Y(y)],[box.r,Y(y)]],grid);
+    label(c,fmt(x,xDigits),X(x),box.b+16);label(c,fmt(y,yDigits),box.l-8,Y(y),'right');
+  }
+  path(c,[[box.l,box.t],[box.l,box.b],[box.r,box.b]],ink);
+  label(c,xlabel,(box.l+box.r)/2,h-9);
+  c.save();c.translate(14,(box.t+box.b)/2);c.rotate(-Math.PI/2);label(c,ylabel,0,0);c.restore();
+  return {X,Y,box};
+}
+function topView(c,w,h) {
+  const {dic,ta,pco2,contours}=sample, xr=extent(dic),yr=extent(ta),zr=extent(pco2.flat());
+  const {X,Y,box}=axes(c,w,h,xr,yr,'DIC (µmol C/kg)','TA (µeq/kg)');
+  c.save();c.beginPath();c.rect(box.l,box.t,box.r-box.l,box.b-box.t);c.clip();
+  for(let j=0;j<ta.length-1;j++) for(let i=0;i<dic.length-1;i++) {
+    c.globalAlpha=.18;c.fillStyle=colour(norm(pco2[j][i],...zr));
+    c.fillRect(X(dic[i]),Y(ta[j+1]),X(dic[i+1])-X(dic[i]),Y(ta[j])-Y(ta[j+1]));
+  }
+  c.globalAlpha=1;
+  for(const line of contours) for(const points of line.paths) path(c,points.map(p=>[X(p[0]),Y(p[1])]),'#637a85');
+  if(fixedDIC())path(c,[[X(dic[di]),box.t],[X(dic[di]),box.b]],blue,null,2.5);
+  else path(c,[[box.l,Y(ta[ti])],[box.r,Y(ta[ti])]],blue,null,2.5);
+  for(const line of contours) {
+    const points=line.paths.reduce((a,b)=>a.length>b.length?a:b,[]);
+    const safe=points.filter(p=> X(p[0])>box.l+24 && X(p[0])<box.r-24 && Y(p[1])>box.t+12 && Y(p[1])<box.b-12 && (fixedDIC()?Math.abs(X(p[0])-X(dic[di]))>18:Math.abs(Y(p[1])-Y(ta[ti]))>12));
+    if(!safe.length) continue;
+    const p=safe[Math.floor(safe.length*.55)], text=fmt(line.value,isPH()?2:0),width=c.measureText(text).width+6;
+    c.fillStyle='#fff';c.fillRect(X(p[0])-width/2,Y(p[1])-8,width,16);label(c,text,X(p[0]),Y(p[1]));
+  }
+  if(fixedDIC()) {
+    const j=stateBIndex();arrow(c,[X(dic[di]),Y(ta[ti])],[X(dic[di]),Y(ta[j])],orange);
+    stateDot(c,X(dic[di]),Y(ta[j]),'B',orange);
+  }
+  stateDot(c,X(dic[di]),Y(ta[ti]),'A',blue);c.restore();
+}
+function surfaceView(c,w,h) {
+  const {dic,ta,pco2}=sample,xr=extent(dic),yr=extent(ta),colourRange=extent(pco2.flat()),zr=[isPH()?colourRange[0]:0,colourRange[1]];
+  const scale=Math.min(w/4.1,h/3.7);
+  function project(x,y,z) {
+    x=2*norm(x,...xr)-1;y=2*norm(y,...yr)-1;z=1.65*norm(z,...zr);
+    const u=Math.cos(yaw)*x-Math.sin(yaw)*y,v=Math.sin(yaw)*x+Math.cos(yaw)*y;
+    return [w/2+scale*u,h*.67-scale*(Math.sin(pitch)*v+Math.cos(pitch)*z),Math.cos(pitch)*v-Math.sin(pitch)*z];
+  }
+  const faces=[];
+  for(let j=0;j<ta.length-1;j++) for(let i=0;i<dic.length-1;i+=2) {
+    const k=Math.min(i+2,dic.length-1),coords=[[i,j],[k,j],[k,j+1],[i,j+1]];
+    const ps=coords.map(([a,b])=>project(dic[a],ta[b],pco2[b][a]));
+    faces.push({ps,depth:ps.reduce((s,p)=>s+p[2],0)/4,value:coords.reduce((s,[a,b])=>s+pco2[b][a],0)/4});
+  }
+  faces.sort((a,b)=>b.depth-a.depth);
+  for(const f of faces) path(c,f.ps,null,colour(norm(f.value,...colourRange)));
+  // The selected vertical plane, its base and the true surface intersection.
+  const plane=fixedDIC()?
+    [project(dic[di],yr[0],zr[0]),project(dic[di],yr[1],zr[0]),project(dic[di],yr[1],zr[1]),project(dic[di],yr[0],zr[1])]:
+    [project(xr[0],ta[ti],zr[0]),project(xr[1],ta[ti],zr[0]),project(xr[1],ta[ti],zr[1]),project(xr[0],ta[ti],zr[1])];
+  c.setLineDash([5,4]);path(c,plane,blue,'rgba(23,100,171,0.09)');c.setLineDash([]);
+  const cut=fixedDIC()?ta.map((y,j)=>project(dic[di],y,pco2[j][di])):dic.map((x,i)=>project(x,ta[ti],pco2[ti][i]));
+  path(c,cut,'#fff',null,5);path(c,cut,blue,null,2.5);
+  const selected=project(dic[di],ta[ti],pco2[ti][di]);stateDot(c,selected[0],selected[1],'A',blue);
+  if(fixedDIC()){const j=stateBIndex(),p=project(dic[di],ta[j],pco2[j][di]);stateDot(c,p[0],p[1],'B',orange);}
+  const origin=project(xr[0],yr[0],zr[0]),xp=project(xr[1],yr[0],zr[0]),yp=project(xr[0],yr[1],zr[0]),zp=project(xr[0],yr[0],zr[1]);
+  for(const end of [xp,yp,zp]) path(c,[origin,end],ink);
+  for(let i=0;i<=2;i++) {
+    const f=i/2;
+    const p=project(mix(...xr,f),yr[0],zr[0]);label(c,fmt(mix(...xr,f)),p[0],p[1]+15);
+    const q=project(xr[0],mix(...yr,f),zr[0]);label(c,fmt(mix(...yr,f)),q[0]-8,q[1]-8,'right');
+    const r=project(xr[0],yr[0],mix(...zr,f));if(i)label(c,fmt(mix(...zr,f),isPH()?2:0),r[0]-7,r[1],'right');
+  }
+  // Compact axis letters follow their endpoints; the units key stays legible.
+  label(c,'DIC',xp[0]+14,xp[1]+30,'left');label(c,'TA',yp[0]+8,yp[1]-14,'left');
+  label(c,'DIC: µmol C/kg · TA: µeq/kg',w/2,h-10);
+  label(c,'Height: '+metric(),12,12,'left');
+}
+function curveView(c,w,h) {
+  if(fixedDIC()) {
+    const xs=sample.ta.map((_,j)=>sample.pco2[j][di]),ys=sample.ta;
+    const {X,Y,box}=axes(c,w,h,extent(xs),extent(ys),metric(),'TA (µeq/kg)',isPH()?2:0,0);
+    c.save();c.beginPath();c.rect(box.l,box.t,box.r-box.l,box.b-box.t);c.clip();
+    path(c,xs.map((x,j)=>[X(x),Y(ys[j])]),blue,null,2.5);
+    const j=stateBIndex(),A=[X(xs[ti]),Y(ys[ti])],B=[X(xs[j]),Y(ys[j])];
+    c.setLineDash([3,3]);path(c,[A,[B[0],A[1]],B],'#73808c');c.setLineDash([]);
+    if(el('tangent').checked) {
+      const dx=(Math.max(...xs)-Math.min(...xs))*.14;
+      const lo=Math.max(0,ti-1),hi=Math.min(xs.length-1,ti+1);
+      const m=isPH()?rawSample.capacity[ti][di]:(ys[hi]-ys[lo])/(xs[hi]-xs[lo]);
+      c.setLineDash([6,3]);path(c,[[X(xs[ti]-dx),Y(ys[ti]-m*dx)],[X(xs[ti]+dx),Y(ys[ti]+m*dx)]],'#803e91',null,2);c.setLineDash([]);
+    }
+    stateDot(c,...A,'A',blue);stateDot(c,...B,'B',orange);c.restore();return;
+  }
+  const {dic,pco2,slope,atmosphere}=sample, row=pco2[ti], atm=el('atmosphere').checked&&!isPH();
+  const bounds=extent(row),pad=(bounds[1]-bounds[0])*.08;
+  const yr=isPH()?[bounds[0]-pad,bounds[1]+pad]:[0,Math.max(...row,...(atm ? atmosphere.filter(v=>v!==null) : [0]))*1.08];
+  const {X,Y,box}=axes(c,w,h,extent(dic),yr,'DIC (µmol C/kg)',metric(),0,isPH()?2:0);
+  c.save();c.beginPath();c.rect(box.l,box.t,box.r-box.l,box.b-box.t);c.clip();
+  path(c,dic.map((x,i)=>[X(x),Y(row[i])]),blue,null,2.5);
+  if(atm) path(c,dic.flatMap((x,i)=>atmosphere[i]===null?[]:[[X(x),Y(atmosphere[i])]]),'#9b4c0b',null,2);
+  if(el('tangent').checked) {
+    const dx=(dic.at(-1)-dic[0])*.12,x=dic[di],y=row[di],m=slope[ti][di];
+    c.setLineDash([5,3]);path(c,[[X(x-dx),Y(y-m*dx)],[X(x+dx),Y(y+m*dx)]],'#803e91',null,2);c.setLineDash([]);
+  }
+  stateDot(c,X(dic[di]),Y(row[di]),'A',blue);c.restore();
+}
+function interpolate(values,pH) {
+  const grid=data.buffers.ph,u=Math.max(0,Math.min(grid.length-1,pH/(grid[1]-grid[0])));
+  const i=Math.min(grid.length-2,Math.floor(u));return mix(values[i],values[i+1],u-i);
+}
+function drawBuffers() {
+  const b=data.buffers,dic=sample.dic[di],selectedPH=rawSample.ph[ti][di];
+  const carbonate=b.carbonate_per_dic.map(v=>v*dic);
+  const total=carbonate.map((v,i)=>v+b.borate[i]+b.water[i]+b.other[i]);
+  const sensitivity=total.map(v=>1e6/v);
+  const approx=b.approximate_per_dic.map(v=>v*dic);
+  const mapped=extent(rawSample.ph.map(row=>row[di])),jB=stateBIndex();
+  const range=el('bufferRange').value;
+  const series=[{values:total,color:ink,width:2.8},{values:carbonate,color:'#d16a16',dash:[6,3]},
+    {values:b.borate,color:'#238448'},{values:b.water,color:'#188ca5'},
+    {values:b.other,color:'#9276a3',dash:[2,3]}];
+  for(const kind of ['capacity','sensitivity']) {
+    const {c,w,h}=setup(el(kind));
+    const xr=range==='mapped'?mapped:range==='seawater'?[7.5,8.5]:range==='book'&&kind==='capacity'?[4.5,10]:[0,14];
+    const indices=b.ph.map((v,i)=>i).filter(i=>b.ph[i]>=xr[0]&&b.ph[i]<=xr[1]);
+    const main=kind==='capacity'?total:sensitivity;
+    const xs=[xr[0],...indices.map(i=>b.ph[i]),xr[1]];
+    const maxValues=xs.map(x=>interpolate(main,x));
+    if(kind==='capacity'&&el('approximation').checked)for(const i of indices)if(b.ph[i]>=7.5&&b.ph[i]<=8.5)maxValues.push(approx[i]);
+    const yr=[0,Math.max(...maxValues)*1.08];
+    const {X,Y,box}=axes(c,w,h,xr,yr,'pH (seawater scale)',kind==='capacity'?'B (µeq kg⁻¹ pH⁻¹)':'S [pH / (eq kg⁻¹)]',xr[1]-xr[0]<2?2:1,0);
+    c.save();c.beginPath();c.rect(box.l,box.t,box.r-box.l,box.b-box.t);c.clip();
+    c.fillStyle='rgba(23,100,171,0.08)';c.fillRect(X(mapped[0]),box.t,X(mapped[1])-X(mapped[0]),box.b-box.t);
+    for(const s of kind==='capacity'?series:[{values:sensitivity,color:'#d16a16',width:2.8}]) {
+      c.setLineDash(s.dash||[]);path(c,xs.map(x=>[X(x),Y(interpolate(s.values,x))]),s.color,null,s.width||1.6);
+    }
+    if(kind==='capacity'&&el('approximation').checked) {
+      c.setLineDash([9,4,2,4]);path(c,indices.filter(i=>b.ph[i]>=7.5&&b.ph[i]<=8.5).map(i=>[X(b.ph[i]),Y(approx[i])]),ink,null,1.8);
+    }
+    c.setLineDash([]);
+    for(const [j,name,color] of fixedDIC()?[[ti,'A',blue],[jB,'B',orange]]:[[ti,'A',blue]]) {
+      const ph=rawSample.ph[j][di],capacity=rawSample.capacity[j][di];
+      if(ph>=xr[0]&&ph<=xr[1]) {
+        c.setLineDash([4,4]);path(c,[[X(ph),box.t],[X(ph),box.b]],color);c.setLineDash([]);
+        stateDot(c,X(ph),Y(kind==='capacity'?capacity:1e6/capacity),name,color);
+      }
+    }
+    c.restore();
+  }
+  const capacity=rawSample.capacity[ti][di],sensitivityValue=1e6/capacity;
+  el('bufferReadout').textContent=`Same state A, same fixed DIC (${fmt(dic,1)} µmol C/kg): pH ${fmt(selectedPH,3)}. The TA–pH tangent gives B = ${fmt(capacity,2)} µeq kg⁻¹ per pH unit. Its reciprocal gives S = ${fmt(sensitivityValue,2)} pH units per (eq kg⁻¹), or ${fmt(1/capacity,6)} pH units per µeq/kg.`;
+  el('bufferNotice').textContent=(range==='mapped'?'Both plots use exactly the pH interval crossed by the vertical line on the map. ':range==='book'?'Extend that same fixed-DIC titration to the textbook ranges: pH 4.5–10 for capacity and 0–14 for sensitivity. ':range==='broad'?'The full-range capacity is dominated by water at extreme pH; use Seawater detail to inspect ocean buffering. ':'Both panels now show pH 7.5–8.5. ')+`The blue-shaded interval (${fmt(mapped[0],3)}–${fmt(mapped[1],3)}) is the part visible on the upper map. `+(el('approximation').checked?'The black dash-dot approximation is drawn only over pH 7.5–8.5. ':'');
+}
+function draw() {
+  if(!sample) return;
+  ti=+el('ta').value;di=+el('dic').value;
+  const z=extent(sample.pco2.flat());
+  el('taValue').value=fmt(sample.ta[ti],1);el('dicValue').value=fmt(sample.dic[di],1);
+  el('ta').setAttribute('aria-valuetext',`${fmt(sample.ta[ti],1)} microequivalents per kilogram`);
+  el('dic').setAttribute('aria-valuetext',`${fmt(sample.dic[di],1)} micromoles carbon per kilogram`);
+  el('zmin').textContent=fmt(z[0],isPH()?2:0);el('zmax').textContent=fmt(z[1],isPH()?2:0);
+  el('scaleName').textContent=metric();
+  const left=setup(el('surface')),right=setup(el('curve'));
+  (mode==='top'?topView:surfaceView)(left.c,left.w,left.h);curveView(right.c,right.w,right.h);
+  el('leftTitle').textContent=mode==='top'?`1 · ${isPH()?'pH':'pCO2'} contours on the DIC–TA plane`:`1 · ${metric()} surface + constant-${fixedDIC()?'DIC':'TA'} plane`;
+  el('rightTitle').textContent=fixedDIC()?`2 · The same cut: TA versus ${isPH()?'pH':'pCO2'}`:`2 · Original cut: ${isPH()?'pH':'pCO2'} versus DIC`;
+  el('viewHint').textContent=mode==='top'?fixedDIC()?`The blue vertical line holds DIC at ${fmt(sample.dic[di],1)} µmol C/kg. Move upward: TA and the contour pH change together. Arrow A → B shows one small TA change.`:`The horizontal line holds TA fixed. Moving along it changes DIC, as in the original explorer.`:`Rotate to see the constant-${fixedDIC()?'DIC':'TA'} cutting plane. Its intersection with the surface gives the same blue curve on the right.`;
+  if(!isPH()&&fixedDIC())el('viewHint').textContent=el('viewHint').textContent.replace('contour pH','contour pCO2');
+  el('notice').textContent=fixedDIC()?isPH()?'Replot the contour labels as pH on x; keep TA on y. The same A and B appear here. The purple tangent at A has slope B = ∂TA/∂pH; the grey triangle shows the finite A–B interval.':'TA is plotted against pCO2 along the fixed-DIC cut. Choose pH to obtain the TA–pH slope used for buffering.':isPH()?'This horizontal, constant-TA cut differs from the vertical, constant-DIC cut used to define pH buffering.':el('atmosphere').checked?'The atm line adds the closed carbon inventory; it ends where atmospheric carbon would become negative.':'This is the original constant-TA pCO2–DIC curve. Return to pH and Hold DIC to trace the buffering construction.';
+  el('atmosphere').disabled=isPH()||fixedDIC();
+  el('atmLegend').hidden=isPH()||fixedDIC()||!el('atmosphere').checked;el('tangentLegend').hidden=!el('tangent').checked;
+  el('curveLegend').textContent=fixedDIC()?'Same fixed-DIC cut':'Original fixed-TA cut';
+  el('surface').setAttribute('aria-label',`Rotatable DIC–TA–${metric()} surface. Drag or use arrow keys to rotate.`);
+  el('curve').setAttribute('aria-label',fixedDIC()?`TA versus ${metric()} at the selected DIC; same states A and B as the contour map.`:`${metric()} versus DIC at the selected TA.`);
+  el('readout').textContent=`State A: DIC ${fmt(sample.dic[di],1)} µmol C/kg; TA ${fmt(sample.ta[ti],1)} µeq/kg; pH ${fmt(rawSample.ph[ti][di],3)}; seawater pCO2 ${fmt(rawSample.pco2[ti][di],2)} µatm.`;
+  const j=stateBIndex(),dTA=sample.ta[j]-sample.ta[ti],dPH=rawSample.ph[j][di]-rawSample.ph[ti][di];
+  el('mappingReadout').textContent=fixedDIC()&&isPH()?`A → B at the same DIC: ΔTA = ${dTA>0?'+':''}${fmt(dTA,1)} µeq/kg and ΔpH = ${dPH>0?'+':''}${fmt(dPH,5)}. The interval slope ΔTA/ΔpH = ${fmt(dTA/dPH,1)} µeq kg⁻¹ per pH unit approaches the local tangent B as the interval shrinks.`:'To connect the contour map directly to the buffer diagrams, select pH and Hold DIC · vary TA. A constant-TA pCO2–DIC slope is a different sensitivity.';
+  el('bufferBridge').textContent=fixedDIC()&&isPH()?'Each point on the blue TA–pH curve has a local slope. Plot those slopes against pH to obtain B; plot their reciprocals to obtain S. States A and B keep the same colours in all four diagrams.':'The buffer diagrams always hold DIC fixed at state A. The current upper view uses a different diagnostic or cut. Select pH and Hold DIC to see the curve whose slopes produce these diagrams.';
+  drawBuffers();
+}
+function selectDiagnostic() {
+  rawSample=data.ranges[el('range').value];
+  sample={...rawSample,pco2:isPH()?rawSample.ph:rawSample.pco2,
+          slope:isPH()?rawSample.ph_slope:rawSample.slope,
+          contours:isPH()?rawSample.ph_contours:rawSample.contours};
+  draw();
+}
+function chooseView(next) {
+  mode=next;
+  if(next==='oblique'){yaw=.65;pitch=.42;}
+  if(next==='slice'){yaw=.15;pitch=.15;}
+  for(const name of ['oblique','top','slice']) el(name).setAttribute('aria-pressed',String(name===next));
+  draw();
+}
+function chooseRange() {
+  rawSample=data.ranges[el('range').value];sample=rawSample;
+  el('ta').max=sample.ta.length-1;el('dic').max=sample.dic.length-1;
+  el('ta').value=sample.ta_index;el('dic').value=sample.dic_index;selectDiagnostic();
+}
+el('conditions').textContent=data.conditions;
+for(const name of ['oblique','top','slice']) el(name).addEventListener('click',()=>chooseView(name));
+for(const name of ['ta','dic','tangent','atmosphere']) el(name).addEventListener('input',draw);
+el('range').addEventListener('change',chooseRange);
+el('diagnostic').addEventListener('change',selectDiagnostic);
+el('cut').addEventListener('change',draw);
+el('bufferRange').addEventListener('change',drawBuffers);
+el('approximation').addEventListener('input',drawBuffers);
+function resetMapping() {
+  el('range').value='local';el('diagnostic').value='ph';el('cut').value='dic';el('bufferRange').value='mapped';
+  el('approximation').checked=false;el('tangent').checked=true;el('atmosphere').checked=false;
+  chooseRange();chooseView('top');
+}
+el('reset').addEventListener('click',resetMapping);
+el('original').addEventListener('click',()=>{el('diagnostic').value='pco2';el('cut').value='ta';selectDiagnostic();chooseView('top');});
+el('surface').addEventListener('pointerdown',e=>{if(mode==='top')return;drag=[e.clientX,e.clientY];el('surface').setPointerCapture(e.pointerId);});
+el('surface').addEventListener('pointermove',e=>{if(!drag)return;yaw+=(e.clientX-drag[0])*.008;pitch=Math.max(.08,Math.min(1.35,pitch+(e.clientY-drag[1])*.006));drag=[e.clientX,e.clientY];draw();});
+for(const event of ['pointerup','pointercancel','lostpointercapture']) el('surface').addEventListener(event,()=>{drag=null;});
+el('surface').addEventListener('keydown',e=>{
+  if(mode==='top'||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;
+  e.preventDefault();yaw+=e.key==='ArrowLeft'?-.12:e.key==='ArrowRight'?.12:0;
+  pitch=Math.max(.08,Math.min(1.35,pitch+(e.key==='ArrowUp'?.08:e.key==='ArrowDown'?-.08:0)));draw();
+});
+el('download').addEventListener('click',()=>{
+  const url=URL.createObjectURL(new Blob(['<!doctype html>\n'+document.documentElement.outerHTML],{type:'text/html'}));
+  const link=document.createElement('a');link.href=url;link.download='carbonate-chemistry-and-buffering.html';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+new ResizeObserver(draw).observe(document.querySelector('.plots'));
+new ResizeObserver(drawBuffers).observe(el('bufferPlots'));
+resetMapping();
+</script>
+</body>
+</html>

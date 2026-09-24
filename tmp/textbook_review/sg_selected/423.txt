@@ -1,0 +1,151 @@
+between 61 to 141 Pg C. Over the last two decades, i.e.,
+from 1980 to 1999, the ocean also has acted as a
+strong sink for anthropogenic CO
+2, taking up, on av-
+erage, about 1.9 Pg C yr/C0 1, i.e., about 27% of the total
+anthropogenic emissions of about 7.1 Pg C yr /C0 1 (table
+10.2.1).
+How were these oceanic uptake estimates obtained,
+and what controls the rate of uptake? How might the
+oceanic sink for anthropogenic CO
+2 change in the fu-
+ture when climate is predicted to be signiﬁcantly al-
+tered? These questions are of fundamental importance,
+as the current radiative forcing associated with in-
+creased atmospheric CO
+2 would be about 30% higher
+in the absence of the oceanic sink. Furthermore, posi-
+tive feedbacks could develop if the ocean became less
+efﬁcient in taking up anthropogenic CO
+2 in a warming
+world, leading to an acceleration of the growth of CO 2
+in the atmosphere and therefore an acceleration of
+global warming.
+We address these questions next. We start with an
+assessment of the oceanic uptake capacity after equilib-
+rium has been reached, but will soon show that there are
+strong kinetic constraints that prevent the equilibrium
+from being reached within the next millennium. We
+then evaluate brieﬂy different methods that have been
+employed to estimate the present uptake of anthropo-
+genic CO
+2 by the oceans. We conclude by discussing
+models that have been used to calculate the past uptake
+as well as to make predictions for the future.
+Capacity Constraints
+If CO
+2 dissolved in seawater without undergoing chemi-
+cal reactions like most other gases, about 70% of the CO2
+emitted by anthropogenic activities would remain in the
+atmosphere. However, the uptake capacity of the oceans is
+greatly enhanced by the reaction of CO
+2 with the car-
+bonate ion to form bicarbonate, making the carbonate ion
+concentration the primary determinant for the oceanic
+uptake capacity for anthropogenic CO
+2. As seen above (see
+8.3.8), the buffering reaction can be written as
+H2CO*
+3
+þCO2/C0
+3 Ð 2HCO/C0
+3
+(10:2:1)
+The carbonate ion content of the ocean is not a con-
+servative property, however. It is tied to the inorganic
+carbon system in seawater, ([CO
+2/C0
+3 ] /C25 Alk /C0 DIC), as
+well as to the large reservoir of CaCO3 in the sediments.
+The latter can absorb CO 2 directly by
+H2CO*
+3
+þCaCO3 Ð Ca2 þ þ2 HCO/C0
+3
+(10:2:2)
+As we will discuss in more detail below, these two
+buffering reactions operate on two very different time-
+scales. The characteristic time for reaching equilibrium
+between the atmosphere and the ocean alone is of the
+order of several hundred years. The characteristic time
+required for reaching equilibrium between the atmo-
+sphere, the ocean, and the sea-ﬂoor sediments is on the
+order of several thousand years [Broecker and Takahashi,
+1977a, Archer et al. , 1997]. We therefore separately
+consider the case where the anthropogenic CO
+2 enter-
+ing the ocean is neutralized by the carbonate concen-
+tration in seawater alone, and the case where it is
+neutralized by the carbonate ion in seawater plus the
+calcium carbonate in the sediments. We will also brieﬂy
+discuss the very long-term sinks of anthropogenic CO
+2
+stemming from the weathering reaction with CaCO 3
+and siliceous rocks on land.
+Buffering by Dissolved Carbonate
+Let us ﬁrst consider the situation for an ocean with
+uniform chemistry and no sediments. On the basis of
+what we have learned about the CO
+2 chemistry so far,
+we can predict how much of an incremental addition of
+CO
+2 to the atmosphere would dissolve in the ocean
+under the assumption that equilibrium is maintained,
+i.e., that air-sea gas exchange and ocean mixing are fast
+enough to keep the oceanic perturbation in equilibrium
+with that in the atmosphere.
+Let the atmospheric increment be
+dNatm ¼ dwCOatm
+2
+Natm
+tot (10:2:3)
+where wCOatm
+2
+is the atmospheric mixing ratio, and
+where Natm
+tot is the number of moles of air in the at-
+mosphere (Natm
+tot ¼ 1:8/C2 1020 mol). The increment in the
+ocean is given by
+dNoc ¼ dDIC moc (10:2:4)
+where moc is the mass of the ocean volume under
+consideration.
+Since we assumed that the perturbation in the ocean
+tracks the perturbation in the atmosphere, the incre-
+mental change in oceanic pCO
+2 has to be equal to
+the incremental change in atmospheric pCO2, which
+itself is equal to the change in the mixing ratio times
+the total atmospheric pressure, P
+atm (see panel 3.2.1,
+and where we neglect the contribution of water vapor
+pressure).
+dpCOoc
+2
+¼ dpCOatm
+2
+¼ dwCOatm
+2
+Patm (10:2:5)
+The change in the atmospheric inventory relative to the
+change in the oceanic inventory is thus given by
+dNatm
+dNoc ¼ dwCOatm
+2
+Natm
+tot
+dDIC moc ¼ dpCOoc
+2
+Natm
+tot
+PatmdDIC moc (10:2:6)
+¼ gDIC
+1
+a
+Natm
+tot
+Patm moc (10:2:7)
+where gDIC is the buffer factor deﬁned by (8.3.14), and a
+is the ratio of mean DIC and mean surface ocean pCO2.
+400
+Chapter 10

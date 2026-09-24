@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from model_inputs import read_model_tables
 
-W, H = 1560, 1270
+W, H = 1560, 850
 INK, MUTED = HexColor('#183747'), HexColor('#526773')
 BLUE, GREEN, ORANGE = map(HexColor, ('#246596', '#257763', '#AD6221'))
 PURPLE, PALE, GOLD = map(HexColor, ('#7952A8', '#F3F7FA', '#FFF0B3'))
@@ -78,110 +78,87 @@ def inputs():
     return p
 
 
-def diagram(student, p):
+def reconstruction_sheet():
+    """An uncluttered outline; answers live only in the instructor drawing."""
     c = Canvas()
-    role = 'STUDENT WORKSHEET' if student else 'INSTRUCTOR REFERENCE'
-    c.text(30, 42, '03 / 04   Boudreau-like carbon-cycle model', 32, bold=True)
-    c.rect(1175, 16, 355, 40, HexColor('#EDF5FF') if student else HexColor('#F3EEFB'),
-           BLUE if student else PURPLE)
-    c.text(1193, 43, role, 21, BLUE if student else PURPLE, bold=True)
-    c.text(30, 78, 'Two views of the same model: repeated L_b and D_b boxes represent the same ocean inventories.', 20)
-    c.text(30, 108, 'Solid lines: material transfers. Dashed arrows: information. Grey dashed outline: active-system boundary.', 18, MUTED)
+    c.text(30, 42, '03.1   Label the model with your flux equations', 30, bold=True)
+    c.text(30, 80, 'Add states, arrows and the active atm + ocn boundary. Repeated boxes are the same reservoirs.', 21)
+    for x, title in ((30, 'A   Water and gas'), (785, 'B   Export and carbonate processes')):
+        c.rect(x, 125, 745 if x == 785 else 725, 575, white, HexColor('#BCCAD3'))
+        c.text(x+20, 160, title, 23, bold=True)
+    c.box(90, 190, 615, 65, 'atm [CO2_At]', 'State:')
+    c.box(90, 365, 230, 85, 'Low latitude [L_b]', 'States:')
+    c.box(475, 365, 230, 85, 'High latitude [H_b]', 'States:')
+    c.box(90, 585, 615, 80, 'Deep ocean [D_b]', 'States:')
+    c.box(830, 268, 260, 75, 'Low latitude [L_b]', 'Same box as in A')
+    c.box(830, 523, 260, 80, 'Deep ocean [D_b]', 'Same box as in A')
+    c.rect(1250, 395, 255, 130, HexColor('#FFF6EA'), ORANGE)
+    c.text(1264, 424, 'Carbonate / sediment', 20, bold=True)
+    c.text(1264, 453, 'process module', 21, bold=True)
+    c.text(1264, 483, 'Snowline memory;', 17)
+    c.text(1264, 508, 'no sediment C stock.', 17)
+    c.text(30, 745, 'Q: water volume transport. J: paired DIC and TA amount fluxes from your table.', 22, bold=True)
+    c.text(30, 781, 'Include gas exchange, POC, PIC, weathering, dissolution and signed net burial. A paper sketch is sufficient.', 20)
+    c.text(30, 826, 'Course adaptation of Wortmann et al. (2025), Fig. 3. Source corrections and input links are in notebook 03.', 17, MUTED)
+    return c.d
 
-    c.rect(30, 130, 725, 565, white, HexColor('#BCCAD3'))
-    c.rect(785, 130, 745, 565, white, HexColor('#BCCAD3'))
-    c.text(50, 163, 'A   Circulation and air-sea exchange', 23, bold=True)
-    c.text(805, 163, 'B   Export, dissolution and net burial', 23, bold=True)
 
-    c.box(90, 190, 615, 65, 'Atmosphere / atm  [CO2_At]', 'State: dry-air CO2 mole fraction; fixed total air inventory')
-    c.box(90, 365, 230, 85, 'Low latitude [L_b]', 'ocn states: DIC, TA')
-    c.box(475, 365, 230, 85, 'High latitude [H_b]', 'ocn states: DIC, TA')
-    c.box(90, 585, 615, 80, 'Deep ocean [D_b]', 'ocn states: DIC, TA; each box has its own geometry and T/S/P')
+def diagram(student, p):
+    if student:
+        return reconstruction_sheet()
+    c = Canvas()
+    c.text(30, 42, '03 / 04   Model schematic', 32, bold=True)
+    c.text(1140, 42, 'INSTRUCTOR REFERENCE', 23, PURPLE, True)
+    c.text(30, 80, 'Repeated boxes are the same reservoirs. Use the companion table for paired DIC / TA equations.', 21)
+    c.rect(30, 125, 725, 575, white, HexColor('#BCCAD3'))
+    c.rect(785, 125, 745, 575, white, HexColor('#BCCAD3'))
+    c.text(50, 160, 'A   Water and gas', 23, bold=True)
+    c.text(805, 160, 'B   Export and carbonate processes', 23, bold=True)
+    c.box(90, 190, 615, 65, 'atm [CO2_At]', 'State: CO2 mole fraction')
+    c.box(90, 365, 230, 85, 'Low latitude [L_b]', 'DIC, TA')
+    c.box(475, 365, 230, 85, 'High latitude [H_b]', 'DIC, TA')
+    c.box(90, 585, 615, 80, 'Deep ocean [D_b]', 'DIC, TA')
     for x in (180, 545):
         c.arrow([(x,255),(x,365)], GREEN)
         c.arrow([(x+55,365),(x+55,255)], GREEN)
-    c.text(100, 295, 'G_L', 18, GREEN, True)
-    c.text(100, 320, 'in / out', 16, GREEN)
-    c.text(627, 295, 'G_H', 18, GREEN, True)
-    c.text(627, 320, 'in / out', 16, GREEN)
-    c.arrow([(320,405),(475,405)], head=not student)
-    c.text(342, 385, 'T_LH' + ('  ?' if student else ''), 19, BLUE, True)
-    c.text(341, 435, f"{p['thc']:g} Sv", 17, BLUE)
+    c.text(100, 304, 'G_L', 20, GREEN, True)
+    c.text(625, 304, 'G_H', 20, GREEN, True)
+    c.arrow([(320,405),(475,405)])
+    c.text(364, 385, 'Q_LH', 20, BLUE, True)
     c.arrow([(535,450),(535,585)])
-    c.text(465, 505, 'T_HD', 18, BLUE, True)
+    c.text(450, 495, 'Q_HD', 19, BLUE, True)
     c.arrow([(130,585),(130,450)])
-    c.text(148, 505, 'T_DL', 18, BLUE, True)
-    c.text(148, 530, 'same circulation rate on all 3 legs', 16, MUTED)
+    c.text(150, 505, 'Q_DL', 19, BLUE, True)
     c.arrow([(620,450),(620,585)])
     c.arrow([(680,585),(680,450)])
-    c.text(551, 555, 'M_down', 14, BLUE)
-    c.text(687, 555, 'M_up', 14, BLUE)
-    c.text(350, 684, f"Mixing: {p['mixing']:g} Sv in each direction", 16, BLUE)
-
-    # The process module sits outside the active dissolved inventory boundary.
+    c.text(551, 553, 'Q_mix,down', 13, BLUE)
+    c.text(685, 575, 'Q_mix,up', 13, BLUE)
+    c.text(105, 683, f"Circulation: {p['thc']:g} Sv on each leg. Mixing: {p['mixing']:g} Sv each way.", 18, BLUE)
     c.rect(810, 248, 300, 398, None, MUTED, dashed=True)
+    c.box(830, 268, 260, 75, 'Low latitude [L_b]', 'Same box as in A')
+    c.box(830, 523, 260, 80, 'Deep ocean [D_b]', 'Same box as in A')
     c.text(824, 634, 'ocn part of active atm + ocn', 17, MUTED)
-    c.box(830, 268, 260, 75, 'Low latitude [L_b]', 'Same box as in panel A')
-    c.box(830, 523, 260, 80, 'Deep ocean [D_b]', 'Same box as in panel A')
-    c.text(842, 203, 'W  External weathering', 20, ORANGE, True)
-    c.arrow([(955,211),(955,268)], ORANGE)
-    c.arrow([(890,343),(890,523)], GREEN, head=not student)
-    c.text(910, 410, 'POC' + ('  ?' if student else ''), 20, GREEN, True)
-    c.text(910, 438, 'Export +', 17, GREEN)
-    c.text(910, 461, 'remineralization', 17, GREEN)
+    c.text(855, 209, 'W: weathering', 20, ORANGE, True)
+    c.arrow([(955,218),(955,268)], ORANGE)
+    c.arrow([(890,343),(890,523)], GREEN)
+    c.text(912, 427, 'POC', 21, GREEN, True)
     c.arrow([(1090,300),(1355,300),(1355,395)], ORANGE)
-    c.text(1135, 282, 'PIC  CaCO3 export', 20, ORANGE, True)
+    c.text(1140, 283, 'PIC (E)', 20, ORANGE, True)
     c.rect(1250, 395, 255, 130, HexColor('#FFF6EA'), ORANGE)
     c.text(1264, 424, 'Carbonate / sediment', 20, bold=True)
-    c.text(1264, 451, 'process module', 21, bold=True)
-    c.text(1264, 483, 'Snowline is a dynamic state;', 16)
-    c.text(1264, 507, 'no explicit sediment C inventory.', 15)
-    c.arrow([(1250,465),(1150,465),(1150,555),(1090,555)], ORANGE,
-            head=not student)
-    c.text(1118, 445, 'D  _________' if student else 'D  Dissolution', 18, ORANGE, True)
+    c.text(1264, 453, 'process module', 21, bold=True)
+    c.text(1264, 483, 'Snowline memory;', 17)
+    c.text(1264, 508, 'no sediment C stock.', 17)
+    c.arrow([(1250,465),(1150,465),(1150,555),(1090,555)], ORANGE)
+    c.text(1117, 444, 'D: dissolution', 18, ORANGE, True)
     c.arrow([(1090,584),(1188,584),(1188,505),(1250,505)], PURPLE, dashed=True)
-    c.text(1122, 611, 'Deep carbonate chemistry', 16, PURPLE)
-    c.text(1122, 634, 'informs sediment response', 16, PURPLE)
+    c.text(1120, 626, 'Deep chemistry', 17, PURPLE)
     c.arrow([(1415,525),(1415,615)], ORANGE)
-    c.text(1275, 660, 'B  _____________' if student else 'B  Signed net burial', 19, ORANGE, True)
-    c.text(1275, 682, 'Label residual flux' if student else 'Removal from active atm + ocn', 15, MUTED)
-    c.text(805, 682, 'No POC or PIC export from H_b in this benchmark.', 16, MUTED)
-
-    c.text(30, 733, 'Complete the transfer properties and use the workbook to locate each input.' if student
-           else 'Transfer properties and workbook-to-code cross-reference', 23, bold=True)
-    widths = [205, 505, 425, 365]
-    xs = [30,235,740,1165]
-    headers = ['Arrow / process', 'What moves / rate rule', 'Excel table or parameter', 'Native object / supplied code']
-    for x,w,h in zip(xs,widths,headers):
-        c.rect(x,752,w,37,HexColor('#E7EFF5'),white)
-        c.text(x+10,777,h,17,bold=True,max_width=w-20)
-    blank = lambda answer: '____________________________________' if student else answer
-    rows = [
-        ('T_* / M_*', blank('DIC + TA; J_X(t) = q x X_source(t)'), 'TransportConnections: source / sink / flux_id', 'scale_with_concentration'),
-        ('G_L / G_H', blank('Carbon only; invasion minus outgassing'), 'GasExchangeConnections; piston_velocity', 'gasexchange; one object per surface'),
-        ('POC', blank(f"DIC only; fixed {p['poc_export']:g} Tmol C/yr"), 'ProcessParameters: poc_export', 'POM'),
-        ('PIC', blank(f"1 DIC : 2 TA; {p['poc_export']*p['rain_ratio']:g} Tmol C/yr"), 'poc_export x rain_ratio (PIC/POC)', 'PIC_DIC + PIC_TA; sink bypass'),
-        ('W', f"1 DIC : 2 TA; {p['weathering_dic']:g} Tmol C/yr (supplied)", 'weathering_dic; TA = 2 x carbon input', 'weathering; Fw to L_b'),
-        ('D', blank('1 DIC : 2 TA; calculated dissolution'), 'Calculated response, not a prescribed flux', 'carbonate system 2; diagnostic' if student else 'carbonate system 2; Fdiss'),
-        ('B', blank('PIC - D; net removal in a 1:2 ratio'), 'Calculated response, not a prescribed flux', 'carbonate system 2; diagnostic' if student else 'Fburial diagnostic; implicit boundary'),
-    ]
-    for i,row in enumerate(rows):
-        y=789+i*43
-        c.rect(30,y,1500,43,white if i%2 else PALE,white)
-        for j,(x,w,value) in enumerate(zip(xs,widths,row)):
-            c.text(x+10,y+28,value,17,bold=j==0,max_width=w-20)
-
-    c.rect(30,1104,1500,76,HexColor('#EDF5FF') if student else HexColor('#F3EEFB'),
-           BLUE if student else PURPLE)
-    if student:
-        c.text(45,1130,'Question: add the three missing arrowheads, label D and B, and complete the six blank property cells.',19,bold=True)
-        c.text(45,1158,'Check water balance at every box. Explain which transfers change the combined atm + ocn inventories.',19)
-    else:
-        c.text(45,1130,'Budget check: internal water, gas and POC transfers cancel. dC_atm+ocn/dt = W - B; dTA_ocn/dt = 2(W - B).',18,bold=True)
-        c.text(45,1158,'Unforced baseline. B < 0 means net sediment loss: dissolution can exceed contemporary PIC rain.',19)
-    c.text(30,1206,'Units: DIC in mol C/kg; TA in mol equivalents/kg. Carbon fluxes in Tmol C/yr; TA fluxes in Tmol equivalents/yr.',17,MUTED)
-    c.text(30,1231,'Workbook: data/Boudreau_2010/model_definition.xlsx. Reservoir tables own geometry, T/S/P and initial states; restart replaces states.',17,MUTED)
-    c.text(30,1256,'Teaching adaptation of the ESBMTK Boudreau benchmark (Wortmann et al., 2025, Fig. 3). See companion notes for transport units and source aliases.',16,MUTED)
+    c.text(1270, 652, 'B_net: net burial', 20, ORANGE, True)
+    c.text(1270, 678, 'Signed residual, no extra drain', 16, MUTED)
+    c.text(30, 745, 'Q: water volume transport [Sv]. 1 Sv = 10^6 m3/s. J equations: companion flux table.', 21, bold=True)
+    c.text(30, 781, 'Solid arrows: material transfer. Dashed arrow: information. Grey outline: active ocean inventories.', 20)
+    c.text(30, 826, 'Course adaptation of Wortmann et al. (2025), Fig. 3. Parameters and Excel-to-code links remain in notebook 03.', 17, MUTED)
     return c.d
 
 

@@ -1,0 +1,117 @@
+such as carbon and barium that are associated with bi-
+ological processes, but are not limiting their rates, and
+therefore tend to be only partially depleted in surface
+waters); and biounlimited elements (those such as the
+major ions of table 1.2.1 that show generally uniform
+distributions).
+For the primary example in this section, we turn to the
+elements that show a sharp reduction in concentration
+near the surface (ﬁgure 1.2.1). The obvious questions are:
+What causes these gradients, and why do some elements,
+but not all, have them? One of the main features of
+oceanography, and one of the main attractions of doing
+oceanographic research, is combining reasoning from
+several scientiﬁc disciplines. The following example
+about the control of differences between surface and
+subsurface concentrations shows how this happens, and
+in doing so serves to introduce much of the material of
+the book and show why it is relevant.
+The key to explaining the sharp reduction in near-
+surface concentrations is that photosynthesis occurs in
+the sunlit surface ocean (ﬁgure 1.2.2). The essential ef-
+fect of photosynthesis is to capture the energy from the
+sun and make particulate and dissolved organic matter
+from dissolved inorganic matter (carbon dioxide and
+nutrients). The organic matter that is formed can be
+transported downward before it is converted back into
+dissolved inorganic matter ( remineralized). These re-
+mineralization processes liberate the energy contained
+in organic matter and provide the essential energy for
+the organisms that live off this organic matter. This
+surface production–deep remineralization loop is what
+causes the vertical gradients to happen. Biological pro-
+duction is discussed in chapter 4. One of the important
+messages from that discussion is that organisms utilize
+some chemical elements in stoichiometric (i.e., molar)
+ratios that can be considered nearly constant across the
+world. The photosynthesis and associated reactions
+combine inorganic carbon, nitrogen, and phosphorus
+together with water to form organic matter and release
+oxygen. This reaction is typically represented in the fol-
+lowing form [Anderson, 1995]:
+106 CO2 þ16 HNO3 þH3PO4 þ78 H2O
+Ð C106H175O42N16P þ150 O2
+with inorganic carbon in the form of carbon dioxide,
+inorganic nitrogen in the form of HNO
+3, and inorganic
+phosphorus in the form of H3PO4, and organic matter of
+composition C106H175O42N16P. Remineralization is the
+opposite of this reaction, combining oxygen with organic
+matter to produce the inorganic chemical forms of car-
+bon, nitrogen, and phosphorus as well as releasing en-
+ergy. We will consider the inorganic concentrations of
+three of these elements here: phosphorus, carbon, and
+O
+2, in that order. From the above reaction, we see that
+the stoichiometric ratio of biological utilization and
+production of these three elements and nitrogen is
+C:N:P:O
+2 ¼ 106:16:1:/C0 150, where C is in the form CO 2,
+N is in the form of HNO 3, and P is in the form H 3PO4.
+Spatial variations call for box models with more than
+one box. The minimum number that would be required
+to have surface concentrations lower than deep con-
+centrations is two. We use the schematic in ﬁgure 1.2.3
+as a basis for constructing a ﬁrst model to represent the
+processes that give rise to sharp surface gradients. The
+schematic leaves out the river input and sediment burial
+ﬂuxes considered in the previous section (ﬁgure 1.1.2);
+these external sources and sinks operate on much lon-
+ger timescales than the interior ocean processes shown
+in ﬁgure 1.2.3 and can thus be safely ignored for pur-
+poses of this discussion. Water movement and the
+equations that govern it are complicated, but it often
+sufﬁces to represent it very simply in terms of a volume
+exchange rate n (m
+3 s/C0 1) between two well-mixed boxes.
+If some substance has concentrations Cs and Cd
+(mol m/C0 3) in surface and deep boxes, respectively, then
+there is a net exchange ﬂux n /C1 (Cs /C0 Cd) mol s /C0 1 from
+surface to deep.
+The phosphorus balance in the deep box of ﬁgure
+1.2.3 is given by:
+Vd /C1 d[PO3/C0
+4 ]d
+dt ¼ n /C1 ([PO3/C0
+4 ]s /C0 [PO3/C0
+4 ]d) þ FP (1:2:1)
+where [PO3/C0
+4 ] is the dissolved phosphate concentration
+and FP (mol s/C0 1) is the total surface-to-abyssal ﬂux of or-
+ganic phosphorus that is converted back into inorganic
+phosphorus in the deep ocean. Dissolved inorganic phos-
+phorus exists in the ocean primarily as the phosphate ion.
+The organic matter ﬂux includes sinking in the particulate
+form as well as volume exchange of the dissolved form,
+which we do not represent explicitly at this time. Note that
+the surface box has an equation identical to (1.2.1) except
+Table 1.2.1
+Concentration of major ions in seawater with a salinity of 35
+Based on Table 2.3-1 of Kennish [1989]. The percent is with
+respect to a total mass of major ions of 35.1589 g kg /C0 1:
+Cation g kg /C0 1 % Anion g kg /C0 1 %
+Naþ 10.76 30.60 Cl /C0 19.353 55.04
+Mg2þ 1.297 3.69 SO 42/C0 2.712 7.71
+Ca2þ 0.4119 1.17
+Kþ 0.399 1.13
+Note: Salinity is an approximate measure of the total concentration
+of chemicals in the ocean. Its original deﬁnition is the total mass in one
+kilogram of seawater after all organic chemicals have been completely
+oxidized, all carbonate converted to oxide, and all bromine and iodine
+replaced by chlorine. The salinity deﬁned this way is reported in units
+of g salt (kg seawater)
+/C0 1, for which the symbol % is used. Salinity is
+now reported on the Practical Salinity Scale, which refers to a conduc-
+tivity ratio [UNESCO, 1985].
+Chapter 1
+10

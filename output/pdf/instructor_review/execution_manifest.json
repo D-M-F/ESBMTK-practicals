@@ -1,0 +1,122 @@
+{
+  "executed_utc": "2026-09-24T12:26:16.984039+00:00",
+  "environment": "ESBMTK314",
+  "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:12:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "esbmtk": "0.14.3.1.post0",
+    "PyCO2SYS": "1.8.3.4",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.1"
+  },
+  "notebooks": [
+    {
+      "source": "00_PyCO2SYS.ipynb",
+      "sha256": "81e5c6a188bdbd881c5280dbcae316f0bf5f8463eabfa1bd9c437df402793436",
+      "executed_code_cells": 19,
+      "outputs": 19,
+      "errors": 0,
+      "pdf": "00_PyCO2SYS.pdf",
+      "pages": 8,
+      "stream_outputs_checked": 19,
+      "portable_links": 0,
+      "pdf_sha256": "c86e70d44194bd2f7bf26d14c3be8647da0f8194787379772679fccdf6d7a59f"
+    },
+    {
+      "source": "01_single_box_air_sea_CO2.ipynb",
+      "sha256": "d683ad3839dd94d9159519afcb48f97d6657ea9f4d6c04f604dedbdc19917a19",
+      "executed_code_cells": 11,
+      "outputs": 15,
+      "errors": 0,
+      "pdf": "01_single_box_air_sea_CO2.pdf",
+      "pages": 17,
+      "stream_outputs_checked": 11,
+      "portable_links": 11,
+      "pdf_sha256": "a3b891693ed7e2699d47d8b8393629e2ec6626c88b3288a216074a2a37293f5a"
+    },
+    {
+      "source": "02_two_layer_ocean_carbon_pump.ipynb",
+      "sha256": "d6af4f200608266c0d022c13caf48551167b5752d5272dac178904ddef17c459",
+      "executed_code_cells": 8,
+      "outputs": 18,
+      "errors": 0,
+      "pdf": "02_two_layer_ocean_carbon_pump.pdf",
+      "pages": 14,
+      "stream_outputs_checked": 16,
+      "portable_links": 3,
+      "pdf_sha256": "1a90440e8cece7cc3574d344113f65f5ed57b7cee8f7322c0d5e61d214a30a8e"
+    },
+    {
+      "source": "03_boudreau_three_box_model.ipynb",
+      "sha256": "e607f2499d43b4e27fc5de13d956c35a112a064b60548504499e2e35088c50b7",
+      "executed_code_cells": 18,
+      "outputs": 45,
+      "errors": 0,
+      "pdf": "03_boudreau_three_box_model.pdf",
+      "pages": 23,
+      "stream_outputs_checked": 31,
+      "portable_links": 5,
+      "pdf_sha256": "bea5c869433f66ecb19fcbec2e5d75b973a8ae0083c25fbd48a578f4fb1a34a5"
+    },
+    {
+      "source": "04_pump_strength_OA_OAE.ipynb",
+      "sha256": "99171e55f6ae145b986b3bfd0f2bc0044a85e5c9c0824145da9b8bb104008abb",
+      "executed_code_cells": 10,
+      "outputs": 18,
+      "errors": 0,
+      "pdf": "04_pump_strength_OA_OAE.pdf",
+      "pages": 13,
+      "stream_outputs_checked": 7,
+      "portable_links": 3,
+      "pdf_sha256": "4e305cc9af5bff3005d7fa15849dfaa50173a26e31974aea240defa38c5a0a5b"
+    }
+  ],
+  "render_checks": [
+    {
+      "name": "00_PyCO2SYS.html",
+      "errors": [],
+      "math": 3,
+      "mathErrors": [],
+      "closed": 0,
+      "brokenImages": [],
+      "overflow": []
+    },
+    {
+      "name": "01_single_box_air_sea_CO2.html",
+      "errors": [],
+      "math": 43,
+      "mathErrors": [],
+      "closed": 0,
+      "brokenImages": [],
+      "overflow": []
+    },
+    {
+      "name": "02_two_layer_ocean_carbon_pump.html",
+      "errors": [],
+      "math": 66,
+      "mathErrors": [],
+      "closed": 0,
+      "brokenImages": [],
+      "overflow": []
+    },
+    {
+      "name": "03_boudreau_three_box_model.html",
+      "errors": [],
+      "math": 125,
+      "mathErrors": [],
+      "closed": 0,
+      "brokenImages": [],
+      "overflow": []
+    },
+    {
+      "name": "04_pump_strength_OA_OAE.html",
+      "errors": [],
+      "math": 23,
+      "mathErrors": [],
+      "closed": 0,
+      "brokenImages": [],
+      "overflow": []
+    }
+  ]
+}

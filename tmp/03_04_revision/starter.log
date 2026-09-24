@@ -1,0 +1,54 @@
+05_independent_model.ipynb: cell 2
+05_independent_model.ipynb: cell 4
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+05_independent_model.ipynb: cell 6
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.56 CPU seconds, wall time = 0.57 seconds
+
+================================================================================
+
+There were 18 warnings, check M.log
+
+================================================================================
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 3.73 CPU seconds, wall time = 3.76 seconds
+
+================================================================================
+
+There were 17 warnings, check M.log
+
+================================================================================
+
+           carbon_relative_error  ta_change_mol
+reference           1.424958e-15            0.0
+changed             2.849915e-15            0.0
+Changed minus reference at 1000.0 yr: 2.5871607440317854 ppm
+PASS 05_independent_model.ipynb; 1 figures

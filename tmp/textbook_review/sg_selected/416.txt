@@ -1,0 +1,106 @@
+atmospheric CO2 remain one of the greatest puzzles of
+the global carbon cycle.
+A second outstanding feature revealed in ﬁgure
+10.1.2 is the dramatic increase of atmospheric CO 2
+since the beginning of the industrial revolution in the
+late eighteenth century, a period we will refer to as the
+Anthropocene [Crutzen and Stoermer , 2000]. This in-
+crease is a consequence of anthropogenic activities,
+mainly the burning of fossil fuels, but also the con-
+version of forests and other pristine areas into lands for
+agricultural and other human use. About half of the
+emissions from these anthropogenic activities have re-
+mained in the atmosphere, leading to an increase that
+is now approaching the change that occurred from
+glacial to interglacial periods. However, this human-
+induced increase happened within less than 200 years,
+whereas it took atmospheric CO
+2 several thousand
+years to change from glacial to interglacial levels.
+CO2 is the most important anthropogenic green-
+house gas in the atmosphere (see next subsection), and
+its increase is cause for concern, as it may lead to sig-
+nifcant changes in climate, with major consequences
+for human beings. Efforts have started now at an
+international level to curb emissions of CO
+2 and other
+greenhouse gases. However, since fossil fuels are the
+primary source of energy and heat in the industrial
+world, and as a result are tightly linked to our current
+economy, CO
+2 emission reductions require major eco-
+nomic investments. It is therefore of great importance
+to be able to quantify the redistribution of the emitted
+CO
+2 in the global carbon system, since only the fraction
+remaining in the atmosphere adds to the greenhouse
+warming.
+The observation that a substantial fraction of the
+emitted CO
+2 has remained in the atmosphere is actu-
+ally surprising at ﬁrst, since one would intuitively as-
+sume that the emitted CO
+2 would be redistributed be-
+tween the atmosphere and ocean with the same 1:65
+ratio as the present distribution. Estimates of the actual
+oceanic uptake suggest that only about a third of the
+total anthropogenic CO
+2 emissions has been taken up
+by the oceans. Why is the oceanic uptake so small? This
+is mainly a consequence of kinetic constraints imposed
+by the limited rate of ocean circulation. However, even
+ATMOSPHERE
+OCEAN
+[590          ]
+38,000 2000
+PLANTS & SOILS
+Geological Reservoirs
+ROCK 
+  CARBONATES
+FOSSIL ORGANIC
+     CARBON
+Units are Pg C for 
+reservoirs and Pg C/yr for fluxes
+[38,000          ]
+>3700
+[2300                ]
+70.6
+Vulcanism
+<0.1
+0.5
+56
+0.2
+0.4
+57
+1.1
+70
+weathering
+NPP
+1.4
+river fluxes
+river outgassing
+river export
+Respiration 
+& Fires
+0.9
+Land
+sink
+Land-Use
+Change
++ 165
++118
+Fossil Fuel
+& Cement
+Emissions
+5.9 2.0 1.2
+2021.9
+ -124 +65
+0.2
++3.3
+Figure 10.1.1: Schematic diagram of the global carbon cycle. Shown are the reservoir sizes in Pg C and the ﬂuxes in Pg C yr /C0 1
+(1 Pg¼ 1015 g). The solid arrows denote the preindustrial ﬂuxes, whereas the dashed arrows denote the average anthropogenic ﬂuxes for
+the period of the 1980s and 1990s (see table 10.2.1). Roman numbers in brackets refer to the preindustrial reservoir sizes, and italic
+numbers in brackets show the changes that occurred to these reservoirs over the Anthropocene (1800 to 1994). Based on Sarmiento and Gruber
+[2002] and Sabine et al . [2004].
+Carbon Cycle, CO 2, and Climate
+393

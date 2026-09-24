@@ -1,0 +1,68 @@
+mean oceanic DIC concentration drops somewhat
+to about 2129 mmol kg/C0 1, yielding a low-latitude pCO2 of
+561 matm, and a high-latitude pCO2 of 247 matm. Given
+the slow exchange of CO2 between the ocean and atmo-
+sphere, the atmosphericpCO2 is in this case simply equal
+to the area weighted mean (0.20 /C1 247 matm þ 0.80 /C1 561
+matm ¼ 514 matm). The other extreme is a case where the
+rate of CO2 transfer between atmosphere and ocean far
+outstrips the rate of water circulation and mixing (ﬁgure
+10.4.5b). In this case, full equilibration will occur, and
+the pCO
+2 in all surface boxes will be equal to that of the
+atmosphere. Integration of the model gives an atmo-
+spheric pCO
+2 of 281 matm. If the model parameters are
+set to ‘‘realistic’’ values of 20 Sv for the transport of water
+303 µatm
+312 µatm247 µatm
+2012 µM
+2149 µM
+2149 µM
+281 µatm
+281 µatm281 µatm
+1990 µM
+2150 µM
+2150 µM
+514 µatm
+561 µatm247 µatm
+2129 µM
+2129 µM
+2129 µM
+REALISTIC GASEXCHANGE
+NO EQUILIBRATION
+FULL EQUILIBRATION
+abc
+Figure 10.4.5: Schematic illustration of the Harvardton-Bear Equilibration Index in an abiotic version of the three-box model shown in ﬁgure
+10.4.3 where differences in CO2 chemistry are driven entirely by the solubility pump. (a) Case with realistic gas-exchange; (b) Full equilibrium
+case, where gas exchange is inﬁnitely rapid; and (c) case with strongly inhibited gas exchange. If the air-sea gas exchange is much more
+rapid than the transport of DIC around the thermohaline circuit, pCO
+2 in the atmosphere will be the same as the pCO2 of the high- and low-
+latitude boxes (case b). At the other extreme, if the transport of CO 2 through the atmosphere from the low latitudes to the high latitudes is
+much slower than the transport of DIC between the reservoirs by the thermohaline circulation, the DIC concentrations in all reservoirs will be
+equal and the pCO2 variations in the two surface boxes will be determined by temperature only (case c). In this case, atmospheric CO 2
+equilibrates at the weighted average of 514 matm. Hence in this simple model, atmospheric CO 2 depends on the ratio of the rate of air-sea gas
+exchange to the rate of thermohaline circulation. Using ‘‘realistic’’ parameters, the model gives an atmospheric CO 2 of 303 ppm (case a).
+The Harvardton-Bear Equilibration Index is a measure of the extent to which the transport of CO 2 through the atmosphere is able to remove a
+signal in the low latitudes and buffer it in the deep ocean. It can be calculated from the ratio of the difference between the ‘‘realistic’’ and the
+‘‘full equilibration’’ cases, divided by the difference between the ‘‘no equilibration’’ and the the ‘‘full equilibration’’ cases, hence (303 /C0 281)/
+(514 /C0 281) ¼ 0.09. Adapted from Broecker et al. [1999a].
+LOW-LATITUDE PERTURBATIONHIGH-LATITUDE PERTURBATION
+DEEP
+LOW-LATHIGH-LAT
+ATMOSPHERE
+DEEP
+LOW-LATHIGH-LAT
+ATMOSPHERE
+2°C pertrubation
+2°C perturbation
++15 ppm
++10 ppm
++22 ppm 
++3 ppm
++0 ppm
++4 ppm 
+Figure 10.4.4: Comparison of the impact of a 2 /C14 C warming in the high versus the low latitudes on atmospheric CO 2. The changes were
+computed using the standard conﬁguration of the three-box model shown in ﬁgure 10.4.3.
+437
+Carbon Cycle, CO 2, and Climate

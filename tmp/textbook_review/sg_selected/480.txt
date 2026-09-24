@@ -1,0 +1,39 @@
+Explain in detail the role of the oceanic CaCO 3 cycle, and what impact
+the loss of terrestrial CO 2 has on the location of the CaCO 3 saturation
+horizon.
+10.16 Explain why hypotheses to explain the lower atmospheric CO 2 during the
+last glacial maximum have focused so strongly on the high latitudes, in
+particular the Southern Ocean.
+10.17 Refer to the global three-box model depicted in ﬁgure 10.4.3.
+a. Derive equations (10.4.8) through (10.4.10), i.e., derive an expression
+that relates the high-latitude surface ocean DIC concentration to the
+deep ocean DIC and phosphate concentrations as well as to a number
+of mixing terms.
+b. Assuming that deep ocean DIC and phosphate concentrations are
+constant, draw a contour plot of the high-latitude surface DIC and
+phosphate concentration as a function of high-latitude productivity,
+F
+P
+h
+, and the high-latitude–deep ocean mixing term, fhd.
+c. Given the idea of high-latitude dominance in determining atmo-
+spheric CO2, what do your results in (b) suggest with regard to how
+changes in the high-latitude productivity and the high-latitude–deep
+ocean mixing term affect atmospheric CO
+2?
+10.18 Explain how CaCO 3 compensation works, and why this process is believed
+to be important when considering glacial-interglacial atmospheric CO 2
+variations.
+10.19 Investigate the impact of a more efﬁcient biological carbon pump on at-
+mospheric CO2 with the two-box model depicted in ﬁgure 1.2.3. In contrast
+to how we parameterized biological export production in chapter 1, i.e., by
+setting the surface ocean concentration of phosphate to zero, assume that
+biological export depends linearly on the phosphate concentration, i.e.,
+F ¼ l /C1 [PO
+3/C0
+4 ]. Compute how atmospheric CO 2 changes as you vary l. For
+simplicity, assume that the atmospheric pCO2 is equal to the surface ocean
+pCO2. Assume a constant Alk of 2320 mmol kg/C0 1 and a surface ocean tem-
+perature of 20 /C14 C.
+Carbon Cycle, CO 2, and Climate
+457

@@ -1,0 +1,136 @@
+conservation equation for an additional biologically uti-
+lized element, such as carbon. The steady-state solution
+for the dissolved inorganic carbon ( DIC) balance gives
+an equation exactly analogous to that for phosphate:
+FC ¼ n /C1 (DICd /C0 DICs)( 1 :2:3)
+However, this new equation has also added a new un-
+known, the ﬂux F
+C of carbon to the deep ocean. Making
+use of the stoichiometric ratios, i.e. FP ¼ Fc/106, en-
+ables us to solve for the concentration of carbon with
+respect to that of phosphate, or vice versa, but does not
+give us a solution for n. The same would happen if we
+put down an equation for other elements that are in-
+volved in biological processes, such as oxygen.
+In order to determine the magnitude of the organic
+matter ﬂux, we use a tracer of ocean circulation that pro-
+vides us with a time clock of the volume exchange raten.
+Panel 1.2.1 shows how to calculate the exchange rate
+using radiocarbon, the radioactive isotope of carbon. The
+exchange rate we obtain is n ¼ 1.2 /C2 10
+15 m3 yr/C0 1,i . e . ,3 8
+Panel 1.2.1: Estimation of Two-Box Model Exchange Rate Using Radiocarbon
+Radiocarbon follows the same biological and mixing
+pathways as the stable carbon isotopes
+12C and 13C,
+but decays at a known rate @14C/@t ¼/C0 l /C1 14C, where
+l ¼ 1/8267 yr/C0 1 is the decay constant of radiocarbon
+(the half-life is 5730 years). It is formed by cosmic ray
+spallation of
+14N in the atmosphere and enters the
+surface of the ocean as 14CO2. It is the decay of this
+‘‘natural’’ radiocarbon that gives us the time clock that
+we use in order to estimate the volumetric exchange rate
+between the boxes in the two-box model.
+Radiocarbon is measured either by detecting the beta
+particles that a carbon sample of known mass produces
+as it decays, which is then reported as a ratio of
+14Ct o
+the total carbon C in the sample, or by using a mass
+spectrometer to directly measure the ratio of
+14Ct o 12C.
+It is reported in the literature as D14C, deﬁned as the
+relative deviation in per mille from a standard sample
+after various corrections for fractionation effects and
+decay of the standard [see Stuiver and Polach, 1977]. The
+standard is corrected to represent the modern atmo-
+spheric radiocarbon before the industrial revolution
+started adding radiocarbon-depleted fossil fuel CO
+2 to
+the atmosphere and before nuclear bomb tests began
+enriching the atmospheric radiocarbon content. A sim-
+pliﬁed version of the deﬁnition with the relatively small
+fractionation correction removed is given by
+D14C ¼
+14Csample
+14Cstandard
+/C0 1
+/C20/C21
+/C1 103 (1)
+For example, typical preindustrial surface water had a
+D
+14Co f /C0 50%, which means its radiocarbon content
+per unit mass or volume of total carbon was 5% lower
+than the preindustrial atmospheric concentration as
+inferred from the standard.
+In order to make use of radiocarbon in our box model,
+we need to convert the D
+14C units into units of 14C con-
+centration per unit volume. We start by converting D14C
+into R*, deﬁned as the ratio of the radiocarbon in the
+measured sample to the radiocarbon in the standard:
+R* ¼ D14C /C1 10/C0 3 þ1 ¼
+14Csample
+14Cstandard
+(2)
+This gives R* ¼ 0.95 for the aforementioned surface
+water sample. In order to convert this into radiocarbon
+concentration in mmol m
+/C0 3, we multiply it by the ratio
+of radiocarbon atoms to total carbon atoms that the
+ocean would have had if it were in equilibrium with the
+preindustrial atmosphere, a, and by the total concen-
+tration of carbon in the water, DIC:
+DI14C ¼ a /C1 DIC /C1 R* (3)
+The ratio a varies by only a small amount due to tem-
+perature sensitivity of air-sea fractionation effects, which
+we will ignore here. We thus have for the steady-state
+radiocarbon balance of the deep box of the two-box
+model that the net input of radiocarbon by vertical ex-
+change and organic carbon input is balanced by decay of
+radiocarbon:
+n /C1 (DICs /C1 R*
+s
+/C0 DICd /C1 R*
+d
+) þ FC /C1 R*
+s
+¼ l /C1 Vd /C1 DICd /C1 R*
+d
+(4)
+The constant a cancels out of the equation. Note that we
+specify that the radiocarbon ratio of the organic carbon
+is the same as the surface radiocarbon ratio, since it
+forms by uptake of surface inorganic carbon.
+The decay term on the right-hand side in (4) provides
+the time clock that enables us to solve for the volume
+exchange rate. We eliminate the organic carbon ﬂux F
+C
+by substituting (1.2.3) into (4). This gives
+l /C1 Vd /C1 DICd /C1 R*
+d
+¼ n /C1 (DICs /C1 R*
+s
+/C0 DICd /C1 R*
+d
+)
+þ n /C1 (DICd /C0 DICs) /C1 R*
+s
+(5)
+which can be rearranged to give
+n ¼ l /C1 Vd
+R*
+s
+/C14
+R*
+d
+/C0 1 (6)
+The deep ocean volume is about 1.26 /C2 1018 m3. The
+observed value of the preindustrial surface radiocarbon
+ratio is 0.95 (i.e., 5% depleted with respect to the pre-
+industrial atmosphere). The mean radiocarbon ratio of
+the deep ocean is 0.84. We thus obtain the solution
+n ¼ 1.2/C2 10
+15 m3 yr/C0 1.
+Chapter 1
+12

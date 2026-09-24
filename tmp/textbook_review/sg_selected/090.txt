@@ -1,0 +1,82 @@
+3.2 Gas Solubilities
+The most convenient of the numerous deﬁnitions for
+gas solubilities, and the one we will use here, is our
+restatement of Henry’s law, equation (3.1.2). The sol-
+ubility S
+A is equivalent to the K0 of Warner and Weiss
+[1985]. However, solubilities are commonly reported in
+the literature as the Bunsen coefﬁcient b or the solu-
+bility function F, so it is necessary to specify how to
+convert from these solubility parameters to the pa-
+rameter S
+A. Panel 3.2.1 explains how to do this. Table
+3.2.1 summarizes the necessary relationships derived
+in panel 3.2.1, and table 3.2.2 gives equations and co-
+efﬁcients for calculating Bunsen coefﬁcients and solu-
+bility functions for several important gases.
+Table 3.2.3 and ﬁgure 3.2.1 summarize the solubil-
+ities of various gases as a function of temperature. The
+solubility decreases with increasing temperature for all
+the gases. The upper panel of the table shows gases
+composed of a single element whose behaviors follow a
+progression from less to more soluble as their molec-
+ular weight increases. The lower panel of the table
+shows gases made of two or more elements whose
+solubility falls outside the overall trend of the upper
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+Sea-surface oxygen anomaly (mmol m-3)
+20°E
+5
+5
+-5
+0
+-5
+5
+-10
+0
+0
+5
+-5
+-10
+-15
+0
+-5
+-10
+-15
+-35
+-35
+5
+5
+Figure 3.1.1: Map of the annual mean dissolved oxygen concentration anomaly in the surface ocean based on data from the World
+Ocean Atlas 2001 [ Conkright et al ., 2002]. Supersaturation is positive and undersaturation is negative. As discussed in section 3.4, the
+globally integrated ﬂux of oxygen across the air-sea interface is close to zero, which means that areas of oxygen undersaturation where the
+ocean is gaining oxygen must balance areas of oxygen supersaturation where oxygen is being lost from the ocean.
+0.0 5.0 10.0 15.0 20.0 25.0 30.0
+Temperature (°C)
+150
+200
+250
+300
+350
+Atlantic
+Pacific
+Indian
+Oxygen (mmol m-3)
+O2
+sat
+Figure 3.1.2: Relationship of dissolved oxygen concentration and
+temperature in the near-surface ocean measured throughout the
+global ocean during a few selected cruises of the WOCE program
+(A16, I8/9, P16). The grey line shows the saturation concentration
+of oxygen in equilibrium with the atmosphere.
+Air-Sea Interface
+75

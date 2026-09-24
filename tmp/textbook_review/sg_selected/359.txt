@@ -1,0 +1,81 @@
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+Seasonal pCO2 amplitude (µatm)
+20°E
+a
+40
+20
+0
+20
+0 0
+40
+20
+0
+0
+20
+-20
+20
+20
+-20
+-40
+20
+40
+-20
+-40
+-20
+20
+-40
+60
+80
+40
+80
+40
+60
+60
+40
+160
+80
+60
+40
+20
+40
+40
+140
+60 80
+120
+40
+6080
+100
+80
+60
+2020
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+Temperature component  (µatm)
+20°E
+b
+Figure 8.3.7: Maps of the seasonal amplitude of surface ocean pCO2 and its driving forces. (a) summer-minus-winter difference of surface
+ocean pCO2. (b) Sea-surface temperature-forced summer-minus-winter difference in surface ocean pCO2 computed from the temperature
+sensitivity of pCO2. (c) DIC- and Alk-forced summer-minus-winter difference in surface ocean pCO2, computed by differencing (a) and (b). This
+change is primarily driven by seasonal variations in biology, and hence can be viewed as the ‘‘biological component,’’ but gas exchange
+and transport/mixing also play a role. In the northern hemisphere, data from the months January through March (JFM) have been
+averaged to represent winter, and data from the months July through September (JAS) have been averaged for the summer period. In the
+southern hemisphere, JFM represent the summer season and JAS the winter season. Based on the climatology of Takahashi et al . [2002].
+336
+Chapter 8

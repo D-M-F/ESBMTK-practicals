@@ -1,0 +1,35 @@
+Problems
+10.1 Deﬁne and explain these terms:
+a. Greenhouse effect
+b. Climate sensitivity
+c. Climate feedback
+10.2 Calculate the expected equilibrium increase in global mean tropospheric
+temperature since preindustrial times for the following cases:
+a. Radiative forcing from the increase in atmospheric CO
+2 alone for the
+year 2000 (atmospheric CO 2 mixing ratio of 369 ppm)
+b. Radiative forcing from the increase in atmospheric methane alone for
+the year 2000 (northern hemisphere atmospheric CH 4 mixing ratio of
+1.8 ppm)
+c. Radiative forcing from the increase in atmospheric CO 2 alone for the
+year 2100 under the IS92a scenario (CO 2 mixing ratio of 788 ppm)
+Assume a climate sensitivity of 1.7 W m /C0 2 K/C0 1. Hint: Use the caption
+in table 10.1.2 to obtain the change in radiative forcing for the change in
+atmospheric CO
+2, and then use the information in this table and table 10.1.1
+to obtain the change in forcing for CH 4.
+10.3 Discuss why the addition of anthropogenic CO 2 to the ocean decreases the
+capacity of the ocean to take up further anthropogenic CO 2.
+a. Show the relevant reactions and equations.
+b. Compute the oceanic uptake fraction f for the preindustrial mean ocean
+(see table 8.2.4).
+c. Compute how much the uptake fraction is reduced when 100 mmol kg
+/C0 1
+DIC is added uniformly to the preindustrial ocean.
+10.4 Explain why the surface ocean concentration of anthropogenic CO 2 is higher
+in low latitudes than it is in high latitudes. Why is it higher in the Atlantic
+than in the Paciﬁc?
+10.5 How long will it take for a pulse of CO
+2 emitted into the atmosphere to be
+reduced to 50%, 20%, 10%, and 1% of its original value? For each answer list
+454

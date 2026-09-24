@@ -1,0 +1,75 @@
+vents into the open ocean of about 0.13 Pg C yr /C0 1 is
+balanced by deep sea burial (ﬁgure 9.5.1a). This balance
+is achieved by dissolving roughly 0.5 Pg C yr
+/C0 1 of the
+surface CaCO3 production of about 1.0 Pg C yr/C0 1 in the
+water column and dissolving an additional 0.37 Pg C yr/C0 1
+in the sediments. If we now increase the input from ter-
+restrial weathering, the CO
+2/C0
+3 content of the entire ocean
+starts to increase (ﬁgure 9.5.1b). This results in a signiﬁ-
+cant deepening of the saturation horizon, reducing
+the area of the sediments that are exposed to corrosive
+waters. The CO
+2/C0
+3 concentration continues to increase
+and the saturation horizon continues to deepen until
+the burial of CaCO
+3 in the deep sea sediments has
+reached the magnitude of the new input. In case of a
+doubling of the input, the new steady state requires that
+about 0.26 Pg C yr
+/C0 1 are buried and 0.24 Pg C yr /C0 1 are
+Transition zone
+Transition zone
+Dissolution
+Accumulation
+Production
+Input
+1.0
+Dissolution
+0.5
+0.13
+0.13
+0.37 calcitesolubility
+[CO   ]  (µmol kg  )3
+2- -1
+depth
+[CO   ]3
+2-
+depth
+[CO   ]3
+2-
+Deepening of
+saturation horizon
+MODERN STEADY STATE
+                               (Pg C yr
+-1)
+Transition Zone
+Transition Zone
+Dissolution
+Accumulation
+Production
+Input
+1.0
+Dissolution
+0.5
+0.26
+0.26
+0.24
+NEW STEADY STATE 
+AFTER DOUBLING INPUT
+CALCIUM CARBONATE HOMEOSTAT
+[CO   ]  (µmol kg  )3
+2- -1
+Figure 9.5.1: Illustration of the CaCO 3 homeostat. (a) Modern steady-state budget for CaCO 3 in the open ocean realm in units of Pg C yr /C0 1
+modiﬁed from [ Milliman et al. , 1999]; see also ﬁgure 9.1.1). (b) New steady-state budget after the weathering input has been doubled from
+0.13 Pg C yr/C0 1 to 0.26 Pg C yr/C0 1. Insets show the CO2/C0
+3 ion concentrations as a function of depth. The increase in the input of alkalinity leads to
+an increase in the CO 2/C0
+3 ion concentration in the entire ocean. This leads to a depression of the calcite saturation horizon, so that fewer
+sediments are exposed to undersaturated bottom waters. This process continues until the increased deposition of CaCO 3 in the supersaturated
+zone balances the input.
+385
+Calcium Carbonate Cycle

@@ -1,0 +1,93 @@
+Table 3.2.1
+Conversion of Bunsen coefﬁcient (atm
+/C0 1) and solubility function (mol l /C0 1) parameters
+to solubility parameter SA for use in calculating the seawater concentration from
+[A] ¼ SA /C1 pA
+The units of [A] are mmol /C1 m/C0 3, those for S A are mmol m /C0 3 atm/C0 1, and those for p A are atm. The
+conversion from Bunsen coefﬁcient to S A ignores the correction for nonideality. This assumption is good
+to about 0.1% or better for most of the gases. Other gases with larger nonideal behavior (CO 2,N 2O,
+and the CFCs) have the correction included in the solubility function F.
+Solubility Parameter Symbol Conversion to S
+A
+For use with p A
+moist
+¼ pA
+dry
+/C1 (1 /C0 pH2 O=P)
+Bunsen coefﬁcient bA
+SA /C25 bA
+VA
+/C18/C19
+/C2 106 mmol m/C0 3
+mol l/C0 1
+Solubility function FA SA ¼ FA
+(P /C0 pH2 O)
+/C22/C23
+/C2 106 mmol m/C0 3
+mol l/C0 1
+For use with p A
+dry
+Bunsen coefﬁcient bA SA /C25 bA
+VA
+/C1 1 /C0 pH2 O
+P
+/C18/C19/C20/C21
+/C2 106 mmol m/C0 3
+mol l/C0 1
+Solubility function FA SA ¼ F
+P
+/C18/C19
+/C2 106 mmol m/C0 3
+mol l/C0 1
+respect to moist air at a total pressure P (usually of
+1 atm). This can be obtained from the following rela-
+tionship:
+pA
+moist
+¼ wA
+dry
+/C1 (P /C0 pH2 O)
+¼ wA
+dry
+/C1 P /C1 1 /C0 pH2 O
+P
+/C18/C19
+¼ pA
+dry
+/C1 1 /C0 pH2 O
+P
+/C18/C19
+(7)
+where the mixing ratio, wA, is the number of moles of
+constituent A per unit mole of air, pH2 O is the partial
+pressure of the water vapor, and P is the total atmo-
+spheric pressure in atmospheres. In deriving the above
+equation, we make use of the relationship between the
+mole ratio and partial pressure, p
+A ¼ wA /C1 P. The water
+vapor pressure is generally assumed to be at saturation
+in the vicinity of the air-sea interface. The satura-
+tion water vapor pressure is given by Weiss and Price
+[1980] as
+pH2 O
+P ¼ exp [24:4543 /C0 67:4509(100=T)
+/C0 4:8489 ln (T=100) /C0 0:000544S]
+(8)
+where T is the absolute temperature in K, and S is the
+salinity. The value of ( pH2 O=P) /C1 100 for P ¼ 1 atm ranges
+between *0.5% and 4.0% over the sea surface (see
+ﬁgure 1).
+0 5 10 15 20 25 30
+Temperature (°C)
+0
+0.01
+0.02
+0.03
+0.04
+0.05
+pH2O
+Figure 1: Plot of the partial pressure of water in saturated air
+( pH2 O=P ) as a function of temperature. Computed from (8).
+Panel 3.2.1: ( Continued)
+Chapter 3
+78

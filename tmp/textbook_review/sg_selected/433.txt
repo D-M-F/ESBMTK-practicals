@@ -1,0 +1,127 @@
+these shallow isopycnal surfaces permits us to determine
+the DDIC
+diseq terms of the different end members,i:
+DDICi
+diseq(s) ¼ DC*
+t js¼const (10:2:24)
+Once the disequilibria have been determined for all
+surfaces and n end-members, the amount of anthro-
+pogenic CO2 can ﬁnally be calculated from (10.2.22):
+Cant ¼ DC* /C0
+Xn
+i¼1
+f iDDICi
+diseq(s) (10 :2:25)
+where f i are relative contributions from each end-
+member.
+A number of investigators have applied this tech-
+nique to various ocean basins [ Gruber, 1998; Sabine
+et al. , 1999, 2002a; Lee et al. , 2003], with Sabine et al.
+[2004] providing a global synthesis. Figure 10.2.7 shows
+the resulting vertical distribution of C
+ant along a global
+section from the Atlantic to the Paciﬁc.
+Near-surface concentrations of Cant are highest in
+subtropical regions and tend to decrease toward the high
+latitudes. They also tend to be higher in the Atlantic than
+in the Paciﬁc. This is surprising, since given the higher
+solubility of CO
+2 in colder waters, one might at ﬁrst think
+that the high latitudes should contain more anthropo-
+genic CO
+2. However, integrating (10.2.16) over the An-
+thropocene and assuming that the buffer factor, gDIC,
+remained constant, shows that the amount ofCant in the
+surface ocean expected from equilibrium uptake is in-
+versely proportional to the buffer factor:
+Cant(t) ¼
+Z t0 ¼ t
+t0 ¼pi
+@[DIC]
+@t dt0 ¼ a
+gDIC
+Z t0 ¼ t
+t0 ¼ pi
+@pCOatm
+2
+@t dt0
+¼ a
+gDIC
+(pCOatm
+2
+(t) /C0 pCOatm
+2
+(t ¼pi))
+(10:2:26)
+As the buffer factor is substantially larger in the high
+latitudes, and lower in the low latitudes (mainly a
+consequence of variations in the Alk/DIC ratio, see
+(10.2.11)), the low latitudes can store substantially more
+anthropogenic CO
+2 than the high latitudes for a given
+atmospheric CO2 perturbation. The North Atlantic has
+a particularly low buffer factor, and therefore tends to
+contain the highest surface concentrations of anthro-
+pogenic CO
+2. The reconstructed surface concentrations
+are in quite good agreement with those computed by
+inserting typical values in (10.2.26) for the early 1990s,
+when atmospheric pCO
+2 was about 360 matm (see ﬁgure
+10.1.2). The indication of somewhat lower anthropo-
+genic CO
+2 content in the surface waters of the high
+southern latitudes compared to the expectations from
+equilibrium indicates that these waters are not able to
+completely track the atmosphere. This is presumably the
+result of three factors: the short residence time of these
+surface waters, substantial dilution by mixing with sub-
+surface waters containing little C
+ant, and effective inhi-
+80°S 40°S Eq 40°N 80°N
+Latitude 
+ 30
+ 20
+ 10
+0
+10
+20
+∆C*  (µmol kg
+ -1
+)
+σ2:  37.03-37.08
+0 5 10 15 20 25 30
+CFC 11 age (years)
+ 20
+ 10
+0
+10
+20
+30
+b
+∆C* and ∆C*t (µmol kg-1) ∆C*t 
+∆C*
+σθ:  26.95-27.25
+∆Cdiseq
+∆Cdiseq
+Cant
+Cant
+a
+Figure 10.2.6: Illustration of the Cant reconstruction method on the basis of DC/C3 and DC*
+t . (a) Estimation of Cant on deep
+isopycnal surfaces, where one can ﬁnd regions that contain undetectable amounts of anthropogenic CO 2. Plotted is DC/C3 as a
+function of latitude in the North Atlantic along the s2 interval 37.03–37.08, which represents the Denmark Strait and Iceland-
+Scotland Overﬂow Waters. The solid line depicts the average DC/C3 concentration in the regions from 20 /C14 S to the equator and from
+the equator to 20 /C14 N which were used to determine DDICdiseq for the southern and northern end-member, respectively. In this case,
+no difference was found between these two end-members. The dashed lines are drawn at ±5 mmol kg/C0 1 from the estimated DDICdiseq.
+The upward trend near the outcrops in the south and the north is due to the presence of anthropogenic CO 2, which is then
+determined simply by differencing DC/C3 from DDICdiseq (shaded area). (b) Estimation of Cant on shallower isopycnal surfaces,
+where anthropogenic CO 2 has invaded the entire surface. Plotted are DC*
+t (triangles) and DC/C3 (circles) versus CFC-11 age along
+the isopycnal surface interval sy 26.95–27.25 in the South Atlantic, representing Subantarctic Mode Water. The line for DC/C3 is drawn
+to emphasize the trend and was obtained by linear regression. The line for DC*
+t represents the average. In this case, Cant is esti-
+mated from the difference between DC/C3 and DC*
+t (shaded area). Adapted from Gruber [1998].
+410
+Chapter 10

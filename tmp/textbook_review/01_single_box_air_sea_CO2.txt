@@ -1,0 +1,666 @@
+=== CELL 0 markdown ===
+# 01 — Can gas exchange explain ocean carbon storage?
+
+**Learning goals:** map boxes and arrows to a conserved carbon inventory;
+infer background TA and distinguish a fit from a prediction; distinguish
+equilibrium controls from rate controls.
+
+Suppose you are testing your first ESBMTK atmosphere–ocean model. You build
+two reservoirs: a finite atmosphere and one well-mixed ocean box.
+
+Picture the initial ocean as water containing only dissolved NaCl, with
+**TA = 0**. Dissolve a trace of CO2 to give it a small positive DIC concentration;
+TA remains zero. Place almost all the remaining carbon in the atmosphere,
+then let the two reservoirs exchange CO2. Nothing enters or leaves the system.
+This is a fictional redistribution experiment, not a history of ocean formation.
+
+We use two **reference values** throughout this notebook: atmospheric dry-air
+xCO2 = **280 ppm** and ocean DIC = **2040 µmol/kg**.
+
+Choose the <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>total carbon inventory</strong></mark> to equal the combined atmosphere–ocean
+inventory at these reference values. Your hypothesis is:
+**if the model is coded correctly, gas exchange should recover both reference
+values.** You will predict, run, and assess that claim.
+
+**Provisional time: 40 minutes.** Diagram and prediction (10); diagnosis,
+TA inference and pCO2–DIC curves (20); model comparisons and explanation (10).
+Reuse your PyCO2SYS skills from 00 to infer TA, then calculate seawater pCO2
+across a supplied DIC range. Model construction, loops, conversions, plotting
+and budget checks are supplied. Give short answers.
+
+**Optional coding reference:** [From conceptual model to code](../../ref/modelling_cheatsheet.md)
+([two-page handout](../../output/pdf/modelling_cheatsheet.pdf)). Use it for a reminder;
+the syntax needed here is introduced below.
+Code labels distinguish **Choose and explain** (your scientific choices),
+**Understand and run** (supplied model steps), and **Supplied implementation**
+(support code). This practical is ungraded. Syntax memorisation is not required:
+refer to the examples and focus on connecting the scientific assumptions to the code.
+See [teaching goals and timing](../../TEACHING_GOALS.md).
+
+**Reading key:** <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>Key term</strong></mark> = concept to notice; <span style="background-color: #edf5ff; color: #173b61; padding: 2px 6px; border-radius: 3px;"><strong>Question</strong></span> = student prompt. Instructor answers use labelled purple panels in the instructor sheet. These reading cues complement the code labels above.
+
+=== CELL 1 code ===
+# Supplied implementation: run this support code as provided.
+from pathlib import Path
+import sys
+import numpy as np
+import matplotlib.pyplot as plt
+import PyCO2SYS as pyco2
+
+ROOT = next(p for p in (Path.cwd(), *Path.cwd().parents)
+            if (p / 'teaching_config.py').is_file())
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from teaching_config import TEACHING as config
+from simple_models import (
+    new_model, box_parameters, box_mass_kg, connect_atmosphere,
+    single_box, inventories, audit, atmospheric_pco2_curve,
+)
+from esbmtk import initialize_reservoirs, add_carbonate_system_1
+from model import run_model
+from teaching_plots import (
+    plot_ta_free, plot_partition_comparison, plot_equilibrium_curves,
+)
+
+=== CELL 2 markdown ===
+## 1. Specify the system
+
+```text
+Atmosphere (xCO2; GasReservoir)
+        ↓ J_gas,in       ↑ J_gas,out
+        gas exchange: carbon only
+Ocean (DIC, TA; initialize_reservoirs)
+      carbonate system 1 → aqueous CO2
+```
+
+Both reservoirs are inside the <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>system boundary</strong></mark>. Write each carbon budget as
+<mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>inputs minus outputs</strong></mark>. The subscripts `atm` and `ocn` denote atmosphere
+and ocean. Invasion, $J_{gas,in}(t)$, enters the ocean; outgassing,
+$J_{gas,out}(t)$, leaves it:
+
+$$\frac{dC_{atm}(t)}{dt}=J_{gas,out}(t)-J_{gas,in}(t),$$
+$$m_{ocn}\frac{dDIC_{ocn}(t)}{dt}=J_{gas,in}(t)-J_{gas,out}(t).$$
+
+Each flux is in mol C/yr. Ocean DIC is in mol/kg and water mass $m_{ocn}$ is
+in kg. A transfer leaves one reservoir and enters the other by the same amount.
+Gas exchange carries no TA, so the ocean TA inventory has zero tendency.
+
+| Quantity | Role in this experiment |
+| --- | --- |
+| 280 ppm dry-air xCO2; 2040 µmol/kg DIC | Observed comparison targets |
+| Ocean area and depth; atmospheric size; T/S/P | Independent inputs |
+| Combined carbon inventory calculated from the targets | Target-derived constraint |
+| Almost all carbon initially in the atmosphere | Fictional initial partition |
+| Initial TA = 0 | Physical assumption to test |
+
+The ocean has area $3.60\times10^{14}$ m² and depth 3750 m.
+Uniform **T = 16 °C, S = 35 and P = 0 bar** and carbonate choices come from
+`teaching_config.py`. The NaCl picture motivates the initial DIC and TA;
+the calculation uses these supplied seawater chemistry settings.
+ESBMTK uses bar and PyCO2SYS uses dbar; the configuration handles the conversion.
+Density $\rho$ comes from ESBMTK at the same conditions.
+
+With ocean volume $V_{ocn}$ and atmospheric size $N_{atm}$, the total carbon is
+
+$$C_0=N_{atm}(280\times10^{-6})+\rho V_{ocn}(2040\times10^{-6}).$$
+
+The two factors convert ppm to mol/mol and µmol/kg to mol/kg, respectively.
+No geometry is fitted to a carbon ratio.
+
+**Reading the settings.** `config` is the shared configuration imported above.
+The dot retrieves a named setting: `config.ocean_volume_m3` is the ocean volume
+in m³. Names ending in `_umol_kg` or `_ppm` indicate the units. Some settings,
+such as `config.pyco2`, collect several named values in a Python **dictionary**.
+The next cell displays these settings; you do not need to edit the configuration file.
+
+=== CELL 3 code ===
+# Understand and run: trace this supplied step and interpret its evidence.
+print('Shared chemistry:', config.pyco2)
+print('Ocean volume (m3):', config.ocean_volume_m3)
+print('ESBMTK density (kg/m3):', config.density_kg_m3)
+print('Target-derived total carbon (mol):', config.total_carbon_mol)
+INITIAL_DIC = 0.01  # umol/kg, small positive initial concentration
+FIRST_TA = 0.0      # umol/kg: no background alkalinity
+
+=== CELL 4 markdown ===
+## 2. Build the supplied model
+
+### 2.1 A finite atmosphere and an initial carbon partition
+
+The atmosphere contains a fixed $N_{atm}=1.77\times10^{20}$ mol of air.
+Its <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>dry-air CO2 mole fraction</strong></mark>, $x_{CO2}(t)$, changes during exchange;
+$10^6x_{CO2}(t)$ gives ppm. Atmospheric carbon is
+$C_{atm}(t)=N_{atm}x_{CO2}(t)$ mol C. No atmospheric height or volume is needed.
+
+We initialize ocean DIC at **0.01 µmol/kg**, a <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>small positive initial concentration</strong></mark>.
+This lets the carbonate calculation start away from exactly zero DIC; it does
+not supply alkalinity.
+The remaining carbon starts in the atmosphere. With $m_{ocn}=\rho V_{ocn}$,
+
+$$C_{atm}(0)=C_0-m_{ocn}DIC_{ocn}(0),\qquad
+x_{CO2}(0)=\frac{C_0-m_{ocn}DIC_{ocn}(0)}{N_{atm}}.$$
+
+Use DIC in mol/kg in these equations. The resulting initial atmosphere is
+approximately **16,240 ppm**. The **280 ppm reference defines part of $C_0$**;
+it is neither the initial concentration nor a fixed atmospheric boundary value.
+
+=== CELL 5 markdown ===
+### 2.2 Two directional fluxes, one net exchange
+
+The **gas transfer velocity (piston velocity)**, $v$, describes how readily CO2
+crosses the air–sea interface. It has units of length/time; it is not the vertical
+speed of a water parcel. Here we prescribe **$v$ = 4 m/day** over ocean area $A$.
+Multiplying $v$ by density and the aqueous-CO2 concentration difference gives
+the net transfer per unit area. The two directional fluxes are
+
+$$J_{gas,in}(t)=Av\rho\,\beta\,pCO_{2,atm}(t),\qquad
+J_{gas,out}(t)=Av\rho\,[CO_2]_{aq}(t).$$
+
+The solubility coefficient $\beta$ converts atmospheric pCO2 into a dissolved
+CO2 concentration. Both $\beta pCO_{2,atm}$ and $[CO_2]_{aq}$ are in mol/kg.
+With $A$ in m², $v$ converted to m/yr and $\rho$ in kg/m³, both fluxes are
+in mol C/yr.
+
+<mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>Invasion</strong></mark> depends on atmospheric CO2 and the prescribed exchange and
+solubility settings, independently of ocean DIC and TA. <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>Outgassing</strong></mark> depends
+on aqueous CO2, which carbonate chemistry calculates from ocean DIC and TA.
+The ocean gains their difference; the atmosphere loses the same amount:
+
+$$J_{gas}(t)=J_{gas,in}(t)-J_{gas,out}(t).$$
+
+Positive $J_{gas}$ means net ocean uptake; negative $J_{gas}$ means net
+outgassing. <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>At equilibrium</strong></mark> the two directional rates balance, although both
+remain nonzero. The closed budget is
+$C_{atm}(t)+m_{ocn}DIC_{ocn}(t)=C_0$.
+
+> **Units reference.** This follows the solubility-times-pCO2 notation in
+> [the ESBMTK paper, equation 6](https://gmd.copernicus.org/articles/18/1155/2025/#section2.5).
+> Our atmospheric state is dry-air mole fraction, not partial pressure.
+> The supplied [`connect_atmosphere`](../../simple_models.py) function handles
+> gas-convention and unit conversions through
+> `solubility` and `scale`, using PyCO2SYS and ESBMTK density. You do not need
+> to implement these conversions. The 0 bar setting is seawater pressure,
+> not atmospheric pressure; solubility uses the shared 16 °C and salinity 35.
+
+=== CELL 6 markdown ===
+### 2.3 Map the diagram to objects
+
+![Atmosphere-ocean code map: carbon transfers are solid arrows; carbonate-chemistry information links are dashed.](../../ref/figures/01_air_sea_code_map.png)
+
+Read the code labels on the diagram alongside the construction below:
+
+- `Model` supplies the clock and units. `M.CO2` is a species definition.
+- `initialize_reservoirs` creates the ocean DIC and TA states. `box_parameters`
+  supplies geometry (`g`), conditions (`T`, `S`, `P`) and initial concentrations (`c`).
+- `add_carbonate_system_1` calculates `M.Ocean.CO2aq` from DIC and TA.
+  <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>This diagnostic</strong></mark> informs gas exchange; it is not another carbon inventory.
+
+Solid arrows transfer carbon. Dashed arrows supply information to a calculation.
+The `.c` attribute stores concentration values: mol/kg for ocean states and
+mol/mol for atmospheric CO2. Indices `[0]` and `[-1]` select the first and last
+saved values.
+
+The supplied setup registers species definitions before any ocean reservoirs
+are created. You only prescribe the ocean DIC and TA states here.
+
+> **Chemistry reference (optional).** [`new_model`](../../simple_models.py)
+> registers Carbon, Boron, Hydrogen and miscellaneous species definitions.
+> Seawater initialization supplies background boron through PyCO2SYS;
+> carbonate-system code initializes and updates H⁺ and aqueous CO2 from DIC/TA.
+> These are not extra transported reservoirs to construct. The miscellaneous
+> sediment-variable definitions are unused in 01; they activate no sediment processes.
+
+In `{'Ocean': box_parameters(...)}`, the quoted name is a dictionary **key**;
+the function result after the colon is its **value**. `initialize_reservoirs`
+uses that pair to create the named box from its supplied properties.
+
+First create the ocean and its carbonate chemistry:
+
+=== CELL 7 code ===
+# Understand and run: trace this supplied step and interpret its evidence.
+M = new_model(stop='2 kyr', max_timestep='1 yr')
+initialize_reservoirs(M, {'Ocean': box_parameters(
+    M, config.ocean_volume_m3, INITIAL_DIC, FIRST_TA)})
+add_carbonate_system_1([M.Ocean])
+
+=== CELL 8 markdown ===
+### 2.4 Connect atmospheric CO2 to ocean DIC
+
+The native constructor `Species2Species` connects two species states.
+`source` and `sink` set the positive direction; `ctype` selects the flux law.
+The `id` is a label used to identify a connection in summaries or later lookups;
+here `air_sea` labels this one gas connection.
+[`connect_atmosphere`](../../simple_models.py) is a supplied function defined
+in `simple_models.py`. It creates the finite atmosphere and its gas-exchange
+connection. The excerpt below comes from that function: its local names
+`model` and `surface` correspond to `M` and `M.Ocean` in this notebook.
+The function supplies the parameter values and unit conversions.
+
+```python
+model.air_sea_exchange = Species2Species(
+    source=model.CO2_At,
+    sink=surface.DIC,
+    species=model.CO2,
+    ctype="gasexchange",
+    piston_velocity=piston_velocity,
+    solubility=f"{beta_native} mol/(m**3 * atm)",
+    scale=surface.swc.density / 1000.0,
+    ref_species=surface.CO2aq,
+    id="air_sea",
+)
+```
+
+`species` identifies the exchanged gas, while `sink` identifies the ocean DIC
+state it changes. `ref_species` provides aqueous CO2 for the outgassing term.
+The `gasexchange` law calculates the signed difference of invasion and
+outgassing: **two conceptual arrows are represented by one connection**.
+
+The next cell calls `connect_atmosphere` and returns the connection as `exchange`;
+the atmospheric state is `M.CO2_At`.
+
+**Supplied verification checks.** `assert` checks whether a condition holds;
+`assert_allclose` checks numerical agreement within a tolerance. A failed check
+stops the cell with an error. These checks test the calculated result; they do
+not force the model to match it. Here they check the connection endpoints,
+ocean mass and initial TA. Later checks test conservation and calibrated agreement.
+
+=== CELL 9 code ===
+# Understand and run: connect the atmosphere and check the construction.
+exchange = connect_atmosphere(M, [M.Ocean])
+# Supplied verification: connection endpoints, ocean mass and initial TA.
+assert exchange.source is M.CO2_At and exchange.sink is M.Ocean.DIC
+np.testing.assert_allclose(box_mass_kg(M.Ocean),
+                           config.ocean_volume_m3 * config.density_kg_m3, rtol=1e-12)
+assert M.Ocean.TA.c[0] == 0
+print('Initial atmosphere (ppm):', M.CO2_At.c[0] * 1e6)
+print('Initial ocean carbon fraction:',
+      box_mass_kg(M.Ocean) * M.Ocean.DIC.c[0] / config.total_carbon_mol)
+
+=== CELL 10 markdown ===
+### Before running: check the mapping and predict
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — map and check**
+
+Point to the ocean DIC/TA states and gas connection in the code. Which quantity
+is calculated from DIC and TA? Add the two carbon tendencies in section 1:
+why do the internal transfers cancel? Why must you multiply ocean concentration
+by water mass when checking the carbon inventory?
+
+</div>
+
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+`M.Ocean.DIC` and `M.Ocean.TA` are states; carbonate chemistry calculates
+aqueous CO2. `connect_atmosphere` creates the atmosphere and its gas connection.
+The ocean gains exactly what the atmosphere loses, so their carbon sum is
+constant. mol/kg times kg is mol. TA has no source or sink in this model.
+
+</div>
+<!-- END SOLUTION -->
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — predict before running**
+
+**Write a short prediction before running the next cell.** Does specifying
+the combined carbon inventory guarantee recovery of both reference values?
+What else might determine the final atmosphere–ocean partition?
+
+</div>
+
+
+
+=== CELL 11 code ===
+# Understand and run: trace this supplied step and interpret its evidence.
+run_model(M)
+# Supplied verification: carbon and TA conservation throughout the run.
+print(audit(M))
+print('TA-free result: xCO2 (ppm), DIC (umol/kg):',
+      M.CO2_At.c[-1] * 1e6, M.Ocean.DIC.c[-1] * 1e6)
+plot_ta_free(M, config)
+
+=== CELL 12 markdown ===
+### After running: diagnose the result
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — diagnose after running**
+
+Revisit your prediction using the carbon and TA budget checks. Does disagreement
+with the reference values demonstrate a coding error? What do passing budget
+checks establish, and what do they leave untested?
+
+Which initial chemical assumption prevents recovery of the reference partition?
+Can any process represented in this model change it?
+
+</div>
+
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+Passing carbon and TA checks supports correct budget implementation. It does
+not prove complete code correctness or that the physical assumptions represent
+the ocean. The mismatch alone is therefore not evidence of a coding error.
+
+The total carbon fixes the combined inventory, not its equilibrium partition.
+At fixed geometry and thermodynamic settings, that partition also depends on TA.
+Gas exchange adds DIC but no TA, so the initial TA = 0 persists. No process
+in this model can generate the missing alkalinity. A small initial DIC does
+not require zero TA; these are separate initial assumptions. Section 3 tests
+how changing TA changes the relation between DIC and seawater pCO2.
+
+</div>
+<!-- END SOLUTION -->
+
+
+=== CELL 13 markdown ===
+## 3. Infer TA, explain the partition, then test the revised model
+
+PyCO2SYS calculates carbonate-equilibrium states; ESBMTK follows carbon
+transfer through time. First use the reference DIC and atmospheric xCO2
+to infer TA. Then use DIC and TA to calculate seawater pCO2 and explain
+the contrasting carbon partitions.
+
+### 3.1 Infer TA from the reference state
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — calculate and explain**
+
+**Exercise 01.1 — reuse your PyCO2SYS skills from 00.** Calculate the TA required
+for seawater with **DIC = 2040 µmol/kg** to be in equilibrium with atmospheric
+**dry-air xCO2 = 280 ppm**. Choose the input types, write the PyCO2SYS call and
+extract TA. Save the result as **`inferred_ta`, in µmol/kg**.
+
+Use `config.target_dic_umol_kg`, `config.target_xco2_ppm` and the supplied settings
+`**config.pyco2`. The double star passes the dictionary's entries as named
+arguments to the function. These settings include **16 °C**, salinity 35,
+pressure 0 dbar and the shared carbonate choices. Do not carry over 00's 15 °C baseline.
+Consult your work from 00 and the
+[PyCO2SYS input and result documentation](https://pyco2sys.readthedocs.io/en/latest/co2sys_nd/)
+as needed. Retrieve a result using `result['key']`, where `key` is its exact
+name in the documentation. Dry-air xCO2 in ppm differs from pCO2 in µatm.
+
+After calculating TA, explain what was fitted and why the result is
+**not an independent prediction** of ocean TA.
+
+</div>
+
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+TA is inferred from the two reference targets under the prescribed conditions.
+It is a fitted background parameter, not an independent prediction. Recovering
+the same targets in ESBMTK checks consistency between the implementations and
+the prescribed carbon inventory; it does not independently validate the model.
+
+</div>
+<!-- END SOLUTION -->
+
+=== CELL 14 code ===
+# Choose and explain: calculate TA from the two reference targets.
+# Save inferred_ta in umol/kg; use the shared settings in config.pyco2.
+# BEGIN SOLUTION
+dic_input_type = 2
+air_input_type = 9
+reference = pyco2.sys(par1=config.target_dic_umol_kg, par1_type=dic_input_type,
+                     par2=config.target_xco2_ppm, par2_type=air_input_type, **config.pyco2)
+inferred_ta = float(reference['alkalinity'])
+# END SOLUTION
+print('Inferred TA (umol/kg):', inferred_ta)
+
+=== CELL 15 markdown ===
+### 3.2 Use PyCO2SYS to explain the carbon partition
+
+For each TA, calculate seawater pCO2 over the same range of DIC. Each point
+is a carbonate-equilibrium state: its pCO2 is the atmospheric partial pressure
+that would balance CO2 exchange with that water. It need not equal the
+**actual** atmospheric pCO2 in our closed system. The plot is a set of possible
+states, not a time series.
+
+The slope of each seawater curve is its
+<mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>absolute sensitivity</strong></mark>,
+
+$$\left(\frac{\partial pCO_{2,ocn}}{\partial DIC}\right)_{TA,T,S,P}.$$
+
+It measures the pCO2 increase per small DIC increase at fixed TA and
+thermodynamic conditions, here in µatm per (µmol/kg). It can vary along a
+curve; use the calculated curves to compare the two TA cases.
+
+**Supplied atmosphere line.** At each DIC, conservation requires
+
+$$C_{atm}=C_0-m_{ocn}DIC,\qquad xCO_{2,atm}=\frac{C_{atm}}{N_{atm}}.$$
+
+Here DIC is in mol/kg, $m_{ocn}$ is the ocean mass in kg and $N_{atm}$ is the
+atmospheric amount in mol. The supplied
+[`atmospheric_pco2_curve`](../../simple_models.py) applies these equations and
+converts dry-air xCO2 to pCO2 using the shared gas settings. Both seawater and atmosphere curves use
+pCO2 in **µatm**; the reference **280 ppm is dry-air xCO2**, not 280 µatm.
+The same line applies to both TA cases because their total carbon and reservoir
+sizes are identical.
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — calculate the seawater curves (Exercise 01.2)**
+
+Complete the chemistry calculation inside the supplied loop. For the current
+`ta_value`, pass `dic_grid` and TA to PyCO2SYS with the shared `**config.pyco2`
+settings. Choose the input-type codes and save the output pCO2 array as
+**`curve_pco2`, in µatm**.
+
+**Hints:** use the DIC and TA entries in the
+[input-type table](https://pyco2sys.readthedocs.io/en/latest/co2sys_nd/#carbonate-system-parameters)
+and the `pCO2` output. An array can replace a single concentration in a
+PyCO2SYS call; one TA value applies to every DIC in that array. The supplied
+loop repeats your call for TA = 0 and `inferred_ta`, then saves both curves
+in a dictionary. The grid ends just below the limit where all carbon would
+be in the ocean, leaving no atmospheric carbon.
+
+</div>
+
+
+=== CELL 16 code ===
+# Supplied implementation: candidate DIC values and the conserved-carbon atmosphere.
+max_dic = config.total_carbon_mol / box_mass_kg(M.Ocean) * 1e6
+dic_grid = np.linspace(INITIAL_DIC, max_dic * (1 - 1e-6), 600)
+atm_pco2 = atmospheric_pco2_curve(dic_grid, config)
+
+# Choose and explain: calculate seawater pCO2 from DIC and TA.
+ocean_pco2 = {}
+for label, ta_value in [('TA = 0', FIRST_TA), ('inferred TA', inferred_ta)]:
+    # BEGIN SOLUTION
+    curve = pyco2.sys(par1=dic_grid, par1_type=2,
+                     par2=ta_value, par2_type=1, **config.pyco2)
+    curve_pco2 = curve['pCO2']
+    # END SOLUTION
+    ocean_pco2[label] = curve_pco2
+
+# Supplied implementation: linear axes; the right panel enlarges the reference region.
+plot_equilibrium_curves(dic_grid, ocean_pco2, atm_pco2, config);
+
+
+=== CELL 17 markdown ===
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — explain the contrasting carbon uptake**
+
+1. Why does atmospheric pCO2 fall as DIC increases? Use conservation to relate
+   a given DIC increase to the carbon lost by the atmosphere.
+2. Locate each seawater curve's intersection with the atmosphere line and
+   estimate its DIC. Why does each intersection represent zero **net** air–sea
+   exchange? Use the zoom for the inferred-TA case.
+3. Compare the seawater slopes at the same DIC on the left panel. Starting
+   from the same initial DIC and total carbon, explain the difference in net
+   ocean uptake. Do these curves alone tell you which model equilibrates sooner?
+
+**Hint:** use the sign of $pCO_{2,atm}-pCO_{2,ocn}$ to identify the direction of
+net transfer. For the same ocean mass and initial DIC, a larger final DIC
+means more net carbon uptake. Compare slopes on the same panel: the zoom has
+different axis scales. Curves outside a panel's vertical range are clipped.
+
+</div>
+
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+Each mole gained by the ocean is lost from the atmosphere. A DIC increase
+$\Delta DIC$ therefore removes $m_{ocn}\Delta DIC$ mol from the atmosphere
+(DIC in mol/kg), lowering atmospheric xCO2 and pCO2. This relation is the
+same in both cases; TA changes the seawater chemistry curve.
+
+The zero-TA intersection is near **470 µmol/kg**. The inferred-TA intersection
+is at **2040 µmol/kg**, where pCO2 is about **275 µatm**, equivalent to the
+reference dry-air xCO2 of **280 ppm**. At an intersection the two pCO2 values
+are equal, so invasion and outgassing balance and net exchange is zero.
+The second intersection recovers the state used to fit TA, not an independent
+prediction of it.
+
+For these settings and this DIC range, the zero-TA seawater curve rises more 
+steeply (higher absolute sensitivity) at a given DIC. Starting from the common
+small initial DIC and pCO2, it meets
+the falling atmosphere line at much lower DIC, after less net carbon transfer.
+With inferred TA, seawater pCO2 stays lower over this range and more carbon
+can accumulate before air–sea equilibrium is reached. The full curves and
+the common inventory constraint establish this result; one local derivative
+alone would not determine the endpoint. The initial DIC and atmospheric
+carbon are identical, but the initial chemical speciation differs with TA.
+
+This explains the **amount** absorbed. The curves have no time axis and do
+not establish which case equilibrates sooner; section 4 examines exchange
+rate and equilibration time.
+
+</div>
+<!-- END SOLUTION -->
+
+> **Connection to the lecture.** The Revelle sensitivity factor $R$ expresses
+> the local pCO2–DIC response in fractional terms. On
+> [slide 46](../../ref/Ocean_C_cycle_2026.pdf#page=46), it estimates fractional
+> DIC uptake for a prescribed atmospheric CO2 increase at fixed TA and
+> thermodynamic conditions. The doubling example is a linear approximation
+> using fixed $R$. Here we use the full curves and our closed carbon inventory.
+
+
+=== CELL 18 markdown ===
+### 3.3 Test the curve interpretation with a fresh model
+
+Keep the same total carbon, geometry, initial DIC and piston velocity.
+Change only the initial TA. Compare the final DIC with the intersection
+you identified above. This is a <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>calibration and software-consistency
+check</strong></mark>, not an independent prediction of atmospheric xCO2.
+
+The supplied [`single_box`](../../simple_models.py) helper repeats section 2's
+construction: create a model, initialize the ocean, add carbonate chemistry,
+and connect the atmosphere. It returns a **fresh, unrun model**; `run_model`
+then runs it. Thus `buffered` is a separate experiment with a different initial
+TA inventory, not an alkalinity addition during the first run.
+
+Later, the same helper changes initial DIC or piston velocity. Changing initial
+DIC adjusts atmospheric carbon automatically to preserve the total inventory.
+
+=== CELL 19 code ===
+# Understand and run: test the revised initial TA with the supplied model.
+buffered = single_box(ta_umol_kg=inferred_ta)
+run_model(buffered)
+# Supplied verification: conservation and recovery of the fitted reference state.
+print(audit(buffered))
+np.testing.assert_allclose(buffered.CO2_At.c[-1] * 1e6, 280, atol=0.5)
+np.testing.assert_allclose(buffered.Ocean.DIC.c[-1] * 1e6, 2040, atol=0.2)
+
+=== CELL 20 markdown ===
+## 4. Compare paths and endpoints
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — predict the comparisons**
+
+Predict the effect of two separate changes to the buffered model:
+
+- Start with **1000 µmol/kg ocean DIC**, keeping total carbon and TA fixed.
+- Halve the **piston velocity**, keeping the initial partition and TA fixed.
+
+</div>
+
+Then run the supplied comparison. Compare the curves and printed <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>equilibration times (1% criterion)</strong></mark>.
+This is the first saved time after which atmospheric CO2 remains within 1% of
+its final simulated value. It depends on the starting state and the chosen
+tolerance; it is not an exponential relaxation constant. The code checks carbon
+and TA at every saved time.
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — interpret the comparisons**
+
+Which change alters the initial partition, and which alters the exchange rate?
+Does either change the eventual equilibrium? Explain why the two changes
+can alter the path while preserving the endpoint.
+
+</div>
+
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+Changing initial DIC redistributes the same carbon between atmosphere and ocean.
+Changing piston velocity alters the exchange rate. At fixed total carbon, TA,
+geometry and chemistry, neither change alters the gas-exchange equilibrium;
+both runs recover the buffered reference state. A smaller positive piston
+velocity lengthens the adjustment.
+
+</div>
+<!-- END SOLUTION -->
+
+=== CELL 21 code ===
+# Understand and run: trace this supplied step and interpret its evidence.
+partition = single_box(ta_umol_kg=inferred_ta, initial_dic_umol_kg=1000)
+slower = single_box(ta_umol_kg=inferred_ta, piston_velocity='2 m/d')
+for case in (partition, slower):
+    run_model(case)
+    # Supplied verification: prescribed carbon inventory and shared endpoint.
+    carbon, _ = inventories(case)
+    np.testing.assert_allclose(carbon, config.total_carbon_mol, rtol=2e-6)
+    np.testing.assert_allclose(case.CO2_At.c[-1], buffered.CO2_At.c[-1], atol=0.5e-6)
+    # audit also checks time-resolved carbon and TA conservation.
+    print(audit(case))
+
+plot_partition_comparison(buffered, partition, slower)
+
+
+=== CELL 22 markdown ===
+## 5. Continue to the two-layer model
+
+Real-ocean TA reflects weathering, mineral dissolution and carbonate burial.
+This closed model includes none of those sources or sinks; prescribing background
+TA does not simulate its origin. Those processes enter explicitly in 03/04.
+
+**You have completed 01.** Keep your TA calculation and explanations in this
+notebook; no separate submission is required. Continue to 02, which retains the
+same total carbon inventory and adds a deep-ocean reservoir.
+
+> **Numerical reference.** The small positive initial DIC does not supply alkalinity.
+> ESBMTK's carbonate-system-1 approximation can show transient pH discrepancies
+> in extreme states (paper section 2.4). Here we check conserved inventories
+> and stationary agreement; the extreme transient pH is not a realistic
+> seawater history. The helper supplies the native gas-exchange routine's
+> factor-of-1000 conversion; no additional student calculation is required.
+
+=== CELL 23 code ===
+# Supplied implementation: instructor verification of the expected outcomes.
+# Excluded from the student copy so students interpret the results themselves.
+from teaching_plots import equilibration_time
+assert abs(M.CO2_At.c[-1] * 1e6 - config.target_xco2_ppm) > 1000
+assert equilibration_time(slower) > equilibration_time(buffered)
+
+
+=== CELL 24 code ===

@@ -1,0 +1,133 @@
+different water masses back to the places where they
+were last in contact with the atmosphere and obtained
+their air-sea gas exchange signal.
+The DC
+gas ex signal in the deep Atlantic is associated
+with NADW, and since this water is formed in the
+northern North Atlantic, we have to look at surface
+water properties there. To better understand the par-
+ticularities of the North Atlantic, it is helpful to contrast
+this basin with the surface distribution in the Paciﬁc.
+Figure 8.4.5 shows surface ocean concentrations of
+DCgas ex as a function of latitude in the Atlantic and
+Paciﬁc. Also shown are the equilibrium sDIC concen-
+trations and reconstructed preindustrial sDIC concen-
+trations ( sDICpi). We subtracted a global mean surface
+concentration from the latter two in order to emphasize
+trends. The ﬁrst point we note is that DC
+gas ex shows
+more variations at the sea surface than we have seen in
+the water column. However, differences in DC
+gas ex
+between the temperate latitudes, where most of the
+thermocline waters are formed, and the polar latitudes
+of the southern hemisphere, where most of interme-
+diate and deep waters of the Indian and Paciﬁc have
+their sources, are relatively small, e.g., maximally about
+50 mmol kg
+/C0 1. This is consistent with our observation of
+a very small vertical gradient in DCgas ex , since the In-
+dian and Paciﬁc dominate the global mean proﬁle.
+By contrast to the Paciﬁc, the DCgas ex signal in the
+North Atlantic increases continuously toward the north,
+reaching higher levels than found in the North Paciﬁc
+and in the Southern Ocean. While this explains where
+the signals observed in the interior come from, it does
+not explain why the different regions have such a dif-
+ferent surface expression of DC
+gas ex .
+If air-sea gas exchange were inﬁnitely fast and there
+were no biology, DCgas ex would follow the equilibrium
+sDIC concentration sDICeq shown in ﬁgure 8.4.5 (note
+that the equilibrium concentration is equal to
+DC
+therm, pot
+gas ex ). In such a case, waters that ﬂow from low
+latitudes to high latitudes and vice versa would need to
+exchange large amounts of CO
+2 with the atmosphere to
+account for the large temperature sensitivity of sDIC.
+The DCgas ex in the North Atlantic Ocean has the same
+structure as sDICeq, suggesting that these waters do
+indeed pick up the required CO 2 from the atmosphere.
+However, DCgas ex in the North Paciﬁc behaves quite
+differently. It follows the sDIC equilibrium concentra-
+tion south of 40 /C14 N, but drops well below the sDIC
+equilibrium trend to the north of this. Despite this
+failure to take up CO
+2 from the atmosphere, the surface
+water sDICpi is everywhere very close to sDICeq. Ob-
+viously, a process other than uptake of CO 2 from the
+atmosphere must increase the sDICpi in the North Pa-
+ciﬁc. Note that the southern hemisphere high latitude
+waters also behave the same as the North Paciﬁc.
+The solution is revealed in the lower panels of ﬁgure
+8.4.5, which show the contribution of the two biological
+pumps to surface ocean sDIC variations. It turns out
+that these pumps provide the necessary mechanism to
+change surface ocean sDIC. The surface waters in the
+Southern Ocean contain large amounts of sDIC that
+stem from the remineralization of organic matter and
+the dissolution of CaCO
+3 (high DCsoft and DCcarb). This
+is a consequence of upwelling processes that bring in-
+termediate and deep ocean waters with high DC
+soft and
+DCcarb to the surface, and a biological pump that is
+relatively inefﬁcient (see chapter 4) and therefore not
+able to remove these biological signals as rapidly as they
+are brought up.
+When these waters are transported from the Southern
+Ocean to low latitudes, biological production removes
+60°S 40°S 20°S Eq 20°N 40°N 60°N
+-200
+-100
+0
+100
+200
+(µmol kg
+-1
+)
+∆CsoftC∆ carb
+sDICpi
+-100
+0
+100
+200
+300
+(µmol kg
+-1
+)
+∆Cgas ex
+sDICeq
+sDICpi
+300
+60°S 40°S 20°S Eq 20°N 40°N 60°N
+-200
+-100
+0
+100
+200
+300
+-100
+0
+100
+200
+300
+∆Cgas ex sDICeq
+sDICpi
+∆Csoft
+∆Ccarb
+sDICpiATLANTIC PACIFIC
+b
+c
+d
+a
+high ∆Cgas ex
+no excess in ∆Csoft
+deficit in ∆Cgas ex
+ excess in ∆Csoft
+Figure 8.4.5: Meridional variations of the ocean carbon pumps in the surface waters (a–b) of the Atlantic and (c–d) of the Paciﬁc. Data
+are from WOCE cruises A16 and P16.
+350
+Chapter 8

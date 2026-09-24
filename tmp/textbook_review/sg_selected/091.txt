@@ -1,0 +1,82 @@
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+∆pCO2 (JFM) (µatm)
+20°E
+a
+20
+0
+-20
+-20
+-20
+0 20
+40
+606020
+-20
+-40
+-20
+40
+0
+0
+0
+20
+2020
+40
+40
+-20
+-40
+-20
+-40
+-20
+80
+0
+-20
+-40
+-20
+20
+0
+0
+0
+20
+40
+6060
+40
+20
+20
+-20
+-20
+0
+-20
+0
+20
+20
+-20
+-40
+-60
+0
+-20
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+∆pCO2 (JJA) (µatm)
+20°E
+b
+Figure 3.1.3: Maps of the climatological carbon dioxide partial pressure difference ( DpCO2) across the air-sea interface, with supersaturation
+indicated by positive numbers. (a) Average DpCO2 for the northern hemisphere winter months (January through March); (b) Average DpCO2
+for the northern hemisphere summer months (June through August). Based on the climatology of Takahashi et al . [2002].
+Chapter 3
+76

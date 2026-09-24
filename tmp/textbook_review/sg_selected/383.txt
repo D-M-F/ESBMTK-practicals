@@ -1,0 +1,92 @@
+consumption of atmospheric CO 2 by chemical weath-
+ering of igneous rocks were too small to match the input
+of CO
+2 by volcanic outgassing, the CO 2 content of the
+atmosphere would rise, causing the temperature of
+Earth to rise, which in turn would increase the rate of
+chemical weathering until a new balance is achieved.
+Conversely, if the rate of CO
+2 consumption by chemical
+weathering exceed volcanic outgassing, atmospheric
+CO
+2 would be drawn down, causing Earth to cool,
+thereby reducing the rate of chemical weathering. This
+hypothesis is still being debated [see, e.g., Broecker and
+Sanyal, 1998; Raymo and Ruddiman , 1992], but, it pro-
+vides a wonderful example of an interaction between
+tectonics, climate, and the carbon cycle.
+We will not dwell on this second feedback any fur-
+ther (see Broecker and Peng [1998] for more details).
+However, we will discuss calcium carbonate compen-
+sation in detail, since this feedback plays an important
+role in many hypotheses trying to explain glacial-
+interglacial variations of atmospheric CO
+2 [Sigman and
+Boyle, 2000]. Before we can address the question of how
+this feedback works, we ﬁrst need to understand the
+individual components of the oceanic CaCO
+3 cycle.
+This cycle starts with the formation of mineral CaCO 3
+in near-surface waters, continues with the export of this
+material from the upper ocean and sinking through the
+water column, where it is subject to dissolution, and
+ends with diagenetic processes in the sediments that
+will determine how much will be dissolved versus how
+much will be buried.
+As we go through these individual processes, we will
+encounter many puzzling questions, like why the high-
+est CO
+2/C0
+3 concentrations are found in places where CO2/C0
+3
+is actually consumed (surface ocean) and the lowest
+CO
+2/C0
+3 concentrations are found in the places where CO2/C0
+3
+is being produced (deep ocean) (see ﬁgure 9.1.2). An-
+other important question is what controls the preserva-
+tion of CaCO
+3 in the sediments. Figure 9.1.3 shows that
+the distribution of CaCO3 in the near-surface sediments
+differs drastically from that of opal (ﬁgure 7.1.3) and
+CONTINENTAL
+       MARGINS
+DEEP OCEAN
+EUPHOTIC ZONEAPHOTIC ZONESEDIMENTS
+100m
+1000m
+1.0 + ?
+?
+1.0
+Dissolution
+Production
+Export
+~0.2
+0.50
+0.13
+0.37
+Burial
+Fluxes in Pg C y-1
+GLOBAL OCEAN CaCO3 BALANCE (Pg C yr-1)
+Dissolution
+Dissolution
+Hydrothermal
+0.04
+Rain
+Rivers
+0.13
+River/margin input
+~0.3
+Dissolution
+Reefs/Neritic
+0.4
+??
+Rain
+Dissolution
+Figure 9.1.1: Budget of carbonate (alkalinity) of the global ocean in units of Pg C yr/C01. Modiﬁed from Milliman and Droxler [1996]. In particular,
+open ocean CaCO3 production and export was increased to reﬂect more recent estimates (see text). The resulting increased rain rate of CaCO 3
+onto deep ocean sediments results in an organic carbon-to-CaCO 3 rain ratio of about 0.8, in good agreement with estimates inferred from
+sediment modeling [ Archer, 1996a].
+Chapter 9
+360

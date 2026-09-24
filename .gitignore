@@ -12,5 +12,7 @@ equations.py
 eqs_coeff.npz
 equations_matrices.npz
 tmp/notebook_qa/
+tmp/carbonate_explorer/
 tmp/*.log
 tmp/reservoir_workbook/
+output/*.zip

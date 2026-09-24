@@ -1,0 +1,17 @@
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'TEACHING_GOALS.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'WORKPLAN.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'notebooks/instructor/04_pump_strength_OA_OAE.ipynb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ref/anaconda_setup.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ref/boudreau_diagrams.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ref/design.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ref/environment_setup_proposal.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ref/uv_setup.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/build_setup_pdfs.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/build_student_notebooks.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/check_environment.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'teaching_audits.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'teaching_plots.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/test_student_notebooks.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/test_teaching_audits.py', LF will be replaced by CRLF the next time Git touches it

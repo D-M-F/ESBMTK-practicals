@@ -1,0 +1,129 @@
+anomalies for CO 2 and N 2O. We outline the main fea-
+tures of each of these ﬁgures in turn.
+Figure 3.1.1 shows that oxygen is supersaturated over
+a large fraction of the surface ocean. The measure-
+ments summarized in ﬁgure 3.1.2, which are from the
+World Ocean Circulation Experiment (WOCE), show
+that during this expedition the supersaturation was
+commonly of order 3%. The supersaturation implies a
+source of oxygen from the ocean to the atmosphere.
+Where does this oxygen come from? By contrast, ﬁgure
+3.1.1 shows that the high latitudes of the Southern
+Ocean, the north and eastern equatorial Paciﬁc, and the
+region surrounding Indonesia, are all undersaturated.
+What causes these areas to be different from the rest of
+the world?
+The disequilibrium between oceanic and atmospheric
+CO
+2 shown in ﬁgure 3.1.3, which is for a nominal year of
+1995, shows a much greater range than that of O 2. The
+units of this ﬁgure are the partial pressure of CO 2 in
+matm. The atmospheric partial pressure of CO 2 in air in
+1995 was about 360 matm, so a disequilibrium of order
+40 matm, such as occurs in the equatorial Paciﬁc, is
+equivalent to about 11% supersaturation, as contrasted
+with the values of about 3% observed for O
+2. There are
+some similarities in the patterns of the disequilibrium of
+CO
+2 to the concentration anomalies of O 2, such as the
+presence of a large disequilibrium at the equator, but the
+CO
+2 anomalies tend to have much broader horizontal
+scales than O 2 and are often opposite in sign. For ex-
+ample, the equatorial supersaturation implies a source
+of CO
+2 to the atmosphere in the same general regions
+where the O 2 anomalies imply a sink. What mecha-
+nisms might cause these two gases to have opposite
+anomalies? And why is the region of O
+2 undersaturation
+much more tightly conﬁned to the equator than the
+corresponding band of CO
+2 supersaturation? Later
+we shall see that other measurements suggest that the
+anomalies of the two gases tend in fact to have the same
+sign over much of the ocean. This clearly is inconsistent
+with the comparison of ﬁgures 3.1.1 and 3.1.3. If there is
+a problem with one of these two data sets, it is more
+likely to be with the oxygen, which has an anomaly that
+is much smaller and thus more difﬁcult to measure, and
+which has not been sampled nearly as frequently and
+carefully as CO
+2.
+An important consideration for CO 2 is that the at-
+mospheric partial pressure of 365 matm that was ob-
+served in 1998 represents quite a large increase over the
+partial pressure of *280 matm that existed prior to the
+beginning of the industrial revolution (see chapter 10).
+This increase is due to fossil fuel burning and land use
+changes. A large amount of this anthropogenic CO
+2 has
+dissolved in the ocean and continues to do so. Detecting
+this invasion is the primary reason that so much more
+effort has been put into measuring CO
+2 partial pressure
+differences than O 2 anomalies. One of the things we
+will do in the ﬁnal section of this chapter is to estimate
+the net CO
+2 ﬂux into the ocean implied by the data of
+ﬁgure 3.1.3.
+Finally, we see in ﬁgure 3.1.4 that the N 2O partial
+pressure is close to atmospheric equilibrium in most
+latitude bands except for a very tight band near the
+equator, where it is supersaturated. This implies an
+oceanic source to the atmosphere. Where does this ni-
+trous oxide come from, and why is the band of super-
+saturated N
+2O so narrow?
+In what follows, we will address these queries start-
+ing with a discussion of the solubilities that are re-
+quired in order to calculate the concentration anoma-
+lies, and then proceeding to a discussion of how we can
+translate the anomalies into an estimate of the actual
+ﬂux of the gas across the air-sea interface. Armed with
+the ability to quantitatively estimate the gas ﬂuxes that
+are implied by the anomalies, we turn in the ﬁnal
+section to a discussion of the actual ﬂuxes and what
+these imply about the processes that are causing the
+anomalies.
+Table 3.1.1
+Atmospheric composition given in units
+of the ratio of moles of each gas to the
+total number of moles of gas in dry air
+(the mixing ratio)
+(a) Atmospheric Composition
+N2 78.084 ± 0.004%
+O2 20.946 ± 0.002%
+Ar 0.934 ± 0.001%
+CO
+2 365 ppm
+Ne 18.18 ± 0.04 ppm
+He 5.240 ± 0.004 ppm
+CH
+4 1.745 ppm
+Kr 1.14 ± 0.01 ppm
+H
+2 0.55 ppm
+N2O 0.314 ppm
+Xe 0.087 ± 0.001 ppm
+CO 0.05–0.20 ppm
+O
+3 0.01–0.50 ppm
+Sources: Weast and Astle [1982] for all gases except
+CO2,C H4, and N 2O, which are 1998 concentrations
+taken from Ramaswamy, et al. [2001].
+(b) Inﬂuenced by Chemical and
+Biological Processes
+No Yes
+Ar N 2
+Ne O 2
+He CO 2
+Kr CH 4
+Xe H 2
+N2O
+CO
+O
+3
+Chapter 3
+74

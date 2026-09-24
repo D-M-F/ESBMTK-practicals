@@ -1,0 +1,71 @@
+the two reservoirs, e.g., by adding a low-latitude deep
+ocean exchange (
+ﬁgure 10.4.7c), would diminish the
+atmospheric equilibration pathway, and therefore in-
+crease HBEI. Archer et al . [2000a] proposed that this
+mechanism is the primary factor explaining the
+large difference between the low HBEI of the original
+Harvardton-Bear box models, and the high HBEI of the
+three-dimensional ocean circulation models that par-
+ticipated in the comparison study of Broecker et al .
+[1999a]. Archer et al . [2000a] argued that because of
+their relatively coarse vertical resolution, these three-
+dimensional models tend to be overly diffusive verti-
+cally, therefore overestimating the HBEI index. On the
+other hand, Follows et al . [2002] pointed out that these
+three-dimensional models represent the warm-water
+sphere much more realistically than the Harvardton-
+deep
+high
+low
+atm
+Air-sea exchange &
+  area high-lat
+Volume low-lat &
+  mixing low-deep
+Vl
+Ah
+mixing
+   high-deep
+3-box model
+3-box model
+3-box model 3-box model
+ab
+cd
+0.2 0.4 0.6 0.8 1
+Fraction of high-latitude box covered by sea-ice
+0
+0.1
+0.2
+0.3
+0.4
+0.5HBEI
+0 0.05 0.1 0.15 0.2 0.25
+Fractional area of high latitude box
+0
+0.1
+0.2
+0.3
+0.4
+0.5 HBEI
+10 20 30 40 50 60
+Low latitude - deep ocean mixing [Sv]
+0
+0.1
+0.2
+0.3
+0.4
+0.5HBEI
+0 200 400 600 800 1000
+Thickness of low latitude box [m]
+0
+0.1
+0.2
+0.3
+0.4
+0.5HBEI
+Figure 10.4.7: Sensitivity of HBEI in the Harvardton-Bear three-box model to changes in (a) fractional ice cover of high-latitude
+box, (b) fractional area of high latitudes, (c) low-latitude–deep ocean mixing, and (d) thickness of the low-latitude box. All simulations
+were done following the protocols of Broecker et al. [1999a].
+Carbon Cycle, CO 2, and Climate
+439

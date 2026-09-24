@@ -1,0 +1,120 @@
+Table 9.4.2
+Governing equations for the CaCO
+3 diagenesis model.
+After Archer et al. [1989].
+Solid equations:
+(1 /C0 f) @½POC/C138
+@t ¼ DB
+@
+@z (1 /C0 f) @½POC/C138
+@z
+/C18/C19
+/C0 kPOC [POC](1 /C0 f)( 9 :4:3)
+(1 /C0 f) @½CaCO3/C138
+@t ¼ DB
+@
+@z (1 /C0 f) @½CaCO3/C138
+@z
+/C18/C19
+/C0 kCaCO3 ½CaCO3/C138 (1 /C0 f)(1 /C0 O)n (9:4:4)
+Solute equations:
+f @½H2CO*
+3
+/C138
+@t ¼ @
+@z e
+H2 CO*
+3
+s
+@½H2CO*
+3
+/C138
+@z
+/C18/C19
+þ kPOC ½POC/C138 (1/C0 f) /C6 RpH (9:4:5)
+f @½HCO/C0
+3
+/C138
+@t ¼ @
+@z e
+HCO/C0
+3
+s
+@½HCO/C0
+3
+/C138
+@z
+/C18/C19
+/C6 RpH (9:4:6)
+f @½CO2/C0
+3 /C138
+@t ¼ @
+@z e
+CO2/C0
+3
+s
+@½CO2/C0
+3 /C138
+@z
+/C18/C19
+þ kCaCO3 ½CaCO3/C138 (1/C0 f)(1 /C0 O)n /C6 RpH (9:4:7)
+f @½O2/C138
+@t ¼ @
+@z eO2
+s
+@½O2/C138
+@z
+/C18/C19
+/C0 rO2 :CkPOC ½POC/C138 (1 /C0 f)( 9 :4:8)
+Equilibrium equations:
+K1 ¼ ½Hþ/C138½ HCO/C0
+3
+/C138
+½H2CO*
+3
+/C138 (9:4:9)
+K2 ¼ ½Hþ/C138½ CO2/C0
+3 /C138
+½HCO/C0
+3
+/C138 (9:4:10)
+Alk ¼ 2½CO2/C0
+3 /C138þ½ HCO/C0
+3
+/C138 (9:4:11)
+DIC ¼½ CO2/C0
+3 /C138þ½ HCO/C0
+3
+/C138þ½ H2CO*
+3
+/C138ð 9:4:12)
+Boundary conditions:
+at z ¼ 0:
+DIC ¼ DIC
+o
+Alk ¼ Alko
+O2 ¼ Oo
+2
+rain rate of POC
+rain rate of CaCO 3
+at z ¼ Zmax:
+@(solute)
+@z ¼ 0
+@(solid)
+@z ¼ 0
+f ¼ sediment porosity
+kPOC ¼ organic degradation rate constant, s /C0 1
+kCaCO3 ¼ calcite, aragonite dissolution rate constant, day /C0 1
+O ¼ saturation state
+n ¼ dimensionless exponent for calcite and aragonite dissolution
+[POC] ¼ concentration of particulate organic material, mmol m /C0 3 of total sediments
+[CaCO3] ¼ concentration of CaCO 3, mmol m /C0 3 of total sediments
+DB ¼ solid diffusion coefﬁcient
+ei
+s
+¼ effective solute diffusion coefﬁcient (see panel 6.2.2)
+rO2 :C ¼ stoichiometric oxygen-to-carbon ratio of organic matter
+RpH ¼ addition or removal of carbon species in order to maintain equilibrium
+K ¼ dissociation constants of inorganic carbon system in seawater
+380
+Chapter 9

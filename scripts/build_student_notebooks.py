@@ -23,7 +23,10 @@ NOTEBOOKS = (
     "03_boudreau_three_box_model.ipynb",
     "04_pump_strength_OA_OAE.ipynb",
 )
-EXTENSION_NOTEBOOKS = ("extensions/04_attribution_and_feedbacks.ipynb",)
+EXTENSION_NOTEBOOKS = (
+    "extensions/04_attribution_and_feedbacks.ipynb",
+    "extensions/05_independent_model.ipynb",
+)
 
 
 def _mask_code(source: str) -> str:

@@ -1,0 +1,62 @@
+3
+5
+6
+4 Depth (km)
+Western
+Equatorial Pacific
+10°N – 10°S
+Lysocline
+Equatorial Indian
+10°N – 10°S
+02 0 4 0
+Calcite (%)
+1008060
+Western
+North Atlantic
+15°N – 35°N
+02 0 4 0
+Calcite (%)
+1008060
+Eastern
+North Atlantic
+15°N – 35°N
+Central
+Equatorial Pacific
+5°S – 15°N
+Southern Indian
+20°S – 30°S
+Western
+South Atlantic
+28°S – 34°S
+Western
+South Atlantic
+15°S – 17°S
+02 0 4 0
+Calcite (%)
+1008060 0 20 40
+Calcite (%)
+1008060
+3
+5
+6
+4 Depth (km)
+CCD
+Lysocline
+CCD
+Figure 9.4.1: Plots of CaCO 3 content in surface sediments as a function of depth, separated into 8 different regions. From Broecker
+and Peng [1982].
+CCD
+North Equator South Equator Equator South NorthSouth
+3000
+4000
+6000
+5000
+WE E W E W W CentrEW
+Lysocline
+Depth (m)
+ATLANTIC INDIAN PACIFIC
+Figure 9.4.2: Water depths at the top (lysocline) and base (carbonate compensation depth,
+CCD) of the transition zone between sediments subjected to little dissolution and sediments
+that have lost virtually all their calcite to dissolution. From Broecker and Takahashi [1977b].
+375
+Calcium Carbonate Cycle

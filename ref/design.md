@@ -1,5 +1,10 @@
 # Learning design and scientific scope
 
+**Current scope (2026-09-24):** 04 extension-related teaching goals are temporarily
+suspended until the user explicitly asks to turn them on again. Retain its files
+and implementation for later use; exclude its settings and tasks from current
+planning and 03 explanations. Core 04's matched OA/OAE work remains active.
+
 The maintained summary of the implemented core, workload, student tasks and
 optional material is [`TEACHING_GOALS.md`](../TEACHING_GOALS.md). Update that file
 alongside future teaching changes. The 2026-09-16 guided revision targets four
@@ -9,6 +14,48 @@ set was supplied on 2026-09-17; its eight-part workload still needs a pilot. The
 `archive/2026-09-16_before_guided_revision/`.
 
 These practicals introduce first-year master's students from varied backgrounds to ocean-carbon chemistry and progressively more complex box models. The intended progression is **chemistry (00) -> missing buffering and model verification (01) -> conservative model extension and an effective pump (02) -> construction of the Boudreau-like model (03) -> experiments with the complete model (04)**.
+
+The implemented [textbook refinements](textbook_exercise_review.md) retain that
+progression. In 01, a supplied reaction supports the chemical explanation for
+TA conservation during CO2 invasion. In 02, students distinguish production,
+export and remineralization behind the effective DIC arrow; 62.4 is explicitly
+a reference stock ratio rather than incremental carbon uptake. Both masked
+derivations and the calibrated-state interpretation are retained.
+
+In 01, introduce the DIC–TA–pCO2 surface after TA inference and before the
+existing forward-chemistry exercise. Supply an offline rotatable surface,
+labelled top-view contours and a linked constant-TA cutting plane/2D curve.
+Use the shared configuration, preserve linear pCO2 scales and start near the
+reference seawater state. A separate optional full-range view includes TA = 0;
+it must not flatten the initial seawater view. Explain that the pCO2 contours
+correspond to the pCO2 panel of lecture slide 16's Deffeyes diagram, whereas
+pH contours require a different surface. The tangent gives local absolute
+sensitivity, not the full uptake or response time. Introduce the optional atm
+overlay only after the conservation equation; omit unphysical negative-atm
+states from that line. Keep the existing masked inference and forward call.
+The 3–5-minute guide replaces part of the sensitivity explanation and feeds
+the existing interpretation answer, with no new code task or integration.
+Pilot its fit within 01's provisional 40 minutes. Use no external assets or
+new Jupyter dependencies; the supplied HTML can be saved for offline use.
+
+In 03, reuse the representation with a supplied DIC-horizontal/TA-vertical
+pCO2 contour plot that uses the workbook
+L_b DIC/TA, temperature, salinity, pressure and benchmark chemistry options.
+It describes a local input reference before exchange/transport, not the later
+stationary restart or the whole-model atmospheric response. Students use arrows
+to interpret their paired POC/PIC/dissolution flux equations and reuse them in
+the native export mapping. The DIC-only POC closure and nutrient caveat remain
+explicit. Equal inventory transfers must use each box's water mass when converted
+to concentrations. The additional interpretation targets 4–6 minutes within
+reconstruction/export discussion by consolidating repeated answers; pilot the
+55-minute allocation, allowing 60 minutes or optional contour interpretation if
+needed. There is no automatic transfer of time from 00 or the session buffer.
+
+In 04, the four answers focus on interpreting forcing/response timing,
+carbon uptake and TA, critical-depth motion and sediment memory, and OA/OAE
+asymmetry and limits. Fixed biological export remains an interpretive boundary;
+the former biological-response experiment proposal is suspended with the 04
+extension. No extra core integrations, prerequisites or sediment equations are added.
 
 The lecture slides, DeVries review, and ESBMTK paper are in `ref/`. The lectures already show algebraically that a larger deep-ocean DIC inventory raises the ocean/atmosphere carbon inventory ratio. Notebook 02 must therefore ask how a gradient is *maintained* and what follows from a specified mechanism, rather than present that inventory identity as a new discovery.
 
@@ -214,13 +261,13 @@ CO2 and fixed-R linear approximation, with no extra calculation.
 
 ### A. Structural and coding check
 
-Prepare surface-layer depth **before** running the model in `teaching_config.py`, using the prescribed reference pumped ocean/atmosphere inventory ratio $R=62.4$, the reference atmospheric xCO2 and surface/deep DIC, ESBMTK density, and the independently specified whole-ocean area/depth and atmospheric size. This is **ratio-derived teaching geometry**, not an observed mixed-layer depth. Solve
+Prepare surface-layer depth **before** running the model in `teaching_config.py`, using the prescribed reference pumped ocean/atmosphere inventory ratio $r_{\mathrm{ocn/atm}}=62.4$, the reference atmospheric xCO2 and surface/deep DIC, ESBMTK density, and the independently specified whole-ocean area/depth and atmospheric size. This is **ratio-derived teaching geometry**, not an observed mixed-layer depth. Solve
 
-$$\rho A[hDIC_s^*+(H-h)DIC_d^*]=R C_{atm,280}$$
+$$\rho A[hDIC_s^*+(H-h)DIC_d^*]=r_{\mathrm{ocn/atm}} C_{atm,280}$$
 
 for the surface depth $h$, giving
 
-$$h=\frac{\rho AH DIC_d^*-R C_{atm,280}}{\rho A(DIC_d^*-DIC_s^*)}.$$
+$$h=\frac{\rho AH DIC_d^*-r_{\mathrm{ocn/atm}} C_{atm,280}}{\rho A(DIC_d^*-DIC_s^*)}.$$
 
 Use mol/kg for DIC and reject parameter choices that put $h$ outside $(0,H)$. With the default inputs the depth is about 298.75 m. The surface and deep volumes must sum to the 01 ocean volume. Do not use the rounded baseline ratio 57 to prepare geometry or tune the split against simulated output. Use the same total carbon, TA, T, S, P, chemistry settings, and atmospheric reservoir as the successful buffered 01 configuration. Surface and deep boxes can initially have the same TA, T, S, and P to isolate the new transport mechanism; explicitly say that the real ocean has TA and thermal gradients.
 
@@ -263,22 +310,35 @@ For the current 02 exercise, supply the first-order assumption and the time-depe
 There are two scientifically valid teaching routes; the current notebook uses **calibration-first**:
 
 - **Prediction-first:** obtain a reference export flux independently of the deep-DIC target, set `k = P_ref / DIC_s,ref`, choose Q separately, and compare the *predicted* stationary gradient with the observed gradient.
-- **Calibration-first:** use observed stationary surface/deep DIC and an independently selected Q to *infer* k. The observed gradient is then an input used to fit the closure and must not be called a prediction or validation. Report the implied pump flux and assess it against an independent export estimate if available. The gradient constrains k/(Q rho), not k and Q separately.
+- **Calibration-first:** use observed stationary surface/deep DIC and an independently selected Q to *infer* k. The observed gradient is then an input used to fit the closure and must not be called a prediction or validation. The gradient constrains k/(Q rho), not k and Q separately; retain this as an instructor note rather than an additional student question. Quantitative comparison with observed export is outside the core route.
 
 The calibration-first route is acceptable for this introductory exercise. At fixed total carbon and TA, compare pump-on with an otherwise identical pump-off control. The atmospheric xCO2, surface DIC, carbon transfer, and adjustment timescale are conditional model results; atmospheric xCO2 is not specified by the steady deep-box flux equation alone. Nonetheless, if 01 used observed xCO2 and surface DIC to infer TA and total carbon, do not advertise the resulting atmosphere as an independent observational validation. The closure `k DIC_s(t)` is deliberately effective: real biological export need not scale with the entire DIC pool.
 
-In B4 distinguish export evaluated at the reference state (135.95 Tmol C/yr)
-from export at the simulated pump-on equilibrium (125.29 Tmol C/yr): the same k
-acts on different surface DIC values. Relate the idealized DIC-only transfer
-qualitatively to the lecture's soft-tissue pump, while explaining that fitting
-the full DIC gradient does not isolate a real pump contribution. This replaces
-the early-adjustment prompt; quantitative attribution stays outside 02. A short
-optional export-comparison note supplies a source and cautions about the chosen
-Q, boundary depth, pathways and reference period; it adds no calculation.
+Keep Part B centred on the deep-box balance, the derivation of k and the existing
+atmospheric-CO2/pump–mixing figure. Put the full conservation equations in a
+collapsible reference. Remove the reference-versus-simulated export comparison,
+intermediate DIC/export printouts and deep-transfer diagnostic from the notebook;
+retain all conservation, fitted-ratio and stationary-flux checks with a compact
+success summary. B4 asks only which real-ocean pump the DIC-only transfer most
+closely resembles and what is omitted. Its short masked answer relates it to the
+soft-tissue pump without claiming to isolate a measured contribution.
+
+Background for instructors, outside the core route: published global organic
+carbon export estimates span roughly 5–12 Pg C/yr across different methods and
+pathway definitions ([Nowicki et al., 2022](https://doi.org/10.1029/2021GB007083)).
+Comparisons require matching export depth, pathways and reference period, as
+well as acknowledging the prescribed transport and unresolved recycling. This
+is not an additional task in 02.
 
 ### C. Synthetic carbon-addition and analytical check
 
-After the matched pump-on/pump-off experiment, add a finite, known amount of carbon to the atmosphere of the pump-on model. Students complete the supplied signal example with their calculated carbon inventory, inspect its integrated flux, check the combined carbon budget, and follow the system to equilibrium. This introduces the forcing mechanics needed later in 04 without making 02 an OA/OAE or sediment-response exercise.
+Bridge from B by explaining that fitting the DIC ratio fixes relative concentrations,
+while reaching the full reference state also requires the corresponding total
+carbon inventory. The pump redistributes the original inventory; the external
+input changes it. Students calculate that addition, insert it into the supplied
+signal example, and read compact input/budget/endpoint checks alongside the
+existing forcing figure. This introduces the forcing mechanics needed later in
+04 without making 02 an OA/OAE or sediment-response exercise.
 
 For the current exercise, give students the pumped ocean/atmosphere inventory ratio **62.4**, the reference atmospheric xCO2 and atmospheric mole inventory, and the existing mass-based combined carbon inventory $C_0$. Ask them to derive the carbon addition themselves, including its expression and numerical value, before inserting it into supplied forcing code. The instructor solution is
 
@@ -287,10 +347,10 @@ $$C_{atm,280}=N_{atm}(280\times10^{-6}),\qquad
 
 Equivalently, use the *calculated* baseline ocean/atmosphere inventory ratio
 
-$$R_0=\frac{C_0-C_{atm,280}}{C_{atm,280}},\qquad
-\Delta C=(62.4-R_0)C_{atm,280}.$$
+$$r_{\mathrm{ocn/atm},0}=\frac{C_0-C_{atm,280}}{C_{atm,280}},\qquad
+\Delta C=(62.4-r_{\mathrm{ocn/atm},0})C_{atm,280}.$$
 
-With the defaults, $R_0\simeq56.9998256$ and the addition is about 267.6326 Pmol C. The rounded lecture value 57 may be mentioned as an approximation, but must not replace the actual inventory in the geometry or forcing calculation. These are ocean/atmosphere inventory ratios, not seawater equilibrium capacity F (about 7.3 near the preindustrial state).
+With the defaults, $r_{\mathrm{ocn/atm},0}\simeq56.9998256$ and the addition is about 267.6326 Pmol C. The rounded lecture value 57 may be mentioned as an approximation, but must not replace the actual inventory in the geometry or forcing calculation. These are ocean/atmosphere inventory ratios, not seawater equilibrium capacity F (about 7.3 near the preindustrial state).
 
 Because the supplied geometry enforces the reference 62.4 ratio, the same addition must agree with the finite-box expression
 
@@ -304,9 +364,10 @@ it does not add another required coding block.
 
 The fitted DIC ratio, inferred TA and ratio-derived geometry intentionally make the reference state consistent. Injecting the calculated extra carbon and returning to 280 ppm verifies forcing implementation, conservation and analytical-versus-dynamic consistency. It is **not independent evidence for the pump hypothesis**. A mismatch should prompt a check of units, input inventory, chemistry and equilibration before changing any model inputs. Never overwrite the mass-consistent initial inventory to obtain agreement.
 
-Use R for the whole-reservoir ocean/atmosphere inventory ratio, separately from
-the lecture's seawater equilibrium capacity F; connect the two with the uniform
-01 relation before the carbon-addition exercise. Pulse duration is
+Use $r_{\mathrm{ocn/atm}}$ for the whole-reservoir ocean/atmosphere inventory ratio, separately from
+the lecture's seawater equilibrium capacity F; reserve R for the Revelle factor and place the uniform-01 relation
+in collapsible optional reference material before the carbon-addition exercise.
+Pulse duration is
 a supplied choice. Explain that changing duration at fixed mass changes the path,
 while the eventual equilibrium is unchanged if sufficient relaxation time is
 allowed. Numerical resolution and the forcing-integral check remain necessary.
@@ -316,7 +377,8 @@ models. ESBMTK 0.14 requires whole-year start/duration values in these models;
 reject unsupported fractional years and pulses touching the run boundaries.
 Keep this numerical machinery outside the student derivations and retain the
 user's selected 100-year example. It adds no required exercise.
-Keep interpolation details in a supplied-code note; consolidate repeated
+Keep duration experimentation and interpolation details in a collapsible optional
+note, with local clock syntax and the rerun instruction visible. Consolidate repeated
 calibration explanations into B3/B4 and C3, and use an ungraded stopping cue.
 
 ## 03 - Construct and reproduce the Boudreau-like three-box model
@@ -325,44 +387,135 @@ calibration explanations into B3/B4 and C3, and use an ungraded stopping cue.
 
 This is the model-construction exercise. Introduce its distinct low-/high-latitude surface boxes, circulation, explicitly represented POC and PIC fluxes, carbonate chemistry, weathering, dissolution, and burial. The benchmark's box-specific T, S, and P replace the simplifying uniform conditions of 01/02. The independent implementation and its conservation/stationarity checks matter more than forcing new scientific claims from the reproduced equilibrium.
 
-The guided 55-minute core has four mapping tasks: reservoir concentration/geometry
+The guided 55-minute core now begins with **Exercise 03.1: write paired DIC/TA
+flux equations and label the diagram**, using box outlines, corrected ESBMTK
+source material, selected reservoir/baseline Excel inputs and short row hints.
+Use one amount-flux law for each process family, including zero TA effects;
+students identify the changing inputs to each rate, prescribed constant rates,
+and the two fluxes whose difference gives signed net burial.
+Supply chemistry and dissolution dependency functions, then ask for the paired
+stoichiometry and the export/dissolution relation. Q, physical rho Q and box mass
+are distinct quantities. Use Q for water volume transport throughout, with
+J_ij^X(t) = rho_i Q_ij X_i(t) for the physical tracer flux. Keep diagrams focused
+on boxes and process arrows, with equations in the companion table.
+A supplied J/m rule connects flux to concentration
+tendency. Preserve the historical transport caveat. The contour question follows
+the flux equations and interprets the same POC/PIC/dissolution stoichiometry.
+Supply the F3/F5, inverted rain-ratio and inorganic-weathering corrections rather
+than asking students to guess between inconsistent sources. Show dissolution
+explicitly, separate material from information arrows, and identify the sediment
+process module without inventing a sediment-carbon reservoir. Signed net burial
+equals export minus dissolution and is not an additional implemented drain.
+State the model assumptions beside the rows; expand biological TA effects in
+reference notes and explain each native flux law directly at the B2 mapping. Keep the
+weathering caveat concise: real riverine input need not have exactly the model's
+1 DIC : 2 TA ratio. Detailed nutrient/sediment equations stay optional.
+
+Present 03.1 in three steps: paired fluxes, diagram labelling, and one internal
+inventory cancellation. Put notation and hints beside the relevant task and
+define the physical snowline on first use. Consolidate gas-law explanation in
+reconstruction; construction then explains the native mapping. Keep the full
+transport-unit caveat at the code mapping, with a short advance notice in 03.1.
+Make duplicate workbook cross-references and numerical audit details expandable,
+while retaining visible input rows, physical drift limits and all core questions.
+These are presentation changes within the existing provisional allocation;
+pilot/fallback guidance stays in the teaching plan rather than student instructions.
+
+Define a restart as a new run initialized from saved model values before first
+using the term. Explain `scale_with_concentration` directly as coefficient times
+current source concentration. Do not introduce or compare a broader
+state-dependence category; the concrete flux laws are sufficient for this task.
+For C2, define the atm plus dissolved-ocn inventory boundary and reuse W_0 and
+the signed net burial already defined in A3. Ask for internal cancellation and
+the two boundary balances; omit a repeated burial derivation and the hypothetical
+additional-sink question. Budget closure does not
+require constant inventories; constant inventories additionally require balanced
+boundary inputs and outputs. Keep all these derivations inside solution markers.
+
+After the attempt, students reconcile their diagram with the named connection
+tables, then use that same specification in four mapping tasks: reservoir concentration/geometry
 fields, transport endpoints/species, POC/PIC choices and linked rates, and gas
 exchange endpoints/species. Supply the Model container, loops, chemistry/sediment
 wiring, weathering construction, flux-object retrieval and restart checks.
+Students choose the water and export laws as well as their endpoints/species.
+Their paired diagrams/flux worksheets are generated from shared teaching metadata
+and current input references, with selected student fields blank and no hidden
+answer formulas. These teaching records are not an executable process-input
+schema: specialized POC/PIC/weathering and sediment topology still resides in
+Python. Numerical input ownership remains unchanged.
 Students trace every diagram arrow even when its repeated code is supplied.
 Qualitative sediment transfers and response times remain core; detailed horizon
 equations and lookup-table mechanics move to `ref/sediment_reference.md`.
 
 Use the shared Excel model-definition workbook (`data/Boudreau_2010/model_definition.xlsx`) to make geometry, box-specific water properties and initial DIC/TA comparable side by side. Keep atmospheric size and initial CO2 in a separate table with their own units. The workbook owns reservoir inputs, boundary nodes, directed transport and gas-exchange definitions, and baseline process/chemistry/feedback parameters. Python validates and translates them without duplicate baseline values. Parameter references keep shared rates in one place; PIC and weathering TA remain linked to their carbon inputs. Show one row-to-ESBMTK mapping, then let students generalize it and construct the connections. Display density and inventory quantities calculated with ESBMTK. Loading the spreadsheet must not replace the model-construction exercise. Preserve explicit benchmark area/volume through the adapter; do not expose area_percentage or replace geometry with global hypsometry. Show each transport row as an arrow and require water balance before constructing connections.
 
+The partial reservoir example supplies T/S/P syntax rather than the complete
+scientific answer. Explain the retained historical transport-unit convention
+against 02's explicit Q rho rule. The revised allocation is 15 minutes for
+reconstruction/reconciliation, 20 for four mappings, 15 for the consolidated
+boundary budget and checks, and 5 for explanation. Remove duplicate boundary
+prompts, graph summaries and closing synthesis. Pilot this target; a longer
+reconstruction requires more time or an explicit further reduction.
+
+Supply three complementary checks: exact connection graph, time-resolved
+boundary-aware C/TA conservation, and absolute drift over a 20-year restart
+for six ocean DIC/TA states, atm CO2 and snowline. Inspect all saved times, not
+just endpoints. State tolerances in physical units; passing establishes local
+restart consistency, not stability, uniqueness or scientific validation.
+
 ## 04 - Use the verified model for scientific experiments
 
 **Core learning goal:** Use matched controls and clearly defined carbon/TA inputs
-to explain the coupled carbon-cycle response. Process attribution and feedback
-hypotheses are optional extensions outside the four-hour core.
+to explain the coupled carbon-cycle response. Extension teaching is suspended
+under the current scope instruction above.
 
-Reuse the same verified workbook configuration in 04 and pass independent copies to matched cases. Keep forcing choices visible in core experiment cells and feedback controls visible in the extension. Clearly distinguish workbook initial concentrations from the archived stationary restart: the extension's tagged-attribution experiment uses the workbook initial state, while complete-model runs load the restart. Changes to geometry, thermodynamics, transport or baseline process rates require a new stationary restart before interpreting perturbations.
+Reuse the same verified workbook configuration in 04 and pass independent copies to matched cases. Keep forcing choices visible in core experiment cells. Clearly distinguish workbook initial concentrations from the saved nearly stationary state used for complete-model runs. Changes to geometry, thermodynamics, transport or baseline process rates require new compatible saved starting values before interpreting perturbations.
 
-Reserve for 04 the decomposition/attribution of equilibrium DIC or storage to distinct processes, OA and OAE experiments, and state-dependent POC/PIC hypotheses. State which quantities are prescribed and which are outputs. Audit forcing inventories, matched forced-minus-control comparisons, carbon and TA budgets, and PIC's linked 1:2 DIC-TA stoichiometry. Avoid calling a fitted equilibrium, a tagged attribution, or a feedback law an independent causal observation.
+Reserve the matched OA and OAE experiments for core 04. State which quantities are prescribed and which are outputs. Audit forcing inventories, matched forced-minus-control comparisons, carbon and TA budgets, and PIC's linked 1:2 DIC-TA stoichiometry. Avoid calling a fitted equilibrium an independent causal observation.
 
-The 40-minute core asks students to convert prescribed forcing inventories,
-select OA/OAE species and endpoints, inspect supplied boundary-aware carbon/TA
-audits, and interpret atmospheric CO2, surface pH, deep DIC and dissolution/burial
-anomalies. Core 04 also owns the former Part II response-chain explanations and
-full eight-panel OA/OAE figures, including the OA benchmark overlay. Supply plot
-implementation and a guided route through forcing, atmosphere/surface, deep ocean
-and sediment panels. Distinguish chemical horizons from sediment snowline memory
-and absolute benchmark reproduction from matched anomalies. Retain two coding
-tasks, four short answers and the same three runs; selected-panel reading shares
-the 15-minute interpretation allocation, with no extra panel-by-panel report.
-The archived signal has a small pre-1800 tail: show both the post-1800
-benchmark integral and the whole-run input used in conservation checks. Keep
-only Part I's tagged storage and Part III's feedback teaching in the self-contained
-`notebooks/instructor/extensions/04_attribution_and_feedbacks.ipynb` (and generated
-student copy). Supplied fixed-case prerequisites let the feedback section run in
-a fresh kernel, but do not duplicate the core response exercise or figures.
-The core does not run that extension. Do not move its scientific
-questions into 02 to save time.
+The 40-minute core starts with predictions and an experiment specification on
+the completed 03 diagram. Students convert forcing inventories and select species
+and endpoints; all three integrations, plotting and numerical audits are supplied.
+Display the exact solver input rates in B1, before matched responses in B2:
+separate carbon and TA units, with a normalized overlay for timing only. Retain
+the small pre-1800 tail and both interval/whole-run inventory checks. Reuse 03's
+active atm plus dissolved-ocn boundary and W_0 budget notation.
+
+Use full eight-panel figures after the anomalies to interpret pathways, critical
+depths and dissolution/burial, then the OA reproduction overlay. Define saturation
+horizon, compensation depth and snowline separately using the original 2010 papers.
+Explain the negative-elevation plotting convention and 200 m saturation bound.
+Supply the snowline rules in B3 before asking for interpretation: CCD shoaling
+leaves old sediment that must dissolve before the snowline retreats; CCD deepening
+allows the preservation boundary to follow effectively instantly at the plotted
+timescale, without resolving buildup of a thick sediment layer. Numerical tracking
+may leave a small lag. No student lookup or derivation of the raw sediment code is
+required. This response is relative to the changing CCD, not to the external input;
+transport/chemistry delays remain, and later shoaling in OAE can leave a lag too.
+The existing depth/memory answer asks students to apply these rules to plotted
+depths and burial, not infer an unspecified closure. No task or time is added.
+Read depth separation alongside dissolution/net burial rather than assuming
+all three horizons move together or mirror one another in OA/OAE.
+
+Retain two coding tasks and four short answers, now on forcing/response timing,
+carbon uptake/TA, critical depths/memory and asymmetry/limits. Consolidate repeated
+design prompts and remove the biological-response experiment proposal. Students
+cite selected curves and approximate times within the existing provisional
+15-minute interpretation allocation; no panel-by-panel report or new run is needed.
+Unequal species, amounts and entry boxes must be distinguished from nonlinear
+chemical and sediment mechanisms; these runs do not establish intervention
+efficiency, cancellation, stronger biological export or final equilibrium.
+Keep the 04 attribution/feedback extension and its implementation dormant until
+explicitly re-enabled, with no settings or teaching tasks in the core route.
+Pilot the revised reading and interpretation workload within the provisional 40 minutes.
+
+The separate optional `extensions/05_independent_model.ipynb` gives a 60–90-minute
+starter for independent modelling (pilot required). It supplies execution and
+plotting around student-selected scientific choices. The instructor example
+compares fixed and first-order export with equal initial fluxes in the 02 model;
+same-state matched transients are explicitly distinguished from stationary
+perturbation experiments. Keep it outside the four-hour core. It complements
+the core sequence; it does not reactivate the dormant 04 extension.
 
 ## Overall evaluation and boundaries
 
@@ -372,7 +525,7 @@ The 00 chemistry answer sheets support the supplied exercise 9; keep their
 static perturbations distinct from 04's coupled OA/OAE experiments. Notebook 03
 repeats diagram-to-code mapping at greater complexity through scaffolded
 construction and benchmark agreement. Notebook 04 requires matched OA/OAE
-analysis; tagged attribution and feedbacks require a separate optional session.
+analysis; attribution/feedback extension teaching is currently suspended.
 
 Implementation status is tracked in `WORKPLAN.md`. The revised instructor sources for 01/02 implement the TA-free diagnosis, matched conservative extension, student-derived first-order pump calibration, ratio-derived layer geometry, and finite forcing check. Their student copies are generated through the same masking workflow as 03/04; the original top-level paths link to both versions. Shared settings and ESBMTK-derived masses replace the earlier inconsistent chemistry, geometry and hard-coded inventory-ratio overwrite.
 

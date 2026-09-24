@@ -1,0 +1,107 @@
+energy through the atmosphere, starting from the
+short-wave solar radiation received at the top of the at-
+mosphere proceeding down to the surface of Earth.
+Along the way, more than half of the radiation either
+gets absorbed by the atmosphere and clouds, or gets
+reﬂected back into space.
+The short wavelength energy absorbed by the Earth’s
+surface warms the planet, and the Earth itself acts as a
+blackbody radiator, but because its temperature is
+much lower than that of the sun, most of its emitted
+radiation occurs at much longer wavelengths (Wien’s
+law), i.e., in the infrared band. In the absence of an
+atmosphere, the surface temperature of the Earth
+would warm until the surface radiated heat to space at
+the same rate as it intercepted radiation from the sun.
+This equilibrium temperature is given by the Stefan-
+Boltzmann law of blackbody radiation, Q ¼ sT
+4, where
+Q is the heat ﬂux, s ¼ 5.670/C2 10/C0 8 Wm /C0 2 K/C0 4 is the
+Stefan-Boltzmann constant, and T is the temperature
+in degrees Kelvin. The Earth receives an average solar
+radiation of about 235 W m
+/C0 2 after subtracting off the
+30% of the incoming solar radiation reﬂected back to
+space (
+ﬁgure 10.1.3). In this case with no atmosphere,
+the equilibrium temperature for the Earth is thus a
+frigid 255 K (/C0 18
+/C14 C).
+The presence of an atmosphere with gases that ab-
+sorb at infrared wavelengths, i.e., greenhouse gases,
+turns Earth into a much more habitable planet. The
+impact of such gases is illustrated by ﬁgure 10.1.4,
+which shows the ﬂux of energy emitted by the surface
+of the Earth as a function of wavelength. The dashed
+lines are the ideal blackbody radiation with no atmo-
+spheric interference. The solid line is the calculated
+clear-sky radiation ﬂux for a surface temperature of
+294 K with the effect of greenhouse gas absorption by
+the atmosphere included. This is what a satellite out-
+side the atmosphere would see if there were no clouds.
+The deviation of the solid line from the dashed line for
+294 K is due to absorption of outgoing radiation by
+greenhouse gases in the atmosphere. The minimum in
+outgoing radiation centered at 15 mm is due to absorp-
+tion by CO
+2, and that near 9–10 mm is due to absorption
+by ozone. The largest absorber of all is water vapor
+(table 10.1.1), which absorbs across a broad range of
+390
+350
+Back
+Radiation
+324
+40
+4
+Reflected Solar
+Radiation
+107 W m
+-2
+Incoming Solar
+Radiation
+342 W m
+-2342107
+67
+Reflected by Clouds
+Aerosol and
+Atmosphere 
+77 W m-2
+Reflected by 
+Surface
+30 W m-2
+Emitted by
+Atmosphere
+185 W m
+-2
+Outgoing
+Longwave
+Radiation
+235 W m
+-2
+Atmospheric
+Window
+40 W m
+-2
+30
+Greenhouse
+Gases
+Absorbed by
+Atmosphere
+7824
+Absorbed by Surface Evapo-
+transpiration
+Surface
+Radiation
+Absorbed by Surface
+168
+Rf l td b
+ls
+Coupling points
+Figure 10.1.3: Flow of energy through the atmosphere. Numbers are in watts per square meter of Earth’s surface, and some may be uncertain
+by as much as 20%. The greenhouse effect is associated with the absorption and reradiation of energy by atmospheric greenhouse gases
+and particles, resulting in a downward ﬂux of infrared radiation from the atmosphere to the surface (back radiation) and therefore in a higher
+surface temperature. Also shown are the coupling points between biogeochemical cycles and the physical climate system. Adapted from Kiehl
+and Trenberth [1997].
+395
+Carbon Cycle, CO 2, and Climate

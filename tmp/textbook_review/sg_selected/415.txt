@@ -1,0 +1,83 @@
+Chapter 10
+Carbon Cycle, CO 2, and Climate
+Throughout most of this book, our discussions have
+focused on the steady-state characteristics of the cycles
+of biogeochemically important elements in the ocean.
+However, as more about the past behavior of these cy-
+cles was learned, we have to come to realize that these
+cycles have seldom been in a ‘‘true’’ steady state. It
+appears that variability is as much a fundamental prop-
+erty of these biogeochemical cycles as it is a property of
+the climate system in general (see discussion in section
+2.5). In this last chapter, we explore the variability of
+these cycles on a range of timescales, from a few years
+to several hundred thousand years. In trying to un-
+derstand the mechanisms that give rise to these varia-
+tions, we will apply many of the tools and concepts that
+we have learned in the previous nine chapters. We will
+focus on the carbon cycle, because of its central role in
+biogeochemical cycling and its interaction with climate
+as a result of the greenhouse gas properties of CO
+2 in
+the atmosphere. This cycle is also of particular interest
+given the fact that humankind has began to perturb the
+global carbon cycle dramatically and likely will continue
+to do so.
+10.1 Introduction
+A very good indicator for the state of the global carbon
+cycle is atmospheric CO
+2, since it represents the con-
+centration of a relatively small reservoir that acts as a
+conveyor for the exchange of carbon between the two
+other important reservoirs of the global carbon cycle:
+the terrestrial biosphere, including the soils, and the
+ocean, including its sediments (ﬁgure 10.1.1). The
+amount of CO
+2 in the atmosphere is also small com-
+pared with the gross exchange ﬂuxes between it and the
+ocean and terrestrial biosphere, as reﬂected in the short
+residence time of about 6 to 8 years for CO
+2 in the
+atmosphere with respect to these exchange ﬂuxes. At-
+mospheric CO
+2 is therefore expected to react sensitively
+to changes in the global carbon cycle.
+Thanks to the preservation of tiny air bubbles in ice
+cores, researchers have been able to reconstruct con-
+centrations of atmospheric CO
+2 over the last 400,000
+years with great precision [ Inderm€uhle et al. , 1999; Petit
+et al. , 1999]. A summary of such reconstructions in
+ﬁgure 10.1.2 shows that atmospheric CO 2 has varied by
+nearly 100 ppm over the last 400,000 years, indicating
+that substantial changes must have occured in the
+distribution of carbon between the different reservoirs.
+Several observations stand out in ﬁgure 10.1.2. First,
+atmospheric CO
+2 has varied quasi-periodically over the
+last 400,000 years between approximately 180 ppm and
+280 ppm. These variations occurred in close concert
+with the glacial-interglacial cycles, with fully glacial
+conditions coinciding with the lower-bound CO
+2 con-
+centration of about 180 ppm, and interglacial condi-
+tions experiencing the upper-bound concentrations of
+about 280 ppm. This upper bound appears to be rather
+stable, and also characterizes the largest part of the
+current interglacial, the Holocene.
+The cause for these glacial-interglacial changes must
+be connected with the oceanic carbon cycle, since this
+reservoir controls atmospheric CO
+2 on any timescale
+longer than a few hundred years. We will discuss many
+hypotheses and mechanisms that have been proposed
+over the last two decades to explain these observed
+changes, but as it turns out, no mechanism proposed so
+far has been able to explain all existing constraints. In
+the near future, as scientists learn more about ocean
+circulation, biogeochemistry, and their interaction with
+the climate system during ice ages from detailed ana-
+lyses of climate records, we likely will be able to cor-
+rectly identify the mechanisms. However, at the mo-
+ment the causes of the glacial-interglacial variations in
+392

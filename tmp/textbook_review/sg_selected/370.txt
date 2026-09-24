@@ -1,0 +1,144 @@
+consistent with the variation of the saturation horizons
+for the two major phases of calcium carbonate, calcite
+and aragonite. The saturation horizon for aragonite, the
+more soluble phase, occurs in the Atlantic at depths of
+about 3000 m, whereas it lies within the main ther-
+mocline in the Paciﬁc and Indian Ocean [ Takahashi
+et al ., 1981, Broecker and Peng , 1982, Feely et al ., 2002,
+Chung et al ., 2003].
+The Gas Exchange Pump
+Let us turn now to the gas exchange pump. Figure 8.4.2
+reveals that the contribution of the gas exchange pump to
+the global mean vertical proﬁle of preindustrial sDIC
+amounts to only about 30 mmol kg
+/C0 1 (10%). How does
+this compare to what one would expect on the basis of the
+surface-to-deep temperature gradient? We can estimate
+this temperature-induced gradient by combining the
+temperature sensitivity of pCO
+2 (8.3.4) with the deﬁni-
+tion of the buffer factor (8.3.14) (see equation (10.2.31)).
+This gives, on average, a temperature sensitivity of DIC
+of about 8 to 9 mmol kg
+/C0 1 per degree of temperature
+change (see slope in ﬁgure 8.1.4b). Therefore, with a
+surface-to-deep temperature gradient of about 18
+/C14 C, one
+would expect a temperature-induced surface-to-deep
+gradient in sDIC of about 140 to 160 mmol kg
+/C0 1. This is
+several times larger than our estimate on the basis of
+DC
+gas ex. Such a small imprint of air-sea gas exchange on
+the distribution of sDIC is particularly surprising given
+the strong correlation of sDIC with temperature (ﬁgure
+8.1.4b). Why is this case? Is this small DCgas ex signal a
+result of the biological contribution, DCbio
+gas ex
+, offsetting
+the thermal component, DCtherm
+gas ex
+, or is it because of ki-
+netic limitations, i.e., the slow exchange of CO 2 not
+permitting the full temperature variations in the ocean to
+be reﬂected in sDIC?
+Consideration of DC
+gas ex in the different ocean ba-
+sins reveals additional puzzles (ﬁgure 8.4.3c). Hidden
+in the small global mean surface-to-deep difference of
+DC
+gas ex , we ﬁnd a very large imprint of the gas ex-
+change pump in the deep Atlantic. This indicates that
+these waters must have taken up a substantial amount
+of CO
+2 from the atmosphere before they descended into
+the deep Atlantic. The deep Paciﬁc and deep Indian
+have smaller and vertically more uniform values of
+DC
+gas ex . Figure 8.4.3c also shows that Antarctic Inter-
+mediate Water (AAIW), which dominates the deeper
+thermocline in the southern hemisphere (see salinity
+minimum in ﬁgure 2.4.1), has comparatively low
+concentrations of DC
+gas ex , suggesting that the source
+waters for AAIW have lost CO 2 to the atmosphere be-
+fore they descended into the ocean’s interior. What are
+the reasons for these spatial variations in DC
+gas ex , and
+why does the deep Atlantic have such high concentra-
+tions of DC
+gas ex in comparison to the deep Indian and
+Paciﬁc?
+The latter question is linked to an important research
+topic in global carbon cycle research. Since deep waters
+in the Atlantic ﬂow southward, these high concentra-
+tions of DC
+gas ex provide a conduit for transporting CO 2
+taken up by the ocean in the northern hemisphere
+into the southern hemisphere, where it is released back
+into the atmosphere. In a preindustrial steady-state, such
+an oceanic southward transport of CO
+2 must have been
+compensated by a northward transport of CO 2 in the
+atmosphere. This requires the existence in preindustrial
+times of a south-to-north concentration gradient in at-
+mospheric CO
+2. Accurate knowledge of such a prein-
+dustrial interhemispheric gradient in atmospheric CO 2
+is of prime importance for atmospheric inverse studies
+that attempt to determine the present sources and sinks
+of anthropogenic CO
+2 in the global carbon cycle [ Keeling
+et al., 1989; Tans et al ., 1990; Ciais et al ., 1995; Fan et al .,
+1998; Gurney et al ., 2002; Gloor et al ., 2003]. This is be-
+cause one requires accurate estimates of all natural
+processes causing atmospheric CO
+2 variations, before
+the inversions can determine where anthropogenic CO 2
+is taken up currently at the surface of the Earth.
+We continue our discussion of the DCgas ex distribu-
+tion by addressing next the puzzle of the small global
+mean contribution of the gas exchange pump, and
+consider the Atlantic gas exchange signal afterwards. As
+we will see, however, the underlying cause for these two
+patterns is the same. It is the interaction of air-sea ﬂuxes
+of heat with ocean biology and large-scale ocean circu-
+lation that determines how strongly the gas exchange
+pump inﬂuences the oceanic sDIC concentrations.
+Global Mean
+The ﬁrst key to understanding variations in DC
+gas ex is to
+recall that both heat ﬂuxes and biological processes
+control the exchange of CO
+2 across the air-sea interface
+(see (8.4.4)). The second key is that the exchange of CO 2
+across the air-sea interface is slow relative to the resi-
+dence time of waters near the surface. This prevents full
+expression of the impact of both heat ﬂuxes and biolog-
+ical changes on the respective gas exchange ﬂuxes.
+It is therefore instructive to separate the gas ex-
+change pump even further into potential components
+(DC
+bio, pot
+gas ex , DCtherm, pot
+gas ex ) that would reﬂect the DCgas ex
+distribution if gas exchange were inﬁnitely rapid, and
+into kinetic components ( DC
+bio, kin
+gas ex , DCtherm, kin
+gas ex )t h a t
+describe the changes from an inﬁnitely rapid exchange
+to a case with realistic air-sea gas exchange:
+DCbio
+gas ex ¼ DCbio, pot
+gas ex þ DCbio, kin
+gas ex (8:4:6)
+DCtherm
+gas ex ¼ DCtherm, pot
+gas ex þ DCtherm, kin
+gas ex (8:4:7)
+The role of each of these four gas exchange compo-
+nents can be understood better by returning to the
+thought experiments we introduced at the beginning of
+347
+Carbon Cycle

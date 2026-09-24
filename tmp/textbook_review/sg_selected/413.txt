@@ -1,0 +1,55 @@
+9.6 Compute the saturation states DCO2/C0
+3 and O with respect to calcite and
+aragonite, respectively, for a water parcel at a depth equivalent to 6000
+dbar with the following properties: T ¼ 0
+/C14 C, S ¼ 35, DIC ¼ 2300 m mol kg/C0 1,
+Alk ¼ 2400 m mol kg/C0 1. Use the saturation concentrations given in
+table 9.3.4.
+9.7 Explain the reason for the large spatial variability exhibited by the carbonate
+saturation horizon with respect to calcite in ﬁgure 9.3.2b, i.e., why is this
+horizon more than 4000 m deep in the Atlantic, and less than 1000 m deep in
+the North Paciﬁc?
+9.8 Compute the fraction of CaCO
+3 exported from 100 m depth that arrives at the
+sediments 4000 m below, given the following characteristics for the CaCO 3
+particles: sinking speed ¼ 50 m day/C0 1, ﬁrst-order dissolution kinetics (i.e.,
+n ¼ 1), and kCaCO3 ¼ 0:01 day/C0 1. Assume two cases:
+a. Constant undersaturation of O ¼ 0.9.
+b. Saturation at 100 m, and O linearly decreasing with depth to reach
+O ¼ 0.7 at 4000 m.
+c. How do the answers given in (a) and (b) change if you assume a sinking
+speed of 100 m day /C0 1, and a kCaCO3 ¼ 0:38 day /C0 1?
+9.9 Contrast the CaCO 3 content of sediments shown in ﬁgure 9.1.3 with that for
+opal (ﬁgure 7.1.3). Discuss what controls the burial pattern of these two
+minerals in the sediments. In particular, discuss the relative roles of surface
+production, water column dissolution, and sediment processes in deter-
+mining the burial.
+9.10 Schematically illustrate the expected global mean vertical proﬁle of the car-
+bonate ion concentration, ½CO
+2/C0
+3 /C138 , for the following cases:
+a. Abiological ocean with air-sea gas exchange (assume constant
+alkalinity).
+b. Ocean with no air-sea gas exchange, but active soft-tissue pump.
+c. Ocean with no air-sea gas exchange and no soft-tissue pump, but with
+active carbonate pump.
+Assume in all cases (somewhat incorrectly) that atmospheric CO
+2 is ﬁxed at
+its preindustrial value of 280 ppm. Compare these cases with the observed
+vertical proﬁles shown in ﬁgure 9.1.2. Discuss also the implications of these
+ﬁndings for the saturation state of seawater with regard to calcite and
+aragonite.
+9.11 What happens to the saturation horizon if the export ratio of organic carbon-
+to-CaCO
+3 increases? Assume that no change occurs in the vertical reminer-
+alization and dissolution proﬁles.
+a. Consider ﬁrst a case in which there is no feedback from the
+sediments, i.e., the dissolution ﬂux from the sediments remains
+unchanged.
+b. Consider a second case where the change in saturation horizon inter-
+acts with the sediments. Assume, for simplicity, that the dissolution of
+CaCO
+3 in the sediments is entirely driven by the saturation state of the
+waters overlying the sediments.
+390
+Chapter 9

@@ -1,0 +1,96 @@
+CaCO3 is in the form of aragonite [ Berner and Honjo ,
+1981; Fabry, 1990]. Therefore, either a much larger
+fraction of the CaCO 3 exported from the surface ocean
+consists of aragonite or of a more soluble form of calcite,
+such as high-magnesium calcite [Iglesias-Rodrı´guez et al.,
+2002a], or dissolution occurs through other mechanisms
+than just corrosion driven by the saturation state of
+seawater. Fiadeiro [1980] suggested that dissolution of
+CaCO
+3 above the CaCO 3 saturation horizons may occur
+in connection with biological transformations. One such
+possible mechanism is dissolution in the acidic guts and
+feces of grazers. Another mechanism involves the mi-
+crobial oxidation of organic matter in sinking material
+[Alldredge and Cohen, 1987]. This reaction produces CO
+2,
+and hence creates an acidic micro-environment condu-
+cive to dissolution.
+In summary, it appears that the cycling of CaCO
+3 in
+the water column is much more dynamic than previ-
+ously thought, and that the old paradigm of a conser-
+vative behavior of CaCO
+3 above the calcite saturation
+horizon needs to be discarded. It is not yet clear what
+the new paradigm will be, as not much is really known
+about the processes that control the cycling of particles
+(organic and inorganic) in the main thermocline. A ﬁrst
+step may be the separation of the sinking pool of
+CaCO
+3 particles into a meta-stable pool, e.g., high-Mg
+calcite, that has a much higher solubilty and gets dis-
+solved well above the saturation horizon for calcite, and
+into a second pool that consists of pure calcite, which
+settles to the bottom of the ocean without undergoing
+much dissolution at all.
+Reconciling these uncertainties is of great impor-
+tance for considering the impact of the decrease in
+saturation state of the upper ocean arising from the
+accumulation of anthropogenic CO
+2 in the ocean (see
+also discussion in chapter 10). We can readily see from
+(9.3.6) that the increase in DIC caused by the invasion
+of anthropogenic CO
+2 from the atmosphere decreases
+the CO 2/C0
+3 concentration, and hence lowers DCO2/C0
+3 , i.e.,
+the saturation state. Feely et al. [2004a] showed that the
+anthropogenic CO 2 that is present in the ocean (see
+Figure 10.2.7) has already lifted the saturation horizon
+for aragonite by up to several hundred meters in areas
+where anthropogenic CO
+2 has penetrated to the depth
+of this horizon. As anthropogenic CO 2 is very likely to
+increase far above present levels in the ocean (see
+chapter 10), this change in the saturation state will
+likely become much larger, possibly having an impact
+1000
+2000
+3000
+4000
+5000
+6000
+800
+0
+400
+0 5,000 10,000 25,000 20,00015,000 30,000
+Distance [km]
+Depth (m)Depth (m)
+60°N Eq 60°S30°N 30°S 60°S Eq 60°N 30°S 30°N
+ATLANTIC PACIFIC SOUTHERN OC.
+Mid-Atl. Ridge
+Iceland
+Hawaii
+Aleutian Isl.
+70
+20
+30
+40
+50
+60
+10
+0
+∆DICCaCO3
+∆CO3
+2- (arag)=0
+∆CO3
+2- (calc)=0
+Figure 9.3.4: Vertical section of DDICCaCO3 along the track shown in ﬁgure 2.3.3a. Also shown are the saturation horizons for aragonite
+and calcite (i.e., the zero isolines of DCO2/C0
+3 ). Above these isolines, waters are supersaturated with respect to the respective mineral phases,
+whereas waters are undersaturated below these lines. The onset of a signiﬁcant dissolution signal tends to coincide with the saturation horizon
+for aragonite.
+373
+Calcium Carbonate Cycle

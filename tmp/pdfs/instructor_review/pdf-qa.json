@@ -1,0 +1,397 @@
+[
+  {
+    "file": "00_PyCO2SYS.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "chars": 2759,
+        "images": 0
+      },
+      {
+        "page": 2,
+        "chars": 2166,
+        "images": 0
+      },
+      {
+        "page": 3,
+        "chars": 1378,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "chars": 1934,
+        "images": 0
+      },
+      {
+        "page": 5,
+        "chars": 2000,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "chars": 2026,
+        "images": 0
+      },
+      {
+        "page": 7,
+        "chars": 2717,
+        "images": 0
+      },
+      {
+        "page": 8,
+        "chars": 2288,
+        "images": 0
+      }
+    ]
+  },
+  {
+    "file": "01_single_box_air_sea_CO2.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "chars": 3186,
+        "images": 0
+      },
+      {
+        "page": 2,
+        "chars": 2622,
+        "images": 0
+      },
+      {
+        "page": 3,
+        "chars": 2732,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "chars": 1863,
+        "images": 1
+      },
+      {
+        "page": 5,
+        "chars": 3134,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "chars": 1291,
+        "images": 0
+      },
+      {
+        "page": 7,
+        "chars": 1228,
+        "images": 1
+      },
+      {
+        "page": 8,
+        "chars": 3069,
+        "images": 0
+      },
+      {
+        "page": 9,
+        "chars": 2354,
+        "images": 0
+      },
+      {
+        "page": 10,
+        "chars": 67,
+        "images": 1
+      },
+      {
+        "page": 11,
+        "chars": 67,
+        "images": 1
+      },
+      {
+        "page": 12,
+        "chars": 865,
+        "images": 1
+      },
+      {
+        "page": 13,
+        "chars": 2208,
+        "images": 1
+      },
+      {
+        "page": 14,
+        "chars": 3931,
+        "images": 0
+      },
+      {
+        "page": 15,
+        "chars": 2265,
+        "images": 0
+      },
+      {
+        "page": 16,
+        "chars": 2084,
+        "images": 0
+      },
+      {
+        "page": 17,
+        "chars": 1337,
+        "images": 1
+      }
+    ]
+  },
+  {
+    "file": "02_two_layer_ocean_carbon_pump.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "chars": 2854,
+        "images": 0
+      },
+      {
+        "page": 2,
+        "chars": 3151,
+        "images": 0
+      },
+      {
+        "page": 3,
+        "chars": 3101,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "chars": 3210,
+        "images": 0
+      },
+      {
+        "page": 5,
+        "chars": 2033,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "chars": 2526,
+        "images": 0
+      },
+      {
+        "page": 7,
+        "chars": 2458,
+        "images": 0
+      },
+      {
+        "page": 8,
+        "chars": 1054,
+        "images": 1
+      },
+      {
+        "page": 9,
+        "chars": 3106,
+        "images": 0
+      },
+      {
+        "page": 10,
+        "chars": 2600,
+        "images": 0
+      },
+      {
+        "page": 11,
+        "chars": 3464,
+        "images": 0
+      },
+      {
+        "page": 12,
+        "chars": 911,
+        "images": 1
+      },
+      {
+        "page": 13,
+        "chars": 1815,
+        "images": 0
+      }
+    ]
+  },
+  {
+    "file": "03_boudreau_three_box_model.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "chars": 3097,
+        "images": 0
+      },
+      {
+        "page": 2,
+        "chars": 3024,
+        "images": 0
+      },
+      {
+        "page": 3,
+        "chars": 1852,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "chars": 2777,
+        "images": 0
+      },
+      {
+        "page": 5,
+        "chars": 1233,
+        "images": 1
+      },
+      {
+        "page": 6,
+        "chars": 1445,
+        "images": 1
+      },
+      {
+        "page": 7,
+        "chars": 1198,
+        "images": 0
+      },
+      {
+        "page": 8,
+        "chars": 953,
+        "images": 1
+      },
+      {
+        "page": 9,
+        "chars": 1191,
+        "images": 1
+      },
+      {
+        "page": 10,
+        "chars": 1647,
+        "images": 0
+      },
+      {
+        "page": 11,
+        "chars": 2094,
+        "images": 0
+      },
+      {
+        "page": 12,
+        "chars": 2547,
+        "images": 0
+      },
+      {
+        "page": 13,
+        "chars": 2186,
+        "images": 0
+      },
+      {
+        "page": 14,
+        "chars": 2393,
+        "images": 0
+      },
+      {
+        "page": 15,
+        "chars": 2504,
+        "images": 0
+      },
+      {
+        "page": 16,
+        "chars": 1933,
+        "images": 0
+      },
+      {
+        "page": 17,
+        "chars": 1975,
+        "images": 0
+      },
+      {
+        "page": 18,
+        "chars": 2559,
+        "images": 0
+      },
+      {
+        "page": 19,
+        "chars": 2291,
+        "images": 0
+      },
+      {
+        "page": 20,
+        "chars": 2071,
+        "images": 0
+      },
+      {
+        "page": 21,
+        "chars": 197,
+        "images": 0
+      },
+      {
+        "page": 22,
+        "chars": 2205,
+        "images": 0
+      },
+      {
+        "page": 23,
+        "chars": 1737,
+        "images": 0
+      }
+    ]
+  },
+  {
+    "file": "04_pump_strength_OA_OAE.pdf",
+    "pages": [
+      {
+        "page": 1,
+        "chars": 2659,
+        "images": 0
+      },
+      {
+        "page": 2,
+        "chars": 3257,
+        "images": 0
+      },
+      {
+        "page": 3,
+        "chars": 1470,
+        "images": 0
+      },
+      {
+        "page": 4,
+        "chars": 2432,
+        "images": 0
+      },
+      {
+        "page": 5,
+        "chars": 2964,
+        "images": 0
+      },
+      {
+        "page": 6,
+        "chars": 2279,
+        "images": 1
+      },
+      {
+        "page": 7,
+        "chars": 1826,
+        "images": 0
+      },
+      {
+        "page": 8,
+        "chars": 690,
+        "images": 1
+      },
+      {
+        "page": 9,
+        "chars": 3430,
+        "images": 0
+      },
+      {
+        "page": 10,
+        "chars": 595,
+        "images": 0
+      },
+      {
+        "page": 11,
+        "chars": 218,
+        "images": 1
+      },
+      {
+        "page": 12,
+        "chars": 319,
+        "images": 1
+      },
+      {
+        "page": 13,
+        "chars": 4108,
+        "images": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+N2O together account for about 27% of the total an-
+thropogenic radiative forcing, and chloroﬂuorocarbons
+for the remaining 12%.
+An estimate of the surface warming that will result
+from the increased greenhouse trapping can be ob-
+tained by use of a simple zero-dimensional heat balance
+model:
+H dDT
+dt ¼ DQ /C0 lDT (10:1:1)
+where H (W m/C0 2 K/C0 1 s) is the heat capacity of the
+combined ocean and atmosphere system, DT is the
+change in surface temperature, DQ (W m/C0 2) is the ra-
+diative forcing given in table 10.1.1, and l (W m/C0 2 K/C0 1),
+is referred to as the climate sensitivity parameter. In
+equilibrium, (10.1.1) gives
+DT ¼ DQ
+l (10:1:2)
+The value of l is usually determined from the response
+of a variety of climate models to perturbations in radi-
+ative forcing [Cubasch et al., 2001]. A value of 3.3 W m
+/C0 2
+K/C0 1 is obtained by assuming that absorption of infrared
+radiation by greenhouse gases occurs without any feed-
+backs. However, global warming increases the water
+vapor content, which further increases the absorption.
+It also modiﬁes the vertical gradient of temperature
+(lapse rate) in the atmosphere. Further feedbacks in-
+clude changes in snow and ice cover, which affect al-
+bedo; cloud cover, and its interaction with short- and
+long-wave radiation; and several more. Consideration
+of these feedbacks signiﬁcantly reduces l to about
+1.8 ± 0.7 W m
+/C0 2 K/C0 1, with the uncertainty estimate re-
+ﬂecting the range of results from a variety of models. An
+analysis of the effect of individual feedbacks shows that
+the cloud feedback is by far the largest contributor to the
+overall uncertainty. Using this climate sensitivity, we
+obtain an equilibrium warming of 1.5 to 3.4 K for a CO
+2
+doubling ( DQ ¼ 3.7 W m/C0 2 [Ramaswamy et al. , 2001]).
+The equilibrium climate warming for a CO 2 doubling
+reported by Houghton et al. [2001] is 1.5 to 4.5 K, which
+requires l ¼ 1.7 ± 0.8 W m/C0 2 K/C0 1.
+The total increase of 2.43 W m /C0 2 in infrared trap-
+ping over the last 200 years shown in table 10.1.1
+should thus give an equilibrium warming of 1.0 to
+3.0 K. Additional changes in radiative forcing shown in
+table 10.1.3 include the effect of increased stratospheric
+water vapor due to production from methane, changes
+in tropospheric and stratospheric ozone, direct solar
+forcing, and the cooling effect of aerosols. Aerosol cool-
+ing explains some unusual observations about the pat-
+tern of warming. One of these is that the southern
+hemisphere has warmed more than the northern. This
+is due to the larger production of aerosols in the
+northern hemisphere and their limited atmospheric
+lifetime, which prevents them from being spread into
+the southern hemisphere. The other is that northern
+hemisphere warming has been greatest at night. Aero-
+sols increase reﬂection of solar radiation from the
+Earth, so their cooling effect should be felt more during
+the day. The combined impact of the additional radia-
+tive forcing terms reduces the total current radiative
+forcing to 1.5 W m
+/C0 2. This gives an equilibrium warm-
+ing of 0.6 to 1.8 K. The observed warming over the last
+century is smaller, 0.3 to 0.6 K (ﬁgure 10.1.5). However,
+our estimate assumes that the temperature of the
+whole climate system has equilibrated with the in-
+crease in radiative forcing, whereas, in reality, the large
+heat capacity of the ocean and the slow rate of mix-
+ing has led to a substantial slowdown of the warm-
+Table 10.1.2
+Radiative forcing per additional molecule
+relative to the radiative forcing due to one
+additional molecule of CO
+2
+Radiative forcing for changes in CO 2 from an initial
+mixing ratio Co can be estimated from DQ ¼ 6.3 ln (C/
+Co)Wm /C0 2 for CO2 < 1000 ppm. From Houghton et al.
+[1990].
+Gas Relative Forcing
+CO
+2 1
+CH4 21
+N2O 206
+CFC-11 12,400
+CFC-12 15,800
+Table 10.1.3
+Radiative forcing changes between 1765 and early
+1990s, based on Ramaswamy et al. [2001]
+Midpoint
+(W m/C0 1)
+Range
+(W m/C0 1)
+From table 10.1.1 2.43 ±15%
+H
+2Oa 0.02
+Ozone
+troposphere 0.35 (0.2 to 0.5)
+stratosphere /C0 0.15 ( /C0 0.05 to /C0 0.25)
+Aerosols
+biomass burning /C0 0.2 ( /C0 0.1 to /C0 0.6)
+sulfate /C0 0.4 ( /C0 0.2 to /C0 0.8)
+soot (black carbon) 0.2 (0.1 to 0.4)
+organic carbon /C0 0.1 (0.03 to 0.3)
+mineral dust — ( /C0 0.6 to 0.4)
+indirect effect on /C0 1.0 (0 to /C0 2.0)
+cloud albedo
+Change in solar
+forcing since 1850
+0.3 (0.1 to 0.5)
+total 1.5
+a The increase in radiative forcing for water vapor is only that
+portion due to the effect of increased methane on water vapor in the
+stratosphere.
+397
+Carbon Cycle, CO 2, and Climate

@@ -1,0 +1,22 @@
+# Student alternative for existing Anaconda/Miniconda installations.
+# A portable recipe, not a fully resolved lockfile; see ref/anaconda_setup.md.
+name: esbmtk-practicals
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.14
+  - pip
+  # Conda owns Python; pip owns the entire course package stack. Keep that
+  # separation when maintaining this environment to avoid overlapping installs.
+  - pip:
+      - esbmtk==0.14.3.1.post0
+      - PyCO2SYS==1.8.3.4
+      - numpy
+      - scipy
+      - matplotlib
+      - pandas
+      - gsw
+      - openpyxl>=3.1,<4
+      - jupyterlab
+      - ipykernel

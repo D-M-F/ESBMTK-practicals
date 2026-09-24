@@ -1,0 +1,108 @@
+that they have continued to do so ever since. There are
+two lines of evidence that support this hypothesis. First,
+atmospheric CO
+2 remained remarkably stable for several
+thousand years before the eighteenth century (see ﬁgure
+10.1.2), indicating that the ﬂuxes controlling the surface
+ocean total carbon content were in balance. Second, ac-
+cording to present knowledge, marine phytoplankton are
+controlled by nutrients (including micronutrients), light,
+and vertical stability of the water column, but not by the
+CO
+2 concentration. Therefore the biological pumps do
+not sequester anthropogenic carbon, but rather act as a
+natural background process continuing to work as in
+preindustrial times.
+The lack of a role of marine biota in the uptake of an-
+thropogenic CO
+2 over the last two centuries is demon-
+strated by the model study of Murnane et al. [1999], who
+carried out a simulation of oceanic uptake in two models,
+one that contained just the solubility pump and a second
+combined simulation that included the biological pump.
+The combined simulation took up 5% less anthropogenic
+CO
+2 than the solubility model, indicating that adding bi-
+ology had only a minimal impact on the anthropogenic
+CO
+2 uptake. The small reduction in uptake occurs be-
+cause the biological pump reduces surface alkalinity and
+hence storage capacity for anthropogenic CO
+2. If the sol-
+ubility simulation used the same surface alkalinities as the
+combined model, then both would take up the same
+amount of anthropogenic CO
+2.
+One cannot assume, however, that the steady-state
+operation of the biological pumps will continue forever
+into the future. Moreover, the above discussion about the
+possible impact of the observed ocean warming on the
+oceanic oxygen cycle even suggests that the steady-state
+assumption for the oceanic carbon cycle over the twen-
+tieth century may need to be reevaluated.
+Future climate changes associated with the buildup
+of greenhouse gases in the atmosphere will quite likely
+modify the biological pump–driven ﬂuxes, which could
+then feed back on the atmospheric composition. Al-
+terations of the biological pumps, for instance, have
+been proposed as a possible cause for the dramatic
+changes in atmospheric CO
+2 between the glacial and
+interglacial periods. It is difﬁcult at present to assess
+how the biological pump will respond to future climate
+changes and how it will interact with changes in ocean
+circulation and mixing.
+Future CO
+2 Uptake
+The primary factor controlling the future uptake of
+anthropogenic CO 2 by the ocean is the atmospheric
+CO2 burden in excess over the atmospheric CO 2 con-
+centration in equilibrium with the total emissions
+[Sarmiento et al. , 1995], as this represents the thermo-
+dynamic driving force for the uptake of CO
+2 from the
+atmosphere. In the absence of major feedbacks, para-
+doxically, the higher the future anthropogenic CO
+2
+concentration in the atmosphere, the higher the oce-
+anic uptake will be.
+Changes in ocean temperature, salinity, circulation,
+and the ocean’s biological pump have, however, the
+potential to substantially alter this uptake, both directly,
+by impacting the uptake of anthropogenic CO
+2, and
+indirectly, by altering the air-sea balance of the natural
+CO
+2 cycle. Any climate change–induced alteration in
+the future uptake of anthropogenic CO 2 by the ocean
+will lead to feedbacks in the climate system, as the al-
+tered atmospheric CO
+2 concentration will either accel-
+erate (positive feedback) or decelerate (negative feed-
+back) the initial climate change.
+It is instructive to ﬁrst discuss the impact of climate
+change on the oceanic uptake of anthropogenic CO
+2, and
+only thereafter investigate the impact on the natural
+carbon cycle. A summary of all feedbacks is given in table
+10.2.4. For more detailed discussions, the reader is re-
+ferred to Plattner et al. [2001] and Gruber et al. [2004].
+Table 10.2.4
+Summary of Marine Carbon Cycle Feedbacks
+Process Sign Magnitude y
+Uncertainty/
+Understanding
+Anthropogenic CO2 Uptake Feedbacks
+Chemical feedback Positive H Low/high
+Circulation feedback
+(anthropogenic CO
+2) Positive H Medium/medium
+Natural Carbon Cycle Feedbacks
+Temperature/salinity feedback Positive M Low/medium to high
+Circulation feedback
+(constant biota) Negative M-H Medium/medium
+Ocean biota feedback
+(circulation constant) Positive/negative M High/low
+ySubjectively estimated (M: medium; H: high)
+415
+Carbon Cycle, CO 2, and Climate

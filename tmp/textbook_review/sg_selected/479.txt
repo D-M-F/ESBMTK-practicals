@@ -1,0 +1,61 @@
+occurs in regions of low SST and vice versa. Discuss the implications of this
+ﬁnding for the response of the surface ocean pCO
+2 to variations associated
+with ENSO.
+10.12 Discuss the impact of ENSO on the air-sea exchange of natural and an-
+thropogenic CO2 in the tropical Paciﬁc.
+10.13 Use the three-box model of the equatorial Paciﬁc (ﬁgure 10.3.7) for inves-
+tigating the impact of ENSO on surface ocean properties and atmospheric
+CO
+2. (Note that this model is structurally very similar to the three-box model
+of the global ocean, except that the overturning circulation is reversed.)
+The area of the equatorial surface box is 22 /C2 10
+12 m2 and that of the mid-
+latitude box is 100 /C2 1012 m2. The depths are given in ﬁgure 10.3.7.
+a. Write down the phosphate balance equations for the three boxes given
+the assumption that biological uptake and export depend linearly on
+the phosphate concentration, i.e., F ¼ l /C1 [PO
+3/C0
+4 ], and that all organic
+phosphorus exported from the surface boxes remineralizes within the
+thermocline box.
+b. Plot the phosphate concentration in the equatorial and mid-latitude
+box as a function of the upwelling mass ﬂux, F
+u. Set the exchange ﬂux
+FMT to 25 Sv. Assume a mean phosphate concentration of
+1 mmol m/C0 3. Assume for l a value of 1/30 day /C0 1.
+c. Discuss the expected biologically induced air-sea exchange ﬂuxes,
+considering what you learned in chapter 8 about the relationship be-
+tween residual nutrients and this biologically induced ﬂux. Assume a
+mean DIC concentration of 2100 mmol m
+/C0 3 and a constant carbon-to-
+phosphorus stoichiometry, rC:PO4 of 117:1.
+d. Add DIC and Alk to the model, but do not yet consider air-sea exchange.
+Compute the DIC concentration, and the pCO2 in the two surface
+boxes. Assume a constant Alk of 2320 mmol kg/C0 1 and use the lookup
+table for problem 8.14 in chapter 8. The temperature of the equatorial
+upwelling box is 22
+/C14 C and that of the mid-latitude box is 26 /C14 C.
+e. Compute the exchange ﬂux of CO 2 between the two surface boxes and
+the atmosphere for a ﬁxed atmospheric CO 2 of 360 matm. Assume
+that this exchange is a small fraction of the total carbon balance,
+permitting you to neglect it in the computation of the surfaceDIC. Use
+the global mean gas exchange coefﬁcient for CO
+2 given in chapter 3.
+f. Investigate how the air-sea gas exchange varies as you change the
+upwelling ﬂux from the thermocline, Fu, from 55 Sv (for La Nin˜a
+condition) to 5 Sv (for El Nin˜o condition). (To keep the problem
+manageable, keep atmospheric CO 2 constant as before.) If you keep
+the anomalous air-sea ﬂux constant for a year, how much would you
+change atmospheric CO
+2, actually?
+g. Finally, consider the fully coupled system, i.e., make the carbon in the
+atmosphere an integral part of the carbon balance in the system. This
+problem requires a numerical solution.
+10.14 List and discuss the various lines of evidence which suggest that the amount
+of carbon stored in the terrestrial biosphere was much lower during the last
+glacial maximum than it is today.
+10.15 Why can we assume that only a small fraction of the carbon lost from
+the terrestrial biosphere during glacial times remained in the atmosphere?
+Chapter 10
+456

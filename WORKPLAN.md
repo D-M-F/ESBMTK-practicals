@@ -1,5 +1,387 @@
 # Implementation workplan
 
+## Lecturer review PDF pack (2026-09-24)
+
+- Execute isolated copies of all five current instructor notebooks in activated
+  ESBMTK314, retaining full cell outputs, plots, tables and instructor answers.
+- Export all eight disclosures expanded, execute 04's optional workbook lookup,
+  and append 03's linked optional sediment reference. Supply three static
+  explorer views plus its browser-only offline HTML companion.
+- Package the five PDFs with their directly linked local references, existing
+  coding cheatsheet, start guide and execution/hash manifest. Rewrite local
+  PDF links for the extracted pack. Retain source notebooks and student copies.
+
+Verification: all five notebooks completed without cell errors and passed their
+embedded scientific/software audits. Printed stream-output completeness and
+unchanged source SHA-256 checks pass. MathJax reports no formula errors; all
+images load, all disclosures are open, and browser layout checks find no
+horizontal overflow. All 75 final pages were rendered with Poppler and visually
+inspected; page-coordinate checks find no text outside the page margins. The
+five PDFs have 8/17/14/23/13 pages, and all 84 stream outputs pass completeness
+checks. The ZIP integrity check passes (15.9 MiB). No teaching tasks,
+prerequisites or workload change; the
+dormant extension remains excluded. Builders and rebuild instructions are in
+`scripts/*instructor_review*` and `ref/instructor_review.md`.
+
+## Clarification: 04 critical depths and snowline memory (2026-09-24)
+
+B3 now supplies the two snowline rules before the question: CCD shoaling leaves
+old carbonate that must dissolve before the snowline retreats; CCD deepening lets
+the preservation boundary follow effectively instantly at the century timescale,
+without resolving accumulation of a thick sediment layer. Explain the possible
+small numerical lag, distinguish tracking the CCD from response to external TA,
+and note that later shoaling can produce a lag even in OAE. Students need no
+raw-code lookup or sediment-equation derivation. C3 asks them to apply these
+supplied rules to the depths and burial plot; the masked instructor answer explains
+the OA lag, old-stock dissolution and the assumed OAE response explicitly.
+
+Teaching goals/design are aligned. This clarifies one existing answer; the four
+answers, runs and provisional timing remain unchanged. Only two instructor
+Markdown cells changed; executable cells, saved outputs and execution counts were
+verified unchanged. Prior conservation results remain applicable. Regenerated
+student 04 exactly; both notebooks validate, masking/HTML structure checks and
+three applicable notebook tests pass. Saved output tables were excluded from the
+Markdown-only table count. Full browser visual QA remains blocked as recorded below.
+Evidence: `tmp/04_consistency/check_memory.py` and the two `*_memory.html` previews.
+
+## Follow-up: 04 consistency and scientific interpretation (2026-09-24)
+
+- [x] Put the exact solver-input forcing shapes in B1, before B2 responses,
+  with carbon/TA units and a normalized timing overlay. Keep interval and
+  whole-run integrals, three matched cases and two coding exercises unchanged.
+- [x] Replace repeated design questions and the dormant biological-response
+  experiment proposal with four scientific interpretations: timing, uptake/TA,
+  critical depths/memory and OA/OAE asymmetry. Remove the extension pointer and
+  explicit extension switches from core 04; the helper's defaults are identical.
+- [x] Define saturation, compensation and snowline separately with links to
+  both original 2010 papers. Explain elevation sign, saturation-depth clipping,
+  finite-stock erosion and the implementation's rapid snowline-deepening closure.
+  Connect late OAE deep-DIC decline and increased burial with retention of TA/carbon,
+  and OA negative net burial with dissolution of previously deposited sediment.
+- [x] Reuse 03's W_0 boundary notation, remove the repeated inventory display
+  and unused forcing constants, correct TA units/atm CO2 plot labels, and fix
+  the stale core-04 'Part I' reference in the data guide. Align goals/design/README.
+- [x] Regenerate only student 04 and update its existing structural tests.
+
+Verification: all core 04 cells execute in activated ESBMTK314, including all
+three integrations and continuous carbon/TA budget audits. Maximum carbon
+residual/initial stock is 8.34e-6 (OA), below the audit tolerance. The plotted
+solver-input peak is near year 2169; post-1800 integrals are 335.358 Pmol C and
+10.00005 Pmol TA equivalents. Numerical evidence confirms OA's separated depths
+and negative net burial, and OAE's smaller deepening and increased preservation.
+All four figures were visually inspected. Notebook validation, compilation,
+local links, HTML table/panel structure, answer masking and exact student
+regeneration pass. The 23-test targeted suite has only the existing generated-copy
+mismatch in untouched 00 (extra empty source cells); 04 and conservation checks pass.
+Browser security policy blocks opening the local HTML preview, so a full visual
+inspection of rendered notebook Markdown/math remains unverified; no alternate
+browser route was attempted. Evidence and previews: `tmp/04_consistency/`.
+
+Workload: replacement/consolidation of existing interpretation tasks, with no
+new model run or code exercise. The 40-minute allocation remains provisional;
+pilot the revised critical-depth/asymmetry reading and four short answers.
+
+## Correction: use defined net burial directly in C2 (2026-09-24)
+
+Removed the question about a hypothetical additional burial sink and the repeated
+derivation of net burial. C2 now asks only why internal transfers cancel and how
+weathering and the already-defined net burial enter carbon/TA balances. The
+instructor answer uses those two balances directly. This reduces the existing
+budget exercise; the provisional 55-minute allocation remains unchanged.
+Regenerated student 03, checked both rendered C2 fragments and solution masking,
+and verified that code and outputs are unchanged. The previous numerical audits
+remain applicable to the identical executable code. Updated teaching goals/design
+to keep this reduction in the maintained task scope.
+
+## Correction: omit the state-dependence comparison in 03 (2026-09-24)
+
+Removed B2's newly added comparison between `scale_with_concentration` and a
+broader dependence on changing model values. That taxonomy is unnecessary for
+the active teaching route. Retain the direct law-table definition, coefficient
+times current source concentration, and explain other processes locally.
+Updated current teaching guidance to prevent reintroducing the comparison.
+Only this Markdown paragraph and guidance changed; code, outputs, exercises
+and scope are unchanged. Student 03 was regenerated and checked against its
+source; existing model execution evidence remains applicable to identical code.
+
+## Follow-up: 03 terminology, budgets and temporary extension scope (2026-09-24)
+
+- [x] Define model state, snowline and restart in A1. Explain that a restart
+  starts from saved values, identify the workbook-to-saved-state replacement,
+  and describe C3 as a 20-year continuation with no experimental addition.
+- [x] Replace the fixed/state-dependent/residual classification wording with
+  identifying the changing inputs to each flux. Explain `scale_with_concentration`
+  as a specific proportional law; distinguish gas and sediment calculations.
+- [x] Rework C2 around the explicit atm plus dissolved-ocn boundary and reuse
+  W_0 rather than introducing W_C/W_A. Scaffold internal cancellation, inputs
+  minus outputs, then regrouping into net burial. Explain why budget closure
+  does not mean constant inventories, and why weathering persists without forcing.
+- [x] Remove feedback/attribution extension pointers from 03 and redundant flux
+  and burial explanations. Keep all four mappings and 13 flux-expression blanks.
+- [x] Record the user's temporary suspension of 04 extension-related teaching
+  goals in AGENTS.md, teaching goals, design and README. Its files and code remain
+  dormant until explicitly re-enabled; core 04 OA/OAE and the separate 05 starter
+  retain their existing scope. No teaching time or new exercise is added to 03.
+
+Verification: all executable 03 code, stored instructor outputs and execution
+counts match the starting worktree. Execution in ESBMTK314 passes graph, carbon/TA
+budgets, 20-year saved-state drift and reusable-model agreement. Both notebooks
+validate and student 03 regenerates exactly, with four masked code tasks, 13
+expression blanks and no instructor answers, feedback or attribution pointers.
+All three specification tests pass. The 12-test notebook suite has only the
+existing generated-copy failures in untouched 00/04; 01 now passes with the user's
+intervening title/generation change preserved. Browser inspection confirms the
+restart explanation, flux-law explanation and C2 question/answer math layout.
+Protected notebooks, archives, benchmark data, diagrams and worksheets match
+their starting hashes. Evidence: `tmp/03_consistency/`. The 55-minute allocation
+remains provisional and still needs the planned novice-student pilot.
+
+## Follow-up: carbonate explorer title (2026-09-24)
+
+Renamed 01 section 3.2 and the interactive figure to "DIC and TA constrain
+carbonate chemistry", including the browser title and cached instructor display.
+Regenerated student 01 and the offline preview. Verified that only title text
+changed, with executable code, numerical data and other outputs preserved;
+both notebooks validate and the student copy matches generation. Checked the
+heading in the browser at narrow width. Teaching scope and timing are unchanged.
+
+## Follow-up: overall readability of 03 (2026-09-24)
+
+- [x] Split 03.1 into three visible steps: paired fluxes, diagram labelling and
+  one internal-transfer check. Keep the same 13 flux blanks, POC arrow, scientific
+  choices and four code mappings; put notation and supplied hints beside the work.
+- [x] Consolidate gas-law explanation in A3 and the full historical transport-unit
+  caveat in B2. Clarify snowline, DIC-only POC behaviour and bypassed PIC sinks.
+- [x] Keep the three workbook input tables visible in A4; make the duplicate
+  connection summary and workbook-to-code mapping expandable references.
+- [x] Keep physical restart limits visible and move numerical budget details to
+  a technical disclosure. Retain provisional timing in the opening; keep pilot
+  and fallback planning in TEACHING_GOALS.md. Scope and allocation are unchanged.
+- [x] Regenerate student 03 and inspect both HTML renderings. Fix notation-table
+  widths after MathJax squeezed definitions into a narrow column.
+
+Verification: 03 executes in ESBMTK314 with graph, carbon/TA budget, short-restart
+and reusable-model agreement checks passing. Model code is unchanged; only the
+optional cross-reference display and code-role/comment labels changed. Existing
+instructor outputs and marked written answers are preserved. Student 03 validates,
+regenerates exactly, keeps four masked coding blocks and all 13 flux blanks, and
+contains no instructor panels or outputs. All three specification tests pass.
+The 12-test notebook suite passes except its generated-copy subtests for untouched
+00, 01 and 04 (00/04 extra empty cells; 01 serialization key order). Protected
+notebook, archive, workbook, diagram and worksheet hashes remain unchanged;
+execution-generated logs are excluded. Rendered equations, tables, diagram steps,
+answer panels and disclosures were checked in the browser. The Jupyter kernel
+reported a non-fatal read-only IPython history warning; all model audits completed.
+Evidence: `tmp/03_readability/`. The novice-student timing pilot remains outstanding.
+
+## Equation-first specification in 03.1 (2026-09-24)
+
+- [x] Replace the prose-based effects/law/status table with paired amount-flux
+  expressions J_DIC and J_TA for each process family. Keep 13 expression blanks
+  and the POC arrow; ask students to mark fixed/state-dependent laws and residuals.
+- [x] Supply notation, gas-chemistry and dissolution dependency hints, and the
+  J/m concentration-tendency rule. Keep the historical transport-unit caveat;
+  distinguish water pressure from atmospheric CO2 partial pressure and retain
+  signed net burial without an extra drain.
+- [x] Use short assumptions beside rows and expandable scientific reference
+  notes. Put the existing contour interpretation after the flux equations,
+  reusing the paired stoichiometry and preserving the four native mappings.
+- [x] Generate the notebook table and paired Excel worksheets from shared
+  equation records; regenerate student 03 only and update teaching documentation.
+- [x] Verify execution/conservation, student masking, generated-copy equality,
+  rendered equations/tables and worksheet previews.
+
+Scope: a replacement of 03.1's presentation and scientific specification task.
+No new integration, coding exercise or prerequisite. The provisional 55-minute
+allocation and existing 60-minute/optional-contour fallback still need a novice
+pilot; clarity improvements do not establish completion time.
+
+Verification: instructor 03 executes in an activated ESBMTK314 Jupyter kernel
+with graph, boundary C/TA, restart-drift and reusable-model agreement checks
+passing. All model and plotting code cells match their starting sources; only
+the instructor table-display code changed. Both notebook copies validate and
+student 03 regenerates exactly, with four coding blocks, completed equations,
+diagram and contour answers correctly masked. The full suite ran 79 tests:
+only the previously documented generated-copy differences in untouched 00/04
+fail. Student table content is checked against shared records, and saved XLSX
+files retain the intended blank fields with no hidden answer sheets/formulas.
+Browser inspection verified chemistry/dissolution/tendency equations, compact
+tables, expandable notes and instructor math layout. Worksheet previews are
+readable. Protected unrelated notebook, benchmark and archive hashes match.
+Evidence: `tmp/03_equation_first/`.
+
+## Linked carbonate views in 01 (2026-09-23)
+
+- [x] Introduce a supplied rotatable DIC–TA–pCO2 surface after TA inference;
+  connect its labelled top-view contours with the lecture's Deffeyes diagram
+  and its constant-TA cutting plane with a linked pCO2–DIC curve.
+- [x] Supply a movable DIC point/tangent, a separate optional TA = 0 range,
+  and an optional conserved-carbon atm overlay introduced after the budget.
+  Use shared 01 chemistry, exact PyCO2SYS grid evaluations and an offline HTML
+  display with no additional student package or widget-extension requirement.
+- [x] Preserve the two masked 01 chemistry tasks and existing integrations;
+  incorporate the view connection into the existing interpretation answer.
+  Reuse the representation in 03 with its own benchmark conditions and arrows.
+  Regenerate only student 01/03. Leave 00, 02, 04 and dated archives unchanged.
+- [x] Update teaching goals/design/readme: target 3–5 minutes replacing part
+  of sensitivity explanation, within the provisional 40-minute 01 allocation.
+  No extra written answer, integration or coding task; student pilot required.
+- [x] Complete numerical, browser, rendered-notebook and conservation checks.
+
+Verification: five new scientific/display checks pass, covering direct slice
+chemistry, the fitted-reference intersection, finite-difference sensitivity,
+contour labels, valid atmosphere inventory and offline embedding. Both instructor
+01 and 03 execute through their ESBMTK314 Jupyter kernels with existing audits;
+their original executable cells are unchanged. Student 01/03 regenerate exactly,
+validate and retain masking. Browser checks cover rotation, view presets, both
+sliders, tangent/atm overlays, TA = 0, reset, standalone download and narrow
+layout. Actual JupyterLab execution confirms the embedded explorer's scripts
+and controls work. Inspected rendered Markdown/math/question/answer panels and
+the final plots. The offline instructor preview is generated by
+`scripts/build_carbonate_explorer.py` at `output/dic-ta-pco2-explorer.html`.
+
+The full suite ran 79 tests, with only two subtest failures in generated-copy
+equality: untouched 00 has two extra blank instructor cells and untouched 04
+has one. Their nonempty generated/stored cells agree. All 135 protected
+unrelated notebook/archive/data hashes are unchanged (the open Excel lock file
+was excluded from hashing). No environment dependency or student setup change.
+Evidence: `tmp/carbonate_explorer/` (test and execution logs, browser screenshots,
+rendered reading sections, initial hashes). Student workload remains unpiloted.
+
+
+## Textbook exercise refinements (2026-09-23)
+
+- [x] Implement the core recommendations in `ref/textbook_exercise_review.md`:
+  01 bicarbonate/proton TA explanation; 02 production/export/remineralization
+  interpretation and reference-stock clarification; 03 supplied local DIC–TA
+  contours integrated with existing flux fields; 04 buffering/compensation and
+  fixed-export versus biological-response questions.
+- [x] Mask instructor arrows/answers and regenerate student 01–04 only. Repair
+  the 03 water-mass LaTeX expression. Retain all original integration/mapping
+  code, numerical inputs, four 03 mappings and three 04 cases.
+- [x] Update teaching goals, design and README. Retain provisional timings with
+  explicit consolidation and a 4–6-minute target for 03's process interpretation;
+  allow 60 minutes or optional contours if the opening cannot fit in the pilot.
+- [x] Complete numerical, conservation, generated-copy and visual checks.
+- [ ] Pilot the revised reading and reasoning load with students. The optional
+  textbook follow-ups and alternative high-latitude question remain proposals.
+
+Verification: all four instructor notebooks execute in activated ESBMTK314,
+including their conservation, calibrated-state and restart checks. 03 also
+executes through its actual Jupyter kernel. Original code-cell sources are
+unchanged; only the two supplied contour-plot calls are added to 03. At the
+workbook L_b state (21.5 °C, salinity 35, 5 bar = 50 dbar, constants option 13,
+pH scale 3), PyCO2SYS gives reference pCO2 286.985 µatm. Local POC removal,
+CaCO3 formation and dissolution yield 261.812, 303.731 and 271.957 µatm for
+the stated 20 µmol C/kg changes, confirming the expected signs.
+
+All eight notebooks validate and compile; student copies regenerate exactly,
+with no saved outputs, purple solution panels or instructor process arrows.
+Rendered reaction, mass equation, process prompt, contours, tables and question/
+answer panels were visually inspected in HTML and figure previews. The full
+suite runs 69 tests: 68 pass; the sole failure is the pre-existing generated-copy
+mismatch in 00 (two extra blank instructor cells). 00 remains unchanged, along
+with all protected benchmark/archive files (112 hashes checked). The Jupyter
+kernel reported an unwritable IPython history database in the sandbox; execution
+and numerical checks passed. Evidence: `tmp/textbook_implementation/` and
+`tmp/notebook_qa/`.
+
+
+## Implemented: exercises for independent modelling and revised 03/04 (2026-09-23)
+
+- [x] Review current notebooks and the latest 01/02 revisions against future
+  box-model and Earth system model research needs. Record the proposed student
+  responsibilities, concrete replacement tasks, workload tradeoffs and optional
+  independent project in `ref/exercise_revision_proposal.md`.
+- [x] Refine the proposal so 03 starts with student reconstruction of the
+  schematic and flux properties, then reconciliation with actual Excel tables.
+  Check ESBMTK Figure 3/prose against the workbook and code: clarify F5 organic
+  export, PIC/POC ratio and inorganic weathering carbon. Specify dissolution
+  explicitly, signed net burial without double-counting, and brief assumptions
+  about biological TA effects, pump state dependence and weathering accounting.
+- [x] Implement the reconstruction and staged workbook views, plus a teaching
+  flux-specification table with generated instructor/student versions. Preserve
+  numerical input ownership and distinguish this documentation from executable
+  process inputs. Reuse the completed diagram for 04's forcing choices.
+- [x] Revise 03 around four native mappings, the changed model assumptions,
+  one boundary-budget exercise and compact supplied verification. Preserve the
+  benchmark and explicitly explain its historical transport-unit convention.
+- [x] Revise 04 around experiment specification, matched anomalies and four
+  focused interpretation/design answers, using its existing three runs.
+- [x] Add optional extension 05: one student-defined question, model change,
+  matched comparison, conservation evidence and interpreted figure. Supply
+  numerical/plotting plumbing; mask the illustrative scientific choices.
+- [x] Align teaching goals/design/README and diagram notes; regenerate only
+  affected student notebooks and verify numerics, masking and rendering.
+- [ ] Pilot the revised reading/reconstruction/coding workload with a novice.
+  The 03/04 allocations (55/40 minutes) and optional starter (60–90 minutes)
+  remain planning estimates, not measured completion times.
+
+Status: the repository implementation is complete. 03 now starts with a blank
+schematic and 14 selected flux-property fields, then reconciles actual workbook
+records before four native mappings. Dissolution, signed net burial and the
+source corrections are explicit; students derive one joint boundary budget.
+04 specifies the existing control/OA/OAE experiment and shows matched anomalies
+first, followed by four evidence/design questions. Separate Excel worksheets
+are teaching documentation; production inputs remain owned by the original
+workbook. Scientific references include local ESBMTK PDF page 8, the published
+ESBMTK article and Middelburg et al. (2020).
+
+Verification: instructor 03, 04 and optional 05 execute successfully both with
+the notebook checker and actual Jupyter kernels in activated ESBMTK314.
+03's native graph and reference-model agreement pass; maximum short-restart
+drift is 0.000126 µmol/kg DIC, 0.000251 µeq/kg TA, 0.000006 ppm atm CO2 and
+0.000171 m snowline. Carbon/TA audits pass in all three 04 cases. The optional
+starter's matched runs conserve inventories to relative errors below 3e-15.
+Its initial adjustment triggers ESBMTK's pH-change warnings between saved
+samples; successful budgets do not substitute for the resolution checks
+requested before using that illustrative design for research.
+All six affected notebooks validate and their student copies regenerate
+exactly, without instructor panels, completed diagrams or saved outputs.
+The full suite runs 69 tests with two existing generated-copy failures in
+unrelated 00/01; all other tests pass. Those sources/copies were not regenerated
+to conceal the differences. Benchmark data and dated archives retain their
+starting hashes; concurrent user edits to instructor 01 were preserved.
+Rendered notebook equations, tables, panels, diagrams and figure order, and
+all four worksheet-sheet previews, were inspected. Evidence:
+`tmp/03_04_revision/` and `tmp/notebook_qa/`.
+
+## Notation: distinguish inventory ratio from Revelle factor (2026-09-23)
+
+- [x] Rename the 02 carbon inventory ratio to `r_{ocn/atm}` and its uniform-ocean
+  baseline to `r_{ocn/atm,0}` in the geometry explanation, C1 inputs/derivation,
+  optional lecture reference and teaching documentation. Reserve R for the
+  Revelle factor and retain F for seawater equilibrium capacity.
+- [x] Regenerate student 02. Preserve all code, outputs, scientific inputs,
+  exercise masking and teaching scope; this supersedes the earlier R notation.
+
+## Follow-up: simplify 02 around its main story (2026-09-23)
+
+- [x] Centre the reading route on dividing the ocean, maintaining a gradient,
+  and supplying the carbon needed for the full reference state. Keep B2's
+  deep-box equation prominent and the full budgets in a collapsible reference.
+- [x] Remove the reference/simulated export comparison, intermediate DIC/export
+  and deep-transfer printouts, and the published-export discussion from the
+  core notebook. Retain the atmospheric and pump–mixing figure and all checks.
+- [x] Keep only the real-ocean analogy question in B4, with its masked answer.
+  Move parameter identifiability to an instructor note and bridge B to C through
+  the distinction between relative concentrations and total carbon inventory.
+- [x] Keep local Python guidance, both student derivations and native model
+  mapping. Put lecture notation details and pulse-duration experimentation in
+  optional collapsible notes. Replace verbose audit output with short success
+  summaries. Preserve the selected 100-year pulse and its automatic clock.
+- [x] Regenerate student 02 and update teaching goals/design; retain the
+  provisional 55-minute allocation pending a reading/workload pilot.
+
+Verification: full 02 execution passes with two figures and every original
+numerical assertion and audit retained. Both copies validate; student generation
+matches exactly, five coding blocks and written solutions remain masked, and
+browser inspection confirms the panels and expanded/collapsed reference math.
+All 14 model tests and nine of 10 student tests pass. The generated-copy test
+still reports existing mismatches in untouched 00 and 01. Hash comparisons
+preserve every other notebook and archive; unchanged 02 code cells retain their
+outputs. Evidence: `tmp/02_main_story/`.
+
 ## Follow-up: students derive the TA/uptake interpretation in 01 (2026-09-22)
 
 - [x] Place a guided PyCO2SYS curve exercise in section 3.2, after the fully
@@ -890,6 +1272,56 @@ it down" and distinguish that operation from opening/creating notebooks inside
 an already-running JupyterLab. Matched the Anaconda Markdown guide. Both PDFs
 remain two pages; all four rendered pages were visually checked after rebuilding.
 
+## Follow-up: setup-only student package and repository transition (2026-09-23)
+
+- [x] Separate the temporary distribution message from the durable uv and
+  Anaconda setup guides. Add a start document that says the package contains no
+  exercises and gives route-specific commands for moving to the later GitHub
+  repository.
+- [x] Add a non-exercise JupyterLab orientation notebook covering cell execution,
+  command/edit modes, A/B/DD/M/Y, saving, imports, numerical calculations,
+  plotting and workbook access.
+- [x] Replace the setup check's dependency on the Boudreau workbook with a
+  labelled workbook probe containing no course inputs or answers. Move Anaconda
+  instructor maintenance notes out of the student guide.
+- [x] Add a fixed-allow-list ZIP builder and package tests. The setup archive may
+  contain only the start guide, two setup PDFs, environment recipes, checker,
+  Jupyter basics notebook and workbook probe.
+
+This changes pre-class distribution mechanics only. It adds no exercise or
+class-time requirement; setup remains a prerequisite outside the four-hour
+practical timetable.
+
+Verification: the allow-list archive contains exactly 10 files and excludes
+all exercise notebooks, model data and archives. Five package tests pass,
+including identical repeated ZIP builds and both transition routes. The shared
+checker passes in activated ESBMTK314 from an extracted package, and the Jupyter
+basics notebook executes completely there. Both three-page A4 setup PDFs were
+rendered and visually inspected. Final package:
+`output/ESBMTK-practicals-setup-only.zip` (SHA-256
+`ED780AD8046E63F1AA16663C67A163F3F3F01EAA4382D1418822D9B4250480D9`).
+
+## Follow-up: fresh Anaconda setup-only pilot (2026-09-23)
+
+- [x] Extract the distributed setup-only ZIP and create the exact named
+  `esbmtk-practicals` environment from its `environment-anaconda.yml` on Windows.
+- [x] Verify literal activation selects the new Python 3.14.7 interpreter; run
+  `pip check` and the packaged numerical/chemistry/workbook/plot checker.
+- [x] Register the environment-local `esbmtk-practicals` kernel and execute the
+  complete Jupyter basics notebook through that named kernel.
+- [x] Launch JupyterLab from the fresh environment and extracted folder, verify
+  an HTTP 200 JupyterLab response, then shut it down and confirm the port closes.
+- [x] Remove only the fresh pilot environment and retain all pre-existing Conda
+  environments unchanged. Update the student/instructor status text; keep
+  macOS/Linux and novice-student pilots outstanding.
+
+Verification: Conda created Python 3.14.7 and pip installed the complete recipe,
+including ESBMTK 0.14.3.1.post0, PyCO2SYS 1.8.3.4, NumPy 2.5.3, SciPy 1.18.1,
+JupyterLab 4.6.4 and ipykernel 7.3.0. `pip check` reported no broken
+requirements. The environment checker passed, all setup-notebook success
+messages appeared, and `http://127.0.0.1:8898/lab` returned HTML identifying
+JupyterLab. The temporary environment and server were removed after the test.
+
 ## Follow-up: working uv setup and novice instructions (2026-09-22)
 
 - [x] Supply root `pyproject.toml`, `.python-version` (3.14.7), a generated
@@ -946,3 +1378,25 @@ Verification: the shared checker passes through `conda run -n ESBMTK314
 recipe validation. All three rendered PDF pages were visually inspected; text
 checks confirm commands, success, shutdown and restart instructions. No package
 installation, notebook regeneration or changes to running user sessions.
+
+## Follow-up: simplify 03 transport notation and schematics (2026-09-24)
+
+- [x] Use Q for water volume transport throughout 03, its paired-flux metadata,
+  worksheets and schematic labels. Write physical tracer fluxes as
+  J_ij^X(t) = rho_i Q_ij X_i(t), retaining the benchmark implementation caveat.
+- [x] Shorten the weathering explanation to the model's 1 mole DIC : 2 TA
+  equivalents and the caveat that real riverine input need not have this ratio.
+- [x] Simplify both shared 03/04 diagrams to boxes, arrows and short legends;
+  keep equations and Excel links in the companion table. Preserve explicit
+  dissolution, sediment memory and signed net burial. Regenerate student 03
+  and both Excel worksheets; retain the same exercises and provisional timing.
+
+Verification: instructor 03 executes in ESBMTK314 with graph, carbon/TA budget,
+restart and reusable-model agreement checks passing. Executable model cells
+are unchanged, student 03 regenerates exactly, and unrelated notebook/archive/
+data hashes are preserved. All three specification/worksheet tests pass. The
+12-test notebook suite has only its existing generated-copy mismatches in 00
+and 04 (extra empty instructor cells); 03 checks pass. Both diagrams, both sheets
+in each Excel file, and rendered notebook math/table/caveat layouts were visually
+checked. Spreadsheet error scans and `git diff --check` pass. Evidence:
+`tmp/03_schematic_simplification/`.

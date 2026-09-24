@@ -1,0 +1,112 @@
+Combining these two equations ((8.2.15) and (8.2.16))
+allows us to express the concentration of bicarbonate
+and carbonate in terms of DIC and Alk only:
+[HCO/C0
+3
+] /C25 2 /C1 DIC /C0 Alk (8:2:17)
+[CO2/C0
+3 ] /C25 Alk /C0 DIC (8:2:18)
+These two approximations are usually good to within
+about 10%. As we will see below, these approximation
+will provide a powerful tool for discussing many pe-
+culiarities of the CO
+2 system in seawater.
+In many studies, pH is used as a master variable. It is
+therefore instructive to investigate the inorganic carbon
+system in seawater also as a function of this parameter.
+Figure 8.2.1 shows how the concentration of the three
+inorganic carbon species varies as a function of pH for
+ﬁxed DIC. Below pK
+1 ¼/C0 logK1,H 2CO/C3
+3
+dominates. At
+pH ¼ pK1, ½H2CO/C3
+3
+/C138 is equal to½HCO/C0
+3
+/C138 by deﬁnition (see
+(8.2.5), whereas for pK1 < pH < pK2 ¼/C0 logK2, HCO/C0
+3
+is the species dominating DIC.A tp H ¼ pK2, ½HCO/C0
+3
+/C138¼
+[CO2/C0
+3 ], and at pH > pK2, ½CO2/C0
+3 ] dominates. Since the
+ocean has a mean surface pH of slightly above 8, in
+Table 8.2.3
+Numerical values of the equilibrium constants as a function of temperature for a salinity of 35
+Temp.
+/C14 C
+/C0 log10 K0
+mol kg/C0 1 atm/C0 1
+/C0 log10 K1
+mol kg/C0 1
+/C0 log10 K2
+mol kg/C0 1
+/C0 log10 Kw
+mol kg/C0 1
+/C0 log10 Kb
+(mol kg/C0 1)2 /C0 log10
+K2
+K1
+/C0 log10
+K2
+K0 K1
+kg mol/C0 1 atm
+0 1.202 6.106 9.384 14.300 8.906 3.277 2.076
+2 1.235 6.080 9.346 14.203 8.878 3.266 2.031
+4 1.267 6.055 9.310 14.108 8.851 3.255 1.988
+6 1.298 6.030 9.274 14.015 8.824 3.244 1.945
+8 1.329 6.007 9.238 13.924 8.797 3.232 1.903
+10 1.358 5.984 9.203 13.834 8.771 3.219 1.862
+12 1.386 5.962 9.169 13.746 8.746 3.207 1.821
+14 1.413 5.941 9.135 13.659 8.721 3.194 1.781
+16 1.439 5.920 9.101 13.575 8.696 3.181 1.741
+18 1.465 5.901 9.068 13.491 8.671 3.167 1.702
+20 1.489 5.882 9.035 13.409 8.647 3.154 1.664
+22 1.513 5.863 9.003 13.329 8.623 3.140 1.627
+24 1.536 5.846 8.971 13.250 8.600 3.125 1.590
+26 1.558 5.829 8.940 13.172 8.576 3.111 1.553
+28 1.579 5.813 8.909 13.096 8.553 3.096 1.517
+30 1.599 5.797 8.878 13.021 8.530 3.081 1.482
+All dissociation constants are given with respect to the seawater pH scale [Dickson, 1993]. Sources: K0: Weiss [1974]; K1 and K2: Mehrbach et al.
+[1973] as reﬁtted by Dickson and Millero [1987]; Kb: Dickson [1990]; Kw: Millero [1995].
+Table 8.2.4
+Mean values of potential temperature, salinity, sDIC, sAlk,H
+2CO/C3
+3
+, HCO/C0
+3
+, and CO 2/C0
+3 in the world oceans, based
+on data collected during the World Ocean Circulation Experiment
+Region y /C14 CS
+sDIC
+mmol kg/C0 1
+sAlk
+mmol kg/C0 1
+[H2CO/C3
+3
+]
+mmol kg/C0 1
+[HCO/C0
+3
+]
+mmol kg/C0 1
+[CO2/C0
+3 ]
+mmol kg/C0 1
+Surface Ocean (0–50 m)
+Low and mid-lat. y 23.0 35.15 2003 2315 10 1772 221
+Southern hemisphere high latitudes y 3.7 34.05 2119 2291 17 1977 125
+Northern hemisphere high latitudes y 4.7 32.90 2049 2257 13 1889 147
+Mean surface ocean 18.1 34.75 2026 2308 11 1815 200
+Deep (>1200 m) and entire ocean
+Mean deep ocean 1.8 34.73 2280 2381 29 2164 86
+Mean global ocean 3.6 34.73 2256 2364 28 2138 90
+The carbon species have been calculated using the dissociation constants of Mehrbach et al. [1973] as given by Dickson and Millero [1987].
+y Low and mid-latitudes: 45/C14 S–45/C14 N; High latitudes: south 45/C14 S for the southern hemisphere, and 45/C14 N–80/C14 N for the northern
+hemisphere.
+326
+Chapter 8

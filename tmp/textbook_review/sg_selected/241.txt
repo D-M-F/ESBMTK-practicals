@@ -1,0 +1,50 @@
+a. Draw a diagram analogous to the model shown in ﬁgure 5.4.11 for the
+‘‘irreversible’’ scavenging of 230Th with only one particle size (large).
+The model should include formation of dissolved thorium from the
+parent, direct adsorption of dissolved
+230Th onto large particles ( k1),
+sinking of large particles, and decay of both dissolved and large-particle
+thorium. Leave out all the biological terms, the small-particle box, and
+also the desorption term k
+/C0 1. Write down and solve the equations for
+dissolved 230Th and particulate 230Th. Assume that k1 is constant with
+depth. Keep in mind that A ¼ l /C1C and express all your answers in
+terms of activities. What should the vertical proﬁles of dissolved and
+particulate thorium look like and how do they compare with the linear
+increase found in observations? Hint: Be sure to consider the relative
+magnitudes of all the terms (e.g., l /C28 k
+1) and simplify the equations
+where appropriate.
+b. Now add the desorption term k/C0 1 to the above diagram and solve the
+equations. How do the equations compare to the vertical proﬁle? This
+analysis is the way that oceanographers ﬁrst realized that trace metals
+were being desorbed from particles.
+Global horizontal mean hydrographic and nutrient properties from the Levitus
+et al. , [1998] data set
+Rescaled
+Depth (m)
+Temp.
+(
+/C14C) Salinity
+O2 O2
+sat AOU Phosphate Silicate Nitrate
+(mmol m /C0 3)
+0 17.26 34.89 239 243 5 0.6 8.4 6.2
+/C0 50 15.09 35.01 218 254 36 0.82 11.3 9.4
+/C0 100 13.30 35.03 197 263 66 1.01 14.3 12.5
+/C0 150 11.89 34.98 183 271 88 1.17 17.2 14.8
+/C0 250 9.98 34.86 167 282 115 1.43 22.2 19.0
+/C0 350 8.57 34.76 159 291 133 1.64 27.0 22.6
+/C0 450 7.39 34.68 154 299 146 1.83 32.5 25.3
+/C0 550 6.44 34.63 150 306 157 1.97 38.4 27.8
+/C0 750 5.13 34.59 141 316 174 2.18 51.1 30.9
+/C0 950 4.21 34.61 139 323 184 2.26 63.0 32.0
+/C0 1450 2.97 34.70 148 332 185 2.25 85.3 32.2
+/C0 1950 2.32 34.74 161 338 176 2.18 95.9 31.4
+/C0 2450 1.96 34.75 171 341 170 2.15 101.5 31.0
+/C0 2950 1.72 34.74 178 343 165 2.15 106.3 30.8
+/C0 3950 1.37 34.73 190 346 156 2.13 112.3 30.8
+Note: The rescaled depth has been reset to 0 at 50 m, the nominal base of the mixed layer, i.e., the
+actual depth is that given in the table minus 50 m.
+226
+Chapter 5

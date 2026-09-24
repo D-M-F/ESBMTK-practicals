@@ -1,0 +1,28 @@
+.......FF....
+======================================================================
+FAIL: test_generated_copies_match_instructor_sources (test_student_notebooks.StudentNotebookTest.test_generated_copies_match_instructor_sources) (notebook='00_PyCO2SYS.ipynb')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\ALK\TA\BGC\ESBMTK-practicals\tests\test_student_notebooks.py", line 182, in test_generated_copies_match_instructor_sources
+    self.assertEqual(target.read_bytes(),
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+                     (ROOT / "notebooks/student" / name).read_bytes())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'{\r[16240 chars]\n  },\r\n  {\r\n   "cell_type": "code",\r\n  [845 chars]\r\n' != b'{\r[16240 chars]\n  }\r\n ],\r\n "metadata": {\r\n  "kernelspe[471 chars]\r\n'
+
+======================================================================
+FAIL: test_generated_copies_match_instructor_sources (test_student_notebooks.StudentNotebookTest.test_generated_copies_match_instructor_sources) (notebook='04_pump_strength_OA_OAE.ipynb')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\ALK\TA\BGC\ESBMTK-practicals\tests\test_student_notebooks.py", line 182, in test_generated_copies_match_instructor_sources
+    self.assertEqual(target.read_bytes(),
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+                     (ROOT / "notebooks/student" / name).read_bytes())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'{\r[21949 chars]\n  },\r\n  {\r\n   "cell_type": "code",\r\n  [658 chars]\r\n' != b'{\r[21949 chars]\n  }\r\n ],\r\n "metadata": {\r\n  "kernelspe[471 chars]\r\n'
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.362s
+
+FAILED (failures=2)
+ERROR conda.cli.main_run:execute(127): `conda run python -m unittest discover -s tests -p test_student_notebooks.py` failed. (See above for error)

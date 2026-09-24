@@ -1,0 +1,94 @@
+The precision and accuracy of current measurements
+of oceanic pCO2 is a few matm, so this anthropogenic air-
+sea pCO2 difference of about 8 ppm is fundamentally
+amenable to direct observation. However, we have also
+seen in chapters 3 and 8 (e.g., ﬁgures 3.1.3, 8.1.1, and
+8.3.7) that oceanic pCO
+2 has spatial and temporal vari-
+ations that exceed 100 ppm in many places, therefore
+making the sampling requirements for adequately tak-
+ing into account the observed spatiotemporal variability
+extremely high. At the moment, despite the most recent
+synthesis of more than 1 million DpCO
+2 observations by
+Takahashi et al. [2002], many key regions of the surface
+ocean, such as the Southern Ocean, remain under-
+sampled. A further problem of this approach is the large
+uncertainty associated with estimates of the gas ex-
+change coefﬁcient k
+g (see discussion in chapter 3). A
+ﬁnal source of uncertainty is the poorly known natural
+efﬂux of CO
+2 from the ocean as a result of the riverine
+input of inorganic and organic carbon. Future im-
+provements in the observational coverage as well as our
+understanding of the factors that control k
+g will, how-
+ever, make this approach substantially more attractive.
+Because of the current difﬁculties of direct detection,
+the amount of anthropogenic CO 2 taken up by the
+ocean is often estimated by less direct means. The ap-
+proach most commonly employed in the past has been
+the use of ocean models designed to take into account
+not only the thermodynamic capacity of seawater but
+also air-sea gas exchange and vertical transport. Despite
+large differences in complexity, most models predict
+fairly similar uptake rates of about 2.0 ± 0.4 Pg C yr
+/C0 1
+[Prentice et al. , 2001; Matsumoto et al. , 2004]. However,
+as outlined in
+table 10.2.3, several additional methods
+exist to estimate the oceanic uptake of anthropogenic
+CO
+2. We will limit our discussion here to the inventory
+approach and the atmospheric oxygen method.
+Reconstruction of Anthropogenic CO
+2 Inventory
+Brewer [1978] and Chen and Millero [1979] were the ﬁrst
+to point out that the anthropogenic CO 2 can be esti-
+mated by correcting the measured DIC in a water
+sample for the changes that have occurred due to the
+remineralization of organic matter and the dissolution
+of carbonates since it last lost contact with the atmo-
+sphere, DDIC
+bio, and by subtracting preformed prein-
+dustrial DIC, DIC0
+pi, i.e.,
+Cant ¼ DICobs /C0 DDICbio /C0 DIC0
+pi (10:2:18)
+where the biological correction is estimated from AOU
+and the difference between in situ and preformed Alk,
+Alk0:
+DDICbio ¼/C0 rC:O2 AOU /C0 1
+2 (Alk /C0 Alk
+0 /C0 rN:O2 AOU)
+(10:2:19)
+where rC:O2 and rN:O2 are the stoichiometric C:O 2 and
+N:O2 ratios during remineralization of organic matter.
+The ﬁrst term on the right-hand side of (10.2.19) con-
+stitutes the change in DIC due to the remineralization
+Table 10.2.3
+Summary of Methods to Estimate the Oceanic Uptake of Anthropogenic CO
+2
+Method Present Uncertainty y Spatial Coverage References (Selected)
+Direct Observational Methods
+Air-sea ﬂuxes of CO 2 L regional Tans et al. [1990]; Takahashi et al. [2002]
+Repeated transects M regional Peng et al. [1998]
+DIC multi-parameter analysis M regional Wallace [1995]
+Total inventory methods M–L regional Brewer [1978]; Chen and Millero [1979]; Gruber
+et al. [1996]
+Indirect Observation Methods
+Atmospheric O2 and CO2 M–L global Keeling and Shertz [1992]
+Inversion studies of atm. CO 2 L regional Bolin and Keeling [1963]; Gurney et al. [2002]
+Oceanic change in 13C inventory L global Quay et al. [1992]
+Air-sea disequilibrium of @13C M–L global Tans et al [1993]; Gruber and Keeling [2001]
+Dynamic constraints of @13C M–L global Heimann and Maier-Reimer [1996]
+Tracer analogues
+(14C, 3H, CCI4, CFCs) M–L regional McNeil et al. [2003]
+Model-Based Estimates
+Tracer-calibrated box models M global Oeschger et al. [1975]; Siegenthaler and Joos [1992]
+Dynamic 2-D/3-D models M regional Maier-Reimer and Hasselman [1987]; Sarmiento
+et al. [1992]; Orr et al. [2001]
+ysubjectively estimated (M: medium; L: large)
+408
+Chapter 10

@@ -1,0 +1,177 @@
+distribution. Let us recall that we can approximate the
+CO
+2/C0
+3 ion concentration by (8.2.18),
+[CO2/C0
+3 ] /C25 Alk /C0 DIC (9:3:6)
+We have seen in section 8.3 that both DIC and Alk are
+affected by the soft-tissue and carbonate pumps, but in
+different proportions (
+table 9.3.5). The remineralization
+of 1 mol of organic matter increases DIC by 1 mol, but
+decreases Alk by 16/117 ¼ 0.14 mol because of the oxi-
+dation of organic nitrogen to nitrate. The dissolution of
+1 mol of CaCO
+3 increases DIC by 1 mol and Alk by
+2 mol. Using the above approximation, we can easily
+calculate that the remineralization of 1 mol organic
+matter results in a [CO
+2/C0
+3 ] decrease of 1.14 mol, whereas
+the dissolution of 1 mol CaCO3 leads to a 1 mol increase
+in [CO 2/C0
+3 ]. Thus, the two biological pumps have com-
+peting effects on the CO 2/C0
+3 concentration, with nearly
+equal strength. Hence, the net effect depends on the
+relative contribution of the two biological pumps.
+If the ratio of the contribution from the soft-tissue
+and carbonate pumps were the same everywhere, the
+[CO
+2/C0
+3 ] distribution would follow some simple rules.
+For example, if the organic carbon-to-CaCO 3 reminer-
+alization ratio is substantially larger than one, the CO2/C0
+3
+ion content should be controlled by the remineraliza-
+tion of organic matter. Alternatively, if this ratio is
+substantially smaller than one, the CO
+2/C0
+3 concentration
+should be controlled by the dissolution of CaCO 3.
+We saw in chapter 5 (ﬁgure 5.3.1b) that the organic
+carbon-to-CaCO3 remineralization ratio varies substan-
+tially with depth. In the upper thermocline, this ratio
+was found to be around 5:1, but decreased to values
+near 1:1 in the deep ocean. As this ratio is nearly always
+above 1:1, it appears that the CO
+2/C0
+3 ion concentration in
+the oceans is mainly determined by the soft-tissue
+pump. It is only in the deep ocean, where the organic
+carbon-to-CaCO
+3 input ratio approaches unity, that the
+carbonate pump is strong enough to exert a major in-
+ﬂuence. Since the remineralization of organic matter
+reduces the CO
+2/C0
+3 content of seawater, the distribution
+of CO 2/C0
+3 is negatively correlated with the major nutri-
+ents, i.e., high near the surface and low in the deep
+ocean.
+To examine the relative inﬂuence of the soft-tissue
+and carbonate pumps on the CO
+2/C0
+3 concentration
+more speciﬁcally, let us perform a thought experiment
+similar to that shown in table 8.3.2. We start with a
+typical surface ocean water sample that has a DIC
+concentration of about 2026 mmol kg
+/C0 1 and an alkalinity
+of 2308 mmol kg /C0 1 (see table 8.2.4), giving a CO 2/C0
+3
+content of about 202 mmol kg/C0 1 (table 9.3.6). We then
+add carbon from the remineralization of organic matter
+and the dissolution of CaCO
+3 in a 10:1 proportion as
+found in surface waters, i.e., about 200 mmol kg/C0 1 from
+the soft-tissue pump and 20 mmol kg/C0 1 from the car-
+bonate pump. If the ocean were borate-free and there-
+fore approximation (9.3.6) were accurate, table 9.3.5
+tells us that this should lead to a decrease in the CO
+2/C0
+3
+concentration of about 208 mmol kg/C0 1. The real de-
+crease is only about 122 mmol kg/C0 1, because of strong
+buffering by borate (table 9.3.6). In a second step, we
+add carbon from the remineralization of organic matter
+and the dissolution of CaCO
+3 in a 1:1 proportion as
+found in the deep ocean, i.e., about 50 mmol kg/C0 1 from
+the soft-tissue pump and 50 mmol kg/C0 1 from the car-
+bonate pump. Again, in a borate-free ocean, this would
+lead to a reduction in the CO
+2/C0
+3 content of about
+7 mmol kg/C0 1. Including borate, there is actually no re-
+duction at all (table 9.3.6).
+In summary, it is important to remember that the
+CO2/C0
+3 ion is only a relatively small fraction of the fast-
+exchanging pool of total inorganic carbon. The CO 2/C0
+3
+Table 9.3.5
+Changes in DIC, Alk, [HCO
+/C0
+3
+], and [CO2/C0
+3 ] as a result of
+the remineralization of organic matter and dissolution
+of mineral CaCO
+3
+Mineralization
+of Org. Matter
+Dissolution
+of CaCO3
+DDIC (mol/mol) þ1 þ1
+DAlk (mol/mol) /C0 0.14 þ2
+D[CO2/C0
+3 ] (mol/mol) /C0 1.14 þ1
+D[HCO/C0
+3
+] (mol/mol) þ2.14 0
+The changes in Alk due to the remineralization of organic matter
+were calculated using the nitrogen-to-carbon stoichiometry of Ander-
+son and Sarmiento [1994]. The changes in [CO 2/C0
+3 ] and [HCO /C0
+3
+] have
+been calculated using the approximations (8.2.17) and (8.2.18), thus
+D[CO
+2/C0
+3 ] /C25 DAlk /C0 DDIC and D[HCO/C0
+3
+] /C25 2 /C1 DDIC /C0 DAlk:
+Table 9.3.6
+Changes in DIC, Alk, HCO
+/C0
+3
+, and CO 2/C0
+3 as a typical
+surface water parcel from the low latitudes is moved
+ﬁrst to intermediate depths and then to the deep ocean
+(1)
+Surface
+Water
+(2)
+Move to
+Intermed.
+Watera
+(3)
+Move to
+Deep
+Waterb
+DIC (mmol kg/C0 1)c 2026 2246 2346
+Alk (mmol kg/C0 1)c 2308 2320 2413
+[CO2/C0
+3 ]( mmol kg/C0 1)d 202 80 80
+[HCO/C0
+3
+]( mmol kg/C0 1)d 1812 2123 2220
+a Remineralizing 200 mmol kg/C0 1 of organic matter and dissolving
+20 mmol kg/C0 1 CaCO3.
+b Remineralizing 50 mmol kg/C0 1 of organic matter and dissolving
+50 mmol kg/C0 1 CaCO3.
+c The changes in DIC and Alk were calculated using the stoichio-
+metries shown in
+table 9.3.5.
+d The changes in [HCO /C0
+3
+] and [ CO2/C0
+3 ] were calculated using a full
+chemistry model and employing the dissociation constants ofMehrbach
+et al. [1973] as reﬁtted by Dickson and Millero [1987]. The temperature
+and salinity were assumed to remain constant at 24/C14 C and 35.34.
+370
+Chapter 9

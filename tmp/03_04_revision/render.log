@@ -1,0 +1,70 @@
+C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] ERROR | Failed to create history session in C:\Users\19279\.ipython\profile_default\history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 791, in __init__
+    self.new_session()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 163, in wrapper
+    return f(*a, **kw)
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 881, in new_session
+    cur = conn.execute(
+        """INSERT INTO sessions VALUES (NULL, ?, NULL,
+                    NULL, '') """,
+        (datetime.datetime.now().isoformat(" "),),
+    )
+sqlite3.OperationalError: attempt to write a readonly database
+Jupyter execution passed: 03_boudreau_three_box_model.ipynb
+Rendered and validated: instructor 03_boudreau_three_box_model.ipynb
+Rendered and validated: student 03_boudreau_three_box_model.ipynb
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] ERROR | Failed to create history session in C:\Users\19279\.ipython\profile_default\history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 791, in __init__
+    self.new_session()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 163, in wrapper
+    return f(*a, **kw)
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 881, in new_session
+    cur = conn.execute(
+        """INSERT INTO sessions VALUES (NULL, ?, NULL,
+                    NULL, '') """,
+        (datetime.datetime.now().isoformat(" "),),
+    )
+sqlite3.OperationalError: attempt to write a readonly database
+Jupyter execution passed: 04_pump_strength_OA_OAE.ipynb
+Rendered and validated: instructor 04_pump_strength_OA_OAE.ipynb
+Rendered and validated: student 04_pump_strength_OA_OAE.ipynb
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] ERROR | Failed to create history session in C:\Users\19279\.ipython\profile_default\history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 791, in __init__
+    self.new_session()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 163, in wrapper
+    return f(*a, **kw)
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 881, in new_session
+    cur = conn.execute(
+        """INSERT INTO sessions VALUES (NULL, ?, NULL,
+                    NULL, '') """,
+        (datetime.datetime.now().isoformat(" "),),
+    )
+sqlite3.OperationalError: attempt to write a readonly database
+Jupyter execution passed: extensions/05_independent_model.ipynb
+Rendered and validated: instructor extensions/05_independent_model.ipynb
+Rendered and validated: student extensions/05_independent_model.ipynb
+Benchmark/archive hashes unchanged. Other changes during task: ['notebooks\\instructor\\01_single_box_air_sea_CO2.ipynb', 'notebooks\\instructor\\.ipynb_checkpoints\\01_single_box_air_sea_CO2-checkpoint.ipynb']
+All affected student copies match their instructor sources exactly.

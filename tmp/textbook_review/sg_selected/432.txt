@@ -1,0 +1,134 @@
+of organic matter since the water parcel was last in
+contact with the atmosphere, and the second term
+represents the corresponding change in DIC due to the
+dissolution of CaCO
+3. The factor 1/2 arises from the
+fact that the dissolution of CaCO3 changes Alk and DIC
+in a 2:1 ratio. The AOU term in the carbonate correc-
+tion term is a result of the inﬂuence of the soft-tissue
+pump on Alk (see chapter 8).
+The easiest way of interpreting (10.2.18) is to view
+it in direct analogy to the computing of preformed
+properties discussed in chapter 5. The expression
+DIC
+obs/C0 DDICbio is directly equivalent to the computa-
+tion of a preformed concentration, i.e., the biological
+correction takes a water sample at any given location in
+the ocean interior and moves it back to the surface,
+where it was last in contact with the atmosphere. The
+anthropogenic CO
+2 concentration is then the difference
+between this preformed DIC concentration and the
+preformed concentration that existed in preindustrial
+times, DIC
+0
+pi:
+However, the Brewer, Chen and Millero approach
+never found general acceptance, since the uncertainties
+were regarded as too large [ Shiller, 1981, 1982; Broecker
+et al. , 1985b], particularly because of very large un-
+certainties associated with the estimation of DIC
+0
+pi.
+However, Gruber et al. [1996] showed that this approach
+can be signiﬁcantly improved by taking advantage of
+the fact that we can estimate water mass ages on the
+basis of a number of transient tracers (see discussion in
+chapter 2).
+The most relevant change to the original technique
+by Brewer and by Chen and Millero was to separate the
+DIC
+0
+pi term into a preindustrial equilibrium term, i.e.,
+the DIC concentration a given water parcel would have
+if it had been in equilibrium with preindustrial atmo-
+spheric CO
+2 for a given salinity S, temperature T, and
+preformed alkalinity Alk0, i.e., DICeq pi and a disequi-
+librium term DDICdiseq, i.e.,
+DIC0
+pi ¼ DICeq pi þ DDICdiseq (10:2:20)
+Inserting (10.2.20) into (10.2.18) gives
+Cant ¼ DICobs /C0 DDICbio /C0 DICeq pi /C0 DDICdiseq (10:2:21)
+¼ DC* /C0 DDICdiseq (10:2:22)
+where we combined the ﬁrst three terms on the right-
+hand side of (10.2.21) into DC*. The tracer DC*i s
+nearly conservative in the ocean interior and can be
+calculated on the basis of concurrent observations of
+DIC, Alk, temperature, salinity, oxygen, and nutrients.
+This tracer is also directly related to the C* tracer used
+in chapter 8 for separating the different pump com-
+ponents from the observed variations of DIC.T h e
+reader interested in details is referred to Gruber et al.
+[1996] and Gruber and Sarmiento [2002].
+Therefore, in order to estimate C
+ant, we are left with
+the need to estimate the disequilibrium term DDICdiseq.
+Given an equilibration timescale of nearly a year for the
+air-sea exchange of CO
+2, this disequilibrium term,
+which corresponds directly to a DpCO2 at the time a
+water parcel was last in contact with the atmosphere,
+can be quite large.
+Gruber et al. [1996] made three important assump-
+tions to estimate DDIC
+diseq. First, they argued that the
+expected changes of this disequilibrium over time are
+small, and therefore assumed it to be constant. Their
+argument was based on the expectation that the long-
+term change in this disequilibrium driven by the an-
+thropogenic CO
+2 perturbation is on the order of a few
+mmol kg/C0 1 only. Although this argument is correct, the
+fact that the disequilibrium is actually changing over
+time makes this assumption one of the largest sources
+of error in this method (cf. Matsumoto and Gruber
+[2005]). The second assumption is that ocean circula-
+tion and mixing occurs predominantly along isopycnal
+surfaces, permitting us to do the analyses on them.
+This requires also the consideration of the different
+end-members present on these isopycnals. Finally, the
+method assumes that the natural carbon cycle has re-
+mained in an approximate steady-state over the An-
+thropocene, i.e. the last 250 years.
+With these assumptions, the estimation of DDIC
+diseq
+is straightforward when examining deep isopycnal
+surfaces that have slowly ventilated regions where it is
+safe to assume that there is no anthropogenic CO
+2 (see
+ﬁgure 10.2.6a). In those regions, Cant in (10.2.22) is
+zero, and we can estimate the disequilibrium for the
+water mass i that dominates this portion of the iso-
+pycnal surface simply by averaging DC*:
+DDICi
+diseq(s) ¼ DC*js ¼ const (10:2:23)
+This approach fails, however, on isopycnal surfaces that
+are shallower and rapidly ventilated. Here anthropogenic
+CO
+2 has already affected the entire density surface, and
+therefore no uncontaminated region can be found. For
+these density surfaces,Gruber et al. [1996] take advantage
+of the availability of age tracers that permit them to esti-
+mate the ventilation age of a water parcel. One can then
+compute theDIC equilibrium concentration at the time,t,
+a water parcel was last in contact with the atmosphere,
+DIC
+eq(t), which given the assumption of a constant air-
+sea disequilibrium differs from DICeq pi by Cant., i.e.
+DICeq(t) ¼ DICeq pi þ Cant. One could use this ‘‘shortcut’’
+method to estimate Cant (see McNeil et al .[ 2 0 0 3 ]f o ra n
+application), but the neglect of the change in the air-sea
+disequilibrium makes this shorcut method biased high.
+Instead,Gruber et al.[ 1 9 9 6 ]i n s e r t e dDIC
+eq(t) into (10.2.21)
+and solved for DDICdiseq ¼ DICobs /C0 DICbio /C0 DICeq(t),
+where the right hand side was equated with the modiﬁed
+DC* tracer, DC
+/C3
+t
+. Thus analyzing the variations ofDC/C3
+t
+on
+409
+Carbon Cycle, CO 2, and Climate

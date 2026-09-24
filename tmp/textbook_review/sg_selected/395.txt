@@ -1,0 +1,132 @@
+large errors in both ﬂux estimates. However, as dis-
+cussed by Milliman et al . [1999], there exists corrobo-
+rating evidence.
+Sediment trap data from the North Atlantic Bloom
+Experiment that resolve the vertical change in CaCO
+3
+ﬂuxes in the thermocline show a large decrease of the
+ﬂux of CaCO
+3 between 150 and 1000 m [ Martin et al .,
+1993], i.e., in waters that are supersaturated with re-
+spect to both calcite and aragonite (ﬁgure 9.3.3). Other
+corroborating data come from the equatorial Paciﬁc and
+the Arabian Sea, where surface calciﬁcation rates were
+on average several times larger than the sediment trap–
+measured CaCO
+3 ﬂuxes at 1000 m depth [ Balch and
+Kilpatrick, 1996; Milliman et al ., 1999].
+Furthermore, Armstrong et al . [2002] noted in their
+analyses of sediment traps from the equatorial Paciﬁc
+that the exponential length-scale of ballast dissolution is
+only about 500 m and about equal to the length-scale of
+the remineralization of the unprotected fraction of or-
+ganic matter (see equations (5.4.5) and (5.4.6)). Since
+CaCO
+3 represents one of the most important compo-
+nents of ballast, this also suggests a substantial disso-
+lution of CaCO
+3 in the upper ocean.
+Additional evidence comes from investigations of
+potential alkalinity changes in the various ocean basins
+by Sabine et al. [2002b], Feely et al. [2002], and Chung et al.
+[2003] as summarized by Feely et al. [2004a]. These au-
+thors studied the difference between measured potential
+alkalinity, P
+Alk, and preformed potential alkalinity,
+[PAlk]preformed, in order to estimate the cumulative con-
+tribution of CaCO 3 dissolution to Alk from the time a
+water parcel has lost contact with the atmosphere. These
+authors multiplied this difference by a factor of 0.5 in
+order to express it in terms of changes in DIC. This
+tracer, DDIC
+CaCO3 , is conceptually analogous to the ap-
+parent oxygen utilization, AOU, and is given by:
+DDICCaCO3 ¼ 1
+2 ([P
+Alk] /C0 [PAlk]preformed)
+¼ 1
+2 (Alk þ [NO
+/C0
+3
+] /C0 (Alkpreformed þ [NO/C0
+3
+]preformed))
+(9:3:8)
+where [NO /C0
+3
+]preformed is preformed nitrate. Preformed
+nitrate can be estimated from AOU exactly the same
+way that we estimated preformed phosphate (see (5.3.2)
+and (5.3.3)), i.e.,
+[NO/C0
+3
+]preformed ¼ [NO/C0
+3
+] þ rN:O2 AOU (9:3:9)
+where rN:O2 is the N:O 2 ratio of organic matter re-
+mineralization, i.e., rN:O2 ¼ 16:/C0 170 [ Anderson and
+Sarmiento, 1994]. Inserting (9.3.9) into (9.3.8) gives
+DDICCaCO3 ¼ 1
+2 (Alk /C0 Alk
+preformed /C0 rN:O2 AOU)( 9 :3:10)
+Various empirical relationships have been deter-
+mined for preformed alkalinity by ﬁtting near-surface
+measurements of Alk as a function of tracers that are
+conservative in the interior of the ocean, such as sa-
+linity, S, potential temperature, and PO ¼ [O
+2] /C0 rO2 :P
+[PO3/C0
+4 ]. We adopt here the empirical relationship of
+Gruber et al. [1996], as it pertains to the global ocean.
+The other empirical relationships give similar results.
+Alkpreformed ¼ (367:5 þ 54:9 /C1 S þ 0:074 /C1 PO) lmol kg /C0 1
+(9:3:11)
+Figure 9.3.4 shows the distribution of DDICCaCO3 ,
+resulting from CaCO 3 dissolution in the Atlantic and
+Paciﬁc, as well as the saturation horizons for calcite and
+aragonite. This comparison reveals that the onset of a
+substantial impact of CaCO
+3 dissolution–derived Alk
+lies at great depth in the North Atlantic and shoals to
+substantially less than 1000 m in the Paciﬁc. The
+10 mmol kg
+/C0 1 isoline roughly follows the saturation
+horizon of aragonite, and is well above the saturation
+horizon for calcite. Sabine et al. [2002b], Feely et al.
+[2002], and Chung et al. [2003] used the distribution of
+DDIC
+CaCO3 together with age tracers to estimate CaCO 3
+dissolution rates and found that the dissolution be-
+tween the aragonite and calcite saturation horizons
+represents a substantial fraction of the total water col-
+umn dissolution.
+This is at odds, however, with the ﬁnding that only
+about 10% of the total surface production and export of
+0 50 100 150 200 250
+Flux (mg m
+-2
+ day
+-1
+)
+0
+500
+1000
+1500
+2000
+2500
+Depth (m)
+CaCO3
+Al-Silicate
+NABE
+(late April to early June 1989)
+Figure 9.3.3: Plot of the vertical ﬂux of CaCO 3 and aluminosilicates
+in the upper 2000 m during the North Atlantic Bloom Experiment
+(NABE; 47
+/C14 300N, 19 /C14 W) as measured by ﬂoating traps (total deploy-
+ment period of six weeks). Carbonate ﬂux decreases by 75% between
+150 and 2000 m, but the aluminosilicate ﬂux remains relatively con-
+stant (5.3 vs. 4.9 mg m
+/C0 2 day/C0 1, respectively). From Milliman et al .
+[1999], based on data from Martin et al . [1993].
+372
+Chapter 9

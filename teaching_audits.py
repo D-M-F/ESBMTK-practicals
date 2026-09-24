@@ -107,3 +107,72 @@ def audit_complete_model(model, forcing="control", *, rtol=2e-5, atol_mol=1e6):
     return {"max carbon error / initial stock": float(carbon_error),
             "max TA error / initial stock": float(ta_error),
             "external input (Pmol C or TA eq)": float(added[-1] / 1e15)}
+
+
+def audit_restart_drift(model, *, concentration_tolerance=0.01,
+                        atmosphere_tolerance=0.01, snowline_tolerance=0.01):
+    """Check all saved states of the short (<=20 yr) teaching restart.
+
+    Absolute limits are in umol/kg (TA: ueq/kg), ppm, and metres. They are
+    teaching acceptance tolerances, not evidence of asymptotic stability.
+    Checking the full trace detects excursions hidden by an endpoint-only test.
+    """
+    if len(model.time) < 2 or not 0 < model.time[-1] - model.time[0] <= 20.000001:
+        raise ValueError('restart drift check requires a positive run of at most 20 model years')
+    series = [('atm CO2', model.CO2_At.c, 1e6, 'ppm', atmosphere_tolerance)]
+    for box in (model.L_b, model.H_b, model.D_b):
+        for species, unit in (('DIC', 'umol/kg'), ('TA', 'ueq/kg')):
+            series.append((f'{box.name} {species}', getattr(box, species).c,
+                           1e6, unit, concentration_tolerance))
+    series.append(('sediment snowline', model.D_b.zsnow.c, 1., 'm', snowline_tolerance))
+    rows = []
+    for name, values, scale, unit, tolerance in series:
+        values = np.asarray(values, dtype=float)
+        if not np.isfinite(tolerance) or tolerance <= 0:
+            raise ValueError('restart tolerances must be finite and positive')
+        if values.shape != np.asarray(model.time).shape or not np.isfinite(values).all():
+            raise AssertionError(f'{name}: invalid restart trace')
+        drift = float(np.max(np.abs(values - values[0])) * scale)
+        if drift > tolerance:
+            raise AssertionError(f'{name}: restart drift {drift:g} {unit} exceeds {tolerance:g}')
+        rows.append({'State': name, 'Maximum drift': drift, 'Tolerance': tolerance, 'Unit': unit})
+    return rows
+
+
+def audit_benchmark_graph(model):
+    """Match every native connection to workbook topology and process metadata.
+
+    This verifies structure separately from inventory conservation; a reversed
+    conservative transfer would fail here. Carbonate sink bypass and module
+    coupling are checked by the notebook and reference-trajectory comparison.
+    """
+    p = model.tutorial_params
+    expected = []
+    for r in p['transport_connections']:
+        for sp in ('DIC', 'TA'):
+            expected.append((r['id'], f"{r['source']}.{sp}",
+                             f"{r['sink']}.{sp}", 'scale_with_concentration'))
+    expected += [
+        ('POM', 'L_b.DIC', 'D_b.DIC', 'regular'),
+        ('PIC_DIC', 'L_b.DIC', 'D_b.DIC', 'regular'),
+        ('PIC_TA', 'L_b.TA', 'D_b.TA', 'regular'),
+        ('weathering', 'Fw.DIC', 'L_b.DIC', 'regular'),
+        ('weathering', 'Fw.TA', 'L_b.TA', 'regular'),
+    ]
+    expected += [(r['surface'], r['atmosphere'], f"{r['surface']}.DIC", 'gasexchange')
+                 for r in p['gas_exchange_connections']]
+    # Only strip the shared model prefix; retain the species part of each name.
+    prefix = model.name + '.'
+    actual = [(c.id, c.source.full_name.removeprefix(prefix),
+               c.sink.full_name.removeprefix(prefix), c.ctype) for c in model.loc]
+    if sorted(actual) != sorted(expected):
+        raise AssertionError('constructed connections differ from the workbook/process specification')
+    for ident, parameter, factor in (('POM', 'poc_export', 1),
+                                      ('PIC_DIC', 'pic_export', 1),
+                                      ('PIC_TA', 'pic_export', 2)):
+        connection = next(c for c in model.loc if c.id == ident)
+        # Native connections store numeric rates in the model's mol/yr units.
+        np.testing.assert_allclose(connection.rate,
+                                   factor * Q_(p[parameter]).to('mol/yr').magnitude,
+                                   rtol=1e-12, atol=0)
+    return [dict(zip(('ID', 'Source', 'Sink', 'Law'), row)) for row in sorted(actual)]

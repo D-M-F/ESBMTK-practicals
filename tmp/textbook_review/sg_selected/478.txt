@@ -1,0 +1,52 @@
+which process is the primary one responsible for the removal of CO 2 from
+the atmosphere at the point in time the threshold is crossed.
+10.6 Direct injection into the ocean of liquid CO 2 captured from ﬂue gases such
+as from fossil fuel–based power plants has been proposed as a means for
+reducing the buildup of atmospheric CO
+2, while still permitting the use of
+fossil fuel to generate electrical power. Discuss this management option
+considering the following issues:
+a. Compute the increase of the partial pressure of CO
+2 if you add 10 ml of
+liquid CO2 to 1 m3 of seawater at a temperature of 20 /C14 C. Assume that
+the initial DIC is 2000 mmol m/C0 3, while Alk remains constant at
+2300 mmol m/C0 3. The density of liquid CO 2 is about 760 kg m/C0 3 at this
+temperature and 1 atm pressure. The molecular weight of CO 2 is 44.
+Hint: Use the lookup table for problem 8.14 in chapter 8 for computing
+the oceanic pCO
+2 for a given DIC and Alk.
+b. Assume that we want to inject 10% of the current global CO 2 emis-
+sions, which are about 7 Pg C yr/C0 1. How much seawater do we need per
+year to dilute these injections with the same dilution factor given above
+(which is about 1:10
+5)? Convert your answer into Sverdrups, i.e.,
+106 m3 s/C0 1. Contrast this number with the ﬂow of the Amazon, which is
+about 0.2 Sv.
+c. Given what you know about oceanic circulation, where would you inject
+the liquid CO 2 in order to maximize the oceanic retention?
+d. Where would most of the CO 2 that the ocean cannot retain be emitted
+back into the atmosphere?
+10.7 Explain the atmospheric oxygen method to estimate the oceanic uptake of
+anthropogenic CO2. Discuss its major assumptions.
+10.8 Explain the apparent paradox that the tropical Paciﬁc is viewed as being a
+large sink for anthropogenic CO 2, despite the fact that it is a region of net
+outgassing of CO 2.
+10.9 The role of ocean biology in taking up additional CO 2 from the atmosphere
+in response to rising atmospheric CO 2 has been an issue of intense debate.
+To address this question, it is helpful to clearly distinguish a number of
+different cases:
+a. Constant ocean circulation, constant temperature, and constant
+oceanic biota
+b. As (a), but reduced biological export production
+c. As (a), but a decrease in upper-ocean thermocline ventilation
+d. As (a), but reduced rate of CaCO
+3 formation and export
+For each case discuss the role of ocean biology for the net exchange of CO 2
+between the ocean and the atmosphere.
+10.10 Climate models suggest that the ocean will take up more than 1 petajoule
+(1015 J) of heat over the next few decades. Estimate the net loss of CO 2 from
+the ocean in response to this heat uptake. Hint: See equation (10.2.32).
+10.11 Explain why, in the climatological mean state, the partial pressure of CO 2 in
+the tropical Paciﬁc is inversely proportional to SST, i.e., why high pCO2
+Carbon Cycle, CO 2, and Climate
+455

@@ -1,0 +1,156 @@
+Table 8.2.1
+The CO
+2 system in seawater
+Unknowns:
+CO2(gas),H 2CO/C3
+3
+, HCO /C0
+3
+,C O 2/C0
+3 ,H þ ,O H /C0 , B(OH) /C0
+4
+,H 3BO3, DIC, Alk
+Reactions:
+CO2(gas) þ H2O Ð
+K0
+H2CO/C3
+3
+(1)
+H2CO/C3
+3
+Ð
+K1
+Hþ þ HCO/C0
+3
+(2)
+HCO/C0
+3
+Ð
+K2
+Hþ þ CO2/C0
+3 (3)
+H2O Ð
+Ko
+Hþ þ OH/C0 (4)
+H3BO3 þ H2O Ð
+KB
+Hþ þ B(OH)/C0
+4
+(5)
+Equilibrium constants:
+K0 ¼ [H2CO/C3
+3
+]
+pCO2
+(6)
+K1 ¼ [Hþ ][HCO/C0
+3
+]
+[H2CO/C3
+3
+] (7)
+K2 ¼ [Hþ ][CO2/C0
+3 ]
+[HCO/C0
+3
+] (8)
+Kw ¼ [Hþ ][OH/C0 ] (9)
+KB ¼ [Hþ ][B(OH)/C0
+4
+]
+[H3BO3] (10)
+Concentration deﬁnitions y:
+DIC ¼ [H2CO/C3
+3
+] þ [HCO/C0
+3
+] þ [CO2/C0
+3 ] (11)
+Alk ¼ [HCO/C0
+3
+] þ 2[CO2/C0
+3 ] þ [OH/C0 ] /C0 [H þ ] þ [B(OH)/C0
+4
+] (12)
+TB ¼ [B(OH)/C0
+4
+] þ [H3BO3] ¼ c /C1 S (13)
+Solution:
+In models of the ocean carbon cycle, two cases are most commonly encountered: (a) specifying DIC and Alk and calculating pCO
+2; (b) specifying pCO2
+and Alk and computing DIC.
+(a) DIC and Alk:
+The goal is to rewrite the equation forAlk (12) in terms of the known parametersDIC and TB, and then solve the resulting equation for unknown [Hþ]. As a
+ﬁrst step, we use (7), (8), and the DIC deﬁnition (11) to write expressions for [HCO /C0
+3
+] and [CO 2/C0
+3 ] that contain only [H þ] as an unknown. In the case of
+[HCO/C0
+3
+], this is done as follows. Solve (7) for [H 2CO/C3
+3
+] and insert into (11). Similarly, solve (8) for [CO 2/C0
+3 ] and insert into (11). This gives
+DIC ¼ [Hþ ][HCO/C0
+3
+]
+K1
+þ [HCO/C0
+3
+] þ K2[HCO/C0
+3
+]
+[Hþ ] (14)
+Next, we use (8), solve it for [HCO /C0
+3
+], and insert it into (14). This gives a second equation for DIC:
+DIC ¼ [Hþ ]2[CO2/C0
+3 ]
+K1K2
+þ [Hþ ][CO2/C0
+3 ]
+K2
+þ [CO2/C0
+3 ] (15)
+Solving (14) for [HCO/C0
+3
+] and (15) for [CO2/C0
+3 ], respectively, and inserting the results into (12) eliminates [CO2/C0
+3 ] and [HCO/C0
+3
+] from this latter equation. The
+concentrations of [OH/C0 ] and [B(OH) /C0
+4
+] are similarly eliminated using (9), (10), and (13). This results in our ﬁnal equation, which is fourth order in the
+unknown [Hþ ]. This equation can then be solved for [H þ] using an iterative approach. Once [H þ] has been calculated, pCO2 can be calculated from
+pCO2 ¼ [DIC ]
+K0
+[Hþ ]2
+[Hþ ]2 þ K1[Hþ ] þ K1K2
+(16)
+where this equation has been derived by solving (6) for pCO2, and then using (7), (8), and (11) to eliminate the unknowns [H 2CO/C3
+3
+], [HCO/C0
+3
+], and [CO2/C0
+3 ].
+See also (17)–(19) below.
+(b) Alk and pCO
+2:
+Rewrite the equations for the three carbon species, i.e., (6), (7), and (8), in terms of [H þ] and pCO2, thus
+[H2CO/C3
+3
+] ¼ K0 pCO2 (17)
+[HCO/C0
+3
+] ¼ K0 K1 pCO2
+[Hþ ] (18)
+[CO2/C0
+3 ] ¼ K0 K1 K2 pCO2
+[Hþ ]2 (19)
+Substitute these terms into the equation forAlk (12) and also recast the other species, i.e., [OH/C0 ] and [B(OH)/C0
+4
+], in terms of [Hþ] and total concentrations. The
+resulting equation can again be solved using an iterative approach. Once [Hþ]i sf o u n d ,DIC is calculated using (11) and (17)–(19).
+y The minor contribution of other weak bases to alkalinity are neglected here (see Dickson and Goyet [1994] for more details).
+324

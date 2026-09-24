@@ -1,0 +1,81 @@
+The correction for nonideal behavior, exp ( VA/C0
+/C2
+Videal) /C1 P
+/C14
+(R /C1 T)/C138 , is important for gases whose behavior
+departs signiﬁcantly from ideality, such as CO2,N 2O, and
+the chloroﬂuorocarbons. For example, ﬁgure 2 shows
+exp ( VA /C0 Videal) /C1 P
+/C14
+R /C1 TðÞ
+/C2/C3
+for CO 2 as obtained with
+the Weiss [1974] binary mixture expression for
+VA /C0 Videal. The correction is approximately 0.4%,
+equivalent to a pCO2 of about 1.5 matm. Weiss [1974]
+incorporates the correction for nonideal gases in the
+solubility function F
+A, deﬁned by
+[A] ¼ [FA /C1 wA
+dry
+] /C2 106 mmol m/C0 3
+mol l/C0 1 (9)
+where
+FA ¼ (P /C0 pH2O)/C1 bA
+VA
+/C1 exp P /C1 (VA /C0 Videal)
+R /C1 T
+/C20/C21
+(10)
+has units of mol l /C0 1. Combining (3.1.2) and (7) with (9)
+and (10) gives
+SA ¼ FA /C1
+wA
+dry
+pA
+moist
+"#
+/C2 106 mmol m/C0 3
+mol l/C0 1
+¼ FA
+(P /C0 pH2O)
+/C20/C21
+/C2 106 mmol m/C0 3
+mol l/C0 1
+(11)
+0 5 10 15 20 25 30
+Temperature (°C)
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+(1-f/p) (%)
+Figure 2: Plot of the temperature dependence of the correction factor
+that takes into account the nonideal behavior CO 2.
+Table 3.2.2
+Coefﬁcients for the ﬁt of solubility to the following equation:
+ln( ) ¼ A1 þA2(100=T) þA3ln(T=100) þA4(T=100)2 þS /C1 [B1 þB2(T=100) þB3(T=100)2]
+T is the temperature in K and S is the salinity, ( ) ¼ b is the Bunsen solubility coefﬁcient in units of l gas (l solution) /C0 1 atm/C0 1,
+and ( ) ¼ F is the volumetric solubility function in units of mol l /C0 1 atm/C0 1.
+Gas ( ) A 1 A2 A3 A4 B1 B2 B3 Estimated Accuracy
+He b /C0 34.6261 43.0285 14.1391 — /C0 0.042340 0.022624 /C0 0.0033120 0.5%
+Ne b /C0 39.1971 51.8013 15.7699 — /C0 0.124695 0.078374 /C0 0.0127972 0.5%
+N2 b /C0 59.6274 85.7761 24.3696 — /C0 0.051580 0.026329 /C0 0.0037252 0.4%
+O2 b /C0 58.3877 85.8079 23.8439 — /C0 0.034892 0.015568 /C0 0.0019387 0.4%
+Ar b /C0 55.6578 82.0262 22.5929 — /C0 0.036267 0.016241 /C0 0.0020114 0.4%
+Kr b /C0 57.2596 87.4242 22.9332 — /C0 0.008723 /C0 0.002793 0.0012398 0.4%
+Rn b /C0 11.95 31.66 — — — — — —
+CH4 b /C0 68.8862 101.4956 28.7314 — /C0 0.076146 0.043970 /C0 0.0068672 1%
+CO2 F /C0 160.7333 215.4152 89.8920 /C0 1.47759 0.029941 /C0 0.027455 0.0053407 0.3%
+N2O F /C0 165.8806 222.8743 92.0792 /C0 1.48425 /C0 0.056235 0.031619 /C0 0.0048472 0.14%
+CCl2F2 (CFC-12) F /C0 218.0971 298.9702 113.8049 /C0 1.39165 /C0 0.143566 0.091015 /C0 0.0153924 1.5%
+CCl3F (CFC-11) F /C0 229.9261 319.6552 119.4471 /C0 1.39165 /C0 0.142382 0.091459 /C0 0.0157274 1.5%
+SF6 F /C0 80.0343 117.232 29.5817 — 0.0335183 /C0 0.0373942 0.00774862 2%
+CCl4 F /C0 148.247 227.758 62.5557 — /C0 0.400847 0.265218 /C0 0.0446424 2.5%
+Sources: He and Ne, Weiss [1971]; N 2,O 2, and Ar, Weiss [1970]; Kr, Weiss and Kyser [1978]; Rn, Hackbusch [1979]; CH 4, Wiesenburg and
+Guinasso [1979]; CO2 and N2O, Weiss and Price [1980]; CFC-11 and CFC-12, Warner and Weiss [1985]; SF6, Bullister et al. [2002]; CCl4, Bullister and
+Wisegarver [1998].
+Air-Sea Interface
+79

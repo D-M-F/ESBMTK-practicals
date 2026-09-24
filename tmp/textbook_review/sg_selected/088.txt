@@ -1,0 +1,87 @@
+Chapter 3
+Air-Sea Interface
+Having introduced the tracer conservation equation
+and discussed ocean transport, we now consider the
+processes at the air-sea and ocean bottom interfaces and
+biogeochemical processes internal to the ocean that
+need to be speciﬁed to solve for the tracer distributions.
+This chapter discusses gas exchange at the air-sea in-
+terface. This exchange has a major impact on the dis-
+tribution of gases within both the ocean and the at-
+mosphere. The ﬁrst section of this chapter introduces
+the major gases in the atmosphere and ocean. We then
+discuss the solubility of gases in seawater, and the
+processes at the air-sea interface that control the air-sea
+exchange. A ﬁnal section illustrates the application of
+the gas exchange model to several important problems.
+3.1 Introduction
+The gaseous composition of our atmosphere is unique
+in the solar system because of the impact of biological
+processes on all the major constituents except the noble
+gases: argon, neon, helium, krypton, and xenon (table
+3.1.1). Our discussion in this chapter will focus pri-
+marily on three of these gases, O
+2,C O 2, and N 2O,
+which are produced and consumed in large quantities
+by biogeochemical processes within the ocean. Two of
+them, CO
+2 and N2O, are among the gases that play an
+important role in controlling temperature at the surface
+of the Earth through the greenhouse effect of trapping
+long-wave radiation emitted from the surface of the
+Earth (see chapter 10). Both gases have been increasing
+at an unprecedented rate in the atmosphere due pri-
+marily to human impacts (for example, deforestation
+and fossil fuel burning in the case of CO
+2) and are
+believed to be major contributors to global warming
+(see chapter 10). Concern about global warming, as well
+as our interest in the contribution of greenhouse gases
+to longer term climate variations, are among the major
+motivations for continuing interest in understanding
+what controls the air-sea ﬂux of these and other gases.
+The net air-sea ﬂux of a gas A is directly proportion to
+the partial pressure difference across the air-sea interface
+or its corresponding concentration anomaly, deﬁned as
+DpA ¼ pA
+w
+/C0 pA
+a
+and
+D[A] ¼ [A]w /C0 [A]equilibrium
+(3:1:1)
+respectively. In these equations, [A] is concentration in
+mmol m
+/C0 3, pA is the partial pressure in atmospheres,
+and the subscripts w and a refer to water and air, re-
+spectively. Partial pressure is deﬁned such that the sum
+of the partial pressures of all gases is equal to the total
+atmospheric pressure. According to Henry’s law, the
+partial pressure of a gas above a liquid with which it is
+in thermodynamic equilibrium is directly proportional
+to the concentration in the liquid. We ﬁnd it convenient
+to state this equilibrium condition as
+[A]equilibrium ¼ SA /C1 p A (3:1:2)
+where SA is the solubility of A in units of mmol m /C0 3
+atm/C0 1. The solubility is a function of temperature and
+salinity. If the ocean is not in equilibrium with the at-
+mosphere, as is commonly the case, then [A]
+w is not
+equal to [A]equilibrium, nor will the partial pressure equiv-
+alent of [A]w calculated from (3.1.2) (i.e.,pA
+w
+¼[A]w =SA)b e
+equal to the partial pressure of the gas in the air, pA
+a
+.
+Returning to the anomaly deﬁnitions (3.1.1), we see that
+a saturated or equilibrium solution will have an anomaly
+of 0. Supersaturated solutions are those that have higher
+partial pressures or concentrations in seawater than in
+the air, and thus positive anomalies. Supersaturated so-
+lutions will tend to lose gas A from the ocean to the air.
+Undersaturated solutions have negative anomalies and
+tend to gain A from the air. Figures 3.1.1 to 3.1.4 show
+concentration anomalies of O
+2 and partial pressure
+73

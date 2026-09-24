@@ -1,0 +1,55 @@
+pCO2) /C1 (@pCO2/@S), but take into consideration how DIC and Alk change
+with S. Assume that precipitation has zero DIC and Alk.
+8.9 During the last ice age, the surface ocean was both cooler and saltier. Cal-
+culate the change in mean surface ocean pCO2 that results from these
+changes in surface properties by assuming that the cooling was 4 /C14 C and the
+salinity increase was 1.1. Use the surface mean concentrations given in table
+8.2.4. Note: Use the salinity dependence computed in problem 8.8 rather than
+equation (8.3.5).
+8.10 Discuss the equilibration timescale for the exchange of CO
+2 across the
+air-sea interface:
+a. Explain why CO 2 takes about 20 times longer than oxygen to
+equilibrate between the atmosphere and the surface ocean by air-sea
+gas exchange.
+b. The invasion of anthropogenic CO
+2 into the ocean leads to an increase
+in surface ocean DIC, while leaving surface Alk unchanged. How
+does this affect the air-sea equilibration time of CO 2? Hint: Consider
+equation (4) in panel 8.3.1 in conjunction with the approximations
+(8.2.17) and (8.2.18).
+8.11 Consider a well-mixed surface ocean box with mean surface ocean properties.
+The only process considered is air-sea gas exchange. Investigate how this
+system responds to perturbations.
+a. Write down the time-dependent conservation equation for the
+H
+2CO3* concentration in this surface ocean box (8.3.10), then con-
+vert this into a time-dependent equation for the anomaly of H 2CO3* with
+respect to saturation with the atmosphere, DH2CO3* ¼ [H2CO3*]a /C0
+[H2CO3*]w.
+b. Solve the ﬁrst-order differential equation for time-dependent behavior
+of DH2CO3*. Assume that atmospheric pCO2 and the buffer factor, i.e.,
+the partial derivative @[DIC ]/@[H2CO3*], remain constant.
+c. How long does it take to equilibrate the entire inorganic carbon system
+in this surface layer box to within 66%, 95%, and 99% of the
+atmospheric concentration after an instantaneous change in surface
+temperature? Use a gas exchange coefﬁcient of 20 cm h
+/C0 1 and a value of
+20 for the partial derivative @[DIC]/@[H2CO3*], and assume that this
+surface box is 50 m deep.
+d. How do the results in (c) change (i) if we increase the depth of the box
+to 100 m, or (ii) if we decrease the value of the partial derivative @[DIC ]/
+@[H2CO3*]t o1 0 ?
+8.12 Anthropogenic CO 2 emissions have led to a strong increase in atmospheric
+pCO2 since the beginning of the industrial period. Much research over the
+last decades has focused on the role of the ocean as a sink for this anthro-
+pogenic CO
+2 (see chapter 10 for more details).
+a. The present rate of increase in atmospheric CO 2 is about 1.5 matm yr/C0 1.
+Estimate the rate of increase in surface ocean DIC under the assump-
+tion that the surface ocean is able to keep up with the atmospheric
+perturbation, i.e., remains in equilibrium with the change in atmo-
+spheric CO
+2. Assume a contemporary pCO2 of 360 matm.
+356
+Chapter 8

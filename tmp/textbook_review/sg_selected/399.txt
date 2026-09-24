@@ -1,0 +1,131 @@
+the thermodynamic driving factor. Seawater is every-
+where strongly undersaturated with respect to opal,
+resulting in a nearly uniform driving factor throughout
+the oceans. By contrast, the carbonate saturation state
+with respect to calcite varies substantially (ﬁgure 9.3.2).
+Therefore the variability in this driving factor must play
+a more important role in controlling the diagenesis of
+CaCO
+3 in comparison with that of opal. We ﬁnd strong
+evidence for this in the observation that the depth of the
+lysocline (ﬁgure 9.4.2) is broadly consistent with the
+depth of the saturation horizon (ﬁgure 9.3.2). This re-
+markable consistency suggests that the thermodynamic
+driving factor is the dominant factor determining
+CaCO
+3 preservation.
+One way to test this hypothesis is to look at results
+from benthic chambers that were deployed in waters of
+differing bottom water saturation [ Jahnke et al ., 1994].
+Figure 9.4.3 shows results from three such deploy-
+ments. The ﬁrst row depicts measurements from a site
+at 3100 m in the tropical North Atlantic, where bottom
+waters have a DCO
+2/C0
+3 of 27 mmol kg/C0 1 with respect to
+calcite, i.e., they are supersaturated. The second and
+third rows depict measurements from two sites in the
+western equatorial Paciﬁc, at depths of about 3000 m
+and 4400 m, respectively. The DCO
+2/C0
+3 of the former site
+is /C0 6 mmol kg/C0 1, i.e., slightly undersaturated, whereas
+the DCO2/C0
+3 of the latter is /C0 37 mmol kg/C0 1, i.e., strongly
+undersaturated. The bottom waters enclosed by the
+benthic chamber show a substantial decrease of oxygen
+at all three sites, reﬂecting the oxygen demand of the
+sediments as organic matter is remineralized. By con-
+trast, large differences exist between the three sites in
+the sediment-water ﬂuxes of Alk and Ca
+2þ. Whereas the
+strongly undersaturated site shows a strong efﬂux of Alk
+250
+230
+Characteristics
+Supersaturated
+210
+220
+200
+240Oxygen (mmol m–3)
+Alkalinity (mmol m–3)
+02 0 4 0 9 0 8060
+ab c
+de f
+gh i
+10 30 70 50
+10.50
+10.46
+10.42
+10.44
+10.40
+10.48
+Calcium (mol m–3)
+02 0 4 0 9 0 806010 30 70 50
+2500
+2460
+2420
+2440
+2400
+2480
+02 0 4 0 9 0 806010 30 70 50
+170
+160
+Slightly
+Undersaturated
+150
+155
+145
+140
+135
+165 Oxygen (mmol m–3)
+Alkalinity (mmol m–3)
+0 40 80 160 12020 60 140 100 0 40 80 160 12020 60 140 100 0 40 80 160 12020 60 140 100
+0 40 80 160 12020 60 140 100 0 40 80 160 12020 60 140 100 0 40 80 160 12020 60 140 100
+10.42
+10.40
+10.39
+10.38
+10.41
+Calcium (mol m–3)
+2470
+2450
+2430
+2440
+2420
+2460
+2470
+2450
+2430
+2440
+2420
+2460
+190
+180
+175
+Strongly
+Undersaturated
+165
+170
+160
+185 Oxygen (mmol m–3)
+Alkalinity (mmol m–3)
+Time (hrs)
+10.420
+10.405
+10.395
+10.400
+10.390
+10.410
+10.415 Calcium (mol m–3)
+Time (hrs)Time (hrs)
+Figure 9.4.3: Plots of the time evolution of oxygen, total alkalinity, and dissolved calcium in benthic ﬂux chambers at three different
+sites. (a–c) Atlantic site at 18 /C14 280N, 21 /C14 020W. Calcite saturation, DCO2/C0
+3 ¼ 27lmol kg /C0 1 (d–f ). Paciﬁc site at 0 /C14 000 S, 160 /C14 250E. Calcite
+saturation, DCO2/C0
+3 ¼/C0 6 lmol kg /C0 1. (g–i) Paciﬁc site at 0 /C14 000S, 162 /C14 410E. Calcite saturation, DCO2/C0
+3 ¼/C0 37lmol kg /C0 1. The characteristics
+of each site are shown on the right side of each row. Straight lines represent the linear regression of the data; curved lines are the 95%
+conﬁdence limits of the regression lines. Adapted from Jahnke et al . [1994].
+376
+Chapter 9

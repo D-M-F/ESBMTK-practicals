@@ -1,0 +1,104 @@
+between the lysocline and the CCD (Figure 9.4.7b–e)
+[Archer, 1991]. The inﬂuence of respiration becomes
+very apparent when the organic carbon–to–CaCO
+3 rain
+ratio gets larger. At low rain ratios, both the thickness
+of the transition zone and the CaCO
+3 undersaturation
+at the CCD are very large and very sensitive to varia-
+tions in the CaCO
+3 rain. This high sensitivity is mainly
+because bottom water undersaturation is the only factor
+driving dissolution at such low rain ratios. At high rates
+of CaCO
+3 delivery to the sediments, the resulting
+higher downward advection of the sediments transports
+CaCO
+3 more rapidly out of the reach of the bottom
+water undersaturation, resulting in increased preser-
+vation and hence a thicker transition zone.
+As the rain ratio approaches 1 (ﬁgure 9.4.7d), both the
+lysocline thickness and the undersaturation at the CCD
+decrease substantially. At the same time, the under-
+saturation at the CCD becomes less sensitive to varia-
+tions in the CaCO
+3 rain. At organic carbon–to–CaCO 3
+rain ratios above 1 (ﬁgure 9.4.7e), the CO2/C0
+3 concentration
+at the CCD is above the CaCO3 saturation concentration
+and largely independent of the calcite rain. However,
+these simulations were done with a single-organic matter
+component model, and use of a two-component model
+would lead to a substantially smaller sensitivity of the
+modeled lysocline to the rain ratio, as is illustrated in
+ﬁgure 9.4.6.
+In summary, variations in the organic-to-inorganic
+carbon rain ratio determine the position of the lysocline
+relative to the saturation state of the overlying bottom
+waters, while variations in dissolution kinetics control
+mainly the thickness of the transition zone. As men-
+tioned above, a second factor inﬂuencing the thickness
+of the transition zone is the rain of non-CaCO
+3 mate-
+rial, such as dust particles and opal. Using a gridded
+data base of the sediment distribution of CaCO
+3, Archer
+[1996a] attempted to ﬁnd an optimal set of parameters
+that reproduces the observed variations. According to
+% CaCO3 % CaCO3 % CaCO3
+40
+20
+0
+–20
+–40
+10
+–10
+–30
+–50
+30
+–60 100 2 03 04 05 06 07 08 09 0
+k = 10 day
+-1
+k = 0.1 day-1
+09 0 09 0
+09 0 09 0
+6
+6
+12
+18
+24
+30
+60
+60
+6
+6
+12
+60
+60
+2-
+Org. C/CaCO3 
+rain ratio = 0.5
+Org. C/CaCO3 
+rain ratio = 0.67
+Org. C/CaCO3 
+rain ratio = 1.0
+Org. C/CaCO3 
+rain ratio = 1.5
+Org. C/CaCO3 rain ratio = 0.67
+40
+0
+–40
+40
+0
+–30
+ab c
+de
+Figure 9.4.7: Sensitivity of the modeled transition zone between the lysocline and the carbonate compensation depth to changes in
+model parameters. (a) Model-predicted shape as a function of the dissolution rate constant for calcite, kCaCO3 ; using a 4.5-order kinetics.
+The rate constants used were 0.1, 0.18, 0.32, 0.56, 1.0, 1.8, 3.2, 5.6, and 10 day/C0 1. For all simulations, the rain rates of organic carbon and
+calcite were 12 and 18 mmol cm/C0 2 yr/C0 1, respectively. The detrital mass ﬂux was 10% of the total nonorganic carbon mass ﬂux. (b–e)
+Model-predicted shape of the transition zone as a function of the organic carbon–to–CaCO 3 rain ratio and carbon rain rates. The rain
+rates of calcite were changed between 6 and 60mmol cm/C0 2 yr/C0 1. The organic rain is proportional to the calcite rain, using ratios of (b) 0.5,
+(c) 0.67, (d) 1.0, and (e) 1.5. The calcite dissolution rate constant was held constant at 1 day /C0 1. Adapted from Archer [1991].
+383
+Calcium Carbonate Cycle

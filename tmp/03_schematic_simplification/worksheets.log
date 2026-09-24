@@ -1,0 +1,8 @@
+student FluxSpecification {"kind":"table","sheet":"FluxSpecification","address":"A1:F23","rows":23,"cols":6,"values":[[null,null,null],[null,"Student flux specification",null]],"valuesTruncated":true,"valuesPreviewRows":2,"valuesPreviewCols":3,"valuesPreviewAddress":"A1:C2"}
+student WorkbookLinks {"kind":"table","sheet":"WorkbookLinks","address":"A1:E13","rows":13,"cols":5,"values":[[null,null,null],[null,"Student flux specification",null]],"valuesTruncated":true,"valuesPreviewRows":2,"valuesPreviewCols":3,"valuesPreviewAddress":"A1:C2"}
+student error scan {"kind":"notice","message":"Cell search matched 0 entries."}
+Inspect result written to file: outputs\03_04_flux_specification\revised\student.xlsx.inspect.ndjson
+instructor FluxSpecification {"kind":"table","sheet":"FluxSpecification","address":"A1:F23","rows":23,"cols":6,"values":[[null,null,null],[null,"Instructor flux specification",null]],"valuesTruncated":true,"valuesPreviewRows":2,"valuesPreviewCols":3,"valuesPreviewAddress":"A1:C2"}
+instructor WorkbookLinks {"kind":"table","sheet":"WorkbookLinks","address":"A1:E13","rows":13,"cols":5,"values":[[null,null,null],[null,"Instructor flux specification",null]],"valuesTruncated":true,"valuesPreviewRows":2,"valuesPreviewCols":3,"valuesPreviewAddress":"A1:C2"}
+instructor error scan {"kind":"notice","message":"Cell search matched 0 entries."}
+Inspect result written to file: outputs\03_04_flux_specification\revised\instructor.xlsx.inspect.ndjson

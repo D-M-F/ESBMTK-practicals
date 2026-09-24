@@ -1,0 +1,123 @@
+Atlantic is because the nutrient content of the ther-
+mocline is relatively low as a result of the nutrient ex-
+port by NADW.
+An additional factor contributing to the low DC
+soft
+and DCcarb signals in the North Atlantic in comparison
+with the Southern Ocean may be the large difference in
+the bio-availability of iron. In the Southern Ocean, ob-
+servational evidence is steadily increasing that the low
+availability of iron as a result of low atmospheric de-
+position is preventing the complete drawdown of nu-
+trients, thus creating the largest high-nutrient, low-
+chlorophyll (HNLC) region [ Martin et al ., 1990b, 1991;
+de Baar et al ., 1995; Boyd et al ., 2000] (see detailed dis-
+cussion in chapter 4). The atmospheric delivery of iron
+to the North Atlantic is almost an order of magnitude
+higher [ Duce et al ., 1991, Tegen and Fung , 1994] and
+appears to be sufﬁcient to allow the near-complete
+drawdown of nutrients, creating low DC
+soft and DCcarb
+concentration. This example illustrates how the inter-
+action of biological processes with large-scale ocean
+circulation and possibly the biogeochemical cycles of
+iron can lead to quite unexpected results.
+8.5 Carbon Pumps and Surface Fluxes
+In this last section, we would like to close the great
+biogeochemical loop, and investigate the connection
+between the ocean carbon pumps and air-sea ﬂuxes of
+CO
+2. In particular, we will look at the biological and
+thermal components of the gas exchange pump, in order
+to understand what drives the CO
+2 ﬂuxes across the air-
+sea interface. Unfortunately, it is not possible to split the
+observed air-sea ﬂux of CO
+2 into these two components.
+We therefore use model results as an illustration.
+Following Murnane et al . [1999], we ran two parallel
+simulations in an ocean biogeochemistry model, one
+with the thermal gas exchange pump only, and a sec-
+ond one that includes both biological pumps. The latter
+simulation is termed ‘‘combined pump.’’ The dif-
+ference in air-sea CO
+2 ﬂuxes between these two simu-
+lations is taken as the contribution of the biological gas
+exchange pump. The model employed here is very
+similar to that described in detail in chapter 5 except
+that a representation of the carbonate pump has
+been included as well. In order to arrive at a realistic
+atmosphere-ocean distribution of CO
+2, all simulations
+were run to a quasi steady-state by setting atmospheric
+CO
+2 to its pre-industrial value of 280 ppm and letting
+the ocean adjust to this concentration (see Najjar and
+Orr [1998] for details). This takes several thousand years
+of spin-up.
+Figure 8.5.1a shows the meridional pattern of the zon-
+ally integrated air-sea gas exchange as predicted by this
+model. The patterns exhibited by the thermal gas ex-
+change pump are related to the transport of heat and water
+within the ocean and its exchange with the atmosphere. In
+the high latitudes, surface waters lose heat to the atmo-
+sphere and consequently take up CO
+2 from the atmo-
+sphere. In the equatorial regi ons, colder waters that are
+upwelled to the surface are warmed up, which leads to a
+loss of CO
+2 to the atmosphere. The correlation of the air-
+sea exchange ﬂuxes of CO 2 with the heat ﬂuxes are
+modiﬁed, however, by the slow air-sea exchange of CO 2
+relative to heat. This shows up particularly in the equato-
+rial region, where the peak of the CO
+2 gas exchange is
+much wider than would be predicted by the heat exchange
+alone.
+The biological pump represents, to a ﬁrst approxima-
+tion, a closed loop within the ocean. Waters that are
+brought to the surface contain an excess of inorganic
+carbon stemming from the biological pump relative to
+these surface waters. At the same time, these waters also
+contain an excess of nutrients. Biological uptake at the
+surface is generally fast enough to strip out all or most of
+the nutrients and the excess CO
+2 before CO2 is lost to the
+atmosphere. Only in regions where the biological uptake
+is inefﬁcient in reducing the nutrients and the associated
+biological inorganic carbon coming to the surface will
+CO
+2 escape into the atmosphere. As we discussed in
+detail in chapter 4, a good diagnostic of such regions of
+low efﬁciency is high surface-nutrient concentrations,
+which occur in the Southern Ocean, in the equatorial
+Paciﬁc, and in the North Paciﬁc. The Southern Ocean,
+characterized by the highest surface ocean-nutrient
+concentration, also represents the region with the high-
+est loss of CO
+2 to the atmosphere associated with the
+biological pump. This biologically induced outgassing
+outweighs the uptake of CO
+2 from the atmosphere as a
+consequence of the thermal gas exchange pump, leading
+to a small residual outgassing in the combined pump
+scenario in this region (ﬁgure 8.5.1a). This is exactly the
+same compensation that we alluded to before when try-
+ing to explain the low vertical DC
+gas ex signal in the ob-
+servations. The loss of CO 2 in the high latitudes due to
+the biological pump is compensated by a net uptake of
+CO
+2 in the mid-latitudes, so that the global net exchange
+of CO2 in association with the biological pump is zero as
+required. Simulations of the contribution of the car-
+bonate pump to the variation in the biological pump
+show it to be generally small [ Murnane et al. , 1999].
+The pattern of the zonally integrated air-sea exchange
+due to the combined pumps represents the sum of the
+patterns generated by the thermal and biological pumps.
+In this particular model, the thermally forced CO
+2 ﬂuxes
+tend to dominate, except in the Southern Ocean. The air-
+352
+Chapter 8

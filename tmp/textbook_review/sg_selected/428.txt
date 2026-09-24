@@ -1,0 +1,134 @@
+much more complex two- and three-dimensional ocean
+biogeochemical models (see Joos et al. [1996] for a
+complete description of the method).
+Let us describe the pulse response function as r
+s(t).
+The surface concentration of anthropogenicDIC, Cant(t)
+(mmol m /C0 3), where t is any time after the beginning of
+the Anthropocene, to, reﬂects the accumulated air-sea
+ﬂux of anthropogenic CO 2 from the atmosphere, Fas
+(mmol m/C0 2 yr/C0 1), weighted by how much of this up-
+take has been transported away into the interior over
+time. This weighting is described by the pulse response
+function, r
+s. This gives:
+Cant(t) ¼ 1
+h
+Z t
+to
+Fant(t0)rs(t /C0 t0)dt0 (10:2:13)
+where h is the depth of the surface mixed layer. As is
+the case for any gas (see chapter 3, equation (3.3.6)), the
+air-sea ﬂux of anthropogenic CO
+2 is directly propor-
+tional to the air-sea partial pressure difference of an-
+thropogenic CO
+2 and a gas exchange coefﬁcient, kg,
+(mmol m/C0 2 yr/C0 1 matm/C0 1),
+Fant(t) ¼ kg (dpCOatm
+2
+(t) /C0 dpCOoc
+2
+(t)) (10 :2:14)
+where dpCO2 denotes the anthropogenic perturbation
+to atmospheric and oceanic pCO2 in matm. The an-
+thropogenic perturbation of oceanic pCO2 is linked to
+Cant(t) by the buffer factor gDIC:
+dpCOoc
+2
+(t) ¼ gDIC
+a Cant(t) (10 :2:15)
+where a is the DIC/pCO2 ratio (see eq. (10.2.9)).
+By combining (10.2.13) with (10.2.14) and (10.2.15),
+and using a pulse-response function rs(t) determined
+from one of the models, the oceanic uptake of anthro-
+pogenic CO
+2 for any given time trajectory of the atmo-
+spheric CO 2 perturbation can be computed with great
+accuracy. The only limiting assumption is that the oce-
+anic circulation has to remain steady. Joos et al. [1996]
+provide accurate formulations for the buffer factor g
+DIC
+over a wide range of atmospheric CO2 perturbations and
+also functional forms for the pulse response functions
+r
+s(t) for a suite of ocean biogeochemical models.
+Buffering by Sediment C aCO3
+The dynamics of the buffering of anthropogenic CO2 by
+sea-ﬂoor CaCO 3 is very slow and takes thousands of
+years (ﬁgure 10.2.2). This is much slower than the
+timescale of hundreds of years involved in taking up
+anthropogenic CO
+2 from the atmosphere and trans-
+porting it from the surface into the interior of the
+ocean. An important reason for the slow dynamics of
+sea-ﬂoor CaCO
+3 buffering is that most of the CaCO 3 in
+the sediments is found at mid-depths of the water col-
+umn (see ﬁgure 9.1.3). Anthropogenic CO
+2 must ﬁrst
+reach these depths before it can start to dissolve the
+CaCO3 in the sediments. In addition, the rate of dis-
+solution induced by anthropogenic CO 2 seems to be
+relatively small [ Archer et al. , 1998], a result of slow
+diffusion of the bottom water signal into the sediments
+as well as the slow kinetics of dissolution (see chapter
+9). This increases the timescale for the sea-ﬂoor neu-
+tralization of anthropogenic CO
+2 further.
+The exact timescales for the neutralization of the
+anthropogenic CO 2 with calcium carbonate are associ-
+ated with quite large uncertainties. Fortunately, these
+timescales are sufﬁciently long so that the contribution
+of calcium carbonate buffering can be neglected when
+considering anthropogenic CO
+2 uptake over the last
+two centuries and well into the next century. This is
+supported by the results of Archer et al. [1998], who
+found that the difference between the oceanic uptake of
+a model with and without calcium carbonate was much
+less than 1%. In contrast to the anthropogenic CO
+2
+perturbation, these buffering reactions are of great
+importance when considering millennial timescale
+changes in the global carbon cycle, as they give rise to
+substantial feedbacks, as discussed in association with
+CaCO
+3 compensation in chapter 9.
+Anthropogenic CO 2 Uptake
+So far, we have found that it will take several hundred, if
+not thousands of years until anthropogenic CO 2 is fully
+equilibrated between the atmosphere, the ocean, and the
+sediments on the sea ﬂoor. For human societies, how-
+ever, it is of much more concern to know the current
+redistribution of anthropogenic carbon in the global
+carbon cycle and how this may change over the next few
+decades. This is a topic of intense research, and a number
+of breakthroughs in the past decade have permitted the
+scientiﬁc community to put relatively strong constraints
+on the oceanic uptake of anthropogenic CO
+2 (see dis-
+cussion in Prentice et al. [2001], Sarmiento and Gruber
+[2002], and Sabine et al. [2004]).
+In the global budget of anthropogenic CO 2 (table
+10.2.1), there are only two terms that have been mea-
+sured directly. One is the emission of CO
+2 by burning
+of fossil fuel and cement manufacture. The other is the
+increase in the atmospheric CO
+2 concentration, which
+has been measured directly since 1958 at Mauna Loa,
+Hawaii and the South Pole [ Keeling et al. , 1989]. These
+measurements have been extended back in time by
+measuring CO
+2 in ice cores and ﬁrn [ Neftel et al., 1985;
+Etheridge et al. , 1996]. The remaining two budget
+terms (ocean uptake, net exchange with the terrestrial
+biosphere) have to be estimated by less direct means.
+We focus here on the oceanic uptake only. A good
+understanding of the magnitude and variability of the
+oceanic sink for anthropogenic CO
+2 also provides im-
+portant constraints for the net exchange of anthropo-
+405
+Carbon Cycle, CO 2, and Climate

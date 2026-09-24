@@ -1,0 +1,112 @@
+evolution in the mixed layer at BATS and HOT; i.e., they
+determined each term in (8.3.29) [ Gruber et al ., 1998,
+Keeling et al ., 2004] (see also studies by Marchal et al .
+[1996], Bates et al. [1996b] and Quay and Stutsman [2003]).
+According to these diagnostic analyses, the seasonal
+cycle of sDIC at both locations is a consequence of a
+complex interplay between the various processes, with
+different processes dominating at different times of the
+year. Both studies show also that the spring-to-summer
+drawdown of sDIC at both sites is primarily of biological
+origin, i.e., a result of net community production. The
+reasons why biology is able to have a positive net com-
+munity production in the absence of any measurable
+nutrients is still somewhat of a mystery. In chapter 4, we
+suggested that N
+2 ﬁxation is the most likely candidate
+process (see also chapter 5), although we could not pro-
+vide a satisfactory answer to the problem of where the
+required phosphorus would come from, particularly not
+in the case of the North Atlantic, where near-surface
+concentrations of phosphate are much lower than those
+of nitrate (see ﬁgure 5.1.4 and Wu et al . [2000]). Vertical
+migration has been suggested [ Karl et al ., 1992], but has
+not yet been demonstrated to be of quantitative impor-
+tance. This is a wonderful illustration of how much there
+is still to learn about ocean biogeochemistry.
+North Atlantic
+The high latitudes of the North Atlantic show smaller
+winter-to-summer warming than the subtropical lati-
+tudes to the south. Nevertheless, if there were no sea-
+sonal changes in DIC and Alk, this warming would still
+lead to winter-to-summer increases in pCO
+2 of more
+than 40 matm (ﬁgure 8.3.7b). In contrast, the observa-
+tions reveal that oceanic pCO2 decreases from winter to
+summer. Since salinity-normalized alkalinity mostly
+behaves conservatively without a clearly deﬁned sea-
+sonal cycle over the entire North Atlantic [ Brewer et al .,
+1986, Millero et al., 1998], this decrease in pCO
+2 must be
+caused by a sharp reduction of sDIC.
+Indeed, data from time series stations around Ice-
+land (ﬁgure 8.3.12) and from other stations in the
+North Atlantic reveal precipitous drops of sDIC oc-
+curring in spring [ Peng et al ., 1987; Takahashi et al .,
+1993]. At the Iceland sites, the observed sDIC drop of
+West and South Stations
+North & Northeast Stations
+West Stas.
+South Stas.
+North Stas.
+Northeast Stas.
+2150
+2200
+2050
+2000
+1950
+2100
+1900
+J
+c
+a b
+d
+FMAMJ J ASOND
+JF M A MJJAS O N D
+JF M A MJJAS O N D
+JF M A MJJAS O N D
+West and South Stations
+North & Northeast Stations
+West Stas.
+South Stas.
+North Stas.
+Northeast Stas.
+12
+8
+6
+4
+2
+0
+10
+–2
+Temperature (°C)
+West and South Stations
+North & Northeast Stations
+West Stas.
+South Stas.
+North Stas.
+Northeast Stas.
+300
+400
+200
+150
+250
+350
+100
+West Stations
+South Stations
+North & Northeast Stations
+West Stas.
+South Stas.
+North Stas.
+Northeast Stas.
+15
+20
+5
+0
+10
+Figure 8.3.12: Seasonal observations of upper ocean quantities made at four groups of station around Iceland within
+approximately 120 miles from shore: (a) surface ocean temperature; (b) pCO2 in surface water at in situ temperature; (c) sDIC;
+(d) nitrate. The curves indicate a general seasonal trend. Adapted from Takahashi et al . [1993].
+340
+Chapter 8

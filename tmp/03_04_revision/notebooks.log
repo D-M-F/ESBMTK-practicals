@@ -1,0 +1,271 @@
+03_boudreau_three_box_model.ipynb: cell 3
+03_boudreau_three_box_model.ipynb: cell 5
+                  Description  ...  Initial TA (umol/kg)
+Box ID                         ...                      
+H_b     High-latitude surface  ...                  2345
+L_b      Low-latitude surface  ...                  2288
+D_b                Deep ocean  ...                  2399
+
+[3 rows x 8 columns]
+              Total air (mol)  Initial CO2 (ppm)            Role
+Box ID                                                          
+CO2_At  177860000000000000000                280  Prognostic CO2
+                 Value  ...                                        Description
+Parameter               ...                                                   
+thc               25.0  ...  Water transport on every leg of the overturnin...
+mixing            30.0  ...  Equal exchange in both directions between high...
+poc_export       200.0  ...  POC carbon export from low-latitude surface to...
+rain_ratio         0.3  ...  PIC/POC carbon-export ratio at unit pump stren...
+weathering_dic    12.0  ...  Carbonate weathering: one DIC and two TA equiv...
+alpha              0.6  ...                 Carbonate compensation coefficient
+z0              -200.0  ...         Carbonate compensation reference elevation
+piston_velocity    4.8  ...  Common gas transfer velocity at both surface b...
+opt_k_carbonic    13.0  ...             PyCO2SYS carbonic-acid constant option
+opt_pH_scale       3.0  ...                           PyCO2SYS pH scale option
+
+[10 rows x 4 columns]
+03_boudreau_three_box_model.ipynb: cell 7
+                                      Process  ...                                 Status
+Process ID                                     ...                                       
+T_* / M_*                     Water transport  ...   Prescribed q; calculated tracer flux
+G_L / G_H                    Air-sea exchange  ...                   State-dependent flux
+POC         Organic export / remineralization  ...                Prescribed fixed export
+PIC                          Carbonate export  ...                   Derived fixed export
+W                           Lumped weathering  ...  Prescribed benchmark boundary closure
+D                       Carbonate dissolution  ...                    Calculated response
+B_net                       Signed net burial  ...           Calculated boundary residual
+
+[7 rows x 6 columns]
+                                  Workbook owner  ...                            Supplied implementation
+Process ID                                        ...                                                   
+T_* / M_*       TransportConnections (Transport)  ...  create_bulk_connections; concentration-depende...
+G_L / G_H   GasExchangeConnections (GasExchange)  ...                       Species2Species; gasexchange
+POC               ProcessParameters (Parameters)  ...  POM: native fixed export/remineralization conn...
+PIC               ProcessParameters (Parameters)  ...      PIC_DIC + PIC_TA; nominal deep sinks bypassed
+W              ProcessParameters + BoundaryNodes  ...               ConnectionProperties; linked TA rate
+D                  Calculated, no flux input row  ...         add_carbonate_system_2; Fdiss for plotting
+B_net              Calculated, no flux input row  ...  Fburial diagnostic; Fb is not an extra active ...
+
+[7 rows x 3 columns]
+03_boudreau_three_box_model.ipynb: cell 9
+   Order source sink   flux_id Parameter  Species
+0      1    H_b  D_b  mix_down    mixing  DIC, TA
+1      2    D_b  H_b    mix_up    mixing  DIC, TA
+2      3    L_b  H_b       thc       thc  DIC, TA
+3      4    H_b  D_b       thc       thc  DIC, TA
+4      5    D_b  L_b       thc       thc  DIC, TA
+   Order Atmosphere Surface Species        Parameter
+0      1     CO2_At     H_b     CO2  piston_velocity
+1      2     CO2_At     L_b     CO2  piston_velocity
+          Type  Species                        Role
+Box ID                                             
+Fw      Source  DIC, TA  External weathering supply
+Fb        Sink  DIC, TA   Permanent burial boundary
+                     Source Sink  Species        Parameter
+ID                                                        
+H_b_to_D_b@mix_down     H_b  D_b  DIC, TA           mixing
+D_b_to_H_b@mix_up       D_b  H_b  DIC, TA           mixing
+L_b_to_H_b@thc          L_b  H_b  DIC, TA              thc
+H_b_to_D_b@thc          H_b  D_b  DIC, TA              thc
+D_b_to_L_b@thc          D_b  L_b  DIC, TA              thc
+CO2_At_to_H_b@gas    CO2_At  H_b      CO2  piston_velocity
+CO2_At_to_L_b@gas    CO2_At  L_b      CO2  piston_velocity
+03_boudreau_three_box_model.ipynb: cell 11
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+03_boudreau_three_box_model.ipynb: cell 12
+03_boudreau_three_box_model.ipynb: cell 13
+03_boudreau_three_box_model.ipynb: cell 14
+     Density (kg/m3)  ...  Initial TA (mol eq)
+Box                   ...                     
+H_b      1028.798771  ...         4.246058e+16
+L_b      1024.575722  ...         6.681053e+16
+D_b      1038.983451  ...         3.215352e+18
+
+[3 rows x 4 columns]
+03_boudreau_three_box_model.ipynb: cell 17
+03_boudreau_three_box_model.ipynb: cell 20
+03_boudreau_three_box_model.ipynb: cell 23
+03_boudreau_three_box_model.ipynb: cell 25
+03_boudreau_three_box_model.ipynb: cell 28
+03_boudreau_three_box_model.ipynb: cell 30
+            ID   Source     Sink                       Law
+0          H_b   CO2_At  H_b.DIC               gasexchange
+1          L_b   CO2_At  L_b.DIC               gasexchange
+2      PIC_DIC  L_b.DIC  D_b.DIC                   regular
+3       PIC_TA   L_b.TA   D_b.TA                   regular
+4          POM  L_b.DIC  D_b.DIC                   regular
+5     mix_down  H_b.DIC  D_b.DIC  scale_with_concentration
+6     mix_down   H_b.TA   D_b.TA  scale_with_concentration
+7       mix_up  D_b.DIC  H_b.DIC  scale_with_concentration
+8       mix_up   D_b.TA   H_b.TA  scale_with_concentration
+9          thc  D_b.DIC  L_b.DIC  scale_with_concentration
+10         thc   D_b.TA   L_b.TA  scale_with_concentration
+11         thc  H_b.DIC  D_b.DIC  scale_with_concentration
+12         thc   H_b.TA   D_b.TA  scale_with_concentration
+13         thc  L_b.DIC  H_b.DIC  scale_with_concentration
+14         thc   L_b.TA   H_b.TA  scale_with_concentration
+15  weathering   Fw.DIC  L_b.DIC                   regular
+16  weathering    Fw.TA   L_b.TA                   regular
+03_boudreau_three_box_model.ipynb: cell 33
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.06 CPU seconds, wall time = 0.10 seconds
+
+                   Maximum drift  Tolerance     Unit
+State                                               
+atm CO2                 0.000006       0.01      ppm
+L_b DIC                 0.000042       0.01  umol/kg
+L_b TA                  0.000061       0.01   ueq/kg
+H_b DIC                 0.000068       0.01  umol/kg
+H_b TA                  0.000092       0.01   ueq/kg
+D_b DIC                 0.000126       0.01  umol/kg
+D_b TA                  0.000251       0.01   ueq/kg
+sediment snowline       0.000171       0.01        m
+Graph and PIC coupling checked; carbon/TA budgets close; short restart drift is within the stated limits.
+{'max carbon error / initial stock': 5.599486194994163e-10, 'max TA error / initial stock': 1.0824442604743633e-09}
+03_boudreau_three_box_model.ipynb: cell 35
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+INFO:root:bypassing M.Conn_L_b_to_D_b_DIC_PIC_DIC._FPIC_DIC in M.D_b.DIC
+INFO:root:bypassing M.Conn_L_b_to_D_b_TA_PIC_TA._FPIC_TA in M.D_b.TA
+INFO:root:creating M_L_b_cs_generic_function
+INFO:root:creating M_H_b_cs_generic_function
+INFO:root:creating M_D_b_cs2_generic_function
+INFO:root:creating M_H_b_DIC_gas_exchangeH_b_generic_function
+INFO:root:creating M_L_b_DIC_gas_exchangeL_b_generic_function
+INFO:root:================================================================================
+INFO:root:Intergration started at 2026-09-23 12:40:52.458472
+INFO:root:r = M.H_b.DIC, r.c[0] = 2.15e-03, rtol = 2.15e-08
+INFO:root:r = M.H_b.TA, r.c[0] = 2.35e-03, rtol = 2.35e-08
+INFO:root:r = M.L_b.DIC, r.c[0] = 1.94e-03, rtol = 1.94e-08
+INFO:root:r = M.L_b.TA, r.c[0] = 2.28e-03, rtol = 2.28e-08
+INFO:root:r = M.D_b.DIC, r.c[0] = 2.30e-03, rtol = 2.30e-08
+INFO:root:r = M.D_b.TA, r.c[0] = 2.40e-03, rtol = 2.40e-08
+INFO:root:r = M.L_b.Hplus, r.c[0] = 5.40e-09, rtol = 5.40e-14
+INFO:root:r = M.L_b.CO2aq, r.c[0] = 8.64e-06, rtol = 8.64e-11
+INFO:root:r = M.H_b.Hplus, r.c[0] = 5.87e-09, rtol = 5.87e-14
+INFO:root:r = M.H_b.CO2aq, r.c[0] = 1.57e-05, rtol = 1.57e-10
+INFO:root:r = M.D_b.Hplus, r.c[0] = 1.22e-08, rtol = 1.22e-13
+INFO:root:r = M.D_b.zsnow, r.c[0] = 4.81e+03, rtol = 4.81e-02
+INFO:root:r = M.CO2_At, r.c[0] = 2.70e-04, rtol = 2.70e-09
+INFO:root:Intergration finished:
+ Number of evaluations of the right-hand side = 73
+Number of evaluations of the Jacobian = 1
+Number of LU decompositions = 19
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.03 CPU seconds, wall time = 0.03 seconds
+
+INFO:root:
+
+check_notebooks.py stopped at 2026-09-23 12:40:52.491095
+INFO:root:This run used 0.20 GB of memory
+
+INFO:root:================================================================================
+Construction verified: the student-built and reusable models agree.
+PASS 03_boudreau_three_box_model.ipynb; 0 figures
+04_pump_strength_OA_OAE.ipynb: cell 1
+04_pump_strength_OA_OAE.ipynb: cell 5
+04_pump_strength_OA_OAE.ipynb: cell 7
+04_pump_strength_OA_OAE.ipynb: cell 9
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+     Density (kg/m3)  ...  Initial TA (mol eq)
+Box                   ...                     
+H_b      1028.798771  ...         4.252578e+16
+L_b      1024.575722  ...         6.664200e+16
+D_b      1038.983451  ...         3.221934e+18
+
+[3 rows x 4 columns]
+04_pump_strength_OA_OAE.ipynb: cell 11
+     post-1800 input (Pmol C or TA eq)  whole-run input (Pmol C or TA eq)
+OA                          335.357579                         340.172309
+OAE                          10.000047                          10.143617
+Running control
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 11.97 CPU seconds, wall time = 12.14 seconds
+
+Running OA
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 13.58 CPU seconds, wall time = 13.66 seconds
+
+Running OAE
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 15.48 CPU seconds, wall time = 15.68 seconds
+
+         max carbon error / initial stock  ...  external input (Pmol C or TA eq)
+control                      1.084733e-08  ...                          0.000000
+OA                           8.335061e-06  ...                        340.172309
+OAE                          7.444546e-08  ...                         10.143617
+
+[3 rows x 3 columns]
+04_pump_strength_OA_OAE.ipynb: cell 13
+04_pump_strength_OA_OAE.ipynb: cell 15
+04_pump_strength_OA_OAE.ipynb: cell 16
+PASS 04_pump_strength_OA_OAE.ipynb; 3 figures

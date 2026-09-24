@@ -1,0 +1,31 @@
+Model code and existing outputs preserved; only reference display/comment changed. Answers unchanged.
+C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\19279\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] ERROR | Failed to create history session in C:\Users\19279\.ipython\profile_default\history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 791, in __init__
+    self.new_session()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 163, in wrapper
+    return f(*a, **kw)
+  File "C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\IPython\core\history.py", line 881, in new_session
+    cur = conn.execute(
+        """INSERT INTO sessions VALUES (NULL, ?, NULL,
+                    NULL, '') """,
+        (datetime.datetime.now().isoformat(" "),),
+    )
+sqlite3.OperationalError: attempt to write a readonly database
+Executed 03: graph, C/TA budgets, restart and reusable-model agreement passed.
+Validated and rendered instructor
+Validated and rendered student
+Traceback (most recent call last):
+  File "D:\ALK\TA\BGC\ESBMTK-practicals\tmp\03_readability\verify.py", line 72, in <module>
+    assert not changes, changes
+           ^^^^^^^^^^^
+AssertionError: ['notebooks\\instructor\\M.log']
+ERROR conda.cli.main_run:execute(127): `conda run python tmp/03_readability/verify.py` failed. (See above for error)

@@ -1,0 +1,154 @@
+different magnitudes of mixing in each direction. The
+eddy and molecular contributions to the diffusivity are
+assumed to be additive, giving:
+@C
+@t
+/C12
+/C12
+/C12
+/C12
+diffusion
+¼ @
+@x (Dx þ e) /C1 @C
+@x
+/C20/C21
+þ @
+@y (Dy þ e) /C1 @C
+@y
+/C20/C21
+þ @
+@z (Dz þ e) /C1 @C
+@z
+/C20/C21
+(2:1:6)
+The ﬁnal form of the conservation equation is there-
+fore:
+@C
+@t ¼/C0 @(C /C1 u)
+@x /C0 @(C /C1 v)
+@y /C0 @(C /C1 w)
+@z
+þ @
+@x (Dx þ e) /C1 @C
+@x
+/C20/C21
+þ @
+@y (Dy þ e) /C1 @C
+@y
+/C20/C21
+þ @
+@z (Dz þ e) /C1 @C
+@z
+/C20/C21
+þ SMSðCÞ
+(2:1:7)
+We conclude the derivation by simplifying the tracer
+conservation equation. We expand the advection com-
+ponent (2.1.2) using the product rule:
+/C0 @(C /C1 u)
+@x /C0 @(C /C1 v)
+@y /C0 @(C /C1 w)
+@z
+¼/C0 C @u
+@x þ @v
+@y þ @w
+@z
+/C18/C19
+/C0 u /C1 @C
+@x þ v /C1 @C
+@y þ w /C1 @C
+@z
+/C18/C19
+(2:1:8)
+The mass conservation equation for incompressible ﬂow
+derived in panel 2.1.3 enables us to cancel the ﬁrst term in
+parentheses on the right-hand side of (2.1.8). This gives:
+@C
+@t ¼/C0 u /C1 @C
+@x /C0 v /C1 @C
+@y /C0 w /C1 @C
+@z þ @
+@x (Dx þ e) /C1 @C
+@x
+/C20/C21
+þ @
+@y (Dy þ e) /C1 @C
+@y
+/C20/C21
+þ @
+@z (Dz þ e) /C1 @C
+@z
+/C20/C21
+þ SMSðCÞ
+(2:1:9)
+Finally, we make use of the deﬁnition of the divergence
+operator:
+r¼ i @()
+@x þ j @()
+@y þ k @()
+@z (2:1:10)
+to obtain:
+@C
+@t ¼/C0 U /C1r C þr /C1 (D /C1r C ) þ SMS(C )( 2 :1:11)
+where i, j, and k are unit vectors in the x, y, and z
+directions, respectively, U is the velocity vector, iu þ
+jv þ kw, and D is a diffusivity tensor with diagonal terms
+equal to Dx þ e, Dy þ e, and Dz þ e.
+Application to Box Models
+Box models such as those described in the ﬁrst chapter are
+the quantitative tool most frequently used by geochemists
+to investigate the behavior of chemicals. We deﬁne a box
+that encloses some region of particular interest, for ex-
+ample the surface ocean. The goal of developing a box
+model is to determine the processes that control the mean
+tracer concentration within that box. The usual way of
+proceeding is to assemble an equation that relates the
+change in mean concentration within the box to the ﬂuxes
+across the boundaries of the box and sources and sinks
+internal to the box. In our example of a surface box, inputs
+across the boundaries of the box might be river input, air-
+sea ﬂuxes, and upward ﬂow of deep waters into the box.
+Losses across the boundaries of the box might include
+downward ﬂow of surface waters. A sink internal to the
+box might be biological uptake, and an internal source
+might be remineralization of organic matter.
+We demonstrate next how to construct a box model
+using the conservation equation (2.1.11). We wish to
+have an equation in terms of the mean concentration of
+the box. We accomplish this by integrating (2.1.11) over
+the volume of the box. The time rate of change term
+now represents the total change within the box. Divid-
+ing by the volume of the box will give the time rate of
+change of the mean concentration within the box. Note
+that our model does not require that the concentration
+be uniform within the box. A common misconception
+of geochemists is that box models require a uniform
+concentration within the box. This is useful as an as-
+sumption and is commonly employed, but it is not a
+necessary condition.
+We next discuss the processes that can change the
+mean concentration within the box of our model. These
+include ﬂuxes across the faces of the box. For example,
+a box at the surface of the ocean would have gas ex-
+change with the atmosphere as well as advective and
+diffusive exchange with the layer immediately below. A
+box representing the deep ocean would have exchange
+with upper ocean boxes as well as exchange ﬂuxes with
+the sediments. When we perform the volume integral
+of (2.1.11) as described in the previous paragraph, we
+also integrate the advection and diffusion terms over
+the entire volume. However, it is only at the boundaries
+of the box that these terms can provide a net ﬂux into or
+out of the box that will affect the mean concentration.
+Advection and diffusion within the box move tracer
+around but do not change the mean concentration. It is
+therefore useful to transform the volume integral of the
+advection and diffusion terms into a surface integral
+using the divergence (or Gauss’s) theorem:
+Z
+[/C0r /C1 (U /C1 C ) þr /C1 (D /C1r C )] dV ¼/C0
+I
+n/C1 (U/C1 C /C0 D/C1r C ) dS
+(2:1:12)
+Chapter 2
+22

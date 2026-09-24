@@ -1,0 +1,70 @@
+where Kp
+i is the value of the dissociation constant at
+pressure P in bar, Kio is the value of the dissociation
+constant at 1 atm pressure, T is temperature in Kelvin,
+R is the gas constant, and DVi and DKi are changes in
+molal volume and compressibility for the respective
+dissociation constants. Table 9.3.2 lists the equations
+for the molal volumes and compressibilities for arago-
+nite and calcite in seawater.
+Over the range encountered in the oceans, the solu-
+bility products of calcite and aragonite depend strongly
+on pressure and relatively little on temperature (ﬁgure
+9.3.1). It is nevertheless interesting to note that calcite
+Table 9.3.3
+Numerical values of the CaCO
+3 solubility products as a function of temperature and pressure for a salinity of 35
+Surface (0 dbar) Thermocline (1000 dbar) Deep Ocean (6000 dbar)
+/C0 log10 Ksp /C0 log10 Ksp /C0 log10 Ksp /C0 log10 Ksp /C0 log10 Ksp /C0 log10 Ksp
+Temp. Calcite Aragonite Calcite Aragonite Calcite Aragonite
+/C14 C (mol kg /C0 1)2 (mol kg/C0 1)2 (mol kg/C0 1)2 (mol kg/C0 1)2 (mol kg/C0 1)2 (mol kg/C0 1)2
+0 6.368 6.166 6.282 6.086 5.894 5.724
+2 6.367 6.166 6.283 6.088 5.903 5.734
+4 6.366 6.166 6.285 6.090 5.912 5.743
+6 6.366 6.167 6.286 6.092 5.921 5.753
+8 6.366 6.168 6.287 6.094 5.929 5.762
+10 6.365 6.169 6.288 6.097 5.937 5.771
+12 6.365 6.170 6.290 6.100 5.944 5.780
+14 6.365 6.172 6.291 6.103 5.952 5.789
+16 6.366 6.174 6.293 6.106 5.958 5.797
+18 6.366 6.177 6.294 6.110 5.965 5.806
+20 6.367 6.180 6.296 6.114 5.971 5.814
+22 6.368 6.183 6.298 6.118 5.977 5.822
+24 6.369 6.187 6.300 6.123 5.983 5.830
+26 6.371 6.191 6.302 6.127 5.988 5.837
+28 6.372 6.195 6.305 6.132 5.993 5.845
+30 6.374 6.200 6.307 6.138 5.998 5.853
+Sources: The solubility products at 1 atm pressure are from Mucci [1983]. The pressure dependence is after Millero [1983].
+Temperature (ºC)
+Pressure (dbar)
+28
+24
+8
+12
+16
+20
+4
+0
+0 2000 1000 3000 4000 5000 6000
+Pressure (dbar)
+28
+24
+8
+12
+16
+20
+4
+0
+0 2000 1000 3000 4000 5000 6000
+6.15 6.10 6.05 6.00 5.95 5.90 5.85
+5.80
+6.35 6.10 6.156.206.30 6.25 6.00 6.05
+5.95
+Solubility product for aragonite (-log Ksp) Solubility product for calcite  (-log K sp)
+Figure 9.3.1: Plots of the solubility products of (a) calcite, Kcalcite
+sp , and (b) aragonite, Karagonite
+sp , as a function of temperature and pressure. The
+solubility products are shown as the negative logarithms to the base 10. The solubility products are from Mucci [1983], with the pressure
+dependence after Millero [1983].
+367
+Calcium Carbonate Cycle

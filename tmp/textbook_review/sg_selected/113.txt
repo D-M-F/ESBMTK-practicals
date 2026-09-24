@@ -1,0 +1,105 @@
+the tropics and uptake in high latitudes, the same as for
+O
+2. How can this be? It would appear that for CO 2,
+unlike for O 2, the thermal component dominates over
+the biological component. That this indeed appears to
+be the case is conﬁrmed by a set of model studies dis-
+cussed in chapter 8 [ Murnane et al. , 1999]. We believe
+that the reason the thermal component dominates over
+the biological component for CO
+2 is because of the long
+timescale of air-sea equilibration for CO 2. We describe
+brieﬂy why the air-sea equilibration time for CO 2 is so
+long (see chapter 8 for a full discussion) and then re-
+turn to a discussion of how this may explain the
+dominance of the thermal component over the biolog-
+ical component.
+Consider an example of oxygen in a 40-meter mixed
+layer at a temperature of 25
+/C14 C with a wind speed of
+7.5 m s/C0 1.T h e Sc number is 394, which gives a gas
+transfer velocity of 23 cm hr/C0 1 using the Wanninkhof U2
+gas exchange model. Converting this to units of m yr /C0 1
+(1977) and dividing into the mixed layer thickness of
+40 m gives an oxygen air-sea equilibration timescale of
+7 days. For CO
+2, we have a larger Sc number of 525, and
+therefore a slightly lower gas transfer velocity of
+20 cm hr
+/C0 1. The residence time found by dividing the
+CO2 mixed layer thickness by this gas transfer velocity is
+now 9 days. However, this is not the end of the story for
+CO
+2, for which we must also consider the chemical re-
+actions that it undergoes with water (see chapter 8). Only
+0.5% of average surface seawater DIC is in the form
+of CO
+2. The remainder is in the form of bicarbonate
+and carbonate ions. The ocean carbon chemistry is such
+that the majority of CO 2 molecules that exchange with
+the atmosphere come from bicarbonate ions via the re-
+action:
+CO2 þ CO2/C0
+3 þ H2O Ð 2HCO/C0
+3
+At present, only 1 in every 20 CO 2 molecules that es-
+capes to the atmosphere contributes toward reducing
+the concentration of CO
+2 in the tropical regions. Thus,
+it takes 20 times longer for the CO 2 to equilibrate with
+the atmosphere than if it behaved like oxygen, i.e., 6
+months! We note that the same analysis applies to any
+of the isotopes of carbon such as
+13CO2 and 14CO2, but
+because of the way we usually report these measure-
+ments as isotopic ratios to
+12CO2, the multiplicative
+factor ends up being the ratio of DIC to CO 2, namely
+200, which gives 60 months, i.e., 5 years as the air-sea
+equilibration time for isotopic ratios of carbon [cf.
+Broecker and Peng , 1982].
+How does this long equilibration time affect the
+thermal versus the biological components for CO
+2? The
+only reason there is a biological component to the air-sea
+ﬂuxes of O
+2 and CO2 is because there are some regions
+of the surface where synthesis of organic matter is slow
+relative to upward mixing and advection. In such re-
+gions, there is a release of CO
+2 to the atmosphere and an
+uptake of oxygen. In a steady state, these biological
+components must be balanced by equal and opposite
+biological components somewhere else in the ocean.
+However, these regions where strong upward mixing
+and advection overwhelm the biological uptake occur
+Table 3.4.1
+The globally integrated air-sea CO
+2 ﬂux based on the partial pressure difference maps of
+Takahashi et al. [2002] (ﬁgure 3.1.3).
+The average gas transfer velocity for each quadrangle in that data set was obtained using the 41-year (1958–
+1998) monthly average climatological wind speeds of the National Center for Environmental Prediction
+(NCEP) of NOAA (column a) corrected in column b for the inﬂuence of wind speed variance calculated from
+the 6-hourly NCEP data set for the year 1995 as described in panel 3.3.1 (S. Doney and R. Wanninkhof,
+personal communication, 2004). The original wind speeds used by Takahashi et al. [2002] have been updated
+to adjust for their incorrect use of winds referenced to *40 m above sea level, rather than 10 m (T. Takahashi,
+personal communication, 2004).
+Globally Integrated Air-sea CO
+2 Flux
+(Pg C yr /C0 1)
+Gas Transfer Velocity Formulation
+(a) Without Wind
+Speed Variability
+(b) With Wind
+Speed Variability (b)/(a)
+Liss and Merlivat [1986] /C0 0.88 /C0 1.06 1.21
+Nightingale et al. [2000b] /C0 1.06 /C0 1.25 1.19
+Wanninkhof [1992]a /C0 1.65 /C0 1.58 0.96
+Wanninkhof and McGillis [1999]a /C0 2.35 /C0 1.94 0.82
+a The equations used for the Wanninkhof [1992] and Wanninkhof and McGillis [1999] estimates in column (a) are
+kw ¼ 0.39 /C1 U /C1 (Sc/660)/C0 0:5 and kw ¼ (1.09 /C1 U /C0 0.33 U2 þ 0.078/C1 U3) /C1 (Sc/660)/C0 0:5, respectively. These are calibrated
+against the radiocarbon data in ﬁgure 3.3.3 and are thus representative of the behavior of the gas transfer velocity
+with respect to long-term average winds. The equations shown in table 3.3.2 and used in column (b) have been
+renormalized using a Rayleigh statistical distribution of the wind speed. See discussion in panel 3.3.1.
+Chapter 3
+98

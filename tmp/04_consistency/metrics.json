@@ -1,0 +1,106 @@
+{
+  "OA": {
+    "maximum pCO2 anomaly (ppm)": 1260.466471081302,
+    "final pCO2 anomaly (ppm)": 451.8415354822932,
+    "minimum surface pH anomaly": -0.6489290818885651,
+    "maximum surface pH anomaly": 0.0,
+    "minimum zsat anomaly (m)": -3556.0,
+    "maximum zsat anomaly (m)": 0.0,
+    "minimum zcc anomaly (m)": -3017.0,
+    "maximum zcc anomaly (m)": 0.0,
+    "final zsnow anomaly (m)": -1210.2885477807458,
+    "minimum burial anomaly (Tmol/yr)": -68.38503826082834,
+    "maximum burial anomaly (Tmol/yr)": 0.0,
+    "maximum dissolution anomaly (Tmol/yr)": 68.38503826082834,
+    "forcing_peak_year": 2169.083333333333,
+    "final_forcing": 0.0,
+    "max_depth_gap": 2268.878371010781,
+    "1800": {
+      "zsat": 3700.0,
+      "zcc": 4767.0,
+      "zsnow": 4799.233024681743,
+      "Fburial": 10880426566105.18,
+      "Fdiss": 49119573433894.82
+    },
+    "2100": {
+      "zsat": 3358.0,
+      "zcc": 4491.0,
+      "zsnow": 4789.601555199403,
+      "Fburial": 1672555745992.6172,
+      "Fdiss": 58327444254007.38
+    },
+    "2300": {
+      "zsat": 2092.0,
+      "zcc": 3505.0,
+      "zsnow": 4712.618983410122,
+      "Fburial": -34874286374238.562,
+      "Fdiss": 94874286374238.56
+    },
+    "2800": {
+      "zsat": 200.0,
+      "zcc": 2028.0,
+      "zsnow": 4282.699693081154,
+      "Fburial": -53247521697441.375,
+      "Fdiss": 113247521697441.38
+    },
+    "3800": {
+      "zsat": 200.0,
+      "zcc": 1871.0,
+      "zsnow": 3601.7114522192496,
+      "Fburial": -22998128028319.625,
+      "Fdiss": 82998128028319.62
+    }
+  },
+  "OAE": {
+    "maximum pCO2 anomaly (ppm)": 0.0,
+    "final pCO2 anomaly (ppm)": -6.754906929179309,
+    "minimum surface pH anomaly": 0.0,
+    "maximum surface pH anomaly": 0.0333135809352374,
+    "minimum zsat anomaly (m)": 0.0,
+    "maximum zsat anomaly (m)": 178.0,
+    "minimum zcc anomaly (m)": 0.0,
+    "maximum zcc anomaly (m)": 145.0,
+    "final zsnow anomaly (m)": 142.70044536738442,
+    "minimum burial anomaly (Tmol/yr)": -0.000781265234625,
+    "maximum burial anomaly (Tmol/yr)": 1.27565771608475,
+    "maximum dissolution anomaly (Tmol/yr)": 0.000781265234625,
+    "forcing_peak_year": 2169.083333333333,
+    "final_forcing": 0.0,
+    "max_depth_gap": 12.841456865113287,
+    "1800": {
+      "zsat": 3758.0,
+      "zcc": 4814.0,
+      "zsnow": 4813.9999999999945,
+      "Fburial": 12009484213650.07,
+      "Fdiss": 47990515786349.93
+    },
+    "2100": {
+      "zsat": 3776.0,
+      "zcc": 4828.0,
+      "zsnow": 4828.189776653201,
+      "Fburial": 12138229570838.5,
+      "Fdiss": 47861770429161.5
+    },
+    "2300": {
+      "zsat": 3867.0,
+      "zcc": 4903.0,
+      "zsnow": 4902.620391804509,
+      "Fburial": 12786918451386.71,
+      "Fdiss": 47213081548613.29
+    },
+    "2800": {
+      "zsat": 3934.0,
+      "zcc": 4957.0,
+      "zsnow": 4956.9999999999945,
+      "Fburial": 13269551550222.047,
+      "Fdiss": 46730448449777.95
+    },
+    "3800": {
+      "zsat": 3916.0,
+      "zcc": 4942.0,
+      "zsnow": 4954.70044536738,
+      "Fburial": 12860358736293.445,
+      "Fdiss": 47139641263706.555
+    }
+  }
+}

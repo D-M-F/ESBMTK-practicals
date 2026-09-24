@@ -1,0 +1,138 @@
+dissolved in the sediments. This is the feedback that keeps
+alkalinity in the ocean within rather tight bounds and
+hence provides a strong constraint on how much atmo-
+spheric CO
+2 can vary over time. Using a multi-box model,
+Keir [1995] showed that a doubling of the weathering input
+leads to only a 25 to 35 ppm reduction in atmospheric
+CO
+2. This small change is supported by the more recent
+results of Archer et al. [2000b] on the basis of a 3-D ocean
+biogeochemistry model that has been coupled to a sedi-
+ment model similar to that described above.
+The strength of this negative feedback depends on how
+strongly the saturation state of the bottom water deter-
+mines the dissolution of CaCO
+3 in the sediments. This
+CaCO3 homeostat would be weaker if parameters other
+than the CO 2/C0
+3 ion concentration of the bottom waters
+were exerting a more dominant control. We have learned
+above that the remineralization of organic matter has a
+signiﬁcant inﬂuence on the dissolution of CaCO
+3 in
+the sediments. However, as long as the organic matter–
+to–CaCO
+3 rain ratio arriving at the sediments is below
+1:1, the saturation state of the bottom water remains the
+dominant factor. We have also seen that the efﬁciency of
+respiration-driven dissolution tends to decrease strongly if
+bottom waters are supersaturated, even in cases where the
+rain ratio is well above 1:1. There are thus substantial
+limits for how strongly the ocean’s lysocline can deviate
+from the saturation horizon [Sigman et al., 1998].
+An important note remains to be added regarding
+the timescale of the CaCO
+3 homeostat. One might be
+tempted to argue that the timescale is of the order of
+the residence time of alkalinity in the ocean, which is
+about 100 kyr. However, it turns out that the e-folding
+timescale for the oceanic adjustment is only about
+5–10 kyr [ Archer et al ., 1997, 2000b]. This rather sur-
+prising result is again a consequence of the peculia-
+rities of the oceanic CO
+2 system. Only about 5% of the
+DIC in the ocean is in the form of CO 2/C0
+3 . Thus the
+CO2/C0
+3 content of seawater can adjust approximately 20
+times faster than the 10 5 years it takes to change the
+entire DIC pool by the input from weathering processes
+and volcanic outgassing. The CaCO 3 homeostat is
+therefore able to interact with the global carbon cycle on
+timescales shorter than the 100 kyr cycle associated
+with the glacial-interglacial climate cycles of the last
+million years.
+CaCO
+3 Compensation
+The balance between river input of alkalinity and burial
+can also be changed by ocean internal changes, such as
+alterations of the marine production of CaCO
+3, or chan-
+ges in the oceanic distribution of DCO2/C0
+3 . We have seen
+above that the latter is mainly controlled by the soft-tissue
+pump. Therefore any change of the ocean’s biological
+pumps will upset the ocean’s alkalinity balance and re-
+quire an adjustment of the ocean’s carbonate cycle.
+However, the response of the latter to changes in the two
+biological pumps is fundamentally different.
+In the case of the carbonate pump, a change in the
+production and export of CaCO
+3 will lead directly to an
+imbalance between river input of alkalinity and burial,
+which is then adjusted by a change of the depth of the
+lysocline until a new balance is achieved. This carbonate
+compensation response is fundamentally similar to the
+external homeostat described above. Figure 9.5.2a shows
+how the various components of the oceanic system react
+to a sudden decrease in the CaCO
+3 ﬂux from the upper
+ocean, and how the new equilibrium of the ocean’s al-
+kalinity balance is achieved.
+Initially, the unabated input of Alk by rivers, coupled
+with decreased burial, leads to a rapid increase in mean
+ocean alkalinity, which also causes ocean mean [CO
+2/C0
+3 ]t o
+go up. As a result, the lysocline starts to deepen, so that a
+greater fraction of the produced CaCO
+3 can be buried.
+The process continues until the lysocline has reached a
+depth at which burial of Alk is equal to the river input of
+Alk. The increase in ocean mean Alk also decreases the
+oceanic buffer factor, leading to an imbalance of inor-
+ganic carbon between the atmosphere and ocean. The
+balance is restored by the ocean taking up CO
+2 from the
+atmosphere, hence causing a drawdown of atmospheric
+CO
+2. In addition to this ‘‘open system’’ response [Sigman
+and Boyle, 2000], atmospheric CO2 is further drawn down
+by a ‘‘closed system’’ response, which is more direct and
+exists even in the absence of a need to balance the ocean’s
+alkalinity input. This closed system response is simply a
+consequence of the fact that a reduction in the surface
+export of CaCO
+3 will lead to an increase in surface ocean
+Alk, which will tend to lower oceanic pCO2, and hence
+lead to an uptake of CO 2 from the atmosphere. Using a
+multi-compartment model of the ocean,Sigman and Boyle
+[2000] showed that the ‘‘open system’’ response to a
+halving of the CaCO
+3 export lowers atmospheric CO2 by
+about 20 ppm, whereas the ‘‘closed system’’ response
+leads to a change in atmospheric CO
+2 of about 30 ppm.
+The two changes are cumulative, so that the total atmo-
+spheric CO
+2 change is about 50 ppm. However, as we will
+discuss in chapter 10 in more detail, the exact magnitude
+of the atmospheric CO
+2 response depends quite sensiti-
+vitely on the ocean model being employed [Broecker et al.,
+1999a, Archer et al., 2000a]. The open and closed system
+responses are also associated with quite different time-
+scales. The closed system response has a timescale of
+maximally a few hundred years, primarily determined by
+the whole ocean overturning timescale. By contrast, the
+open system response is quite slow, of the order of hun-
+dreds to thousands of years, primarily because of the low
+rates of CaCO
+3 burial and the slow kinetics of sediment
+dissolution.
+The response of the oceanic carbonate system to
+changes in the soft-tissue pump are quite different. In
+this case, and disregarding the potential role of a change
+386
+Chapter 9

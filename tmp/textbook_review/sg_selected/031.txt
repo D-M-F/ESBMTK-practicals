@@ -1,0 +1,34 @@
+Problems
+1.1 Explain in words why we think that neither the accumulation hypothesis
+nor the equilibrium control hypothesis is correct for explaining the
+huge variations that we observe for the mean oceanic concentration of
+the different elements in the ocean.
+a. Describe the test that we devised for the accumulation hypothesis and
+what information we used to reject this hypothesis.
+b. Do the same for the equilibrium hypothesis.
+1.2 If we nevertheless accept the hypothesis that the mean concentration of
+elements in the ocean is a result of the accumulation from river input, how
+large would today’s ocean concentration be of magnesium, arsenic,
+chlorine, and gold? (Use an ocean age of 3.85 billion years and the river
+concentrations given in table 1.1.1).
+1.3 List two elements that fall into each of the following categories: biolimiting,
+biointermediate, and biounlimited. Explain the basis of your choice.
+1.4 During photosynthesis, how many free oxygen molecules are produced
+per nitrogen atom consumed? How many free oxygen molecules are
+produced per carbon atom consumed?
+1.5 Equation (1.2.2) tells us that, at steady state, the upward supply of nutrients has
+to be balanced by the downward ﬂux of nutrients in organic matter.
+a. Discuss how the biological export production would change if the deep
+and surface concentrations were suddenly halved.
+b. Discuss how biological export production would react to a sudden dou-
+bling of the vertical exchange rate n.
+1.6 Describe what would happen in the one-box model if the concentration of
+phosphate in the ocean was suddenly doubled, but the river input and removal
+rate constant k remained the same. Describe ﬁrst the ﬁnal steady state, and
+then the time it would take to achieve the ﬁnal steady state.
+1.7 What would happen to the global mean oceanic phosphate concentration if the
+river concentration of phosphate in the one-box model were suddenly to
+double? Draw a graph of concentration versus time, showing the behavior
+in time as well as the ﬁnal concentration. Assume that phosphate removal
+is ﬁrst order.
+16

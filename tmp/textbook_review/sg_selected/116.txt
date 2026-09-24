@@ -1,0 +1,49 @@
+3.6 A recent study by Peacock [2004] suggests that the total ocean inventory of
+bomb radiocarbon is about 25% lower than that used by Wanninkhof [1992] to
+calibrate his air-sea gas exchange coefﬁcient model. Discuss the implications
+of this ﬁnding for the calibration of the air-sea gas exchange coefﬁcient.
+3.7 How long does it take for a 100 m deep mixed layer to lose half of its initial
+oxygen supersaturation of 5 mmol m
+/C0 3? Assume a gas transfer velocity of
+20 cm hr/C0 1 and ignore any lateral loss or gain of oxygen or any exchange
+across the bottom of the mixed layer.
+a. Derive the time-dependent mass balance equation for the oxygen
+anomaly, DC in this mixed layer.
+b. Solve for the time dependence of the mixed layer oxygen anomaly.
+c. Solve for the time t required for DC(t) to drop to half of the initial
+oxygen anomaly, DC
+initial.
+3.8 What equatorial upwelling rate would be required to maintain the oxygen
+deﬁcit of about 4 mmol m /C0 3 in the eastern equatorial Paciﬁc (see ﬁgure 3.1.1)
+if there were no biological production? Assume that the upwelling water has
+an oxygen deﬁcit of 40 mmol m
+/C0 3 and that the deﬁcit is zero in the waters at
+either side of the axis of upwelling. Assume a mixed layer of 40 m, and a gas
+transfer velocity of 10 cm hr
+/C0 1.
+a. Draw a meridional/depth section of the upwelling system across the
+equator. Indicate the directions of the mass (water) ﬂuxes and those
+of oxygen.
+b. Derive a mass balance equation for oxygen in the mixed layer.
+c. Assume steady state and solve for the upwelling velocity.
+3.9 Observations from a mooring in the same region of the equatorial Paciﬁc as
+in problem 3.8 indicate that the oxygen undersaturation was nearly constant
+for an entire month. You now would like to compute the ingassing of oxygen
+for this month. The information you have available is the monthly mean
+wind speed, i.e., 5 m s
+/C0 1, and its standard deviation, ±2 m s /C0 1. Compute the
+ingassing of oxygen using the Wanninkhof (1992) parameterization (see table
+3.3.2) for a case in which you take the covariance of the wind into account,
+and for a case in which this term is neglected. Discuss the reasons for the
+difference. Assume a Schmidt number of 660.
+3.10 Analyses of the oxygen concentration in raindrops reveals that it is nearly
+always very close to oxygen saturation. This is surprising at ﬁrst, since when a
+raindrop is formed, it starts with zero oxygen and the lifetime of a raindrop is
+only a few minutes. In contrast, we just learned that it takes weeks for a 50 m
+deep mixed layer in the ocean to equilibrate with the atmosphere. Explain
+how the effective equilibration timescale depends on the geometry of the
+problem, and demonstrate how it scales with the size of the raindrop. As-
+sume that the raindrop is a perfect sphere. Note: Typical raindrops are
+*1 mm in diameter.
+Air-Sea Interface
+101

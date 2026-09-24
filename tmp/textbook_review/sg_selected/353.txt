@@ -1,0 +1,191 @@
+The time rate of change of any gas, A, in a surface
+mixed layer box that exchanges only with the atmo-
+sphere is given by
+@[A]w
+@t ¼/C0 @F
+@z ¼ kw
+zml
+([A]a /C0 [A]w )( 8 :3:6)
+where kw is the gas exchange coefﬁcient (for CO 2 typi-
+cally 20 cm hr/C0 1) and zml is the thickness of the mixed
+layer box (see also chapter 3). If we assume for the
+moment that the atmospheric concentration is ﬁxed,
+(8.3.6) is a ﬁrst-order differential equation in [A]
+w. Its
+time-dependent solution is therefore an exponential
+with a timescale given by ( k
+w/zml)/C0 1:
+t ¼ zml
+kw
+¼ zml
+20 cm hr/C0 1 ¼ 5h rm /C0 1 zml (8:3:7)
+For a 40 m-deep surface mixed layer, the timescale
+amounts to about 8 days.
+Because CO
+2 needs to equilibrate with the entire DIC
+pool in the surface ocean and not just with the H 2CO/C3
+3
+pool, the timescale for CO 2 is much longer. When CO 2
+enters the ocean from the atmosphere, approximately 19
+out of 20 molecules react with carbonate (the strongest
+base of the CO
+2 system) to form two bicarbonate ions, i.e.,
+H2CO/C3
+3
+þ CO2/C0
+3 Ð 2HCO/C0
+3
+(8:3:8)
+leaving behind only one molecule as H 2CO/C3
+3
+:
+For CO 2, we therefore have to consider the time rate
+of change of all inorganic carbon species, i.e.,
+@DIC
+@t ¼ @DIC
+@[H2CO/C3
+3
+]
+@[H2CO/C3
+3
+]
+@t ¼ kw
+zml
+([H2CO/C3
+3
+]a /C0 [H2CO/C3
+3
+]) (8 :3:9)
+Solving for the time rate of change of [H 2CO/C3
+3
+] results in
+@[H2CO/C3
+3
+]
+@t ¼
+ 
+@DIC
+@[H2CO/C3
+3
+]
+!/C0 1
+ko
+zml
+([H2CO/C3
+3
+]a /C0 [H2CO/C3
+3
+]) (8 :3:10)
+This equation is analogous to (8.3.6), except that the
+e-folding timescale for equilibration of a perturbation in
+the CO
+2 system is given by
+t ¼ @DIC
+@[H2CO/C3
+3
+]
+/C16 zml
+kw
+/C17
+/C25 20 zml
+kw
+(8:3:11)
+Here, we have used a partial derivative @DIC/
+@[H2CO/C3
+3
+] of 20 based on solving the carbon chemistry
+equations. This derivative indicates that only about 1
+molecule of CO
+2 in 20 molecules entering or leaving the
+ocean stays as H 2CO/C3
+3
+: Why is this the case? One might
+be tempted to argue that this partial derivative should
+be about equal to the concentration ratio of DIC/
+[H
+2CO/C3
+3
+] /C25 200. However, as it turns out, variations in the
+concentration of the carbonate ion are the primary de-
+terminant of this partial derivative (see ﬁgure 8.3.4).
+This can best be understood by reaction (8.3.8). The
+fraction of the total number of CO
+2 molecules added
+to the ocean that are converted to HCO /C0
+3
+and conse-
+quently do not increase the H 2CO/C3
+3
+pool depends on
+the availability of CO 2/C0
+3 : As the concentration of car-
+bonate is about 15 to 20 times higher than that of
+H
+2CO/C3
+3
+, the partial derivative is of the order of 20 rather
+than 200. A more rigorous derivation is given in
+panel 8.3.1.
+We now have established that the characteristic time-
+scale for air-sea exchange of CO
+2 is of the order of 6
+months, but still have not answered the question of
+where between the two extreme scenarios discussed
+above the real ocean lies. Are 6 months long or short
+compared to the average residence time of waters near
+the surface and the timescale of perturbations? The
+DpCO
+2 observations in ﬁgure 8.1.1 suggest that the
+real ocean lies between the two scenarios: the pCO2 is
+clearly out of equilibrium with the atmosphere, but
+DIC 
+pCO2 
+RAPID GAS EXCHANGE
+OBSERVATIONS
+DIC
+pCO2
+atm
+pCO2
+oc
+40°S Eq 40°N
+SLUGGISH GAS EXCHANGE
+DIC
+pCO2
+atm
+pCO2
+oc
+40°S
+a
+b
+c
+Eq 40°N
+DIC 
+pCO2 
+60°S 40°S 20°S Eq 20°N 40°N 60°N
+1900
+2000
+2100
+2200DIC (µmol kg-1)
+100
+200
+300
+400
+500
+600
+pCO2 (µatm)
+DIC
+pCO2
+atm
+pCO2
+oc
+Figure 8.3.3: Hypothetical and observed meridional variations of
+pCO2 and DIC in the surface ocean. (a) Hypothetical distribution
+in a case where gas exchange is very slow. It is assumed that no
+biological processes take place and that therefore Alk remains
+constant [ Broecker and Peng , 1982]. (b) As in (a), but for a case with
+very rapid gas exchange. (c) Observed zonal mean variations of pCO
+2
+and DIC. Based on the pCO2 climatology of Takahashi et al. [2003] and
+the GLODAP climatology of Key et al . [2004].
+330
+Chapter 8

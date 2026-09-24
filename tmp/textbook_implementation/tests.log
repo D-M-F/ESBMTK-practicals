@@ -1,0 +1,543 @@
+...........................WARNING:py.warnings:C:\Users\19279\.conda\envs\ESBMTK314\Lib\site-packages\esbmtk\utility_functions.py:1638: RuntimeWarning: divide by zero encountered in divide
+  d = 1000 * (h / li - r) / r
+
+...............INFO:root:creating M_L_b_cs_generic_function
+INFO:root:creating M_H_b_cs_generic_function
+INFO:root:creating M_D_b_cs_generic_function
+INFO:root:creating M_H_b_DIC_gas_exchangeH_b_generic_function
+INFO:root:creating M_L_b_DIC_gas_exchangeL_b_generic_function
+WARNING:py.warnings:D:\ALK\TA\BGC\ESBMTK-practicals\tests\test_storage_decomposition.py:23: ResourceWarning: unclosed file <_io.TextIOWrapper name='D:\\ALK\\TA\\BGC\\ESBMTK-practicals\\M.log' mode='w' encoding='utf-8'>
+  cls.model = initialize_model(params, stop="100 yr", max_timestep="1 yr")
+
+INFO:root:================================================================================
+INFO:root:Intergration started at 2026-09-23 14:55:38.750640
+INFO:root:r = M.H_b.DIC, r.c[0] = 2.15e-03, rtol = 2.15e-08
+INFO:root:r = M.H_b.TA, r.c[0] = 2.34e-03, rtol = 2.34e-08
+INFO:root:r = M.L_b.DIC, r.c[0] = 1.95e-03, rtol = 1.95e-08
+INFO:root:r = M.L_b.TA, r.c[0] = 2.29e-03, rtol = 2.29e-08
+INFO:root:r = M.D_b.DIC, r.c[0] = 2.29e-03, rtol = 2.29e-08
+INFO:root:r = M.D_b.TA, r.c[0] = 2.40e-03, rtol = 2.40e-08
+INFO:root:r = M.L_b.Hplus, r.c[0] = 5.51e-09, rtol = 5.51e-14
+INFO:root:r = M.L_b.CO2aq, r.c[0] = 8.90e-06, rtol = 8.90e-11
+INFO:root:r = M.H_b.Hplus, r.c[0] = 6.00e-09, rtol = 6.00e-14
+INFO:root:r = M.H_b.CO2aq, r.c[0] = 1.61e-05, rtol = 1.61e-10
+INFO:root:r = M.D_b.Hplus, r.c[0] = 1.23e-08, rtol = 1.23e-13
+INFO:root:r = M.D_b.CO2aq, r.c[0] = 2.78e-05, rtol = 2.78e-10
+INFO:root:r = M.CO2_At, r.c[0] = 2.80e-04, rtol = 2.80e-09
+INFO:root:Intergration finished:
+ Number of evaluations of the right-hand side = 240
+Number of evaluations of the Jacobian = 1
+Number of LU decompositions = 35
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+INFO:root:
+
+python.exe -m unittest stopped at 2026-09-23 14:55:38.849159
+INFO:root:This run used 0.19 GB of memory
+
+INFO:root:================================================================================
+...........F.........INFO:root:bypassing M.Conn_L_b_to_D_b_DIC_PIC_DIC._FPIC_DIC in M.D_b.DIC
+INFO:root:bypassing M.Conn_L_b_to_D_b_TA_PIC_TA._FPIC_TA in M.D_b.TA
+INFO:root:creating M_L_b_cs_generic_function
+INFO:root:creating M_H_b_cs_generic_function
+INFO:root:creating M_D_b_cs2_generic_function
+INFO:root:creating M_H_b_DIC_gas_exchangeH_b_generic_function
+INFO:root:creating M_L_b_DIC_gas_exchangeL_b_generic_function
+......
+======================================================================
+FAIL: test_generated_copies_match_instructor_sources (test_student_notebooks.StudentNotebookTest.test_generated_copies_match_instructor_sources) (notebook='00_PyCO2SYS.ipynb')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\ALK\TA\BGC\ESBMTK-practicals\tests\test_student_notebooks.py", line 175, in test_generated_copies_match_instructor_sources
+    self.assertEqual(target.read_bytes(),
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+                     (ROOT / "notebooks/student" / name).read_bytes())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'{\r[16240 chars]\n  },\r\n  {\r\n   "cell_type": "code",\r\n  [845 chars]\r\n' != b'{\r[16240 chars]\n  }\r\n ],\r\n "metadata": {\r\n  "kernelspe[471 chars]\r\n'
+
+----------------------------------------------------------------------
+Ran 69 tests in 61.598s
+
+FAILED (failures=1)
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 8.39 CPU seconds, wall time = 8.55 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.05 CPU seconds, wall time = 0.07 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.05 CPU seconds, wall time = 0.06 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.05 CPU seconds, wall time = 0.07 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.00 CPU seconds, wall time = 0.02 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.06 CPU seconds, wall time = 0.11 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.06 CPU seconds, wall time = 0.08 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.09 CPU seconds, wall time = 0.11 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.83 CPU seconds, wall time = 0.85 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.72 CPU seconds, wall time = 0.72 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.69 CPU seconds, wall time = 0.72 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.75 CPU seconds, wall time = 0.77 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.75 CPU seconds, wall time = 0.77 seconds
+
+================================================================================
+
+There were 89 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 1.97 CPU seconds, wall time = 2.02 seconds
+
+================================================================================
+
+There were 82 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 3.50 CPU seconds, wall time = 3.57 seconds
+
+================================================================================
+
+There were 29 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 11.14 CPU seconds, wall time = 11.23 seconds
+
+================================================================================
+
+There were 24 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.64 CPU seconds, wall time = 0.65 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 1.95 CPU seconds, wall time = 1.97 seconds
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.73 CPU seconds, wall time = 0.74 seconds
+
+================================================================================
+
+There were 12 warnings, check M.log
+
+================================================================================
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+status=0
+message=The solver successfully reached the end of the integration interval.
+
+
+ Execution took 0.08 CPU seconds, wall time = 0.10 seconds
+
+
+ESBMTK 0.14.3.1.post0  
+ Copyright (C) 2020 - 2026  Ulrich G.Wortmann
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it
+under certain conditions; See the LICENSE file for details.
+
+If you use ESBMTK for your research, please cite:
+
+Wortmann et al. 2025, https://doi.org/10.5194/gmd-18-1155-2025
+
+ERROR conda.cli.main_run:execute(127): `conda run python -m unittest discover -s tests` failed. (See above for error)

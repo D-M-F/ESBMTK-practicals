@@ -6,7 +6,8 @@ from unittest.mock import patch
 import numpy as np
 from esbmtk import Q_
 
-from teaching_audits import integrate_forcing_history, audit_complete_model
+from teaching_audits import (integrate_forcing_history, audit_complete_model,
+                            audit_restart_drift, audit_benchmark_graph)
 
 
 class ForcingHistoryTest(unittest.TestCase):
@@ -78,6 +79,50 @@ class BoundaryAuditTest(unittest.TestCase):
         with patch('teaching_audits.solver_carbonate_fluxes',
                    return_value=(model.D_b.Fdiss.c, model.D_b.Fburial.c)), self.assertRaises(AssertionError):
             audit_complete_model(model, 'OAE', atol_mol=0)
+
+
+class RestartDriftTest(unittest.TestCase):
+    def model(self):
+        m = BoundaryAuditTest.model('control')
+        for name in ('L_b', 'H_b', 'D_b'):
+            box = getattr(m, name)
+            box.name = name
+            box.DIC.c[:] = 0.002
+            box.TA.c[:] = 0.0023
+        m.CO2_At.c[:] = 280e-6
+        m.D_b.zsnow = NS(c=np.full(3, 4800.))
+        return m
+
+    def test_all_reservoirs_and_sediment_memory_are_checked(self):
+        self.assertEqual(len(audit_restart_drift(self.model())), 8)
+        for name, attribute in (('H_b', 'TA'), ('D_b', 'zsnow')):
+            m = self.model()
+            getattr(getattr(m, name), attribute).c[1] += 0.02
+            # Endpoints agree, but the interior excursion must still fail.
+            with self.subTest(state=attribute), self.assertRaises(AssertionError):
+                audit_restart_drift(m)
+
+    def test_nonfinite_state_and_long_run_are_not_stationarity_evidence(self):
+        m = self.model()
+        m.L_b.DIC.c[1] = np.nan
+        with self.assertRaises(AssertionError):
+            audit_restart_drift(m)
+        m = self.model()
+        m.time[-1] = 1000
+        with self.assertRaises(ValueError):
+            audit_restart_drift(m)
+
+
+class GraphAuditTest(unittest.TestCase):
+    def test_detects_wrong_law_on_an_otherwise_conservative_transfer(self):
+        from model import initialize_model
+        from presets import load_boudreau_parameters
+        m = initialize_model(load_boudreau_parameters(), stop='20 yr', max_timestep='1 yr')
+        self.assertEqual(len(audit_benchmark_graph(m)), 17)
+        water = next(c for c in m.loc if c.id == 'mix_down')
+        water.ctype = 'regular'
+        with self.assertRaises(AssertionError):
+            audit_benchmark_graph(m)
 
 
 if __name__ == '__main__':

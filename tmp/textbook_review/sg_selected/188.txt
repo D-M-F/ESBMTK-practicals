@@ -1,0 +1,74 @@
+Chapter 5
+Organic Matter Export and Remineralization
+In the previous chapter we examined the uptake of
+nutrients to form organic matter by organisms in near-
+surface waters of the ocean. We saw that this uptake
+forces surface nitrate and phosphate to very low con-
+centrations over almost the entire world ocean. It also
+reduces the surface concentration of total carbon and
+alkalinity, as well as having an impact on the surface
+concentration of micronutrients and many trace metals.
+We now examine the fate of organic matter that is ex-
+ported from the surface. We will see that the majority of
+the organic matter exported is remineralized within the
+upper few hundred meters of the thermocline, with
+only a small but signiﬁcant fraction making it into the
+deep ocean. We will also see that our understanding of
+the processes determining the remineralization of or-
+ganic matter in this ‘‘twilight’’ zone is much less de-
+veloped than our understanding of how organic matter
+is formed in the euphotic zone. Our approach will
+therefore be somewhat more descriptive in comparison
+to that we took in chapter 4.
+5.1 Introduction
+The vast majority of organic matter exported from
+near-surface waters is converted back into its inorganic
+constituents by heterotrophic organisms within the
+water column and sediments, a process referred to
+as remineralization. This process is the main energy
+source for these organisms, therefore providing a strong
+incentive for them to complete remineralization to
+the greatest extent possible. The subsequent upward
+ﬂux to the surface of remineralized inorganic nutrients
+closes the nutrient cycling loop driven by the biological
+pump. These processes are depicted schematically in
+ﬁgure 5.1.1, which excludes remineralization processes
+and burial occurring in the sediments. Figure 5.1.1
+separates the organic matter pool into dissolved organic
+matter (DOM) and particulate organic matter (POM),
+with the difference often deﬁned operationally on the
+basis of what goes through a ﬁlter of a particular size
+and what does not. Functionally the main difference
+between these two pools is that DOM is too small to
+sink on its own; therefore its transport is primarily
+determined by water transport and mixing. In contrast,
+POM is large and heavy enough to sink, so in addi-
+tion to water transport and mixing, it has a non-
+negligible vertical advection term. In this chapter, we
+examine the export of organic matter from the surface
+ocean, as well as remineralization in the water column.
+In chapter 6, we discuss remineralization in the
+sediments.
+We begin this section with a ﬁrst look at observa-
+tions, and then discuss the two major remineralization
+reactions that occur in the water column and that de-
+termine the observed distributions. The ﬁrst reaction
+uses oxygen as an oxidant, and is therefore termed aer-
+obic remineralization . When oxygen is scarce, nitrate
+replaces oxygen as the oxidant, leading to a reaction
+termed denitriﬁcation. A major focus of this chapter will
+be on the inﬂuence of these reactions on the concen-
+tration of oxygen and nutrients, which we will show
+for the ﬁrst time in this section. However, in order to
+study the impact of remineralization on the oxygen
+and nutrient distributions, we must ﬁrst separate the
+remineralization component from the so-called pre-
+formed nutrient concentration transported in from the
+surface. The difference between the remineralized and
+preformed components is the third subject of this sec-
+tion. The ﬁnal topic discussed in this section is the
+deﬁnition of particulate versus dissolved organic matter.
+Nutrient and Oxygen Distributions
+To trace the impact of remineralization reactions on
+the distribution of nutrients and oxygen, we show in
+173

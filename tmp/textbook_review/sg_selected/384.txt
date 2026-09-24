@@ -1,0 +1,104 @@
+0 50 100 150 200 250 300
+0
+1000
+2000
+3000
+4000
+5000
+ 42
+o
+N, 152
+o
+W
+undersaturated
+supersaturated
+0 50 100 150 200 250 300
+[CO3
+2-
+] (µmol kg
+-1
+)
+0
+1000
+2000
+3000
+4000
+5000
+depth (m)
+[CO3
+2-
+]
+[CO3
+2-
+]sat(arag)
+[CO3
+2-
+]sat(calc)
+ 20
+o
+S, 25
+o
+W
+undersaturated
+supersaturated
+[CO3
+2-
+] (µmol kg
+-1
+)
+NORTH PACIFICSOUTH ATLANTIC
+[CO3
+2-
+]
+[CO3
+2-
+]sat(arag)
+[CO3
+2-
+]sat(calc)
+a b
+Figure 9.1.2: Plot of the concentration of the carbonate ion versus depth. Also shown are the carbonate saturation concentrations
+with regard to calcite (solid line) and aragonite (dashed line). (a) South Atlantic Ventilation Experiment station 334 in the South
+Atlantic at 20
+/C14S, 25/C14W. (b) WOCE P16 station 48 in the North Paciﬁc at 42 /C14N, 152/C14W. The region of supersaturation and
+undersaturation with regard to calcite are highlighted with cross hatches. The saturation concentrations were calculated using the
+solubility products of Mucci [1983] and the pressure dependence of Millero [1983]. For calcium, the salinity dependence of Millero
+[1982] was adopted.
+5 5
+75
+25
+25
+75
+50
+75
+75
+50
+75
+50
+25
+5
+5
+25 50
+75
+50
+5025
+5
+50
+25
+5
+50
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+Sediment CaCO3  (% weight)
+20°E
+Figure 9.1.3: Gridded map of the weight percentage of CaCO 3 in the surface sediments. See also color plate 5. Data are from Archer [1996b].
+361
+Calcium Carbonate Cycle

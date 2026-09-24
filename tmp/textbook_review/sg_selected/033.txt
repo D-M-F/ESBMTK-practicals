@@ -1,0 +1,23 @@
+1.12 Add the river ﬂux and sediment burial terms of ﬁgure 1.1.2 to the box model
+of ﬁgure 1.2.3. River delivery occurs into the surface box. Assume that the
+sediment burial ﬂux is a fraction f of the organic matter ﬂux F.
+a. Derive an equation for f. Start with the conservation equation for
+surface and deep boxes, and then assume steady state.
+b. Use the equation in (a) in combination with the information in
+problem 1.11 and table 1.1.1 to determine the magnitude of f for
+P, Ba, and Ca.
+c. Discuss the solution. Is it realistic? Can you explain the differences
+between the three elements?
+1.13 Show how to derive equation (1.2.8). Start with the conservation equation for
+the deep box for phosphorus and oxygen. Note that low-latitude surface
+phosphate is 0 and that F
+O2 ¼ rO2:P /C1 FP, where rO2:P is /C0 150. Assume steady
+state and solve for deep O 2.
+1.14 Suppose the deep phosphate concentration doubled due to an increase in the
+river ﬂow.
+a. How would this affect the deep ocean oxygen concentration if
+high-latitude phosphate remained the same?
+b. How would this affect the deep ocean oxygen concentration if the
+high-latitude phosphate concentration also doubled?
+Chapter 1
+18

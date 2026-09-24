@@ -1,0 +1,130 @@
+concentration is set by all reactions that affect this pool,
+not only those that produce or consume CO
+2/C0
+3 directly.
+As the soft-tissue pump dominates the interior ocean
+distribution of DIC, it also controls the concentration of
+the CO
+2/C0
+3 ion.
+Water Column Dissolution
+The degree to which a settling CaCO 3 particle get dis-
+solved in the water column once it enters undersatu-
+rated conditions depends on how fast the dissolution
+reaction is relative to the time it takes for the particle to
+settle to the bottom of the ocean. For that purpose, we
+need to have an estimate of the dissolution kinetics and
+of the settling speed.
+Laboratory studies have demonstrated that the dis-
+solution kinetics of CaCO
+3 can be described by an ex-
+pression depending on the state of CaCO 3 saturation,
+O. Following Morse and Berner [1972], we write the rate
+of CaCO 3 dissolution as
+d[CaCO3]
+dt ¼/C0 [CaCO3] kCaCO3 (1 /C0 O)n, for O < 1( 9 :3:7)
+where [CaCO 3] is the concentration of CaCO 3 in units
+of mmol m /C0 3, kCaCO3 is the CaCO 3 dissolution rate
+constant in units of day /C0 1, and the exponent n repre-
+sents an apparent ‘‘order’’ of the reaction. Morse and
+Arvidson [2002] recently presented an extensive review
+and synthesis of the dissolution kinetics of carbonates,
+and showed that the apparent order n is in most cases
+larger than 1, i.e., that the reaction is nonlinear. Keir
+[1980] suggested originally on the basis of his laboratory
+studies an exponent n of 4.5 for calcite and 4.2 for
+aragonite. However, Hales and Emerson [1997] recently
+reevaluated these data using newly calculated satura-
+tion states, O, and suggested that a ﬁrst-order reac-
+tion, i.e., an exponent n of 1, represents a better ﬁt to
+Keir’s laboratory data. In addition, they argued that
+in situ measurements in sediments are also more con-
+sistent with a ﬁrst-order reaction than with a 4.5-order
+reaction.
+There is also little agreement with regard to the value
+of k
+CaCO3 . Assuming a 4.5-order kinetics, Keir [1980]
+obtained the best ﬁt to his data with a value of the order
+of 10 day
+/C0 1. There exist almost no measurements of
+dissolution kinetics in the water column, but determi-
+nations of k
+CaCO3 based on sediment data generally have
+yielded much lower values than those determined in
+the laboratory. Measurements of in situ benthic ﬂuxes
+[ Jahnke et al ., 1994; Berelson et al ., 1994], in situ mi-
+croelectrode pore water pH proﬁles [ Hales and Emerson ,
+1996; Archer et al ., 1989; Hales et al ., 1994], or carbonate
+chemistry of pore waters collected with in situ samplers
+[Martin and Sayles , 1996], interpreted with models of
+pore water reactions and 4.5-order kinetics, give esti-
+mates of 5 /C2 10
+/C0 5 to 1 day /C0 1. The much lower dissolu-
+tion rates found in the sediments might be related to
+surface effects, including slower diffusive transport of
+solutes away from the surface, and possible chemical
+and physical inhibitions of the reactions at the surface
+of the mineral [ Morse and Arvidson , 2002]. Theoretical
+models also suggest that the area-to-volume ratio of the
+particles plays a role [ Dreybrodt et al ., 1996], explaining
+some of the differences between various sediment
+study locations [ Hales and Emerson , 1997].
+The corresponding values of k
+CaCO3 for a ﬁrst-order
+kinetics are numerically lower than those estimated by
+assuming a reaction order of n ¼ 4.5. The reevaluation
+of Keir’s laboratory data by Hales and Emerson [1997]
+with a ﬁrst-order kinetics model gives a value of 0.38
+day
+/C0 1, while the sediment data suggest values for
+kCaCO3 of the order of 1 /C2 10/C0 4 day/C0 1.
+The CaCO3 dissolution equation (9.3.7) is a homoge-
+neous ﬁrst-order differential equation, whose solution is
+an exponential decay function with an e-folding time-
+scale of t ¼ 1= k
+CaCO3 (1 /C0 O)nðÞ . If we assume that the
+dissolution of CaCO 3 follows a ﬁrst-order kinetics, i.e.,
+n ¼ 1, and adopt a value midway between the laboratory
+and the sediment data–based estimates of 0.01 day /C0 1 for
+kCaCO3 , the e-folding timescale for the dissolution reac-
+tion in the case of an undersaturation O ¼ 0.9 is about
+1000 days.
+How does this compare to the time it takes for
+CaCO3 particles to settle through the water column?
+Because of their high density (see chapter 5), carbonate
+mineral particles are among the fastest settling parti-
+cles, and sinking velocities of more than 100 m day
+/C0 1
+have been observed [ Berelson, 2002]. Such rapid sinking
+translates into a residence time in a 5000 m-deep water
+column of about 50 days. If we consider, however, that
+the upper portion of the water column is supersatu-
+rated, the time CaCO
+3 particles spend in the under-
+saturated portion may be only a few weeks. This is very
+short in comparison to the timescale of dissolution.
+This argument, together with the observation that
+CaCO
+3 particles caught in sediment traps show little
+corrosion [ Honjo, 1978], has led to the paradigm that
+CaCO3 behaves conservatively above the calcite satura-
+tion horizon [ Sverdrup et al ., 1941; Honjo, 1978; Deuser,
+1986; Milliman, 1993] and that dissolution in the water
+column below the saturation horizon is relatively small.
+However, there is increasing evidence that a consider-
+able amount of CaCO
+3 dissolves in the upper 1000 m
+of the oceans, even in waters that are supersaturated
+with respect to calcite. Integrating ﬂux data from deep
+sediment traps over the entire ocean, Milliman [1993]
+estimated that about 0.30 Pg C yr
+/C0 1 are leaving the
+upper 1000 m of the ocean, mainly in the form of cal-
+cite. Accepting a surface export of about 0.7 Pg C yr
+/C0 1
+suggests that perhaps more than 50% of the exported
+CaCO
+3 gets dissolved before reaching 1000 m. This
+conclusion is relatively uncertain because of possibly
+371
+Calcium Carbonate Cycle

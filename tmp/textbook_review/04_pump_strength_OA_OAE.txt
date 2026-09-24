@@ -1,0 +1,295 @@
+=== CELL 0 markdown ===
+# 04 — Design and interpret carbon and alkalinity experiments
+
+**Learning goals:** specify matched experiments; map external inputs; use budget-checked anomalies to explain mechanisms, timing and limits.
+
+**Provisional time: 40 minutes.** Prediction/specification (5), two forcing tasks (10), supplied runs/checks (10), four short answers (15). Three cases are run: control, OA and OAE. All plotting and numerical machinery are supplied.
+[Teaching goals](../../TEACHING_GOALS.md).
+
+**Reading key:** <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>Key term</strong></mark> = concept to notice. Blue **Question** panels identify student work; purple **Instructor answer** panels appear only in the instructor sheet.
+Code labels distinguish **Choose and explain**, **Understand and run**, and **Supplied implementation**.
+This practical is ungraded. Keep your explanations here; no separate submission is required.
+The [coding cheatsheet](../../ref/modelling_cheatsheet.md) is optional lookup support; essential syntax is explained locally.
+
+=== CELL 1 code ===
+# Supplied implementation: run this support code as provided.
+from pathlib import Path
+import sys
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+ROOT = next(p for p in (Path.cwd().resolve(), *Path.cwd().resolve().parents)
+            if (p / 'teaching_config.py').is_file())
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from esbmtk import Signal, Source, Species2Species
+from model import initialize_model, postprocess_carbonate_horizons, run_model
+from presets import load_boudreau_parameters, make_pump_variant
+from reservoir_inputs import reservoir_inventory_rows
+from model_inputs import read_model_tables
+
+DATA = ROOT / 'data' / 'Boudreau_2010'
+WORKBOOK = DATA / 'model_definition.xlsx'
+P = load_boudreau_parameters(WORKBOOK)
+input_tables = read_model_tables(WORKBOOK)
+STATE = DATA / 'steady_state'
+PULSE_FILE = DATA / 'IS92a-scenario.csv'
+DIGITIZED = DATA / 'digitized'
+REFERENCE_SCALE = 0.877
+PULSE_START = 1800.0
+REFERENCE_CARBON_PMOL = 335.3560189847107
+OAE_TARGET_PMOL = 10.0
+OAE_SCALE = REFERENCE_SCALE * OAE_TARGET_PMOL / REFERENCE_CARBON_PMOL
+from teaching_audits import audit_complete_model
+
+=== CELL 2 markdown ===
+## A1. Reuse the model specification from 03
+
+Your completed schematic is the experiment map. Add only the external carbon or TA arrow; identify the outputs you will examine. The workbook owns the same geometry, box-specific T/S/P, transport and baseline rates. Each case gets an independent parameter copy and the same archived stationary state. Workbook initial concentrations are replaced by that restart.
+
+The supplied `build_complete_case` below returns a fresh, unrun model. After changing a forcing choice, rerun its definition and all subsequent case/run cells. Changes to baseline geometry, chemistry or process rates require a fresh compatible stationary control.
+
+POC/PIC export remains fixed. Weathering, gas exchange and state-dependent dissolution/burial remain active. The atmospheric reservoir is finite. Ocean acidification (OA) here is driven by atmospheric carbon input; idealized ocean alkalinity enhancement (OAE) adds surface TA with no direct carbon input.
+
+Keep these prescribed inputs: OA uses the archived IS92a-shaped forcing (scale 0.877, no terrestrial uptake), while OAE uses the same shape/timing at a different amplitude. Runs last 3800 model years with a one-month maximum step. These choices reproduce a benchmark and test a specified intervention; they are not present-day forecasts.
+
+=== CELL 3 markdown ===
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — specify and predict before running**
+
+Complete the entry-species/receiving-state fields through Exercise 04.2 below and your diagram. State what must match the control. Predict the sign of atm CO2 and surface pH anomalies in OA and OAE; identify a diagnostic whose opposite sign would challenge your prediction. Revisit this prediction in your four final answers.
+
+| Case | External input after year 1800 | Entry species / receiving state | Initial state and baseline |
+| --- | --- | --- | --- |
+| Control | None | No forcing connection | Archived restart; fixed benchmark parameters |
+| OA | About 4025 Gt C | Your diagram and code choice | Same as control |
+| OAE | 10 Pmol TA equivalents | Your diagram and code choice | Same as control |
+
+The whole-run forcing includes a small pre-1800 tail. The supplied audit reports both intervals. The amounts and units differ, so raw OA/OAE curves do not compare equal-strength interventions.
+
+</div>
+
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+OA adds carbon to atmospheric CO2; OAE adds TA to low-latitude surface TA. Match geometry, chemistry, baseline rates, clock and restart with the control. Expected early OA anomalies are positive atm CO2 and negative surface pH; OAE is expected to give negative atm CO2 and positive surface pH. Opposite sustained anomalies in those diagnostics would require checking the choices and revisiting the explanation.
+
+</div>
+<!-- END SOLUTION -->
+
+=== CELL 4 markdown ===
+<details>
+<summary>Optional reference — inspect the shared workbook again</summary>
+
+The following function displays input records only if you call it. The core uses the specification you already inspected in 03. Numerical baseline inputs stay in `model_definition.xlsx`.
+
+</details>
+
+=== CELL 5 code ===
+# Supplied implementation: optional lookup, not another required table-reading task.
+def show_input_reference():
+    display(pd.DataFrame(input_tables['OceanReservoirs']).set_index('Box ID'))
+    display(pd.DataFrame(input_tables['Atmosphere']).set_index('Box ID'))
+    display(pd.DataFrame(input_tables['TransportConnections']).sort_values('Order'))
+    display(pd.DataFrame(input_tables['GasExchangeConnections']).sort_values('Order'))
+    display(pd.DataFrame(input_tables['ProcessParameters']).set_index('Parameter'))
+# To inspect the tables again, run show_input_reference().
+
+=== CELL 6 markdown ===
+## A2. Exercise 04.1: specify the two forcing inventories
+
+Retain the benchmark OA forcing: the archived IS92a-shaped input adds about
+4025 Gt C after model year 1800 (12 g C/mol). OAE uses the same shape and timing
+but adds 10 Pmol TA equivalents over that interval. These are an OA benchmark
+and an idealized OAE experiment, not equal-amplitude interventions.
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — specify forcing inventories**
+
+Assign `oa_target_mol` and `oae_target_mol` in mol C and mol TA equivalents.
+One Gt is 10^15 g; one Pmol is 10^15 mol. The supplied scaling code retains
+the archived pulse, including its small pre-1800 tail. Inventory reports show
+both the post-1800 benchmark amount and the full input used in the model budget.
+
+</div>
+
+=== CELL 7 code ===
+# Choose and explain: complete marked choices; surrounding machinery is supplied.
+# Exercise 04.1: convert the prescribed amounts to the model's mol units.
+# BEGIN SOLUTION
+oa_target_mol = 4025.0 * 1e15 / 12.0
+oae_target_mol = 10.0 * 1e15
+# END SOLUTION
+# Supplied conversion from inventory to the archived signal's scale factor.
+# Keep its exact reference normalization; 4025 Gt is a rounded comparison target.
+np.testing.assert_allclose(oa_target_mol / 1e15, REFERENCE_CARBON_PMOL, rtol=1e-3)
+oae_scale = REFERENCE_SCALE * oae_target_mol / (REFERENCE_CARBON_PMOL * 1e15)
+
+=== CELL 8 markdown ===
+## A3. Exercise 04.2: map the external arrows
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — implement the experiment specification**
+
+Inside each branch, assign `forcing_species` and `forcing_target` from your diagram. Choose from the model's CO2 and TA species and its atmospheric CO2 or low-latitude surface TA state. No pH is imposed; it is calculated from the evolving state.
+
+`Source` represents material outside the boundary. `Signal` supplies a time-dependent flux; the native connection attaches it to the chosen state. The control has no such connection. Constructor syntax, waveform scaling and the numerical audit are supplied.
+
+</div>
+
+=== CELL 9 code ===
+# Choose and explain: complete marked choices; surrounding machinery is supplied.
+def build_complete_case(forcing=None):
+    # Supplied model and stationary restart; pumps remain fixed.
+    params = make_pump_variant(
+        base=P, solubility_strength=1.0, soft_tissue_strength=1.0,
+        carbonate_strength=1.0, soft_tissue_feedback=False, carbonate_feedback=False,
+    )
+    model = initialize_model(params, stop='3800 yr', max_timestep='1 month')
+    model.read_state(directory=str(STATE))
+    if forcing is None:
+        return model
+    # Exercise 04.2: set the species and receiving state in both cases.
+    if forcing == 'OA':
+        # BEGIN SOLUTION
+        forcing_species, forcing_target = model.CO2, model.CO2_At
+        # END SOLUTION
+    elif forcing == 'OAE':
+        # BEGIN SOLUTION
+        forcing_species, forcing_target = model.TA, model.L_b.TA
+        # END SOLUTION
+    else:
+        raise ValueError(forcing)
+    scale = {'OA': REFERENCE_SCALE, 'OAE': oae_scale}[forcing]
+    signal = Signal(name='external_input', species=forcing_species, register=model,
+                    filename=str(PULSE_FILE), scale=scale)
+    source = Source(name='external_source', species=forcing_species)
+    connection = Species2Species(source=source, sink=forcing_target,
+                                rate='0 mol/yr', signal=signal, id='external_input')
+    model.teaching_signal = signal
+    model.teaching_connection = connection
+    # Preserve the exact solver input for the supplied continuous budget audit.
+    model.teaching_signal_time = model.time.copy()
+    model.teaching_signal_flux = signal.m.copy()
+    if forcing == 'OA':
+        model.carbon_signal = signal
+    else:
+        model.alkalinity_signal = signal
+    return model
+
+fixed_cases = {label: build_complete_case(None if label == 'control' else label)
+               for label in ('control', 'OA', 'OAE')}
+assert fixed_cases['OA'].teaching_connection.sink is fixed_cases['OA'].CO2_At
+assert fixed_cases['OAE'].teaching_connection.sink is fixed_cases['OAE'].L_b.TA
+display(pd.DataFrame(reservoir_inventory_rows(fixed_cases['control'])).set_index('Box'))
+
+=== CELL 10 markdown ===
+## B1. Verify inputs and the boundary budget
+
+In 03, internal water, gas and POC transfers cancel when summing inventories. Including external carbon $I_C(t)$ and TA $I_A(t)$ gives
+$$\frac{dC_{atm+ocn}}{dt}=I_C(t)+W_C-B_{net}(t),\qquad
+\frac{dA_{ocn}}{dt}=I_A(t)+W_A-2B_{net}(t).$$
+These are boundary-aware budgets, not constant-inventory tests. Net burial may change in response to forcing. Pure-TA OAE sets $I_C=0$; distinguish direct external carbon input from internal air–sea redistribution.
+
+The supplied code checks forcing units and integrated amounts before integration, then evaluates the same carbonate flux law used by the solver to audit all saved times. Small tolerance also covers numerical quadrature of the diagnostic flux history. Inspect budget errors before interpreting responses.
+
+=== CELL 11 code ===
+# Understand and run: trace this supplied step and interpret its evidence.
+from teaching_audits import integrate_forcing_history
+
+forcing_rows = {}
+for label, target in (('OA', oa_target_mol), ('OAE', oae_target_mol)):
+    case = fixed_cases[label]
+    time, flux = case.teaching_signal_time, case.teaching_signal_flux
+    total = integrate_forcing_history(time, flux, time[-1])
+    after_start = total - integrate_forcing_history(time, flux, PULSE_START)
+    np.testing.assert_allclose(after_start, target, rtol=1e-3)
+    forcing_rows[label] = {'post-1800 input (Pmol C or TA eq)': after_start / 1e15,
+                           'whole-run input (Pmol C or TA eq)': total / 1e15}
+display(pd.DataFrame(forcing_rows).T)
+
+for label, case in fixed_cases.items():
+    print('Running', label)
+    run_model(case)
+    postprocess_carbonate_horizons(case)
+display(pd.DataFrame({label: audit_complete_model(case, label)
+                      for label, case in fixed_cases.items()}).T)
+
+=== CELL 12 markdown ===
+## B2. Start with matched responses
+
+For each quantity use
+$$\Delta Y(t)=Y_{forced}(t)-Y_{control}(t).$$
+This compares the imposed forcing against the same baseline evolution, including control drift. It isolates the response within this deterministic model; subtraction does not eliminate numerical errors or validate omitted processes.
+
+Read four diagnostic groups: atm CO2, surface pH, deep DIC and dissolution/net burial. Compare signs and timing against your initial prediction. Read units and scales: these unequal forcing amounts do not establish relative intervention efficiency.
+
+=== CELL 13 code ===
+# Understand and run: trace this supplied step and interpret its evidence.
+from teaching_plots import plot_matched_responses
+plot_matched_responses(fixed_cases, pulse_start=PULSE_START)
+plt.show()
+
+=== CELL 14 markdown ===
+## B3. Use the complete figures for pathways and sediment memory
+
+The supplied plots below use the same integrated cases. Solid curves are the model; OA's dotted curves reproduce the archived published comparison. That overlay checks reproduction, while matched anomalies address the forcing response.
+
+| Panel | Diagnostic | Use |
+| --- | --- | --- |
+| g | External carbon or TA input | Prescribed cause, with distinct units |
+| f / c | atm CO2 / pH | Check your predicted atmosphere/surface response |
+| a / b / d | DIC / TA / gas exchange | Trace transfer and redistribution |
+| e / h | Horizons / dissolution and burial | Examine deep chemistry and sediment history |
+
+The **saturation horizon** has calcite saturation = 1; the **compensation depth** concerns complete dissolution of modern rain; the **snowline** is the boundary of existing reactive sediment. The first two respond to current chemistry/rain, while snowline motion retains history. Plot e uses negative depth (elevation), so upward means shallower.
+
+Consult e/h for the sediment answer and the OA overlay for reproduction. There is no extra panel-by-panel report. The final plotted time need not be a new equilibrium.
+
+=== CELL 15 code ===
+# Understand and run: trace this supplied step and interpret its evidence.
+from teaching_plots import plot_figure4
+plot_figure4(fixed_cases['OA'], 'OA', reference=True,
+             digitized=DIGITIZED, pulse_start=PULSE_START)
+plt.show()
+
+=== CELL 16 code ===
+# Understand and run: trace this supplied step and interpret its evidence.
+plot_figure4(fixed_cases['OAE'], 'OAE', pulse_start=PULSE_START)
+plt.show()
+
+=== CELL 17 markdown ===
+## C. Explain the experiment in four short answers
+
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Question — evidence, mechanisms and next test**
+
+1. **Design and evidence:** identify the entry species/state in each case and what matches the control. Use the atm/surface anomalies to assess your prediction. Why can comparison with the initial state alone be misleading if the control drifts?
+2. **Mechanism and budget:** explain how TA input changes atmospheric CO2 without directly supplying carbon. Trace the internal transfer and use the boundary budget. Why are these experiments neither opposite nor equal-strength inputs?
+3. **Time and process:** identify a surface/deep response lag and use e/h to explain the linked 1 DIC : 2 TA transfers and sediment memory. What evidence would you need before claiming equilibration?
+4. **Claims and next test:** distinguish benchmark reproduction from a conditional prediction. Choose one fixed assumption and propose one changed input, matched control and diagnostic for a follow-up test. One or two sentences are enough; do not run a fourth case in the core.
+
+</div>
+
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+
+**Instructor answer**
+
+1. OA enters `CO2_At` as CO2 and OAE enters `L_b.TA` as TA. Geometry, chemistry, rates, clock and restart match the control. The anomalies show positive atm CO2/negative surface pH for OA and the opposite initial tendency for OAE. Forced-minus-initial includes baseline evolution; forced-minus-control removes that shared drift.
+2. TA changes carbonate partitioning and aqueous CO2, inducing internal atmospheric-to-ocean transfer. No carbon enters directly through the TA connection. The total active carbon can still differ from control because net burial responds. The cases differ in species, amount and nonlinear chemical/sediment response; opposite signs do not imply cancellation or comparable efficiency.
+3. Surface chemistry responds before the transported deep signal. Carbonate dissolution returns 1 DIC and 2 TA, while net burial removes them. OA tends to increase dissolution/reduce burial; OAE tends to oppose this, modifying the forcing response. Chemical horizons respond to current conditions while the snowline can lag. Small sustained tendencies and balanced fluxes over a sufficiently long interval would support stationarity; the last plotted point alone does not.
+4. The OA overlay checks reproduction of a published model, not independent observational validation. The forcing response is conditional on assumptions. For example, compare two temporal shapes with equal integrated TA using the same unforced control and measure the atm CO2 anomaly at a stated time. Or test a state-dependent export hypothesis against a fixed-export control, first preparing compatible stationary baselines and retaining PIC stoichiometry.
+
+</div>
+<!-- END SOLUTION -->
+
+**You have completed 04.** Keep the forcing choices, checked budgets and four explanations in this notebook. The [independent-model starter](extensions/05_independent_model.ipynb) and [attribution/feedback extension](extensions/04_attribution_and_feedbacks.ipynb) are optional work outside the core.

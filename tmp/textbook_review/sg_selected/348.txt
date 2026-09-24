@@ -1,0 +1,102 @@
+[1973] as reﬁtted by Dickson and Millero [1987] because
+they appear to produce internally consistent data when
+considering DIC, Alk, and pCO
+2, as is typically the case
+in models [ Lee et al ., 1997; Lueker, 1998; Wanninkhof
+et al., 1999b; Lueker et al ., 2000]. However, the reﬁtted
+dissociation constants of Mehrbach et al. [1973] appear to
+be problematic when pH or other parameters of the CO2
+system are considered [Lee et al., 1997]. Typical values for
+the dissociation constants and the solubility at various
+temperatures are listed in table 8.2.3.
+Solving the equations for global mean surface sea-
+water properties yields
+DIC ¼ [H2CO/C3
+3
+] þ[HCO/C0
+3
+] þ[CO2/C0
+3 ]
+¼ 0:5% 88 :6% 10 :9%
+Alk ¼ [HCO/C0
+3
+] þ2[CO2/C0
+3 ] þ[OH/C0 ] /C0 [H þ ] þ[B(OH)/C0
+4
+]
+¼ 76:8% 18 :8% 0 :2% 4 :2%
+(see also table 8.2.4). This shows that only a very small
+fraction of the dissolved inorganic carbon exists as dis-
+solved CO
+2, and that the majority of the carbon exists as
+bicarbonate ion and a smaller amount in the form of
+carbonate ion. Therefore, for many purposes, we can
+approximate DIC as the sum of bicarbonate and car-
+bonate ions only:
+DIC /C25 [HCO/C0
+3
+] þ[CO2/C0
+3 ]( 8 :2:15)
+This computation also reveals that the contribution of
+the dissociation of water to variations in alkalinity is
+negligible and that the contribution of borate is of the
+order of a few percent. Therefore, Alk can often be rea-
+sonably well approximated by the carbonate alkalin-
+ity, i.e.,
+Alk /C25 Carb-Alk ¼ [HCO/C0
+3
+] þ2[CO2/C0
+3 ]( 8 :2:16)
+Table 8.2.2
+Equations used to calculate seawater equilibrium constants
+T: Temperatures in [K], S: Salinity on the practical salinity scale.
+Equation Source
+Solubility of CO
+2 (mol kg/C0 1 atm/C0 1):
+ln K0 ¼/C0 60:2409 þ 93:4517 100
+T
+/C18/C19
+þ 23:3585 ln T
+100
+/C18/C19
+þ S 0:023517 /C0 0:023656 T
+100
+/C18/C19
+þ 0:0047036 T
+100
+/C18/C19 2 !
+(20)
+[Weiss, 1974]
+Dissociation constants of CO 2y (mol kg/C0 1):
+/C0 log K1 ¼/C0 62:008 þ 3670:7
+T þ 9:7944 ln(T)
+/C0 0:0118 S þ 0:000116 S2
+(21) [Mehrbach et al. , 1973] as
+reﬁtted by Dickson and
+Millero [1987]
+/C0 log K2 ¼þ 4:777 þ 1394:7
+T /C0 0:0184 S þ 0:000118 S2 (22) [Mehrbach et al. , 1973] as
+reﬁtted by Dickson and
+Millero [1987]
+Dissociation constants of other species y [(mol kg/C0 1)2] for Kw and (mol kg /C0 1) for Kb:
+ln Kw ¼ 148:96502 þ /C0 13847:26
+T /C0 23:6521 ln(T)
+þ S
+1
+2
+/C0 5:977 þ 118:67
+T þ 1:0495 ln(T)
+/C18/C19
+/C0 0:01615 S
+(23)
+[Millero, 1995]
+[Dickson, 1990]ln Kb ¼ 1
+T (/C0 8966:9 /C0 2890:53 S0:5 /C0 77:942 S þ 1:728 S1:5 /C0 0:0996 S2)
+þ 148:0248 þ 137:1942 S0:5 þ 1:62142 S þ 0:053105 S0:5 T
+þ ln(T)( /C0 24:4344 /C0 25:085 S0:5 /C0 0:2474 S)
+(24)
+Total boron equation (mmol kg/C0 1):
+TB ¼ 11:88 /C1 S (25) [Uppstr€om, 1974]
+y All dissociation constants are given with respect to the seawater pH scale [ Dickson, 1993].
+325
+Carbon Cycle

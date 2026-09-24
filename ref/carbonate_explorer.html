@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIC and TA constrain carbonate chemistry</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 16px; color: #182b3a; background: #fff; font: 14px/1.45 system-ui, sans-serif; }
+  h1 { font-size: 21px; margin: 0 0 3px; }
+  h2 { font-size: 16px; margin: 0 0 6px; }
+  p { margin: 5px 0 12px; }
+  .muted { color: #526474; }
+  .controls { display: flex; align-items: center; flex-wrap: wrap; gap: 9px 16px; margin: 12px 0; }
+  button, select { font: inherit; padding: 7px 10px; border: 1px solid #adbdc9; border-radius: 4px; color: #182b3a; background: #fff; }
+  button { cursor: pointer; }
+  button[aria-pressed="true"] { background: #e7f1fb; border-color: #1764ab; }
+  button:focus-visible, input:focus-visible, select:focus-visible, canvas:focus-visible { outline: 3px solid #db9c35; outline-offset: 2px; }
+  input[type="range"] { width: 170px; vertical-align: middle; accent-color: #1764ab; }
+  input[type="checkbox"] { accent-color: #1764ab; }
+  .plots { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .plot { min-width: 0; }
+  canvas { width: 100%; height: 335px; display: block; }
+  #surface { touch-action: none; cursor: grab; }
+  .readout { padding: 9px 12px; background: #edf5ff; border-left: 3px solid #1764ab; margin-top: 9px; }
+  .key { display: inline-block; width: 22px; height: 3px; vertical-align: middle; margin-right: 5px; background: #1764ab; }
+  .atm { background: #9b4c0b; }
+  .tangent { background: #803e91; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12px; }
+  .scale { display: flex; align-items: center; gap: 8px; font-size: 12px; margin: 4px 0 8px; }
+  .gradient { width: 100px; height: 8px; background: linear-gradient(90deg,#263c86,#218eaa,#70b88b,#f1d568); }
+  #notice { font-size: 12px; min-height: 36px; }
+  @media (max-width: 680px) { .plots { grid-template-columns: 1fr; } canvas { height: 295px; } body { padding: 10px; } }
+  @media print { .controls, #download { display: none; } }
+</style>
+</head>
+<body>
+<h1>DIC and TA constrain carbonate chemistry</h1>
+<p id="conditions" class="muted"></p>
+<div class="controls" role="group" aria-label="View the chemistry">
+  <button id="oblique" aria-pressed="true">1 · Rotate surface</button>
+  <button id="top" aria-pressed="false">2 · Top view / contours</button>
+  <button id="slice" aria-pressed="false">3 · Constant-TA slice</button>
+  <button id="reset">Reset</button>
+  <label for="range">Range <select id="range"><option value="local">Near reference seawater</option><option value="full">Full range, including TA = 0</option></select></label>
+</div>
+<div class="controls">
+  <label for="ta">TA <input id="ta" type="range" min="0" step="1"> <output id="taValue"></output> µeq/kg</label>
+  <label for="dic">DIC point <input id="dic" type="range" min="0" step="1"> <output id="dicValue"></output> µmol C/kg</label>
+  <label><input id="tangent" type="checkbox"> Show local tangent</label>
+  <label><input id="atmosphere" type="checkbox"> Add conserved-carbon atm line</label>
+</div>
+<div class="plots">
+  <section class="plot">
+    <h2 id="leftTitle">Seawater pCO2 surface</h2>
+    <canvas id="surface" tabindex="0" aria-label="Rotatable DIC–TA–pCO2 surface. Drag or use arrow keys to rotate. Use view buttons for contours and the cutting plane."></canvas>
+    <div class="scale">pCO2 (µatm) <span id="zmin"></span><span class="gradient"></span><span id="zmax"></span></div>
+    <p id="viewHint" class="muted"></p>
+  </section>
+  <section class="plot">
+    <h2>pCO2–DIC at the selected TA</h2>
+    <canvas id="curve" aria-label="Constant-TA pCO2–DIC curve, with optional local tangent and conserved-carbon atmosphere line."></canvas>
+    <div class="legend">
+      <span><i class="key"></i>ocn: selected TA</span>
+      <span id="tangentLegend" hidden><i class="key tangent"></i>local tangent</span>
+      <span id="atmLegend" hidden><i class="key atm"></i>atm: conserved carbon</span>
+    </div>
+    <p id="notice" class="muted"></p>
+  </section>
+</div>
+<div id="readout" class="readout" aria-live="polite"></div>
+<p class="muted">Each point is a possible carbonate-equilibrium state, not a time step or necessarily air–sea equilibrium. Fixed T/S/P and chemistry choices apply to every view. Height, colour and contours encode pCO2; pH would require a different surface.</p>
+<button id="download">Save offline copy</button>
+<noscript>Enable JavaScript to rotate and select slices. The following notebook exercise also supplies static pCO2–DIC curves.</noscript>
+<script id="chemistry-data" type="application/json">__CARBONATE_DATA__</script>
+<script>
+'use strict';
+const data = JSON.parse(document.getElementById('chemistry-data').textContent);
+const el = id => document.getElementById(id);
+const blue = '#1764ab', ink = '#182b3a', grid = '#d9e1e6';
+let mode = 'oblique', yaw = 0.65, pitch = 0.42, drag = null;
+let sample, ti, di;
+const fmt = (v, digits=0) => Number(v).toLocaleString('en', {maximumFractionDigits:digits});
+const extent = a => [Math.min(...a), Math.max(...a)];
+const mix = (a,b,t) => a+(b-a)*t;
+const norm = (v,a,b) => (v-a)/(b-a);
+function colour(t) {
+  const stops = [[38,60,134],[33,142,170],[112,184,139],[241,213,104]];
+  const u = Math.max(0,Math.min(0.99999,t))*3, i = Math.floor(u);
+  return `rgb(${stops[i].map((v,k)=>Math.round(mix(v,stops[i+1][k],u-i))).join(',')})`;
+}
+function setup(canvas) {
+  const w = canvas.clientWidth, h = canvas.clientHeight, scale = window.devicePixelRatio || 1;
+  canvas.width = Math.round(w*scale); canvas.height = Math.round(h*scale);
+  const c = canvas.getContext('2d'); c.scale(scale,scale); c.clearRect(0,0,w,h);
+  c.font = '12px system-ui'; c.lineJoin = 'round';
+  return {c,w,h};
+}
+function path(c,points,stroke,fill=null,width=1) {
+  c.beginPath(); points.forEach((p,i)=> i ? c.lineTo(p[0],p[1]) : c.moveTo(p[0],p[1]));
+  if(fill) { c.closePath(); c.fillStyle=fill; c.fill(); }
+  if(stroke) { c.strokeStyle=stroke; c.lineWidth=width; c.stroke(); }
+}
+function label(c,t,x,y,align='center',color=ink) {
+  c.fillStyle=color; c.textAlign=align; c.textBaseline='middle'; c.fillText(t,x,y);
+}
+function dot(c,x,y,color=blue) { c.beginPath();c.arc(x,y,4,0,Math.PI*2);c.fillStyle=color;c.fill();c.strokeStyle='#fff';c.lineWidth=1.5;c.stroke(); }
+function axes(c,w,h,xr,yr,xlabel,ylabel) {
+  const box = {l:70,r:w-22,t:20,b:h-52};
+  const X = v => mix(box.l,box.r,norm(v,...xr)), Y = v => mix(box.b,box.t,norm(v,...yr));
+  for(let i=0;i<=4;i++) {
+    const x=mix(...xr,i/4),y=mix(...yr,i/4);
+    path(c,[[X(x),box.t],[X(x),box.b]],grid); path(c,[[box.l,Y(y)],[box.r,Y(y)]],grid);
+    label(c,fmt(x),X(x),box.b+16);label(c,fmt(y),box.l-8,Y(y),'right');
+  }
+  path(c,[[box.l,box.t],[box.l,box.b],[box.r,box.b]],ink);
+  label(c,xlabel,(box.l+box.r)/2,h-9);
+  c.save();c.translate(14,(box.t+box.b)/2);c.rotate(-Math.PI/2);label(c,ylabel,0,0);c.restore();
+  return {X,Y,box};
+}
+function topView(c,w,h) {
+  const {dic,ta,pco2,contours}=sample, xr=extent(dic),yr=extent(ta),zr=extent(pco2.flat());
+  const {X,Y,box}=axes(c,w,h,xr,yr,'DIC (µmol C/kg)','TA (µeq/kg)');
+  c.save();c.beginPath();c.rect(box.l,box.t,box.r-box.l,box.b-box.t);c.clip();
+  for(let j=0;j<ta.length-1;j++) for(let i=0;i<dic.length-1;i++) {
+    c.globalAlpha=.18;c.fillStyle=colour(norm(pco2[j][i],...zr));
+    c.fillRect(X(dic[i]),Y(ta[j+1]),X(dic[i+1])-X(dic[i]),Y(ta[j])-Y(ta[j+1]));
+  }
+  c.globalAlpha=1;
+  for(const line of contours) for(const points of line.paths) path(c,points.map(p=>[X(p[0]),Y(p[1])]),'#637a85');
+  path(c,[[box.l,Y(ta[ti])],[box.r,Y(ta[ti])]],blue,null,2.5);
+  for(const line of contours) {
+    const points=line.paths.reduce((a,b)=>a.length>b.length?a:b,[]);
+    const safe=points.filter(p=> X(p[0])>box.l+24 && X(p[0])<box.r-24 && Y(p[1])>box.t+12 && Y(p[1])<box.b-12 && Math.abs(Y(p[1])-Y(ta[ti]))>12);
+    if(!safe.length) continue;
+    const p=safe[Math.floor(safe.length*.55)], text=fmt(line.value),width=c.measureText(text).width+6;
+    c.fillStyle='#fff';c.fillRect(X(p[0])-width/2,Y(p[1])-8,width,16);label(c,text,X(p[0]),Y(p[1]));
+  }
+  dot(c,X(dic[di]),Y(ta[ti]));c.restore();
+}
+function surfaceView(c,w,h) {
+  const {dic,ta,pco2}=sample,xr=extent(dic),yr=extent(ta),colourRange=extent(pco2.flat()),zr=[0,colourRange[1]];
+  const scale=Math.min(w/4.1,h/3.7);
+  function project(x,y,z) {
+    x=2*norm(x,...xr)-1;y=2*norm(y,...yr)-1;z=1.65*norm(z,...zr);
+    const u=Math.cos(yaw)*x-Math.sin(yaw)*y,v=Math.sin(yaw)*x+Math.cos(yaw)*y;
+    return [w/2+scale*u,h*.67-scale*(Math.sin(pitch)*v+Math.cos(pitch)*z),Math.cos(pitch)*v-Math.sin(pitch)*z];
+  }
+  const faces=[];
+  for(let j=0;j<ta.length-1;j++) for(let i=0;i<dic.length-1;i+=2) {
+    const k=Math.min(i+2,dic.length-1),coords=[[i,j],[k,j],[k,j+1],[i,j+1]];
+    const ps=coords.map(([a,b])=>project(dic[a],ta[b],pco2[b][a]));
+    faces.push({ps,depth:ps.reduce((s,p)=>s+p[2],0)/4,value:coords.reduce((s,[a,b])=>s+pco2[b][a],0)/4});
+  }
+  faces.sort((a,b)=>b.depth-a.depth);
+  for(const f of faces) path(c,f.ps,null,colour(norm(f.value,...colourRange)));
+  // The selected vertical plane, its base and the true surface intersection.
+  const plane=[project(xr[0],ta[ti],0),project(xr[1],ta[ti],0),project(xr[1],ta[ti],zr[1]),project(xr[0],ta[ti],zr[1])];
+  c.setLineDash([5,4]);path(c,plane,blue,'rgba(23,100,171,0.09)');c.setLineDash([]);
+  path(c,dic.map((x,i)=>project(x,ta[ti],pco2[ti][i])),'#fff',null,5);
+  path(c,dic.map((x,i)=>project(x,ta[ti],pco2[ti][i])),blue,null,2.5);
+  const selected=project(dic[di],ta[ti],pco2[ti][di]);dot(c,selected[0],selected[1]);
+  const origin=project(xr[0],yr[0],0),xp=project(xr[1],yr[0],0),yp=project(xr[0],yr[1],0),zp=project(xr[0],yr[0],zr[1]);
+  for(const end of [xp,yp,zp]) path(c,[origin,end],ink);
+  for(let i=0;i<=2;i++) {
+    const f=i/2;
+    const p=project(mix(...xr,f),yr[0],0);label(c,fmt(mix(...xr,f)),p[0],p[1]+15);
+    const q=project(xr[0],mix(...yr,f),0);label(c,fmt(mix(...yr,f)),q[0]-8,q[1]-8,'right');
+    const r=project(xr[0],yr[0],mix(...zr,f));if(i)label(c,fmt(mix(...zr,f)),r[0]-7,r[1],'right');
+  }
+  // Compact axis letters follow their endpoints; the units key stays legible.
+  label(c,'DIC',xp[0]+14,xp[1]+30,'left');label(c,'TA',yp[0]+8,yp[1]-14,'left');
+  label(c,'DIC: µmol C/kg · TA: µeq/kg',w/2,h-10);
+  label(c,'Height: pCO2 (µatm)',12,12,'left');
+}
+function curveView(c,w,h) {
+  const {dic,pco2,slope,atmosphere}=sample, row=pco2[ti], atm=el('atmosphere').checked;
+  const yr=[0,Math.max(...row,...(atm ? atmosphere.filter(v=>v!==null) : [0]))*1.08];
+  const {X,Y,box}=axes(c,w,h,extent(dic),yr,'DIC (µmol C/kg)','pCO2 (µatm)');
+  c.save();c.beginPath();c.rect(box.l,box.t,box.r-box.l,box.b-box.t);c.clip();
+  path(c,dic.map((x,i)=>[X(x),Y(row[i])]),blue,null,2.5);
+  if(atm) path(c,dic.flatMap((x,i)=>atmosphere[i]===null?[]:[[X(x),Y(atmosphere[i])]]),'#9b4c0b',null,2);
+  if(el('tangent').checked) {
+    const dx=(dic.at(-1)-dic[0])*.12,x=dic[di],y=row[di],m=slope[ti][di];
+    c.setLineDash([5,3]);path(c,[[X(x-dx),Y(y-m*dx)],[X(x+dx),Y(y+m*dx)]],'#803e91',null,2);c.setLineDash([]);
+  }
+  dot(c,X(dic[di]),Y(row[di]));c.restore();
+}
+function draw() {
+  if(!sample) return;
+  ti=+el('ta').value;di=+el('dic').value;
+  const z=extent(sample.pco2.flat());
+  el('taValue').value=fmt(sample.ta[ti],1);el('dicValue').value=fmt(sample.dic[di],1);
+  el('ta').setAttribute('aria-valuetext',`${fmt(sample.ta[ti],1)} microequivalents per kilogram`);
+  el('dic').setAttribute('aria-valuetext',`${fmt(sample.dic[di],1)} micromoles carbon per kilogram`);
+  el('zmin').textContent=fmt(z[0]);el('zmax').textContent=fmt(z[1]);
+  const left=setup(el('surface')),right=setup(el('curve'));
+  (mode==='top'?topView:surfaceView)(left.c,left.w,left.h);curveView(right.c,right.w,right.h);
+  el('leftTitle').textContent=mode==='top'?'DIC–TA plane: constant-pCO2 contours':'Seawater pCO2 surface + constant-TA plane';
+  el('viewHint').textContent=mode==='top'?'Contour labels are pCO2 in µatm. The blue horizontal line is the selected TA slice.':'Drag or use arrow keys to rotate. The blue curve is the surface cut by the vertical constant-TA plane.';
+  el('notice').textContent=el('atmosphere').checked?'The atm line adds the closed carbon inventory; it ends where atmospheric carbon would become negative. Axis scale adjusts to fit both curves.':'The right-hand curve has its own linear pCO2 scale. Select Full range to include TA = 0; near-reference seawater then looks flatter.';
+  el('atmLegend').hidden=!el('atmosphere').checked;el('tangentLegend').hidden=!el('tangent').checked;
+  el('readout').textContent=`Selected state: DIC ${fmt(sample.dic[di],1)} µmol C/kg; TA ${fmt(sample.ta[ti],1)} µeq/kg; seawater pCO2 ${fmt(sample.pco2[ti][di],2)} µatm. Local sensitivity at fixed TA: ${fmt(sample.slope[ti][di],3)} µatm per (µmol C/kg).`;
+}
+function chooseView(next) {
+  mode=next;
+  if(next==='oblique'){yaw=.65;pitch=.42;}
+  if(next==='slice'){yaw=.15;pitch=.15;}
+  for(const name of ['oblique','top','slice']) el(name).setAttribute('aria-pressed',String(name===next));
+  draw();
+}
+function chooseRange() {
+  sample=data.ranges[el('range').value];
+  el('ta').max=sample.ta.length-1;el('dic').max=sample.dic.length-1;
+  el('ta').value=sample.ta_index;el('dic').value=sample.dic_index;draw();
+}
+el('conditions').textContent=data.conditions;
+for(const name of ['oblique','top','slice']) el(name).addEventListener('click',()=>chooseView(name));
+for(const name of ['ta','dic','tangent','atmosphere']) el(name).addEventListener('input',draw);
+el('range').addEventListener('change',chooseRange);
+el('reset').addEventListener('click',()=>{el('range').value='local';el('tangent').checked=false;el('atmosphere').checked=false;chooseRange();chooseView('oblique');});
+el('surface').addEventListener('pointerdown',e=>{if(mode==='top')return;drag=[e.clientX,e.clientY];el('surface').setPointerCapture(e.pointerId);});
+el('surface').addEventListener('pointermove',e=>{if(!drag)return;yaw+=(e.clientX-drag[0])*.008;pitch=Math.max(.08,Math.min(1.35,pitch+(e.clientY-drag[1])*.006));drag=[e.clientX,e.clientY];draw();});
+for(const event of ['pointerup','pointercancel','lostpointercapture']) el('surface').addEventListener(event,()=>{drag=null;});
+el('surface').addEventListener('keydown',e=>{
+  if(mode==='top'||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;
+  e.preventDefault();yaw+=e.key==='ArrowLeft'?-.12:e.key==='ArrowRight'?.12:0;
+  pitch=Math.max(.08,Math.min(1.35,pitch+(e.key==='ArrowUp'?.08:e.key==='ArrowDown'?-.08:0)));draw();
+});
+el('download').addEventListener('click',()=>{
+  const url=URL.createObjectURL(new Blob(['<!doctype html>\n'+document.documentElement.outerHTML],{type:'text/html'}));
+  const link=document.createElement('a');link.href=url;link.download='dic-ta-pco2-explorer.html';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+new ResizeObserver(draw).observe(document.querySelector('.plots'));
+chooseRange();
+chooseView('oblique');
+</script>
+</body>
+</html>

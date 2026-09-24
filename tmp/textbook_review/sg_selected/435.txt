@@ -1,0 +1,108 @@
+One method to address the question of what the
+distribution of surface ﬂuxes of anthropogenic CO 2 has
+to be in order to generate the observed pattern of Cant in
+the ocean interior is a Green’s function inversion
+method [Enting, 2002]. In such an inversion, prescribed
+ﬂuxes of a dye are released at the surface in a number
+of predetermined regions in an Ocean General Circu-
+lation Model (OGCM) and the model is then integrated
+forward in time. In the case of anthropogenic CO
+2, the
+ﬂuxes need to be scaled in proportion to the expected
+increase in uptake over time, i.e., with the magnitude of
+the atmospheric perturbation, and the model is then
+integrated forward in time only for the duration of the
+Anthropocene, i.e., about 250 years [ Gloor et al. , 2003].
+The modeled dye concentrations are then sampled at
+the locations of the observations, providing a link be-
+tween concentrations at these locations and ﬂuxes in the
+various regions. The inversion then attempts to scale the
+magnitude of the ﬂuxes in the various regions in order
+to obtain an optimal ﬁt between the estimated resulting
+concentrations and the actually observed ones.
+The results of such an inversion of the reconstructed
+anthropogenic CO
+2 distribution are shown in ﬁgure
+10.2.9 [ Gloor et al. , 2003]. This inversion suggests, for
+example, that the high storage of Cant in the mid-
+latitudes of the southern hemisphere is primarily dri-
+ven by high uptake of anthropogenic CO
+2 at more
+southerly latitudes in the subantarctic zone and sub-
+sequent transport of this C
+ant into the ocean interior
+following the paths of Subantarctic Mode Water and
+Antarctic Intermediate Water [ Gloor et al. , 2003]. There
+exists, therefore, a substantial lateral transport of an-
+thropogenic CO
+2 in the ocean, which connects uptake at
+places where deeper waters, generally deﬁcient in an-
+thropogenic CO
+2, come to the surface and take up an-
+thropogenic CO2 from the atmosphere, with storage in
+the regions of deep thermoclines and net convergence
+in the mid-latitudes.
+The column inventories shown in ﬁgure 10.2.8 sum to
+a global inventory of anthropogenic CO
+2 of 106 ± 17 Pg C
+for 1994. Sabine et al. [2004] showed that an additional
+12 Pg C is stored in marginal seas, such as the Arctic
+Ocean, bringing the total amount of anthropogenic CO
+2
+taken up by the ocean to 118 ± 19 Pg C. Table 10.2.1
+shows that this oceanic sink over the Anthropocene
+(1800–1994) corresponds to nearly half of the total CO
+2
+emissions from fossil fuel burning and cement produc-
+tion over the 1800–1994 period (about 244 ± 20 Pg C).
+Together with the well-known atmospheric CO
+2 in-
+crease, which corresponds to 165 ± 4 Pg C, this number
+permits us to constrain the net terrestrial exchange to be
+a net source to the atmosphere of about 39 ± 28 Pg C.
+This net ﬂux is the sum of poorly known emissions from
+land-use change (about 100 to 180 Pg C), and an inferred
+1525
+35
+20
+30
+15
+25
+35 20
+2515 35
+30
+70
+35
+30
+10
+25
+35
+20
+10
+15
+65
+20
+75
+40 40
+40
+40
+35
+80
+60
+5
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W
+Anthropogenic carbon column inventory  (mol m-2)
+20°E
+Figure 10.2.8: Global map of the column inventory of anthropogenic CO 2. The column inventory represents the vertically integrated con-
+centration. Data are from Sabine et al. [2004].
+412
+Chapter 10

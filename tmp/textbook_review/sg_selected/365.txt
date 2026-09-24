@@ -1,0 +1,109 @@
+large spring bloom, whereas the development of such
+a bloom is strongly attenuated in the North Paciﬁc (see
+ﬁgure 4.3.14) for reasons not completely understood. We
+have mentioned zooplankton grazing and iron limitation
+as the two main hypotheses, with evidence accumulating
+that iron is the lead cause. This thus represents a re-
+markable example of the impact of iron limitation of
+phytoplankton on the upper ocean carbon cycle.
+8.4 Water Column
+We learned in the introduction that the surface con-
+centration of sDIC is lower than the deep ocean con-
+centration by about 15% (ﬁgure 8.1.2). This vertical
+gradient has major consequences for atmospheric car-
+bon dioxide. If the ocean were to be mixed uniformly,
+models show that atmospheric CO
+2 would climb by
+more than 50% as previously noted. It is thus of con-
+siderable importance to understand what ‘‘gradient
+makers’’ act to maintain the sDIC gradient in the face
+of ocean circulation and mixing, which are continu-
+ously trying to weaken and alter these gradients.
+We have identiﬁed two biological processes that con-
+tribute toward creating the vertical gradient of sDIC: the
+soft-tissue pump and the carbonate pump . We have also
+seen that air-sea gas exchange, responding to changes
+in surface ocean pCO
+2, which in turn are driven by
+changes in temperature, DIC, and Alk variations, can
+also lead to variations in oceanic sDIC. We will refer to
+this process as the gas exchange pump , although the
+word ‘‘pump’’ is not really appropriate here, since this
+process acts only in the surface ocean. It is, in fact,
+ocean circulation and mixing that takes these gas ex-
+change–induced surface ocean variations and trans-
+ports/mixes them into the ocean interior, leading then
+to vertical gradients in sDIC. Note that our deﬁnition of
+the gas exchange pump is different from the classical
+deﬁnition of the solubility pump by Volk and Hoffert
+[1985]. As we will demonstrate below, the solubility
+pump is a component of the gas exchange pump.
+We expect on the basis of the strong covariation be-
+tween sDIC and phosphate (ﬁgure 8.1.4a) that the soft-
+tissue pump likely plays a major role. However, ﬁgure
+8.1.4b also reveals that variations in sDIC roughly track
+a trend versus temperature that is expected from
+the temperature sensitivity of the equilibrium sDIC con-
+centration for a constant atmospheric CO
+2 concentra-
+tion. Clearly, both processes, soft-tissue pump and
+temperature variations driving the gas exchange pump,
+could by themselves explain the majority of the sDIC
+variations, but they cannot do so simultaneously. Which
+one is dominating, and what is the role of the third
+process, i.e., the carbonate pump?
+Outline
+We will tackle this question by breaking the sDIC ob-
+servations down into individual components that can be
+identiﬁed with the three different pumps. We introduce
+this breakdown by going through a sequence in which
+we separately consider the distribution if only one or two
+of these processes are simultaneously active. We will see
+that we can associate the soft-tissue pump directly with
+variations in phosphate, and the carbonate pump with
+variations in nitrate-corrected alkalinity, giving us then
+the gas exchange component as a residual from the ob-
+served sDIC distribution once the anthropogenic CO
+2
+component has been subtracted.
+We then discuss the distribution of each component
+in turn, noting that the distribution of the soft-tissue
+pump harbors few suprises, while the carbonate pump
+component reveals some interesting new features. The
+most interesting component is the gas exchange com-
+ponent, which shows a completely unexpected distri-
+bution. We attempt to unravel the reasons behind this
+puzzling pattern, ﬁrst looking at the global distribution
+only, and then analyzing regional differences. We will
+see that the key to understanding this distribution is the
+fact that heating- and cooling-induced air-sea CO
+2 ﬂuxes
+and biologically induced air-sea CO 2 ﬂuxes often oppose
+each other. The resulting CO 2 ﬂux pattern is further
+modiﬁed by the relatively long timescale of air-sea ex-
+change of CO
+2, so that surface waters are seldom in
+equilibrium with atmospheric CO 2. This causes a sub-
+stantial difference between the ‘‘potential’’ gas exchange
+pump, i.e., the oceanic sDIC pattern that would exist if
+surface waters were fully equilibrated, and the actually
+observed gas exchange pump. In section 8.5, we connect
+the ocean interior distribution of the gas exchange
+component with surface ﬂuxes, permitting us to inves-
+tigate in greater detail the consequences of the opposing
+trends of heat ﬂuxes and biology on the gas exchange
+pump and how kinetic limitations alter the ﬂux pattern.
+Pump Components
+We start our pump separation with a thought experi-
+ment using a two-dimensional, i.e., latitude-depth
+model of the ocean, but focus on the mean vertical gra-
+dient of sDIC only. We then use the insights from this
+thought experiment to deﬁne the pump components
+more rigorously. The approach we follow here is ex-
+plained in more detail in Gruber and Sarmiento [2002].
+Our ﬁrst experiment considers an ocean that has no gas
+exchange and no biology, but a realistic temperature
+distribution. As the inhibition of air-sea gas exchange
+prevents the expression of the temperature-dependent
+342
+Chapter 8

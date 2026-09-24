@@ -1,0 +1,134 @@
+to-organic carbon export ratio tends to be slightly higher
+in the low latitudes, with values around 0.10, and tends to
+be uniformly low in the Southern Ocean south of 45
+/C14 S,
+with values around 0.02. These spatial variations might
+be a result of the fact that the coccolithophorids, which
+are overall dominating the CaCO
+3 export, are adapted to
+relatively low turbulence regimes, such as the low lati-
+tudes, and tend to get outcompeted by diatoms in high-
+turbulence regimes [ Iglesias-Rodrı´guez et al. , 2002b].
+Another factor might be simply differences in the silicic
+acid concentrations, which permits coccolithophorids to
+become more prevalent only after diatoms have lost their
+competitive advantage by having exhausted all available
+silicic acid.
+As a consequence of the relatively uniform CaCO
+3-to-
+organic carbon export ratio, a map of the global export
+ﬂux of calcium carbonate from surface waters looks
+similar to a map of the global export ﬂux of organic
+carbon (compare ﬁgure 4.2.4 with ﬁgure 9.2.2). This
+CaCO
+3 export map looks, however, rather different
+from that for opal. Opal export is particularly large in
+the high latitudes of the Southern Ocean where CaCO
+3
+export is negligible (ﬁgure 7.2.5).
+We end with a cautionary note. While our focus here
+is on the open ocean realm, it is important to note that a
+substantial amount of CaCO
+3 is also ﬁxed in near-shore
+environments by coral and a few marine plants growing
+attached at the bottom of the ocean, such as Halimeda
+spp. Milliman and Droxler [1996] estimated that coral
+reefs and carbonate shelves produce about 0.3 Pg C yr
+/C0 1
+of CaCO 3 each year, which is about a third of the open
+ocean production. Most of this CaCO 3 is in the form of
+aragonite or high-magnesium calcite, which has a
+higher solubility than true calcite. Some of this material
+might get eroded and transported into the open ocean,
+but the magnitude of this transport is not well known.
+Milliman et al . [1999] suggested that this transport may
+be as large as 0.1 Pg C yr
+/C0 1 (see ﬁgure 9.1.1).
+9.3 Water Column Processes
+Once the CaCO 3 particles leave the productive upper
+layers of the ocean, they are potentially subject to dis-
+solution. The primary driver for dissolution of CaCO
+3
+particles is thought to be the state of saturation of the
+water with respect to the mineral phase. As we have
+seen in ﬁgure 9.1.2, the upper waters are generally
+supersaturated with respect to both mineral phases of
+CaCO
+3, whereas deep waters are undersaturated. We
+therefore generally expect relatively little dissolution to
+occur in the upper ocean, and substantial dissolution
+only to take place once the CaCO
+3 particles enter the
+undersaturated zones of the water column. Under-
+standing the dynamics of this dissolution of CaCO
+3 is
+not only important for the transport of CaCO 3 itself, but
+also for the transfer of organic matter from the surface
+into the ocean interior, since, as we have seen in
+chapter 5, CaCO
+3 represents one of the most important
+ballast materials.
+What determines the distribution of under- and
+supersaturation of the water column with respect to
+CaCO
+3? This situation is obviously rather different from
+that of opal, with respect to which we have seen that
+waters are undersaturated almost everywhere. In order
+to answer this question, we ﬁrst need to know the so-
+lubilities of calcite and aragonite, and then we have to
+understand the processes that control the concentra-
+tions of the CO
+2/C0
+3 and dissolved calcium ions.
+CaCO3 Solubility
+Let us start by deﬁning the terms saturation, under-
+saturation, and supersaturation. The equilibrium rela-
+tionship for the dissolution reaction of mineral CaCO 3
+(see reaction (8.3.13)) deﬁnes the solubility product,
+K
+CaCO3
+sp ,
+KCaCO3
+sp ¼ [CO2/C0
+3 ]sat[Ca2þ ]sat (9:3:1)
+where [CO 2/C0
+3 ]sat and [Ca 2 þ ]sat are the concentrations of
+the carbonate and dissolved calcium ions in equilib-
+rium with mineral CaCO
+3. Equations for KCaCO3
+sp with
+respect to calcite and aragonite are given in table 9.3.1,
+and numerical values are listed in table 9.3.3.
+We deﬁne the degree of saturation, O, as the ratio
+of the product of the solutes (sometimes called ion ac-
+tivity product) over the product of the solutes at satu-
+ration (solubility product),
+O ¼ [CO2/C0
+3 ][Ca2þ ]
+[CO2/C0
+3 ]sat[Ca2þ ]sat
+¼ [CO2/C0
+3 ][Ca2þ ]
+KCaCO3
+sp
+(9:3:2)
+where [CO 2/C0
+3 ] and [Ca 2 þ ] are the observed carbonate
+ion and calcium concentrations. We can calculate the
+former from the measured DIC and Alk concentrations
+using the equations given in table 8.2.1. The latter is
+generally assumed to be constant (see below). When
+O > 1, seawater is supersaturated with respect to min-
+eral CaCO
+3; conversely, when O < 1, seawater is un-
+dersaturated.
+Since dissolved calcium is a major constituent of
+seawater with a mean concentration of about 10,280
+mmol kg
+/C0 1 (table 1.2.1), its concentration is almost three
+orders of magnitude larger than that of CO 2/C0
+3 .I na d d i -
+tion, we have found in section 8.4 above that DIC vari-
+ations caused by the formation and dissolution of CaCO3
+365
+Calcium Carbonate Cycle

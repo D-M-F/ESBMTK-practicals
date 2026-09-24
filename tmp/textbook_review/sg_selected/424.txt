@@ -1,0 +1,140 @@
+We have assumed that the increments d are small en-
+ough so that they can be approximated by @. However,
+we are more interested in calculating the fraction f of
+the emissions taken up by the oceans, thus
+f ¼ dNoc
+dNoc þ dNatm ¼
+/C18 dNatm
+dNoc þ1
+/C19 /C0 1
+¼
+/C18 gDIC
+a
+Natm
+tot
+Patm moc þ1
+/C19 /C0 1
+(10:2:8)
+If we assume that only the top 75 m of the ocean
+(m
+oc ¼ 2.7/C2 1019 kg) is in equilibrium with the atmo-
+sphere, and insert global surface average values for
+DIC, pCO
+2, and the buffer factor, we ﬁnd a fraction f
+of about 0.08. If the whole ocean were available
+(m
+oc = 1.35/C2 1021 kg), then f would be 0.81, thus about
+81% of an increment added to the atmosphere would be
+absorbed by the ocean. Table 10.2.1 informs us that the
+present fraction f is of the order of 30%; hence the
+equivalent of only about 8% of the total volume, i.e.,
+about the top 350 m of the ocean, is currently equili-
+brated with the atmospheric CO
+2 perturbation.
+This estimate of f is for a small addition only. In order
+to estimate the equilibrium air-sea distribution after a
+pulse has been added to the atmosphere, the above
+equation needs to be integrated over time. In doing so, it
+is important to note that the buffer factorg
+DIC increases,
+i.e., the buffer capacity decreases, when DIC increases
+due to the addition of CO 2 from the atmosphere (see
+equation (8.3.16)). This effect can be understood by
+considering that the uptake of CO
+2 from the atmosphere
+depletes the CO 2/C0
+3 ion content of the ocean, therefore
+decreasing its capacity for further uptake.
+As a consequence of the reduction in the uptake ca-
+pacity, the fractionf decreases as the perturbation grows.
+Table 10.2.2 illustrates this behavior for a simpliﬁed
+ocean-atmosphere carbon system. In the preindustrial
+steady state, only about 1.5% of the total carbon is found
+in the atmosphere, and 98.5% is in the ocean. If we add a
+perturbation of 1800 Pg C to this system and let it
+equilibrate, the fraction of the perturbation that goes into
+the ocean is about 79.2%, whereas the fraction now re-
+siding in the atmosphere is more than 10 times larger
+(20.8%) than the preindustrial steady state. Sarmiento et
+al. [1995] demonstrated that the effect of a decreasing
+buffer capacity on the future oceanic uptake of anthro-
+pogenic CO
+2 is large, and neglect of this effect would
+lead to a substantial overestimation of the oceanic uptake
+of anthropogenic CO
+2 by the ocean (see ﬁgure 10.2.1).
+Figure 10.2.1a actually shows the ratio@DIC=@½H2CO3* /C138 ,
+which is related to the buffer factor, gDIC,b y
+@DIC
+@[H2CO3* ] ¼ @DIC
+@(K0 /C1 pCOoc
+2
+) ¼ DIC
+K0 /C1 pCOoc
+2
+1
+gDIC
+¼ a
+K0
+1
+gDIC
+(10:2:9)
+where Ko is the solubility of CO2, and where we usea as a
+shorthand for the ratio of ocean mean DIC and pCO2
+(see equation (10.2.7) above). The partial derivative,
+@DIC=@½H
+2CO3* /C138 , is therefore proportional to the in-
+verse of gDIC, and the simulated decrease in @DIC
+=@½H2CO3* /C138 , corresponds to an increase in the buffer
+factor gDIC.
+Buffering by Sediment C aCO3
+In all of the above calculations we have neglected so
+far the potential reaction of anthropogenic CO
+2 with
+the CaCO 3 in the sediments at the sea ﬂoor (reaction
+1800 2000 2200 2100 23001900
+20
+5
+10
+15
+0
+∂DIC/∂[H2CO3*] (mol/mol) non-linear (S450)
+non-linear (S750)
+a
+1800 2000 2200 2100 23001900
+20
+5
+10
+15
+0
+Ocean uptake (Pg C y-1)
+non-linear (S450)
+non-linear (S750)
+b
+linear (S750)
+linear (S450)
+linear
+Figure 10.2.1: (a) The global mean instantaneous change in surface
+ocean DIC resulting from a given change in H2CO3/C3 concentration for
+the S450 and S750 scenarios in which CO 2 is stabilized at 450 ppm
+and 750 ppm, respectively. The large reduction in this ratio through
+time is a measure of the reduction in the oceanic buffer capacity of
+surface waters. (b) The annual oceanic uptake for S450 and S750
+scenarios, using either full (nonlinear) chemistry (solid lines) or
+simpliﬁed linear chemistry (dashed lines). The nonlinear CO
+2
+chemistry of seawater leads to a dramatic reduction in the future
+oceanic uptake of CO
+2, with the effect becoming larger as the atmo-
+spheric perturbation increases. From Sarmiento et al. [1995].
+Table 10.2.2
+Distribution of carbon in a simpliﬁed ocean-
+atmosphere carbon system as a function of the size of a
+perturbation
+Size of Perturbation (Pg C)
+Preindustrial 150 600 1800
+Atmosphere 1.5 16.4 17.4 20.8
+Ocean 98.5 83.6 82.6 79.2
+Note: Totals in all cases are normalized to 100.
+401
+Carbon Cycle, CO 2, and Climate

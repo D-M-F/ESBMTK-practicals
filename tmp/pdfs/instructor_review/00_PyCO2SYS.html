@@ -1,0 +1,929 @@
+<!doctype html><html><head><meta charset="utf-8"><title>00 — Increasing atmospheric CO₂ and ocean acidification</title><style>
+@page { size: A4; margin: 15mm 13mm 17mm; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: white; color: #202b38; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10pt; line-height: 1.42; }
+#notebook, #notebook-container, main { padding: 0 !important; margin: 0 !important; width: 100% !important; box-shadow: none !important; }
+.cell, .inner_cell, .input, .output_wrapper, .output, .output_area, .text_cell_render, .input_area { display: block !important; width: 100% !important; height: auto !important; max-height: none !important; overflow: visible !important; }
+.cell { margin: 0 0 12px; padding: 0; }
+.prompt, .anchor-link { display: none !important; }
+h1 { font-size: 22pt; line-height: 1.16; color: #143850; margin: 12px 0 18px; }
+h2 { font-size: 15pt; line-height: 1.25; margin: 24px 0 10px; color: #143850; }
+h3 { font-size: 12pt; margin: 19px 0 8px; color: #143850; }
+h4 { font-size: 10.5pt; margin: 15px 0 7px; }
+h1,h2,h3,h4,summary { break-after: avoid; }
+p { margin: 8px 0; }
+ul,ol { padding-left: 22px; }
+li { margin: 4px 0; }
+a { color: #205b86; text-decoration: underline; overflow-wrap: anywhere; }
+pre, code { font-family: Consolas, 'Courier New', monospace; font-size: 8pt; }
+pre { white-space: pre-wrap !important; overflow-wrap: anywhere; word-break: normal; line-height: 1.36; margin: 0; tab-size: 4; }
+.input_area { background: #f3f5f7; border: 1px solid #d8dfe5; border-left: 3px solid #899ba8; border-radius: 3px; padding: 9px 11px; }
+.output_area { padding: 4px 0; }
+.output_stderr { background: #fff4e4; }
+.output_text pre, .output_stream pre { font-size: 7.6pt; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 8pt; line-height: 1.35; }
+th,td { border: 1px solid #ccd6df; padding: 6px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+th { background: #edf2f6; font-weight: 600; }
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+img { display: block; max-width: 100% !important; height: auto !important; max-height: 230mm; object-fit: contain; margin: 10px auto; break-inside: avoid; }
+.output_png, .output_svg, .output_jpeg { break-inside: avoid; }
+details { display: block; border: 1px solid #cbd7e1; padding: 10px 12px; margin: 12px 0; }
+summary { font-weight: 650; color: #34516b; margin-bottom: 8px; }
+details > * { content-visibility: visible !important; }
+mark { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+div[style*='background-color'] { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+.export-note { background: #edf2f6; border-top: 3px solid #2c617e; padding: 12px 14px; margin-bottom: 18px; font-size: 9pt; }
+.export-note p { margin: 4px 0; }
+.appendix { break-before: page; }
+.math { overflow: visible !important; }
+mjx-container { max-width: 100%; }
+mjx-container[display='true'] { margin: 12px 0 !important; break-inside: avoid; }
+</style><script>window.MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]]},svg:{fontCache:"none"},options:{enableMenu:false}};</script><script defer src="mathjax/tex-svg.js"></script></head><body><div class="cell border-box-sizing text_cell rendered" id="cell-id=00-title"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="00-%E2%80%94-Increasing-atmospheric-CO%E2%82%82-and-ocean-acidification">00 — Increasing atmospheric CO₂ and ocean acidification<a class="anchor-link" href="#00-%E2%80%94-Increasing-atmospheric-CO%E2%82%82-and-ocean-acidification">¶</a></h1><p><strong>Exercise 9: answer sheet (a–h).</strong> Use PyCO2SYS to calculate carbonate-system
+properties from two inputs and interpret changes in pH and mineral saturation.
+Write your calculations and short answers below each question. The single worked
+example uses different inputs from the exercise; use the documentation to adapt it.</p>
+<p>These are separate <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>equilibrium chemistry calculations</strong></mark>, not a time-dependent
+ocean model. The CO₂ values are the prescribed values in the exercise, not live
+observations. Coupled ocean–atmosphere experiments follow in notebook 04.</p>
+<p><strong>Reading key:</strong> <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>Key term</strong></mark> = concept to notice; <span style="background-color: #edf5ff; color: #173b61; padding: 2px 6px; border-radius: 3px;"><strong>Question</strong></span> = student prompt. Instructor answers use labelled purple panels in the instructor sheet.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=057954c2"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="export-note"><strong>LECTURER REVIEW | INSTRUCTOR EDITION</strong><p>Executed in ESBMTK314. All instructor solutions, code, execution outputs and optional disclosures are included. No Jupyter installation is needed to read this PDF.</p><p>Source: <code>00_PyCO2SYS.ipynb</code><br/>Execution: 2026-09-24. The source notebooks are unchanged.</p></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-conditions"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Conditions-and-documentation">Conditions and documentation<a class="anchor-link" href="#Conditions-and-documentation">¶</a></h3><p>Use <strong>TA = 2100 µmol/kg, T = 15 °C, salinity = 35 and seawater pressure = 0 dbar</strong>,
+unless a question changes one of them. Return to these <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>baseline conditions</strong></mark> for
+each new part. In temperature/salinity comparisons, hold TA and atmospheric CO₂
+fixed and allow DIC to adjust to equilibrium. Do not use <code>temperature_out</code> for
+these comparisons: it describes a different constraint on the water sample.</p>
+<p>Keep <strong><code>config.chemistry</code> unchanged</strong>: <code>opt_k_carbonic=10</code>, <code>opt_pH_scale=2</code>
+(<mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>seawater scale</strong></mark>), <code>opt_buffers_mode=1</code>. Only the exercise temperatures differ
+from the shared 16 °C setting used in 01/02. Nutrient totals are zero, atmospheric
+pressure is 1 atm, and other PyCO2SYS options retain their defaults.</p>
+<p>The exercise uses “ppm (or µatm)” approximately. Follow the existing notebook's
+convention: enter atmospheric values as <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>dry-air xCO₂ in ppm</strong></mark> (type <code>9</code>).
+PyCO2SYS accounts for water vapour when relating xCO₂ to pCO₂; pCO₂ in µatm
+(type <code>4</code>) is a different input. Small differences from the supplied answer key
+are expected; do not change the constant options to match its rounded numbers.</p>
+<p>See <a href="https://pyco2sys.readthedocs.io/en/latest/co2sys_nd/">How to use PyCO2SYS: input pairs, settings and results</a>,
+especially <a href="https://pyco2sys.readthedocs.io/en/latest/co2sys_nd/#carbonate-system-parameters">carbonate-system parameter types</a>.
+Concentrations are in µmol/kg of seawater; pH and saturation states are dimensionless.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=00-setup">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+
+<span class="n">ROOT</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">(</span><span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">(),</span> <span class="o">*</span><span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">/</span> <span class="s1">'teaching_config.py'</span><span class="p">)</span><span class="o">.</span><span class="n">is_file</span><span class="p">())</span>
+<span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">ROOT</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">ROOT</span><span class="p">))</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">PyCO2SYS</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pyco2</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">teaching_config</span><span class="w"> </span><span class="kn">import</span> <span class="n">TEACHING</span> <span class="k">as</span> <span class="n">config</span>
+
+<span class="n">TEMPERATURE_C</span> <span class="o">=</span> <span class="mf">15.0</span>
+<span class="n">SALINITY</span> <span class="o">=</span> <span class="mf">35.0</span>
+<span class="n">PRESSURE_DBAR</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">INITIAL_TA</span> <span class="o">=</span> <span class="mf">2100.0</span>  <span class="c1"># umol/kg</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'PyCO2SYS version:'</span><span class="p">,</span> <span class="n">pyco2</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Carbonate settings:'</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">chemistry</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>PyCO2SYS version: 1.8.3.4
+Carbonate settings: {'opt_k_carbonic': 10, 'opt_pH_scale': 2, 'opt_buffers_mode': 1}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-example-intro"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="One-worked-example:-TA-and-DIC-as-inputs">One worked example: TA and DIC as inputs<a class="anchor-link" href="#One-worked-example:-TA-and-DIC-as-inputs">¶</a></h3><p>For a separate sample, prescribe TA = 2300 and DIC = 2000 µmol/kg.
+<code>par1_type=1</code> means TA and <code>par2_type=2</code> means DIC. The result is a dictionary:
+select the output you need by its key. Adapt this call to the input pair and
+conditions required by the exercise.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=00-example">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">example</span> <span class="o">=</span> <span class="n">pyco2</span><span class="o">.</span><span class="n">sys</span><span class="p">(</span>
+    <span class="n">par1</span><span class="o">=</span><span class="mf">2300.0</span><span class="p">,</span> <span class="n">par1_type</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>  <span class="c1"># TA, umol/kg</span>
+    <span class="n">par2</span><span class="o">=</span><span class="mf">2000.0</span><span class="p">,</span> <span class="n">par2_type</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>  <span class="c1"># DIC, umol/kg</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="n">TEMPERATURE_C</span><span class="p">,</span>
+    <span class="n">salinity</span><span class="o">=</span><span class="n">SALINITY</span><span class="p">,</span>
+    <span class="n">pressure</span><span class="o">=</span><span class="n">PRESSURE_DBAR</span><span class="p">,</span>
+    <span class="o">**</span><span class="n">config</span><span class="o">.</span><span class="n">chemistry</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Seawater-scale pH: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">example</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"DIC: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">example</span><span class="p">[</span><span class="s1">'dic'</span><span class="p">])</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> umol/kg"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Aragonite saturation: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">example</span><span class="p">[</span><span class="s1">'saturation_aragonite'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Calcite saturation: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">example</span><span class="p">[</span><span class="s1">'saturation_calcite'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Seawater-scale pH: 8.190
+DIC: 2000.0 umol/kg
+Aragonite saturation: 3.203
+Calcite saturation: 4.987
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered celltag_solution-only" id="cell-id=00-instructor-note"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Instructor-reference">Instructor reference<a class="anchor-link" href="#Instructor-reference">¶</a></h3><div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Instructor reference</strong></p>
+<p>All answers below use PyCO2SYS 1.8.3.4 and the unmodified <code>config.chemistry</code> choices.
+Rounded values are included so this sheet can be read without running it;
+the cells reproduce the calculations. The supplied helper only avoids repeating
+the same equilibrium call. It and all solutions are removed from the student copy.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered celltag_solution-only" id="cell-id=00-instructor-helper">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">equilibrium</span><span class="p">(</span><span class="n">xco2</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="n">TEMPERATURE_C</span><span class="p">,</span> <span class="n">salinity</span><span class="o">=</span><span class="n">SALINITY</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">pyco2</span><span class="o">.</span><span class="n">sys</span><span class="p">(</span>
+        <span class="n">par1</span><span class="o">=</span><span class="n">INITIAL_TA</span><span class="p">,</span> <span class="n">par1_type</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">par2</span><span class="o">=</span><span class="n">xco2</span><span class="p">,</span> <span class="n">par2_type</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>
+        <span class="n">temperature</span><span class="o">=</span><span class="n">temperature</span><span class="p">,</span> <span class="n">salinity</span><span class="o">=</span><span class="n">salinity</span><span class="p">,</span>
+        <span class="n">pressure</span><span class="o">=</span><span class="n">PRESSURE_DBAR</span><span class="p">,</span> <span class="o">**</span><span class="n">config</span><span class="o">.</span><span class="n">chemistry</span><span class="p">,</span>
+    <span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">show_state</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">result</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">: pH = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; "</span>
+          <span class="sa">f</span><span class="s2">"DIC = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">'dic'</span><span class="p">])</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> umol/kg; "</span>
+          <span class="sa">f</span><span class="s2">"TA = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">'alkalinity'</span><span class="p">])</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> umol/kg; "</span>
+          <span class="sa">f</span><span class="s2">"Omega_aragonite = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">'saturation_aragonite'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; "</span>
+          <span class="sa">f</span><span class="s2">"Omega_calcite = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">'saturation_calcite'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-a-question"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="a)-Present-day-pH">a) Present-day pH<a class="anchor-link" href="#a)-Present-day-pH">¶</a></h2><div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Question — part a</strong></p>
+<p>Take the exercise's present-day atmospheric CO₂ value of <strong>430 ppm</strong>.
+Calculate the pH on the seawater scale at the baseline conditions.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=00-a-work">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your calculation</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered celltag_solution-only" id="cell-id=00-a-solution">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">present</span> <span class="o">=</span> <span class="n">equilibrium</span><span class="p">(</span><span class="mf">430.0</span><span class="p">)</span>
+<span class="n">show_state</span><span class="p">(</span><span class="s1">'Present'</span><span class="p">,</span> <span class="n">present</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Present: pH = 7.982; DIC = 1918.7 umol/kg; TA = 2100.0 umol/kg; Omega_aragonite = 1.975; Omega_calcite = 3.075
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-a-answer"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Instructor answer</strong></p>
+<p>The seawater-scale pH is <strong>7.982</strong> (about 7.98). TA and xCO₂ are prescribed;
+pH and DIC are calculated. This represents water equilibrated with the specified
+atmosphere at the chosen conditions.</p>
+</div>
+<!-- END SOLUTION -->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-b-question"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="b)-Temperature-sensitivity">b) Temperature sensitivity<a class="anchor-link" href="#b)-Temperature-sensitivity">¶</a></h2><div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Question — part b</strong></p>
+<p>How would pH change if the ocean temperature were <strong>5 °C</strong> or <strong>25 °C</strong>?
+Keep TA = 2100 µmol/kg, salinity = 35 and xCO₂ = 430 ppm. Compare with 15 °C.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=00-b-work">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your calculation</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered celltag_solution-only" id="cell-id=00-b-solution">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">temperature_states</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">temperature</span> <span class="ow">in</span> <span class="p">(</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">15.0</span><span class="p">,</span> <span class="mf">25.0</span><span class="p">):</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">equilibrium</span><span class="p">(</span><span class="mf">430.0</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="n">temperature</span><span class="p">)</span>
+    <span class="n">temperature_states</span><span class="p">[</span><span class="n">temperature</span><span class="p">]</span> <span class="o">=</span> <span class="n">state</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"T = </span><span class="si">{</span><span class="n">temperature</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2"> degC: pH = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; "</span>
+          <span class="sa">f</span><span class="s2">"change from 15 degC = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">present</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">+.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>T = 5 degC: pH = 7.971; change from 15 degC = -0.011
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>T = 15 degC: pH = 7.982; change from 15 degC = +0.000
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>T = 25 degC: pH = 7.985; change from 15 degC = +0.003
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-b-answer"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Instructor answer</strong></p>
+<table>
+<thead>
+<tr>
+<th>Temperature (°C)</th>
+<th style="text-align:right">pH</th>
+<th style="text-align:right">Change from 15 °C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td style="text-align:right">7.971</td>
+<td style="text-align:right">−0.011</td>
+</tr>
+<tr>
+<td>15</td>
+<td style="text-align:right">7.982</td>
+<td style="text-align:right">0.000</td>
+</tr>
+<tr>
+<td>25</td>
+<td style="text-align:right">7.985</td>
+<td style="text-align:right">+0.003</td>
+</tr>
+</tbody>
+</table>
+<p>The direct pH effect is small <strong>at fixed TA and atmospheric xCO₂</strong>. Changes in
+CO₂ solubility and acid–base equilibria partly offset one another while DIC
+adjusts. This does not imply that warming a closed sample at fixed DIC has the
+same effect, or that temperature has little effect on mineral saturation or biology.</p>
+</div>
+<!-- END SOLUTION -->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-c-question"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="c)-Salinity-sensitivity">c) Salinity sensitivity<a class="anchor-link" href="#c)-Salinity-sensitivity">¶</a></h2><div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Question — part c</strong></p>
+<p>Calculate pH at salinity <strong>38</strong> (a Mediterranean-like value) and <strong>32</strong>
+(a fresher value). Keep T = 15 °C, TA = 2100 µmol/kg and xCO₂ = 430 ppm.
+How large is the direct effect compared with salinity 35?</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=00-c-work">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your calculation</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered celltag_solution-only" id="cell-id=00-c-solution">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">salinity_states</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">salinity</span> <span class="ow">in</span> <span class="p">(</span><span class="mf">38.0</span><span class="p">,</span> <span class="mf">35.0</span><span class="p">,</span> <span class="mf">32.0</span><span class="p">):</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">equilibrium</span><span class="p">(</span><span class="mf">430.0</span><span class="p">,</span> <span class="n">salinity</span><span class="o">=</span><span class="n">salinity</span><span class="p">)</span>
+    <span class="n">salinity_states</span><span class="p">[</span><span class="n">salinity</span><span class="p">]</span> <span class="o">=</span> <span class="n">state</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"S = </span><span class="si">{</span><span class="n">salinity</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2">: pH = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; "</span>
+          <span class="sa">f</span><span class="s2">"change from S = 35: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">present</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">+.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>S = 38: pH = 7.975; change from S = 35: -0.007
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>S = 35: pH = 7.982; change from S = 35: +0.000
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>S = 32: pH = 7.991; change from S = 35: +0.009
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-c-answer"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Instructor answer</strong></p>
+<p>At salinity <strong>38</strong>, pH is <strong>7.975</strong> (−0.007); at salinity <strong>32</strong>, pH is
+<strong>7.991</strong> (+0.009). These are small direct changes at fixed TA and xCO₂.
+Actual freshwater dilution or evaporation also changes TA and other solutes;
+this fixed-TA comparison isolates salinity and does not simulate those processes.</p>
+</div>
+<!-- END SOLUTION -->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-d-question"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="d)-Glacial-and-interglacial-CO%E2%82%82">d) Glacial and interglacial CO₂<a class="anchor-link" href="#d)-Glacial-and-interglacial-CO%E2%82%82">¶</a></h2><div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Question — part d</strong></p>
+<p>Calculate pH for a glacial atmosphere with <strong>180 ppm</strong> CO₂ and an interglacial
+atmosphere with <strong>270 ppm</strong> CO₂. Would temperature differences substantially
+alter the comparison? Use 15 °C for both first, then use the 5–25 °C range
+from (b) as a sensitivity check; it is not a reconstructed climate history.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=00-d-work">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your calculation</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered celltag_solution-only" id="cell-id=00-d-solution">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">climate_states</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">xco2</span> <span class="ow">in</span> <span class="p">(</span><span class="mf">180.0</span><span class="p">,</span> <span class="mf">270.0</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">temperature</span> <span class="ow">in</span> <span class="p">(</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">15.0</span><span class="p">,</span> <span class="mf">25.0</span><span class="p">):</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">equilibrium</span><span class="p">(</span><span class="n">xco2</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="n">temperature</span><span class="p">)</span>
+        <span class="n">climate_states</span><span class="p">[</span><span class="n">xco2</span><span class="p">,</span> <span class="n">temperature</span><span class="p">]</span> <span class="o">=</span> <span class="n">state</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"xCO2 = </span><span class="si">{</span><span class="n">xco2</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2"> ppm, T = </span><span class="si">{</span><span class="n">temperature</span><span class="si">:</span><span class="s2">g</span><span class="si">}</span><span class="s2"> degC: "</span>
+              <span class="sa">f</span><span class="s2">"pH = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>xCO2 = 180 ppm, T = 5 degC: pH = 8.299
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>xCO2 = 180 ppm, T = 15 degC: pH = 8.294
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>xCO2 = 180 ppm, T = 25 degC: pH = 8.281
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>xCO2 = 270 ppm, T = 5 degC: pH = 8.150
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>xCO2 = 270 ppm, T = 15 degC: pH = 8.153
+xCO2 = 270 ppm, T = 25 degC: pH = 8.147
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-d-answer"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Instructor answer</strong></p>
+<table>
+<thead>
+<tr>
+<th>Prescribed CO₂ (ppm)</th>
+<th style="text-align:right">pH at 5 °C</th>
+<th style="text-align:right">pH at 15 °C</th>
+<th style="text-align:right">pH at 25 °C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>180 (glacial)</td>
+<td style="text-align:right">8.299</td>
+<td style="text-align:right">8.294</td>
+<td style="text-align:right">8.281</td>
+</tr>
+<tr>
+<td>270 (interglacial)</td>
+<td style="text-align:right">8.150</td>
+<td style="text-align:right">8.153</td>
+<td style="text-align:right">8.147</td>
+</tr>
+</tbody>
+</table>
+<p>At 15 °C, glacial pH exceeds interglacial pH by <strong>0.142</strong>. Temperature sensitivity
+over this deliberately broad range is much smaller than the CO₂ effect and does
+not reverse it. For example, 180 ppm at 5 °C versus 270 ppm at 15 °C gives a
+difference of 0.146. These conditional chemistry comparisons leave changes in
+real-ocean circulation, salinity and alkalinity outside the calculation.</p>
+</div>
+<!-- END SOLUTION -->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-e-question"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="e)-Change-since-preindustrial-times-and-2000">e) Change since preindustrial times and 2000<a class="anchor-link" href="#e)-Change-since-preindustrial-times-and-2000">¶</a></h2><div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Question — part e</strong></p>
+<p>The exercise gives <strong>278 ppm</strong> for preindustrial CO₂ and <strong>366 ppm</strong> for the
+year 2000. Calculate pH at both values. How much has pH declined from
+preindustrial times to 2000, and from 2000 to the exercise's present (430 ppm)?
+Also report the total decline since preindustrial times.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=00-e-work">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your calculation</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered celltag_solution-only" id="cell-id=00-e-solution">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">preindustrial</span> <span class="o">=</span> <span class="n">equilibrium</span><span class="p">(</span><span class="mf">278.0</span><span class="p">)</span>
+<span class="n">year_2000</span> <span class="o">=</span> <span class="n">equilibrium</span><span class="p">(</span><span class="mf">366.0</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">state</span> <span class="ow">in</span> <span class="p">[(</span><span class="s1">'Preindustrial'</span><span class="p">,</span> <span class="n">preindustrial</span><span class="p">),</span> <span class="p">(</span><span class="s1">'2000'</span><span class="p">,</span> <span class="n">year_2000</span><span class="p">),</span>
+                     <span class="p">(</span><span class="s1">'Present'</span><span class="p">,</span> <span class="n">present</span><span class="p">)]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">: pH = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">earlier</span><span class="p">,</span> <span class="n">later</span> <span class="ow">in</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s1">'Preindustrial to 2000'</span><span class="p">,</span> <span class="n">preindustrial</span><span class="p">,</span> <span class="n">year_2000</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">'2000 to present'</span><span class="p">,</span> <span class="n">year_2000</span><span class="p">,</span> <span class="n">present</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">'Preindustrial to present'</span><span class="p">,</span> <span class="n">preindustrial</span><span class="p">,</span> <span class="n">present</span><span class="p">),</span>
+<span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s2">: pH decline = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">earlier</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">later</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Preindustrial: pH = 8.142
+2000: pH = 8.042
+Present: pH = 7.982
+Preindustrial to 2000: pH decline = 0.100
+2000 to present: pH decline = 0.060
+Preindustrial to present: pH decline = 0.160
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-e-answer"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Instructor answer</strong></p>
+<p>Preindustrial pH is <strong>8.142</strong>, pH in 2000 is <strong>8.042</strong>, and present pH is
+<strong>7.982</strong>. The declines are <strong>0.100</strong> (preindustrial → 2000), <strong>0.060</strong>
+(2000 → present), and <strong>0.160 pH units</strong> in total. All comparisons hold TA,
+temperature and salinity fixed. These are equilibrium differences for the
+exercise's CO₂ values, not an attribution to any individual's emissions.</p>
+</div>
+<!-- END SOLUTION -->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-f-question"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="f)-Aragonite-and-calcite-saturation">f) Aragonite and calcite saturation<a class="anchor-link" href="#f)-Aragonite-and-calcite-saturation">¶</a></h2><div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Question — part f</strong></p>
+<p>At the exercise's present-day CO₂ value of <strong>430 ppm</strong>, calculate the saturation
+states of <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>aragonite</strong></mark> and <mark style="background-color: #fff0b3; color: #513d00; padding: 0.05em 0.2em; border-radius: 3px;"><strong>calcite</strong></mark>, two forms of CaCO₃ used by marine
+calcifiers. Interpret the values relative to a saturation state of one.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=00-f-work">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your calculation</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered celltag_solution-only" id="cell-id=00-f-solution">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">target_aragonite</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">present</span><span class="p">[</span><span class="s1">'saturation_aragonite'</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Present Omega_aragonite = </span><span class="si">{</span><span class="n">target_aragonite</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Present Omega_calcite = </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">present</span><span class="p">[</span><span class="s1">'saturation_calcite'</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Present Omega_aragonite = 1.975
+Present Omega_calcite = 3.075
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-f-answer"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Instructor answer</strong></p>
+<p><strong>$\Omega_{arag}=1.975$</strong> and <strong>$\Omega_{calc}=3.075$</strong>. Saturation state is
+$\Omega=[Ca^{2+}][CO_3^{2-}]/K_{sp}$ for the specified mineral.
+Both values exceed one, so the water is supersaturated with respect to both
+minerals. Below one it is undersaturated. Supersaturation describes the chemical
+driving force; it does not alone establish a calcification rate or guarantee
+healthy organisms. Aragonite has the lower saturation state in this calculation.</p>
+</div>
+<!-- END SOLUTION -->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-g-question"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="g)-The-2100-high-CO%E2%82%82-endpoint-and-warming">g) The 2100 high-CO₂ endpoint and warming<a class="anchor-link" href="#g)-The-2100-high-CO%E2%82%82-endpoint-and-warming">¶</a></h2><div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Question — part g</strong></p>
+<p>Using the exercise's RCP8.5-labelled <strong>935 ppm</strong> CO₂ endpoint for 2100,
+calculate <strong>pH, DIC and aragonite saturation</strong> at 15 °C and then with
+<strong>3 °C warming (18 °C)</strong>. Keep TA = 2100 µmol/kg and salinity = 35.
+Compare both endpoints with the present and discuss the results.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=00-g-work">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your calculation</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered celltag_solution-only" id="cell-id=00-g-solution">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">future</span> <span class="o">=</span> <span class="n">equilibrium</span><span class="p">(</span><span class="mf">935.0</span><span class="p">)</span>
+<span class="n">future_warm</span> <span class="o">=</span> <span class="n">equilibrium</span><span class="p">(</span><span class="mf">935.0</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">18.0</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">state</span> <span class="ow">in</span> <span class="p">[(</span><span class="s1">'Present, 15 degC'</span><span class="p">,</span> <span class="n">present</span><span class="p">),</span>
+                     <span class="p">(</span><span class="s1">'2100, 15 degC'</span><span class="p">,</span> <span class="n">future</span><span class="p">),</span> <span class="p">(</span><span class="s1">'2100, 18 degC'</span><span class="p">,</span> <span class="n">future_warm</span><span class="p">)]:</span>
+    <span class="n">show_state</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  pH change from present: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">present</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">+.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Present, 15 degC: pH = 7.982; DIC = 1918.7 umol/kg; TA = 2100.0 umol/kg; Omega_aragonite = 1.975; Omega_calcite = 3.075
+  pH change from present: +0.000
+2100, 15 degC: pH = 7.680; DIC = 2027.8 umol/kg; TA = 2100.0 umol/kg; Omega_aragonite = 1.068; Omega_calcite = 1.663
+  pH change from present: -0.302
+2100, 18 degC: pH = 7.685; DIC = 2012.5 umol/kg; TA = 2100.0 umol/kg; Omega_aragonite = 1.210; Omega_calcite = 1.871
+  pH change from present: -0.297
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-g-answer"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Instructor answer</strong></p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th style="text-align:right">pH</th>
+<th style="text-align:right">DIC (µmol/kg)</th>
+<th style="text-align:right">Aragonite saturation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Present: 430 ppm, 15 °C</td>
+<td style="text-align:right">7.982</td>
+<td style="text-align:right">1918.7</td>
+<td style="text-align:right">1.975</td>
+</tr>
+<tr>
+<td>2100: 935 ppm, 15 °C</td>
+<td style="text-align:right">7.680</td>
+<td style="text-align:right">2027.8</td>
+<td style="text-align:right">1.068</td>
+</tr>
+<tr>
+<td>2100: 935 ppm, 18 °C</td>
+<td style="text-align:right">7.685</td>
+<td style="text-align:right">2012.5</td>
+<td style="text-align:right">1.210</td>
+</tr>
+</tbody>
+</table>
+<p>Higher CO₂ increases DIC, lowers pH by about <strong>0.302</strong>, and reduces carbonate
+availability and aragonite saturation. At fixed 935 ppm, warming by 3 °C changes
+pH by only <strong>+0.005</strong>, but decreases DIC by <strong>15.3 µmol/kg</strong> and increases
+aragonite saturation by <strong>0.142</strong> (about 13%). It therefore has a small direct
+pH effect here, but a noticeable saturation effect. Both future states are
+still supersaturated with respect to aragonite, although less so than the present.</p>
+<p>The endpoint is prescribed, not a new forecast or a transient model result.
+The small pH sensitivity does not make warming harmless: heat stress can cause
+coral bleaching, which this chemistry calculation does not model
+(<a href="https://oceanservice.noaa.gov/facts/coral_bleach.html">NOAA: coral bleaching</a>).</p>
+</div>
+<!-- END SOLUTION -->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-h-question"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="h)-Alkalinity-needed-to-restore-aragonite-saturation">h) Alkalinity needed to restore aragonite saturation<a class="anchor-link" href="#h)-Alkalinity-needed-to-restore-aragonite-saturation">¶</a></h2><div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Question — part h</strong></p>
+<p>At <strong>935 ppm</strong> CO₂, calculate the total alkalinity required to restore the
+<strong>present-day aragonite saturation from (f)</strong>. Report both the required TA and
+its increase above 2100 µmol/kg. Use 15 °C for the main answer and also report
+the 18 °C alternative from (g). Does restoring saturation restore present pH?
+Explain what this calculation can and cannot establish about alkalinity addition
+as a way to protect coral reefs.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=00-h-work">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your calculation</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered celltag_solution-only" id="cell-id=00-h-solution">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">oae_states</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">temperature</span> <span class="ow">in</span> <span class="p">(</span><span class="mf">15.0</span><span class="p">,</span> <span class="mf">18.0</span><span class="p">):</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">pyco2</span><span class="o">.</span><span class="n">sys</span><span class="p">(</span>
+        <span class="n">par1</span><span class="o">=</span><span class="n">target_aragonite</span><span class="p">,</span> <span class="n">par1_type</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span>  <span class="c1"># prescribed Omega_aragonite</span>
+        <span class="n">par2</span><span class="o">=</span><span class="mf">935.0</span><span class="p">,</span> <span class="n">par2_type</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>             <span class="c1"># prescribed dry-air xCO2</span>
+        <span class="n">temperature</span><span class="o">=</span><span class="n">temperature</span><span class="p">,</span> <span class="n">salinity</span><span class="o">=</span><span class="n">SALINITY</span><span class="p">,</span>
+        <span class="n">pressure</span><span class="o">=</span><span class="n">PRESSURE_DBAR</span><span class="p">,</span> <span class="o">**</span><span class="n">config</span><span class="o">.</span><span class="n">chemistry</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">oae_states</span><span class="p">[</span><span class="n">temperature</span><span class="p">]</span> <span class="o">=</span> <span class="n">state</span>
+    <span class="n">show_state</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Restored saturation at </span><span class="si">{</span><span class="n">temperature</span><span class="si">:</span><span class="s1">g</span><span class="si">}</span><span class="s1"> degC'</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  Required TA enhancement: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">'alkalinity'</span><span class="p">])</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">INITIAL_TA</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> umol/kg"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  pH change from present: </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">present</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">])</span><span class="si">:</span><span class="s2">+.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+    <span class="c1"># Independently re-solve with inferred TA + prescribed CO2 to check the inversion.</span>
+    <span class="n">check</span> <span class="o">=</span> <span class="n">pyco2</span><span class="o">.</span><span class="n">sys</span><span class="p">(</span>
+        <span class="n">par1</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">'alkalinity'</span><span class="p">]),</span> <span class="n">par1_type</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">par2</span><span class="o">=</span><span class="mf">935.0</span><span class="p">,</span> <span class="n">par2_type</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>
+        <span class="n">temperature</span><span class="o">=</span><span class="n">temperature</span><span class="p">,</span> <span class="n">salinity</span><span class="o">=</span><span class="n">SALINITY</span><span class="p">,</span>
+        <span class="n">pressure</span><span class="o">=</span><span class="n">PRESSURE_DBAR</span><span class="p">,</span> <span class="o">**</span><span class="n">config</span><span class="o">.</span><span class="n">chemistry</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">assert</span> <span class="nb">abs</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">check</span><span class="p">[</span><span class="s1">'saturation_aragonite'</span><span class="p">])</span> <span class="o">-</span> <span class="n">target_aragonite</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">1e-8</span>
+    <span class="k">assert</span> <span class="nb">abs</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">check</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">]</span> <span class="o">-</span> <span class="n">state</span><span class="p">[</span><span class="s1">'pH'</span><span class="p">]))</span> <span class="o">&lt;</span> <span class="mf">1e-8</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Restored saturation at 15 degC: pH = 7.813; DIC = 2779.1 umol/kg; TA = 2922.4 umol/kg; Omega_aragonite = 1.975; Omega_calcite = 3.075
+  Required TA enhancement: 822.4 umol/kg
+  pH change from present: -0.169
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Restored saturation at 18 degC: pH = 7.791; DIC = 2590.2 umol/kg; TA = 2737.2 umol/kg; Omega_aragonite = 1.975; Omega_calcite = 3.054
+  Required TA enhancement: 637.2 umol/kg
+  pH change from present: -0.191
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-h-answer"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<!-- BEGIN SOLUTION -->
+<div style="background-color: #f3eefb; color: #38224f; border-left: 4px solid #7952a8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Instructor answer</strong></p>
+<table>
+<thead>
+<tr>
+<th>Temperature</th>
+<th style="text-align:right">Required TA (µmol/kg)</th>
+<th style="text-align:right">Added TA (µmol/kg)</th>
+<th style="text-align:right">pH</th>
+<th style="text-align:right">DIC (µmol/kg)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15 °C</td>
+<td style="text-align:right">2922.4</td>
+<td style="text-align:right"><strong>822.4</strong></td>
+<td style="text-align:right">7.813</td>
+<td style="text-align:right">2779.1</td>
+</tr>
+<tr>
+<td>18 °C</td>
+<td style="text-align:right">2737.2</td>
+<td style="text-align:right"><strong>637.2</strong></td>
+<td style="text-align:right">7.791</td>
+<td style="text-align:right">2590.2</td>
+</tr>
+</tbody>
+</table>
+<p>Both states reproduce the target aragonite saturation of <strong>1.975</strong> by construction.
+For the main 15 °C answer, TA must rise by about <strong>39%</strong>. The warmer alternative
+requires less TA to attain the same saturation state. Neither restores present
+pH (7.982): saturation and pH are different properties, and restoring one does
+not fix the other.</p>
+<p>The target saturation is <strong>prescribed</strong>, and TA is <strong>inferred</strong>. The final assertions
+check the chemistry inversion; they do not independently validate alkalinity
+enhancement as a reef intervention. DIC rises as the water equilibrates with the
+prescribed atmosphere. There is no closed ocean–atmosphere carbon inventory here,
+and this is a concentration increment, not a total dose or addition rate. A dose
+would require the treated water mass and a specified material; adding carbonate
+mineral also adds DIC, unlike an idealized pure-TA addition.</p>
+<p>Higher equilibrium DIC is consistent with potential CO₂ uptake, but these states
+do not quantify uptake rates, net atmospheric removal, mixing, precipitation,
+cost or ecological feasibility. Restored saturation also does not remove thermal
+stress or guarantee coral survival. A coupled process model and site-specific
+evidence would be needed to assess an intervention.</p>
+</div>
+<!-- END SOLUTION -->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=00-finish"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: #edf5ff; color: #173b61; border-left: 4px solid #3977b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px;">
+<p><strong>Question — final check</strong></p>
+<p><strong>End of exercise 9.</strong> Check that every answer states its conditions and units,
+and distinguishes prescribed inputs from calculated outputs.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=0aa13d40-b962-48b5-a57e-fc577287039a">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=e486b5a1-4c59-4816-9759-331cfe84fb7e">
+<div class="input">
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

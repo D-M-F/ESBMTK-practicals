@@ -1,0 +1,89 @@
+ﬁgures 5.1.2 and 5.1.3 the variations of these tracers
+along a global-scale section that is identical to that used
+earlier in this text for other tracers (see map in ﬁgure
+2.3.3a). We can clearly identify the impact of ocean bi-
+ology in the form of surface depletion and deep enrich-
+ment of nitrate and phosphate, and the corresponding
+decrease in deep ocean oxygen.
+We can investigate this apparent coupling between
+the two nutrients and oxygen by plotting nitrate and
+oxygen versus phosphate (ﬁgure 5.1.4) using data from
+all depths. A tight correspondence exists between ni-
+trate and phosphate (ﬁgure 5.1.4a), with a mean slope
+of about 16:1, very similar to the relationship that we
+observed for near-surface waters (ﬁgure 4.2.1). It thus
+appears that most of the remineralization of nitrate and
+phosphate can be understood simply as the reverse of
+the photosynthesis reaction (4.2.4). However, we also
+observe distinct trends in the various ocean basins, with
+the Atlantic Ocean, for example, having substantially
+higher nitrate concentrations relative to phosphate. In
+contrast, the Indian Ocean appears to be depleted in
+nitrate relative to the mean trend. Do these variations
+indicate inter-basin trends in the N:P stoichiometry of
+remineralization of organic matter, or are they driven
+by other processes? We will see that most of these ni-
+trate ‘‘anomalies’’ are not driven by stoichiometric
+variations, but are caused by the removal of nitrate by
+denitriﬁcation and the addition of nitrate stemming
+from the remineralization of nitrogen-rich organic matter
+formed by N
+2-ﬁxers, i.e., organisms that can use dini-
+trogen gas (N 2) as a source of nitrogen.
+Given the overall strong coupling between nitrate and
+phosphate, the absence of such a coupling between ox-
+ygen and phosphate in ﬁgure (5.1.4b) is at ﬁrst sur-
+prising. If remineralization of organic matter were to
+dominate the interior ocean distribution of these two
+tracers, we would expect all points to lie along a line with
+a slope of about /C0 170:1. This is clearly not the case. Is it
+the denitriﬁcation reaction mentioned above that de-
+couples phosphate from O
+2? The tight correspondence
+between nitrate and phosphate in ﬁgure 5.1.4a suggests
+that this process is unlikely the main cause. Therefore,
+other processes must be responsible for the decoupling.
+The only place where this decoupling can occur is the
+surface ocean, where oxygen can exchange with the at-
+mosphere, while nutrients do not. These signals gen-
+erated near the surface are then transported into the
+interior ocean as preformed concentrations. All subse-
+quent changes arising from remineralization are chan-
+ges relative to these preformed concentrations.
+A useful reference point for the preformed concen-
+tration is a conservative tracer such as salinity that is
+inﬂuenced by the circulation but not affected by biolog-
+ical processes. Figure 2.4.1 shows salinity along the same
+section as displayed for nitrate and phosphate in ﬁgure
+5.1.3a and b. The three tracers have almost identical
+patterns in the deep North Atlantic and in the deeper part
+of the southern hemisphere thermocline, but very
+0 m
+EUPHOTIC ZONE
+APHOTIC ZONE
+~100 m
+INORGANIC
+NUTRIENTS DISSOLVED
+OM
+PARTICULATE
+OM
+ORGANIC MATTER
+Net 
+production
+INORGANIC
+NUTRIENTS DISSOLVED
+OM
+PARTICULATE
+OM
+ORGANIC MATTER
+Remineralization
+Circulation
+Circulation
+ Particle Settling
+Figure 5.1.1: Schematic of the production and remineralization of organic matter in the ocean. Particulate organic
+matter ( POM) and dissolved organic matter ( DOM ) are formed in the euphotic zone and then exported by sinking
+(POM) or by transport and mixing ( POM and DOM ). In the aphotic zone, DOM and POM are subject to
+remineralization, which returns the inorganic constituents back to seawater. Similar processes occur in the sediments,
+from where the solutes then diffuse back into the water column.
+174
+Chapter 5

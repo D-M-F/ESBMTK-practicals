@@ -1,0 +1,8 @@
+test_connection_keys_disambiguate_shared_circulation_id (test_teaching_specification.TeachingSpecificationTest.test_connection_keys_disambiguate_shared_circulation_id) ... ok
+test_exported_student_file_contains_no_hidden_answer_sheet_or_formulas (test_teaching_specification.TeachingSpecificationTest.test_exported_student_file_contains_no_hidden_answer_sheet_or_formulas) ... ok
+test_student_records_exclude_selected_answers (test_teaching_specification.TeachingSpecificationTest.test_student_records_exclude_selected_answers) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.053s
+
+OK

@@ -1,0 +1,110 @@
+esting, though oversimpliﬁed, illustration of the poten-
+tial importance of this process. It suggests that the oxy-
+gen content of the deep ocean has the potential to vary
+between 0 and 316 mmol m
+/C0 3 with changes in the sur-
+face phosphate concentration of the high latitudes of
+between 0.24 and 2.1 mmol m
+/C0 3. This sensitivity was
+exploited by Sarmiento et al. [1988a] to provide a hy-
+pothesis for the cause of episodes of deep ocean anoxia
+(total depletion of oxygen) that have been observed in
+the geological record of the ocean sediments. If, for ex-
+ample, the high-latitude phosphate were to drop, then
+(1.2.8) suggests that the deep ocean oxygen should also
+drop.
+However, in subsequent work with more sophisti-
+cated three-dimensional models of ocean circulation
+consisting of tens of thousands of boxes, it was found
+that the sensitivity of the deep ocean oxygen to high-
+latitude nutrients was much smaller than predicted by
+the three-box model [ Sarmiento and Orr , 1991]. The
+three-dimensional models lose only 41 mmol m
+/C0 3 of
+oxygen when nutrients are reduced to zero, as con-
+trasted with the loss of more than 180 mmol m
+/C0 3 that
+our box model gives. The three-dimensional models
+conﬁne the reduction of deep ocean oxygen to regions
+just below the high-latitude deep water formation re-
+gions so that the average deep ocean oxygen drops only
+modestly. This and the previous examples demonstrate
+clearly the importance of understanding ocean trans-
+port and of understanding how to develop box models
+that can represent the circulation realistically.
+1.3 Chapter Conclusion and Outline of Book
+The central concern of this book is to understand the
+processes that control the mean oceanic concentration
+as well as the spatial and temporal variations of chem-
+icals that are inﬂuenced by biological processes. As
+illustrated by the box models, this requires under-
+standing the transport of chemicals by processes such as
+advection and diffusion. It also requires us to under-
+stand sources and sinks of the chemicals, such as bio-
+logical uptake and remineralization, as well as boundary
+conditions at the surface and bottom of the ocean such
+as gas exchange and sediment water ﬂuxes.
+The view taken in what follows is that kinetic processes
+are the primary control on the composition of the ocean,
+as proposed by Broecker’s response to Sille ´n’s equilib-
+rium view [ Broecker, 1971]. This view was explored in
+detail in the book Tracers in the Sea that Broecker wrote
+with Peng in 1982. The progress since then, and recent
+completion of several global measurement and model-
+ing programs, suggests the need for a new look at what
+we have chosen to call ‘‘ocean biogeochemical dynam-
+ics.’’ This title recognizes the important role of biological
+and geological, as well as chemical, processes, in con-
+trolling the oceanic composition of the chemicals we will
+study here, as well as the fact that these phenomena
+show considerable change through time.
+We begin in chapter 2 with a derivation of the tracer
+conservation equation and a review of our understand-
+ing of ocean transport by advection and mixing. Subse-
+quent chapters will go through each of the other pro-
+cesses that must be speciﬁed in order to solve the tracer
+conservation equation. Boundary conditions must be
+given at the air-sea interface and at the ocean ﬂoor.
+Among the boundary processes that must be considered
+are gas exchange at the air-sea interface, and ﬂuxes from
+the sediments resulting from reactions in the sedi-
+ments. We must also consider sources and sinks inter-
+nal to the ocean due to chemical and biological pro-
+cesses. Chemical processes will not be dealt with as a
+separate topic, but rather will be brought into the dis-
+cussion whenever relevant, primarily as part of the ex-
+amples. Biological processes can remove inorganic chem-
+icals by photosynthesis, which uses light as a source of
+energy, or chemosynthesis, which uses chemical reac-
+tions as a source of energy. The major region where this
+occurs is in the euphotic zone at the surface of the ocean,
+where light is sufﬁcient to support photosynthesis. Bi-
+ological processes also add inorganic chemicals by re-
+mineralization of organic matter. This occurs at all
+depths in the ocean as well as in the sediments.
+We cover each of these topics beginning at the sur-
+face and moving down through the water column into
+the sediments. Chapter 3 deals with boundary condi-
+tions at the air-sea interface. Chapter 4 covers the for-
+mation of organic matter in the surface ocean. Chapter
+5 covers the transport of organic matter from the sur-
+face to the abyss and its remineralization at depth.
+Chapter 6 covers the ocean sediments. The emphasis of
+these chapters is on the chemical cycles of the major
+nutrients (nitrate and phosphate) and oxygen.
+After developing a deeper understanding of relevant
+oceanic processes as well as the cycling of the major
+nutrients and oxygen, we apply this understanding to an
+analysis of the chemical cycles of silicon in chapter 7 and
+carbon in chapter 8, and of CaCO
+3 in chapter 9. Finally,
+chapter 10 applies the tools developed in chapters 1
+through 9 to a discussion of three of the major out-
+standing problems in our understanding of the inﬂu-
+ence of the ocean on atmospheric carbon dioxide. These
+are the role of the ocean as a sink for anthropogenic
+carbon, in the interannual variability of atmospheric
+carbon dioxide, and in the large reductions of atmo-
+spheric carbon dioxide that occurred during ice ages.
+Introduction
+15

@@ -1,0 +1,35 @@
+Problems
+8.1 Deﬁne and explain the terms DIC, Alk, and pCO2. Discuss why these terms
+are important for describing the ocean inorganic carbon system.
+8.2 Write down the inorganic carbon system reactions in seawater starting
+from the transfer of CO 2 from the air phase into the water phase. Deﬁne
+the main reaction constants and give their pK values for a temperature
+of 20 /C14 C.
+8.3 Why is the ocean so important in the global carbon cycle?
+a. Compute the relative distribution of inorganic carbon between the at-
+mosphere and the ocean. Use the ocean mean DIC concentration given
+in table 8.2.4 and use a preindustrial atmospheric mixing ratio of
+280 ppm. The number of molecules in the atmosphere is about
+1.8/C2 10
+20 mol. The ocean mass is about 1.35 /C2 1021 kg.
+b. Explain and discuss the results of (a).
+8.4 Describe how DIC, Alk, and pCO2 change as a result of
+a. the formation of organic matter by photosynthesis,
+b. the formation of calcium carbonate shells, and
+c. the uptake of CO
+2 from the atmosphere.
+8.5 How does Alk change if you precipitate
+a. salt (NaCl)?
+b. dolomite (MgCO
+3)?
+c. MgSO 4?
+8.6 How does denitriﬁcation affect Alk? Use the denitriﬁcation reaction given in
+chapter 5 (reaction 5.1.4).
+8.7 Compute the change in pCO2 caused by the formation of 10 mmol CaCO 3 in
+a volume of 1 m 3. Assume that this volume originally had a DIC
+concentration of 2000 mmol m /C0 3 and an Alk of 2300 mmol m/C0 3.
+8.8 Precipitation (rainfall) and evaporation not only change surface salinity;
+these processes also alter surface ocean DIC and Alk. What is the overall
+sensitivity of pCO2 in surface water to the addition or removal of freshwater?
+Compute this sensitivity in analogy to equation (8.3.5) in the text, i.e., ( S/
+355

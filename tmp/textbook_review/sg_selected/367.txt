@@ -1,0 +1,59 @@
+NO BIOLOGY, VARIABLE T
+Depth
+DIC
+NO GAS EXCHANGE Depth
+DIC
+SOFT-TISSUE PUMP, 
+                 CONSTANT T
+Depth
+DIC
+∞ RAPID GAS EX. Depth
+DIC
+Depth
+DIC
+REALISTIC GAS EX. Depth
+DIC
+potential 
+  thermal gas ex.
+   component
+kinetic
+  thermal gas ex.
+   component
+potential 
+ soft-tissue gas ex.
+   component
+kinetic
+ soft-tissue gas ex.
+   component
+Depth
+DIC
+CARBONATE PUMP, 
+                CONSTANT T
+Depth
+DIC
+Depth
+DIC
+potential 
+  carbonate gas ex.
+   component
+kinetic
+ carbonate gas ex.
+   component
+a
+ed
+cb
+ihg
+f
+∞ realisticO
+∞ realisticO
+∞ realisticO
+Figure 8.4.1: Hypothetical vertical proﬁles of sDIC in a series of thought experiments to elucidate the contributions of the various
+pump components. The ﬁrst row depicts the sDIC distribution in an abiological ocean with realistic temperature distribution and
+various gas exchange scenarios. The second row shows the sDIC distributions in a biological ocean with just the soft-tissue pump
+operating and with ﬁxed temperature distribution under various gas exchange scenarios. The third row is as the second, but with
+only the carbonate pump being active. The potential gas exchange pump components are the changes in the sDIC distributions that
+occur when one goes from an ocean without air-sea gas exchange to one with inﬁnitely fast gas exchange. The kinetic gas exchange
+components are then the changes in sDIC that are caused by replacing the inﬁnitely fast gas exchange with a realistic one. The main
+point to note is that the thermal and biological gas exchange pump components have a tendency to operate in opposite directions.
+This is the main reason why the gas exchange pump component is relatively small.
+344

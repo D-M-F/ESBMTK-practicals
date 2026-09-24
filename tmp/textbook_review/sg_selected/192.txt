@@ -1,0 +1,37 @@
+0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+Atlantic
+Pacific
+Indian
+16:1
+ab
+0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5
+0
+50
+100
+150
+200
+250
+300
+350
+400
+Atlantic
+Pacific
+Indian
+170:1
+Phosphate (mmol m-3) Phosphate (mmol m -3)
+Nitrate (mmol m-3)
+Oxygen (mmol m-3)
+Figure 5.1.4: Plots of (a) nitrate and (b) oxygen versus phosphate for data from all depths. Lines depict the expected slope between the tracers as a result of
+photosynthesis and remineralization. Based on data from three long transects in the Atlantic (OACES NATL93, SAVE), Paciﬁc (WOCE P16), and Indian
+(WOCE I9NI8S) Oceans.

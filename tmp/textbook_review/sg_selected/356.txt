@@ -1,0 +1,91 @@
+Inserting typical values for the surface ocean yields
+a buffer factor ( g
+DIC) of about 12 and an alkalinity fac-
+tor (gAlk) of about /C0 10. These factors, computed with the
+full chemistry including borate, are about 10 and /C0 9.4,
+respectively, meaning that pCO2 increases by about 10%
+when DIC is increased by 1%, whereas pCO2 decreases
+by about 9.4% when Alk is increased by 1%.
+It is important to recognize that the magnitudes of
+these two factors are not a direct function of temperature.
+Instead, these factors are mainly determined by the rel-
+ative concentrations of DIC and Alk as evident from
+(8.3.16) and (8.3.17) [ Takahashi et al ., 1980]. Because
+DIC concentrations tend to correlate with temperature
+(see ﬁgure 8.1.4b), while surface Alk is spatially more
+homogeneous, the resulting correlation of the DIC-to-
+Alk ratio with temperature leads to a correlation of the
+buffer factor with temperature as well. This correlation
+between the buffer factor and temperature is a result of
+temperature causing some of the variations in DIC and
+not because of temperature directly driving variations
+in the buffer factor.
+The gas exchange thought experiment that we used
+above (ﬁgure 8.3.3) provides a framework to illustrate
+this. We assume in both the rapid and sluggish gas ex-
+change cases a spatially uniform alkalinity. In the slug-
+gish gas exchange case, DIC would be spatially uniform
+as well, making the buffer factor essentially constant. In
+the rapid gas exchange case, the temperature variations
+are fully expressed in the surface concentration of DIC,
+leading to strong meridional variations in the DIC-to-Alk
+ratio. This also causes strong meridional variations in
+the buffer factor. The real ocean is somewhat closer to
+the fast gas exchange case, explaining the observed
+meridional variations in the buffer factor. As we will see
+Deep Ocean
+Surface Ocean
+Alkalinity (µmol kg-1)
+DIC (µmol kg-1)
+2340 2420 2380
+2280
+2240
+2200
+2160
+2120
+2080
+2040
+2000
+250
+300
+450
+400
+350
+550
+750
+700
+650
+600
+1000
+900
+850
+8001200 1100
+1300
+1400
+loss of organic mat
+ter
+loss of mineral carbonates
+Photosynthesis
+Respiration
+117
+16
+CO2
+fromto
+Gasexchange
+atmosphere
+Dissolution
+Precipitation
+2
+1
+CaCO3
+500
+2320 2360 2400 2440
+Figure 8.3.5: Plot of the CO 2 partial pressure as a function of Alk and DIC for a typical surface temperature (20 /C14 C)
+and salinity (35), computed from the equations given in table 8.2.1. Also shown is a simpliﬁed representation of
+the composition changes caused by biological processes. Water of average deep water composition is brought to the
+surface, and is warmed up to 20
+/C14 C (point 1). It undergoes photosynthesis (point 1 to 2) and calcium carbonate
+precipitation (point 2 to 3). The inset shows the vectors of the different processes affecting DIC and Alk, and
+hence also pCO2.
+333
+Carbon Cycle

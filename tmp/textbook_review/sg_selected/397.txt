@@ -1,0 +1,121 @@
+on the dissolution processes governing the CaCO 3 dy-
+namics in the water column. Given the present un-
+certainties in understanding the dissolution processes,
+accurate predictions of their response to future changes
+are challenging.
+However, regardless of the uncertainties associated
+with the exact processes controlling water column dis-
+solution of CaCO
+3 particles, the difference from the
+remineralization of organic matter remains striking.
+For example, in a series of sediment traps distributed in
+the Arabian Sea, 98% of the surface-produced particu-
+late organic carbon disappeared on average before
+reaching the traps at about 800 m, whereas only about
+70% of the CaCO
+3 disappeared [ Milliman et al. , 1999].
+This is consistent with our analyses of the different
+carbon pumps (see ﬁgure 8.4.2), which showed the
+much deeper dissolution signal for CaCO
+3 in compar-
+ison to the shallower remineralization signal for or-
+ganic matter. Consequently, CaCO
+3 dissolution in the
+water column is often modeled as a simple exponential
+curve with a length scale on the order of 3500 m [ Najjar
+and Orr, 1998; Yamanaka and Tajika, 1996], which leads
+to a much slower rate of CaCO
+3 dissolution in the water
+column than achieved with the power law function
+commonly used for organic matter remineralization.
+The same conclusion holds if the newer double expo-
+nential remineralization parameterizations for organic
+matter are used (see chapter 5).
+9.4 Diagenesis
+Having followed the CaCO 3 cycle from the surface
+down the water column, we ﬁnally arrive at the sedi-
+ments. Because of the much smaller role of water col-
+umn processes for CaCO
+3, sediments processes play a
+much more important role in the whole ocean budget
+of CaCO
+3 than in the cycling of organic matter (al-
+though we have seen in chapter 6 that sediments play a
+major role for organic matter cycling below 1000 to
+2000 m). On the other hand, as can be seen from a
+comparison of a deep ocean budget (>1000 m) for
+CaCO
+3 with that of organic matter (table 9.4.1), a much
+bigger fraction of the CaCO 3 entering the ocean realm
+below 1000 m depth ﬁnally gets buried in the sedi-
+ments. In the case of organic matter, this fraction is
+about 2%, whereas in the case of CaCO
+3, this fraction is
+approximately 19%. In this section, we analyze what
+controls the amount of CaCO
+3 that gets buried and how
+this is related to the CaCO 3 burial pattern that we have
+seen in ﬁgure 9.1.3.
+Figure 9.4.1 shows in more detail the transition from
+the depth where CaCO 3 is well preserved in the sedi-
+ments to the depth where CaCO 3 is completely absent
+from the sediments. The upper limit of the transition
+zone, where sediments are subjected to very little dis-
+solution, is often called the lysocline, whereas the depth,
+where the sediments have lost virtually all their calcite
+due to dissolution, is referred to as the calcite compen-
+sation depth (CCD). At this depth the dissolution of
+CaCO
+3 in the sediments matches exactly the deposition
+of CaCO3 at the top of the sediments.
+When the lysocline and the CCD are mapped
+throughout the oceans, an interesting pattern emerges
+(ﬁgure 9.4.2). Not only does the lysocline get shallower
+from the North Atlantic through the Indian to the
+North Paciﬁc, but also the thickness of the transition
+zone between the lysocline and the CCD varies strongly
+from one place to another. We thus have two questions
+that we want to answer: What controls the depth of the
+lysocline, and what controls the thickness and shape
+of the transition zone between the lysocline and
+the CCD?
+CaCO
+3 Dissolution in Sediments
+We have seen in chapter 7 that the dissolution of opal
+in the ocean depends on two major factors. First, it is
+inﬂuenced by the degree of undersaturation. Second, it
+is inﬂuenced by the degree of incorporation of alu-
+minium into the opal lattice and the impact of this on
+opal solubility and dissolution kinetics.
+One would expect that some of the same factors
+would control the dissolution of CaCO
+3 in the sedi-
+ments. While this conclusion is correct, there are several
+major differences between the dissolution of these two
+minerals. The most important difference has to do with
+Table 9.4.1
+Deep ocean (>1000 m) budget for CaCO
+3 and organic
+carbon.
+Organic
+Carbona
+Pg C yr/C0 1
+CaCO3b
+Pg C yr/C0 1 Ratioc
+Input across 1000 m
+depth horizon 0.87 0.70 1.2
+Burial in
+sediments /C0 0.02 /C0 0.13 0.2
+Remineralization
+or dissolution /C0 0.85 /C0 0.57 1.5
+a Values are taken from Figure 6.5.3.
+b Modiﬁed budget of Milliman et al . [1999]. The sinking ﬂux of
+CaCO3 across 1000 m has been increased to account for the obser-
+vation that the organic carbon–to–CaCO3 remineralization ratio in the
+deep ocean is about 1. The resulting higher dissolution ﬂux from the
+sediments is within the range of estimates (0.30 to 0.48 Pg C yr
+/C0 1)
+given by Archer [1996a, 1996b].
+c Organic carbon–to–CaCO3 ratio.
+374
+Chapter 9

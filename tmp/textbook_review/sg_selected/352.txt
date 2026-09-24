@@ -1,0 +1,119 @@
+Similarly, one ﬁnds for the salinity dependence of pCO2,
+gS ¼ S
+pCO2
+@pCO2
+@S ¼ @lnpCO2
+@lnS /C25 1( 8:3:5)
+For example, if we take a water parcel with an initial
+pCO
+2 of 300 matm at 20 /C14 C and with a salinity of 35, a
+one-degree warming increases pCO2 by approximately
+13 matm, whereas a salinity increase of 1 results in a
+pCO2 increase of 9 matm. Since temperature varies in
+the oceans by about 30 /C14 C, whereas salinity varies only
+by about 7, temperature rather than salinity has to be
+regarded as the dominant physical factor controlling
+pCO
+2. A note of caution, however. The above salinity
+dependence is for constant DIC and Alk. Therefore, the
+CO2 change given by (8.3.5) includes only the inﬂuence
+of salinity on the dissociation constants. Variations in
+salinity in the surface ocean, however, are mostly driven
+by changes in the balance between evaporation and
+precipitation. Therefore, if one is interested in using
+salinity as a tracer of the impact of the freshwater bal-
+ance on pCO
+2, one needs to take into account fresh-
+water-induced DIC and Alk changes in addition to the
+direct salinity effect. We will show in chapter 10 how
+one can calculate this freshwater balance effect on
+pCO
+2. We demonstrate there that the net effect of
+freshwater changes on the pCO2 sensitivity is to in-
+crease the pure salinity-driven pCO2 changes by about
+60% (see
+table 8.3.1).
+The next issue we consider is what happens to the
+carbon system if we permit gas exchange of CO 2 to
+occur while keeping Alk constant. Gas exchange will
+change the DIC concentration, but not Alk. The inﬂu-
+ence of air-sea gas exchange can be assessed with the
+following thought experiment taken from Broecker and
+Peng [1982] (see ﬁgure 8.3.3). We consider two extreme
+scenarios. In the ﬁrst case, air-sea exchange is assumed
+to be sluggish compared to the residence time of water
+at the sea surface (ﬁgure 8.3.3a). Such a scenario is
+equivalent to the closed system that was discussed in
+the previous paragraph. Since air-sea exchange is se-
+verely restricted, DIC is nearly constant throughout the
+ocean and pCO
+2 changes according to its temperature
+sensitivity of about 4% per degree centigrade. This
+results in the low latitudes having an oceanic pCO
+2
+twice as large as the high latitudes.
+In the second scenario, air-sea gas exchange is assumed
+to be very rapid, so that oceanic pCO2 comes close to
+equilibrium with atmospheric CO 2 everywhere (ﬁgure
+8.3.3b). Since oceanic pCO2 is now almost constant ev-
+erywhere, oceanic DIC has to change in order maintain
+chemical equilibrium. What is the magnitude and direc-
+tion of this change? We have learned that the factor K
+2/
+(K0 /C1 K1) increases with increasing temperatures. There-
+fore, in order to maintain the same oceanicpCO2, we infer
+from (8.3.3) that DIC has to decrease with increasing
+temperature. Therefore, we ﬁnd higherDIC values in the
+high-latitude ocean and lower DIC in the low latitudes.
+Where in the range between these two extremes would
+we expect an ocean with realistic gas exchange to lie?
+This depends essentially on the timescale of air-sea gas
+exchange relative to the timescale of processes perturb-
+ing the local equilibrium. We have seen in chapter 3 that
+the air-sea gas exchange timescale for many gases is of
+the order of days to a few weeks. This is short relative to
+most perturbations, so that the oceanic partial pressure
+of these gases is usually very close to equilibrium with
+the atmosphere, as observed, for example, for oxygen
+(see ﬁgure 3.1.2). However, as we also saw in chapter 3,
+the gas exchange timescale of CO
+2 is of the order of 6
+months. Why is this the case? We were previously able to
+give only a partial explanation, but now we know enough
+about CO
+2 chemistry to ﬁll in this gap.
+Table 8.3.1
+Summary of the most important pCO
+2 sensitivities in seawater
+Parameter Deﬁnition Mean Global Mean High Latitudes Mean Low Latitudes
+Temperature
+1
+pCO2
+@pCO2
+@T 0.0423/C14 C/C0 1 0.0423/C14 C/C0 1 0.0423/C14 C/C0 1
+Salinity gS ¼ S
+pCO2
+@pCO2
+@S 11 1
+DIC gDIC ¼ DIC
+pCO2
+@pCO2
+@DIC 10 13.3 9.5
+Alk gAlk ¼ Alk
+pCO2
+@pCO2
+@Alk /C0 9.4 /C0 12.6 /C0 8.9
+Freshwatery gfreshwater ¼ S
+pCO2
+@pCO2
+@S
+/C12
+/C12
+/C12
+/C12
+freshwater
+¼ gS þ gDIC þ gAlk
+1.6 1.7 1.6
+y See chapter 10 for derivation.
+329
+Carbon Cycle

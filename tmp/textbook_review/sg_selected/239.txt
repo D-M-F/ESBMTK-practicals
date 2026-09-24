@@ -1,0 +1,71 @@
+distributions. Use the global mean vertical proﬁle given at the end of the
+problem set.
+a. Do a plot of temperature versus salinity and label the major deep water
+types: AAIW (Antarctic Intermediate Water), NADW (North Atlantic
+Deep Water), and AABW (Antarctic Bottom Water). Can you also
+identify the Subtropical Mode Water (a salinity maximum commonly
+found in the upper thermocline)?
+b. Plot AOU versus depth and discuss its major features, including their
+association with water types. Also explain why the maximum in AOU
+occurs at about 1000 m.
+c. Calculate preformed and remineralized phosphate and plot both of
+them versus depth (preformed alone, and total ¼ preformed þ
+remineralized). Discuss the major features of their distributions.
+Note, in particular, that most of the phosphate in the ocean is
+preformed.
+5.12 The opal in diatoms grown with adequate light and nutrients is observed
+to have a Si:N ratio of Si(OH)
+4 about 1. Suppose we use this observation to
+deﬁne a Si* tracer as Si* ¼ Si(OH)4 /C0 NO/C0
+3
+. Use the global horizontal mean
+data at the end of the problem set to calculate Si* and plot this versus depth.
+What conclusions can you draw about the cycling of silicate versus nitrate
+from the distribution of Si*?
+5.13 A detailed analysis of sediment trap observations from the Arabian Sea and a
+few other places has suggested that the sinking velocity of particles may
+increase with depth. Derive analytically the shape of the POC ﬂux as a
+function of depth, i.e., F(z) ¼/C0 w
+sink /C1POC (analogous to equation (5.4.12))
+given the assumptions that the sinking velocity is a linear function of
+depth, i.e., w
+sink ¼ b /C1z; that the remineralization of POC is a ﬁrst-order
+reaction with a rate constant kremin; and that there is no net POC production.
+Discuss the implications of this result for the POC ﬂux equation (5.4.3)
+versus (5.4.12).
+5.14 Preformed inorganic phosphorus: You saw in problem 5.11(c) that most of
+the phosphate in the ocean is preformed. Preformed phosphate is conserved
+except at the surface of the ocean, where it can be taken up by phytoplankton
+and converted to organic phosphorus.
+a. Write down the vertical one-dimensional conservation equation for the
+steady-state distribution of preformed inorganic phosphorus. Assume
+here and in the remainder of these problems that advection and dif-
+fusion are constant with depth.
+b. Give a solution to the equation in (a) using as boundary conditions
+that the surface concentration is PIP(0) and the concentration at
+z ¼ H is PIP(H). Use the symbol z* for the exponential scale
+depth K/w.
+c. Use a spreadsheet to calculate and plot the preformed phosphate given
+by your solution in (a) for the depth interval from 0 to /C0 500 m. Use the
+observed preformed phosphate from problem 5.11(c) to specify the
+boundary concentrations at z ¼ 0 and H ¼/C0 500 m. Add the data from
+problem 5.11(c) to your plot and convince yourself that a value of
+z* ¼ 2000 m does a reasonable job of ﬁtting these data (which have a
+kink in the middle due mostly to lateral processes).
+PROBLEMS 5.14 TO 5.16:
+These problems form a sequence
+that will take you through the de-
+velopment of a simple vertical one-
+dimensional advection ( w) diffusion
+(K ) model of the distribution of
+preformed inorganic phosphorus
+(PIP), organic phosphorus ( OP),
+and remineralized inorganic phos-
+phorus ( RIP). Assume horizontal
+exchange is negligible. These
+problems will give you insight into
+the processes that control the
+vertical distribution of nutrients
+in the ocean.
+Chapter 5
+224

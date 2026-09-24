@@ -1,0 +1,87 @@
+Chapter 2
+Tracer Conservation and Ocean Transport
+The tracer conservation equation establishes the rela-
+tionship between the time rate of change of tracer con-
+centration at a given point and the processes that can
+change that concentration. These processes include wa-
+ter transport by advection and mixing, and sources and
+sinks due to biological and chemical transformations.
+This book is dedicated primarily to a study of the sources
+and sinks due to biological and chemical transforma-
+tions. However, we begin our study in this chapter with a
+derivation of the conservation equation, including the
+transport terms, accompanied by an overview of ocean
+circulation. The ocean circulation overview begins with a
+discussion of advection driven by wind forcing. The next
+two subsections focus on the wind-driven circulation in
+the upper kilometer of the ocean in the presence of
+stratiﬁcation, and also the deep ocean circulation below
+that. A ﬁnal section discusses non-steady-state behavior
+of the oceanic circulation, with a focus on mesoscale
+eddies and interannual to decadal variability of the upper
+ocean.
+Our discussion of ocean circulation focuses on only a
+few major features that are critical for understanding
+ocean biogeochemistry. Textbooks such as that of Pond
+and Pickard [1983] provide a more detailed discussion of
+the basic theory of ocean circulation [cf. also Pedlosky,
+1996], and Siedler et al. [2001] provide an up-to-date
+overview of observations and modeling focused pri-
+marily on results from the World Ocean Circulation
+Experiment (WOCE) carried out in the 1990s [cf. also
+Warren and Wunsch , 1981].
+2.1 Tracer Conservation Equation
+The tracer conservation equation for a volume of water
+at a ﬁxed location has the form
+@C
+@t ¼ @C
+@t
+/C12
+/C12
+/C12
+/C12
+advection
+þ @C
+@t
+/C12
+/C12
+/C12
+/C12
+diffusion
+þ SMS(C )( 2 :1:1)
+where the term SMS(C ) (mmol m/C0 3 s/C0 1) represents in-
+ternal sources minus sinks. We use C to represent tracer
+concentration in mmol m /C0 3, as in chapter 1. Geochem-
+ists generally prefer to report concentration in units of
+moles per unit mass of water (micromoles per kilogram,
+i.e., mmol kg
+/C0 1) rather than per unit volume. This is
+because water is compressible and the volume is thus
+a function of the pressure and temperature, whereas
+the mass is not. As a consequence, mass is conserved
+with changes in state, whereas volume is not. However,
+the use of per unit mass in the conservation equation
+is unwieldy because it requires including density and all
+of its derivatives. Furthermore, most present models of
+the ocean are based on approximations that imply con-
+servation of volume. We will therefore generally use
+units of mmol m
+/C0 3 for concentration. These can be
+converted to mmol kg/C0 1 by dividing by the density in
+kg m/C0 3/C2 10/C0 3.
+In what follows we ﬁrst derive the advection and
+diffusion components, and then consider the applica-
+tion of the conservation equation to box models such as
+those described in chapter 1.
+Advection and Diffusion Components
+We derive the advection and diffusion components
+of the tracer conservation equation by considering an
+inﬁnitesimally small cube of water with ﬁxed vol-
+ume, such as that shown in ﬁgure 2.1.1. The total
+amount of tracer in the cube is equal to the concen-
+tration C times the volume of the cube V (m
+3). Panel
+2.1.1 shows how we derive the advective contribution to
+the amount of tracer contained in the volume. The ﬁnal
+equation for the advective component of the conserva-
+19

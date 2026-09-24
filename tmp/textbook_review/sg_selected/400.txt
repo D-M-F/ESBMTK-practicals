@@ -1,0 +1,107 @@
+and Ca 2þ from the sediments and hence an accumula-
+tion of these properties in the chamber, little change
+occurs at the supersaturated and slightly undersaturated
+sites. This suggests that dissolution of CaCO
+3 does not
+begin in any substantial manner until bottom waters are
+signiﬁcantly undersaturated, supporting the conclusion
+reached on the basis of the co-location of the lysocline
+and the calcite saturation horizon. Further support
+comes from the absence of signiﬁcant changes in dis-
+solution indices based on foraminiferal assemblages
+above the depth of the saturation horizon [ Broecker and
+Clark, 2003].
+If the saturation state were the only controlling fac-
+tor, we would expect a strong correlation between the
+CaCO
+3 content of the sediments and the saturation
+state of the overlying seawater. The absence of such a
+clear trend in ﬁgure 9.4.4 indicates that processes other
+than the saturation state of the overlying seawater must
+also play an important role. Two features of ﬁgure 9.4.4
+are particularly noteworthy. First, there exist many sites
+where the overlying bottom waters are supersaturated
+with respect to calcite and nevertheless the CaCO
+3
+content of sediments is very small. Secondly, although
+masked by a substantial amount of scatter, Archer
+[1996b] showed that the average CaCO
+3 content for a
+given level of water column saturation, DCO32/C0 , is about
+10% lower in the Atlantic than in the Indian/Paciﬁc.
+What are the processes apart from the saturation
+state that control the preservation? Is it the rain rate of
+noncarbonate material or the rain rate of carbonate it-
+self that inﬂuences the details in the preservation pat-
+tern? It turns out that while these two processes do
+inﬂuence diagenesis of CaCO
+3, there exists a further
+major difference between the dissolution of opal and
+carbonate. Diagenetic reactions independent of the
+diagenesis of CaCO
+3 can produce acid or base and thus
+change the carbonate saturation state of the pore waters
+in the sediments independently of the saturation state
+of the overlying waters.
+Berger [1970] was the ﬁrst to point out that CO
+2 re-
+leased into the pore water from the remineralization of
+organic matter acidiﬁes the solution and can thus drive
+CaCO
+3 dissolution even if the overlying bottom waters
+are supersaturated. Quantitative models of the inﬂuence
+of metabolically produced CO
+2 on CaCO 3 dissolution
+have suggested that when the molar ratio of organic
+carbon to CaCO
+3 of the deposited material is near 1:1 or
+greater, this process might have a large impact on CaCO3
+preservation [ Emerson and Bender , 1981; Archer, 1991;
+Hales, 2003].
+This can be understood by inspecting table 9.3.5,
+which shows that the remineralization of organic mat-
+ter and the dissolution of CaCO
+3 have nearly opposite
+effects on the CO 2/C0
+3 ion concentration. Thus, if we
+remineralize 1 mol of organic matter and use the
+CO
+2 produced by the reaction to dissolve CaCO 3 ac-
+cording to
+CO2 þ CaCO3 þ H2O Ð 2HCO/C0
+3
+þ Ca2þ (9:4:1)
+we can dissolve 1.14 mol of CaCO 3 without changing
+the CO 2/C0
+3 saturation state. If the amount of organic
+carbon remineralized exceeds that of CaCO 3, one could
+expect complete dissolution.
+As we have seen above, the ratio of organic carbon to
+CaCO3 that is deposited on top of deep ocean sediments
+is of the order of 1:1 or higher. Since almost all organic
+matter gets remineralized, enough CO
+2 is produced to
+potentially dissolve all CaCO 3 in the sediments. The fact
+that a substantial fraction of the deposited CaCO 3
+%CaCO3
+Atlantic50
+0
+–25
+25
+–500 25 50 75 100
+%CaCO3
+Pacific/Indian 50
+0
+–25
+25
+–500
+N. Obs. N. Obs.
+25 50 75 100
+∆ CO3
+2– (µmol kg–1)
+Figure 9.4.4: Carbonate content of sediments plotted as a function of the overlying water saturation state, DCO2/C0
+3 , for the Atlantic
+and Paciﬁc/Indian Oceans. Histograms on the right side of the plots show the frequency distribution of the observations. From
+Archer [1996a].
+377
+Calcium Carbonate Cycle

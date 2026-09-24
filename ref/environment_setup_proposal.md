@@ -133,6 +133,9 @@ course environment, explicit kernel selection and an activated Jupyter launch.
 This is an alternative recipe for testing, not a resolved lockfile or a
 requirement to switch package managers. Conda installs Python/pip; pip installs
 the complete course stack to keep package ownership unambiguous.
+On 2026-09-23, a fresh Windows/Python 3.14 environment created from the setup-only
+ZIP passed package compatibility, numerical/chemistry/workbook/plot checks,
+environment-local kernel execution and an actual JupyterLab HTTP launch.
 
 If using Conda-built numerical libraries remains preferable, Pixi provides a
 TOML manifest and lockfile plus environment-aware launch tasks without requiring
@@ -145,10 +148,11 @@ For genuinely zero local installation, a university-managed
 a browser. That is the lowest student setup burden if hosting and support are
 available; it moves environment maintenance to the instructor/institution.
 
-Before a cross-platform release, repeat the locked installation and checks on
-the macOS/Linux platforms used by students. Windows package installation, workbook
-loading, plotting, project-local kernel selection and core notebook execution
-are already verified. Pilot the documented initial uv installer and setup with a
+Before a cross-platform release, repeat the installation and checks on the
+macOS/Linux platforms used by students. Windows package installation, workbook
+loading, plotting, environment-local kernel selection and JupyterLab launch are
+verified for both documented routes; core notebook execution is additionally
+verified under uv. Pilot the documented initial uv installer and setup with a
 student who has no Python installation, and measure setup time separately from
 the four-hour practical. Preserve `--locked`; update the manifest and lockfile
 together only as an instructor maintenance action followed by verification.

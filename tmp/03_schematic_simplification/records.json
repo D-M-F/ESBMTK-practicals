@@ -1,0 +1,196 @@
+{
+  "student": {
+    "FluxSpecification": [
+      {
+        "Process ID": "Q_*",
+        "Process / arrow": "Water: i -> j",
+        "J_DIC (mol C/yr)": "Your expression",
+        "J_TA (eq/yr)": "Your expression",
+        "Inputs / hint": "Q_ij: water volume transport (m3/yr), from thc / mixing. Use source density and concentration."
+      },
+      {
+        "Process ID": "G_L / G_H",
+        "Process / arrow": "Gas: atm -> surface i (signed)",
+        "J_DIC (mol C/yr)": "Your expression",
+        "J_TA (eq/yr)": "Your expression",
+        "Inputs / hint": "piston_velocity, area; K0_i and c_i from local chemistry. Invasion minus outgassing."
+      },
+      {
+        "Process ID": "POC",
+        "Process / arrow": "Organic export: your arrow",
+        "J_DIC (mol C/yr)": "Your expression",
+        "J_TA (eq/yr)": "Your expression",
+        "Inputs / hint": "P_0 = poc_export; fixed, fully remineralized at depth; DIC-only closure."
+      },
+      {
+        "Process ID": "PIC",
+        "Process / arrow": "Carbonate export: L_b -> module",
+        "J_DIC (mol C/yr)": "Your expression",
+        "J_TA (eq/yr)": "Your expression",
+        "Inputs / hint": "r = rain_ratio (PIC/POC); CaCO3 formation removes 1 carbon and 2 TA equivalents."
+      },
+      {
+        "Process ID": "W",
+        "Process / arrow": "Weathering: outside -> L_b",
+        "J_DIC (mol C/yr)": "Your expression",
+        "J_TA (eq/yr)": "Your expression",
+        "Inputs / hint": "W_0 = weathering_dic; the model adds 2 TA equivalents per mole of DIC."
+      },
+      {
+        "Process ID": "D",
+        "Process / arrow": "Dissolution: module -> D_b",
+        "J_DIC (mol C/yr)": "D(t) [supplied response]",
+        "J_TA (eq/yr)": "Your expression",
+        "Inputs / hint": "D = sediment_response(E, DIC_d, TA_d, z_snow; T_d, S_d, p_d, alpha, z0). Reverse CaCO3 formation."
+      },
+      {
+        "Process ID": "B_net",
+        "Process / arrow": "Net burial: module -> outside (signed)",
+        "J_DIC (mol C/yr)": "Your expression",
+        "J_TA (eq/yr)": "Your expression",
+        "Inputs / hint": "Compare carbonate rain and dissolution, including old sediment; residual, not an extra drain."
+      }
+    ],
+    "WorkbookLinks": [
+      {
+        "Process ID": "Q_*",
+        "Workbook owner": "TransportConnections (Transport)",
+        "Stable key / dependency": "(source, sink, flux_id); Parameter -> thc or mixing",
+        "Supplied implementation": "Match after your reconstruction"
+      },
+      {
+        "Process ID": "G_L / G_H",
+        "Workbook owner": "GasExchangeConnections (GasExchange)",
+        "Stable key / dependency": "Atmosphere + Surface; Parameter -> piston_velocity",
+        "Supplied implementation": "Match after your reconstruction"
+      },
+      {
+        "Process ID": "POC",
+        "Workbook owner": "ProcessParameters (Parameters)",
+        "Stable key / dependency": "poc_export",
+        "Supplied implementation": "Match after your reconstruction"
+      },
+      {
+        "Process ID": "PIC",
+        "Workbook owner": "ProcessParameters (Parameters)",
+        "Stable key / dependency": "poc_export * rain_ratio",
+        "Supplied implementation": "PIC_DIC + PIC_TA; nominal deep sinks bypassed"
+      },
+      {
+        "Process ID": "W",
+        "Workbook owner": "ProcessParameters + BoundaryNodes",
+        "Stable key / dependency": "weathering_dic; Fw",
+        "Supplied implementation": "ConnectionProperties; linked TA rate"
+      },
+      {
+        "Process ID": "D",
+        "Workbook owner": "Calculated, no flux input row",
+        "Stable key / dependency": "alpha, z0; actual PIC flux object",
+        "Supplied implementation": "add_carbonate_system_2; Fdiss for plotting"
+      },
+      {
+        "Process ID": "B_net",
+        "Workbook owner": "Calculated, no flux input row",
+        "Stable key / dependency": "PIC export and dissolution",
+        "Supplied implementation": "Fburial diagnostic; Fb is not an extra active drain"
+      }
+    ]
+  },
+  "instructor": {
+    "FluxSpecification": [
+      {
+        "Process ID": "Q_*",
+        "Process / arrow": "Water: i -> j",
+        "J_DIC (mol C/yr)": "rho_i Q_ij DIC_i(t)",
+        "J_TA (eq/yr)": "rho_i Q_ij TA_i(t)",
+        "Inputs / hint": "Q_ij: water volume transport (m3/yr), from thc / mixing. Use source density and concentration."
+      },
+      {
+        "Process ID": "G_L / G_H",
+        "Process / arrow": "Gas: atm -> surface i (signed)",
+        "J_DIC (mol C/yr)": "v_i A_i [K0_i pCO2_atm(t) - c_i(t)]",
+        "J_TA (eq/yr)": "0",
+        "Inputs / hint": "piston_velocity, area; K0_i and c_i from local chemistry. Invasion minus outgassing."
+      },
+      {
+        "Process ID": "POC",
+        "Process / arrow": "Organic export: L_b -> D_b",
+        "J_DIC (mol C/yr)": "P_0",
+        "J_TA (eq/yr)": "0",
+        "Inputs / hint": "P_0 = poc_export; fixed, fully remineralized at depth; DIC-only closure."
+      },
+      {
+        "Process ID": "PIC",
+        "Process / arrow": "Carbonate export: L_b -> module",
+        "J_DIC (mol C/yr)": "E(t) = r P_0",
+        "J_TA (eq/yr)": "2 E(t)",
+        "Inputs / hint": "r = rain_ratio (PIC/POC); CaCO3 formation removes 1 carbon and 2 TA equivalents."
+      },
+      {
+        "Process ID": "W",
+        "Process / arrow": "Weathering: outside -> L_b",
+        "J_DIC (mol C/yr)": "W_0",
+        "J_TA (eq/yr)": "2 W_0",
+        "Inputs / hint": "W_0 = weathering_dic; the model adds 2 TA equivalents per mole of DIC."
+      },
+      {
+        "Process ID": "D",
+        "Process / arrow": "Dissolution: module -> D_b",
+        "J_DIC (mol C/yr)": "D(t) [supplied response]",
+        "J_TA (eq/yr)": "2 D(t)",
+        "Inputs / hint": "D = sediment_response(E, DIC_d, TA_d, z_snow; T_d, S_d, p_d, alpha, z0). Reverse CaCO3 formation."
+      },
+      {
+        "Process ID": "B_net",
+        "Process / arrow": "Net burial: module -> outside (signed)",
+        "J_DIC (mol C/yr)": "B_net(t) = E(t) - D(t)",
+        "J_TA (eq/yr)": "2 B_net(t)",
+        "Inputs / hint": "Compare carbonate rain and dissolution, including old sediment; residual, not an extra drain."
+      }
+    ],
+    "WorkbookLinks": [
+      {
+        "Process ID": "Q_*",
+        "Workbook owner": "TransportConnections (Transport)",
+        "Stable key / dependency": "(source, sink, flux_id); Parameter -> thc or mixing",
+        "Supplied implementation": "create_bulk_connections; concentration-dependent law"
+      },
+      {
+        "Process ID": "G_L / G_H",
+        "Workbook owner": "GasExchangeConnections (GasExchange)",
+        "Stable key / dependency": "Atmosphere + Surface; Parameter -> piston_velocity",
+        "Supplied implementation": "Species2Species; gasexchange"
+      },
+      {
+        "Process ID": "POC",
+        "Workbook owner": "ProcessParameters (Parameters)",
+        "Stable key / dependency": "poc_export",
+        "Supplied implementation": "POM: native fixed export/remineralization connection"
+      },
+      {
+        "Process ID": "PIC",
+        "Workbook owner": "ProcessParameters (Parameters)",
+        "Stable key / dependency": "poc_export * rain_ratio",
+        "Supplied implementation": "PIC_DIC + PIC_TA; nominal deep sinks bypassed"
+      },
+      {
+        "Process ID": "W",
+        "Workbook owner": "ProcessParameters + BoundaryNodes",
+        "Stable key / dependency": "weathering_dic; Fw",
+        "Supplied implementation": "ConnectionProperties; linked TA rate"
+      },
+      {
+        "Process ID": "D",
+        "Workbook owner": "Calculated, no flux input row",
+        "Stable key / dependency": "alpha, z0; actual PIC flux object",
+        "Supplied implementation": "add_carbonate_system_2; Fdiss for plotting"
+      },
+      {
+        "Process ID": "B_net",
+        "Workbook owner": "Calculated, no flux input row",
+        "Stable key / dependency": "PIC export and dissolution",
+        "Supplied implementation": "Fburial diagnostic; Fb is not an extra active drain"
+      }
+    ]
+  }
+}

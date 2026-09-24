@@ -1,0 +1,79 @@
+genic CO2 (or any other passive and conservative tracer)
+that is injected into the mixed layer decreases [Joos et al.,
+1996]. In addition to its value as a tracer of oceanic
+transport processes, the mixed layer pulse has proved
+valuable in developing simple models of the ocean
+carbon sink. By contrast with the use of an atmospheric
+pulse, in which the response function depends on the
+amount of carbon added because of how this affects the
+buffer capacity, use of a mixed layer pulse response
+with direct calculation of the air-sea equilibration gives
+a model that does not depend on the pulse size (see Joos
+et al. [1996]). Figure 10.2.4 shows such mixed layer
+pulse-response functions for different ocean carbon
+models for the ﬁrst 100 years. All models show a rela-
+tively rapid removal of the pulse in the ﬁrst few years,
+followed by a strongly decelerated decrease with time.
+Joos et al. [1996] demonstrated that these pulse-re-
+sponse functions can be very closely approximated by
+ﬁtting to them a series of exponential functions. In the
+case of the 3-D circulation model, their ﬁts show that
+about 64% of the initial pulse disappears with an
+e-folding time of less than a year. An additional 23%
+decays with an e-folding timescale of 2 years, 6% with
+an e-folding timescale of 15 years, 3% with an e-folding
+timescale of 65 years, and 2% with an e-folding time-
+scale of 348 years. The response function asymptotes to
+a value of about 2% of the initial pulse, since this
+constitutes the ocean mean concentration after the
+whole ocean has equilibrated with the initial pulse. The
+various timescales can be interpreted as reﬂecting how
+quickly waters are transported into different depth
+realms of the ocean. Because upper ocean ventilation is
+relatively vigorous, the anthropogenic CO
+2 is, at ﬁrst,
+quickly removed from the upper ocean mixed layer.
+However, ocean ventilation tends to decrease with in-
+creasing depth, so it takes longer for anthropogenic
+CO
+2 to be transported into these deeper realms.
+These pulse-response functions not only provide a
+measure of timescales, but also quantitatively describe
+the entire dynamics of the transport of anthropogenic
+CO
+2 and any other passive and conservative tracers
+from the surface mixed layer into the ocean’s interior.
+This is because oceanic transport and mixing is linear,
+and up to now, we can assume that ocean circulation
+has not changed dramatically over the last 200 years.
+We can therefore use these pulse-response functions
+(also referred to as Green’s functions) as a basis for a
+very simple model that permits us to accurately esti-
+mate the uptake of any passive and conservative tracer
+by the ocean without resorting to simulations with
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Ocean mixed layer response
+Time (years)
+0 2 04 06 08 0 1 0 0
+0 2 4 6 8 10
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+2-D model
+Box-diffusion model
+HILDA
+3-D model
+Figure 10.2.4: Effective mixed layer pulse-response functions, rs = dNML=dNML
+Initial , for the box-diffusion model, the HILDA
+model, the 2-D model, and the Princeton general circulation model. Inset shows the pulse-response functions for the ﬁrst
+ten years. Modiﬁed from Joos et al. [1996].
+404
+Chapter 10

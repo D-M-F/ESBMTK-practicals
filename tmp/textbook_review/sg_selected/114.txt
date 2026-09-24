@@ -1,0 +1,84 @@
+predominantly in the high latitudes, particularly of the
+Southern Ocean. The overturning rate in these regions
+is too rapid for much of the excess CO
+2 to escape to the
+atmosphere, but not for O 2 uptake to occur. Thus the
+biological component for O 2 is quite large, whereas it is
+small for CO 2. By contrast, the thermal component is
+more widespread, and in regions where warming is oc-
+curring, the water column becomes stratiﬁed and water
+stays at the surface for a long time. Thus the thermal
+component is much more fully expressed for CO
+2 than
+the biological component. Chapter 8 has a more com-
+plete discussion of these phenomena for CO
+2.
+One of the most important problems in ocean bio-
+geochemistry today is to estimate the uptake of an-
+thropogenic carbon by the ocean. This topic is covered
+in detail in chapter 10, but we summarize here a set of
+estimates of the net air-sea CO
+2 ﬂux based on the pCO2
+monthly average partial pressure difference data of
+Takahashi et al. [2002], which they mapped out over 4
+/C14
+north-south by 5 /C14 east-west quadrangles around the
+world. Their data set included approximately 940,000
+measurements obtained since 1956, all of which were
+interpolated to 1995. Column (b) of table 3.4.1 gives
+results from the study of Wanninkhof et al . [2002] up-
+dated by Rik Wanninkhof (personal communication,
+2004), which includes the inﬂuence of wind speed
+variability on the gas transfer velocity estimate (see
+panel 3.3.1). The range from the lowest anthropogenic
+carbon uptake estimate to the highest is almost a factor
+of 2. Three lines of evidence examined earlier strongly
+suggest that the lowest of these estimates based on the
+Liss and Merlivat [1986] function is unlikely to be cor-
+rect: (1) comparison with empirical estimates of gas
+exchange using the radiocarbon observations (ﬁgure
+3.3.3), (2) model simulations of bomb radiocarbon up-
+take by ocean general circulation models (table 3.3.3),
+and (3) comparison of model simulations with oxygen
+observations in the atmosphere [ Keeling et al. , 1998].
+The skin temperature effect has been estimated to in-
+crease the oceanic uptake by 0.4 Pg C yr
+/C0 1, i.e., about
+25% of the total ([ Van Scoy et al. , 1995], based on the
+radiocarbon calibrated linear gas transfer velocity
+model of Tans et al . [1990]). However, as noted earlier,
+this is likely to be an upper limit.
+We conclude with a brief discussion of the nitrous
+oxide distribution shown in ﬁgure 3.1.4. One interest-
+ing aspect of this distribution is that nitrous oxide is
+supersaturated almost everywhere. This is exactly what
+we would expect from what we learned about its bio-
+geochemistry at the beginning of this section. Another
+interesting aspect of this distribution is that the peak
+supersaturations are observed in the tropics of the At-
+lantic, Paciﬁc, and Indian Oceans. We show in chapter
+5 that the highest deep-ocean nitrous oxide concentra-
+tions are found in the thermocline waters of the low
+latitudes where the remineralization of organic matter
+is at a maximum. Since nitrous oxide is a byproduct of
+remineralization, this is exactly where we would expect
+the nitrous oxide to peak. It is the upwelling of these
+waters at the surface that we see manifested in the
+tropics in ﬁgure 3.1.4.
+There have been numerous attempts to estimate the
+ﬂux of nitrous oxide to the atmosphere using observa-
+tions such as those shown in ﬁgure 3.1.4 as well as a
+range of models. The most recent observationally based
+estimate is that of Nevison et al. [2004], who give a global
+ocean N
+2O degassing ﬂux of 3.7–4.3 Tg yr /C0 1 of N.
+This can be compared to a global ‘‘natural’’ (i.e., pre-
+anthropogenic) nitrous oxide production rate of 7 (range
+of 4 to 12) Tg yr
+/C0 1 of N for non-oceanic sources, mostly
+soils, given by Prather and Ehhalt [2001]. The oceanic
+source thus accounts for about 40% (range of 28% to
+51%) of the total pre-anthropogenic input of nitrous
+oxide to the atmosphere.
+Air-Sea Interface
+99

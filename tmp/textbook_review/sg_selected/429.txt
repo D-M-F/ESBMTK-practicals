@@ -1,0 +1,142 @@
+genic CO2 with the terrestrial biosphere, which is very
+difﬁcult to measure directly.
+This section gives a brief overview of the different
+approaches proposed so far for estimating the current
+CO
+2 uptake by the oceans. We ﬁll ﬁrst investigate what it
+takes to estimate this uptake by direct means, i.e.,
+measuring the ﬂux across the air-sea interface, or by mea-
+suring the long-term increase of DIC. Given our cur-
+rently limited ability to follow these direct approaches,
+inventory methods that attempt to separate the small
+anthropogenic CO
+2 signal from the large natural back-
+ground have played a very important role in our deci-
+phering of the anthropogenic CO
+2 uptake by the ocean.
+After the discussion of these inventory methods, we turn
+to the atmospheric oxygen method, which has given us a
+lot of insight into the oceanic uptake since the early
+1990s. The reader interested in more detail is referred to
+the IPCC summaries [Schimel et al., 1995, 1996; Prentice
+et al. , 2001] and to the overviews by Siegenthaler and
+Sarmiento [1993] and by Wallace [1995].
+Direct Estimation
+The most direct means to estimate the oceanic uptake of
+anthropogenic CO
+2 is to measure the increase of DIC in
+the oceans over time, as done for the atmosphere. How
+large do we expect the signal to be? We can estimate the
+rate of increase of DIC in the surface ocean using the
+buffer factor, g
+DIC, and making the assumption that
+the inorganic carbon system in the surface ocean stays
+in equilibrium with the atmospheric perturbation:
+@DIC
+@t ¼ @DIC
+@pCO2
+@pCOoc
+2
+@dt ¼ 1
+gDIC
+DIC
+pCOoc
+2
+@pCOatm
+2
+@t
+¼ a
+gDIC
+@pCOatm
+2
+@t (10:2:16)
+where a is the DIC=pCOoc
+2
+ratio.
+The average rate of change of atmosphericpCO2 from
+1975 to 1995 was about 1.5matm yr/C0 1 [Keeling and Whorf,
+1998]. Inserting the surface ocean mean DIC (2026
+mmol kg/C0 1, see table 8.2.4), a buffer factor of 10, and apCO2
+of 350 matm results in a predicted DIC increase of about
+0.9 mmol kg/C0 1 yr/C0 1,i . e .ac h a n g eo f9mmol kg/C0 1 over a ten-
+year period. The change is larger (1.1 mmol kg/C0 1 yr/C0 1)i n
+the low latitudes and smaller in the high latitudes
+(0.8mmol kg
+/C0 1 yr/C0 1) because of the spatial variation in the
+buffer factor. Note that this is counterintuitive, since one
+would expect the high latitudes, because of their colder
+temperature, to take up more anthropogenic CO
+2 for a
+given atmosphericpCO2 perturbation than the warmer low
+latitudes. However, in this case, the buffer capacity is the
+determining factor, and not the CO 2 solubility. We will
+discuss this in detail in the following section.
+The present measurement precision of DIC is about
+1 mmol kg/C0 1, good enough for potentially detecting such a
+signal over a few years. However, temporal and spatial
+variability of DIC is large, making such a detection difﬁ-
+cult. We have seen, for example, that seasonal variations
+exceeding 30 mmol kg
+/C0 1 occur at many places. Neverthe-
+less, existing long-term observations ofDIC in the surface
+ocean are in relatively good agreement with the expected
+increase computed from (10.2.16) (see ﬁgure 10.2.5).
+Some of the limitations imposed by spatio-temporal
+variability can be overcome by ﬁtting the DIC content in
+seawater at one time with a multiple linear regression
+model against a number of tracers unaffected by the an-
+thropogenic transient, and then determining the differ-
+ence between the predicted and the measured DIC at a
+later time [ Wallace, 1995]. However, this approach re-
+quires two data sets of high quality separated sufﬁciently
+in time. The GEOSECS survey in the 1970s and the
+WOCE/JGOFS effort of the 1990s provide in principle two
+such data sets [ Wallace, 2001], but the high inaccuracy
+and imprecision of the GEOSECS data (about 10 mmol
+kg
+/C0 1) make this approach so far only partially successful
+[Sabine et al., 1999; Peng et al., 1998, 2003; McNeil et al.,
+2001]. An ongoing program to resample many of the cruise
+tracks that were sampled during the WOCE/JGOFS era
+will vastly expand the opportunities in the future to detect
+t h ei n c r e a s eo fa n t h r o p g e n i cC O
+2 in the ocean over time.
+An alternative approach to assess the uptake of an-
+thropogenic CO2 by the ocean is estimate the exchange
+of CO 2 across the air-sea interface (see ﬁgure 8.1.1).
+Although the ﬂux at any given location represents the
+superposition of a preindustrial (i.e., natural) ﬂux and
+the anthropogenic perturbation ﬂux, the globally inte-
+grated air-sea ﬂux should be equal to the total oceanic
+uptake of anthropogenic CO
+2 plus a global net air-sea
+ﬂux of natural CO2 associated with the balance between
+riverine input of organic and inorganic carbon and sea-
+ﬂoor burial [ Sarmiento and Sundquist , 1992] (see ﬁgure
+10.1.1).
+We can estimate the level of the observational chal-
+lenge associated with this approach by computing the
+partial pressure of CO
+2 difference across the air-sea
+interface associated with the anthropogenic CO 2 up-
+take. Current estimates of the globally integrated oce-
+anic uptake of anthropogenic CO
+2 uptake are about
+2P gCy r/C0 1, or 1.6 /C1 1014 mol C yr/C0 1 [Prentice et al., 2001].
+Dividing this estimate by the ocean area of about
+360/C2 10
+12 m/C0 2 gives a mean anthropogenic CO 2 ﬂux,
+Fant, of about 0.5 mol m /C0 2 yr/C0 1. Using the air-sea ﬂux
+equation (10.2.14) and solving it for the partial pressure
+difference gives
+DpCOant
+2
+¼ Fant
+kg
+¼ 0:5 mol m/C0 2 yr/C0 1
+0:065 mol m/C0 2 yr/C0 1 latm/C0 1 /C25 8 latm
+(10:2:17)
+where we used the globally averaged kg of 0.065
+mol m/C0 2 yr/C0 1 matm/C0 1 given in table 3.3.3.
+406
+Chapter 10

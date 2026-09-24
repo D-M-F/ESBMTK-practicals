@@ -1,0 +1,123 @@
+tion of CO 2-consuming weathering processes on land
+[Archer et al. , 1997].
+This simulation reveals that it takes about 400 years
+for the ﬁrst half of the initial pulse to disappear, and
+that it takes another 1000 years for an additional 25% of
+the initial pulse to be removed from the atmosphere.
+This simulation also shows that after the ﬁrst 1000
+years, the oceanic uptake that is driven by the solution of
+atmospheric CO
+2 in seawater and reaction with CO 2/C0
+3
+becomes negligible, and that neutralization of the CO 2
+by reaction with CaCO 3 on the sea ﬂoor becomes dom-
+inant. At the same time, reaction of atmospheric CO 2
+with CaCO 3 on land begins to be a relevant removal
+process. After 30,000 years, the contribution of these two
+processes becomes small, and most of the removal of the
+initial pulse is governed by the consumption of atmo-
+spheric CO
+2 by weathering of silicate rocks on land.
+In summary, for an atmospheric CO 2 pulse of 1000
+Pgc, chemical buffering by the inorganic carbon chem-
+istry of the seawater sequesters about 80% on time-
+scales of several hundred years, with the exact fraction
+depending on the size of the pulse (see ﬁgure 10.2.2)
+[Archer et al., 1997]. Neutralization of CO
+2 with the cal-
+cium carbonate on the sea ﬂoor accounts for an additional
+10% decrease in the atmospheric CO
+2 pulse on a time-
+scale of about 4000 years. Reaction with CaCO3 on land
+contributes 2%, with a timescale of about 10,000 years.
+After several tens of thousands of years, about 8% of the
+initial pulse remains in the atmosphere. On timescales of
+several hundred thousands of years, this remaining CO
+2
+will react with igneous rocks on land, so that the entire
+initial pulse will disappear from the atmosphere on
+timescales approaching a million years. What determines
+the dynamics of these removal processes, particularly
+those associated with the buffering by the ocean?
+Ocean Uptake and Buffering with
+Dissolved Carbonate
+Let us ﬁrst consider ocean uptake only, i.e., the removal
+of an atmospheric CO
+2 perturbation driven solely by the
+dissolution of CO 2 into seawater and subsequent reac-
+tions with the CO 2/C0
+3 ions. There are two possible rate-
+limiting steps that determine the kinetics of the ocean
+uptake: air-sea gas exchange and transport of CO
+2 from
+the surface layers into the interior of the ocean. We have
+seen in chapter 8 that the characteristic time for a 40 m
+deep surface layer to reach equilibrium with the atmo-
+sphere by air-sea gas exchange is about 6 months. This
+is much smaller than the timescale of the anthropogenic
+perturbation, which has an e-folding time of several
+decades, the exact value depending on the time period
+considered. One can therefore expect that air-sea ex-
+change is generally not the rate-limiting step for the
+oceanic uptake of anthropogenic CO
+2 from the atmo-
+sphere. This is conﬁrmed by model simulations of
+oceanic uptake, which demonstrate a modest response
+of only approximately 10% to a doubling or halving of
+the gas exchange coefﬁcient (see table 3.3.4).
+It therefore must be the downward transport of the
+anthropogenic CO
+2 burden from the surface into the in-
+terior of the ocean that is the rate-limiting step for the
+CO
+2 uptake by the oceans. In chapter 2, we were able to
+establish with the help of several tracers that the time-
+scale for the ventilation of the thermocline is between a
+couple of years and decades, while the ventilation time-
+scale for the deep ocean is several hundred years. Given
+this long timescale for deep water ventilation, it becomes
+obvious that the time required for an atmospheric CO
+2
+pulse to reach equilibrium in an ocean-atmosphere sys-
+tem must be on the order of a thousand years or more.
+We can investigate the transport of anthropogenic
+CO
+2 out of the surface layer into the interior of the
+ocean by inspecting how quickly a pulse of anthropo-
+Ocean invasion
+Sea-floor 
+         CaCO
+3
+Terrestrial CaCO3
+Silicate weathering
+0 10,000 20,000 30,000 40,000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0Atmospheric Pulse Response
+0 10,000 20,000 30,000 40,000
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0Fractional uptake
+Time (years)
+a
+b
+Figure 10.2.3: Time series of (a) atmospheric pulse response
+function, (rs = dNML=dNML
+Initial) and of (b) instantaneous fractional
+contributions of four different processes to the sequestration. The
+four processes are ocean invasion, reaction of the anthropogenic CO
+2
+with mineral calcium carbonates at the sea ﬂoor, reaction with cal-
+cium carbonates on land, and sequestration by silicate weathering.
+Note that the exact shape of the atmospheric pulse response depends
+on the size of the pulse because of the nonlinearity of the oceanic
+buffer factor. This pulse here has been calculated for a pulse size of
+3000 Pg of carbon. Based on results by Archer et al. [1997].
+403
+Carbon Cycle, CO 2, and Climate

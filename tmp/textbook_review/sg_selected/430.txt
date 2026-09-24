@@ -1,0 +1,67 @@
+1984 1986 1988 1990 1992 1994 1996 1998 2000 2002
+300
+340
+380
+pCO2 (µatm)
+1.2
+1.4
+1.6
+1.8δ
+13
+Coc (per mil)
+2290
+2300
+2310
+2320
+sAlk (µmol kg
+-1
+)
+1940
+1960
+1980
+2000 sDIC (µmol kg
+-1
+)
+Dore et al.
+CDRG: 0-20m
+CDRG: 20-25m
+1984 1986 1988 1990 1992 1994 1996 1998 2000 2002
+300
+340
+380
+pCO2 (µatm)
+1.0
+1.2
+1.4
+1.6
+δ
+13
+C (per mil)
+2270
+2280
+2290
+2300
+sAlk (µmol kg
+-1
+)
+1920
+1940
+1960
+1980 sDIC (µmol kg
+-1
+)
+CDRG: Station ’S’
+CDRG: BATS
+Bates: BATS
+sDIC
+δ
+13C
+pCO2
+sAlk
+BERMUDA HAWAII
+Figure 10.2.5 Upper ocean time series of DIC, Alk, the 13C/12C ratio of DIC, and calculated oceanic pCO2 from BATS (Bermuda) and HOT (Hawaii). The DIC and Alk
+concentrations have been normalized to a constant salinity in order to remove the effect of freshwater ﬂuxes. Distinct long-term trends are visible i n sDIC, oceanic pCO2,
+and the 13C/12C ratio of sDIC, owing to the uptake of anthropogenic CO2 from the atmosphere. Also shown are the atmospheric pCO2, indicating that the oceanic pCO2 is
+roughly following the atmospheric trends. The trend of oceanic pCO2 (non-salinity nomalized) is slightly elevated at HOT, likely the result of a combination of climate
+variability–induced changes in rainfall patterns and water mass changes that occured there around 1996/1997 (seeDore et al. [2003] and Keeling et al. [2004] for discussion).
+Data are from Gruber et al. [2002] and Keeling et al. [2004].

@@ -1,0 +1,54 @@
+phosphate, and 16:1 for nitrate to phosphate. Compute the pCO2 of this water
+sample after
+a. it has been brought to the surface,
+b. it is warmed to T ¼ 26
+/C14 C,
+c. all phosphate is removed by net formation of organic matter, and
+d. its Alk is adjusted to 2310 mmol kg
+/C0 1 by the formation of CaCO 3 (re-
+member to remove DIC also).
+Hint: Use the lookup table to compute the oceanicpCO2 for a given DIC and Alk
+rather than employing approximation (8.3.3). However, it is safe to use approxi-
+mation (8.3.4) for making the temperature correction.
+8.15 Figures 8.3.12 and 8.3.13 show the seasonal cycles of pCO
+2 for the Atlantic
+and Paciﬁc Oceans, respectively. Compare these two seasonal cycles and
+relate the differences to what you have learned about the seasonal dynamics
+of surface production in these two areas.
+8.16 The seasonal cycle of pCO
+2 in the subtropical gyres appears to be determined
+primarily by the seasonal variation of sea-surface temperature, with a partially
+compensating effect due to variations in DIC (see ﬁgure 8.3.10). Discuss how
+sea-surface pCO
+2 in these regions would change in response to a positive SST
+anomaly of 1 /C14 C and a negative DIC anomaly of 1 mmol m /C0 3. (Hint: Use the
+temperature and DIC sensitivities of pCO2 given by (8.3.4) and (8.3.14) to
+compute the change in pCO2. Also use the mean concentrations of DIC and
+Alk for the low-latitude ocean given in table 8.2.4.)
+8.17 Describe the main features of the DpCO2 distribution shown in ﬁgure 8.1.1.
+Explain and discuss the reasons for this distribution. In particular, why are
+the tropical regions supersaturated and the high latitudes undersaturated
+with respect to atmospheric CO
+2?
+8.18 Discuss how ocean biology impacts the air-sea exchange of CO 2. In particular,
+address whether the strength or the efﬁciency of the biological pump is more
+relevant for controlling the air-sea ﬂux of CO
+2. Explain the basis for your choice.
+8.19 Figure 8.1.3 shows the sDIC distribution along the meridional overturning
+circulation.
+a. Describe the main features of this distribution.
+b. Often, the term ‘‘pumps’’ is used to describe processes that affect the
+distribution of sDIC. Name the three major pumps and describe brieﬂy
+how they work.
+c. Relate the observations that you described in (a) to the action of the
+three pumps.
+8.20 Speculate about the effects of an increase in the efﬁciency of nutrient utili-
+zation in the Southern Ocean on the vertical distribution of the gas exchange
+component DC
+gas ex .
+8.21 During the Younger Dryas, a period of abrupt cooling in the northern
+hemisphere about 11 kyr ago, deep water formation in the North Atlantic
+reduced dramatically. Discuss what impact this might have had on DIC and
+the different pump components in the deep Atlantic.
+358
+Chapter 8

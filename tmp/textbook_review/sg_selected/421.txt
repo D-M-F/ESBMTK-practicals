@@ -1,0 +1,53 @@
+ing rate. Including this effect in fully coupled ocean-
+atmosphere-land surface climate model simulations
+[e.g., Mitchell et al. , 2001] gives a present warming esti-
+mate that is very close to the observed one (ﬁgure
+10.1.5). The ﬂip side of this effect is that if the growth
+in radiative forcing were stopped at current levels, the
+Earth would continue to warm up until the equilibrium
+warming was reached.
+While the remainder of this chapter is devoted to
+CO
+2, it is important to recall that of the anthropogenic
+greenhouse gases shown in table 10.1.1, N 2O also has
+important oceanic sources and sinks (see also chapters
+3 and 5). Its oceanic source is estimated to be 3.7 to
+4.3 Tg N yr
+/C0 1 [Nevison et al. , 2004], compared with total
+sources of 4 to 12 Tg N yr/C0 1 in preindustrial times, and 13
+to 20 Tg N yr/C0 1 today [Prather et al. , 2001]. The chloro-
+ﬂuorocarbons have found important use in oceanogra-
+phy as tracers of water motion (see chapter 2), but their
+net uptake by the oceans is negligible because of their
+very low solubility and chemical inertness (see chapter 3).
+Outline
+This chapter is organized as follows. We ﬁrst address the
+anthropogenic CO
+2 perturbation over the last two hun-
+dred years. We will discuss in particular the reasons for
+1860 1920 19001880 1940 2000 19801960
+0.50
+0.25
+-0.50
+0.00
+-0.25
+0.50
+0.25
+-0.50
+0.00
+-0.25
+0.50
+0.25
+-0.50
+0.00
+-0.25
+NORTHERN HEMISPHERE
+SOUTHERN HEMISPHERE
+GLOBAL
+Temperature anomalies (°C)Temperature anomalies (°C)
+Temperature anomalies (°C)
+Figure 10.1.5: Observed warming from 1850 to 2002. Shown are the anomalies relative to the period 1961–1990. The global mean
+remained essentially constant from 1856 to the 1910s. A ﬁrst warming of 0.3 /C14 C occurred through the 1940s, followed by a slight cooling.
+From the early 1970s to the present, the warming exceeded 0.5 /C14 C. Data from Jones and Moberg [2003].
+398
+Chapter 10

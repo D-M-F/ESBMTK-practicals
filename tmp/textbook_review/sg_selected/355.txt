@@ -1,0 +1,111 @@
+As we have discussed in detail in chapter 4, organic
+matter is produced in the uppermost sunlit layers of the
+ocean. A fraction of the organic matter is exported to the
+deeper layers through settling particles or advection of
+dissolved organic carbon. This leads to a net consumption
+of CO
+2 in these upper layers. Upon remineralization of
+this organic matter in the deeper layers, this CO 2 is re-
+turned to the seawater. Thus these biological processes
+lead to a net transfer of inorganic carbon from the surface
+into the abyss. This process is often termed the ‘‘soft-
+tissue’’ pump [Volk and Hoffert, 1985]. In a steady state,
+this net downward ﬂux has to be compensated by a net
+upward ﬂux of inorganic carbon by transport processes.
+The second biological reaction of great importance for
+carbon cycling is the biogenic formation and dissolution
+of calcite or aragonite:
+Ca2 þ þCO2/C0
+3 Ð CaCO3 (8:3:13)
+The formation and dissolution of mineral calcium
+carbonates changes Alk twice as much as it changes
+DIC. This is best understood by considering the charge
+balance deﬁnition of Alk (equation (8.2.9)), which
+shows that a 1 mol reduction in the concentration of
+Ca
+2þ results in a 2 mol change in Alk. Mineral calcium
+carbonate shells are formed in the upper layers of the
+ocean mainly by three groups of organisms: cocco-
+lithophorids, foraminifera, and pteropods. The ﬁrst
+group are phytoplankton, whereas the second and third
+groups are zooplankton (see panels 4.2.2 and 4.2.3,
+respectively). Upon the death of these organisms, their
+shells sink and eventually dissolve, either in the water
+column or in the sediments, except for a small fraction
+that is buried permanently. The net effect of this pro-
+cess is a downward transport of DIC and Alk from the
+surface ocean into the abyss. This process is often
+dubbed the ‘‘carbonate pump.’’
+The large inﬂuence of the biological pumps on pCO
+2
+can be dramatically demonstrated by the following
+thought experiment after Broecker and Peng [1982] (see
+table 8.3.2). We take a typical deep water parcel and bring
+it to the surface, adjusting its properties to typical low-
+latitude values (see table 8.2.4). After the sample is
+warmed from 1.8
+/C14 Ct o2 3 /C14 C, it has a pCO2 in excess of
+1200 matm. Next, we remove all phosphate present and
+form organic matter, thus removing DIC from the wa-
+ter and adding Alk in proportion to the change in ni-
+trate, assuming a constant nitrate to phosphate ratio
+of 16:1. What pCO
+2 does this water parcel have after
+these changes? In order to compute the answer, we have to
+know the sensitivity ofpCO
+2 to changes in DIC and Alk.
+We estimate the sensitivity of pCO2 to changes in the
+DIC and Alk content of seawater by considering (8.3.3).
+This equation tells us that pCO2 decreases when DIC
+decreases, but that pCO2 increases for a decrease in Alk.
+The magnitude of these changes in pCO2 depends
+strongly on the relative proportions of the DIC and Alk
+concentrations (see ﬁgure 8.3.5). To evaluate this more
+quantitatively, we investigate the following two dimen-
+sionless sensitivities:
+gDIC ¼ DIC
+pCO2
+@pCO2
+@DIC ¼ @ ln pCO2
+@ ln DIC (8:3:14)
+gAlk ¼ Alk
+pCO2
+@pCO2
+@Alk ¼ @ ln pCO2
+@ ln Alk (8:3:15)
+We will refer to the sensitivity ofpCO2 to changes inDIC
+as the ‘‘buffer factor’’ or ‘‘Revelle factor’’ [ Takahashi
+et al., 1980] after Roger Revelle, who was among the ﬁrst
+to point out the importance of this sensitivity for the
+oceanic uptake of anthropogenic CO
+2. By analogy, we
+will refer to the alkalinity sensitivity, gAlk, as the alkalin-
+ity factor. We can estimate these factors by calculating
+the partial derivatives using the approximation (8.3.3).
+With some modiﬁcations we arrive at:
+gDIC /C25 3 /C1 Alk /C1 DIC /C0 2 /C1 DIC 2
+(2 /C1 DIC /C0 Alk)(Alk /C0 DIC ) (8:3:16)
+gAlk /C25/C0 Alk2
+(2 /C1 DIC /C0 Alk)(Alk /C0 DIC ) (8:3:17)
+Table 8.3.2
+Changes in pCO
+2 as a typical water parcel from the deep sea is moved to the surface and adjusted to
+typical low-latitude surface values (see table 8.2.4 for values)
+(1) (2) (3)
+(4) (5)
+Deep Water Move to Surface Warm Up
+Formation of
+Organic Matter
+Formation of
+CaCO3
+Pressure (atm) 400 1 1 1 1
+Temp (
+/C14 C) 1.8 1.8 23 23 23
+PO4 (mmol kg/C0 1) 2.1 2.1 2.1 0 0
+DIC (mmol kg/C0 1) 2298 2298 2298 2058 1994
+Alk (mmol kg/C0 1) 2400 2400 2400 2433 2305
+pCO2 (matm) 510 1220 293 348
+The changes in DIC and Alk due to the removal of organic matter and the loss of CaCO 3 were calculated using the
+stoichiometry of Anderson and Sarmiento [1994].
+332
+Chapter 8

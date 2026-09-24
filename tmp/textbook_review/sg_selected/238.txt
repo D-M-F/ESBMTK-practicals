@@ -1,0 +1,51 @@
+and one outﬂow. The inﬂowing waters are found to have an AOU of
+140 mmol m/C0 3, and the outﬂowing waters an AOU of 200 mmol m/C0 3. The
+ﬂow rate of the inﬂowing waters has been determined from a 14C budget and
+estimated to be about 5 Sv (5 /C2 106 m3 s/C0 1). The volume of the deep Indian
+Ocean is about 8.0 /C2 1016 m3.
+a. Draw a schematic of the circulation of the deep Indian Ocean.
+b. Derive a mass conservation equation for AOU in the deep Indian Ocean.
+c. Assume steady state and solve the mass conservation equation for the
+oxygen utilization rate ( OUR) in units of mmol m
+/C0 3 y/C0 1.
+d. Discuss the result found in (c) and compare it with the estimates of
+OUR in the deep Atlantic and deep Paciﬁc given in table 5.2.1.
+5.8 Figure 5.3.8 shows very low N* values in the thermocline of the northern
+Indian Ocean and in the thermocline of the eastern tropical Paciﬁc.
+a. Deﬁne and discuss the meaning of N*.
+b. What process is most likely responsible for generating these low N*
+values?
+c. Discuss the occurrence of these low N* values in relation to what
+you know about large-scale ocean circulation and ocean reminera-
+lization.
+5.9 Observations show that the oxygen content of the main thermocline of
+the Paciﬁc Ocean has decreased in recent decades. Global climate change
+simulations indicate that the buildup of greenhouse gases in the
+atmosphere may lead to a slowdown of the ventilation of thermocline
+waters, and it has been suggested by some scientists that this may be the
+cause of the oxygen decrease. Answer the following questions assuming
+that such a slowdown of the thermocline ventilation has indeed occurred.
+Base your answer on the thermocline ventilation diagram shown in ﬁgure
+2.3.9, i.e., assume that you can represent an isopycnal layer as a single slab
+with a single outcrop.
+a. Suppose that the export of organic matter from the surface to the
+isopycnal surfaces of the main thermocline remains unaffected by
+the ventilation slowdown. What kind of change would you expect for
+the oxygen and AOU concentrations in the thermocline?
+b. Now suppose that the biological export production decreased as a result
+of this slowdown, because of the smaller vertical supply of nutrients to
+the surface euphotic zone. What kind of effect do you expect now for
+oxygen and AOU?
+c. Finally, global climate change not only affects the thermocline venti-
+lation, but also leads to a warming of the waters. How does the warming
+of the waters affect oxygen and AOU?
+5.10 Iron fertilization has been proposed as a way to increase the export production
+of organic matter out of the surface ocean, with the goal of thereby inducing an
+uptake of CO
+2 from the atmosphere. Given what you have learned about the
+cycling of N2O in the ocean, discuss the potential implications of an increase in
+export production on the marine production of N 2O.
+5.11 This problem asks you to separate the phosphate concentration into
+remineralized and preformed concentrations and explain the resulting
+223
+Export and Remineralization

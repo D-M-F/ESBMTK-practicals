@@ -1,0 +1,161 @@
+separation tends to be larger, because of higher accu-
+mulation rates. The buffering of the protons freed by
+remineralization is more effective as well, mainly be-
+cause of a generally higher degree of bottom water su-
+persaturation. Both effects will tend to lead to a decrease
+in the efﬁciency of respiration to drive CaCO
+3 dissolution
+in shallower waters [ Hales, 2003]. In order to investigate
+this coupling between the different reactions and their
+interaction with diffusion and advection more quantita-
+tively, we need a sediment model of early diagenesis,
+which we will develop and apply in the next section.
+Modeling C aCO
+3 Diagenesis
+Chapters 6 and 7 provide us with most of the building
+blocks that we need to construct a model describing
+CaCO
+3 diagenesis. Since we are especially interested in
+investigating the role of organic matter remineralization
+on the dissolution of CaCO
+3, we start out with the model
+that we developed for organic matter diagenesis. We
+need to add the CaCO
+3-speciﬁc reactions and equa-
+tions, i.e., a reaction equation for mineral CaCO 3, and
+diffusion-reaction equations for all dissolved species of
+the carbonate system in seawater, i.e., CO
+2/C0
+3 , HCO/C0
+3
+, and
+H2CO*
+3
+. The three equations for CO 2/C0
+3 , HCO /C0
+3
+, and
+H2CO*
+3
+are coupled to each other by the dissociation
+reactions of the carbonate system in seawater (reactions
+8.2.1 to 8.2.3). Since these dissociation reactions are very
+rapid, we can assume equilibrium for all practical pur-
+poses. Finally, we have to add conservation equations for
+DIC and Alk, as well as boundary conditions for DIC and
+Alk. The complete set of equations is given in table 9.4.2.
+These will now be discussed in more detail.
+We begin with the equation describing the CaCO
+3
+content in the sediments. As is the case for organic
+matter, we have to take into account three processes:
+slow downward movement caused by the continuous
+deposition of fresh particles at the sediment water in-
+terface, bioturbation, and dissolution/remineralization
+reactions. The ﬁrst two processes can be handled
+identically to the organic matter equation (6.2.1), but
+unlike the remineralization of organic matter, dissolu-
+tion of mineral CaCO
+3 is a purely chemical process. We
+adopt (9.3.7) for sediments by taking the porosity f into
+account, and expressing the CaCO 3 concentration in
+terms of solids. This gives:
+@(1/C0 f)[CaCO3]
+@t ¼/C0 kCaCO3 /C1 [CaCO3](1 /C0 f)(1 /C0 O)n (9:4:2)
+where [CaCO 3] is the concentration of CaCO 3 in units
+of mmol m /C0 3 of solids.
+We turn next to the solute equations for CO 2/C0
+3 ,
+HCO/C0
+3
+and H 2CO*
+3
+. Boudreau [1987] pointed out that
+neglecting the reversible dissociation reactions between
+CO
+2/C0
+3 , HCO /C0
+3
+, and H 2CO*
+3
+results in a signiﬁcant un-
+derestimation of the diffusive transport. This underes-
+timation occurs because each inorganic carbon species
+is diffusing separately, experiencing a different spatial
+concentration gradient. For example, a fraction of the
+CO
+2/C0
+3 produced by the dissolution of CaCO 3 goes into
+HCO/C0
+3
+and H 2CO*
+3
+, which are then transported away
+independently of the diffusion of the CO 2/C0
+3 ion.
+Remineralization of organic matter in the sediments
+produces H 2CO*
+3
+. Hence the organic matter degrada-
+tion term from the organic matter equation appears as
+a source in the reaction-diffusion equation for H
+2CO*
+3
+(see table 9.4.2). By contrast, the dissolution of CaCO 3
+releases CO 2/C0
+3 ions. Therefore, the dissolution term
+from the CaCO 3 equation needs to be included in the
+CO2/C0
+3 equation. In addition, the three governing equa-
+tions for CO 2/C0
+3 ,H C O/C0
+3
+, and H 2CO*
+3
+are linked to each
+other by inorganic carbon system reactions in order to
+maintain chemical equilibrium. These exchange terms
+are denoted by R
+pH.
+To solve the system of equations of our diagenetic
+model, we need to specify dissociation constants, deﬁne
+DIC and Alk, and specify boundary conditions for all
+solutes and solids. In particular, we need to provide the
+rain rates of particulate organic matter and mineral
+CaCO
+3 as boundary conditions.
+Several similar CaCO 3 diagenesis models have been
+developed by various investigators [ Archer, 1991, 1996a;
+Archer et al ., 1989; Jahnke et al ., 1994; Hales and Emer-
+son, 1996] with varying details. The most important
+difference in the models is the absence or inclusion of
+anoxic remineralization of organic matter.
+Model Applications
+One of the goals of constructing this diagenetic model
+was to assess the importance of calcite dissolution driven
+by metabolic processes relative to that driven by bottom
+water undersaturation. This can best be assessed by
+simulating two extreme cases and then comparing them
+to the pore water pH proﬁles shown in ﬁgure 9.4.5. In
+the ‘‘no dissolution’’ case, the simulation includes only
+organic matter remineralization and no dissolution of
+CaCO
+3 is permitted to occur. In the ‘‘no CO2’’ case, there
+is no remineralization and calcite dissolves only in re-
+sponse to bottom water undersaturation.
+The results of these two cases applied to the three
+sites on the Ontong-Java Plateau is plotted over the
+observations in ﬁgure 9.4.5. The two curves for the two
+scenarios represent upper and lower bounds of solu-
+tions when the input parameters are varied within their
+uncertainties. Neither of these cases can correctly re-
+produce the in situ pH observations. In the ‘‘no disso-
+lution’’ case, the simulated pH decreases rapidly with
+depth, since the H
+2CO*
+3
+added by remineralization
+of organic matter does not get neutralized by CaCO 3
+dissolution. In the ‘‘no CO 2’’ case, the modeled pH
+379
+Calcium Carbonate Cycle

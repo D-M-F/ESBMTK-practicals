@@ -1,0 +1,71 @@
+that the terms on the right-hand side have their signs
+reversed, i.e., n /C1 ([PO
+3/C0
+4 ]d /C0 [PO3/C0
+4 ]s) /C0 FP.T h es i g n sa r e
+reversed because the nutrient supply by volume exchange
+now brings in water with deep concentration and removes
+water with the surface concentration, and the ﬂux of or-
+ganic matter is out of the box. The steady-state solution to
+(1.2.1) is simple: the ﬂux of organic phosphorus from the
+surface to the abyss is equal to the net transport of inor-
+ganic phosphorus from the abyss to the surface:
+FP ¼ n /C1 ([PO3/C0
+4 ]d /C0 [PO3/C0
+4 ]s)( 1 :2:2)
+Note that this equation does not say anything about the
+mechanism by which organic phosphorus is produced by
+organisms. It merely states that we can determine the ﬂux
+of organic phosphorus from the surface ocean if we know
+n, [PO
+3/C0
+4 ]d, and [PO 3/C0
+4 ]s. The concentrations are mea-
+sured, with deep ocean phosphate being 2.1 mmol m /C0 3
+and surface phosphate being near 0 over most of the
+ocean. However, this leaves us with one additional un-
+known, n. The equation therefore cannot be solved
+without an additional constraint. We can try using the
+0 m
+PHYTOPLANKTON
+SURFACE OCEAN
+THERMOCLINE AND DEEP OCEAN
+BACTERIA
++ 
+ZOOPLANKTON
+~100 m
+TRANSPORT
+AND TRANSPORT
+SETTLING
+LIGHT
+DISSOLVED CO2
+& 
+NUTRIENTS
+ORGANIC MATTER
+&
+OXYGEN
+DISSOLVED CO2
+& 
+NUTRIENTS
+ORGANIC MATTER
+&
+OXYGEN
+Figure 1.2.2: A schematic illustration of the role of biology in the oceans. Phytoplankton make organic matter from
+dissolved carbon dioxide and nutrients using light as a source of energy. Most of this organic matter is recycled within
+the surface by phytoplankton and various other organisms such as zooplankton and bacteria (see chapter 4). Eventually
+some of this organic carbon settles out or is transported below the surface ocean past a depth of about 100 m, below
+which light is insufﬁcient for photosynthesis. Biological processes in the deep ocean consume the organic matter and
+oxygen, eventually converting it back into dissolved carbon dioxide and nutrients. The loop is closed by transport of these
+inorganic substances back into the surface ocean.
+Cs
+Cd
+SURFACE
+DEEP
+Φν
+Figure 1.2.3: Schematic of a two-box model of the ocean. The organic
+matter ﬂux F has units of mol s /C0 1. The volumetric exchange rate
+v has units of m 3 s/C0 1. We ignore river input into the surface of the
+ocean and loss to the sediments, both of which are negligible
+compared to the ﬂuxes between the two boxes.
+Introduction
+11

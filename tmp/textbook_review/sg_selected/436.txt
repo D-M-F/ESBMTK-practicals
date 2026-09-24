@@ -1,0 +1,113 @@
+net sink of the terrestrial biosphere of 61 to 141 Pg C. Our
+oceanic sink estimate thus suggests that the ocean has
+taken up about between 27% and 34% of the total an-
+thropogenic CO
+2 emissions, making it the most impor-
+tant sink for anthropogenic CO2 next to the atmosphere.
+The Atmospheric Oxygen Method
+The anthropogenic CO
+2 inventory method permitted
+us to develop an anthropogenic CO 2 budget for the
+Anthropocene, but we are equally interested in con-
+straining the budget for the last few decades. In the
+absence of direct measurements of the global oceanic
+increase in DIC, a very elegant method to constrain the
+oceanic uptake of anthropogenic CO
+2 since the early
+1990s is based on simultaneous measurements of at-
+mospheric oxygen and CO
+2 pioneered by Keeling and
+Shertz [1992].
+The method builds upon the fact that O2 and CO2 are
+tightly coupled during the formation and oxidation of
+organic matter (including the burning of fossil fuels), but
+that these two gases are exchanged independently be-
+tween the ocean and atmosphere. If one then assumes
+that the long-term exchange of O
+2 with the ocean is zero
+or is small and can be estimated from independent
+sources, one ends up with two balance equations and two
+unknowns (the exchange of CO
+2 with the ocean and land
+biosphere, respectively), which can be solved.
+We begin with the mass balance equations for at-
+mospheric O2 and CO2:
+@NO2
+@t ¼ Ffoss(O2) þ Fas(O2) þ Fab(O2) (10 :2:27)
+@NCO2
+@t ¼ Ffoss(CO2) þ Fas(CO2) þ Fab(CO2) (10 :2:28)
+where NO2 and NCO2 are the number of moles of atmo-
+spheric O2 and CO2, respectively, and where Ffoss is the
+fossil fuel emission of CO 2 and corresponding con-
+sumption of O 2, Fas is the exchange ﬂux between the
+atmosphere and ocean, and Fab is the exchange ﬂux
+between the atmosphere and land biosphere (all ﬂuxes
+have units of mol yr
+/C0 1). In the case of the fossil fuel
+emissions and the exchange with the land biosphere,
+the O
+2 and CO2 ﬂuxes are linked stoichiometrically:
+Ffoss(O2) ¼ rfoss
+O2:CFfoss(CO2) (10 :2:29)
+Fab(O2) ¼ rterr
+O2:CFab(CO2) (10 :2:30)
+where r foss
+O2:C is about /C0 1.4, and rterr
+O2:C about /C0 1.1 [Keeling
+and Shertz, 1992; Keeling et al., 1996; Severinghaus, 1995].
+The concurrent measurements of atmospheric CO 2
+and O2 constrain @NO2 =@t and @NCO2 =@t; and fossil fuel
+emissions of CO 2 are relatively well known [e.g., Mar-
+land et al. , 1998]. If we assume that the natural carbon
+and oxygen cycles in the ocean have remained in steady
+80°N
+60°N
+40°N
+20°N
+20°S
+Eq
+80°S
+40°S
+60°S
+20°E 60°E 100°E 140°E 180° 140°W 60°W 100°W 20°W 20°E
+3.0
+7.6
+2.8
+4.1
+7.4
+2.3
+1.9
+6.3
+23.8
+1.8
+8.4
+3.0
+14.0
+8.4
+0.5
+1.4
+0.3
+3.8
+2.0
+4.3
+3.3
+Bold: Ocean Transport in Pg C
+Roman: Air-Sea Fluxes in Pg C
+12.7
+0.4
+Italics: Storage in Pg C 4.0
+17.6 5.4
+9.5 5.9
+4.18.8
+7.9
+4.6
+7.9
+6.4
+13.1
+2.5
+4.4
+Figure 10.2.9: Map of anthropogenic CO 2 inversion results. Shown as roman numbers are the estimated time-integrated uptake ﬂuxes
+(1750–1994). The italic numbers refer to the reconstructed inventories. The arrows depict the time-integrated lateral ﬂuxes, computed by
+difference. Based on Gloor et al. [2003].
+413
+Carbon Cycle, CO 2, and Climate

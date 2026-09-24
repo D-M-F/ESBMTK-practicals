@@ -1,0 +1,146 @@
+this section to separate DCsoft, DCcarb, and DCgas ex (see
+ﬁgure 8.4.1). At the same time, we will attempt to esti-
+mate the magnitude of each of these components, using
+a combination of observations and model results.
+We start again with an ocean with a realistic tem-
+perature distribution, but without biology. We have seen
+that without air-sea gas exchange, this ocean would have
+a uniform sDIC distribution. We then turn on inﬁnitely
+rapid air-sea exchange and let the ocean fully equilibrate
+with a ﬁxed atmospheric pCO
+2 of 280 matm (ﬁgure
+8.4.1b). The difference between this case and the no-
+gas-exchange case is the contribution of the potential
+DC
+therm
+gas ex pump (also called ‘‘potential solubility pump’’
+[Murnane et al., 1999]). The potential DCtherm
+gas ex component
+can be estimated directly from data by computing the
+sDIC concentration in equilibrium with a preindustrial
+atmospheric pCO
+2 of 280 matm and assuming constant
+salinity-normalized total alkalinity. The resulting mean
+global surface-to-deep gradient of DC
+therm, pot
+gas ex amounts to
+about 155 mmol kg/C0 1 (ﬁgure 8.4.4).
+What happens if we then scale down air-sea gas ex-
+change to realistic values? As it takes about 6 months to
+equilibrate DIC in a 40 m-deep surface layer with the
+atmosphere (see discussion in section 8.3 above), and
+typical residence times of surface waters are between a
+few days to a few years, the CO
+2 system in surface
+waters generally does not achieve equilibration with the
+atmosphere. Therefore, the potential thermal gas ex-
+change pump cannot be achieved fully (ﬁgure 8.4.1),
+resulting in a reduced vertical sDIC gradient (ﬁgure
+8.4.4), with the difference being the kinetic DC
+therm
+gas ex ef-
+fect. Unfortunately, we cannot estimate the kinetic
+DC
+therm
+gas ex component directly from observations, but
+simulations by Murnane et al . [1999] indicate that the
+slow kinetics of CO 2 exchange reduces DCtherm
+gas ex by
+90 mmol kg/C0 1 (see ﬁgure 8.4.4), suggesting that the slow
+kinetics of air-sea gas exchange plays an important role.
+Toggweiler et al . [2003] pointed out, however, that this
+particular model may tend to overestimate the kinetic
+effect and that the true thermal DC
+gas ex gradient might
+be somewhat closer to the potential thermal DCgas ex
+gradient, DCtherm, pot
+gas ex .
+We use our second and third thought experiments
+with an isothermal ocean and fully operational soft-
+tissue and carbonate pumps to elucidate the inﬂuence
+of biology on air-sea gas exchange (ﬁgure 8.4.1). We
+have seen above that, in the absence of air-sea gas ex-
+change, the interior ocean distribution of sDIC would
+be directly proportional to either phosphate (soft-tissue
+pump) or potential alkalinity (carbonate pump). If we
+turn on inﬁnitely rapid air-sea gas exchange, surface wa-
+ters will become fully equilibrated with a ﬁxed atmo-
+sphere of 280 matm.
+In the case of the soft-tissue pump, gas exchange in
+the high latitudes, where the elevated sDIC waters of
+the deep ocean come to the surface, would cause a loss
+of CO
+2 to the atmosphere, depleting the waters in sDIC
+relative to a case without gas exchange. Conversely, gas
+exchange in the low latitudes would lead to an uptake of
+CO
+2 from the atmosphere, as the biological ﬁxation of
+CO2 creates a deﬁcit of CO 2 relative to the atmosphere.
+Both changes lead to a reduction of the surface-to-deep
+gradient. We can estimate the resulting surface-to-deep
+gradient in sDIC from O
+2, as the cycling of CO 2 in the
+rapid gas exchange case would follow very closely that of
+O
+2, except for a small deviation caused by surface varia-
+tions in sAlk. The reason this works is because the surface
+concentration of O2 is generally very close to saturation,
+as expected in a case of inﬁnitely rapid air-sea gas ex-
+change. In particular, in an isothermal ocean with biol-
+ogy and inﬁnitely fast gas exchange, the interior distri-
+bution of sDIC would be directly proportional to the
+apparent oxygen utilization (AOU), with the proportion-
+ality given by the C:O
+2 ratio of organic matter reminer-
+alization. Thus, multiplying the mean global surface-to-
+deep AOU gradient with r
+C:O2 ¼ 117 : /C0 170 [Anderson and
+Sarmiento, 1994], and subtracting the result from DCsoft,
+i.e., the sDIC distribution that would exist in the absence
+of gas exchange, we arrive at a soft-tissue pump contri-
+bution to DC
+bio, pot
+gas ex of about /C0 145 mmol kg/C0 1.
+In the case of the carbonate pump, turning on inﬁ-
+nitely fast gas exchange would lead to an effect opposite
+to that in the case of the soft-tissue pump. As the high
+latitudes in such an ocean would have very high con-
+centrations of sAlk relative to sDIC due to the presence
+of a dissolution signal from the deep ocean, these wa-
+ters would tend to take up CO
+2 from the atmosphere.
+The low latitudes, in turn, would tend to lose CO 2 as
+the excess of CaCO 3 formation over dissolution drives
+oceanic pCO2 above that of the atmosphere (see ﬁg-
+ure 8.3.5). Therefore, the presence of air-sea gas ex-
+change enhances the surface-to-deep sDIC gradient in a
+case where the formation and dissolution of CaCO
+3 is
+the only biological process. This enhancement can be
+approximated by calculating the difference between
+the sDIC concentration in equilibrium with the atmo-
+sphere for a constant salinity-normalized alkalinity and
+the sDIC equilibrium concentration for the observed
+preformed alkalinity (taken from Gruber et al . [1996]).
+As it turns out, this enhancement, i.e., the carbonate
+pump contribution to potential DC
+bio
+gas ex , is almost an
+order of magnitude smaller than that of the soft-tissue
+pump, amounting to only about 15 mmol kg
+/C0 1. Adding
+the potential carbonate and soft-tissue pump compo-
+nents together, we arrive at a total contribution of
+DC
+bio, pot
+gas ex of /C0 130 mmol kg /C0 1 (ﬁgure 8.4.4).
+When we use a realistic air-sea gas exchange instead,
+the gas exchange–induced reduction of the imprint of
+the biological pumps is smaller (ﬁgure 8.4.4). This
+leads to a vertical sDIC gradient from the biological
+pumps and the DC
+bio
+gas ex pump that is somewhere be-
+tween the fully expressed biological pumps (ﬁgure
+348
+Chapter 8

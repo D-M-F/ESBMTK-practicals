@@ -1,0 +1,73 @@
+sea CO2 ﬂuxes induced by the two gas exchange pumps
+generally tend to oppose each other, similar to what we
+have seen for their inﬂuence on the ocean interior dis-
+tribution of sDIC in section 8.4 above.
+Our model-based conclusions about the relative roles
+of the two driving forces for the exchange of CO
+2 across
+the air-sea interface would be strengthened if we could
+demonstrate that the model with the combined pumps
+compares well with observationally based ﬂux esti-
+mates. The latter can be obtained by combining the
+observed air-sea pCO
+2 difference (see ﬁgure 8.1.1) with
+an estimate of the gas exchange coefﬁcient (see chapter
+3). Before we can undertake this comparison, we have
+to take into account that the anthropogenically driven
+increase of atmospheric CO
+2 has led to a substantial
+perturbation of the air-sea CO 2 ﬂuxes, which cannot be
+separated from the observed ﬂuxes. However, it is rel-
+atively straightforward to simulate these anthropogenic
+CO
+2 perturbation ﬂuxes (see chapter 10 below) in our
+model, as this simply requires the model to be run
+further forward in time, while changing the atmo-
+spheric CO
+2 concentration according to its observed
+time history. Figure 8.5.1b shows that the anthropo-
+genic perturbation ﬂux is directed into the ocean ev-
+erywhere, with largest magnitude in the regions where
+intermediate and deep waters come to the surface, i.e.,
+in the tropics, along upwelling margins, and in mid-
+and high-latitude regions with intense convection.
+-40
+-20
+0
+20
+40
+60
+thermal
+biological
+combined
+-40
+-20
+0
+20
+a
+b
+c
+90°S 60°S 30°S Eq 30°N 60°N 90°N
+-40
+-20
+0
+20
+40
+60
+model
+Takahashi et al. (2002)
+PRE-INDUSTRIAL
+ANTHROPOGENIC (1995)
+CONTEMPORARY (1995)
+outgassingingassing
+CO2 Flux (Mmol y-1 m-1)
+CO2 Flux (Mmol y-1 m-1)C O 2 Flux (Mmol y-1 m-1)
+outgassingingassing
+Figure 8.5.1: Zonally integrated sea-air exchange ﬂuxes for CO 2 (positive ﬂuxes denote outgassing from the ocean).
+(a) Model-simulated sea-air ﬂuxes of CO 2 induced by the thermal gas exchange pump, the biological gas exchange
+pump, and the sum of these two pumps. (b) Model-simulated sea-air ﬂux of anthropogenic CO 2 for 1995.
+(c) Model-simulated total sea-air ﬂux for 1995 in comparison to observationally derived ﬂuxes based on the DpCO2
+climatology of Takahashi et al . [2002] as estimated by Wanninkhof et al . [2002]. The model employed is the
+KVLOW-AILOW model as described by Gnanadesikan et al . [2002].
+353
+Carbon Cycle

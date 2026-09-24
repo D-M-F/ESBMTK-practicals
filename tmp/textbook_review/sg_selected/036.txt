@@ -1,0 +1,153 @@
+face of the cube in ﬁgure 2.1.1 and a ﬂux [ Fx þ
+(@ Fx=@x) /C1 Dx] /C1 Dy /C1 Dz leaving the right face of the
+cube. The effect of the diffusive ﬂux on the total
+amount of tracer in the box V /C1 (@C/@t) is obtained by
+subtracting the second expression from the ﬁrst, i.e.,
+V/C1 (@C=@t) ¼/C0 V/C1 (@ F
+x =@x). The derivation of similar
+expressions for the y- and z-directions gives:
+@C
+@t
+/C12
+/C12
+/C12
+/C12
+molecular diffusion
+¼/C0 @ Fx
+@x /C0 @ Fy
+@y /C0 @ Fz
+@z (2:1:4)
+Substituting (2.1.3) into (2.1.4) gives:
+@C
+@t
+/C12
+/C12
+/C12
+/C12
+molecular diffusion
+¼ @
+@x e /C1 @C
+@x
+/C18/C19
+þ @
+@y e /C1 @C
+@y
+/C18/C19
+þ @
+@z e /C1 @C
+@z
+/C18/C19
+(2:1:5)
+The transport of tracer by eddy diffusion is generally
+far larger than transport by molecular diffusion. Panel
+2.1.2 shows a derivation of the eddy diffusion processes
+that treats the water motions as consisting of a time
+mean component and random variations around that
+mean. This treatment shows that transport of tracer by
+eddies results from the degree of correlation between
+the direction of the random motions of the water parcels
+and the tracer concentration. For example, if water
+parcels moving in the positive x-direction have higher
+concentrations on the average than water parcels mov-
+ing in the negative x-direction, the tracer will be trans-
+ported in the positive x-direction. Unfortunately, we
+generally do not have adequate information on the
+ﬂow ﬁeld and concentrations to calculate the neces-
+sary correlations. The usual practice is to approximate
+eddy diffusion by assuming it behaves like Fickian
+diffusion, with one important difference: horizontal
+eddy diffusion in the ocean is much larger than
+the vertical. We therefore allow for the possibility of
+Tracer Conservation
+Panel 2.1.2: Effect of Eddies on Tracer Transport
+Eddies are the random motions of water parcels that do
+not result in any net transfer of water from one part of
+the ocean to another. However, eddies can carry tracer if
+the random motions in one direction have a different
+concentration than the random motions in the opposite
+direction. We can derive an equation for this process by
+starting with the advection equation (2.1.2):
+@C
+@t ¼/C0 @(Cu)
+@x /C0 @(Cv)
+@y /C0 @(Cw)
+@z (1)
+and separating the velocity and the concentration terms
+into a time-average component (denoted by an overbar)
+deﬁned as follows:
+() ¼ 1
+T
+Z T
+0
+() dt (2)
+and deviations from the average (denoted by a prime)
+deﬁned such that
+u ¼ /C22u uþ u0
+C ¼ C þ C0 (3)
+Note from the deﬁnition of the deviations from the mean
+that the average of the deviations is equal to 0, i.e.,
+u0 ¼ 0
+C0 ¼ 0
+/C22CCu0 ¼ 0
+C0/C22u u¼ 0
+(4)
+Substituting (3) into (1), taking the average, and making
+use of (4) to simplify the resulting equation gives:
+@C
+@t ¼/C0 @(/C22C C/C22u u)
+@x þ @(/C22C C/C22v v)
+@y þ @(/C22C C/C22w w)
+@z
+ !
+/C0 @(C0u0)
+@x þ @(C0v0)
+@y þ @(C0w0)
+@z
+/C18/C19 (5)
+The usual convention is to drop the overbar on all the
+terms except those involving the products of primes.
+This gives:
+@C
+@t ¼/C0 @(Cu)
+@x þ @(Cv)
+@y þ @(Cw)
+@z
+/C18/C19
+/C0 @(C0u0)
+@x þ @(C0v0)
+@y þ @(C0w0)
+@z
+/C18/C19 (6)
+The terms in the ﬁrst set of parentheses on the right-
+hand side represent the contribution of net advection to
+the tracer transport. The terms in the second pair of
+parentheses represent the contribution of eddies to the
+transport of tracer. The prime terms involve no net ﬂow
+of water into or out of the box, since the average of the
+velocity ﬂuctuations is zero. However, if the tracer con-
+centration is correlated with the velocity direction, there
+will be a transport of tracer associated with these eddies.
+We assume that the eddy contribution can be re-
+presented by a Fickian-type diffusion, i.e.,
+/C0 @(C0u0)
+@x /C0 @(C0v0)
+@y /C0 @(C0w0)
+@z
+¼ @
+@x Dx
+@C
+@x
+/C20/C21
+þ @
+@y Dy
+@C
+@y
+/C20/C21
+þ @
+@z Dz
+@C
+@z
+/C20/C21 (7)
+where D is an eddy diffusivity term with units of m 2 s/C0 1.
+See text for further discussion.
+21

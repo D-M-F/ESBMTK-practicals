@@ -1,0 +1,160 @@
+ens. The time-rate of change for the mean sDIC con-
+centration in the mixed layer can therefore be written as:
+@sDIC
+@t ¼ @sDIC
+@t
+/C12
+/C12
+/C12
+ex
+þ @sDIC
+@t
+/C12
+/C12
+/C12
+ncp
+þ @sDIC
+@t
+/C12
+/C12
+/C12
+trsp
+þ @sDIC
+@t
+/C12
+/C12
+/C12
+diff
+þ @sDIC
+@t
+/C12
+/C12
+/C12
+ent
+(8:3:29)
+Near Bermuda, air-sea gas exchange can explain a
+fraction of this drawdown, as oceanic pCO
+2 is greater
+than atmospheric pCO2 for most of this period (see
+ﬁgure 8.3.8e). However, estimates of the CO 2 evasion
+during this period are an order of magnitude too small
+to explain the drawdown [ Michaels et al ., 1994, Gruber
+et al ., 1998]. Near Hawaii, oceanic pCO
+2 is actually
+undersaturated for most of the year (see
+ﬁgure 8.3.9e),
+therefore air-sea gas exchange would tend to increase
+sDIC from spring to fall.
+Therefore, other processes, either of biological origin
+or of a physical nature, such as transport and mixing,
+must create the seasonal reduction in sDIC. We learned
+in chapter 4, on the basis of several lines of evidence,
+that the sDIC drawdown near Bermuda is most likely
+caused by biology and not by physical processes. One
+such line of evidence is the concomitant observation of
+an increase in the
+13C/12C ratio of DIC (ﬁgure 8.3.8c).
+Plants strongly prefer the light isotope 12C over the
+heavier isotope 13C during the photosynthetic uptake of
+CO2, leading to isotopically light organic matter (low
+d13C values), whereas the remaining pool of inorganic
+carbon becomes isotopically heavier (high d13C). This
+biological fractionation is substantially larger than the
+fractionation by any other process, giving the opportu-
+nity to use observations of d
+13C as an indicator of the
+biological uptake and release of CO 2.
+Figure 8.3.11 shows the results of two studies that
+used the concurrent 13C/12C and DIC observations as
+well as other observations to diagnose the relative con-
+tribution of the different processes affecting the sDIC
+Jan Mar May Jul Sep Nov
+300
+350
+400
+pCO2 (µatm)
+oceanic pCO2
+atmospheric pCOatmospheric pCO2
+1.1
+1.2
+1.3
+1.4
+1.5δ
+13
+C (per mil)
+20
+25
+30Temperature (°C)
+1930
+1940
+1950
+1960
+1970
+1980
+sDIC (µmol kg
+-1
+)
+2280
+2300
+sAlk (µmol kg
+-1
+)
+a
+b
+c
+d
+e
+Jan Mar May Jul Sep Nov
+300
+350
+400
+pCO2 (µatm)
+oceanic pCO2
+atmospheric pCO2
+1.1
+1.2
+1.3
+1.4
+1.5δ
+13
+C (per mil)
+20
+25
+30
+1930
+1940
+1950
+1960
+1970
+1980
+sDIC (µmol kg
+-1
+)
+2300
+2320
+sAlk (µmol kg
+-1
+)
+a
+b
+c
+d
+e
+BATS HOT
+Temperature (°C)
+Figure 8.3.8: Annual composite time series of upper ocean quantities
+at the Bermuda Atlantic Time-series Station (BATS) in the subtropical
+Atlantic (31
+/C14 50'N, 64 /C14 10'W): (a) temperature, (b) salinity-normalized
+DIC, (c) the reduced isotopic ratio ( d13C)o f DIC, (d) salinity-
+normalized Alk, and (e) computed pCO2. The ﬁlled circles represent
+the observations, whereas the smooth curve represents the results of a
+harmonic ﬁt through the observations. Also shown in (e) is the
+estimated atmospheric pCO
+2 near Bermuda. Data are for 1988–2001.
+Based on data reported by Gruber et al . [2002].
+Figure 8.3.9: As 8.3.8 except for the Hawaii Ocean Time-series
+(HOT) ALOHA site in the subtropical North Paciﬁc (22 /C14 45'N,
+158/C14 00'W). Based on data reported by Keeling et al . [2004].
+338
+Chapter 8
